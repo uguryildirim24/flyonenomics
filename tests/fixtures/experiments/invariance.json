@@ -1,0 +1,125 @@
+{
+  "experiment": {
+    "schema_version": "1.2",
+    "name": "stream-invariance",
+    "seed": 20260912,
+    "seeds": [
+      1,
+      2
+    ],
+    "substrate": {
+      "connectome_version": "783",
+      "drive_version": "dev",
+      "behaviour_version": "v0.1"
+    },
+    "layers": {
+      "background": false
+    },
+    "arms": [
+      {
+        "label": "wild-type",
+        "genotype": {
+          "named": "wild_type",
+          "manipulations": []
+        },
+        "protocol": [
+          {
+            "type": "probe",
+            "assay": "sugar_reflex",
+            "duration_s": 0.2,
+            "label": "upstream",
+            "params": {
+              "population": "sugar_GRN_R",
+              "rate_hz": 150,
+              "mode": "extended"
+            }
+          },
+          {
+            "type": "probe",
+            "assay": "sugar_reflex",
+            "duration_s": 0.2,
+            "label": "extended",
+            "params": {
+              "population": "MN9",
+              "rate_hz": 50,
+              "mode": "extended"
+            }
+          },
+          {
+            "type": "probe",
+            "assay": "open_loop_steering",
+            "duration_s": 0.2,
+            "label": "steering",
+            "params": {
+              "azimuths": [0]
+            }
+          }
+        ]
+      },
+      {
+        "label": "mn9-threshold",
+        "genotype": {
+          "named": "wild_type",
+          "manipulations": [
+            {
+              "type": "shift_threshold",
+              "population": "MN9",
+              "delta_mv": 3
+            }
+          ]
+        },
+        "protocol": [
+          {
+            "type": "probe",
+            "assay": "sugar_reflex",
+            "duration_s": 0.2,
+            "label": "upstream",
+            "params": {
+              "population": "sugar_GRN_R",
+              "rate_hz": 150,
+              "mode": "extended"
+            }
+          },
+          {
+            "type": "probe",
+            "assay": "sugar_reflex",
+            "duration_s": 0.2,
+            "label": "extended",
+            "params": {
+              "population": "MN9",
+              "rate_hz": 50,
+              "mode": "extended"
+            }
+          },
+          {
+            "type": "probe",
+            "assay": "open_loop_steering",
+            "duration_s": 0.2,
+            "label": "steering",
+            "params": {
+              "azimuths": [0]
+            }
+          }
+        ]
+      }
+    ],
+    "record": {
+      "spikes": [
+        "sugar_GRN_R",
+        "MN9"
+      ],
+      "rates": [
+        "sugar_GRN_R",
+        "MN9"
+      ],
+      "arena": true,
+      "popcount": true,
+      "live": true
+    }
+  },
+  "settle_s": {
+    "0": 0.02,
+    "1": 0.04,
+    "2": 0.03
+  }
+}

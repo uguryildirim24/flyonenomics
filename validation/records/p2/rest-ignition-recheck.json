@@ -1,0 +1,4516 @@
+{
+  "class": "development",
+  "rule": "item 87: relative ignition only when settled_central_hz >= ign.min_baseline_hz 0.5; absolute 8 Hz unconditional",
+  "n_files": 1178,
+  "n_probes": 11645,
+  "n_changed": 171,
+  "n_changed_by_sub_tier": {
+    "T3a": 63,
+    "T3b": 18,
+    "T3d": 90
+  },
+  "missing_files": [],
+  "note": "Collected T0/T1 JSON summaries have no per-probe ignition fields. Changes come from the raw NDJSON those records collected. No stored record is rewritten.",
+  "changes": [
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u00-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u00-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u01-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u01-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 6.755758807588076,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u01-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.28184281842818426,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u01-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u02-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u02-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.02740138512496236,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u02-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.09789972899728998,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u02-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u03-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-00/u03-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u04-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u04-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00022583559168925022,
+      "max_rolling_central_hz": 0.015394459500150557,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u04-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.3920505871725384,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u04-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 500.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.13072116832279435,
+      "max_rolling_central_hz": 5.267426979825354,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00015055706112616682,
+      "max_rolling_central_hz": 1.9108702198133092,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.10373381511592894,
+      "max_rolling_central_hz": 5.249962360734719,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 5.200767841011744,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u05-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u06-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u06-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-01/u06-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u06-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u07-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.32847786811201446,
+      "max_rolling_central_hz": 7.009748569707919,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u07-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u07-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00026347485697079194,
+      "max_rolling_central_hz": 0.2656202950918398,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u07-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 7.000301114122252,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u07-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u08-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.05325956037338151,
+      "max_rolling_central_hz": 0.20468232460102379,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u08-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u08-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00011291779584462511,
+      "max_rolling_central_hz": 5.556609454983438,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u08-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.050097862089732006,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u08-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u09-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u09-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u09-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u09-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u10-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u10-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.2627973501957242,
+      "max_rolling_central_hz": 1.227002408912978,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-02/u10-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 7.588979223125564,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u10-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.3,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u11-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.07106293285155074,
+      "max_rolling_central_hz": 5.638700692562481,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u11-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u11-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 5.553861788617886,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u11-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u12-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u12-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u13-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.30510388437217706,
+      "max_rolling_central_hz": 7.651196928635953,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u13-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u13-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00022583559168925022,
+      "max_rolling_central_hz": 7.597523336344475,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u13-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.015130984643179765,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-03/u13-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 150.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.01170581150255947,
+      "max_rolling_central_hz": 0.07652062631737429,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.4853583258054803,
+      "max_rolling_central_hz": 5.866568804576935,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.038354411321891,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 5.710064739536285,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u14-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u15-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u15-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u16-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.3418774465522433,
+      "max_rolling_central_hz": 7.89965371875941,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u16-s1-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s1-w00-05",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u16-s2-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s2-w00-05",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 7.828477868112015,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3a-t1-04/u16-s3-w00-05.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s3-w00-05",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3a",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "b_mv": 0.1,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u00-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00041403191809695873,
+      "max_rolling_central_hz": 0.9010463715748268,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u00-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u00-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00011291779584462511,
+      "max_rolling_central_hz": 6.313949111713339,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u00-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 6.35230352303523,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u00-s3-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s3-w00-06",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u01-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u01-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00026347485697079194,
+      "max_rolling_central_hz": 2.411961758506474,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u01-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 4.621047877145438,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u01-s3-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s3-w00-06",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u02-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u02-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.02232008431195423,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u02-s3-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s3-w00-06",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.1735546522131888,
+      "max_rolling_central_hz": 3.5412149954832883,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u02-s3-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s3-w00-06",
+      "seed": 3,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u03-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.03007377295995182,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u03-s1-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s1-w00-06",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u03-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0006775067750677507,
+      "max_rolling_central_hz": 0.010689551339957843,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u03-s2-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s2-w00-06",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 2.4579193014152363,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp24/camber-runs/wp24/t3b-t1-00/u03-s3-w00-06.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s3-w00-06",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u00-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u00-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u00-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u01-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u01-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u01-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u02-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u02-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u02-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u03-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u03-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u03-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u04-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u04-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.5517916290274014,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u04-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u04-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u05-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u05-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00015055706112616682,
+      "max_rolling_central_hz": 0.9852454080096357,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u05-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u05-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u06-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u06-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-00/u06-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u06-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u07-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u07-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u07-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u08-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u08-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.7110809996988858,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u08-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u08-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u09-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u09-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u09-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u09-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u10-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u10-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 7.875338753387534,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u10-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u10-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u11-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u11-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.3914483589280337,
+      "max_rolling_central_hz": 7.9121499548328815,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u11-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 7.919527250828064,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u11-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u11-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u12-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.040876242095754294,
+      "max_rolling_central_hz": 6.843872327612165,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u12-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u12-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 6.838188798554652,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u12-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.06771303824149352,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u12-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u12-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.040876242095754294,
+      "max_rolling_central_hz": 6.734567901234568,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 6.737955435109907,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.29573170731707316,
+      "max_rolling_central_hz": 6.912601626016261,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.2520701595904848,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u13-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u13-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u14-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.040876242095754294,
+      "max_rolling_central_hz": 0.15951520626317375,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u14-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u14-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 6.690906353507979,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u14-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.14366907557964467,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u14-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u14-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u15-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.040876242095754294,
+      "max_rolling_central_hz": 6.684319482083709,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u15-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u15-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 6.736412225233363,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-01/u15-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.3990514905149051,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u15-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u15-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.007565492321589882,
+      "max_rolling_central_hz": 0.17242547425474256,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.18740590183679615,
+      "max_rolling_central_hz": 5.885877747666366,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0010915386931647094,
+      "max_rolling_central_hz": 0.021040349292381813,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.15085817524841916,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u16-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u16-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.007565492321589882,
+      "max_rolling_central_hz": 0.17242547425474256,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0010915386931647094,
+      "max_rolling_central_hz": 0.021040349292381813,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.15085817524841916,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.17125865703101475,
+      "max_rolling_central_hz": 5.805103884372177,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u17-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u17-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u18-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u18-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.007565492321589882,
+      "max_rolling_central_hz": 0.17242547425474256,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u18-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u18-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u18-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u18-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0010915386931647094,
+      "max_rolling_central_hz": 0.021040349292381813,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u18-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u18-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.15085817524841916,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u18-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u18-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u19-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u19-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.007565492321589882,
+      "max_rolling_central_hz": 0.17242547425474256,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u19-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u19-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u19-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u19-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0010915386931647094,
+      "max_rolling_central_hz": 0.021040349292381813,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u19-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u19-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.15085817524841916,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u19-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u19-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u20-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u20-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u20-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u20-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.02740138512496236,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u20-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u20-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.09789972899728998,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u20-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u20-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 2.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u21-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u21-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u21-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u21-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.02740138512496236,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u21-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u21-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.09789972899728998,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u21-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u21-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 3.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u22-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u22-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u22-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u22-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.02740138512496236,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u22-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u22-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.09789972899728998,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u22-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u22-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 4.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 0.00018819632640770852,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u23-s1-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u23-s1-w00-09",
+      "seed": 1,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.0,
+      "max_rolling_central_hz": 3.7639265281541705e-05,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u23-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u23-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.75,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00018819632640770852,
+      "max_rolling_central_hz": 0.02740138512496236,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u23-s2-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u23-s2-w00-09",
+      "seed": 2,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.00033875338753387534,
+      "max_rolling_central_hz": 0.09789972899728998,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u23-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u23-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.8,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    },
+    {
+      "settled_central_hz": 0.10610508882866607,
+      "max_rolling_central_hz": 5.0146040349292385,
+      "ignited_recorded": true,
+      "ignited_item87": false,
+      "source": ".worktrees/wp26/camber-runs/wp26/t3d-t0t1-02/u23-s3-w00-09.ndjson",
+      "stage": "T1",
+      "kind": "evaluation",
+      "task_id": "u23-s3-w00-09",
+      "seed": 3,
+      "w_bg": 0.85,
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif+sfa",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "g_gaba_kc": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "checks": {
+    "DAN": 0.8216066481994461,
+    "KC": 0.08716760028330435,
+    "central": 4.82814538793536,
+    "ignition": [
+      false,
+      false,
+      false
+    ],
+    "means": true,
+    "per_seed": true,
+    "steering_diff_hz": [
+      1.049999999999999,
+      3.6999999999999993,
+      1.3000000000000007
+    ]
+  },
+  "identity": {
+    "assay": "open_loop_steering",
+    "code_commit": "2cda2d6fefd616bc63e7eab5059e8746caf97a5e",
+    "code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+    "code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+    "connectome_version": "783",
+    "data_versions": {
+      "behaviour-base-v0.2.yaml": "base-v0.2",
+      "behaviour-v0.1.yaml": "v0.1",
+      "compartments-v0.1.yaml": "v0.1",
+      "dopamine-v0.1.yaml": "v0.1",
+      "dopamine-v0.2.yaml": "v0.2",
+      "drive-v0.2.yaml": "v0.2",
+      "params-v0.1.yaml": "v0.1",
+      "params-v0.2.yaml": "v0.2",
+      "populations-v0.1.yaml": "v0.1",
+      "populations-v0.2.yaml": "v0.2",
+      "receptors-v0.1.yaml": "v0.1",
+      "rest-tier3-v0.2.yaml": "v0.2",
+      "transmitters-v0.2.yaml": "v0.2",
+      "visual-v0.2.yaml": "v0.2"
+    },
+    "date": "2026-09-20T06:53:25.536032+00:00",
+    "engine_model": "lif",
+    "fixture_hash": "",
+    "inputs": {},
+    "layer_flags": {
+      "background": true,
+      "dan_fast_synapses": "retain",
+      "dopamine_A": true,
+      "learning_D": false,
+      "receptor_kinetics_B": false,
+      "transporter_C": true
+    },
+    "machine": "aarch64 aarch64",
+    "mechanisms": null,
+    "overrides_hash": "",
+    "platform": "linux-aarch64",
+    "protocol_hash": "e230e38e13e7f574070f5ef77867b50adb50f9ff05e89a7957095a615b1b106d",
+    "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+    "run_code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+    "run_code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+    "substrate_id": "rest:379cc4cc9030cdd1",
+    "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+  },
+  "kind": "V3",
+  "passed": true,
+  "r_light_hz": 150.0,
+  "rows": [
+    {
+      "DAN_hz": 0.8149584487534626,
+      "F": 1.1983304263611865,
+      "KC_hz": 0.08854548966582963,
+      "b": 0.007249042477225023,
+      "central_hz": 4.8345566094549834,
+      "ignited": false,
+      "max_rolling_central_hz": 4.847184582956941,
+      "seed": 1,
+      "settled_central_hz": 4.8402213188798555,
+      "stability_ratio": 0.9987640117535486,
+      "steering_diff_hz": 1.049999999999999
+    },
+    {
+      "DAN_hz": 0.817174515235457,
+      "F": 1.186145834684364,
+      "KC_hz": 0.0845470349623334,
+      "b": 0.007184125678921516,
+      "central_hz": 4.82445046672689,
+      "ignited": false,
+      "max_rolling_central_hz": 4.851513098464318,
+      "seed": 2,
+      "settled_central_hz": 4.854373682625715,
+      "stability_ratio": 0.9986217958700595,
+      "steering_diff_hz": 3.6999999999999993
+    },
+    {
+      "DAN_hz": 0.8326869806094183,
+      "F": 1.2159529118589543,
+      "KC_hz": 0.08841027622175004,
+      "b": 0.007285107365171416,
+      "central_hz": 4.82542908762421,
+      "ignited": false,
+      "max_rolling_central_hz": 4.8521529659741045,
+      "seed": 3,
+      "settled_central_hz": 4.825391448358928,
+      "stability_ratio": 0.9976204732614291,
+      "steering_diff_hz": 1.3000000000000007
+    }
+  ],
+  "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T064224.283616Z-e230e38e",
+  "status": "passed",
+  "test_id": "V3"
+}

@@ -1,0 +1,15 @@
+{
+  "background": false,
+  "description": "SPEC-P2 5.3 test 0.17: two neurons, one excitatory connection 0 to 1 of 20 synapses. Neuron 0 is the spike-list driver; both neurons are traced. List: 100 + 200k for k = 0 to 49 (50 Hz from 10 to 990 ms) and 12100 + 200k for k = 0 to 4 (50 Hz from 1,210 ms). Run 14000 ticks at lif.dt 0.1 ms.",
+  "driver": 0,
+  "dt_ms": 0.1,
+  "duration_ticks": 14000,
+  "recorded": 1,
+  "seed": 11,
+  "spikelist_idx": [0],
+  "trace_idx": [0, 1],
+  "spike_tick": [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300, 2500, 2700, 2900, 3100, 3300, 3500, 3700, 3900, 4100, 4300, 4500, 4700, 4900, 5100, 5300, 5500, 5700, 5900, 6100, 6300, 6500, 6700, 6900, 7100, 7300, 7500, 7700, 7900, 8100, 8300, 8500, 8700, 8900, 9100, 9300, 9500, 9700, 9900, 12100, 12300, 12500, 12700, 12900],
+  "test": "0.17",
+  "tiny_completeness": "tests/fixtures/engine/tiny_std_completeness.csv",
+  "tiny_connectivity": "tests/fixtures/engine/tiny_std_connectivity.parquet"
+}

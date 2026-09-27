@@ -1,0 +1,10 @@
+[
+  {
+    "out": "camber-runs/wp29/t3e-00",
+    "tasks": "camber-runs/wp29/t3e-00/tasks.json"
+  },
+  {
+    "out": "camber-runs/wp29/t3e-01",
+    "tasks": "camber-runs/wp29/t3e-01/tasks.json"
+  }
+]

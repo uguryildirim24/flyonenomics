@@ -1,0 +1,6 @@
+suite: "2.1-2.5"
+connectome: "783"
+background: drive-dev.yaml
+layer_a: false
+seed: 20260912
+state: base arrays

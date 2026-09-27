@@ -1,0 +1,2021 @@
+[
+  {
+    "label": "fused-pilot-1790391307-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "projected_usd": 0.08535869444444445,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790391307.099637,
+    "source_sha": "c803b8eb065065d4acf5e13b380e55e2eb6395db",
+    "source_diff": "",
+    "error": "ExecutionError('<local-project-root>/.worktrees/t-0122/scripts/modal/__pycache__/cuda_driver.cpython-312.pyc was modified during build process.')",
+    "completed_at": 1790391442.50227,
+    "accounted_usd": 0.038461870126790476,
+    "app_id": "ap-xwpl1Cir7M8ubNJsAX6dp5",
+    "billing_checked_at": 1790397809.455672,
+    "billing_rows": [
+      {
+        "object_id": "ap-xwpl1Cir7M8ubNJsAX6dp5",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.00253379"
+      }
+    ],
+    "actual_metered_usd": 0.00253379
+  },
+  {
+    "label": "fused-pilot-1790391464-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "projected_usd": 0.08535869444444445,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790391464.18531,
+    "source_sha": "24e242718eb6bb38be2d1ad4467502820ad6c49e",
+    "source_diff": "",
+    "app_id": "ap-mb0JBroB78hbuuln0J8Qev",
+    "result": {
+      "batch": 1,
+      "simulated_s": 0.1,
+      "build_s": 106.53113830999999,
+      "stepping_s": 0.15845526900000095,
+      "kernel_and_transfer_s": 0.03447680399999342,
+      "neuromod_s": 0.025974571999995533,
+      "collection_s": 0.0008945500000265838,
+      "wall_s": 106.71369770999999,
+      "wall_s_per_sim_s": 1.5845526900000095,
+      "per_brain_wall_s_per_sim_s": 1.5845526900000095,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 110.839690349
+    },
+    "actual_runtime_estimate_usd": 0.03148462981969095,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790391464-0",
+    "completed_at": 1790391603.614251,
+    "accounted_usd": 0.039605565299524206,
+    "billing_checked_at": 1790397809.45569,
+    "billing_rows": [
+      {
+        "object_id": "ap-mb0JBroB78hbuuln0J8Qev",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.03296217"
+      }
+    ],
+    "actual_metered_usd": 0.03296217,
+    "download_recovery": "Created destination parent first; recovered all original volume files without rerunning simulation."
+  },
+  {
+    "label": "fused-pilot-1790391687-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "projected_usd": 0.08663694444444445,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790391687.4121711,
+    "source_sha": "6d64af2575d2177e1a9381f900ad6f8eddc4c765",
+    "source_diff": "",
+    "app_id": "ap-EVrc1obVfTamC8p45ZXVMf",
+    "result": {
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 271.111225269,
+      "stepping_s": 1.3178609520000464,
+      "kernel_and_transfer_s": 0.6375226169994335,
+      "neuromod_s": 0.5198670950003361,
+      "collection_s": 0.014576349000265054,
+      "wall_s": 272.47593860300003,
+      "wall_s_per_sim_s": 1.3178609520000464,
+      "per_brain_wall_s_per_sim_s": 1.3178609520000464,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 276.750803868
+    },
+    "actual_runtime_estimate_usd": 0.07861260334317134,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790391687-0",
+    "completed_at": 1790391991.940203,
+    "accounted_usd": 0.08650287926257984,
+    "download_recovery": "Created destination parent first; recovered all original volume files without rerunning simulation.",
+    "billing_checked_at": 1790397809.455693,
+    "billing_rows": [
+      {
+        "object_id": "ap-EVrc1obVfTamC8p45ZXVMf",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.08011540"
+      }
+    ],
+    "actual_metered_usd": 0.0801154
+  },
+  {
+    "label": "fused-pilot-1790391992-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "projected_usd": 0.09657888888888891,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790391992.036934,
+    "source_sha": "6d64af2575d2177e1a9381f900ad6f8eddc4c765",
+    "source_diff": "",
+    "app_id": "ap-4XVI9tjG3KcCPFi4TYptZP",
+    "result": {
+      "batch": 8,
+      "simulated_s": 1.0,
+      "build_s": 274.18159121400004,
+      "stepping_s": 11.130432398999915,
+      "kernel_and_transfer_s": 6.381059466000238,
+      "neuromod_s": 4.4541178689999015,
+      "collection_s": 0.11761171900013778,
+      "wall_s": 285.66947131100005,
+      "wall_s_per_sim_s": 11.130432398999915,
+      "per_brain_wall_s_per_sim_s": 1.3913040498749893,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 672587264,
+      "function_s": 296.745376972
+    },
+    "actual_runtime_estimate_usd": 0.08429217291432423,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790391992-0",
+    "completed_at": 1790392318.812445,
+    "accounted_usd": 0.09282239932654965,
+    "download_recovery": "Created destination parent first; recovered all original volume files without rerunning simulation.",
+    "billing_checked_at": 1790397809.4556959,
+    "billing_rows": [
+      {
+        "object_id": "ap-4XVI9tjG3KcCPFi4TYptZP",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.08580063"
+      }
+    ],
+    "actual_metered_usd": 0.08580063
+  },
+  {
+    "label": "fused-pilot-1790392318-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "projected_usd": 0.13066555555555556,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790392318.912849,
+    "source_sha": "09f9fa75fa746a02a7d062c69b17ea243b188d07",
+    "source_diff": "",
+    "app_id": "ap-ey8C6yQx10hdxyPKr2vXSL",
+    "result": {
+      "batch": 32,
+      "simulated_s": 1.0,
+      "build_s": 273.88210806700005,
+      "stepping_s": 43.20551533899999,
+      "kernel_and_transfer_s": 24.211388041999555,
+      "neuromod_s": 18.387877574999948,
+      "collection_s": 0.4005192100000272,
+      "wall_s": 318.513747373,
+      "wall_s_per_sim_s": 43.20551533899999,
+      "per_brain_wall_s_per_sim_s": 1.3501723543437496,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 1177219584,
+      "function_s": 323.076000435
+    },
+    "actual_runtime_estimate_usd": 0.09177153279023087,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790392318-0",
+    "completed_at": 1790392695.193828,
+    "accounted_usd": 0.10688470257928638,
+    "billing_checked_at": 1790397809.4556968,
+    "billing_rows": [
+      {
+        "object_id": "ap-ey8C6yQx10hdxyPKr2vXSL",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.09360766"
+      }
+    ],
+    "actual_metered_usd": 0.09360766
+  },
+  {
+    "label": "fused-pilot-1790392745-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 0.2,
+    "chunk_ms": 1.0,
+    "check_modulation": true,
+    "projected_usd": 0.08550072222222223,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790392745.753663,
+    "source_sha": "d915014d4057fb6c76328d5d5e88c9a6c1a93323",
+    "source_diff": "",
+    "app_id": "ap-U4HsVJY8PDy1MfheqUPIgV",
+    "error": "SyntaxError(\"'(' was never closed\", ('/root/flyonenomics/scripts/cuda_circuit.py', 109, 50, '                    for key, actual, expected in (\\n', 109, 0))",
+    "completed_at": 1790392773.414173,
+    "accounted_usd": 0.007857121485220062,
+    "billing_checked_at": 1790397809.4557,
+    "billing_rows": [
+      {
+        "object_id": "ap-U4HsVJY8PDy1MfheqUPIgV",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.00114769"
+      }
+    ],
+    "actual_metered_usd": 0.00114769
+  },
+  {
+    "label": "fused-pilot-1790392949-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 0.2,
+    "chunk_ms": 1.0,
+    "check_modulation": true,
+    "projected_usd": 0.08550072222222223,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790392949.1867251,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": "",
+    "app_id": "ap-hQCkvZHh5hlzI20PgyYJuk",
+    "result": {
+      "batch": 1,
+      "simulated_s": 0.2,
+      "build_s": 108.14859449000001,
+      "stepping_s": 0.43775614399999085,
+      "kernel_and_transfer_s": 0.25519737300015777,
+      "neuromod_s": 0.06710960999996018,
+      "collection_s": 0.010829580000034866,
+      "wall_s": 108.618603127,
+      "wall_s_per_sim_s": 2.1887807199999543,
+      "per_brain_wall_s_per_sim_s": 2.1887807199999543,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 1.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": {
+        "pool_um": 0.0,
+        "threshold_mv": 0.0,
+        "gain": 0.0
+      },
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 112.502677275
+    },
+    "actual_runtime_estimate_usd": 0.031957010494837505,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790392949-0",
+    "completed_at": 1790393092.246156,
+    "accounted_usd": 0.04063682610404492,
+    "billing_checked_at": 1790397809.455702,
+    "billing_rows": [
+      {
+        "object_id": "ap-hQCkvZHh5hlzI20PgyYJuk",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.03298471"
+      }
+    ],
+    "actual_metered_usd": 0.03298471
+  },
+  {
+    "label": "fused-pilot-1790393120-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.08663694444444445,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790393120.171075,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": "",
+    "app_id": "ap-OLflaEgZq82VzJggGSHkIG",
+    "result": {
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 270.165913381,
+      "stepping_s": 0.7925993040000208,
+      "kernel_and_transfer_s": 0.6439364840000508,
+      "neuromod_s": 4.618799994204892e-05,
+      "collection_s": 0.014144313999906899,
+      "wall_s": 271.00980581,
+      "wall_s_per_sim_s": 0.7925993040000208,
+      "per_brain_wall_s_per_sim_s": 0.7925993040000208,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 275.43580769
+    },
+    "actual_runtime_estimate_usd": 0.07823907137327613,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790393120-0",
+    "completed_at": 1790393412.425195,
+    "accounted_usd": 0.08301640638393827,
+    "billing_checked_at": 1790397809.4557052,
+    "billing_rows": [
+      {
+        "object_id": "ap-OLflaEgZq82VzJggGSHkIG",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.07991183"
+      }
+    ],
+    "actual_metered_usd": 0.07991183
+  },
+  {
+    "label": "fused-pilot-1790393412-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.09657888888888891,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790393412.639481,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": " docs/cuda-backend.md | 19 +++++++++++++++----\n 1 file changed, 15 insertions(+), 4 deletions(-)\n",
+    "app_id": "ap-o0nv30IqcvxRJ5bmVJ7dmG",
+    "result": {
+      "batch": 8,
+      "simulated_s": 1.0,
+      "build_s": 104.647763281,
+      "stepping_s": 6.506480048,
+      "kernel_and_transfer_s": 6.348461252999925,
+      "neuromod_s": 7.774300004825818e-05,
+      "collection_s": 0.06052564499998425,
+      "wall_s": 111.438359995,
+      "wall_s_per_sim_s": 6.506480048,
+      "per_brain_wall_s_per_sim_s": 0.813310006,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 672587264,
+      "function_s": 115.394363828
+    },
+    "actual_runtime_estimate_usd": 0.032778410125142446,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790393412-0",
+    "completed_at": 1790393559.575571,
+    "accounted_usd": 0.041738012673987294,
+    "billing_checked_at": 1790397809.4557078,
+    "billing_rows": [
+      {
+        "object_id": "ap-o0nv30IqcvxRJ5bmVJ7dmG",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.03430668"
+      }
+    ],
+    "actual_metered_usd": 0.03430668
+  },
+  {
+    "label": "fused-pilot-1790393559-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "control"
+      ],
+      [
+        502,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.13066555555555556,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790393559.686859,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": " docs/cuda-backend.md | 19 +++++++++++++++----\n 1 file changed, 15 insertions(+), 4 deletions(-)\n",
+    "app_id": "ap-ToaLbxOGzxO2WTFRPK8tIW",
+    "result": {
+      "batch": 32,
+      "simulated_s": 1.0,
+      "build_s": 105.704578005,
+      "stepping_s": 24.044382598999988,
+      "kernel_and_transfer_s": 23.70270251999999,
+      "neuromod_s": 6.865299995695295e-05,
+      "collection_s": 0.18877513900005738,
+      "wall_s": 130.93337452499998,
+      "wall_s_per_sim_s": 24.044382598999988,
+      "per_brain_wall_s_per_sim_s": 0.7513869562187496,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 134.80565528
+    },
+    "actual_runtime_estimate_usd": 0.03829229530259112,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790393559-0",
+    "completed_at": 1790393710.7684422,
+    "accounted_usd": 0.04291556306755544,
+    "billing_checked_at": 1790397809.45571,
+    "billing_rows": [
+      {
+        "object_id": "ap-ToaLbxOGzxO2WTFRPK8tIW",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.03994034"
+      }
+    ],
+    "actual_metered_usd": 0.03994034
+  },
+  {
+    "label": "fused-pilot-1790393710-0",
+    "mode": "pilot",
+    "gpu": "A100-40GB",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.19677583333333334,
+    "reserved_usd": 0.96775,
+    "usd_per_hour": 2.3226,
+    "timeout_s": 900,
+    "submitted_at": 1790393710.895875,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": " docs/cuda-backend.md | 19 +++++++++++++++----\n 1 file changed, 15 insertions(+), 4 deletions(-)\n",
+    "app_id": "ap-7ukyfI7b1pdi4lGigjt9fD",
+    "result": {
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 108.08822896,
+      "stepping_s": 0.9941256150000015,
+      "kernel_and_transfer_s": 0.8775794720000647,
+      "neuromod_s": 2.6845999897773254e-05,
+      "collection_s": 0.007659385000096108,
+      "wall_s": 109.121816916,
+      "wall_s_per_sim_s": 0.9941256150000015,
+      "per_brain_wall_s_per_sim_s": 0.9941256150000015,
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "blocks": 432,
+      "registers": 62,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 529816064,
+      "function_s": 113.996545759
+    },
+    "actual_runtime_estimate_usd": 0.07354677143884818,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790393710-0",
+    "completed_at": 1790393839.421094,
+    "accounted_usd": 0.08292018710136413,
+    "billing_checked_at": 1790397809.455712,
+    "billing_rows": [
+      {
+        "object_id": "ap-7ukyfI7b1pdi4lGigjt9fD",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.07483981"
+      }
+    ],
+    "actual_metered_usd": 0.07483981
+  },
+  {
+    "label": "fused-rest-1790393931-0",
+    "mode": "rest",
+    "gpu": "L4",
+    "tasks": [
+      [
+        1,
+        "control"
+      ],
+      [
+        2,
+        "control"
+      ],
+      [
+        3,
+        "control"
+      ],
+      [
+        4,
+        "control"
+      ],
+      [
+        5,
+        "control"
+      ],
+      [
+        6,
+        "control"
+      ],
+      [
+        7,
+        "control"
+      ],
+      [
+        8,
+        "control"
+      ],
+      [
+        9,
+        "control"
+      ],
+      [
+        10,
+        "control"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.25565000000000004,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790393931.6881611,
+    "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea",
+    "source_diff": " docs/cuda-backend.md | 19 +++++++++++++++----\n 1 file changed, 15 insertions(+), 4 deletions(-)\n",
+    "app_id": "ap-BYdQHQeyWs3eoRCEi5xdmB",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 265.88674796099997,
+      "stepping_s": 102.11685572200003,
+      "kernel_and_transfer_s": 100.6596883720004,
+      "neuromod_s": 0.0014921819994810903,
+      "collection_s": 1.2833027030006292,
+      "wall_s": 368.522366796,
+      "wall_s_per_sim_s": 8.509737976833335,
+      "per_brain_wall_s_per_sim_s": 0.8509737976833336,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 716897792,
+      "function_s": 377.039576403
+    },
+    "actual_runtime_estimate_usd": 0.10710018634158552,
+    "local_output": "camber-runs/cuda-circuit/fused-rest-1790393931-0",
+    "completed_at": 1790394331.1925209,
+    "accounted_usd": 0.11348143284773829,
+    "billing_checked_at": 1790397809.455713,
+    "billing_rows": [
+      {
+        "object_id": "ap-BYdQHQeyWs3eoRCEi5xdmB",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.10978959"
+      }
+    ],
+    "actual_metered_usd": 0.10978959
+  },
+  {
+    "label": "fused-pilot-1790394331306579000-0",
+    "mode": "pilot",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": 1.0,
+    "chunk_ms": 1.0,
+    "check_modulation": false,
+    "projected_usd": 0.08663694444444445,
+    "reserved_usd": 0.4260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790394331.30658,
+    "source_sha": "36d30a4ac48822e919c5c379816fa6ec2fdf25bf",
+    "source_diff": " scripts/modal/cuda_billing.py | 27 +++++++++++++++------------\n scripts/modal/cuda_driver.py  | 11 ++++-------\n 2 files changed, 19 insertions(+), 19 deletions(-)\n",
+    "app_id": "ap-H2iN32bfcVsHUjL2lonzD2",
+    "result": {
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 271.029310665,
+      "stepping_s": 1.5987226549999605,
+      "kernel_and_transfer_s": 1.3335197839987245,
+      "neuromod_s": 0.0004724200010173263,
+      "collection_s": 0.128499830998976,
+      "wall_s": 272.676727884,
+      "wall_s_per_sim_s": 1.5987226549999605,
+      "per_brain_wall_s_per_sim_s": 1.5987226549999605,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 1.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 276.830724304
+    },
+    "actual_runtime_estimate_usd": 0.07863530518701958,
+    "local_output": "camber-runs/cuda-circuit/fused-pilot-1790394331306579000-0",
+    "completed_at": 1790394638.752504,
+    "accounted_usd": 0.08733172275751168,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.455714,
+    "billing_rows": [
+      {
+        "object_id": "ap-H2iN32bfcVsHUjL2lonzD2",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.08055042"
+      }
+    ],
+    "actual_metered_usd": 0.08055042
+  },
+  {
+    "label": "fused-tour-1790394414753078000-33",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        504,
+        "off-glutamate"
+      ],
+      [
+        505,
+        "off-glutamate"
+      ],
+      [
+        506,
+        "off-glutamate"
+      ],
+      [
+        507,
+        "off-glutamate"
+      ],
+      [
+        508,
+        "off-glutamate"
+      ],
+      [
+        509,
+        "off-glutamate"
+      ],
+      [
+        510,
+        "off-glutamate"
+      ],
+      [
+        501,
+        "off-histamine"
+      ],
+      [
+        502,
+        "off-histamine"
+      ],
+      [
+        503,
+        "off-histamine"
+      ],
+      [
+        504,
+        "off-histamine"
+      ],
+      [
+        505,
+        "off-histamine"
+      ],
+      [
+        506,
+        "off-histamine"
+      ],
+      [
+        507,
+        "off-histamine"
+      ],
+      [
+        508,
+        "off-histamine"
+      ],
+      [
+        509,
+        "off-histamine"
+      ],
+      [
+        510,
+        "off-histamine"
+      ],
+      [
+        501,
+        "off-dopamine"
+      ],
+      [
+        502,
+        "off-dopamine"
+      ],
+      [
+        503,
+        "off-dopamine"
+      ],
+      [
+        504,
+        "off-dopamine"
+      ],
+      [
+        505,
+        "off-dopamine"
+      ],
+      [
+        506,
+        "off-dopamine"
+      ],
+      [
+        507,
+        "off-dopamine"
+      ],
+      [
+        508,
+        "off-dopamine"
+      ],
+      [
+        509,
+        "off-dopamine"
+      ],
+      [
+        510,
+        "off-dopamine"
+      ],
+      [
+        501,
+        "off-octopamine"
+      ],
+      [
+        502,
+        "off-octopamine"
+      ],
+      [
+        503,
+        "off-octopamine"
+      ],
+      [
+        504,
+        "off-octopamine"
+      ],
+      [
+        505,
+        "off-octopamine"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.6306033333333335,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790394414.7530859,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": "",
+    "app_id": "ap-Phuszz85jxqZv0Db54SLrl",
+    "result": {
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 280.536712441,
+      "stepping_s": 332.96505768699996,
+      "kernel_and_transfer_s": 327.1483390920005,
+      "neuromod_s": 0.0019268220004278191,
+      "collection_s": 5.321271705998242,
+      "wall_s": 615.492737718,
+      "wall_s_per_sim_s": 27.74708814058333,
+      "per_brain_wall_s_per_sim_s": 0.867096504393229,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 620.665273743
+    },
+    "actual_runtime_estimate_usd": 0.17630341914710884,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790394414753078000-33",
+    "completed_at": 1790395057.372632,
+    "accounted_usd": 0.18253965219959953,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.4557152,
+    "billing_rows": [
+      {
+        "object_id": "ap-Phuszz85jxqZv0Db54SLrl",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.17782174"
+      }
+    ],
+    "actual_metered_usd": 0.17782174
+  },
+  {
+    "label": "fused-tour-1790394414753070000-0",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.10226000000000002,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790394414.753071,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": "",
+    "app_id": "ap-YlKHmuYf4hZwq7lzLhs22l",
+    "result": {
+      "batch": 1,
+      "simulated_s": 12.0,
+      "build_s": 269.29225602500003,
+      "stepping_s": 8.420106208999982,
+      "kernel_and_transfer_s": 8.107977850000793,
+      "neuromod_s": 0.0006856510007651195,
+      "collection_s": 0.17638275400082648,
+      "wall_s": 277.815829174,
+      "wall_s_per_sim_s": 0.7016755174166652,
+      "per_brain_wall_s_per_sim_s": 0.7016755174166652,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 289.685841055
+    },
+    "actual_runtime_estimate_usd": 0.08228687251745642,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790394414753070000-0",
+    "completed_at": 1790394731.368705,
+    "accounted_usd": 0.08993642980337144,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.455717,
+    "billing_rows": [
+      {
+        "object_id": "ap-YlKHmuYf4hZwq7lzLhs22l",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.08351254"
+      }
+    ],
+    "actual_metered_usd": 0.08351254
+  },
+  {
+    "label": "fused-tour-1790394414753052000-1",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        502,
+        "control"
+      ],
+      [
+        503,
+        "control"
+      ],
+      [
+        504,
+        "control"
+      ],
+      [
+        505,
+        "control"
+      ],
+      [
+        506,
+        "control"
+      ],
+      [
+        507,
+        "control"
+      ],
+      [
+        508,
+        "control"
+      ],
+      [
+        509,
+        "control"
+      ],
+      [
+        510,
+        "control"
+      ],
+      [
+        501,
+        "off-acetylcholine"
+      ],
+      [
+        502,
+        "off-acetylcholine"
+      ],
+      [
+        503,
+        "off-acetylcholine"
+      ],
+      [
+        504,
+        "off-acetylcholine"
+      ],
+      [
+        505,
+        "off-acetylcholine"
+      ],
+      [
+        506,
+        "off-acetylcholine"
+      ],
+      [
+        507,
+        "off-acetylcholine"
+      ],
+      [
+        508,
+        "off-acetylcholine"
+      ],
+      [
+        509,
+        "off-acetylcholine"
+      ],
+      [
+        510,
+        "off-acetylcholine"
+      ],
+      [
+        501,
+        "off-gaba"
+      ],
+      [
+        502,
+        "off-gaba"
+      ],
+      [
+        503,
+        "off-gaba"
+      ],
+      [
+        504,
+        "off-gaba"
+      ],
+      [
+        505,
+        "off-gaba"
+      ],
+      [
+        506,
+        "off-gaba"
+      ],
+      [
+        507,
+        "off-gaba"
+      ],
+      [
+        508,
+        "off-gaba"
+      ],
+      [
+        509,
+        "off-gaba"
+      ],
+      [
+        510,
+        "off-gaba"
+      ],
+      [
+        501,
+        "off-glutamate"
+      ],
+      [
+        502,
+        "off-glutamate"
+      ],
+      [
+        503,
+        "off-glutamate"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.6306033333333335,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790394414.753057,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": "",
+    "app_id": "ap-rAQUbHylUiHphNEDjhDv3n",
+    "result": {
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 97.410159435,
+      "stepping_s": 321.25771273600003,
+      "kernel_and_transfer_s": 318.50209622500023,
+      "neuromod_s": 0.0009306780009410431,
+      "collection_s": 2.6080165740005867,
+      "wall_s": 420.411427523,
+      "wall_s_per_sim_s": 26.771476061333335,
+      "per_brain_wall_s_per_sim_s": 0.8366086269166667,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 424.740876838
+    },
+    "actual_runtime_estimate_usd": 0.1206500057373719,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790394414753052000-1",
+    "completed_at": 1790394860.407177,
+    "accounted_usd": 0.12659052863325015,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.4557178,
+    "billing_rows": [
+      {
+        "object_id": "ap-rAQUbHylUiHphNEDjhDv3n",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.12157514"
+      }
+    ],
+    "actual_metered_usd": 0.12157514
+  },
+  {
+    "label": "fused-tour-1790394796045204000-65",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        506,
+        "off-octopamine"
+      ],
+      [
+        507,
+        "off-octopamine"
+      ],
+      [
+        508,
+        "off-octopamine"
+      ],
+      [
+        509,
+        "off-octopamine"
+      ],
+      [
+        510,
+        "off-octopamine"
+      ],
+      [
+        501,
+        "off-serotonin"
+      ],
+      [
+        502,
+        "off-serotonin"
+      ],
+      [
+        503,
+        "off-serotonin"
+      ],
+      [
+        504,
+        "off-serotonin"
+      ],
+      [
+        505,
+        "off-serotonin"
+      ],
+      [
+        506,
+        "off-serotonin"
+      ],
+      [
+        507,
+        "off-serotonin"
+      ],
+      [
+        508,
+        "off-serotonin"
+      ],
+      [
+        509,
+        "off-serotonin"
+      ],
+      [
+        510,
+        "off-serotonin"
+      ],
+      [
+        501,
+        "off-unclear"
+      ],
+      [
+        502,
+        "off-unclear"
+      ],
+      [
+        503,
+        "off-unclear"
+      ],
+      [
+        504,
+        "off-unclear"
+      ],
+      [
+        505,
+        "off-unclear"
+      ],
+      [
+        506,
+        "off-unclear"
+      ],
+      [
+        507,
+        "off-unclear"
+      ],
+      [
+        508,
+        "off-unclear"
+      ],
+      [
+        509,
+        "off-unclear"
+      ],
+      [
+        510,
+        "off-unclear"
+      ],
+      [
+        501,
+        "P1-low"
+      ],
+      [
+        502,
+        "P1-low"
+      ],
+      [
+        503,
+        "P1-low"
+      ],
+      [
+        504,
+        "P1-low"
+      ],
+      [
+        505,
+        "P1-low"
+      ],
+      [
+        506,
+        "P1-low"
+      ],
+      [
+        507,
+        "P1-low"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.6306033333333335,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790394796.0452049,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": "",
+    "app_id": "ap-MZj6jOxaHh2uMWpwWFqoQ0",
+    "result": {
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 100.377050556,
+      "stepping_s": 298.354895201,
+      "kernel_and_transfer_s": 295.5497200600012,
+      "neuromod_s": 0.0009785629998191325,
+      "collection_s": 2.643212034999735,
+      "wall_s": 400.25934243999995,
+      "wall_s_per_sim_s": 24.862907933416665,
+      "per_brain_wall_s_per_sim_s": 0.7769658729192708,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 404.639238402
+    },
+    "actual_runtime_estimate_usd": 0.11494002366385703,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790394796045204000-65",
+    "completed_at": 1790395225.246526,
+    "accounted_usd": 0.12191701971734897,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.455719,
+    "billing_rows": [
+      {
+        "object_id": "ap-MZj6jOxaHh2uMWpwWFqoQ0",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11759879"
+      }
+    ],
+    "actual_metered_usd": 0.11759879
+  },
+  {
+    "label": "fused-tour-1790394866145685000-97",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        508,
+        "P1-low"
+      ],
+      [
+        509,
+        "P1-low"
+      ],
+      [
+        510,
+        "P1-low"
+      ],
+      [
+        501,
+        "P1-medium"
+      ],
+      [
+        502,
+        "P1-medium"
+      ],
+      [
+        503,
+        "P1-medium"
+      ],
+      [
+        504,
+        "P1-medium"
+      ],
+      [
+        505,
+        "P1-medium"
+      ],
+      [
+        506,
+        "P1-medium"
+      ],
+      [
+        507,
+        "P1-medium"
+      ],
+      [
+        508,
+        "P1-medium"
+      ],
+      [
+        509,
+        "P1-medium"
+      ],
+      [
+        510,
+        "P1-medium"
+      ],
+      [
+        501,
+        "P1-high"
+      ],
+      [
+        502,
+        "P1-high"
+      ],
+      [
+        503,
+        "P1-high"
+      ],
+      [
+        504,
+        "P1-high"
+      ],
+      [
+        505,
+        "P1-high"
+      ],
+      [
+        506,
+        "P1-high"
+      ],
+      [
+        507,
+        "P1-high"
+      ],
+      [
+        508,
+        "P1-high"
+      ],
+      [
+        509,
+        "P1-high"
+      ],
+      [
+        510,
+        "P1-high"
+      ],
+      [
+        501,
+        "pIP10"
+      ],
+      [
+        502,
+        "pIP10"
+      ],
+      [
+        503,
+        "pIP10"
+      ],
+      [
+        504,
+        "pIP10"
+      ],
+      [
+        505,
+        "pIP10"
+      ],
+      [
+        506,
+        "pIP10"
+      ],
+      [
+        507,
+        "pIP10"
+      ],
+      [
+        508,
+        "pIP10"
+      ],
+      [
+        509,
+        "pIP10"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.6306033333333335,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790394866.145686,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": "",
+    "app_id": "ap-xIL0sNwIWR16Vc4yS2tJl5",
+    "result": {
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 274.720115355,
+      "stepping_s": 311.243651072,
+      "kernel_and_transfer_s": 305.5744319630002,
+      "neuromod_s": 0.0017820439986167003,
+      "collection_s": 5.442898233999699,
+      "wall_s": 589.016355471,
+      "wall_s_per_sim_s": 25.936970922666664,
+      "per_brain_wall_s_per_sim_s": 0.8105303413333332,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 594.070746073
+    },
+    "actual_runtime_estimate_usd": 0.16874909581506942,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790394866145685000-97",
+    "completed_at": 1790395485.767148,
+    "accounted_usd": 0.17600691865286566,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.45572,
+    "billing_rows": [
+      {
+        "object_id": "ap-xIL0sNwIWR16Vc4yS2tJl5",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.17065456"
+      }
+    ],
+    "actual_metered_usd": 0.17065456
+  },
+  {
+    "label": "fused-tour-1790395066456269000-129",
+    "mode": "tour",
+    "gpu": "L4",
+    "tasks": [
+      [
+        510,
+        "pIP10"
+      ],
+      [
+        501,
+        "courtship_random"
+      ],
+      [
+        502,
+        "courtship_random"
+      ],
+      [
+        503,
+        "courtship_random"
+      ],
+      [
+        504,
+        "courtship_random"
+      ],
+      [
+        505,
+        "courtship_random"
+      ],
+      [
+        506,
+        "courtship_random"
+      ],
+      [
+        507,
+        "courtship_random"
+      ],
+      [
+        508,
+        "courtship_random"
+      ],
+      [
+        509,
+        "courtship_random"
+      ],
+      [
+        510,
+        "courtship_random"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.2726933333333334,
+    "reserved_usd": 4.260833333333334,
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 14400,
+    "submitted_at": 1790395066.456269,
+    "source_sha": "140076d6155c3e3653879a58c42309559e09e567",
+    "source_diff": " docs/index.md | 2 ++\n 1 file changed, 2 insertions(+)\n",
+    "app_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+    "error": "RemoteError('')",
+    "completed_at": 1790395860.198744,
+    "accounted_usd": 0.22546695971348554,
+    "budget_basis": "confirmed stopped before any worker; conservative entire client elapsed-time estimate",
+    "billing_checked_at": 1790397809.455721,
+    "billing_rows": [
+      {
+        "object_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.00001152"
+      }
+    ],
+    "actual_metered_usd": 1.152e-05,
+    "cancelled_before_worker": "L4 capacity wait for over 12 minutes; app stop confirmed no containers running, state stopped/tasks 0. No simulation executed.",
+    "stop_proof": {
+      "app_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:57:46-04:00",
+      "stopped_at": "2026-09-26 00:11:00-04:00"
+    },
+    "billing_resources": [
+      {
+        "object_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "resource": "CPU",
+        "cost": "0.00000985"
+      },
+      {
+        "object_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "resource": "Memory",
+        "cost": "0.00000167"
+      }
+    ]
+  },
+  {
+    "label": "fused-tour-1790395895654242000-129",
+    "mode": "tour",
+    "gpu": "A10G",
+    "tasks": [
+      [
+        510,
+        "pIP10"
+      ],
+      [
+        501,
+        "courtship_random"
+      ],
+      [
+        502,
+        "courtship_random"
+      ],
+      [
+        503,
+        "courtship_random"
+      ],
+      [
+        504,
+        "courtship_random"
+      ],
+      [
+        505,
+        "courtship_random"
+      ],
+      [
+        506,
+        "courtship_random"
+      ],
+      [
+        507,
+        "courtship_random"
+      ],
+      [
+        508,
+        "courtship_random"
+      ],
+      [
+        509,
+        "courtship_random"
+      ],
+      [
+        510,
+        "courtship_random"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.3526933333333333,
+    "reserved_usd": 5.510833333333333,
+    "usd_per_hour": 1.3226,
+    "timeout_s": 14400,
+    "submitted_at": 1790395895.654243,
+    "source_sha": "016c04619552bdb9e9a35fa4e04a47e9590c41d0",
+    "source_diff": "",
+    "app_id": "ap-kcLotYcGMulvN3EYXN5LZA",
+    "result": {
+      "batch": 11,
+      "simulated_s": 12.0,
+      "build_s": 110.70020122199999,
+      "stepping_s": 84.55851382000002,
+      "kernel_and_transfer_s": 83.03793009199977,
+      "neuromod_s": 0.0007631730004220572,
+      "collection_s": 1.3971872029996888,
+      "wall_s": 196.095607368,
+      "wall_s_per_sim_s": 7.046542818333335,
+      "per_brain_wall_s_per_sim_s": 0.6405948016666668,
+      "gpu": "NVIDIA A10",
+      "blocks": 288,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 739211264,
+      "function_s": 201.389593134
+    },
+    "actual_runtime_estimate_usd": 0.07398829885528566,
+    "local_output": "camber-runs/cuda-circuit/fused-tour-1790395895654242000-129",
+    "completed_at": 1790396377.7586591,
+    "accounted_usd": 0.1771198057711522,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790397809.455723,
+    "billing_rows": [
+      {
+        "object_id": "ap-kcLotYcGMulvN3EYXN5LZA",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.07617290"
+      }
+    ],
+    "actual_metered_usd": 0.0761729
+  }
+]

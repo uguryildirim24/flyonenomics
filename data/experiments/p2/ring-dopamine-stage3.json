@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.3",
+  "name": "ring-dopamine-stage3",
+  "description": "Stage 3 ring-neuron dopamine probe: TuBu stripe injected on in every arm, wild type, CX_DAN driven at 50 Hz in every arm. A driven-vehicle comparator, two separated fractional transporter-inhibition levels (ScaleDat factors 0.8 and 0.2), a vehicle-against-vehicle replay check, an inhibit-high arm whose two applied ER terms replay the paired driven-vehicle trajectory, and two transporter-disabled arms (ScaleDat 0) that are a specificity check on the implementation. Paired, ten seeds.",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "comparison": "ablation",
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "visual_version": "v0.2",
+    "behaviour_version": "base-v0.2"
+  },
+  "layers": {
+    "background": true,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arms": [
+    {
+      "label": "vehicle",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "inhibit-low",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.8
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "inhibit-high",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.2
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "vehicle-clamped",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "inhibit-high-clamped",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.2
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "vehicle-dat-disabled",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "inhibit-high-dat-disabled",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.2
+          },
+          {
+            "type": "scale_dat",
+            "compartments": "all",
+            "factor": 0.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "CX_DAN",
+      "DAN",
+      "TuBu"
+    ],
+    "rates": [
+      "CX_DAN",
+      "TuBu",
+      "ER",
+      "EPG",
+      "dFB"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": false,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {
+    "stage": "ring-dopamine-stage3",
+    "form": "open-loop-tubu-injection",
+    "transporter_axis": "fractional transporter inhibition i is implemented as ScaleDat factor 1 - i; the primary axis is fractional transporter inhibition, not a methylphenidate dose",
+    "inhibit_low_fraction": 0.2,
+    "inhibit_high_fraction": 0.8,
+    "scale_dat_low": 0.8,
+    "scale_dat_high": 0.2,
+    "replay_arms": [
+      "vehicle-clamped",
+      "inhibit-high-clamped"
+    ],
+    "replay_source": "vehicle",
+    "replay_definition": "the two applied ER terms (the threshold term d_v and the input gain) on the 228 traced ER cells are replaced by the paired driven-vehicle per-chunk trajectory recorded in the same seed's vehicle arm, not by the dark constants; chemistry, occupancies and non-ER modulation stay live",
+    "declared_substrate": {
+      "item": 122,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "bg_policy": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "g_gaba_kc": 6.0,
+      "sigma_th_mv": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "records": [
+        {
+          "path": "validation/records/p2/rest-T3e-decision.json",
+          "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+        },
+        {
+          "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+          "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+        }
+      ]
+    }
+  }
+}

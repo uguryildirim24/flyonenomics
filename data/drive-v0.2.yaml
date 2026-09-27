@@ -1,0 +1,66 @@
+version: v0.2
+transmitter_rule:
+  blob_id: 29170ce99f3e8d3a626fee089789bf576bec806c
+  scope: brain
+scales:
+  g_gaba: 1.0
+  g_glu: 4.0
+  g_his: 1.0
+  g_gaba_kc: 6.0
+  unk: positive:1; negative:g_gaba
+  sha256: 9f7ad6bb0c93974297283f2e40e1e2ac8f18260f364843afed23b0cb1c6aea88
+background:
+  n_bg: 100
+  r_bg: 10.0
+  groups:
+    DAN:
+      size: 361
+      w_bg: 0.0
+    ER:
+      size: 278
+      w_bg: 0.0
+    KC:
+      size: 5177
+      w_bg: 0.0
+    ascending:
+      size: 2317
+      w_bg: 0.0
+    central:
+      size: 26568
+      w_bg: 0.0
+    descending:
+      size: 1299
+      w_bg: 0.0
+    endocrine:
+      size: 76
+      w_bg: 0.0
+    motor:
+      size: 106
+      w_bg: 0.0
+    optic:
+      size: 77529
+      w_bg: 0.0
+    sensory:
+      size: 16351
+      w_bg: 1.0
+    visual_centrifugal:
+      size: 524
+      w_bg: 0.0
+    visual_projection:
+      size: 8053
+      w_bg: 0.0
+threshold: null
+optic_exemption: false
+mechanisms: null
+provenance:
+  item: 122
+  item_ruling: sensory-only arm A at 1.0 mV is the Phase 2 resting substrate; rest search closed
+  declared_substrate: 1.0-4.0-0.0-False-100-1.0-kc-6.0-sens
+  arm_id: sens
+  records:
+    rest-T3e-decision:
+      path: validation/records/p2/rest-T3e-decision.json
+      sha256: 2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212
+    rest-T3e-freeze-partial:
+      path: validation/records/p2/rest-T3e-freeze-partial.json
+      sha256: c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439

@@ -1,0 +1,315 @@
+{
+  "declared_substrate": {
+    "arm_id": "sens",
+    "bg_policy": "sens",
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "engine_model": "lif",
+    "freeze": {
+      "F_max": 2.6187652193866677,
+      "KC_hz": 0.08885841220784238,
+      "a_min_hz": 20.0,
+      "bare_hz": 57.0,
+      "central_hz": 4.831751731406203,
+      "mn9_dark_max_hz": 4.7,
+      "reflex_mean_hz": 26.633333333333333,
+      "reflex_min_hz": 19.333333333333336,
+      "retention": 0.956140350877193,
+      "seeds": "11-20"
+    },
+    "g_gaba": 1.0,
+    "g_gaba_kc": 6.0,
+    "g_glu": 4.0,
+    "item": 122,
+    "n_bg": 100,
+    "optic_exemption": false,
+    "records": [
+      {
+        "path": "validation/records/p2/rest-T3e-decision.json",
+        "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+      },
+      {
+        "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+        "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+      }
+    ],
+    "screen": {
+      "F_max": 2.679567771889278,
+      "KC_hz": 0.08754104693838131,
+      "central_hz": 4.831463916491017,
+      "mn9_dark_max_hz": 2.9,
+      "passed": true
+    },
+    "sigma_th_mv": 0.0,
+    "w_bg_mv": 1.0
+  },
+  "engine_model": "lif",
+  "n_passing": 2,
+  "platform": "linux-aarch64",
+  "selected_r_vis_max_hz": 70.0,
+  "settle_s_by_run": [
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T023947.421118Z-5bdd9bcb",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T030705.592357Z-ff9d26be",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T033404.384022Z-7c7047a4",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T040108.668457Z-bd0823e2",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T042813.536470Z-cdd906fe",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T045511.536985Z-76b506a5",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    }
+  ],
+  "sigma_vis": 20.0,
+  "stage": "VT-cal",
+  "status": "failed",
+  "substrate_id": "rest:379cc4cc9030cdd1",
+  "table": [
+    {
+      "central_ci95": {
+        "LAL_neurons": [
+          -0.030469226081657252,
+          0.035648994515539156
+        ],
+        "TuBu": [
+          5.784444444444444,
+          5.8311111111111105
+        ],
+        "visual_projection": [
+          2.0696220870065896e-05,
+          0.0006001904052320081
+        ]
+      },
+      "central_input_carried": true,
+      "central_input_populations": [
+        "TuBu",
+        "visual_projection"
+      ],
+      "ci95": [
+        -3.166666666666668,
+        2.166666666666665
+      ],
+      "delta_interval_excludes_zero": false,
+      "mean_delta_steer_hz": -0.38888888888888956,
+      "r_vis_max_hz": 40.0,
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T023947.421118Z-5bdd9bcb",
+      "steering_carried": false
+    },
+    {
+      "central_ci95": {
+        "LAL_neurons": [
+          0.02071907373552695,
+          0.06550883607556368
+        ],
+        "TuBu": [
+          9.197777777777777,
+          9.435555555555556
+        ],
+        "visual_projection": [
+          -0.0001241773252204162,
+          0.00014487354609048556
+        ]
+      },
+      "central_input_carried": true,
+      "central_input_populations": [
+        "TuBu",
+        "LAL_neurons"
+      ],
+      "ci95": [
+        -2.5,
+        -0.5
+      ],
+      "delta_interval_excludes_zero": true,
+      "mean_delta_steer_hz": -1.666666666666667,
+      "r_vis_max_hz": 70.0,
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T030705.592357Z-ff9d26be",
+      "steering_carried": true
+    },
+    {
+      "central_ci95": {
+        "LAL_neurons": [
+          0.010664229128580116,
+          0.05514929920780043
+        ],
+        "TuBu": [
+          12.381111111111112,
+          12.481111111111113
+        ],
+        "visual_projection": [
+          -0.00045531685914152256,
+          0.000848545055672837
+        ]
+      },
+      "central_input_carried": true,
+      "central_input_populations": [
+        "TuBu",
+        "LAL_neurons"
+      ],
+      "ci95": [
+        -2.0000000000000018,
+        0.33333333333333215
+      ],
+      "delta_interval_excludes_zero": false,
+      "mean_delta_steer_hz": -0.5555555555555562,
+      "r_vis_max_hz": 100.0,
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T033404.384022Z-7c7047a4",
+      "steering_carried": false
+    },
+    {
+      "central_ci95": {
+        "LAL_neurons": [
+          0.0033516148689825,
+          0.07647775746496044
+        ],
+        "TuBu": [
+          16.57888888888889,
+          16.61
+        ],
+        "visual_projection": [
+          -0.00020696220870069018,
+          8.278488348027573e-05
+        ]
+      },
+      "central_input_carried": true,
+      "central_input_populations": [
+        "TuBu",
+        "LAL_neurons"
+      ],
+      "ci95": [
+        -7.166666666666667,
+        -1.166666666666667
+      ],
+      "delta_interval_excludes_zero": true,
+      "mean_delta_steer_hz": -3.611111111111111,
+      "r_vis_max_hz": 150.0,
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T040108.668457Z-bd0823e2",
+      "steering_carried": true
+    },
+    {
+      "central_ci95": {
+        "LAL_neurons": [
+          -0.063071297989031,
+          0.03046922608165803
+        ],
+        "TuBu": [
+          24.736666666666668,
+          24.925555555555558
+        ],
+        "visual_projection": [
+          -8.278488348027746e-05,
+          0.0007243677304524226
+        ]
+      },
+      "central_input_carried": true,
+      "central_input_populations": [
+        "TuBu"
+      ],
+      "ci95": [
+        -4.833333333333333,
+        1.833333333333334
+      ],
+      "delta_interval_excludes_zero": false,
+      "mean_delta_steer_hz": -1.2777777777777775,
+      "r_vis_max_hz": 280.0,
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T042813.536470Z-cdd906fe",
+      "steering_carried": false
+    }
+  ],
+  "ten_seed": {
+    "central_ci95": {
+      "LAL_neurons": [
+        -0.01822059719683129,
+        0.025868372943327212
+      ],
+      "TuBu": [
+        9.324330555555553,
+        9.423777777777776
+      ],
+      "visual_projection": [
+        -6.622790678422353e-05,
+        0.0002545635167018492
+      ]
+    },
+    "central_input_carried": true,
+    "central_input_populations": [
+      "TuBu"
+    ],
+    "ci95": [
+      -1.8000000000000003,
+      0.8833333333333335
+    ],
+    "delta_interval_excludes_zero": false,
+    "mean_delta_steer_hz": -0.6000000000000002,
+    "r_vis_max_hz": 70.0,
+    "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T045511.536985Z-76b506a5",
+    "steering_carried": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "class": "development",
+  "sub_tier": "T3a",
+  "engine_model": "lif+sfa",
+  "ranked": [],
+  "shortlist": [],
+  "failed_stage": "R-screen",
+  "closest_miss": {
+    "sub_tier": "T3a",
+    "engine_model": "lif+sfa",
+    "g_gaba": 1.0,
+    "g_glu": 4.0,
+    "setting": {
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    "M": 0.05,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "job_id": "27514",
+    "retention": 0.5321428571428571,
+    "difference_hz": 29.8,
+    "flags": [
+      "t2-b-unreachable"
+    ],
+    "w_bg": 0.85,
+    "pair_weights": [
+      0.85,
+      0.9
+    ],
+    "S": 2.9157495281472015,
+    "J": 92.53561636166792,
+    "screen_passed": false,
+    "violations": {
+      "F": 0.7158514447056676,
+      "b": 0.0,
+      "stability_ratio": 0.0,
+      "central": 0.0,
+      "DAN": 0.0,
+      "KC": 2.199898083441534,
+      "gradedness": 0.0
+    },
+    "candidate_id": "1.0-4.0-0.0-False-100-0.85-sfa-1.0-50.0-non_sensory",
+    "deepest": "T1"
+  },
+  "p2_partial_b": false,
+  "t1_units_evaluated": 17,
+  "n_screen_passers": 0,
+  "n_t2_admitted": 0
+}

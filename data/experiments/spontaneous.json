@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.2",
+  "name": "spontaneous",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "drive_version": "dev"
+  },
+  "layers": {
+    "background": true
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "spontaneous",
+          "duration_s": 20,
+          "label": "spontaneous",
+          "params": {
+            "input": {
+              "population": "TuBu",
+              "rate_hz": 50
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "mn9-threshold",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "shift_threshold",
+            "population": "MN9",
+            "delta_mv": 3
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "spontaneous",
+          "duration_s": 20,
+          "label": "spontaneous",
+          "params": {
+            "input": {
+              "population": "TuBu",
+              "rate_hz": 50
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "TuBu",
+      "MN9"
+    ],
+    "rates": [
+      "TuBu",
+      "MN9"
+    ],
+    "popcount": true,
+    "live": true
+  },
+  "meta": {"class": "development", "reason": "item 47 unqualified ratio-4 background drive"}
+}

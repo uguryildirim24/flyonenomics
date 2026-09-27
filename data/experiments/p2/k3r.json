@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.3",
+  "name": "k3r",
+  "description": "K3r photoreceptor K_steer grid. Pins base-v0.2 and visual-v0.2. Metadata after bias and sign.",
+  "seed": 20260912,
+  "seeds": [1, 2, 3, 4, 5],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "behaviour_version": "base-v0.2",
+    "visual_version": "v0.2"
+  },
+  "layers": {"background": true, "dopamine_A": true, "transporter_C": true, "dan_fast_synapses": "retain"},
+  "arms": [{"label": "wild-type", "genotype": {"named": "wild_type", "manipulations": []},
+    "protocol": [{"type": "probe", "assay": "buridan", "duration_s": 20, "label": "stripes-on",
+      "params": {"stripes": true, "encoder": "on", "inject_at": "photoreceptors", "initial_heading": "random"}}]}],
+  "record": {"spikes": ["steering_L", "steering_R"], "rates": ["steering_L", "steering_R"],
+    "arena": true, "popcount": true, "live": false},
+  "meta": {
+    "class": "development",
+    "purpose": "K3r Camber proposal then Mac finalists",
+    "k_grid": true,
+    "grid": {"K_steer": [1, 2, 4, 8, 16]},
+    "pending": "sign_steer, bias_hz and visual blob id after bias and 4.1r-sign"
+  }
+}

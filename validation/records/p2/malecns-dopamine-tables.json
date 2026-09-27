@@ -1,0 +1,1110 @@
+{
+  "adapter_policy": "male-cns-adapter-v3",
+  "calibration": {
+    "engine_run": false,
+    "null_loader_rule": "explicit null calibrated fields raise; there is no zero or FlyWire fallback",
+    "performed": false,
+    "unset_dopamine_paths": [
+      "R_c",
+      "alpha_c",
+      "S_c",
+      "mode",
+      "drive_blob_id",
+      "provenance.male_record"
+    ],
+    "unset_drive_paths": [
+      "scales.g_gaba",
+      "scales.g_glu",
+      "scales.g_gaba_kc",
+      "scales.sha256",
+      "background.groups.*.w_bg",
+      "threshold.*",
+      "optic_exemption",
+      "mechanisms",
+      "provenance.record"
+    ]
+  },
+  "class": "development",
+  "connectome_version": "male-cns:v1.0",
+  "cxdan": {
+    "candidates": 36,
+    "difference_from_flywire": "MaleCNS counts each released partner synapse by its own primary_post ROI; FlyWire weights aggregate partner pairs by the target cell's declared W row.",
+    "fractions": [
+      {
+        "fraction": 0.8879203200340271,
+        "root": 10568
+      },
+      {
+        "fraction": 0.0,
+        "root": 10910
+      },
+      {
+        "fraction": 0.9049627184867859,
+        "root": 11255
+      },
+      {
+        "fraction": 0.0,
+        "root": 11532
+      },
+      {
+        "fraction": 0.9486476182937622,
+        "root": 12333
+      },
+      {
+        "fraction": 0.014450516551733017,
+        "root": 12588
+      },
+      {
+        "fraction": 0.019734079018235207,
+        "root": 12644
+      },
+      {
+        "fraction": 0.7133094668388367,
+        "root": 12858
+      },
+      {
+        "fraction": 0.011987091042101383,
+        "root": 13068
+      },
+      {
+        "fraction": 0.9513306617736816,
+        "root": 15888
+      },
+      {
+        "fraction": 0.8095546960830688,
+        "root": 16430
+      },
+      {
+        "fraction": 0.9080612659454346,
+        "root": 17061
+      },
+      {
+        "fraction": 0.6409603357315063,
+        "root": 18156
+      },
+      {
+        "fraction": 0.8923872113227844,
+        "root": 21519
+      },
+      {
+        "fraction": 0.14133986830711365,
+        "root": 21671
+      },
+      {
+        "fraction": 0.11318181455135345,
+        "root": 22982
+      },
+      {
+        "fraction": 0.9384983777999878,
+        "root": 25529
+      },
+      {
+        "fraction": 0.9584888219833374,
+        "root": 35293
+      },
+      {
+        "fraction": 0.8953167796134949,
+        "root": 36423
+      },
+      {
+        "fraction": 0.635066568851471,
+        "root": 38706
+      },
+      {
+        "fraction": 0.9649323225021362,
+        "root": 43756
+      },
+      {
+        "fraction": 0.9680044651031494,
+        "root": 44903
+      },
+      {
+        "fraction": 0.8921698927879333,
+        "root": 45024
+      },
+      {
+        "fraction": 0.2926931083202362,
+        "root": 513354
+      },
+      {
+        "fraction": 0.6257004141807556,
+        "root": 515933
+      },
+      {
+        "fraction": 0.7188329100608826,
+        "root": 517512
+      },
+      {
+        "fraction": 0.6744905114173889,
+        "root": 519947
+      },
+      {
+        "fraction": 0.8696547150611877,
+        "root": 521584
+      },
+      {
+        "fraction": 0.014964329078793526,
+        "root": 522823
+      },
+      {
+        "fraction": 0.9668486714363098,
+        "root": 523775
+      },
+      {
+        "fraction": 0.8229590058326721,
+        "root": 523776
+      },
+      {
+        "fraction": 0.1273747831583023,
+        "root": 529419
+      },
+      {
+        "fraction": 0.8806089758872986,
+        "root": 533103
+      },
+      {
+        "fraction": 0.898982584476471,
+        "root": 536057
+      },
+      {
+        "fraction": 0.8280686140060425,
+        "root": 536208
+      },
+      {
+        "fraction": 0.8949240446090698,
+        "root": 539227
+      }
+    ],
+    "kept": 27
+  },
+  "drive_group_sizes": {
+    "flywire_v783": {
+      "DAN": 361,
+      "ER": 278,
+      "KC": 5177,
+      "ascending": 2317,
+      "central": 26568,
+      "descending": 1299,
+      "endocrine": 76,
+      "motor": 106,
+      "optic": 77529,
+      "sensory": 16351,
+      "visual_centrifugal": 524,
+      "visual_projection": 8053
+    },
+    "male_cns": {
+      "DAN": 367,
+      "ER": 282,
+      "KC": 4064,
+      "ascending": 1849,
+      "central": 39533,
+      "descending": 1314,
+      "endocrine": 87,
+      "motor": 887,
+      "optic": 89353,
+      "sensory": 15016,
+      "visual_centrifugal": 562,
+      "visual_projection": 9203
+    }
+  },
+  "drive_superclass_translation": [
+    {
+      "cells": 1841,
+      "conceptual_group": "ascending",
+      "male_super_class": "ascending_neuron"
+    },
+    {
+      "cells": 8,
+      "conceptual_group": "ascending",
+      "male_super_class": "efferent_ascending"
+    },
+    {
+      "cells": 1310,
+      "conceptual_group": "descending",
+      "male_super_class": "descending_neuron"
+    },
+    {
+      "cells": 4,
+      "conceptual_group": "descending",
+      "male_super_class": "efferent_descending"
+    },
+    {
+      "cells": 31280,
+      "conceptual_group": "central",
+      "male_super_class": "cb_intrinsic"
+    },
+    {
+      "cells": 12966,
+      "conceptual_group": "central",
+      "male_super_class": "vnc_intrinsic"
+    },
+    {
+      "cells": 89353,
+      "conceptual_group": "optic",
+      "male_super_class": "ol_intrinsic"
+    },
+    {
+      "cells": 65,
+      "conceptual_group": "endocrine",
+      "male_super_class": "cb_endocrine"
+    },
+    {
+      "cells": 22,
+      "conceptual_group": "endocrine",
+      "male_super_class": "vnc_endocrine"
+    },
+    {
+      "cells": 106,
+      "conceptual_group": "motor",
+      "male_super_class": "cb_motor"
+    },
+    {
+      "cells": 699,
+      "conceptual_group": "motor",
+      "male_super_class": "vnc_motor"
+    },
+    {
+      "cells": 4,
+      "conceptual_group": "motor",
+      "male_super_class": "cb_efferent"
+    },
+    {
+      "cells": 78,
+      "conceptual_group": "motor",
+      "male_super_class": "vnc_efferent"
+    },
+    {
+      "cells": 4756,
+      "conceptual_group": "sensory",
+      "male_super_class": "cb_sensory"
+    },
+    {
+      "cells": 4114,
+      "conceptual_group": "sensory",
+      "male_super_class": "ol_sensory"
+    },
+    {
+      "cells": 5605,
+      "conceptual_group": "sensory",
+      "male_super_class": "vnc_sensory"
+    },
+    {
+      "cells": 528,
+      "conceptual_group": "sensory",
+      "male_super_class": "sensory_ascending"
+    },
+    {
+      "cells": 1,
+      "conceptual_group": "sensory",
+      "male_super_class": "sensory_ascending_tbc"
+    },
+    {
+      "cells": 12,
+      "conceptual_group": "sensory",
+      "male_super_class": "sensory_descending"
+    },
+    {
+      "cells": 562,
+      "conceptual_group": "visual_centrifugal",
+      "male_super_class": "visual_centrifugal"
+    },
+    {
+      "cells": 9201,
+      "conceptual_group": "visual_projection",
+      "male_super_class": "visual_projection"
+    },
+    {
+      "cells": 2,
+      "conceptual_group": "visual_projection",
+      "male_super_class": "visual_projection_tbc"
+    }
+  ],
+  "files": {
+    "compartments-male-cns-v1.0.yaml": "de54b5b7723062a7e5541177ffc61c68a0148a9ac63004793683c54958a27521",
+    "dopamine-male-cns-v1.0.yaml": "028d51dae28cb4a7836e645b1372ed11527db158ed4931202cf953d05f330d02",
+    "drive-male-cns-v1.0.yaml": "ad1883a6b56ce06c7159b17a1979253ceb09abbba65c30031bea3b4bf41ecef4",
+    "receptors-male-cns-v1.0.yaml": "50a273b37d521777aa8e18bb5107cf8a321ab00836a82f229f223d0da70d7f61",
+    "transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+  },
+  "flywire_unchanged": {
+    "default_and_v0.2_registry_hashes_identical": true,
+    "engine_array_hashes": {
+      "630": {
+        "postsynaptic_indices": "54a3ce131f7268bee223408bba87e76a14ed8f23e6784a9ff880c6715787de1d",
+        "presynaptic_indices": "50e4a0ca5767dd429512d1cc7a6be7786aa907649cc866e4c0056323d3c9d750",
+        "root_ids": "a659694cfe091ac64f31cdbeff270a914ee27168b06f7b4068d2781c4beea0e6",
+        "signed_weights": "790d7925a908265bda5fca8357af6a077d3b39d4b9386e76f8aa85a4c759869b"
+      },
+      "783": {
+        "postsynaptic_indices": "302786e9dacecf6f04683f7e46a6c3aa223b136b42b44880ccae0f0487dcd5f3",
+        "presynaptic_indices": "8ec65c761057a2b000dcc246d6dc94a586b31596b8331c1db1ada61691d67f17",
+        "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b",
+        "signed_weights": "8ddd4ff45983bd9855ffa01ad5099ccdbd138bc9eb8d6cc2cb2433d01ca18a49"
+      }
+    },
+    "registry_hashes": {
+      "M": "d7b04ce82828e6bff3d2664b367baa62518ddd736e989aaf19383c3c22e07b5e",
+      "W": "f775933b8ca9638087a5f1552a9e6c828b195638be422a22a65747f628934259",
+      "receptors": "071f4c28fef94537abf14b4121194786c9f8059fdb116b3858dd98d3dfa08a4c",
+      "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b"
+    },
+    "transmitter_classes_sha256": "097100ec1abdc1a57b64da8e782ba4fcfef2dc85acf58906fd5cff023066698e"
+  },
+  "limitations": [
+    "No sugar-labelled MaleCNS input exists, so this does not restore the reflex check.",
+    "No engine was run and no resting, visual, steering, or behavioural outcome was inspected.",
+    "The eye assignment remains partial and inferred; the fly does not see."
+  ],
+  "record": "malecns-dopamine-tables",
+  "release": {
+    "attribution": "MaleCNS v1.0, Janelia Research Campus, Google Research and University of Cambridge; Berg et al., Sexual dimorphism in the complete Drosophila male central nervous system connectome, Cell (2026), https://doi.org/10.1016/j.cell.2026.08.015",
+    "date": "2026-06-08",
+    "license": "CC BY 4.0",
+    "source_sha256": {
+      "body-annotations-male-cns-v1.0-minconf-0.5.feather": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "body-neurotransmitters-male-cns-v1.0.feather": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621",
+      "body-stats-male-cns-v1.0-minconf-0.5.feather": "ca5dc83a26382ae70c8d8f42fc09ce2dbc1af7c03f3a001a1936b5e142540647",
+      "connectome-weights-male-cns-v1.0-minconf-0.5.feather": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1",
+      "syn-partners-male-cns-v1.0-minconf-0.5.feather": "959d8ef4173b35382a3e6acfaf5167c795b6d10b877572d146af04e1b487bc07",
+      "syn-points-male-cns-v1.0-minconf-0.5.feather": "c16b1b63186c4d4f28939decea7444451f0f5f6f7ef1bb5dab5b2a7058f8f284",
+      "tbar-neurotransmitters-male-cns-v1.0.feather": "bade84c9eab431dd537ff644aaf3d203d639a819c739ecedb338e7d109064f4d"
+    }
+  },
+  "rules_frozen_before_output": {
+    "NO": "keep NO_L/NO_R; assign primary_post NO by postsynaptic canonical side (somaSide then rootSide), split missing side 0.5/0.5; include every NO row in the filter numerator",
+    "calibration": "all graph-selected drive and dopamine values are null until port step 7",
+    "classification": "validation/records/p2/malecns-dopamine-classification.json at Part A commit f1f723fd2bb1c017c440637b379cacfd7f17eb76",
+    "cxdan_filter": "candidate central-complex primary_post synapses / every outgoing syn-partners row >= 0.2",
+    "drive_groups": "translate MaleCNS regional superclasses into the FlyWire drive's 12 conceptual groups before DAN/CX_DAN, KC, and ER overrides; every sensory-labelled superclass stays sensory",
+    "mb_kc_types": "Aso et al. 2014 and Li et al. 2020 hemibrain-style names; same equal-split rules as FlyWire",
+    "receptors": "same cited/placeholder densities and precedence, expanded on MaleCNS memberships",
+    "transmitters": "same class order: photoreceptor histamine, curated/ground-truth label, then released presynaptic sign and consensus label"
+  },
+  "structural_comparison": {
+    "flywire_v783": {
+      "DA_exposed_cells": 6138,
+      "M_innervation": {
+        "nonzero": 465,
+        "shape": [
+          37,
+          138639
+        ]
+      },
+      "W_exposure": {
+        "nonzero": 29588,
+        "shape": [
+          138639,
+          37
+        ]
+      },
+      "compartment_inventory": [
+        {
+          "exposure_nonzero_cells": 1229,
+          "innervating_dan_cells": 4,
+          "name": "gamma1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 1231,
+          "innervating_dan_cells": 2,
+          "name": "gamma2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 1234,
+          "innervating_dan_cells": 11,
+          "name": "gamma3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 1254,
+          "innervating_dan_cells": 32,
+          "name": "gamma4_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 1245,
+          "innervating_dan_cells": 21,
+          "name": "gamma5_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 921,
+          "innervating_dan_cells": 8,
+          "name": "alpha1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 917,
+          "innervating_dan_cells": 2,
+          "name": "alpha2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 917,
+          "innervating_dan_cells": 2,
+          "name": "alpha3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 924,
+          "innervating_dan_cells": 12,
+          "name": "beta1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 934,
+          "innervating_dan_cells": 21,
+          "name": "beta2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 460,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 453,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 456,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 470,
+          "innervating_dan_cells": 14,
+          "name": "beta_prime1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 493,
+          "innervating_dan_cells": 38,
+          "name": "beta_prime2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 1281,
+          "innervating_dan_cells": 4,
+          "name": "gamma1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 1283,
+          "innervating_dan_cells": 2,
+          "name": "gamma2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 1287,
+          "innervating_dan_cells": 12,
+          "name": "gamma3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 1306,
+          "innervating_dan_cells": 32,
+          "name": "gamma4_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 1296,
+          "innervating_dan_cells": 20,
+          "name": "gamma5_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 870,
+          "innervating_dan_cells": 8,
+          "name": "alpha1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 866,
+          "innervating_dan_cells": 2,
+          "name": "alpha2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 866,
+          "innervating_dan_cells": 2,
+          "name": "alpha3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 873,
+          "innervating_dan_cells": 12,
+          "name": "beta1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 883,
+          "innervating_dan_cells": 21,
+          "name": "beta2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 475,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 469,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 472,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 487,
+          "innervating_dan_cells": 14,
+          "name": "beta_prime1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 510,
+          "innervating_dan_cells": 39,
+          "name": "beta_prime2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 338,
+          "innervating_dan_cells": 9,
+          "name": "EB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 145,
+          "innervating_dan_cells": 11,
+          "name": "PB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 2112,
+          "innervating_dan_cells": 30,
+          "name": "FB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 23,
+          "innervating_dan_cells": 15,
+          "name": "NO_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 24,
+          "innervating_dan_cells": 16,
+          "name": "NO_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 296,
+          "innervating_dan_cells": 19,
+          "name": "LAL_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 288,
+          "innervating_dan_cells": 18,
+          "name": "LAL_R",
+          "side": "right"
+        }
+      ],
+      "compartments": 37,
+      "exposed_cells": 8725,
+      "hashes": {
+        "M": "d7b04ce82828e6bff3d2664b367baa62518ddd736e989aaf19383c3c22e07b5e",
+        "W": "f775933b8ca9638087a5f1552a9e6c828b195638be422a22a65747f628934259",
+        "receptors": "071f4c28fef94537abf14b4121194786c9f8059fdb116b3858dd98d3dfa08a4c",
+        "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b"
+      },
+      "neurons": 138639,
+      "provenance": {
+        "annotation_commit": "ebd66db2596fcc39c6950fb54ea3efa00f7fe8a0",
+        "annotation_sha256": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6",
+        "compartments_version": "v0.1",
+        "connectome_version": "783",
+        "cxdan_threshold": 0.2,
+        "receptor_map_version": "v0.1",
+        "registry_version": "populations-v0.2+annotations-v2.1.0+783",
+        "unmapped_fraction": 0.9370667705335439,
+        "unmapped_neurons": 129914
+      },
+      "receptor_nonzero_cells": {
+        "any": 6152,
+        "r1": 6122,
+        "r2": 5999,
+        "rq": 5177
+      }
+    },
+    "male_cns": {
+      "DA_exposed_cells": 5085,
+      "M_innervation": {
+        "nonzero": 452,
+        "shape": [
+          37,
+          162517
+        ]
+      },
+      "W_exposure": {
+        "nonzero": 24454,
+        "shape": [
+          162517,
+          37
+        ]
+      },
+      "compartment_inventory": [
+        {
+          "exposure_nonzero_cells": 803,
+          "innervating_dan_cells": 4,
+          "name": "gamma1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 806,
+          "innervating_dan_cells": 2,
+          "name": "gamma2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 808,
+          "innervating_dan_cells": 11,
+          "name": "gamma3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 828,
+          "innervating_dan_cells": 32,
+          "name": "gamma4_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 822,
+          "innervating_dan_cells": 24,
+          "name": "gamma5_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 895,
+          "innervating_dan_cells": 8,
+          "name": "alpha1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 891,
+          "innervating_dan_cells": 2,
+          "name": "alpha2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 891,
+          "innervating_dan_cells": 2,
+          "name": "alpha3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 897,
+          "innervating_dan_cells": 11,
+          "name": "beta1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 910,
+          "innervating_dan_cells": 23,
+          "name": "beta2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 349,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 343,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 346,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime3_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 363,
+          "innervating_dan_cells": 17,
+          "name": "beta_prime1_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 385,
+          "innervating_dan_cells": 40,
+          "name": "beta_prime2_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 773,
+          "innervating_dan_cells": 4,
+          "name": "gamma1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 776,
+          "innervating_dan_cells": 2,
+          "name": "gamma2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 779,
+          "innervating_dan_cells": 11,
+          "name": "gamma3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 799,
+          "innervating_dan_cells": 32,
+          "name": "gamma4_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 793,
+          "innervating_dan_cells": 24,
+          "name": "gamma5_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 934,
+          "innervating_dan_cells": 7,
+          "name": "alpha1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 931,
+          "innervating_dan_cells": 2,
+          "name": "alpha2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 931,
+          "innervating_dan_cells": 2,
+          "name": "alpha3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 939,
+          "innervating_dan_cells": 13,
+          "name": "beta1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 948,
+          "innervating_dan_cells": 21,
+          "name": "beta2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 364,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 358,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 361,
+          "innervating_dan_cells": 2,
+          "name": "alpha_prime3_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 379,
+          "innervating_dan_cells": 17,
+          "name": "beta_prime1_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 401,
+          "innervating_dan_cells": 41,
+          "name": "beta_prime2_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 364,
+          "innervating_dan_cells": 10,
+          "name": "EB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 139,
+          "innervating_dan_cells": 0,
+          "name": "PB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 2412,
+          "innervating_dan_cells": 23,
+          "name": "FB",
+          "side": "center"
+        },
+        {
+          "exposure_nonzero_cells": 22,
+          "innervating_dan_cells": 14,
+          "name": "NO_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 22,
+          "innervating_dan_cells": 14,
+          "name": "NO_R",
+          "side": "right"
+        },
+        {
+          "exposure_nonzero_cells": 347,
+          "innervating_dan_cells": 14,
+          "name": "LAL_L",
+          "side": "left"
+        },
+        {
+          "exposure_nonzero_cells": 345,
+          "innervating_dan_cells": 13,
+          "name": "LAL_R",
+          "side": "right"
+        }
+      ],
+      "compartments": 37,
+      "exposed_cells": 8074,
+      "hashes": {
+        "M": "95a20a60b358f57c3b206e091482e2b3ed41122916700538ce87f8bb43b62191",
+        "W": "92dfe33969b0bacce7196731b996f4146b61e2ce340e481740aa524daa2e7414",
+        "receptors": "4c41c55b653d33bcf972423f440419a452c67e6a8d96200a1e2c5afb5c96ba36",
+        "root_ids": "88b9d91aa2593b2f019567dea5ccbe1a900d7daf73c8e1a9308773a305928aa9"
+      },
+      "neurons": 162517,
+      "provenance": {
+        "annotation_commit": null,
+        "annotation_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+        "compartments_version": "male-cns-v1.0",
+        "connectome_version": "male-cns:v1.0",
+        "cxdan_rule": "per-synapse primary_post ROI; NO split by postsynaptic canonical side",
+        "cxdan_threshold": 0.2,
+        "dataset_release": "MaleCNS v1.0 (2026-06-08)",
+        "receptor_map_version": "male-cns-v1.0",
+        "registry_version": "populations-male-cns-v1.0+annotations-male-cns:v1.0+male-cns:v1.0",
+        "unmapped_fraction": 0.9503190435462137,
+        "unmapped_neurons": 154443
+      },
+      "receptor_nonzero_cells": {
+        "any": 5102,
+        "r1": 5075,
+        "r2": 4950,
+        "rq": 4064
+      }
+    }
+  },
+  "transmitters": {
+    "flywire_v783": {
+      "class_counts": {
+        "ACh": 85371,
+        "GABA": 16150,
+        "Glu": 22792,
+        "His": 10587,
+        "mod": 1992,
+        "unk": 1747
+      },
+      "classes_sha256": "097100ec1abdc1a57b64da8e782ba4fcfef2dc85acf58906fd5cff023066698e",
+      "mixed_sign_neurons": [],
+      "n_engine": 138639,
+      "s_pq_vs_top_nt_n": 6024
+    },
+    "male_cns": {
+      "class_counts": {
+        "ACh": 102576,
+        "GABA": 21868,
+        "Glu": 29104,
+        "His": 4028,
+        "mod": 541,
+        "unk": 4400
+      },
+      "classes_sha256": "4757ee3b545b06851f590fe965b7cefbbb12e67a35b0b7657cf210e80e893bde",
+      "engine_edges_zero_signed": 0,
+      "mixed_sign_neurons": [],
+      "n_engine": 162517,
+      "no_output_class_counts": {
+        "ACh": 153,
+        "GABA": 2,
+        "Glu": 29,
+        "His": 26,
+        "mod": 0,
+        "unk": 844
+      },
+      "output_bearing_class_counts": {
+        "ACh": 102423,
+        "GABA": 21866,
+        "Glu": 29075,
+        "His": 4002,
+        "mod": 541,
+        "unk": 3556
+      },
+      "s_pq_vs_top_nt_n": 0,
+      "unknown_consensus_sign_derivation": {
+        "connections_changed_from_superseded_pair_rule": 89519,
+        "neurons_mixed_under_superseded_pair_rule": 2022,
+        "unknown_connections": 560785,
+        "unknown_consensus_neurons": 2529,
+        "unknown_neurons_negative": 769,
+        "unknown_neurons_positive": 1685,
+        "unknown_neurons_without_tbars": 75,
+        "unknown_partner_rows": 1959229,
+        "unknown_tbar_sites": 866912
+      },
+      "unknown_definition": "class unk means no curated classical/modulatory assignment and no named class under the released presynaptic sign; it does not mean an unsigned engine edge"
+    }
+  },
+  "unplaced_type_effects": {
+    "DAN": [
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL107"
+      },
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL108"
+      },
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL201"
+      },
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL202"
+      },
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL203"
+      },
+      {
+        "cells": 2,
+        "effect": "all-zero M columns; the cited anatomy is outside the 30 represented MB lobes",
+        "type": "PPL204"
+      }
+    ],
+    "MBON25-like": {
+      "cells": 4,
+      "placed_by_exact_flywire_type": 3,
+      "placed_roots": [
+        110448,
+        160320,
+        556300
+      ],
+      "rule": "when source type is not a declared key, use an exact released flywireType that is a declared Aso/Li key",
+      "unplaced_cells": 1,
+      "unplaced_roots": [
+        76585
+      ]
+    },
+    "broad_KC": {
+      "cells": 2,
+      "effect_if_a_lobe_were_known": {
+        "additional_W_nonzeros": 10,
+        "additional_exposed_cells": 2
+      },
+      "flywire_type_values": [],
+      "released_roi_evidence": {
+        "rows": [
+          {
+            "lobe_roi_present": false,
+            "roi_counts": {
+              "PostSyn:CA(R):<unspecified>": 174,
+              "PostSyn:CentralBrain-unspecified:<unspecified>": 7,
+              "PreSyn:CA(R):<unspecified>": 12
+            },
+            "root": 109321
+          },
+          {
+            "lobe_roi_present": false,
+            "roi_counts": {
+              "PostSyn:CA(L):<unspecified>": 140,
+              "PostSyn:CentralBrain-unspecified:<unspecified>": 14,
+              "PreSyn:CA(L):<unspecified>": 10
+            },
+            "root": 545375
+          }
+        ],
+        "source": "syn-points-male-cns-v1.0-minconf-0.5.feather"
+      },
+      "roots": [
+        109321,
+        545375
+      ],
+      "subclass_values": []
+    },
+    "matrix_gap": {
+      "KC_population_male_minus_flywire": -1113,
+      "W_nonzeros_male_minus_flywire": -5134,
+      "broad_KC_explains_gap": false,
+      "exposed_cells_male_minus_flywire": -651
+    }
+  },
+  "unplaced_types": {
+    "DAN": [
+      {
+        "hemibrain_type": "PPL107",
+        "reason": "No MB lobe innervation; SMP/CRE/SIP (FlyWire cell-type explorer)."
+      },
+      {
+        "hemibrain_type": "PPL108",
+        "reason": "No MB lobe innervation; SMP/CRE/SIP (FlyWire cell-type explorer)."
+      },
+      {
+        "hemibrain_type": "PPL201",
+        "reason": "Innervates the calyx, LH and SLP, not the lobes (Mao and Davis 2009); no calyx compartment in Phase 1."
+      },
+      {
+        "hemibrain_type": "PPL202",
+        "reason": "PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao and Davis 2009)."
+      },
+      {
+        "hemibrain_type": "PPL203",
+        "reason": "PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao and Davis 2009)."
+      },
+      {
+        "hemibrain_type": "PPL204",
+        "reason": "PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao and Davis 2009)."
+      }
+    ],
+    "KC": [
+      {
+        "hemibrain_type": "KC",
+        "reason": "Broad MaleCNS type does not identify gamma, alpha/beta, or alpha-prime/beta-prime lobes."
+      }
+    ],
+    "MBON": [
+      {
+        "hemibrain_type": "MBON25-like",
+        "reason": "One of four cells has no exact released flywireType Aso/Li key and remains unplaced; the other three carry MBON25,MBON34 and use that declared key."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1348 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "stage": "T0",
+  "engine_model": "lif+cbi",
+  "rho_mech": 1.2336139268858282,
+  "q_plan": 27.0,
+  "evaluation_commit": "27b675148c1a12554a26ba21597d99095eac7527",
+  "evaluation_platform": "linux-x86_64",
+  "code_scope": "git:8272131f6891160a68efe6daf9ec7f1beba523d450bbbbe98e00bbad7984ebaf",
+  "plan": "validation/records/p2/rest-T3c-plan.json",
+  "plan_file_sha256": "55410d75e6f198344510f3ed2a72e10bdafd76fc17bd7aedffa4dff6b4e085a6",
+  "plan_canonical_sha256": "f207018d9cceb929b39b7fd9d323654c5c159c3e205f2f15a77a77cf79c3560c",
+  "collect": "collect-t0-packed",
+  "backend": "ibm-vpc",
+  "jobs": [
+    "t3c-t0-00-20260918T001123Z"
+  ],
+  "t0_brain_s": 2760.0,
+  "n_units": 45,
+  "n_search_units": 45,
+  "n_baseline": 0,
+  "n_passers": 0,
+  "t2_b_unreachable": 45,
+  "t2_b_unreachable_passers": 0,
+  "bare_mismatch": 0,
+  "grid_edge": 0,
+  "cbi_stiff": 45,
+  "global_bare_mean": 56.0,
+  "job_bare_means": [
+    56.0
+  ],
+  "median_wall_per_brain_s": 42.63996374215,
+  "planned_worker_s_per_brain_s": 61.680696344291405,
+  "measured_rate_replaces_plan": false,
+  "cap_projection_t0_engine_hours": 115.83634773457926,
+  "cap_projection_admitted_engine_hours": 115.83634773457926,
+  "ibm": {
+    "instance_name": "flyo-03",
+    "profile": "cx2-64x128",
+    "n_workers": 36,
+    "wall_s": 5087,
+    "n_ndjson": 46,
+    "exit_code": 0,
+    "tree": "lane/wp25b",
+    "tree_sha": "9219adf",
+    "pulled_to": "camber-runs/wp24/t3c-t0-00",
+    "list_usd": 3.1087
+  },
+  "admission": {
+    "n_admitted": 0,
+    "n_excluded": 0,
+    "failed_stage": null,
+    "reason": "0 T0 passers; all 45 units cbi-stiff",
+    "admitted": [],
+    "excluded": []
+  },
+  "closest_t0": {
+    "sub_tier": "T3c",
+    "engine_model": "lif+cbi",
+    "g_gaba": 1.0,
+    "g_glu": 1.0,
+    "setting": {
+      "E_inh_mv": -72.0,
+      "scope": "all"
+    },
+    "M": 0.05,
+    "baseline": false,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "difference_hz": 34.1,
+    "retention": 0.6089285714285715,
+    "t0_passed": false,
+    "job_bare_mean": 56.0,
+    "global_bare_mean": 56.0,
+    "job_id": "t3c-t0-00-20260918T001123Z",
+    "mn9_a_sfa_mv": null,
+    "h_max": 19.652304217599447,
+    "flags": [
+      "t2-b-unreachable",
+      "cbi-stiff"
+    ],
+    "seeds": 10
+  },
+  "units": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 34.1,
+      "retention": 0.6089285714285715,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 19.652304217599447,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 19.3,
+      "retention": 0.34464285714285714,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 35.85445666088309,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 6.2,
+      "retention": 0.11071428571428572,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 63.930283236376205,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 25.0,
+      "retention": 0.44642857142857145,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 25.4669527696992,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 13.5,
+      "retention": 0.24107142857142858,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 49.39561522817388,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 6.2,
+      "retention": 0.11071428571428572,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 92.29380512190804,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 21.3,
+      "retention": 0.3803571428571429,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 38.42641222839434,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 11.2,
+      "retention": 0.19999999999999998,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 76.81327297183135,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 4.4,
+      "retention": 0.07857142857142858,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 138.69409568766355,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 17.5,
+      "retention": 0.3125,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 75.0597743510574,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 7.5,
+      "retention": 0.13392857142857142,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 123.24430227614002,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.9,
+      "retention": 0.05178571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 256.52648256415154,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 4.6,
+      "retention": 0.08214285714285714,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 27.547566219291088,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.1,
+      "retention": 0.0375,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 47.80212114624314,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.7,
+      "retention": 0.012499999999999999,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 87.3942721591747,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 3.6,
+      "retention": 0.0642857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 28.605562715262206,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.5,
+      "retention": 0.026785714285714284,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 52.81063369404366,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 90.74738373634658,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.4,
+      "retention": 0.04285714285714286,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 36.7428842422786,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.3,
+      "retention": 0.023214285714285715,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 75.84857642490215,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 112.59285599688181,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.2,
+      "retention": 0.03928571428571429,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 69.41117932160196,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.5,
+      "retention": 0.026785714285714284,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 134.0436692788588,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.7,
+      "retention": 0.012499999999999999,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 223.91453592146505,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.7,
+      "retention": 0.012499999999999999,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 35.76953212450076,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 62.512768568957746,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 111.95871136986692,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.6,
+      "retention": 0.010714285714285714,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 34.25174040148502,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 69.12853824830223,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 119.88640426920418,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 40.29607682934194,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 66.3759980007486,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 113.14658362314132,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 65.93493631813428,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 109.82529648057701,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 208.2342522464217,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 43.86607211600581,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 82.24443505434039,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 125.58465375480287,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 70.04755217563972,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 110.56187589806089,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 166.6079168410698,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 48.47877643547211,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 40.85054204012329,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": 76.93357501715252,
+      "flags": [
+        "t2-b-unreachable",
+        "cbi-stiff"
+      ],
+      "seeds": 10
+    }
+  ]
+}

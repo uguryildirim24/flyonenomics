@@ -1,0 +1,253 @@
+{
+  "arms": {
+    "mn9-threshold": {
+      "per_seed": [
+        {
+          "seed": 1,
+          "probe-0.sugar_GRN_R.mean_rate_hz": 150.76190476190476,
+          "probe-0.MN9.mean_rate_hz": 73.0,
+          "probe-0.popcount.mean_per_1ms": 13.671,
+          "probe-0.popcount.max_per_1ms": 35,
+          "probe-1.sugar_GRN_R.mean_rate_hz": 79.80952380952381,
+          "probe-1.MN9.mean_rate_hz": 47.0,
+          "probe-1.popcount.mean_per_1ms": 7.987,
+          "probe-1.popcount.max_per_1ms": 22
+        }
+      ],
+      "summary": {
+        "probe-0.MN9.mean_rate_hz": {
+          "mean": 73.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.popcount.max_per_1ms": {
+          "mean": 35.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.popcount.mean_per_1ms": {
+          "mean": 13.671,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.sugar_GRN_R.mean_rate_hz": {
+          "mean": 150.76190476190476,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.MN9.mean_rate_hz": {
+          "mean": 47.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.popcount.max_per_1ms": {
+          "mean": 22.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.popcount.mean_per_1ms": {
+          "mean": 7.987,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.sugar_GRN_R.mean_rate_hz": {
+          "mean": 79.80952380952381,
+          "sd": 0.0,
+          "n": 1
+        }
+      }
+    },
+    "wild-type": {
+      "per_seed": [
+        {
+          "seed": 1,
+          "probe-0.sugar_GRN_R.mean_rate_hz": 148.76190476190476,
+          "probe-0.MN9.mean_rate_hz": 79.0,
+          "probe-0.popcount.mean_per_1ms": 13.938,
+          "probe-0.popcount.max_per_1ms": 33,
+          "probe-1.sugar_GRN_R.mean_rate_hz": 80.38095238095238,
+          "probe-1.MN9.mean_rate_hz": 58.0,
+          "probe-1.popcount.mean_per_1ms": 7.946,
+          "probe-1.popcount.max_per_1ms": 28
+        }
+      ],
+      "summary": {
+        "probe-0.MN9.mean_rate_hz": {
+          "mean": 79.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.popcount.max_per_1ms": {
+          "mean": 33.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.popcount.mean_per_1ms": {
+          "mean": 13.938,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-0.sugar_GRN_R.mean_rate_hz": {
+          "mean": 148.76190476190476,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.MN9.mean_rate_hz": {
+          "mean": 58.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.popcount.max_per_1ms": {
+          "mean": 28.0,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.popcount.mean_per_1ms": {
+          "mean": 7.946,
+          "sd": 0.0,
+          "n": 1
+        },
+        "probe-1.sugar_GRN_R.mean_rate_hz": {
+          "mean": 80.38095238095238,
+          "sd": 0.0,
+          "n": 1
+        }
+      }
+    }
+  },
+  "paired_differences": {
+    "wild-type-minus-mn9-threshold": {
+      "probe-0.MN9.mean_rate_hz": {
+        "mean": 6.0,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          6.0
+        ],
+        "ci95": [
+          6.0,
+          6.0
+        ]
+      },
+      "probe-0.popcount.max_per_1ms": {
+        "mean": -2.0,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          -2
+        ],
+        "ci95": [
+          -2.0,
+          -2.0
+        ]
+      },
+      "probe-0.popcount.mean_per_1ms": {
+        "mean": 0.26700000000000124,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          0.26700000000000124
+        ],
+        "ci95": [
+          0.26700000000000124,
+          0.26700000000000124
+        ]
+      },
+      "probe-0.sugar_GRN_R.mean_rate_hz": {
+        "mean": -2.0,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          -2.0
+        ],
+        "ci95": [
+          -2.0,
+          -2.0
+        ]
+      },
+      "probe-1.MN9.mean_rate_hz": {
+        "mean": 11.0,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          11.0
+        ],
+        "ci95": [
+          11.0,
+          11.0
+        ]
+      },
+      "probe-1.popcount.max_per_1ms": {
+        "mean": 6.0,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          6
+        ],
+        "ci95": [
+          6.0,
+          6.0
+        ]
+      },
+      "probe-1.popcount.mean_per_1ms": {
+        "mean": -0.04100000000000037,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          -0.04100000000000037
+        ],
+        "ci95": [
+          -0.04100000000000037,
+          -0.04100000000000037
+        ]
+      },
+      "probe-1.sugar_GRN_R.mean_rate_hz": {
+        "mean": 0.5714285714285694,
+        "sd": 0.0,
+        "n": 1,
+        "seeds": [
+          1
+        ],
+        "per_seed": [
+          0.5714285714285694
+        ],
+        "ci95": [
+          0.5714285714285694,
+          0.5714285714285694
+        ]
+      }
+    }
+  },
+  "free_parameters": {
+    "lif.w_syn": 0.275,
+    "pk.kappa": 0.01,
+    "lif.g_inh": 1.0
+  },
+  "calibration_limits": {
+    "phasic_release": "alpha_max placeholder; bare K2 has zero tonic DAN rate",
+    "da.alpha_max": 0.1,
+    "alpha_unit": "\u00b5M per weighted DAN spike",
+    "background_targets": "deferred on the canonical bare substrate (item 47)"
+  }
+}

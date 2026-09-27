@@ -1,0 +1,42 @@
+{
+  "base_commit": "7fd1337c785a64c51b52179f2adf6e4402625983",
+  "checked_commit": "d73d2f04719a4e88268c8a197eab227f14786045",
+  "engine_arrays": {
+    "630": {
+      "postsynaptic_indices": "54a3ce131f7268bee223408bba87e76a14ed8f23e6784a9ff880c6715787de1d",
+      "presynaptic_indices": "50e4a0ca5767dd429512d1cc7a6be7786aa907649cc866e4c0056323d3c9d750",
+      "root_ids": "a659694cfe091ac64f31cdbeff270a914ee27168b06f7b4068d2781c4beea0e6",
+      "signed_weights": "790d7925a908265bda5fca8357af6a077d3b39d4b9386e76f8aa85a4c759869b"
+    },
+    "783": {
+      "postsynaptic_indices": "302786e9dacecf6f04683f7e46a6c3aa223b136b42b44880ccae0f0487dcd5f3",
+      "presynaptic_indices": "8ec65c761057a2b000dcc246d6dc94a586b31596b8331c1db1ada61691d67f17",
+      "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b",
+      "signed_weights": "8ddd4ff45983bd9855ffa01ad5099ccdbd138bc9eb8d6cc2cb2433d01ca18a49"
+    }
+  },
+  "matches_step_5_byte_hashes": true,
+  "only_changed_data_files": [
+    "data/dopamine-male-cns-v1.0.yaml",
+    "data/drive-male-cns-v1.0.yaml"
+  ],
+  "registries": {
+    "data/populations-v0.1.yaml": {
+      "M": "d7b04ce82828e6bff3d2664b367baa62518ddd736e989aaf19383c3c22e07b5e",
+      "W": "f775933b8ca9638087a5f1552a9e6c828b195638be422a22a65747f628934259",
+      "receptors": "071f4c28fef94537abf14b4121194786c9f8059fdb116b3858dd98d3dfa08a4c",
+      "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b"
+    },
+    "data/populations-v0.2.yaml": {
+      "M": "d7b04ce82828e6bff3d2664b367baa62518ddd736e989aaf19383c3c22e07b5e",
+      "W": "f775933b8ca9638087a5f1552a9e6c828b195638be422a22a65747f628934259",
+      "receptors": "071f4c28fef94537abf14b4121194786c9f8059fdb116b3858dd98d3dfa08a4c",
+      "root_ids": "70200482b9fe6656f215a97b71332dd6725b80e2cb32e0052a4d47916ca1579b"
+    }
+  },
+  "unchanged_files_sha256": {
+    "data/dopamine-v0.2.yaml": "629d4017d96588401a2517c7d7afec719d4b26944453bed2253bfff635975e81",
+    "data/drive-v0.2.yaml": "379cc4cc9030cdd1bc2235ae28a97f96d0f90c9a95879a51388a5cff513ec278",
+    "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560"
+  }
+}

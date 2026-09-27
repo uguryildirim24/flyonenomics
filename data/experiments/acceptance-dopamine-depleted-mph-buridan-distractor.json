@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.2",
+  "name": "dopamine-depleted-mph-vs-vehicle-buridan-distractor",
+  "description": "Paired 0.5 mM methylphenidate versus vehicle Buridan distractor protocol in dopamine_depleted on the frozen bare substrate",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "behaviour_version": "v0.1",
+    "dopamine_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "comparison": "paired",
+  "arms": [
+    {
+      "label": "dopamine-depleted-mph",
+      "genotype": {
+        "named": "dopamine_depleted",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "baseline",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu",
+            "distractor": {
+              "azimuth": 90,
+              "flicker_hz": 3,
+              "contrast": 1.0,
+              "onset_s": 5,
+              "duration_s": 10
+            }
+          }
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu",
+            "distractor": {
+              "azimuth": 90,
+              "flicker_hz": 3,
+              "contrast": 1.0,
+              "onset_s": 5,
+              "duration_s": 10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "dopamine-depleted-vehicle",
+      "genotype": {
+        "named": "dopamine_depleted",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "baseline",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu",
+            "distractor": {
+              "azimuth": 90,
+              "flicker_hz": 3,
+              "contrast": 1.0,
+              "onset_s": 5,
+              "duration_s": 10
+            }
+          }
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu",
+            "distractor": {
+              "azimuth": 90,
+              "flicker_hz": 3,
+              "contrast": 1.0,
+              "onset_s": 5,
+              "duration_s": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "TuBu",
+      "steering_L",
+      "steering_R",
+      "DN_all"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "steering_L",
+      "steering_R",
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": true
+  },
+  "meta": {
+    "class": "matching-layers",
+    "purpose": "paired genotype acceptance set; fallback metrics have no behavioural claim"
+  }
+}

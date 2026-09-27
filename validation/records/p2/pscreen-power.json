@@ -1,0 +1,279 @@
+{
+  "bias_hz": 1.8974968906816918,
+  "brain_s": 1000.0,
+  "class": "development",
+  "code_note": "The engine ran on the Oracle box from a snapshot rsynced before the Job 1 edits. The box's src/flyonenomics/validation/level3_p2.py was the pre-edit blob ca38701a, the only file under src/, data/, scripts/ or uv.lock that differed from the committed lane tree, so identity.code_hash and identity.code_scope are the box snapshot's. level3_p2 is not imported by this run (verified); every executed module matches the committed lane tree at c711b9c3df4d3fdbbe6db3c185d4bdf9e6e82799, whose code_content_hash is git:50279887bb36a7c1474ba2e1e012fbdba8a50704c7a2e7bd7d861fe1cf2ece49 and code_scope_hash is git:463564d53b4ed4b6d7048b62fe90e5c4ea5f49199d142ddb965d8b9f8a63a2c0. The box-local commit 2bbee6c78dadec8418fc5dfd7c08bd21e648a002 does not exist in this repository. No box artefact entered the repository (the box's pscreen-power.log is not tracked here).",
+  "compatibility": "development",
+  "declared_substrate": {
+    "arm_id": "sens",
+    "bg_policy": "sens",
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "engine_model": "lif",
+    "freeze": {
+      "F_max": 2.6187652193866677,
+      "KC_hz": 0.08885841220784238,
+      "a_min_hz": 20.0,
+      "bare_hz": 57.0,
+      "central_hz": 4.831751731406203,
+      "mn9_dark_max_hz": 4.7,
+      "reflex_mean_hz": 26.633333333333333,
+      "reflex_min_hz": 19.333333333333336,
+      "retention": 0.956140350877193,
+      "seeds": "11-20"
+    },
+    "g_gaba": 1.0,
+    "g_gaba_kc": 6.0,
+    "g_glu": 4.0,
+    "item": 122,
+    "n_bg": 100,
+    "optic_exemption": false,
+    "records": [
+      {
+        "path": "validation/records/p2/rest-T3e-decision.json",
+        "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+      },
+      {
+        "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+        "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+      }
+    ],
+    "screen": {
+      "F_max": 2.679567771889278,
+      "KC_hz": 0.08754104693838131,
+      "central_hz": 4.831463916491017,
+      "mn9_dark_max_hz": 2.9,
+      "passed": true
+    },
+    "sigma_th_mv": 0.0,
+    "w_bg_mv": 1.0
+  },
+  "engine_model": "lif",
+  "fixture": "data/experiments/p2/pharm-411-openloop.json",
+  "genotypes": [
+    "wild_type",
+    "fumin"
+  ],
+  "identity": {
+    "assay": "open_loop_steering",
+    "code_commit": "2bbee6c78dadec8418fc5dfd7c08bd21e648a002",
+    "code_hash": "git:d58556e1254025833988a5f0caceb595652d4405158de054b4134bb0a4f69818",
+    "code_scope": "git:61738499d357105121a928a4132a84722c14eb26615a535f267c8dcfb9d8d755",
+    "connectome_version": "783",
+    "data_versions": {
+      "behaviour-base-v0.2.yaml": "base-v0.2",
+      "behaviour-v0.1.yaml": "v0.1",
+      "behaviour-v0.2.yaml": "v0.2",
+      "compartments-v0.1.yaml": "v0.1",
+      "dopamine-v0.1.yaml": "v0.1",
+      "dopamine-v0.2.yaml": "v0.2",
+      "drive-v0.2.yaml": "v0.2",
+      "params-v0.1.yaml": "v0.1",
+      "params-v0.2.yaml": "v0.2",
+      "populations-v0.1.yaml": "v0.1",
+      "populations-v0.2.yaml": "v0.2",
+      "receptors-v0.1.yaml": "v0.1",
+      "rest-tier3-v0.2.yaml": "v0.2",
+      "transmitters-v0.2.yaml": "v0.2",
+      "visual-v0.2.yaml": "v0.2"
+    },
+    "date": "2026-09-20T16:27:30.586054+00:00",
+    "engine_model": "lif",
+    "fixture_hash": "",
+    "inputs": {},
+    "layer_flags": {
+      "background": true,
+      "dan_fast_synapses": "retain",
+      "dopamine_A": true,
+      "learning_D": false,
+      "receptor_kinetics_B": false,
+      "transporter_C": true
+    },
+    "machine": "aarch64 aarch64",
+    "mechanisms": null,
+    "overrides_hash": "",
+    "platform": "linux-aarch64",
+    "protocol_hash": "0b04e099ce7528007394fefba8fd5a0b6de9b533b5617e04ebd928a05dad25a3",
+    "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+    "run_code_hash": "git:d58556e1254025833988a5f0caceb595652d4405158de054b4134bb0a4f69818",
+    "run_code_scope": "git:61738499d357105121a928a4132a84722c14eb26615a535f267c8dcfb9d8d755",
+    "substrate_id": "rest:379cc4cc9030cdd1",
+    "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+  },
+  "name": "pscreen-power",
+  "platform": "linux-aarch64",
+  "probe_s": 47.0,
+  "reading_note": "Six seed-bootstrap intervals were computed. Only fumin's own steer_gain interval excludes zero (lower bound 0.0014732); the paired fumin-minus-wild-type steer_gain interval includes zero, as do all four distractor_capture_hz intervals. One marginal exclusion among six intervals is what chance can produce, so it is not treated as a finding. No pass floor or threshold was applied; this pilot is neither passed nor failed.",
+  "readouts": {
+    "distractor_capture_hz": {
+      "fumin": {
+        "ci95": [
+          -1.7576570604560913,
+          1.6526799355293567
+        ],
+        "excludes_zero": false,
+        "mean": -0.14324751603249344,
+        "n": 10,
+        "per_seed": [
+          -0.38078945963508426,
+          -1.7527701487707248,
+          3.4407670346874313,
+          4.131927590175402,
+          0.326377783627674,
+          -3.001298822650276,
+          -2.983821282488886,
+          -1.8882613137341657,
+          -3.101710158037475,
+          3.77710361650117
+        ]
+      },
+      "fumin_minus_wild_type": {
+        "ci95": [
+          -3.468959997099598,
+          0.7233793059978826
+        ],
+        "excludes_zero": false,
+        "mean": -1.3452184069007278,
+        "n": 10,
+        "per_seed": [
+          -3.694674656295498,
+          0.4963583976797554,
+          2.032044823580741,
+          2.9668152316340626,
+          -3.1554962882219932,
+          -6.68196134374618,
+          -1.112192158765033,
+          -3.1793426985941124,
+          -4.97583692198487,
+          3.852101545705853
+        ]
+      },
+      "plain_sentence": "capture: wild_type mean 1.20197 [-0.0871291, 2.40641] includes zero; fumin mean -0.143248 [-1.75766, 1.65268] includes zero; paired fumin-minus-wild-type -1.34522 [-3.46896, 0.723379] includes zero.",
+      "wild_type": {
+        "ci95": [
+          -0.08712905022808744,
+          2.406414799551768
+        ],
+        "excludes_zero": false,
+        "mean": 1.201970890868234,
+        "n": 10,
+        "per_seed": [
+          3.3138851966604137,
+          -2.24912854645048,
+          1.4087222111066904,
+          1.1651123585413392,
+          3.481874071849667,
+          3.680662521095904,
+          -1.871629123723853,
+          1.2910813848599467,
+          1.8741267639473946,
+          -0.07499792920468318
+        ]
+      }
+    },
+    "steer_gain_hz_per_deg": {
+      "fumin": {
+        "ci95": [
+          0.0014732028207369524,
+          0.013526664083135501
+        ],
+        "excludes_zero": true,
+        "mean": 0.007817140734553401,
+        "n": 10,
+        "per_seed": [
+          -0.011728604739093191,
+          0.0071481448902657035,
+          0.0077550925135294844,
+          0.002044504845058606,
+          0.012316270957871111,
+          0.013208781927896386,
+          -0.004869953806120717,
+          0.016727721048946164,
+          0.021351627275185286,
+          0.014217822431995167
+        ]
+      },
+      "fumin_minus_wild_type": {
+        "ci95": [
+          -0.00473503946641679,
+          0.012050018349275467
+        ],
+        "excludes_zero": false,
+        "mean": 0.003882953171320006,
+        "n": 10,
+        "per_seed": [
+          -0.010653438945531597,
+          0.013667233648391194,
+          0.021111360591402513,
+          0.010308824730655152,
+          -0.01629749377530513,
+          0.0041250173646885865,
+          -0.019770304201967355,
+          0.006517401574550068,
+          0.017451250901512297,
+          0.012369679824804337
+        ]
+      },
+      "plain_sentence": "steer_gain: wild_type mean 0.00393419 [-0.00316387, 0.0113894] includes zero; fumin mean 0.00781714 [0.0014732, 0.0135267] excludes zero; paired fumin-minus-wild-type 0.00388295 [-0.00473504, 0.01205] includes zero.",
+      "wild_type": {
+        "ci95": [
+          -0.0031638667695548356,
+          0.011389424276446024
+        ],
+        "excludes_zero": false,
+        "mean": 0.003934187563233393,
+        "n": 10,
+        "per_seed": [
+          -0.0010751657935615941,
+          -0.0065190887581254905,
+          -0.01335626807787303,
+          -0.008264319885596547,
+          0.028613764733176242,
+          0.0090837645632078,
+          0.014900350395846638,
+          0.010210319474396096,
+          0.003900376373672989,
+          0.0018481426071908292
+        ]
+      }
+    }
+  },
+  "run_dir": "<compute-home>/flyonenomics-t-0022/runs/20260920T134905.861468Z-0b04e099",
+  "run_id": "20260920T134905.861468Z-0b04e099",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "settle_s": [
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0
+  ],
+  "stage": "P-screen power pilot",
+  "substrate_id": "rest:379cc4cc9030cdd1",
+  "wall_s": 9501.041347552004
+}

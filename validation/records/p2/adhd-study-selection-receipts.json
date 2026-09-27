@@ -1,0 +1,27 @@
+{
+  "decision": "d-0019",
+  "purpose": "post-hoc selection receipts; not original complete-seed manifests and not RNG audit certificates",
+  "executed_commit": "f774c3bdb3dcac6f0c766c45bfe5fd77122a381a",
+  "executed_plan_sha256": "893419c653028bf5bbd3073d5e39b127fac085f6a66e92007a806195631cd290",
+  "analysis_continuation_plan_sha256": "c40623ac8b8e099f55acd2b0a8899e65a089dfb795bdc2c5ecbdb29b8207d944",
+  "plan_identity_bridge": "Every non-identity plan field exactly equal; only bound runner bookkeeping source differs.",
+  "reproduction_command": "Selection-receipt code block in docs/adhd-study-part-a.md",
+  "reproduction_code_sha256": "5334b9524a35e92e770c70507ea822a32a1a16d72c176b3a8dec8f482c0b0a5a",
+  "original_raw_archive_commit": "8b5ad3f",
+  "original_raw_unchanged": true,
+  "receipts_sha256": {
+    "seed-101.json": "6ba1e4a3aa7c4f79e4067a21a078408b59391995543462ba6f59a1b66eab9c98",
+    "seed-102.json": "ef5738419a15d549817d33f4e5c9393d31c7668d7a5a30dd70abc79954d7cfa4",
+    "seed-103.json": "92f26b513cbb8efddf68ae1fff81b5ddc2826286c09a18609832c8d6d776e08f",
+    "seed-104.json": "e5b574ca1556b2dfe4cb2de3798a87aca73814c3cfc3911c85e077002885eed4",
+    "seed-105.json": "190d653c39867d0705dbf196a0d0e04ae9bd3313cf778ab8df9adb27a6b9c21f",
+    "seed-106.json": "3f65e02cf49897e9131f8eec2af2b70308cd94043f38a57e73a59c474f5c98d6",
+    "seed-107.json": "cd4a732a0b34ba4491130cfb429a983c51e7f41ae363f05faa52ed873cfdfdff",
+    "seed-108.json": "0c20302c8c09fe3007e94c729d56c36477e075edd6aa5c449e73c5520764f2c7",
+    "seed-109.json": "f54db2e3d2c1940e30b96980678b6a9cd88202126fb49e04481e1d04cbd81ec2",
+    "seed-110.json": "aa205b49c4f073f516e248d8728ead1f6004edaaeff7ec7369bb96d6ce22239e"
+  },
+  "rng_verification": "d-0023: seeds101/102 exact NPZ bytes and corrected audit gate 5b findings. Seeds103-110 replay after5b alongside analysis; report on completion and flag any mismatch immediately.",
+  "verification_order_decision": "d-0023",
+  "prior_receipts_archive_commit": "5c39f2e"
+}

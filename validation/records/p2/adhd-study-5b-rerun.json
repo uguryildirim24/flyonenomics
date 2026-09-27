@@ -1,0 +1,70 @@
+{
+  "decision": "d-0025",
+  "status": "completed, exit 0; all ten exact d-0025 audits passed remotely and after transfer",
+  "attempt": "5b-02",
+  "source_commit": "f28779b2099018f7188de8c7f73234c0c53b828f",
+  "validation_committed_before_launch": true,
+  "qualification_commit": "f28779b2099018f7188de8c7f73234c0c53b828f",
+  "started_utc": "2026-09-23T08:20:40Z",
+  "workers": 10,
+  "seeds": [
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210
+  ],
+  "conditions": [
+    "wt-vehicle",
+    "fumin-vehicle",
+    "wt-release",
+    "fumin-release"
+  ],
+  "arms_per_seed": 32,
+  "required_complete_arms": 320,
+  "driver_pid": 60281,
+  "python_parent_pid": 60284,
+  "outer_launch_wrapper_pid": 60255,
+  "checkout": "compute host:<compute-run-root>",
+  "plan_sha256": "dc1fb1df32b795303a16a931673cabdbf570d7ef0b446542808e8c5e37835b29",
+  "pair_sha256": "b941a440714244811e9ce305a45e678d5f9e5ea25a4a8f2ed638c0f630eff4dc",
+  "calibration_plan_sha256": "c40623ac8b8e099f55acd2b0a8899e65a089dfb795bdc2c5ecbdb29b8207d944",
+  "calibration": "5a-01",
+  "exact_audits": [
+    "actual monitored TuBu events equal pre-generated fixed lists per arm",
+    "one initial and one final engine RNG hash per seed across all arms",
+    "identical actual final-stimulus event hashes across histories and conditions"
+  ],
+  "void_prior_attempt": {
+    "attempt": "5b-01",
+    "npz_arms": 60,
+    "never_for_inference": true,
+    "evidence_record": "adhd-study-5b-execution.json"
+  },
+  "skipped_replay_seeds": [
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "launch_note": "Initial SSH wrapper timed out waiting on inherited descriptor; independent poll at 08:22:08 UTC confirmed driver, parent and ten workers alive. No duplicate launch. Checkout clean.",
+  "output_prefix": "camber-runs/adhd-study/5b-02",
+  "inference_status": "frozen analysis completed unchanged; see adhd-study-results.json and adhd-study-analysis-execution.json",
+  "finished_utc": "2026-09-24T04:43:34Z",
+  "exit_code": 0,
+  "npz_arms": 320,
+  "complete_seed_manifests": 10,
+  "arm_journals": 320,
+  "elapsed_wall_s": 73374,
+  "audit_record": "adhd-study-5b-audit.json",
+  "active_jobs_at_completion": []
+}

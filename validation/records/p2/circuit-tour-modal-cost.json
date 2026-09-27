@@ -1,0 +1,22 @@
+{
+  "workspace": "uguryildirim24",
+  "profile_used": "flyonenomics",
+  "freeze_sha": "299dcbc83b6f24e81fd7b03a122979adc4404ba2",
+  "outcome_containers": 140,
+  "outcome_projected_usd": 3.6225,
+  "visualisation_replay_containers": 4,
+  "replay_projected_usd": 0.1035,
+  "short_control_checks": 2,
+  "control_checks_projected_usd": 0.0008625,
+  "price_reference": "scripts/modal/cost.py (Modal public prices dated 2026-09-18)",
+  "cap_usd": 30,
+  "bill_source": "MODAL_PROFILE=flyonenomics modal billing summary --json (workspace metered ephemeral-apps amount after all runs)",
+  "workspace_metered_usd_after_runs": 8.20893192,
+  "workspace_billed_after_credits_usd": 0,
+  "worker_seconds_estimated_usd": 4.70851432,
+  "cost_note": "Metered workspace amount includes image build and startup and is the best available actual figure; the measured worker-time estimate omits those costs. First failed control check was conservatively charged its full timeout in the estimate. Workspace was created for these runs.",
+  "outcome_map_wall_s": 3297.0295,
+  "replay_map_wall_s": 1114.6086,
+  "control_map_wall_s": [245.4891, 196.0513],
+  "raw_ledger": "camber-runs/circuit-tour/modal-cost.json"
+}

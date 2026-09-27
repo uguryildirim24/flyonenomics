@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.2",
+  "name": "dose-series",
+  "description": "Vehicle-paired sequential 0.1, 0.5, 1.0 mM methylphenidate dose series in wild type, with fumin null arms; 100 h washout between levels; short Buridan probes on the frozen bare fallback configuration",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain"
+  },
+  "comparison": "paired",
+  "arms": [
+    {
+      "label": "vehicle",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "protocol": [
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.1
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.1",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "vehicle"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.5",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "vehicle"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 1.0
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-1.0",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "mph",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "protocol": [
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.1
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.1",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "methylphenidate"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.5",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "methylphenidate"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 1.0
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-1.0",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "fumin",
+      "genotype": {
+        "named": "fumin"
+      },
+      "protocol": [
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.1
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.1",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "vehicle"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.5",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "vehicle"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 1.0
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-1.0",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "fumin-mph",
+      "genotype": {
+        "named": "fumin"
+      },
+      "protocol": [
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.1
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.1",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "methylphenidate"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-0.5",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        },
+        {
+          "type": "washout",
+          "drug": "methylphenidate"
+        },
+        {
+          "type": "wait",
+          "hours": 100
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 1.0
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5,
+          "label": "dose-1.0",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "live": false
+  }
+}

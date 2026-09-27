@@ -1,0 +1,105 @@
+{
+  "ranked": [],
+  "shortlist": [],
+  "failed_stage": "R-screen",
+  "closest_miss": {
+    "sub_tier": "T3b",
+    "engine_model": "lif+std",
+    "g_gaba": 1.0,
+    "g_glu": 8.0,
+    "setting": {
+      "scope": "non_sensory",
+      "U": 0.05,
+      "tau_ms": 100.0
+    },
+    "M": 0.005,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "job_id": "27534",
+    "retention": 0.525,
+    "difference_hz": 29.4,
+    "flags": [
+      "t2-b-unreachable"
+    ],
+    "w_bg": 1.25,
+    "pair_weights": [
+      1.25,
+      1.3
+    ],
+    "S": 2.0357107513658637,
+    "J": 39.81210695460983,
+    "screen_passed": false,
+    "violations": {
+      "F": 0.003890280131198853,
+      "b": 0.0,
+      "stability_ratio": 0.0,
+      "central": 0.0,
+      "DAN": 0.0,
+      "KC": 2.031820471234665,
+      "gradedness": 0.0
+    },
+    "candidate_id": "1.0-8.0-0.0-False-100-1.25-std-0.05-100.0-non_sensory",
+    "deepest": "T1",
+    "unit_id": "1.0-8.0-std-0.05-100.0-non_sensory",
+    "pair_rates_hz": [
+      {
+        "DAN": 6.383194829178208,
+        "KC": 13.981025046680832,
+        "central": 5.1815341764528755
+      },
+      {
+        "DAN": 7.4211449676823635,
+        "KC": 15.255920417230056,
+        "central": 5.719222372779282
+      }
+    ],
+    "screen_checks": {
+      "F": false,
+      "b": true,
+      "stability_ratio": true,
+      "central": true,
+      "DAN": true,
+      "KC": false,
+      "gradedness": true
+    },
+    "violated_criteria": [
+      {
+        "name": "KC",
+        "floor_or_cap": "<= 2 Hz seed-mean at both pair weights",
+        "measured_hz": [
+          13.981025046680832,
+          15.255920417230056
+        ],
+        "worst_hz": 15.255920417230056,
+        "violation": 2.031820471234665
+      },
+      {
+        "name": "F",
+        "floor_or_cap": "< 3 (strict) on every seed of both pair weights",
+        "worst": 3.011693571279792,
+        "seed": 3,
+        "w_bg": 1.25,
+        "violation": 0.003890280131198853
+      }
+    ]
+  },
+  "p2_partial_b": false,
+  "class": "development",
+  "sub_tier": "T3b",
+  "engine_model": "lif+std",
+  "t1_units_evaluated": 4,
+  "n_screen_passers": 0,
+  "n_t2_admitted": 0,
+  "t2_b_unreachable": 4,
+  "grid_edge": 0,
+  "evaluation_commit": "df8e5831d8353c2b3c7cde33410759989f9aed7c",
+  "jobs": [
+    "t3b-t1-00-20260918T011345Z",
+    "t3b-t1-01-20260918T001123Z"
+  ],
+  "record": "validation/records/p2/rest-T3b-T1.json",
+  "t2_launch": false,
+  "t2_reason": "no R-screen passer",
+  "item_74": "not applied; T2 did not run"
+}

@@ -1,0 +1,3179 @@
+{
+  "class": "development",
+  "sub_tier": "T3a",
+  "engine_model": "lif+sfa",
+  "rho_mech": 1.4863463034318214,
+  "q_plan": 27.0,
+  "pairs": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      4.0
+    ],
+    [
+      1.0,
+      8.0
+    ],
+    [
+      1.5,
+      1.0
+    ],
+    [
+      1.5,
+      2.0
+    ],
+    [
+      1.5,
+      4.0
+    ],
+    [
+      1.5,
+      8.0
+    ],
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ],
+    [
+      2.0,
+      4.0
+    ],
+    [
+      2.0,
+      8.0
+    ],
+    [
+      3.0,
+      6.0
+    ],
+    [
+      3.0,
+      8.0
+    ],
+    [
+      4.0,
+      2.0
+    ]
+  ],
+  "grid": [
+    {
+      "b_mv": 0.1,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 0.1,
+      "tau_ms": 150.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 0.1,
+      "tau_ms": 500.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 0.3,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 0.3,
+      "tau_ms": 150.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 0.3,
+      "tau_ms": 500.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 1.0,
+      "tau_ms": 150.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 1.0,
+      "tau_ms": 500.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 3.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 3.0,
+      "tau_ms": 150.0,
+      "scope": "non_sensory"
+    },
+    {
+      "b_mv": 3.0,
+      "tau_ms": 500.0,
+      "scope": "non_sensory"
+    }
+  ],
+  "units": [
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.1,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.015,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.045,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 0.3,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.15,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 150.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.45,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "b_mv": 3.0,
+        "tau_ms": 500.0,
+        "scope": "non_sensory"
+      },
+      "M": 1.5,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3a",
+      "engine_model": "lif",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": null,
+      "M": 0.0,
+      "baseline": true,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    }
+  ],
+  "baseline": true,
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "job_shapes": {
+    "B_brain_s": 67,
+    "n_jobs": 5,
+    "n_tasks": 197,
+    "t0_brain_s": 11820,
+    "launch": true,
+    "reason": null
+  },
+  "cap_projection_t0_engine_hours": 240.5651492104403,
+  "t1_max_units": 40,
+  "cap_engine_hours": 400
+}

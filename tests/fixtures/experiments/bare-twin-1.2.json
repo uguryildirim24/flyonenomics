@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.2",
+  "name": "bare-twin",
+  "seed": 20260912,
+  "seeds": [1],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.1",
+    "drive_version": "v0.1",
+    "dopamine_version": "v0.1",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 0.01,
+          "label": "upstream",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150,
+            "mode": "extended"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": ["sugar_GRN_R", "MN9"],
+    "rates": ["sugar_GRN_R", "MN9"],
+    "popcount": true,
+    "live": false
+  }
+}

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470">
+<rect width="960" height="470" fill="#fcfaf6"/>
+<style>text{font-family:Arial,sans-serif;fill:#273542}.small{font-size:12px}</style>
+<text x="55" y="40" font-size="22" font-weight="bold">Confirmatory genotype difference by seed</text>
+<text x="55" y="62" class="small">Fumin minus wild type · first 2 test seconds · 40 paired stochastic seeds · descriptive points</text>
+<line x1="85" x2="900" y1="390.00" y2="390.00" stroke="#a9b2b9" stroke-dasharray="4 4"/>
+<text x="79" y="394.00" text-anchor="end" class="small">-0.267</text>
+<line x1="85" x2="900" y1="260.66" y2="260.66" stroke="#a9b2b9" stroke-dasharray="4 4"/>
+<text x="79" y="264.66" text-anchor="end" class="small">0.000</text>
+<line x1="85" x2="900" y1="110.00" y2="110.00" stroke="#a9b2b9" stroke-dasharray="4 4"/>
+<text x="79" y="114.00" text-anchor="end" class="small">0.311</text>
+<text x="85.00" y="412" text-anchor="middle" class="small">301</text>
+<text x="189.49" y="412" text-anchor="middle" class="small">306</text>
+<text x="293.97" y="412" text-anchor="middle" class="small">311</text>
+<text x="398.46" y="412" text-anchor="middle" class="small">316</text>
+<text x="502.95" y="412" text-anchor="middle" class="small">321</text>
+<text x="607.44" y="412" text-anchor="middle" class="small">326</text>
+<text x="711.92" y="412" text-anchor="middle" class="small">331</text>
+<text x="816.41" y="412" text-anchor="middle" class="small">336</text>
+<circle cx="85.00" cy="201.43" r="4" fill="#27658e"/>
+<circle cx="105.90" cy="177.67" r="4" fill="#27658e"/>
+<circle cx="126.79" cy="309.89" r="4" fill="#27658e"/>
+<circle cx="147.69" cy="260.65" r="4" fill="#27658e"/>
+<circle cx="168.59" cy="229.14" r="4" fill="#27658e"/>
+<circle cx="189.49" cy="305.12" r="4" fill="#27658e"/>
+<circle cx="210.38" cy="153.27" r="4" fill="#27658e"/>
+<circle cx="231.28" cy="202.38" r="4" fill="#27658e"/>
+<circle cx="252.18" cy="333.03" r="4" fill="#27658e"/>
+<circle cx="273.08" cy="133.33" r="4" fill="#27658e"/>
+<circle cx="293.97" cy="168.19" r="4" fill="#27658e"/>
+<circle cx="314.87" cy="366.67" r="4" fill="#27658e"/>
+<circle cx="335.77" cy="233.30" r="4" fill="#27658e"/>
+<circle cx="356.67" cy="289.08" r="4" fill="#27658e"/>
+<circle cx="377.56" cy="294.62" r="4" fill="#27658e"/>
+<circle cx="398.46" cy="286.25" r="4" fill="#27658e"/>
+<circle cx="419.36" cy="292.36" r="4" fill="#27658e"/>
+<circle cx="440.26" cy="269.92" r="4" fill="#27658e"/>
+<circle cx="461.15" cy="253.94" r="4" fill="#27658e"/>
+<circle cx="482.05" cy="298.54" r="4" fill="#27658e"/>
+<circle cx="502.95" cy="340.43" r="4" fill="#27658e"/>
+<circle cx="523.85" cy="312.71" r="4" fill="#27658e"/>
+<circle cx="544.74" cy="236.68" r="4" fill="#27658e"/>
+<circle cx="565.64" cy="219.81" r="4" fill="#27658e"/>
+<circle cx="586.54" cy="205.41" r="4" fill="#27658e"/>
+<circle cx="607.44" cy="151.53" r="4" fill="#27658e"/>
+<circle cx="628.33" cy="321.49" r="4" fill="#27658e"/>
+<circle cx="649.23" cy="227.71" r="4" fill="#27658e"/>
+<circle cx="670.13" cy="305.02" r="4" fill="#27658e"/>
+<circle cx="691.03" cy="318.41" r="4" fill="#27658e"/>
+<circle cx="711.92" cy="288.62" r="4" fill="#27658e"/>
+<circle cx="732.82" cy="231.07" r="4" fill="#27658e"/>
+<circle cx="753.72" cy="246.69" r="4" fill="#27658e"/>
+<circle cx="774.62" cy="291.50" r="4" fill="#27658e"/>
+<circle cx="795.51" cy="235.10" r="4" fill="#27658e"/>
+<circle cx="816.41" cy="291.78" r="4" fill="#27658e"/>
+<circle cx="837.31" cy="291.40" r="4" fill="#27658e"/>
+<circle cx="858.21" cy="240.51" r="4" fill="#27658e"/>
+<circle cx="879.10" cy="313.46" r="4" fill="#27658e"/>
+<circle cx="900.00" cy="323.29" r="4" fill="#27658e"/>
+<line x1="85" x2="900" y1="261.29" y2="261.29" stroke="#b34538" stroke-width="2"/>
+<text x="95" y="94" class="small">Mean -0.00129; 95% whole-seed interval [-0.03797, +0.03758]</text>
+<text x="490" y="446" text-anchor="middle" class="small">Seed ID · model replicates, not flies</text>
+</svg>

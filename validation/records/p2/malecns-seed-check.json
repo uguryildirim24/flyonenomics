@@ -1,0 +1,320 @@
+{
+  "all_ten_uint32_seeds_distinct": true,
+  "dataset": "male-cns:v1.0",
+  "derived_brian_seeds": {
+    "1": 2194859040,
+    "10": 1461784123,
+    "2": 3303880475,
+    "3": 933649206,
+    "4": 2374646617,
+    "5": 941284824,
+    "6": 1684611328,
+    "7": 3473839445,
+    "8": 3699195382,
+    "9": 4073391038
+  },
+  "dt_ms": 0.1,
+  "duration_ms_per_run": 100.0,
+  "inputs_sha256": {
+    "data/compartments-male-cns-v1.0.yaml": "de54b5b7723062a7e5541177ffc61c68a0148a9ac63004793683c54958a27521",
+    "data/malecns-v1.0-manifest.json": "a2fc69b1642324c422293b7ae32eda8c8e3a39000ae27cb4c90837f28129c036",
+    "data/params-v0.1.yaml": "884156a4642f66f6ae038ae627ee27a4f60e8c6f3772e3cb7f1f0730dd644fce",
+    "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+    "data/populations-male-cns-v1.0.yaml": "4b67f2a4d5d54b5bb552bdd54ec350d99842d239a35d5c4cfb48f73daa3bdb63",
+    "data/receptors-male-cns-v1.0.yaml": "50a273b37d521777aa8e18bb5107cf8a321ab00836a82f229f223d0da70d7f61",
+    "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5",
+    "scripts/malecns_rest.py": "472f74a53b1131d980994e4af24f59190ba32a1b7bc349f213710964de667259",
+    "scripts/malecns_substrate.py": "7be84a27744c777c916721c83f50933b43b43bc2b808099703dc27bca634927f",
+    "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+    "src/flyonenomics/orchestrator/seeds.py": "82dae844354850604ca25ef740bbcd0d4ce0376191b5e4b6b85f17d4ce1bad73",
+    "uv.lock": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+  },
+  "master_seed": 20260912,
+  "path": "malecns_rest._reset: restore(initial), then seed(brian_seed(20260912,s,0)); SeedSequence spawn_key=(s,0,ENGINE=1); BrianEngine.seed -> brian2.seed; cython PoissonInput",
+  "peak_rss_bytes": 7147229184,
+  "platform": {
+    "cpu_count": 16,
+    "machine": "aarch64",
+    "memory_bytes": {
+      "MemAvailable": 90042372096,
+      "MemTotal": 101036359680
+    },
+    "python": "3.12.14",
+    "release": "6.17.0-1020-oracle",
+    "system": "Linux"
+  },
+  "probe_index": 0,
+  "runs": [
+    {
+      "brian_seed": 2194859040,
+      "first_20_spikes_idx_tick": [
+        [
+          102744,
+          421
+        ],
+        [
+          160326,
+          423
+        ],
+        [
+          111141,
+          434
+        ],
+        [
+          113019,
+          434
+        ],
+        [
+          22481,
+          453
+        ],
+        [
+          42656,
+          464
+        ],
+        [
+          45040,
+          466
+        ],
+        [
+          110849,
+          473
+        ],
+        [
+          74969,
+          477
+        ],
+        [
+          119771,
+          484
+        ],
+        [
+          146643,
+          491
+        ],
+        [
+          153024,
+          495
+        ],
+        [
+          146736,
+          510
+        ],
+        [
+          161043,
+          530
+        ],
+        [
+          112194,
+          534
+        ],
+        [
+          109305,
+          542
+        ],
+        [
+          103454,
+          549
+        ],
+        [
+          149035,
+          551
+        ],
+        [
+          115578,
+          554
+        ],
+        [
+          129531,
+          556
+        ]
+      ],
+      "idx_i32le_sha256": "93001379325e0c3b6ed24c1954495d6a41cfeddcf64f1be79b4200af77ac2d73",
+      "seed_index": 1,
+      "spike_count": 5059,
+      "tick_i64le_sha256": "9c2b2883d942c3e52d19caaf8ef92cb99ef2a1d334c81cac13ddd9fc173312eb"
+    },
+    {
+      "brian_seed": 941284824,
+      "first_20_spikes_idx_tick": [
+        [
+          147005,
+          399
+        ],
+        [
+          156307,
+          413
+        ],
+        [
+          159581,
+          435
+        ],
+        [
+          116636,
+          441
+        ],
+        [
+          121521,
+          467
+        ],
+        [
+          148133,
+          474
+        ],
+        [
+          119646,
+          478
+        ],
+        [
+          98901,
+          486
+        ],
+        [
+          151933,
+          502
+        ],
+        [
+          89182,
+          504
+        ],
+        [
+          149671,
+          507
+        ],
+        [
+          152610,
+          512
+        ],
+        [
+          120232,
+          533
+        ],
+        [
+          104876,
+          542
+        ],
+        [
+          122558,
+          546
+        ],
+        [
+          120872,
+          547
+        ],
+        [
+          107744,
+          548
+        ],
+        [
+          107345,
+          551
+        ],
+        [
+          70077,
+          554
+        ],
+        [
+          97820,
+          556
+        ]
+      ],
+      "idx_i32le_sha256": "a25e5330f0cce3a0e53764799cdc8961564f216fc1f85a726209167afb201107",
+      "seed_index": 5,
+      "spike_count": 3595,
+      "tick_i64le_sha256": "882ffb88628ad568384cf5f2d2aeed8ee7c029a3b12f92350947b513b3417d18"
+    },
+    {
+      "brian_seed": 2194859040,
+      "first_20_spikes_idx_tick": [
+        [
+          102744,
+          421
+        ],
+        [
+          160326,
+          423
+        ],
+        [
+          111141,
+          434
+        ],
+        [
+          113019,
+          434
+        ],
+        [
+          22481,
+          453
+        ],
+        [
+          42656,
+          464
+        ],
+        [
+          45040,
+          466
+        ],
+        [
+          110849,
+          473
+        ],
+        [
+          74969,
+          477
+        ],
+        [
+          119771,
+          484
+        ],
+        [
+          146643,
+          491
+        ],
+        [
+          153024,
+          495
+        ],
+        [
+          146736,
+          510
+        ],
+        [
+          161043,
+          530
+        ],
+        [
+          112194,
+          534
+        ],
+        [
+          109305,
+          542
+        ],
+        [
+          103454,
+          549
+        ],
+        [
+          149035,
+          551
+        ],
+        [
+          115578,
+          554
+        ],
+        [
+          129531,
+          556
+        ]
+      ],
+      "idx_i32le_sha256": "93001379325e0c3b6ed24c1954495d6a41cfeddcf64f1be79b4200af77ac2d73",
+      "seed_index": 1,
+      "spike_count": 5059,
+      "tick_i64le_sha256": "9c2b2883d942c3e52d19caaf8ef92cb99ef2a1d334c81cac13ddd9fc173312eb"
+    }
+  ],
+  "seed_1_replay_exact": true,
+  "seeds_1_and_5_spike_trains_distinct": true,
+  "sensory_weight_mv": 1.0,
+  "wall_s": 91.35000626000692
+}

@@ -1,0 +1,87 @@
+{
+  "class": "development",
+  "sub_tier": "T3b",
+  "stage": "T2",
+  "engine_model": "lif+std",
+  "rho_mech": 1.3459778442507917,
+  "q_plan": 27.0,
+  "t0_brain_s": 11100.0,
+  "t1_brain_s": 2736.0,
+  "measured_rate": {
+    "planned_worker_s_per_brain_s": 67.29889221253958,
+    "median_wall_per_brain_s": 43.535228096333334,
+    "replaced": false,
+    "worker_s_per_brain_s": 67.29889221253958
+  },
+  "admitted": [],
+  "excluded": [],
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "job_shapes": {
+    "B_brain_s": 74,
+    "n_jobs": 0,
+    "n_tasks": 0,
+    "t2_brain_s": 0,
+    "n_candidates": 0,
+    "launch": false,
+    "reason": "no R-screen passer"
+  },
+  "cap_projection_engine_hours": 238.1976990970626,
+  "max_candidates": 20,
+  "t1_collect": {
+    "n_units_evaluated": 4,
+    "n_screen_passers": 0,
+    "n_t2_admitted": 0,
+    "t2_b_unreachable": 4,
+    "grid_edge": 0,
+    "failed_stage": "R-screen",
+    "closest_miss": {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "27534",
+      "retention": 0.525,
+      "difference_hz": 29.4,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "S": 2.0357107513658637,
+      "J": 39.81210695460983,
+      "screen_passed": false,
+      "violations": {
+        "F": 0.003890280131198853,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 2.031820471234665,
+        "gradedness": 0.0
+      },
+      "candidate_id": "1.0-8.0-0.0-False-100-1.25-std-0.05-100.0-non_sensory",
+      "deepest": "T1"
+    }
+  }
+}

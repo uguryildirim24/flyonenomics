@@ -1,0 +1,2923 @@
+{
+  "class": "development",
+  "tier": 1,
+  "map_sha256": "2fb522e4905bbfd402ed7e1d0e1b3a64479aad785d20763ce7aa2da830ed8dd8",
+  "source_jobs": [
+    "27163"
+  ],
+  "source_commit": [
+    "4e0220f81a08bd50e78dcc686aa5d51c6bba4558"
+  ],
+  "source_code_scope": [
+    "4e0220f"
+  ],
+  "source_platform": [
+    "camber-large"
+  ],
+  "map_missing_J_groups": [
+    "ascending",
+    "endocrine",
+    "motor",
+    "visual_centrifugal",
+    "visual_projection"
+  ],
+  "historical_pass_pairs": [
+    [
+      3.0,
+      3.0
+    ],
+    [
+      3.0,
+      4.0
+    ],
+    [
+      3.0,
+      6.0
+    ],
+    [
+      3.0,
+      8.0
+    ]
+  ],
+  "pairs": [
+    [
+      4.0,
+      2.0
+    ],
+    [
+      3.0,
+      8.0
+    ],
+    [
+      3.0,
+      6.0
+    ],
+    [
+      4.0,
+      1.0
+    ],
+    [
+      3.0,
+      4.0
+    ],
+    [
+      3.0,
+      3.0
+    ],
+    [
+      3.0,
+      2.0
+    ],
+    [
+      3.0,
+      1.0
+    ],
+    [
+      4.0,
+      8.0
+    ],
+    [
+      4.0,
+      3.0
+    ],
+    [
+      4.0,
+      6.0
+    ],
+    [
+      4.0,
+      4.0
+    ]
+  ],
+  "settings": [
+    {
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    }
+  ],
+  "map_best_candidates": [
+    {
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.4,
+      "pair_weights": [
+        1.4,
+        1.45
+      ],
+      "rates_hz": {
+        "DAN": 3.1786703601108033,
+        "ER": 2.526019184652278,
+        "KC": 1.8167407121241388,
+        "ascending": null,
+        "central": 7.536870169627623,
+        "descending": 4.215268154991018,
+        "endocrine": null,
+        "motor": null,
+        "optic": 4.352630628538998,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.1786703601108033,
+          "ER": 2.526019184652278,
+          "KC": 1.8167407121241388,
+          "ascending": null,
+          "central": 7.536870169627623,
+          "descending": 4.215268154991018,
+          "endocrine": null,
+          "motor": null,
+          "optic": 4.352630628538998,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 3.75881809787627,
+          "ER": 2.7285371702637895,
+          "KC": 1.9100057948618892,
+          "ascending": null,
+          "central": 8.044454481581853,
+          "descending": 4.604875545291249,
+          "endocrine": null,
+          "motor": null,
+          "optic": 4.894514310774032,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.005541428085288382,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 0.005541428085288382,
+      "J": 117.11456144070878,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 1.403416435826408,
+        "ER": 1.5607913669064748,
+        "KC": 2.4368360054085376,
+        "ascending": null,
+        "central": 5.04130031115126,
+        "descending": 2.2105978958172954,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.0183161569649206,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.403416435826408,
+          "ER": 1.5607913669064748,
+          "KC": 2.4368360054085376,
+          "ascending": null,
+          "central": 5.04130031115126,
+          "descending": 2.2105978958172954,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.0183161569649206,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 1.8393351800554016,
+          "ER": 1.8392086330935253,
+          "KC": 2.5574399587920933,
+          "ascending": null,
+          "central": 5.449654973401586,
+          "descending": 2.429355914806261,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.5197693766203617,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.24585956148499064,
+        "gradedness": 0.0
+      },
+      "S": 0.24585956148499064,
+      "J": 115.7463673682805,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.15,
+      "pair_weights": [
+        1.15,
+        1.2
+      ],
+      "rates_hz": {
+        "DAN": 1.1015697137580795,
+        "ER": 1.3171462829736211,
+        "KC": 2.5367651793187815,
+        "ascending": null,
+        "central": 5.074271052895714,
+        "descending": 2.12866307415961,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.5581274963776997,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.1015697137580795,
+          "ER": 1.3171462829736211,
+          "KC": 2.5367651793187815,
+          "ascending": null,
+          "central": 5.074271052895714,
+          "descending": 2.12866307415961,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.5581274963776997,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 1.4426592797783933,
+          "ER": 1.6182254196642685,
+          "KC": 2.60046358895113,
+          "ascending": null,
+          "central": 5.467356719863496,
+          "descending": 2.3261483192199126,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.05231977711566,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.016479543725832435,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.26254255201606386,
+        "gradedness": 0.0
+      },
+      "S": 0.2790220957418963,
+      "J": 116.45779612284265,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.3,
+      "pair_weights": [
+        1.3,
+        1.35
+      ],
+      "rates_hz": {
+        "DAN": 3.0496768236380425,
+        "ER": 2.27673860911271,
+        "KC": 1.8943403515549546,
+        "ascending": null,
+        "central": 7.515213791026799,
+        "descending": 3.866256094431614,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.5051129254859474,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.0496768236380425,
+          "ER": 2.27673860911271,
+          "KC": 1.8943403515549546,
+          "ascending": null,
+          "central": 7.515213791026799,
+          "descending": 3.866256094431614,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.5051129254859474,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 3.613758079409049,
+          "ER": 2.538968824940048,
+          "KC": 1.940924602408087,
+          "ascending": null,
+          "central": 8.084577938371977,
+          "descending": 4.300025660764691,
+          "endocrine": null,
+          "motor": null,
+          "optic": 4.110728458598288,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.28223913568284803,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.010516746940470131,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 0.29275588262331814,
+      "J": 116.51744304724248,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 1.5814404432132962,
+        "ER": 1.6802158273381294,
+        "KC": 2.702749340029618,
+        "ascending": null,
+        "central": 5.799258506473954,
+        "descending": 2.5436489607390302,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.096716927429306,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.5814404432132962,
+          "ER": 1.6802158273381294,
+          "KC": 2.702749340029618,
+          "ascending": null,
+          "central": 5.799258506473954,
+          "descending": 2.5436489607390302,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.096716927429306,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 2.007756232686981,
+          "ER": 1.9434052757793765,
+          "KC": 2.7907475371836967,
+          "ascending": null,
+          "central": 6.278241995382917,
+          "descending": 2.86710289966641,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.6226869945439772,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.3331623138597412,
+        "gradedness": 0.0
+      },
+      "S": 0.3331623138597412,
+      "J": 116.8683089604404,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 1.7277008310249309,
+        "ER": 1.7473621103117505,
+        "KC": 2.737512072628936,
+        "ascending": null,
+        "central": 6.090073271103081,
+        "descending": 2.7642032332563513,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.1823132849213414,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.7277008310249309,
+          "ER": 1.7473621103117505,
+          "KC": 2.737512072628936,
+          "ascending": null,
+          "central": 6.090073271103081,
+          "descending": 2.7642032332563513,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.1823132849213414,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 2.16943674976916,
+          "ER": 2.0140287769784173,
+          "KC": 2.864136243641749,
+          "ascending": null,
+          "central": 6.575627321088025,
+          "descending": 3.105157813702848,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.7340982084123358,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.35911963851094736,
+        "gradedness": 0.0
+      },
+      "S": 0.35911963851094736,
+      "J": 117.1422357826839,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "rates_hz": {
+        "DAN": 2.5853185595567867,
+        "ER": 2.127338129496403,
+        "KC": 2.8657716824415687,
+        "ascending": null,
+        "central": 7.137221469436916,
+        "descending": 3.3972029766487037,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.9013900174988283,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 2.5853185595567867,
+          "ER": 2.127338129496403,
+          "KC": 2.8657716824415687,
+          "ascending": null,
+          "central": 7.137221469436916,
+          "descending": 3.3972029766487037,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.9013900174988283,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 3.092336103416436,
+          "ER": 2.402158273381295,
+          "KC": 2.9854742128645935,
+          "ascending": null,
+          "central": 7.653816621499548,
+          "descending": 3.8185783936361304,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.51294397365287,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.033160706195325226,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.40061141894813845,
+        "gradedness": 0.0
+      },
+      "S": 0.4337721251434637,
+      "J": 118.32476233488971,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.8368421052631579,
+        "ER": 0.3685851318944844,
+        "KC": 2.134820681218209,
+        "ascending": null,
+        "central": 5.267212436013249,
+        "descending": 1.9144470105209137,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.018111502362556806,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.8368421052631579,
+          "ER": 0.3685851318944844,
+          "KC": 2.134820681218209,
+          "ascending": null,
+          "central": 5.267212436013249,
+          "descending": 1.9144470105209137,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.018111502362556806,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 1.0828254847645429,
+          "ER": 0.5170263788968824,
+          "KC": 2.242721009593716,
+          "ascending": null,
+          "central": 5.463190053196828,
+          "descending": 2.0300487554529125,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.0493028415173677,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.38233222974655523,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.11454268453741552,
+        "gradedness": 0.0
+      },
+      "S": 0.49687491428397074,
+      "J": 134.83157589450022,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.95,
+      "pair_weights": [
+        0.95,
+        1.0
+      ],
+      "rates_hz": {
+        "DAN": 0.6389658356417359,
+        "ER": 0.23129496402877694,
+        "KC": 2.579312343055824,
+        "ascending": null,
+        "central": 3.302273411623005,
+        "descending": 0.941005901975879,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.11376130222239421,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.6389658356417359,
+          "ER": 0.23129496402877694,
+          "KC": 2.579312343055824,
+          "ascending": null,
+          "central": 3.302273411623005,
+          "descending": 0.941005901975879,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.11376130222239421,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 0.7854108956602032,
+          "ER": 0.4293764988009592,
+          "KC": 2.618524241838903,
+          "ascending": null,
+          "central": 3.4568503462812408,
+          "descending": 1.0466256094431614,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.3141731911069836,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.570838065291295,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.26946371204520464,
+        "gradedness": 0.0
+      },
+      "S": 0.8403017773364996,
+      "J": 125.73926135124103,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.3,
+      "pair_weights": [
+        1.3,
+        1.35
+      ],
+      "rates_hz": {
+        "DAN": 3.069252077562327,
+        "ER": 1.9938848920863308,
+        "KC": 2.9779795248213254,
+        "ascending": null,
+        "central": 6.459858978219412,
+        "descending": 3.146215037208109,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.0731623005585007,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.069252077562327,
+          "ER": 1.9938848920863308,
+          "KC": 2.9779795248213254,
+          "ascending": null,
+          "central": 6.459858978219412,
+          "descending": 3.146215037208109,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.0731623005585007,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 2.364635272391505,
+          "ER": 2.2014388489208634,
+          "KC": 1.7429334878629839,
+          "ascending": null,
+          "central": 6.656815216300312,
+          "descending": 3.495509366179112,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.5761401110122235,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.4654725047887401,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.39809787819849274,
+        "gradedness": 0.0
+      },
+      "S": 0.8635703829872328,
+      "J": 117.94527146411656,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.4,
+      "pair_weights": [
+        1.4,
+        1.45
+      ],
+      "rates_hz": {
+        "DAN": 3.96943674976916,
+        "ER": 2.3045563549160675,
+        "KC": 3.117487605434293,
+        "ascending": null,
+        "central": 6.669173441734418,
+        "descending": 3.122658455221966,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.9101948948135536,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.96943674976916,
+          "ER": 2.3045563549160675,
+          "KC": 3.117487605434293,
+          "ascending": null,
+          "central": 6.669173441734418,
+          "descending": 3.122658455221966,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.9101948948135536,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 5.108494921514311,
+          "ER": 2.5004796163069543,
+          "KC": 3.772532354645547,
+          "ascending": null,
+          "central": 7.098816872427984,
+          "descending": 3.4047472414677955,
+          "endocrine": null,
+          "motor": null,
+          "optic": 4.371865581481338,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.2747444848751047,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.6345993075099425,
+        "gradedness": 0.0
+      },
+      "S": 0.9093437923850473,
+      "J": 118.79505727170763,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.1,
+      "pair_weights": [
+        1.1,
+        1.15
+      ],
+      "rates_hz": {
+        "DAN": 1.1296398891966757,
+        "ER": 0.9784172661870504,
+        "KC": 2.2747601571051446,
+        "ascending": null,
+        "central": 4.376045116932651,
+        "descending": 1.7106492173466767,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.0453426029829698,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.1296398891966757,
+          "ER": 0.9784172661870504,
+          "KC": 2.2747601571051446,
+          "ascending": null,
+          "central": 4.376045116932651,
+          "descending": 1.7106492173466767,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.0453426029829698,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 1.4820867959372113,
+          "ER": 1.22757793764988,
+          "KC": 2.469023243834911,
+          "ascending": null,
+          "central": 4.846327662350698,
+          "descending": 1.9348986399794714,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.4890028247494485,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.7295210747054638,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.21067544402970698,
+        "gradedness": 0.0
+      },
+      "S": 0.9401965187351707,
+      "J": 115.08969548280149,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "rates_hz": {
+        "DAN": 5.345891043397969,
+        "ER": 2.2757793764988006,
+        "KC": 7.946391088790162,
+        "ascending": null,
+        "central": 6.169914935260464,
+        "descending": 2.8243007441621764,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.693625181115024,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 5.345891043397969,
+          "ER": 2.2757793764988006,
+          "KC": 7.946391088790162,
+          "ascending": null,
+          "central": 6.169914935260464,
+          "descending": 2.8243007441621764,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.693625181115024,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 6.045060018467221,
+          "ER": 2.6083932853717027,
+          "KC": 8.149288519734725,
+          "ascending": null,
+          "central": 6.592366757000903,
+          "descending": 3.0508596356171416,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.2206176613482267,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.09804396710514231,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.404783444690059,
+        "gradedness": 0.0
+      },
+      "S": 1.5028274117952012,
+      "J": 124.66982851673731,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.3,
+      "pair_weights": [
+        1.3,
+        1.35
+      ],
+      "rates_hz": {
+        "DAN": 7.45309325946445,
+        "ER": 2.6894484412470026,
+        "KC": 9.944581804133668,
+        "ascending": null,
+        "central": 7.302380056207969,
+        "descending": 3.314857582755966,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.3275651691625066,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 7.45309325946445,
+          "ER": 2.6894484412470026,
+          "KC": 9.944581804133668,
+          "ascending": null,
+          "central": 7.302380056207969,
+          "descending": 3.314857582755966,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.3275651691625066,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 8.33444136657433,
+          "ER": 3.042326139088729,
+          "KC": 10.338355546970575,
+          "ascending": null,
+          "central": 7.768566194921209,
+          "descending": 3.6001539645881446,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.873179498424245,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.08963500273728006,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.6427136378618696,
+        "gradedness": 0.0
+      },
+      "S": 1.7323486405991497,
+      "J": 128.3723359524703,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.15,
+      "pair_weights": [
+        1.15,
+        1.2
+      ],
+      "rates_hz": {
+        "DAN": 4.508125577100646,
+        "ER": 1.1044364508393285,
+        "KC": 5.326939669049,
+        "ascending": null,
+        "central": 4.373292431998394,
+        "descending": 1.7202206825763409,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.4087739211563843,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 4.508125577100646,
+          "ER": 1.1044364508393285,
+          "KC": 5.326939669049,
+          "ascending": null,
+          "central": 4.373292431998394,
+          "descending": 1.7202206825763409,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.4087739211563843,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 5.054385964912281,
+          "ER": 1.271462829736211,
+          "KC": 5.548870001931621,
+          "ascending": null,
+          "central": 4.725105389942788,
+          "descending": 2.022093918398768,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.8814641403001886,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.8711863243640074,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.0204471232128773,
+        "gradedness": 0.0
+      },
+      "S": 1.8916334475768848,
+      "J": 118.88999289216389,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 2.22253000923361,
+        "ER": 0.06294964028776978,
+        "KC": 7.357382010173201,
+        "ascending": null,
+        "central": 5.093198584763626,
+        "descending": 1.59381575570952,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.021679199611328234,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 2.22253000923361,
+          "ER": 0.06294964028776978,
+          "KC": 7.357382010173201,
+          "ascending": null,
+          "central": 5.093198584763626,
+          "descending": 1.59381575570952,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.021679199611328234,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 2.7738688827331486,
+          "ER": 0.23980815347721826,
+          "KC": 7.855282982422253,
+          "ascending": null,
+          "central": 5.253112767238783,
+          "descending": 1.650654349499615,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.06016200389531659,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.5261241138584614,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.368039116268587,
+        "gradedness": 0.0
+      },
+      "S": 1.8941632301270483,
+      "J": 148.77565368899465,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 1.7807940904893815,
+        "ER": 0.027577937649880094,
+        "KC": 3.9117571308994914,
+        "ascending": null,
+        "central": 3.071896015256449,
+        "descending": 0.7456248396202207,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.0053863715512904855,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.7807940904893815,
+          "ER": 0.027577937649880094,
+          "KC": 3.9117571308994914,
+          "ascending": null,
+          "central": 3.071896015256449,
+          "descending": 0.7456248396202207,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.0053863715512904855,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 2.1024007386888273,
+          "ER": 0.1199040767386091,
+          "KC": 4.225890155173524,
+          "ascending": null,
+          "central": 3.183773712737127,
+          "descending": 0.8021555042340262,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.03014183939773074,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 1.1669192231441115,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.7480827456727086,
+        "gradedness": 0.0
+      },
+      "S": 1.91500196881682,
+      "J": 155.54882994625558,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 5.5889196675900275,
+        "ER": 1.1781774580335733,
+        "KC": 6.397231343764084,
+        "ascending": null,
+        "central": 3.905545518418147,
+        "descending": 1.6439312291506287,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.819380274907884,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 5.5889196675900275,
+          "ER": 1.1781774580335733,
+          "KC": 6.397231343764084,
+          "ascending": null,
+          "central": 3.905545518418147,
+          "descending": 1.6439312291506287,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.819380274907884,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 6.336842105263158,
+          "ER": 1.3583932853717027,
+          "KC": 6.44104049964587,
+          "ascending": null,
+          "central": 4.305313409615578,
+          "descending": 1.8492943289710035,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.2609784725715536,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.770563369763404,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.1695429147735623,
+        "gradedness": 0.0
+      },
+      "S": 1.9401062845369663,
+      "J": 120.18085481226913,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 2.750969529085873,
+        "ER": 0.11906474820143885,
+        "KC": 7.968694868327861,
+        "ascending": null,
+        "central": 5.562147445548529,
+        "descending": 1.7376956633307674,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.03501270492331902,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 2.750969529085873,
+          "ER": 0.11906474820143885,
+          "KC": 7.968694868327861,
+          "ascending": null,
+          "central": 5.562147445548529,
+          "descending": 1.7376956633307674,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.03501270492331902,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 3.320960295475531,
+          "ER": 0.3065947242206235,
+          "KC": 8.409986478655592,
+          "ascending": null,
+          "central": 5.724780437619191,
+          "descending": 1.8411085450346423,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.07115659946600626,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.505630987696101,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.4362726856537724,
+        "gradedness": 0.0
+      },
+      "S": 1.9419036733498736,
+      "J": 142.10458437159824,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 5.754293628808864,
+        "ER": 1.209232613908873,
+        "KC": 6.159648445045394,
+        "ascending": null,
+        "central": 4.181852855565593,
+        "descending": 1.6647421093148573,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.8346223133709108,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 5.754293628808864,
+          "ER": 1.209232613908873,
+          "KC": 6.159648445045394,
+          "ascending": null,
+          "central": 4.181852855565593,
+          "descending": 1.6647421093148573,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.8346223133709108,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 6.457617728531855,
+          "ER": 1.3772182254196643,
+          "KC": 6.282995299723134,
+          "ascending": null,
+          "central": 4.570736725885777,
+          "descending": 1.930100076982294,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.2993460511550516,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.8041746028356062,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.1446996447662245,
+        "gradedness": 0.0
+      },
+      "S": 1.9488742476018306,
+      "J": 120.06166655342157,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.3,
+      "pair_weights": [
+        1.3,
+        1.35
+      ],
+      "rates_hz": {
+        "DAN": 8.23157894736842,
+        "ER": 1.8570743405275778,
+        "KC": 6.206921640589788,
+        "ascending": null,
+        "central": 6.513395814513701,
+        "descending": 3.181498588657942,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.1432887478663893,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 8.23157894736842,
+          "ER": 1.8570743405275778,
+          "KC": 6.206921640589788,
+          "ascending": null,
+          "central": 6.513395814513701,
+          "descending": 3.181498588657942,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.1432887478663893,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 9.827146814404431,
+          "ER": 2.0633093525179853,
+          "KC": 6.919277573884489,
+          "ascending": null,
+          "central": 7.238689400782897,
+          "descending": 3.6249166025147552,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.6885367625877628,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.776628409586177,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.2411641867824021,
+        "gradedness": 0.0
+      },
+      "S": 2.017792596368579,
+      "J": 123.59324445530959,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 3.918467220683288,
+        "ER": 0.3190647482014389,
+        "KC": 8.579228639495204,
+        "ascending": null,
+        "central": 6.328275870721671,
+        "descending": 2.0142673851680777,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.06682660681809388,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.918467220683288,
+          "ER": 0.3190647482014389,
+          "KC": 8.579228639495204,
+          "ascending": null,
+          "central": 6.328275870721671,
+          "descending": 2.0142673851680777,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.06682660681809388,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 4.633610341643583,
+          "ER": 0.5041966426858514,
+          "KC": 9.04245702144099,
+          "ascending": null,
+          "central": 6.515188698183278,
+          "descending": 2.1253528355144984,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.10696169605351975,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.5387538063740187,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.5087837513219204,
+        "gradedness": 0.0
+      },
+      "S": 2.0475375576959394,
+      "J": 134.59751440150774,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 6.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 6.046722068328717,
+        "ER": 1.2544364508393286,
+        "KC": 6.288951129998068,
+        "ascending": null,
+        "central": 4.6213903944595005,
+        "descending": 1.879522709776751,
+        "endocrine": null,
+        "motor": null,
+        "optic": 1.828999471165628,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 6.046722068328717,
+          "ER": 1.2544364508393286,
+          "KC": 6.288951129998068,
+          "ascending": null,
+          "central": 4.6213903944595005,
+          "descending": 1.879522709776751,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.828999471165628,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 6.642751615881809,
+          "ER": 1.4255395683453236,
+          "KC": 6.640319361277445,
+          "ascending": null,
+          "central": 4.982579293385526,
+          "descending": 2.1340261739799846,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.2941944304711783,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.8812048396513746,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.2000128783497224,
+        "gradedness": 0.0
+      },
+      "S": 2.081217718001097,
+      "J": 120.64478221689936,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.35,
+      "pair_weights": [
+        1.35,
+        1.4
+      ],
+      "rates_hz": {
+        "DAN": 10.212373037857802,
+        "ER": 1.678896882494005,
+        "KC": 7.155102697830146,
+        "ascending": null,
+        "central": 5.625011291779585,
+        "descending": 2.9434180138568125,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.2466973648570208,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 10.212373037857802,
+          "ER": 1.678896882494005,
+          "KC": 7.155102697830146,
+          "ascending": null,
+          "central": 5.625011291779585,
+          "descending": 2.9434180138568125,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.2466973648570208,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 10.751708217913205,
+          "ER": 1.8290167865707432,
+          "KC": 6.996935161934196,
+          "ascending": null,
+          "central": 6.1650067750677495,
+          "descending": 3.2761611496022582,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.7017933074505454,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.8778519178217163,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.07247955294765016,
+        "KC": 1.2746785856410792,
+        "gradedness": 0.0
+      },
+      "S": 2.225010056410446,
+      "J": 124.44696445477156,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.4,
+      "pair_weights": [
+        1.4,
+        1.45
+      ],
+      "rates_hz": {
+        "DAN": 9.696583564173592,
+        "ER": 1.6797362110311749,
+        "KC": 7.286343442147962,
+        "ascending": null,
+        "central": 5.0836043360433605,
+        "descending": 2.5481909160892995,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.5106940628667984,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 9.696583564173592,
+          "ER": 1.6797362110311749,
+          "KC": 7.286343442147962,
+          "ascending": null,
+          "central": 5.0836043360433605,
+          "descending": 2.5481909160892995,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.5106940628667984,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 10.12797783933518,
+          "ER": 1.8416067146282973,
+          "KC": 7.476839868649797,
+          "ascending": null,
+          "central": 5.413223928535582,
+          "descending": 2.807133692584039,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.92357182473655,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.9063912293183395,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.012716584346058261,
+        "KC": 1.318663044704462,
+        "gradedness": 0.0
+      },
+      "S": 2.23777085836886,
+      "J": 124.09136760148546,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.35,
+      "pair_weights": [
+        1.35,
+        1.4
+      ],
+      "rates_hz": {
+        "DAN": 8.393444136657433,
+        "ER": 1.5267386091127098,
+        "KC": 7.381868521022471,
+        "ascending": null,
+        "central": 4.495620044163405,
+        "descending": 2.1864254554785734,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.0206873127044935,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 8.393444136657433,
+          "ER": 1.5267386091127098,
+          "KC": 7.381868521022471,
+          "ascending": null,
+          "central": 4.495620044163405,
+          "descending": 2.1864254554785734,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.0206873127044935,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 9.088734995383195,
+          "ER": 1.6912470023980815,
+          "KC": 6.904642328246733,
+          "ascending": null,
+          "central": 4.719666516109605,
+          "descending": 2.4122658455221964,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.4217849664856588,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.940286952175166,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.3058796131363994,
+        "gradedness": 0.0
+      },
+      "S": 2.246166565311565,
+      "J": 123.07276268581201,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 7.021237303785781,
+        "ER": 0.7490407673860912,
+        "KC": 9.678230635503185,
+        "ascending": null,
+        "central": 7.993542356719864,
+        "descending": 3.105517064408519,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.0752355032740437,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 7.021237303785781,
+          "ER": 0.7490407673860912,
+          "KC": 9.678230635503185,
+          "ascending": null,
+          "central": 7.993542356719864,
+          "descending": 3.105517064408519,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.0752355032740437,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 7.881440443213297,
+          "ER": 0.8375299760191847,
+          "KC": 10.120140364432425,
+          "ascending": null,
+          "central": 8.245463213891398,
+          "descending": 3.2185014113420585,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.13261833206499074,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.6023238568132144,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.030221593941178328,
+        "DAN": 0.0,
+        "KC": 1.6213803532063906,
+        "gradedness": 0.0
+      },
+      "S": 2.2539258039607835,
+      "J": 134.41959100864523,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.35,
+      "pair_weights": [
+        1.35,
+        1.4
+      ],
+      "rates_hz": {
+        "DAN": 9.155032317636197,
+        "ER": 1.5902877697841726,
+        "KC": 7.1529521601957375,
+        "ascending": null,
+        "central": 5.002938371976312,
+        "descending": 2.5191685912240183,
+        "endocrine": null,
+        "motor": null,
+        "optic": 3.0841353987970095,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 9.155032317636197,
+          "ER": 1.5902877697841726,
+          "KC": 7.1529521601957375,
+          "ascending": null,
+          "central": 5.002938371976312,
+          "descending": 2.5191685912240183,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.0841353987970095,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 10.22825484764543,
+          "ER": 1.7370503597122304,
+          "KC": 7.191481553022986,
+          "ascending": null,
+          "central": 5.413129830372378,
+          "descending": 2.7931998973569407,
+          "endocrine": null,
+          "motor": null,
+          "optic": 3.5347835433622685,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.9762128179054269,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.02256888078906974,
+        "KC": 1.2797500273901778,
+        "gradedness": 0.0
+      },
+      "S": 2.2785317260846747,
+      "J": 123.50085903531668,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.1,
+      "pair_weights": [
+        1.1,
+        1.15
+      ],
+      "rates_hz": {
+        "DAN": 6.2137580794090495,
+        "ER": 0.817146282973621,
+        "KC": 6.014190972892924,
+        "ascending": null,
+        "central": 3.3849731506574323,
+        "descending": 1.2634077495509366,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.9180878552971578,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 6.2137580794090495,
+          "ER": 0.817146282973621,
+          "KC": 6.014190972892924,
+          "ascending": null,
+          "central": 3.3849731506574323,
+          "descending": 1.2634077495509366,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.9180878552971578,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 5.171468144044321,
+          "ER": 0.9857314148681056,
+          "KC": 6.202813727383941,
+          "ascending": null,
+          "central": 3.6249071564789723,
+          "descending": 1.52997177315884,
+          "endocrine": null,
+          "motor": null,
+          "optic": 1.3415870190509356,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 1.1737433185973065,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 1.1318558355401847,
+        "gradedness": 0.0
+      },
+      "S": 2.305599154137491,
+      "J": 119.31448559233652,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 8.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "rates_hz": {
+        "DAN": 10.113388734995384,
+        "ER": 1.4775779376498803,
+        "KC": 7.163202627004057,
+        "ascending": null,
+        "central": 5.338560172638764,
+        "descending": 2.512907364639466,
+        "endocrine": null,
+        "motor": null,
+        "optic": 2.4370867675321493,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 10.113388734995384,
+          "ER": 1.4775779376498803,
+          "KC": 7.163202627004057,
+          "ascending": null,
+          "central": 5.338560172638764,
+          "descending": 2.512907364639466,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.4370867675321493,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 9.606371191135734,
+          "ER": 1.6430455635491608,
+          "KC": 6.801365011911661,
+          "ascending": null,
+          "central": 5.808083659540299,
+          "descending": 2.920066717988196,
+          "endocrine": null,
+          "motor": null,
+          "optic": 2.9401604560873995,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 1.066838201612631,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.011275070324509959,
+        "KC": 1.275809994680655,
+        "gradedness": 0.0
+      },
+      "S": 2.353923266617796,
+      "J": 123.41629173666628,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 11.513665743305632,
+        "ER": 0.03237410071942446,
+        "KC": 25.59542205910759,
+        "ascending": null,
+        "central": 5.211301816721871,
+        "descending": 1.7628688734924303,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.007110457592212806,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 11.513665743305632,
+          "ER": 0.03237410071942446,
+          "KC": 25.59542205910759,
+          "ascending": null,
+          "central": 5.211301816721871,
+          "descending": 1.7628688734924303,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.007110457592212806,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 12.131486611265004,
+          "ER": 0.12577937649880097,
+          "KC": 26.31139656171528,
+          "ascending": null,
+          "central": 5.3138537589079595,
+          "descending": 1.8290736463946624,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.039014648282148186,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.5136328868636422,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.19321917902831476,
+        "KC": 2.576854994106514,
+        "gradedness": 0.0
+      },
+      "S": 3.283707059998471,
+      "J": 172.83488837193568,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.9,
+      "pair_weights": [
+        0.9,
+        0.95
+      ],
+      "rates_hz": {
+        "DAN": 16.839519852262235,
+        "ER": 0.18261390887290166,
+        "KC": 31.758656879788806,
+        "ascending": null,
+        "central": 6.223811853859279,
+        "descending": 2.115370798049782,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.05349224161281585,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 16.839519852262235,
+          "ER": 0.18261390887290166,
+          "KC": 31.758656879788806,
+          "ascending": null,
+          "central": 6.223811853859279,
+          "descending": 2.115370798049782,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.05349224161281585,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 17.709602954755308,
+          "ER": 0.4496402877697842,
+          "KC": 32.60323868392248,
+          "ascending": null,
+          "central": 6.456209224129277,
+          "descending": 2.3885552989479084,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.23298206692549453,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.43632335394131316,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.571521939280906,
+        "KC": 2.7912644490108076,
+        "gradedness": 0.0
+      },
+      "S": 3.7991097422330267,
+      "J": 153.0028118518886,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 23.15180055401662,
+        "ER": 0.08249400479616308,
+        "KC": 36.41715279119181,
+        "ascending": null,
+        "central": 7.349716450868212,
+        "descending": 2.4668462920195022,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.04462244235490376,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 23.15180055401662,
+          "ER": 0.08249400479616308,
+          "KC": 36.41715279119181,
+          "ascending": null,
+          "central": 7.349716450868212,
+          "descending": 2.4668462920195022,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.04462244235490376,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 24.190766389658354,
+          "ER": 0.22458033573141487,
+          "KC": 37.30743030068894,
+          "ascending": null,
+          "central": 7.501755244404296,
+          "descending": 2.570515781370285,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.09638543856707382,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.19042059470870257,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.8833859132119414,
+        "KC": 2.9260453300232094,
+        "gradedness": 0.0
+      },
+      "S": 3.9998518379438535,
+      "J": 161.8927961838852,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 28.62566943674977,
+        "ER": 0.2109112709832134,
+        "KC": 39.85181894275964,
+        "ascending": null,
+        "central": 8.32712536384623,
+        "descending": 2.920220682576341,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.09549544901477726,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 28.62566943674977,
+          "ER": 0.2109112709832134,
+          "KC": 39.85181894275964,
+          "ascending": null,
+          "central": 8.32712536384623,
+          "descending": 2.920220682576341,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.09549544901477726,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 29.70461680517082,
+          "ER": 0.4496402877697842,
+          "KC": 40.69924022921898,
+          "ascending": null,
+          "central": 8.52553698685135,
+          "descending": 3.094919168591224,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.16200647499645293,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.14762361227066387,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.06362446916596161,
+        "DAN": 1.0887173887193715,
+        "KC": 3.0130622441276054,
+        "gradedness": 0.0
+      },
+      "S": 4.313027714283602,
+      "J": 155.24922449312456,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 34.497045244690675,
+        "ER": 0.5798561151079137,
+        "KC": 43.20898203592814,
+        "ascending": null,
+        "central": 9.926794138311754,
+        "descending": 3.8275083397485243,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.15711368219203994,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 34.497045244690675,
+          "ER": 0.5798561151079137,
+          "KC": 43.20898203592814,
+          "ascending": null,
+          "central": 9.926794138311754,
+          "descending": 3.8275083397485243,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.15711368219203994,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 35.6409972299169,
+          "ER": 0.7869304556354916,
+          "KC": 43.99796535960337,
+          "ascending": null,
+          "central": 10.174905901836796,
+          "descending": 4.043289710033359,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.25118557786978635,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.09696474984580893,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.24048294162933231,
+        "DAN": 1.270911489854511,
+        "KC": 3.0909962104619333,
+        "gradedness": 0.0
+      },
+      "S": 4.699355391791586,
+      "J": 152.7210590178102,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    },
+    {
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 45.08116343490304,
+        "ER": 1.3326139088729017,
+        "KC": 46.62927049127552,
+        "ascending": null,
+        "central": 14.040651661146242,
+        "descending": 6.512727739286631,
+        "endocrine": null,
+        "motor": null,
+        "optic": 0.27931096750893214,
+        "visual_centrifugal": null,
+        "visual_projection": null
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 45.08116343490304,
+          "ER": 1.3326139088729017,
+          "KC": 46.62927049127552,
+          "ascending": null,
+          "central": 14.040651661146242,
+          "descending": 6.512727739286631,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.27931096750893214,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        },
+        {
+          "DAN": 46.58818097876269,
+          "ER": 1.5466426858513191,
+          "KC": 47.414493593458246,
+          "ascending": null,
+          "central": 14.592361738432198,
+          "descending": 6.774749807544265,
+          "endocrine": null,
+          "motor": null,
+          "optic": 0.4083379552597523,
+          "visual_centrifugal": null,
+          "visual_projection": null
+        }
+      ],
+      "violations": {
+        "F": 0.08350933631359937,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.601056681533478,
+        "DAN": 1.5387617889035927,
+        "KC": 3.1657807734162375,
+        "gradedness": 0.0
+      },
+      "S": 5.389108580166908,
+      "J": 155.01121203161543,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": true,
+        "central": false,
+        "DAN": false,
+        "KC": false,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "evaluations": 684,
+  "brain_s": 8208
+}

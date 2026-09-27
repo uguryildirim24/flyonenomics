@@ -1,0 +1,1525 @@
+{
+  "schema": "cuda-speed-v1",
+  "units": "wall seconds; simulated seconds per batch member; rates normalized by batch where stated",
+  "note": "One measured run per configuration. Pilot timings start from initialized state, without a settling window. Full tour timings include the frozen settle/on/off windows. No pass criterion.",
+  "baseline_context": "The task brief reports about 30 wall s / simulated s for Brian2 on this Mac; not a new same-hardware benchmark.",
+  "measurements": [
+    {
+      "label": "fused-pilot-1790391464-0",
+      "app_id": "ap-mb0JBroB78hbuuln0J8Qev",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CPU dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 0.1,
+      "build_s": 106.53113830999999,
+      "stepping_s": 0.15845526900000095,
+      "kernel_and_transfer_s": 0.03447680399999342,
+      "neuromod_s": 0.025974571999995533,
+      "collection_s": 0.0008945500000265838,
+      "wall_s": 106.71369770999999,
+      "wall_s_per_sim_s": 1.5845526900000095,
+      "per_brain_wall_s_per_sim_s": 1.5845526900000095,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 110.839690349,
+      "function_wall_s_per_brain_sim_s": 1067.1369770999997,
+      "client_elapsed_s": 139.42894101142883,
+      "client_wall_s_per_brain_sim_s": 1394.2894101142883,
+      "projected_usd": 0.08535869444444445,
+      "actual_metered_usd": 0.03296217,
+      "source_sha": "24e242718eb6bb38be2d1ad4467502820ad6c49e"
+    },
+    {
+      "label": "fused-pilot-1790391687-0",
+      "app_id": "ap-EVrc1obVfTamC8p45ZXVMf",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CPU dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 271.111225269,
+      "stepping_s": 1.3178609520000464,
+      "kernel_and_transfer_s": 0.6375226169994335,
+      "neuromod_s": 0.5198670950003361,
+      "collection_s": 0.014576349000265054,
+      "wall_s": 272.47593860300003,
+      "wall_s_per_sim_s": 1.3178609520000464,
+      "per_brain_wall_s_per_sim_s": 1.3178609520000464,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 276.750803868,
+      "function_wall_s_per_brain_sim_s": 272.47593860300003,
+      "client_elapsed_s": 304.5280318260193,
+      "client_wall_s_per_brain_sim_s": 304.5280318260193,
+      "projected_usd": 0.08663694444444445,
+      "actual_metered_usd": 0.0801154,
+      "source_sha": "6d64af2575d2177e1a9381f900ad6f8eddc4c765"
+    },
+    {
+      "label": "fused-pilot-1790391992-0",
+      "app_id": "ap-4XVI9tjG3KcCPFi4TYptZP",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CPU dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 8,
+      "simulated_s": 1.0,
+      "build_s": 274.18159121400004,
+      "stepping_s": 11.130432398999915,
+      "kernel_and_transfer_s": 6.381059466000238,
+      "neuromod_s": 4.4541178689999015,
+      "collection_s": 0.11761171900013778,
+      "wall_s": 285.66947131100005,
+      "wall_s_per_sim_s": 11.130432398999915,
+      "per_brain_wall_s_per_sim_s": 1.3913040498749893,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 672587264,
+      "function_s": 296.745376972,
+      "function_wall_s_per_brain_sim_s": 35.70868391387501,
+      "client_elapsed_s": 326.77551102638245,
+      "client_wall_s_per_brain_sim_s": 40.846938878297806,
+      "projected_usd": 0.09657888888888891,
+      "actual_metered_usd": 0.08580063,
+      "source_sha": "6d64af2575d2177e1a9381f900ad6f8eddc4c765"
+    },
+    {
+      "label": "fused-pilot-1790392318-0",
+      "app_id": "ap-ey8C6yQx10hdxyPKr2vXSL",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CPU dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 1.0,
+      "build_s": 273.88210806700005,
+      "stepping_s": 43.20551533899999,
+      "kernel_and_transfer_s": 24.211388041999555,
+      "neuromod_s": 18.387877574999948,
+      "collection_s": 0.4005192100000272,
+      "wall_s": 318.513747373,
+      "wall_s_per_sim_s": 43.20551533899999,
+      "per_brain_wall_s_per_sim_s": 1.3501723543437496,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "gpu_memory_pool_bytes": 1177219584,
+      "function_s": 323.076000435,
+      "function_wall_s_per_brain_sim_s": 9.95355460540625,
+      "client_elapsed_s": 376.28097915649414,
+      "client_wall_s_per_brain_sim_s": 11.758780598640442,
+      "projected_usd": 0.13066555555555556,
+      "actual_metered_usd": 0.09360766,
+      "source_sha": "09f9fa75fa746a02a7d062c69b17ea243b188d07"
+    },
+    {
+      "label": "fused-pilot-1790392949-0",
+      "app_id": "ap-hQCkvZHh5hlzI20PgyYJuk",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": true,
+      "batch": 1,
+      "simulated_s": 0.2,
+      "build_s": 108.14859449000001,
+      "stepping_s": 0.43775614399999085,
+      "kernel_and_transfer_s": 0.25519737300015777,
+      "neuromod_s": 0.06710960999996018,
+      "collection_s": 0.010829580000034866,
+      "wall_s": 108.618603127,
+      "wall_s_per_sim_s": 2.1887807199999543,
+      "per_brain_wall_s_per_sim_s": 2.1887807199999543,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 1.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": {
+        "pool_um": 0.0,
+        "threshold_mv": 0.0,
+        "gain": 0.0
+      },
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 112.502677275,
+      "function_wall_s_per_brain_sim_s": 543.0930156349999,
+      "client_elapsed_s": 143.05943083763123,
+      "client_wall_s_per_brain_sim_s": 715.2971541881561,
+      "projected_usd": 0.08550072222222223,
+      "actual_metered_usd": 0.03298471,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-pilot-1790393120-0",
+      "app_id": "ap-OLflaEgZq82VzJggGSHkIG",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 270.165913381,
+      "stepping_s": 0.7925993040000208,
+      "kernel_and_transfer_s": 0.6439364840000508,
+      "neuromod_s": 4.618799994204892e-05,
+      "collection_s": 0.014144313999906899,
+      "wall_s": 271.00980581,
+      "wall_s_per_sim_s": 0.7925993040000208,
+      "per_brain_wall_s_per_sim_s": 0.7925993040000208,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 275.43580769,
+      "function_wall_s_per_brain_sim_s": 271.00980581,
+      "client_elapsed_s": 292.2541198730469,
+      "client_wall_s_per_brain_sim_s": 292.2541198730469,
+      "projected_usd": 0.08663694444444445,
+      "actual_metered_usd": 0.07991183,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-pilot-1790393412-0",
+      "app_id": "ap-o0nv30IqcvxRJ5bmVJ7dmG",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 8,
+      "simulated_s": 1.0,
+      "build_s": 104.647763281,
+      "stepping_s": 6.506480048,
+      "kernel_and_transfer_s": 6.348461252999925,
+      "neuromod_s": 7.774300004825818e-05,
+      "collection_s": 0.06052564499998425,
+      "wall_s": 111.438359995,
+      "wall_s_per_sim_s": 6.506480048,
+      "per_brain_wall_s_per_sim_s": 0.813310006,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 672587264,
+      "function_s": 115.394363828,
+      "function_wall_s_per_brain_sim_s": 13.929794999375,
+      "client_elapsed_s": 146.9360899925232,
+      "client_wall_s_per_brain_sim_s": 18.3670112490654,
+      "projected_usd": 0.09657888888888891,
+      "actual_metered_usd": 0.03430668,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-pilot-1790393559-0",
+      "app_id": "ap-ToaLbxOGzxO2WTFRPK8tIW",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "control"
+        ],
+        [
+          502,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 1.0,
+      "build_s": 105.704578005,
+      "stepping_s": 24.044382598999988,
+      "kernel_and_transfer_s": 23.70270251999999,
+      "neuromod_s": 6.865299995695295e-05,
+      "collection_s": 0.18877513900005738,
+      "wall_s": 130.93337452499998,
+      "wall_s_per_sim_s": 24.044382598999988,
+      "per_brain_wall_s_per_sim_s": 0.7513869562187496,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 134.80565528,
+      "function_wall_s_per_brain_sim_s": 4.091667953906249,
+      "client_elapsed_s": 151.08158326148987,
+      "client_wall_s_per_brain_sim_s": 4.721299476921558,
+      "projected_usd": 0.13066555555555556,
+      "actual_metered_usd": 0.03994034,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-pilot-1790393710-0",
+      "app_id": "ap-7ukyfI7b1pdi4lGigjt9fD",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 108.08822896,
+      "stepping_s": 0.9941256150000015,
+      "kernel_and_transfer_s": 0.8775794720000647,
+      "neuromod_s": 2.6845999897773254e-05,
+      "collection_s": 0.007659385000096108,
+      "wall_s": 109.121816916,
+      "wall_s_per_sim_s": 0.9941256150000015,
+      "per_brain_wall_s_per_sim_s": 0.9941256150000015,
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "blocks": 432,
+      "registers": 62,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 529816064,
+      "function_s": 113.996545759,
+      "function_wall_s_per_brain_sim_s": 109.121816916,
+      "client_elapsed_s": 128.52521896362305,
+      "client_wall_s_per_brain_sim_s": 128.52521896362305,
+      "projected_usd": 0.19677583333333334,
+      "actual_metered_usd": 0.07483981,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-rest-1790393931-0",
+      "app_id": "ap-BYdQHQeyWs3eoRCEi5xdmB",
+      "mode": "rest",
+      "tasks": [
+        [
+          1,
+          "control"
+        ],
+        [
+          2,
+          "control"
+        ],
+        [
+          3,
+          "control"
+        ],
+        [
+          4,
+          "control"
+        ],
+        [
+          5,
+          "control"
+        ],
+        [
+          6,
+          "control"
+        ],
+        [
+          7,
+          "control"
+        ],
+        [
+          8,
+          "control"
+        ],
+        [
+          9,
+          "control"
+        ],
+        [
+          10,
+          "control"
+        ]
+      ],
+      "implementation": "clamped rest",
+      "diagnostic_cpu_comparison": false,
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 265.88674796099997,
+      "stepping_s": 102.11685572200003,
+      "kernel_and_transfer_s": 100.6596883720004,
+      "neuromod_s": 0.0014921819994810903,
+      "collection_s": 1.2833027030006292,
+      "wall_s": 368.522366796,
+      "wall_s_per_sim_s": 8.509737976833335,
+      "per_brain_wall_s_per_sim_s": 0.8509737976833336,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 716897792,
+      "function_s": 377.039576403,
+      "function_wall_s_per_brain_sim_s": 3.0710197232999996,
+      "client_elapsed_s": 399.50435972213745,
+      "client_wall_s_per_brain_sim_s": 3.3292029976844786,
+      "projected_usd": 0.25565000000000004,
+      "actual_metered_usd": 0.10978959,
+      "source_sha": "d06ae57ef6a7e44a764e11e8d0e24ca038768fea"
+    },
+    {
+      "label": "fused-pilot-1790394331306579000-0",
+      "app_id": "ap-H2iN32bfcVsHUjL2lonzD2",
+      "mode": "pilot",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 1.0,
+      "build_s": 271.029310665,
+      "stepping_s": 1.5987226549999605,
+      "kernel_and_transfer_s": 1.3335197839987245,
+      "neuromod_s": 0.0004724200010173263,
+      "collection_s": 0.128499830998976,
+      "wall_s": 272.676727884,
+      "wall_s_per_sim_s": 1.5987226549999605,
+      "per_brain_wall_s_per_sim_s": 1.5987226549999605,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 1.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 276.830724304,
+      "function_wall_s_per_brain_sim_s": 272.676727884,
+      "client_elapsed_s": 307.4459240436554,
+      "client_wall_s_per_brain_sim_s": 307.4459240436554,
+      "projected_usd": 0.08663694444444445,
+      "actual_metered_usd": 0.08055042,
+      "source_sha": "36d30a4ac48822e919c5c379816fa6ec2fdf25bf"
+    },
+    {
+      "label": "fused-tour-1790394414753078000-33",
+      "app_id": "ap-Phuszz85jxqZv0Db54SLrl",
+      "mode": "tour",
+      "tasks": [
+        [
+          504,
+          "off-glutamate"
+        ],
+        [
+          505,
+          "off-glutamate"
+        ],
+        [
+          506,
+          "off-glutamate"
+        ],
+        [
+          507,
+          "off-glutamate"
+        ],
+        [
+          508,
+          "off-glutamate"
+        ],
+        [
+          509,
+          "off-glutamate"
+        ],
+        [
+          510,
+          "off-glutamate"
+        ],
+        [
+          501,
+          "off-histamine"
+        ],
+        [
+          502,
+          "off-histamine"
+        ],
+        [
+          503,
+          "off-histamine"
+        ],
+        [
+          504,
+          "off-histamine"
+        ],
+        [
+          505,
+          "off-histamine"
+        ],
+        [
+          506,
+          "off-histamine"
+        ],
+        [
+          507,
+          "off-histamine"
+        ],
+        [
+          508,
+          "off-histamine"
+        ],
+        [
+          509,
+          "off-histamine"
+        ],
+        [
+          510,
+          "off-histamine"
+        ],
+        [
+          501,
+          "off-dopamine"
+        ],
+        [
+          502,
+          "off-dopamine"
+        ],
+        [
+          503,
+          "off-dopamine"
+        ],
+        [
+          504,
+          "off-dopamine"
+        ],
+        [
+          505,
+          "off-dopamine"
+        ],
+        [
+          506,
+          "off-dopamine"
+        ],
+        [
+          507,
+          "off-dopamine"
+        ],
+        [
+          508,
+          "off-dopamine"
+        ],
+        [
+          509,
+          "off-dopamine"
+        ],
+        [
+          510,
+          "off-dopamine"
+        ],
+        [
+          501,
+          "off-octopamine"
+        ],
+        [
+          502,
+          "off-octopamine"
+        ],
+        [
+          503,
+          "off-octopamine"
+        ],
+        [
+          504,
+          "off-octopamine"
+        ],
+        [
+          505,
+          "off-octopamine"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 280.536712441,
+      "stepping_s": 332.96505768699996,
+      "kernel_and_transfer_s": 327.1483390920005,
+      "neuromod_s": 0.0019268220004278191,
+      "collection_s": 5.321271705998242,
+      "wall_s": 615.492737718,
+      "wall_s_per_sim_s": 27.74708814058333,
+      "per_brain_wall_s_per_sim_s": 0.867096504393229,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 620.665273743,
+      "function_wall_s_per_brain_sim_s": 1.602845671140625,
+      "client_elapsed_s": 642.619546175003,
+      "client_wall_s_per_brain_sim_s": 1.6734884014974039,
+      "projected_usd": 0.6306033333333335,
+      "actual_metered_usd": 0.17782174,
+      "source_sha": "140076d6155c3e3653879a58c42309559e09e567"
+    },
+    {
+      "label": "fused-tour-1790394414753070000-0",
+      "app_id": "ap-YlKHmuYf4hZwq7lzLhs22l",
+      "mode": "tour",
+      "tasks": [
+        [
+          501,
+          "control"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 1,
+      "simulated_s": 12.0,
+      "build_s": 269.29225602500003,
+      "stepping_s": 8.420106208999982,
+      "kernel_and_transfer_s": 8.107977850000793,
+      "neuromod_s": 0.0006856510007651195,
+      "collection_s": 0.17638275400082648,
+      "wall_s": 277.815829174,
+      "wall_s_per_sim_s": 0.7016755174166652,
+      "per_brain_wall_s_per_sim_s": 0.7016755174166652,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 526532096,
+      "function_s": 289.685841055,
+      "function_wall_s_per_brain_sim_s": 23.151319097833333,
+      "client_elapsed_s": 316.6156339645386,
+      "client_wall_s_per_brain_sim_s": 26.384636163711548,
+      "projected_usd": 0.10226000000000002,
+      "actual_metered_usd": 0.08351254,
+      "source_sha": "140076d6155c3e3653879a58c42309559e09e567"
+    },
+    {
+      "label": "fused-tour-1790394414753052000-1",
+      "app_id": "ap-rAQUbHylUiHphNEDjhDv3n",
+      "mode": "tour",
+      "tasks": [
+        [
+          502,
+          "control"
+        ],
+        [
+          503,
+          "control"
+        ],
+        [
+          504,
+          "control"
+        ],
+        [
+          505,
+          "control"
+        ],
+        [
+          506,
+          "control"
+        ],
+        [
+          507,
+          "control"
+        ],
+        [
+          508,
+          "control"
+        ],
+        [
+          509,
+          "control"
+        ],
+        [
+          510,
+          "control"
+        ],
+        [
+          501,
+          "off-acetylcholine"
+        ],
+        [
+          502,
+          "off-acetylcholine"
+        ],
+        [
+          503,
+          "off-acetylcholine"
+        ],
+        [
+          504,
+          "off-acetylcholine"
+        ],
+        [
+          505,
+          "off-acetylcholine"
+        ],
+        [
+          506,
+          "off-acetylcholine"
+        ],
+        [
+          507,
+          "off-acetylcholine"
+        ],
+        [
+          508,
+          "off-acetylcholine"
+        ],
+        [
+          509,
+          "off-acetylcholine"
+        ],
+        [
+          510,
+          "off-acetylcholine"
+        ],
+        [
+          501,
+          "off-gaba"
+        ],
+        [
+          502,
+          "off-gaba"
+        ],
+        [
+          503,
+          "off-gaba"
+        ],
+        [
+          504,
+          "off-gaba"
+        ],
+        [
+          505,
+          "off-gaba"
+        ],
+        [
+          506,
+          "off-gaba"
+        ],
+        [
+          507,
+          "off-gaba"
+        ],
+        [
+          508,
+          "off-gaba"
+        ],
+        [
+          509,
+          "off-gaba"
+        ],
+        [
+          510,
+          "off-gaba"
+        ],
+        [
+          501,
+          "off-glutamate"
+        ],
+        [
+          502,
+          "off-glutamate"
+        ],
+        [
+          503,
+          "off-glutamate"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 97.410159435,
+      "stepping_s": 321.25771273600003,
+      "kernel_and_transfer_s": 318.50209622500023,
+      "neuromod_s": 0.0009306780009410431,
+      "collection_s": 2.6080165740005867,
+      "wall_s": 420.411427523,
+      "wall_s_per_sim_s": 26.771476061333335,
+      "per_brain_wall_s_per_sim_s": 0.8366086269166667,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 424.740876838,
+      "function_wall_s_per_brain_sim_s": 1.0948214258411457,
+      "client_elapsed_s": 445.6541199684143,
+      "client_wall_s_per_brain_sim_s": 1.1605576040844123,
+      "projected_usd": 0.6306033333333335,
+      "actual_metered_usd": 0.12157514,
+      "source_sha": "140076d6155c3e3653879a58c42309559e09e567"
+    },
+    {
+      "label": "fused-tour-1790394796045204000-65",
+      "app_id": "ap-MZj6jOxaHh2uMWpwWFqoQ0",
+      "mode": "tour",
+      "tasks": [
+        [
+          506,
+          "off-octopamine"
+        ],
+        [
+          507,
+          "off-octopamine"
+        ],
+        [
+          508,
+          "off-octopamine"
+        ],
+        [
+          509,
+          "off-octopamine"
+        ],
+        [
+          510,
+          "off-octopamine"
+        ],
+        [
+          501,
+          "off-serotonin"
+        ],
+        [
+          502,
+          "off-serotonin"
+        ],
+        [
+          503,
+          "off-serotonin"
+        ],
+        [
+          504,
+          "off-serotonin"
+        ],
+        [
+          505,
+          "off-serotonin"
+        ],
+        [
+          506,
+          "off-serotonin"
+        ],
+        [
+          507,
+          "off-serotonin"
+        ],
+        [
+          508,
+          "off-serotonin"
+        ],
+        [
+          509,
+          "off-serotonin"
+        ],
+        [
+          510,
+          "off-serotonin"
+        ],
+        [
+          501,
+          "off-unclear"
+        ],
+        [
+          502,
+          "off-unclear"
+        ],
+        [
+          503,
+          "off-unclear"
+        ],
+        [
+          504,
+          "off-unclear"
+        ],
+        [
+          505,
+          "off-unclear"
+        ],
+        [
+          506,
+          "off-unclear"
+        ],
+        [
+          507,
+          "off-unclear"
+        ],
+        [
+          508,
+          "off-unclear"
+        ],
+        [
+          509,
+          "off-unclear"
+        ],
+        [
+          510,
+          "off-unclear"
+        ],
+        [
+          501,
+          "P1-low"
+        ],
+        [
+          502,
+          "P1-low"
+        ],
+        [
+          503,
+          "P1-low"
+        ],
+        [
+          504,
+          "P1-low"
+        ],
+        [
+          505,
+          "P1-low"
+        ],
+        [
+          506,
+          "P1-low"
+        ],
+        [
+          507,
+          "P1-low"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 100.377050556,
+      "stepping_s": 298.354895201,
+      "kernel_and_transfer_s": 295.5497200600012,
+      "neuromod_s": 0.0009785629998191325,
+      "collection_s": 2.643212034999735,
+      "wall_s": 400.25934243999995,
+      "wall_s_per_sim_s": 24.862907933416665,
+      "per_brain_wall_s_per_sim_s": 0.7769658729192708,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 404.639238402,
+      "function_wall_s_per_brain_sim_s": 1.0423420376041665,
+      "client_elapsed_s": 429.2013211250305,
+      "client_wall_s_per_brain_sim_s": 1.1177117737631004,
+      "projected_usd": 0.6306033333333335,
+      "actual_metered_usd": 0.11759879,
+      "source_sha": "140076d6155c3e3653879a58c42309559e09e567"
+    },
+    {
+      "label": "fused-tour-1790394866145685000-97",
+      "app_id": "ap-xIL0sNwIWR16Vc4yS2tJl5",
+      "mode": "tour",
+      "tasks": [
+        [
+          508,
+          "P1-low"
+        ],
+        [
+          509,
+          "P1-low"
+        ],
+        [
+          510,
+          "P1-low"
+        ],
+        [
+          501,
+          "P1-medium"
+        ],
+        [
+          502,
+          "P1-medium"
+        ],
+        [
+          503,
+          "P1-medium"
+        ],
+        [
+          504,
+          "P1-medium"
+        ],
+        [
+          505,
+          "P1-medium"
+        ],
+        [
+          506,
+          "P1-medium"
+        ],
+        [
+          507,
+          "P1-medium"
+        ],
+        [
+          508,
+          "P1-medium"
+        ],
+        [
+          509,
+          "P1-medium"
+        ],
+        [
+          510,
+          "P1-medium"
+        ],
+        [
+          501,
+          "P1-high"
+        ],
+        [
+          502,
+          "P1-high"
+        ],
+        [
+          503,
+          "P1-high"
+        ],
+        [
+          504,
+          "P1-high"
+        ],
+        [
+          505,
+          "P1-high"
+        ],
+        [
+          506,
+          "P1-high"
+        ],
+        [
+          507,
+          "P1-high"
+        ],
+        [
+          508,
+          "P1-high"
+        ],
+        [
+          509,
+          "P1-high"
+        ],
+        [
+          510,
+          "P1-high"
+        ],
+        [
+          501,
+          "pIP10"
+        ],
+        [
+          502,
+          "pIP10"
+        ],
+        [
+          503,
+          "pIP10"
+        ],
+        [
+          504,
+          "pIP10"
+        ],
+        [
+          505,
+          "pIP10"
+        ],
+        [
+          506,
+          "pIP10"
+        ],
+        [
+          507,
+          "pIP10"
+        ],
+        [
+          508,
+          "pIP10"
+        ],
+        [
+          509,
+          "pIP10"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 32,
+      "simulated_s": 12.0,
+      "build_s": 274.720115355,
+      "stepping_s": 311.243651072,
+      "kernel_and_transfer_s": 305.5744319630002,
+      "neuromod_s": 0.0017820439986167003,
+      "collection_s": 5.442898233999699,
+      "wall_s": 589.016355471,
+      "wall_s_per_sim_s": 25.936970922666664,
+      "per_brain_wall_s_per_sim_s": 0.8105303413333332,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 1281231360,
+      "function_s": 594.070746073,
+      "function_wall_s_per_brain_sim_s": 1.5338967590390624,
+      "client_elapsed_s": 619.6214621067047,
+      "client_wall_s_per_brain_sim_s": 1.6135975575695436,
+      "projected_usd": 0.6306033333333335,
+      "actual_metered_usd": 0.17065456,
+      "source_sha": "140076d6155c3e3653879a58c42309559e09e567"
+    },
+    {
+      "label": "fused-tour-1790395895654242000-129",
+      "app_id": "ap-kcLotYcGMulvN3EYXN5LZA",
+      "mode": "tour",
+      "tasks": [
+        [
+          510,
+          "pIP10"
+        ],
+        [
+          501,
+          "courtship_random"
+        ],
+        [
+          502,
+          "courtship_random"
+        ],
+        [
+          503,
+          "courtship_random"
+        ],
+        [
+          504,
+          "courtship_random"
+        ],
+        [
+          505,
+          "courtship_random"
+        ],
+        [
+          506,
+          "courtship_random"
+        ],
+        [
+          507,
+          "courtship_random"
+        ],
+        [
+          508,
+          "courtship_random"
+        ],
+        [
+          509,
+          "courtship_random"
+        ],
+        [
+          510,
+          "courtship_random"
+        ]
+      ],
+      "implementation": "CUDA LIF + CUDA dopamine",
+      "diagnostic_cpu_comparison": false,
+      "batch": 11,
+      "simulated_s": 12.0,
+      "build_s": 110.70020122199999,
+      "stepping_s": 84.55851382000002,
+      "kernel_and_transfer_s": 83.03793009199977,
+      "neuromod_s": 0.0007631730004220572,
+      "collection_s": 1.3971872029996888,
+      "wall_s": 196.095607368,
+      "wall_s_per_sim_s": 7.046542818333335,
+      "per_brain_wall_s_per_sim_s": 0.6405948016666668,
+      "gpu": "NVIDIA A10",
+      "blocks": 288,
+      "registers": 53,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 739211264,
+      "function_s": 201.389593134,
+      "function_wall_s_per_brain_sim_s": 1.4855727830909091,
+      "client_elapsed_s": 482.10441613197327,
+      "client_wall_s_per_brain_sim_s": 3.6523061828179793,
+      "projected_usd": 0.3526933333333333,
+      "actual_metered_usd": 0.0761729,
+      "source_sha": "016c04619552bdb9e9a35fa4e04a47e9590c41d0"
+    }
+  ],
+  "total_modal_metered_usd": 1.49583791,
+  "billing_pending": [],
+  "conservative_accounted_usd": 1.963752003507164,
+  "remaining_budget_update": {
+    "cap_usd": 8.0,
+    "metered_usd": 0.36443777,
+    "conservative_accounted_usd": 0.7005107038548524,
+    "labels": [
+      "fused-tour-1790394796045204000-65",
+      "fused-tour-1790394866145685000-97",
+      "fused-tour-1790395066456269000-129",
+      "fused-tour-1790395895654242000-129"
+    ],
+    "note": "Counts entire carry-in calls, including their pre-update portions."
+  }
+}

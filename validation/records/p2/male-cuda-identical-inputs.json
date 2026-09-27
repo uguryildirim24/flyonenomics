@@ -1,0 +1,243 @@
+{
+  "schema": "cuda-identical-events-v1",
+  "numpy": "2.5.3",
+  "generator": "PCG64",
+  "seeds": [
+    501,
+    502
+  ],
+  "dt_ms": 0.1,
+  "ticks_per_file": 10000,
+  "targets": 15016,
+  "targets_sha256": "60eac1e470c9dc9e55018c17c6a4f43b34e4ff70995b2fb3643c25d3a9fc3472",
+  "binomial_n": 100,
+  "binomial_p": 0.001,
+  "provenance": {
+    "substrate": "rest:ed9b0a469d7a6b77",
+    "files_sha256": {
+      "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+      "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+      "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+      "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+      "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+    }
+  },
+  "files": [
+    {
+      "file": "seed-501-second-00.npz",
+      "sha256": "4fe9fa51b4847c8277342ed4f000728171c789f0c6429f4f82dd237572b75fa5",
+      "seed": 501,
+      "second": 0,
+      "nonzero_events": 14298670,
+      "elementary_spikes": 15018904,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-01.npz",
+      "sha256": "b369d4c68301cadf891b4f0fe9a29cb1691c58d3713a904c10e5167b67ad96a6",
+      "seed": 501,
+      "second": 1,
+      "nonzero_events": 14291843,
+      "elementary_spikes": 15013223,
+      "max_multiplicity": 6
+    },
+    {
+      "file": "seed-501-second-02.npz",
+      "sha256": "ab84bd1a6b40906176a3ff33430ec1ce706f0dc58862c19dbee7e64d42ae803d",
+      "seed": 501,
+      "second": 2,
+      "nonzero_events": 14301755,
+      "elementary_spikes": 15022238,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-03.npz",
+      "sha256": "35a1267701c85bb702595f2f83a0932408a26354a465fab3915ab341b741f5bd",
+      "seed": 501,
+      "second": 3,
+      "nonzero_events": 14297824,
+      "elementary_spikes": 15017898,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-04.npz",
+      "sha256": "ef6d1beb017654f51f443d2837fcf8afc0ffe83ca070fb316224bcd2cb248b98",
+      "seed": 501,
+      "second": 4,
+      "nonzero_events": 14299878,
+      "elementary_spikes": 15019363,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-05.npz",
+      "sha256": "0e5733001eeaf1c3a0746988248beac90b0e082459cc2e20308a5c74f85a63e5",
+      "seed": 501,
+      "second": 5,
+      "nonzero_events": 14295859,
+      "elementary_spikes": 15014094,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-06.npz",
+      "sha256": "516ce6badaa013e649c37a73f0f2bc0c99e3c5445d4bfac21f35ba6862cb2909",
+      "seed": 501,
+      "second": 6,
+      "nonzero_events": 14291171,
+      "elementary_spikes": 15009899,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-07.npz",
+      "sha256": "8dbd4353b59fdd04676997f0e18138ae1dec91e04600900a69365b4275d4998b",
+      "seed": 501,
+      "second": 7,
+      "nonzero_events": 14293985,
+      "elementary_spikes": 15016028,
+      "max_multiplicity": 6
+    },
+    {
+      "file": "seed-501-second-08.npz",
+      "sha256": "7baf42bd4981c372d4ec314d14466e4735de90d7b73f3838c0c1ad14a11772d5",
+      "seed": 501,
+      "second": 8,
+      "nonzero_events": 14289643,
+      "elementary_spikes": 15006634,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-09.npz",
+      "sha256": "c956b906dde797ecf203d2e2ce92f7164716c0659fe79885d9ee38125c16514f",
+      "seed": 501,
+      "second": 9,
+      "nonzero_events": 14302355,
+      "elementary_spikes": 15022803,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-501-second-10.npz",
+      "sha256": "1d63e7d6cc188b3b4f1c2fedf76f243e46503af2ac43e358e1d7c2517feee58d",
+      "seed": 501,
+      "second": 10,
+      "nonzero_events": 14294127,
+      "elementary_spikes": 15012971,
+      "max_multiplicity": 6
+    },
+    {
+      "file": "seed-501-second-11.npz",
+      "sha256": "e30cc32c9b10ef60c78a266517bbb076d69272e4b6915b94a09c196091acc08b",
+      "seed": 501,
+      "second": 11,
+      "nonzero_events": 14295770,
+      "elementary_spikes": 15013503,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-00.npz",
+      "sha256": "c93d68f46a97d3ee1bd2e6ad8d8154c6c0e8e972d0c619f7bc3486cddf339476",
+      "seed": 502,
+      "second": 0,
+      "nonzero_events": 14297136,
+      "elementary_spikes": 15016829,
+      "max_multiplicity": 6
+    },
+    {
+      "file": "seed-502-second-01.npz",
+      "sha256": "1c91369058dc1b6f419234e2ea94db3814083f4194d01453451d6b4ad895a7c5",
+      "seed": 502,
+      "second": 1,
+      "nonzero_events": 14297109,
+      "elementary_spikes": 15015987,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-02.npz",
+      "sha256": "16a6a2eb58eab1f70314b53c7168ef901bdf709a99423b09ff56dcbafee25660",
+      "seed": 502,
+      "second": 2,
+      "nonzero_events": 14296310,
+      "elementary_spikes": 15013613,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-03.npz",
+      "sha256": "db2b5c08ca33a72bf4f4133b368cb8d038eef29f466350e9fc4c8ec9cfd62d5c",
+      "seed": 502,
+      "second": 3,
+      "nonzero_events": 14294766,
+      "elementary_spikes": 15013806,
+      "max_multiplicity": 6
+    },
+    {
+      "file": "seed-502-second-04.npz",
+      "sha256": "af36dc8727fd72e404c90296698214d33e3eeb249c6178abb4d9a192c8cd99ec",
+      "seed": 502,
+      "second": 4,
+      "nonzero_events": 14292015,
+      "elementary_spikes": 15008672,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-05.npz",
+      "sha256": "d22ff52967abc67debe04eb9f603e02c88714f8845621ec569a1d69a8f2801c4",
+      "seed": 502,
+      "second": 5,
+      "nonzero_events": 14301163,
+      "elementary_spikes": 15019778,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-06.npz",
+      "sha256": "a8cce85502fa7972da6ca7dd2ef3ff133375599ff4828feb74d36bc6f2398eac",
+      "seed": 502,
+      "second": 6,
+      "nonzero_events": 14294521,
+      "elementary_spikes": 15013622,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-07.npz",
+      "sha256": "63e016450560d4b35eacdf2594b3902ac6b4039005e444e48c6af46e99728752",
+      "seed": 502,
+      "second": 7,
+      "nonzero_events": 14302571,
+      "elementary_spikes": 15019309,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-08.npz",
+      "sha256": "d95164ee5e04dbc8a00ffb63aa9752ef5a99c5a37b3a423b658b98874102f7a1",
+      "seed": 502,
+      "second": 8,
+      "nonzero_events": 14294543,
+      "elementary_spikes": 15015244,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-09.npz",
+      "sha256": "9be2c37648f82e163ae8c654313793efdebc2c21da539e86a3700d8c385a8486",
+      "seed": 502,
+      "second": 9,
+      "nonzero_events": 14294237,
+      "elementary_spikes": 15013125,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-10.npz",
+      "sha256": "c862b224025cadb49f11eec2afbaf7f0934bf0cbd2135a61dadc2d39a9bba8c7",
+      "seed": 502,
+      "second": 10,
+      "nonzero_events": 14296351,
+      "elementary_spikes": 15015885,
+      "max_multiplicity": 5
+    },
+    {
+      "file": "seed-502-second-11.npz",
+      "sha256": "e3aa60774a82f6386a14222dcbdff107ccf7ddcd43b9896c0d0d5de5cb7385f7",
+      "seed": 502,
+      "second": 11,
+      "nonzero_events": 14301534,
+      "elementary_spikes": 15023233,
+      "max_multiplicity": 6
+    }
+  ]
+}

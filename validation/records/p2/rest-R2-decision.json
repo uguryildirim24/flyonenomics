@@ -1,0 +1,1748 @@
+{
+  "class": "development",
+  "status": "failed",
+  "decision_status": "tier2",
+  "execution": {
+    "job_id": "mac-w17-R2-20260916",
+    "commit": "3b1af0d5ca9f1caa7f630c9187da81805c731a45",
+    "code_scope": "git:8910ab5b893ac6e3e8482771f58348ea9f6900de31445f533deb9e0e4c744c0f",
+    "platform": "darwin-arm64",
+    "class": "development",
+    "inputs": {
+      "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+      "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+      "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+      "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+    }
+  },
+  "source_R1": {
+    "path": "camber-runs/wp17/R1-curated-retry/R1/summary.json",
+    "sha256": "a39a831e8af3cbdb6a6f3efaee6a56acaec92ad7ec0c5d6861105d498d00570d",
+    "execution": {
+      "job_id": "27299",
+      "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+      "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      }
+    }
+  },
+  "source_R2": {
+    "path": "camber-runs/wp17/R2/summary.json",
+    "sha256": "69d5c0255f6385fdd3c9180ab73919a49262504c8cf338e5f1aa6fce4044f7c1"
+  },
+  "bare_execution": {
+    "job_id": "mac-w17-bare-20260915",
+    "commit": "48141f11b18b12e2013f36225eff1b1042e29d4a",
+    "code_scope": "git:8910ab5b893ac6e3e8482771f58348ea9f6900de31445f533deb9e0e4c744c0f",
+    "platform": "darwin-arm64",
+    "class": "development",
+    "inputs": {
+      "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+      "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+      "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+      "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+    }
+  },
+  "verification": {
+    "candidate_evaluations": 297,
+    "candidate_tasks": 27,
+    "bare_evaluations": 20,
+    "bare_reused_byte_for_byte": true,
+    "all_record_provenance_verified": true,
+    "artifact_hashes_verified": 32,
+    "independent_reaggregation_matches": true,
+    "R2_stage_import_verified": true,
+    "R_long_evaluations": 0
+  },
+  "artifact_sha256": {
+    "bare-reference/bare-extended.ndjson": "28bc0a9614eedfb17698b234595d9de31e182276fb0ca3346599706000b37d4a",
+    "bare-reference/bare-upstream.ndjson": "737a45d968908c13dbe97321c56ec1c64c6bc57bd52211c54236db3019728478",
+    "bare-reference/tasks.json": "c51a994ffee7cdef69c7dc11250e5e6f915d12f06647a70ba55e41aee761c93e",
+    "reflex/candidate-00-background.ndjson": "6ca5474b3923129259682c26b7b1b59d515edab098625f69a0dc18a75687932a",
+    "reflex/candidate-00-ff-extended.ndjson": "5f8a672ab47b38d09bd4864d7628455c1da646dcaba1e78c204773dfd74e8c09",
+    "reflex/candidate-00-ff-upstream.ndjson": "44c95d87b89a87cae9775e9b6e377c33f390c321a0db9de77127c91baa3fb4da",
+    "reflex/candidate-01-background.ndjson": "967510b9693669cf255f533544915733fd87e2c9841072c23bf4b9a22ee6d2f9",
+    "reflex/candidate-01-ff-extended.ndjson": "bcd231716aa0407ef71005cd5ac531fd82aa35ffd72aff347e31d89d23517dc1",
+    "reflex/candidate-01-ff-upstream.ndjson": "47b3ad1a96ac9815a64485de4a0f39dff30ee530e2efc9413948ffce624d4de3",
+    "reflex/candidate-02-background.ndjson": "936915d12484cc7877e85cfcf4034dbc7e4bd855f61430c41547d03a25929771",
+    "reflex/candidate-02-ff-extended.ndjson": "f00af431183641e0104b8c6e4c90d0f562f49cc454fcc7aef8571d96ac34c4b9",
+    "reflex/candidate-02-ff-upstream.ndjson": "8b163dfcc6a2260956a7afad4698234922425d65361047c359268fa779cd0c83",
+    "reflex/candidate-03-background.ndjson": "814c4dc398091a96c16e4fe001a18825e7df42e1d2fcaf11218f9e0c3027eb04",
+    "reflex/candidate-03-ff-extended.ndjson": "6b281bb207318412c1c13929557e9c138f8540d7cce471f88594f788c3d6b9c9",
+    "reflex/candidate-03-ff-upstream.ndjson": "22dfbb1965e2ccdee08969ff1a774e8bd8d52ca2503e0d8f10ab8871e4b3c2f0",
+    "reflex/candidate-04-background.ndjson": "bb443cbc18a59e91c38674ba5ae2816f8b61aa284bfa312ecb3199f09ac59ec2",
+    "reflex/candidate-04-ff-extended.ndjson": "0a3eead46bfac35cd0bfa1f1e93dc18cb115351ac7f76b7ea2bdf1060340fc52",
+    "reflex/candidate-04-ff-upstream.ndjson": "395c7fc924f18ff7961230db7ac6182a10a5734ecf0e529332673b143cac5128",
+    "reflex/candidate-05-background.ndjson": "c4e22773419e10ab60ba08ea4d909089859e97148cff37e811b43e0b6e32a6da",
+    "reflex/candidate-05-ff-extended.ndjson": "45b4c02dc0fce5634159c15a3de5f54b87707facf70a6373b7042cbde122c4bb",
+    "reflex/candidate-05-ff-upstream.ndjson": "f4c28451c2d97c43eefb2e502c48257c028c55d9ff9ac2152c9ec29ae4e9b039",
+    "reflex/candidate-06-background.ndjson": "3d008b75c3386be5707fcb67d129a210a0be2d3f376b6ddad00601b916e13ed5",
+    "reflex/candidate-06-ff-extended.ndjson": "60dbc901549494b2de3355db51d85f51e00d53a29126ecddc43c521d0c58e14a",
+    "reflex/candidate-06-ff-upstream.ndjson": "9b50626b98bdc7dc826a4ad39ce9ad0f87d53246d198c98aaa15dcbc52551bca",
+    "reflex/candidate-07-background.ndjson": "87470c1126dba20a754469bd41b4479d268c280fadc4017f4be7c3f98b219b77",
+    "reflex/candidate-07-ff-extended.ndjson": "b1299af4b8b0284c7311649917db1f087122c4d71b82240b5ff3c9b8070c5e3e",
+    "reflex/candidate-07-ff-upstream.ndjson": "95732507998780505a34da48bf79691cb4b9adc5e3bf7c3d75b2f31b8a526a97",
+    "reflex/candidate-08-background.ndjson": "8df0e1b64ae7711030d89d6c955b66fbced40937714964f70742df90a018da2c",
+    "reflex/candidate-08-ff-extended.ndjson": "d0a5e8f99e4cb92b65043b2be32776e143387e52e342dfa5471ce9a9e16c7d4a",
+    "reflex/candidate-08-ff-upstream.ndjson": "51e9c0862e77db4493d8a33879a3e6aca0f21ba840be91aff9f679856865bd47",
+    "reflex/tasks.json": "0373d55ba88eb2af6b30fa96913c46288403bb84745f010ed6440af2ff85a5ab",
+    "reflex-summary.json": "4e2037e595dd7a8f5446cdca61cc73ed92f91901cedd01ab321e77c4ea65c087"
+  },
+  "decision": {
+    "ranked": [],
+    "shortlist": [],
+    "status": "tier2",
+    "trigger": "R-reflex",
+    "tier2_pairs": [
+      [
+        3.0,
+        6.0
+      ],
+      [
+        3.0,
+        8.0
+      ],
+      [
+        4.0,
+        2.0
+      ]
+    ]
+  },
+  "candidates": [
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.1,
+      "pair_weights": [
+        1.1,
+        1.15
+      ],
+      "rates_hz": {
+        "DAN": 0.566943674976916,
+        "ER": 0.8669064748201439,
+        "KC": 1.6006503122786686,
+        "ascending": 1.837519781326428,
+        "central": 3.748091689250226,
+        "descending": 1.6328201180395177,
+        "endocrine": 1.7219298245614034,
+        "motor": 2.0176100628930818,
+        "optic": 1.0432883179197463,
+        "visual_centrifugal": 1.1889312977099236,
+        "visual_projection": 0.6206258537191108
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.566943674976916,
+          "ER": 0.8669064748201439,
+          "KC": 1.6006503122786686,
+          "ascending": 1.837519781326428,
+          "central": 3.748091689250226,
+          "descending": 1.6328201180395177,
+          "endocrine": 1.7219298245614034,
+          "motor": 2.0176100628930818,
+          "optic": 1.0432883179197463,
+          "visual_centrifugal": 1.1889312977099236,
+          "visual_projection": 0.6206258537191108
+        },
+        {
+          "DAN": 0.7210526315789473,
+          "ER": 1.1452038369304558,
+          "KC": 1.6896465134247636,
+          "ascending": 3.0253632570853113,
+          "central": 4.085695824550839,
+          "descending": 1.6838080574801129,
+          "endocrine": 2.5842105263157893,
+          "motor": 1.6066037735849055,
+          "optic": 1.4768611315335767,
+          "visual_centrifugal": 1.6421119592875317,
+          "visual_projection": 0.8657850076576018
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.512925464970229,
+      "J": 17.98448123968131,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.912023005428146,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.512925464970229,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        -17.0,
+        -36.0,
+        3.0,
+        1.0,
+        -10.0,
+        -1.0
+      ],
+      "b_hz": [
+        -17.0,
+        -36.0,
+        3.0,
+        -20.0,
+        16.0,
+        9.0,
+        20.0,
+        4.0,
+        -33.0,
+        -16.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.15,
+      "pair_weights": [
+        1.15,
+        1.2
+      ],
+      "rates_hz": {
+        "DAN": 0.7210526315789473,
+        "ER": 1.1452038369304558,
+        "KC": 1.6896465134247636,
+        "ascending": 3.0253632570853113,
+        "central": 4.085695824550839,
+        "descending": 1.6838080574801129,
+        "endocrine": 2.5842105263157893,
+        "motor": 1.6066037735849055,
+        "optic": 1.4768611315335767,
+        "visual_centrifugal": 1.6421119592875317,
+        "visual_projection": 0.8657850076576018
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.7210526315789473,
+          "ER": 1.1452038369304558,
+          "KC": 1.6896465134247636,
+          "ascending": 3.0253632570853113,
+          "central": 4.085695824550839,
+          "descending": 1.6838080574801129,
+          "endocrine": 2.5842105263157893,
+          "motor": 1.6066037735849055,
+          "optic": 1.4768611315335767,
+          "visual_centrifugal": 1.6421119592875317,
+          "visual_projection": 0.8657850076576018
+        },
+        {
+          "DAN": 0.9333333333333332,
+          "ER": 1.4065947242206234,
+          "KC": 1.776215311312858,
+          "ascending": 4.36964465544526,
+          "central": 4.455510388437218,
+          "descending": 1.9375160379779317,
+          "endocrine": 3.478947368421052,
+          "motor": 1.7018867924528303,
+          "optic": 1.940369840102843,
+          "visual_centrifugal": 2.2075063613231554,
+          "visual_projection": 1.1133366447286726
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.512925464970229,
+      "J": 18.21413310420917,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.912023005428146,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.512925464970229,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        1.0,
+        -10.0,
+        -1.0,
+        5.0,
+        4.0,
+        1.0
+      ],
+      "b_hz": [
+        1.0,
+        -10.0,
+        -1.0,
+        6.0,
+        14.0,
+        -6.0,
+        1.0,
+        23.0,
+        -5.0,
+        -22.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.15,
+      "pair_weights": [
+        1.15,
+        1.2
+      ],
+      "rates_hz": {
+        "DAN": 0.7649122807017544,
+        "ER": 1.186810551558753,
+        "KC": 1.7750048290515743,
+        "ascending": 3.0557473744784924,
+        "central": 4.389798504466526,
+        "descending": 1.8491147036181677,
+        "endocrine": 2.6635964912280703,
+        "motor": 1.7327044025157232,
+        "optic": 1.495391401927021,
+        "visual_centrifugal": 1.7617048346055981,
+        "visual_projection": 0.8368806655904631
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.7649122807017544,
+          "ER": 1.186810551558753,
+          "KC": 1.7750048290515743,
+          "ascending": 3.0557473744784924,
+          "central": 4.389798504466526,
+          "descending": 1.8491147036181677,
+          "endocrine": 2.6635964912280703,
+          "motor": 1.7327044025157232,
+          "optic": 1.495391401927021,
+          "visual_centrifugal": 1.7617048346055981,
+          "visual_projection": 0.8368806655904631
+        },
+        {
+          "DAN": 0.9710064635272392,
+          "ER": 1.4497601918465228,
+          "KC": 1.865192196252656,
+          "ascending": 4.400431592576608,
+          "central": 4.785629328515507,
+          "descending": 2.110033358994098,
+          "endocrine": 3.6201754385964917,
+          "motor": 1.7871069182389938,
+          "optic": 1.9771711230636277,
+          "visual_centrifugal": 2.3354961832061067,
+          "visual_projection": 1.1160437104184775
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 10.20459264532005,
+      "J": 18.903300677097427,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 2.603690185777967,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 10.20459264532005,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        34.0,
+        15.0,
+        3.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "b_hz": [
+        34.0,
+        15.0,
+        3.0,
+        -5.0,
+        -11.0,
+        -5.0,
+        -1.0,
+        2.0,
+        2.0,
+        3.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 0.9333333333333332,
+        "ER": 1.4065947242206234,
+        "KC": 1.776215311312858,
+        "ascending": 4.36964465544526,
+        "central": 4.455510388437218,
+        "descending": 1.9375160379779317,
+        "endocrine": 3.478947368421052,
+        "motor": 1.7018867924528303,
+        "optic": 1.940369840102843,
+        "visual_centrifugal": 2.2075063613231554,
+        "visual_projection": 1.1133366447286726
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.9333333333333332,
+          "ER": 1.4065947242206234,
+          "KC": 1.776215311312858,
+          "ascending": 4.36964465544526,
+          "central": 4.455510388437218,
+          "descending": 1.9375160379779317,
+          "endocrine": 3.478947368421052,
+          "motor": 1.7018867924528303,
+          "optic": 1.940369840102843,
+          "visual_centrifugal": 2.2075063613231554,
+          "visual_projection": 1.1133366447286726
+        },
+        {
+          "DAN": 1.219113573407202,
+          "ER": 1.6796163069544363,
+          "KC": 1.8774000386324126,
+          "ascending": 5.808358509566968,
+          "central": 4.839935260463716,
+          "descending": 2.1946112394149346,
+          "endocrine": 4.300877192982456,
+          "motor": 1.7355345911949687,
+          "optic": 2.4110517784742913,
+          "visual_centrifugal": 2.8314249363867687,
+          "visual_projection": 1.3727927480442073
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 10.637456727616328,
+      "J": 20.195812396156125,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.036554268074246,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 10.637456727616328,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        5.0,
+        4.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "b_hz": [
+        5.0,
+        4.0,
+        1.0,
+        2.0,
+        5.0,
+        -3.0,
+        -5.0,
+        6.0,
+        1.0,
+        8.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "rates_hz": {
+        "DAN": 0.9710064635272392,
+        "ER": 1.4497601918465228,
+        "KC": 1.865192196252656,
+        "ascending": 4.400431592576608,
+        "central": 4.785629328515507,
+        "descending": 2.110033358994098,
+        "endocrine": 3.6201754385964917,
+        "motor": 1.7871069182389938,
+        "optic": 1.9771711230636277,
+        "visual_centrifugal": 2.3354961832061067,
+        "visual_projection": 1.1160437104184775
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.9710064635272392,
+          "ER": 1.4497601918465228,
+          "KC": 1.865192196252656,
+          "ascending": 4.400431592576608,
+          "central": 4.785629328515507,
+          "descending": 2.110033358994098,
+          "endocrine": 3.6201754385964917,
+          "motor": 1.7871069182389938,
+          "optic": 1.9771711230636277,
+          "visual_centrifugal": 2.3354961832061067,
+          "visual_projection": 1.1160437104184775
+        },
+        {
+          "DAN": 1.2637119113573407,
+          "ER": 1.721223021582734,
+          "KC": 1.9638980104307515,
+          "ascending": 5.843389440368291,
+          "central": 5.221000200742748,
+          "descending": 2.389479086476777,
+          "endocrine": 4.578947368421052,
+          "motor": 1.9223270440251572,
+          "optic": 2.4820127522174498,
+          "visual_centrifugal": 2.9942111959287527,
+          "visual_projection": 1.420331967382756
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.176453228349015,
+      "J": 21.02850641167308,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-002-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.575550768806933,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.176453228349015,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        2.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "b_hz": [
+        2.0,
+        2.0,
+        0.0,
+        3.0,
+        -1.0,
+        4.0,
+        0.0,
+        2.0,
+        6.0,
+        -4.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "rates_hz": {
+        "DAN": 1.219113573407202,
+        "ER": 1.6796163069544363,
+        "KC": 1.8774000386324126,
+        "ascending": 5.808358509566968,
+        "central": 4.839935260463716,
+        "descending": 2.1946112394149346,
+        "endocrine": 4.300877192982456,
+        "motor": 1.7355345911949687,
+        "optic": 2.4110517784742913,
+        "visual_centrifugal": 2.8314249363867687,
+        "visual_projection": 1.3727927480442073
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 1.219113573407202,
+          "ER": 1.6796163069544363,
+          "KC": 1.8774000386324126,
+          "ascending": 5.808358509566968,
+          "central": 4.839935260463716,
+          "descending": 2.1946112394149346,
+          "endocrine": 4.300877192982456,
+          "motor": 1.7355345911949687,
+          "optic": 2.4110517784742913,
+          "visual_centrifugal": 2.8314249363867687,
+          "visual_projection": 1.3727927480442073
+        },
+        {
+          "DAN": 1.5756232686980611,
+          "ER": 1.9651079136690648,
+          "KC": 1.9380400489343892,
+          "ascending": 7.24776291181125,
+          "central": 5.243273863294188,
+          "descending": 2.486091865537593,
+          "endocrine": 5.162280701754386,
+          "motor": 1.9691823899371068,
+          "optic": 2.8765059956059456,
+          "visual_centrifugal": 3.49529262086514,
+          "visual_projection": 1.632128813278695
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 10.92513880006811,
+      "J": 22.45620095471709,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-001-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.324236340526027,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 10.92513880006811,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0017857142857142859
+      },
+      "a_hz": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        4.0,
+        -3.0
+      ],
+      "b_hz": [
+        1.0,
+        1.0,
+        1.0,
+        -2.0,
+        4.0,
+        0.0,
+        2.0,
+        5.0,
+        4.0,
+        2.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.4,
+      "pair_weights": [
+        1.4,
+        1.45
+      ],
+      "rates_hz": {
+        "DAN": 2.6182825484764543,
+        "ER": 2.3684652278177456,
+        "KC": 1.2438735432361083,
+        "ascending": 10.204387857862178,
+        "central": 7.1194431898022685,
+        "descending": 3.9763664357197848,
+        "endocrine": 9.853070175438596,
+        "motor": 3.8654088050314463,
+        "optic": 4.298627610313559,
+        "visual_centrifugal": 5.657760814249364,
+        "visual_projection": 2.179846020116727
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 2.6182825484764543,
+          "ER": 2.3684652278177456,
+          "KC": 1.2438735432361083,
+          "ascending": 10.204387857862178,
+          "central": 7.1194431898022685,
+          "descending": 3.9763664357197848,
+          "endocrine": 9.853070175438596,
+          "motor": 3.8654088050314463,
+          "optic": 4.298627610313559,
+          "visual_centrifugal": 5.657760814249364,
+          "visual_projection": 2.179846020116727
+        },
+        {
+          "DAN": 3.1310249307479228,
+          "ER": 2.6007194244604315,
+          "KC": 1.278765050544073,
+          "ascending": 11.57188893684362,
+          "central": 7.63411623005119,
+          "descending": 4.390274570182192,
+          "endocrine": 11.033333333333333,
+          "motor": 4.231132075471698,
+          "optic": 4.8460107400671575,
+          "visual_centrifugal": 6.412086513994911,
+          "visual_projection": 2.4878264828842256
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.512925464970229,
+      "J": 33.10931246479857,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-000-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-000-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-000-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.912023005428146,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.512925464970229,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0
+      },
+      "a_hz": [
+        -1.0,
+        3.0,
+        1.0,
+        3.0,
+        0.0,
+        0.0
+      ],
+      "b_hz": [
+        -1.0,
+        3.0,
+        1.0,
+        0.0,
+        3.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.0,
+        -1.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 3.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.45,
+      "pair_weights": [
+        1.45,
+        1.5
+      ],
+      "rates_hz": {
+        "DAN": 2.8776546629732223,
+        "ER": 2.513669064748201,
+        "KC": 1.3384521280020605,
+        "ascending": 11.545317220543808,
+        "central": 7.092897470641373,
+        "descending": 3.9866564023607904,
+        "endocrine": 9.421052631578947,
+        "motor": 3.508176100628931,
+        "optic": 4.485606676211482,
+        "visual_centrifugal": 5.919020356234096,
+        "visual_projection": 2.3582722794817665
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 2.8776546629732223,
+          "ER": 2.513669064748201,
+          "KC": 1.3384521280020605,
+          "ascending": 11.545317220543808,
+          "central": 7.092897470641373,
+          "descending": 3.9866564023607904,
+          "endocrine": 9.421052631578947,
+          "motor": 3.508176100628931,
+          "optic": 4.485606676211482,
+          "visual_centrifugal": 5.919020356234096,
+          "visual_projection": 2.3582722794817665
+        },
+        {
+          "DAN": 3.455309325946445,
+          "ER": 2.722302158273381,
+          "KC": 1.3920996716244929,
+          "ascending": 12.851604085743057,
+          "central": 7.5617735621800675,
+          "descending": 4.329586861688479,
+          "endocrine": 10.33640350877193,
+          "motor": 3.8022012578616358,
+          "optic": 4.979301938629416,
+          "visual_centrifugal": 6.611641221374046,
+          "visual_projection": 2.6531065027525975
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.512925464970229,
+      "J": 33.7987327762374,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-009-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-009-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-009-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.912023005428146,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.512925464970229,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0
+      },
+      "a_hz": [
+        0.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0,
+        0.0
+      ],
+      "b_hz": [
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        5.0,
+        -1.0,
+        1.0,
+        3.0,
+        -1.0,
+        1.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    },
+    {
+      "g_gaba": 4.0,
+      "g_glu": 4.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "w_bg": 1.5,
+      "pair_weights": [
+        1.5,
+        1.55
+      ],
+      "rates_hz": {
+        "DAN": 3.3558633425669435,
+        "ER": 2.6724220623501203,
+        "KC": 1.4261477045908186,
+        "ascending": 12.82864336066753,
+        "central": 7.191600170631336,
+        "descending": 4.019040287400565,
+        "endocrine": 9.27061403508772,
+        "motor": 3.433018867924528,
+        "optic": 4.831457046180569,
+        "visual_centrifugal": 6.42824427480916,
+        "visual_projection": 2.6909805869448236
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 3.3558633425669435,
+          "ER": 2.6724220623501203,
+          "KC": 1.4261477045908186,
+          "ascending": 12.82864336066753,
+          "central": 7.191600170631336,
+          "descending": 4.019040287400565,
+          "endocrine": 9.27061403508772,
+          "motor": 3.433018867924528,
+          "optic": 4.831457046180569,
+          "visual_centrifugal": 6.42824427480916,
+          "visual_projection": 2.6909805869448236
+        },
+        {
+          "DAN": 4.01320406278855,
+          "ER": 2.8805755395683454,
+          "KC": 1.507005344150409,
+          "ascending": 14.067731261688968,
+          "central": 7.632492723075379,
+          "descending": 4.3436489607390305,
+          "endocrine": 10.1140350877193,
+          "motor": 3.6449685534591194,
+          "optic": 5.309850077605369,
+          "visual_centrifugal": 7.093193384223919,
+          "visual_projection": 3.019421333664473
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 11.512925464970229,
+      "J": 35.2379010333496,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": false,
+      "long_passed": null,
+      "provenance": [
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-011-seed-1"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-011-seed-2"
+        },
+        {
+          "job_id": "27299",
+          "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+          "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+          "platform": "linux-x86_64",
+          "task_id": "setting-011-seed-3"
+        }
+      ],
+      "reflex_violations": {
+        "a": 3.6888794541139363,
+        "b": 3.912023005428146,
+        "c": 3.912023005428146
+      },
+      "reflex_violation": 11.512925464970229,
+      "retention": {
+        "upstream": 0.0,
+        "extended": 0.0
+      },
+      "a_hz": [
+        2.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "b_hz": [
+        2.0,
+        1.0,
+        0.0,
+        -1.0,
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "extended": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          84.0,
+          89.0,
+          89.0,
+          76.0,
+          93.0,
+          85.0,
+          76.0,
+          86.0,
+          85.0,
+          90.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      }
+    }
+  ]
+}

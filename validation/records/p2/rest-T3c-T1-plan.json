@@ -1,0 +1,89 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "stage": "T1",
+  "engine_model": "lif+cbi",
+  "item": 89,
+  "dt_ms": 0.05,
+  "recorded_dt_ms": 0.1,
+  "rho_mech": 1.2336139268858282,
+  "q_plan": 27.0,
+  "t0_brain_s": 2760.0,
+  "pack_worker_s_per_brain_s": 150.0,
+  "makespan_s": 8400.0,
+  "admitted": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ]
+    }
+  ],
+  "n_units": 1,
+  "unit_id": "1.0-1.0-cbi--72.0-all",
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "ibm": {
+    "workers": 36.0,
+    "worker_s_per_brain_s": 45.75,
+    "setup_s": 600.0,
+    "timeout_s": 9000.0,
+    "build_s": 250.0
+  },
+  "job_shapes": {
+    "B_brain_s": 54,
+    "slices": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        19
+      ]
+    ],
+    "n_jobs": 1,
+    "n_tasks": 15,
+    "t1_brain_s": 684,
+    "n_units": 1,
+    "launch": true,
+    "reason": null
+  },
+  "cap_list_usd": 5.0,
+  "t0_record": "validation/records/p2/rest-T3c-T0.json",
+  "note": "item 89: T1 R-screen for 1.0-1.0-cbi--72.0-all alone at dt 0.05 ms rk4; other 44 stay closed; T0 record not rewritten"
+}

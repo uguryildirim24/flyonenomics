@@ -1,0 +1,275 @@
+{
+  "status": "frozen analysis and descriptive extraction completed; unreviewed first numbers",
+  "commands": [
+    ".venv/bin/python scripts/adhd_study.py analyse --raw camber-runs/adhd-study/5b-02 --calibration camber-runs/adhd-study/5a-01 --pair validation/records/p2/adhd-study-pair.json --out camber-runs/adhd-study/5b-02-results.json",
+    ".venv/bin/python scripts/adhd_describe.py 5a --raw camber-runs/adhd-study/5a-01 --plan validation/records/p2/adhd-study-calibration-plan.json --pair validation/records/p2/adhd-study-pair.json --out camber-runs/adhd-study/5b-02-figures --record camber-runs/adhd-study/5a-01-descriptive.json",
+    ".venv/bin/python scripts/adhd_describe.py 5b --raw camber-runs/adhd-study/5b-02 --calibration camber-runs/adhd-study/5a-01 --pair validation/records/p2/adhd-study-pair.json --result camber-runs/adhd-study/5b-02-results.json --out camber-runs/adhd-study/5b-02-figures --record camber-runs/adhd-study/5b-02-descriptive.json"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.17.0-1020-oracle-aarch64-with-glibc2.39",
+    "numpy": "2.5.3",
+    "scipy": "1.16.2",
+    "brian2": "2.10.1",
+    "source_commit": "f28779b2099018f7188de8c7f73234c0c53b828f",
+    "git_status": ""
+  },
+  "analysis_started_utc": "2026-09-24T04:54:15Z",
+  "analysis_finished_utc": "2026-09-24T04:54:39Z",
+  "analysis_exit_code": 0,
+  "analysis_sha256": "ab72054c5101e311aea36ac43d266c04177294fb7a0ca7f5b4c1bea7b3de3d9b",
+  "runner_sha256": "32d484d0962fb1dba987cb8f80d7ce2497c315726267ef0aaeea2c61aed09b63",
+  "plan_sha256": "dc1fb1df32b795303a16a931673cabdbf570d7ef0b446542808e8c5e37835b29",
+  "pair_sha256": "b941a440714244811e9ce305a45e678d5f9e5ea25a4a8f2ed638c0f630eff4dc",
+  "calibration_plan_sha256": "c40623ac8b8e099f55acd2b0a8899e65a089dfb795bdc2c5ecbdb29b8207d944",
+  "bootstrap": {
+    "replicates": 10000,
+    "invalid": 0,
+    "pair_selection_uncertainty_included": false,
+    "template_uncertainty_included": true
+  },
+  "exact_sign_assignments": 1024,
+  "holm_family_size": 2,
+  "holm_alpha": 0.05,
+  "calibration_plumbing": "5a-01 used pre-d-0025 plumbing with the same per-arm model law and input statistics; original RNG audit remains failed. Retained by d-0025, no new selection.",
+  "void_5b_01_excluded": true,
+  "remaining_calibration_replay_skipped": [
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "code_changed": false,
+  "full_suite_rerun": false,
+  "qualification": "951 passed, 30 skipped, 49 warnings at cb9229a; same pinned code. Review round runs pinned gate.",
+  "affine_warning": "Finite but ill-conditioned: tiny positive corrected predictor variances produce huge scales. No clamping, tolerance changes, alternative fit or omitted output. CI includes zero: no detected difference; does not rule out affine explanation.",
+  "descriptive_intervals": "Seed ranges only, not additional confidence intervals or tests.",
+  "descriptive_extraction_source": "\"\"\"Read-only frozen descriptive readouts and affine conditioning diagnostics.\nNo new tests, thresholds, fits, bootstrap, selection or changes to inference.\n\"\"\"\nfrom pathlib import Path\nimport json,sys\nimport numpy as np\nsys.path.insert(0,str(Path.cwd()/'scripts'))\nimport adhd_study as s\nfrom flyonenomics.io import load_npy\nraw=Path('camber-runs/adhd-study/5b-02')\nplan,pair=s.read(s.PLAN),s.read(s.PAIR)\nrates,hashes=s.load_rates(raw,'5b',plan_hash=s.sha(s.PLAN),pair_hash=s.sha(s.PAIR))\ncal,cal_hashes=s.load_rates(Path('camber-runs/adhd-study/5a-01'),'5a',plan_hash=plan['calibration_reference']['plan_sha256'])\nresult=s.read(Path('camber-runs/adhd-study/5b-02-results.json'))\nassert result['raw_sha256']==hashes and result['calibration_sha256']==cal_hashes\n_,axis=s.analysis.templates(cal,tuple(pair['pair']))\naffine=s.analysis.affine_residual(rates,axis)\nnp.testing.assert_array_equal(affine['residual'],result['affine_secondary']['residual'])\nfolds=[]\nfor held in range(10):\n    train=np.arange(10)!=held\n    x,y=rates[train,0,:3],rates[train,1,:3]\n    n=len(x);xc,yc=x-x.mean(axis=1,keepdims=True),y-y.mean(axis=1,keepdims=True)\n    xm,ym=xc.mean(axis=0),yc.mean(axis=0);dx,dy=xc-xm,yc-ym\n    variance=np.mean(xm*xm-np.sum(dx*dx,axis=0)/(n*(n-1)),axis=0)\n    covariance=np.mean(xm*ym-np.sum(dx*dy,axis=0)/(n*(n-1)),axis=0)\n    scale,offset,resolved=s.analysis.fit_affine(x,y)\n    folds.append({'held_seed':201+held,'corrected_variance_hz2':variance.tolist(),\n                  'corrected_covariance_hz2':covariance.tolist(),'scale':scale.tolist(),\n                  'offset_hz':offset.tolist(),'resolved':resolved.tolist(),\n                  'minimum_positive_variance_hz2':float(variance[variance>0].min()),\n                  'maximum_scale':float(scale.max()),'maximum_scale_cell_position':int(scale.argmax())})\nlabels=['ER','TuBu','DAN','CX_DAN','central']\nprimary,full,injected_primary,injected_full,terms,pool_occ,drifts=[],[],[],[],[],[],[]\nfor seed in range(201,211):\n    run=s.read(raw/f'seed-{seed}.json')\n    for row in run['rows']:\n        with load_npy(raw/row['file'],allow_pickle=False) as z:\n            counts=[z['er_counts'].sum(axis=1),z['tubu_counts'].sum(axis=1),\n                    z['DAN_counts'],z['CX_DAN_counts'],z['central_counts']]\n            primary.append([int(v[800:1000].sum()) for v in counts])\n            full.append([int(v[800:].sum()) for v in counts])\n            ticks=z['injected_ticks'];injected_primary.append(int(((ticks>=80000)&(ticks<100000)).sum()))\n            injected_full.append(int((ticks>=80000).sum()))\n            terms.append([float(z[k][800:1000].mean()) for k in ('er_dv_mv','er_gain','er_occ1','er_occ2')])\n            pool_occ.append([z[k][800:1000].mean(axis=0).tolist() for k in ('pool_occ_D1','pool_occ_D2')])\n            drifts.append((z['pool_um'][200]-z['pool_um'][0]).tolist())\n            for key in z.files: assert np.all(np.isfinite(z[key])),(row['file'],key)\n    print(f'described seed {seed}',file=sys.stderr,flush=True)\nn=[245,156,*[run['rows'][0]['group_n'][k] for k in labels[2:]]]\nprimary=np.array(primary).reshape(10,4,8,5);full=np.array(full).reshape(10,4,8,5)\nterms=np.array(terms).reshape(10,4,8,4);drifts=np.array(drifts).reshape(10,4,8,-1)\nj=np.array(result['mixture']['J_hz'])@axis\nh=np.array(result['H_per_seed_condition'])\ndef summary(x):\n    return {'mean':x.mean(axis=0).tolist(),'seed_min':x.min(axis=0).tolist(),'seed_max':x.max(axis=0).tolist(),\n            'range_is_not_confidence_interval':True}\nrecord={'purpose':'Frozen descriptive secondaries and unchanged affine fit conditioning; no new inferential tests',\n        'conditions':list(s.analysis.CONDITIONS),'protocols':list(s.analysis.PROTOCOLS),\n        'plan_sha256':s.sha(s.PLAN),'pair_sha256':s.sha(s.PAIR),'result_sha256':s.sha(Path('camber-runs/adhd-study/5b-02-results.json')),\n        'population_labels':labels,'population_neuron_counts':n,\n        'primary_window_s':[8,10],'full_test_window_s':[8,22],\n        'primary_spikes_per_seed_condition_protocol_population':primary.tolist(),\n        'full_test_spikes_per_seed_condition_protocol_population':full.tolist(),\n        'primary_mean_per_neuron_hz':summary(primary/(2*np.array(n))),\n        'full_test_mean_per_neuron_hz':summary(full/(14*np.array(n))),\n        'primary_injected_events_per_seed_condition_protocol':np.array(injected_primary).reshape(10,4,8).tolist(),\n        'full_test_injected_events_per_seed_condition_protocol':np.array(injected_full).reshape(10,4,8).tolist(),\n        'H_primary':summary(h),'J_projected':summary(j),'J_projected_per_seed_condition':j.tolist(),\n        'mixture_coefficients':summary(np.array(result['mixture']['coefficients'])),\n        'mixture_residual_norm_hz':summary(np.array(result['mixture']['residual_norm_hz'])),\n        'receptor_term_labels':['threshold_shift_mv','gain','D1_occupancy','D2_occupancy'],\n        'primary_ER_receptor_terms':summary(terms),\n        'compartments':plan['compartments'],\n        'primary_pool_D1_D2_occupancy':np.array(pool_occ).reshape(10,4,8,2,-1).tolist(),\n        'settle_pool_drift_um':summary(drifts),\n        'affine_conditioning':{'folds':folds,'cell_metadata':plan['cells'],\n            'interpretation':'Near-zero positive corrected variances are not clamped by the frozen rule. Large fitted scales make this secondary unstable; original result retained without tolerance changes or refitting.'},\n        'all_raw_arrays_finite':True,'DAN_and_CX_DAN_per_cell_traces_available':False,\n        'readout_limit':'Only recorded DAN/CX_DAN/central group totals; per-neuron group means are totals divided by census size, not invented individual traces.'}\nprint(json.dumps(record,indent=2,allow_nan=False))\n",
+  "descriptive_extraction_sha256": "b312f5bbc10413a63d8a026934179e39f2a384d2ab5acbb29de92ca89483ff9b",
+  "output_sha256": {
+    "validation/records/p2/adhd-study-results.json": "47c6fc6e9ef83b13bdacc3af1b89b96f6b3b8d6f25c0bd1dd577d42326c0657e",
+    "validation/records/p2/adhd-study-5a-descriptive.json": "31304c6ccc33ae5b478db1c8a177e9ee4b9256c2a98472ec288dfefb96e1921a",
+    "validation/records/p2/adhd-study-5b-descriptive.json": "742b51c2e4ec1d3c49507af0bec92cc8500fb4045bce60cc6c5dac1b4175d67b",
+    "validation/records/p2/adhd-study-secondaries.json": "669c6acb6cba2d88e9b32bbf3baf53fd09cb2955e14427a74c7288fa4e9fdc9b",
+    "validation/records/p2/adhd-study-per-seed.csv": "728081dadda7cc14dfa08d501f0945b4d591ca1173d266e63d57d992dec815bc",
+    "validation/records/p2/adhd-study-5b-audit.json": "4af5fbf07ce096fcd0a31ba0f940c2086dfd81c90c86f7e664b19ff3311f2ab5"
+  },
+  "analysis_log_sha256": {
+    "5b-02-analysis.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "5b-02-analysis.finished": "440eee86c0b7654dddd9974bf891242e22bf5321a2eae54597ef9e5a19fc9118",
+    "5b-02-analysis.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "5b-02-analysis.started": "e0da9872861639261d2c90e13e7feadd56afc0041e4330949414e399ad98facf"
+  },
+  "cleanup": {
+    "at_utc": "2026-09-24T05:03:11.781608+00:00",
+    "removed_transfer_bundles": [
+      {
+        "path": "<compute-home>/flyo-t0077-clock-fix.bundle",
+        "bytes": 7237,
+        "sha256": "8751955ce70cd07e997f485f92023769159f37ffa0eeecc2d3fda5cf92c58487"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-d0019.bundle",
+        "bytes": 7173,
+        "sha256": "b591e6ab765ca0516a9a0c9c583dbd657e259d139ad862e4bda8570a678882c0"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-d0023.bundle",
+        "bytes": 5316,
+        "sha256": "cc14a14dc4a9d6014c94bb94a4d8f053d590ef803c53b53ec9857c58e59b9908"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-d0025-plan.bundle",
+        "bytes": 2429,
+        "sha256": "8baada29f796e1b2d9e744dea851fdce84c504923de528f023cd55695cc4ceb7"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-d0025-qualified.bundle",
+        "bytes": 10045,
+        "sha256": "219a2e4e0164845a622172d988afa2b9d499d374655eaa45e20f70bb10e08d87"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-d0025-repair.bundle",
+        "bytes": 42648,
+        "sha256": "b4c0a42d1cf75b1ff96b87cb361f90f725158845cc6c3784b1cce6b7cfc879eb"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-final-code.bundle",
+        "bytes": 1221,
+        "sha256": "c6a13b684fbb96ab32739c974d7a6f96de121451ab8453362799528e026845a8"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-final-plan.bundle",
+        "bytes": 3060,
+        "sha256": "6b26b7b45c09b51f2b78707b15a3cae558803611e4c8a103e76ddeccb48f7cd5"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-gate-fix.bundle",
+        "bytes": 17146,
+        "sha256": "dae861fbb977a56374d0a8362aef755bb832ae4ac2829d020c10f1544df4a845"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-pair.bundle",
+        "bytes": 12959,
+        "sha256": "f1498f218dba601b1bce82ea4868463b51a654675278739b462a2659b40bd13f"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-part-a.bundle",
+        "bytes": 2159,
+        "sha256": "3483ff7fd4c8260525b18f0df577a09ad05f742a6fc2e60d85d17196704d208e"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-plan.bundle",
+        "bytes": 90105,
+        "sha256": "abea46458ca35783023cfb658a513f94b249db10a92378597634d7c0a6ac7427"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-qualified-plan.bundle",
+        "bytes": 2162,
+        "sha256": "5636821b4b6a59ad14a692940e850ba4706ef9416b6cfd8a781cddeeeec34d8e"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-qualified.bundle",
+        "bytes": 6684,
+        "sha256": "14419e0aeec73c90f71571874c6f3d365d95051254200a99495d67be57a9fade"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-refreeze.bundle",
+        "bytes": 2032,
+        "sha256": "19a91eaa041a096d3d96e5f38a4bfc3a4f8df1c6a4246db34e6056dc0a1852d9"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-replay-plan.bundle",
+        "bytes": 1543,
+        "sha256": "d944b7fb1e11b72931f77844bfabe577dbf59b3ccc12d4345c99c3e907129564"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-rng-fix.bundle",
+        "bytes": 15548,
+        "sha256": "af3cb9b7406f108c64a2578980f83af6ea8eb4fa1af06e9fc60b0c2832e8a5eb"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077-study.bundle",
+        "bytes": 7960059,
+        "sha256": "1464ad9a355349d4aa3848f4225a308a64faf6a48926e2a2934d20e5b04556c1"
+      },
+      {
+        "path": "<compute-home>/flyo-t0077.bundle",
+        "bytes": 42889,
+        "sha256": "1ed093c399c33f4cbccd7bbfa755e4eb7c65a82cc6897b1cf9d2a72243e11a72"
+      }
+    ],
+    "gate_scratch_cache_copied_home_then_removed": {
+      "constants/01af677e76c9f195": "d1f7e95ffbe2ff245cf1bb600667fcda3301413333a8d08dccfa9a909e4b141d",
+      "constants/0431a86677213657": "aba99040b0cf2b39f378a4778d3bd12ba6cec08c23938692d488bddcc3392c60",
+      "constants/054802a57334924a": "e34ee114c2f7be2776d9254652ee93079b9225b449cade19887088851e874462",
+      "constants/056edc9cd40292ac": "b5a217fd027896acc9cb220a9a13502e74f09e11a6f6f2637f9ccfff25ab8ae0",
+      "constants/075b00c3af1c6464": "919afdb55d18d633282018a64d843effe289e2675a836ca814253493bf7c4f06",
+      "constants/094be7f3961e0c2f": "a23039523140d6f50ea91ccd4754aafacd14705931382ac59dd4865677b28e1c",
+      "constants/0a43145bf6bd1237": "f088201a6d6f3137f086d92fab2e1dd0ffcdef94b37a3e7db6666c55b7890257",
+      "constants/10d0b3e0d607b7ad": "2cbb5a8e5b8681e1ae24ea3e42d50fd43d6e2d1154f8d8963b0863dd100eea82",
+      "constants/11cec4ef9c32ef01": "21752acc120af1f9e05d7c0db11531c22bb604ebbf2f1a5761eafbc09086b09c",
+      "constants/181d53c7926012dc": "7b462d127aa0604b7446fa415c140d5c5528850ddd2fb8c8182bfa617d97e611",
+      "constants/1eb49f445b29f4a8": "4ca19a0244c54b4d56511f68b3ac90457ef7dc474361b89754296ecfd71818f8",
+      "constants/207c8423864c2c10": "57da46a4228f9a98a6aff75a244d15caab5e7b5ca3c07171f65b06e1c8ead800",
+      "constants/2317d1f2203d1383": "2c49fb8dce2578989308376d86abf551f37ca97caaa059d09eb31f12c21bfb0c",
+      "constants/24d68d5eaa2510a0": "36b2461959538225c2c30fa6d4c43010ef8c210e8288f6e19892f44034400d80",
+      "constants/2939f02d66ab49ce": "8d6ad654ff6780d96714d21bcf8fddfa734fc52147ea7baee627949b8d72de9c",
+      "constants/2aa44ce4c4e59c5e": "b5fb3d729ccddc0140d395ac9bbf1bd99e21fddbc820f8cfb6440778385dcb96",
+      "constants/2d0ae06a988336d8": "241ba4adb4ac2b2c6212b9e48e68605599b2e63299054f1d3a340ca889442355",
+      "constants/30682cf184156dbc": "0993df000cc6fc74af54a6f1a34ff365fb6085d34f251624265eba63ab5a6042",
+      "constants/36e102172dee6650": "770040dcab666c855d7d7f464769135599da3852adf2fbef09c22d2fc4184544",
+      "constants/3bacd08c477eb9b6": "e1fdc34c3b01853406aba6c646ac9004ef4990c178a275b743340ce1ccdc718d",
+      "constants/3f4bae048c40a9ef": "6ca1e5146e4c9907ce2df15acd093f717d14c1f0aa91fbd5ca9ab5360bb967a3",
+      "constants/40d0ac518645e6b7": "c692e9d3c420a6939d8ad7ddb56cbed832fdc6b04d289303a9c4f6a4385a7878",
+      "constants/49327093f9d27778": "c9d6f7985685c846bb0b71167726d018796706dafa49548e9a0f71f137e384ab",
+      "constants/4ad5cb14039b7771": "e98e9b8880120811b0982969110d75f286057a889583f0481062f4f74609280c",
+      "constants/5983fda4536cf53b": "a4ec0226f4203b05bff37a4b33d4650c1feffb6219b4df03cee9a6afb20761c4",
+      "constants/67bbec4eb0606d28": "a3117e0f69fe4522feb9b7e5145fa3d5bf39aa6a580bdc41fa0c6ca7910944f5",
+      "constants/67f6ecf5abace180": "0ae79362a2c40e1d7c0ba92b04b0758ddcd4e8d1c3a0c5aad0c997191f08bac8",
+      "constants/6a1acb759b5fc5d3": "6e998943ec92792196cf3ce7f9606ff52624076bde8f77052fdec05d4e4c7667",
+      "constants/6c4a030c3c745a59": "701a312afe5b2e29883a308c7f0231a263402e37c07f353a3bdef92395eb9651",
+      "constants/6c8136ecc578e8b2": "fb0380b2b89b1fda4f9f84f542d11638635cb7f91b09c58b09622e8d8c89cba5",
+      "constants/71be1aec0dfc266c": "bf67a81a37921ddb51689c3ab4fe02c83c57b649cd8a868baf1aca377b16d04c",
+      "constants/7315f99934254575": "2f5a2aafd71bcb4fef8f76c035b6be7aa6ab32e8f5acfbdd838b89835f7ff65f",
+      "constants/7499751c3334a2dd": "29745fde46e6546f0df7ba4cd1cd8cf2c3330b0176f283d8a783cbe7f06b7d7b",
+      "constants/753956352e97e1eb": "0ed5af1e3891eb6e43ddd6d1238cc906bc336baff4bca898963cd3ba5a83cbf6",
+      "constants/76fd8f4c9d4c898d": "a2e6b8acc4f65656bb3c322eb87dcbcf68557cf98bbd74b47d28414db893726b",
+      "constants/7b6fb79be17405c4": "16f1dd4eab878e6524e3da90ec04c43dac0598f803613e3801ade367f1032094",
+      "constants/827b91f8e0dd53cc": "64b62a9e0ce49134b9668a00b3b45b17a4385670e66327a1e305cd18f6ebd54e",
+      "constants/835cdb3794978bba": "6f54ebbc74a0169b38aa9fef0d3ac763d225f2cec3d9b1f484f83927f9ffe76f",
+      "constants/8377adbc666ef47c": "08c925afa9f44ca519ebe2ed6edc1b4cebf875286f6481f3f4784e4d7bd1ff5e",
+      "constants/843e3fb5e9511de3": "3bdb1735f747e2e178366abf7aaf484840c2e87d94ca6b46db3ac490aee23351",
+      "constants/89c4af8a40a3684c": "6790137e1c6edcd69538cfa1e87da6dea669c502382ac8ac784e216c1ac3d831",
+      "constants/8a6891805f8dd713": "98c9f3daeceec5ff9679f59081b4a2147d11b2a5b741a826b27de0d65ea54868",
+      "constants/8d6e099d4f283278": "55dda44d175036a30948b19e1ddd8c67be160d690b3a5dc0d7606eab3b4e0183",
+      "constants/8f20aac4103156af": "8606f30c35e1867c91c4a6a9230aa0871f6412e8aaf979931d46dbe66e323bcb",
+      "constants/9b3664dcff4e79f9": "b26d34ea4837a9f0f4dc12850bb28053a48b37ab5d1a2a5ffb929b0b518e0d3f",
+      "constants/9d340be5518d2bfb": "6f4471025c530c9df5100f5226bc84ca5c05d9d7fb97761005ccfa03672f9ab9",
+      "constants/9ff92169b5d62cff": "1261163a7f1ef992ffb31212e3783da0615c23d6f29a6e4b7011c4f17c302f99",
+      "constants/a00f98c068b038dd": "e9a83d43a4b307aa1b9755f49c9639bc8e22f1f8e2cbd8f8f755ffaf67870912",
+      "constants/a0bfcdd9a482ef5e": "45a6a7cc02d01cade0cd6b7a3a060a5b152e05f2cc7e84db3b2f0692689b3bd4",
+      "constants/a0d3ed0a500aab45": "fc9fd4568e1fd0e2b951d42964edea837174e751f823c0e3f1b788ca8a434c92",
+      "constants/a1c1634c38b1e50c": "4cfc4f56d466877c2de9000ff2e71fafcbb5f6102b951df5512758a5fdd1f278",
+      "constants/a462e478009a775f": "ae04d33a8ad30c12b2b478d094ac04bae9939f098d53129b8eb2c772cf9c4280",
+      "constants/a6f3486cab99c3b1": "bb44b35a0036cc152839d46ed202bfde5686d77f74f955df5c87e26d75ed9bbe",
+      "constants/a9216bc7eb0db931": "2f902decfb585f0bab315922fb85c5b0a2c687ab71f3edf9c2b8018dff3f3edd",
+      "constants/aa4b460b566849df": "9411013c246564bb082813f391f99ffb08ca825a3096f0d119e4c3141eb79c1e",
+      "constants/abd5c80e860df902": "d6eeed14dcb53138249aff8ca1feae0d75917b14ee841fbfccccdb6d044650c8",
+      "constants/abdc218ab431ca03": "4bd1291efd191d925e73094805abf90e09f4024d040f28d7b4a9bdbee39226b5",
+      "constants/ac54488569641602": "eb163054cfe6619fea9e0d6dc2933f4ce8935102df6db6dd13256b550953d4ea",
+      "constants/b167be682e28b830": "2925a8a0d06c1f38e38d3cf123b4eee92e8d295e849e6e233049070bd4ad4691",
+      "constants/b67806a3c2b4451d": "1d7d4ebee013ac43da2691780bac19dd29e298023eebd355c0324dbca54f54cb",
+      "constants/b77f1adcb6c4ebad": "898e943a4581fe052c332fc46eb78a32c4e363b856e82961f837dec35c2f88a0",
+      "constants/b7f371ea7f78842e": "4e0057e8578d6e4b6daa521e1dbdf411929f115eeac97abb1949f440b235b837",
+      "constants/b8379c44f78c0383": "46d6e99d3a4c38bab23bff1954d0096b5c8082799680d898e820684c9a4d4bde",
+      "constants/b868aacaf539d165": "60482c1699a49e0a250de2e8970a4cc9f5ce1e5eb54c7f9eb6de3289a8b491d5",
+      "constants/b8fc661044db58a6": "1cd8ed37801f92d38e91607ce14b3be29eb25ffd9483cbe26d78184082d35998",
+      "constants/bcdae582b7aecdc7": "34f54b9953cc408f95c316f436d04e89ef9dbd4633c50f579a518ba5a352a134",
+      "constants/c29b66a0a0dee9a5": "c02e7ccb89ee3d31b5b367f56eb0705c68f6f0c054814d388ca96ff6065897f7",
+      "constants/c515f282627394fe": "129c74e6db15ccdd10b686cf4dafb570f1fbe0bdc4d510d7331fe34ee24c521b",
+      "constants/ccc2b31219da70cf": "9abfc045685c43dd19156999e86b373578f2663dce47a7bbec697abdeeeabb1e",
+      "constants/d39f2d702efc1554": "8c869779980da4837cfbeedded5b42aa6270be3864339489dca74d21a716b09d",
+      "constants/d46e8f0221ffd309": "8664b3da21644f180dc906de836e365eadf128a47a74d098adcc19a9957ce232",
+      "constants/d722b215982e502d": "7059eca18ddfee38d5586ff9bcbdf70ed8039493704270798b975652461da046",
+      "constants/d78a2edb928aa091": "470c021976cdc857990f369becf01e516ff1cadff59771bf1371e2a6d230cba5",
+      "constants/da39a3ee5e6b4b0d": "cb8d987ddcb990007574d5b6713f0d5ed8b71a638c9ce87d51f567e9ef01d93b",
+      "constants/dd1a3086ef72ed6f": "1bfc7a8706c7b4c070a19b1bf816dbf92de277b71ae5040bbe8f75d837962376",
+      "constants/e138b8e6dc581884": "2032eeeab316f0ca6e202adc37cbd748b0783d4d65196374db9cd7400e7f683e",
+      "constants/e1c2a603957cc09b": "7a937e49de1dbe9ee8f6cabc3b47cc03611a119ebf90d72cb87bda2186b055c0",
+      "constants/e68c74da6146d9be": "57f05fb068354d48c61e51df10d7acb2bedccd9a9c5c051b974bfcfa3471b524",
+      "constants/e6ab526b2ca7696e": "2958c5eb048c69677afcc6041449b5d5d5cc4d0c05146a1aa183b637c95314a3",
+      "constants/e85cd93393bbbaf1": "330e349b9e39e53fb21bc079d4a4739a7707879958ada51ee416f4d99e963d50",
+      "constants/eb326827f52e0aab": "87f5a12e69d338e8f33414d70eabc6ec3683f66815af3429df46eeea1c5b6bf3",
+      "constants/ef0a472858187387": "9f3a4a6c886ec5810b60edf2b80161816e58ad4afd2da21171e81edf1cd1ea57",
+      "constants/f392a6e479167215": "9b54c705a635c2b8e29557ebfa5303eef1a27afa9399f656352a5faec5cec15d",
+      "constants/fcaac40fd12d9351": "af555f0f38099711c746f3af6f50e156fffa017995deac75d121363c9779fd0b"
+    },
+    "active_study_or_gate_processes": [],
+    "partial_tmp_files": [],
+    "source_checkout_status": "",
+    "preserved": "Permanent raw/log/manifest/result evidence, qualified source checkouts and shared biological input cache; no neural output deleted."
+  },
+  "cleanup_receipt_sha256": "0da9d0222c447edace4f4693fb6a77cad0bc88ab884208d9a3744d7ee9ee536a",
+  "driver_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "collection_qa": {
+    "all_output_hash_bindings_match": true,
+    "all_53_svg_hashes_and_xml_valid": true,
+    "exact_p_and_holm_recomputed_from_retained_seed_contrasts": true,
+    "result_document_local_links_resolve": true,
+    "method_or_code_changes": false
+  },
+  "final_idle_check": {
+    "at_utc": "2026-09-24T05:14:00.434550+00:00",
+    "active_processes": [],
+    "partial_tmp_files": [],
+    "temporary_transfer_bundles": [],
+    "checkout_commit": "f28779b2099018f7188de8c7f73234c0c53b828f",
+    "checkout_status": ""
+  },
+  "final_idle_receipt_sha256": "1e4337f8d0c7120f4d94328aacfd1b468f01002713ced959279d81c665f114ee"
+}

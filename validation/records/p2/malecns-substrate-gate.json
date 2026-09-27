@@ -1,0 +1,35 @@
+{
+  "checkout": "<compute-home>/flyonenomics-t-0076",
+  "checkout_has_git": true,
+  "command": "FLYONENOMICS_CACHE_DIR=$HOME/flyo-cache OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 timeout 5400 .venv/bin/pytest -q -rf",
+  "dataset": "male-cns:v1.0",
+  "exit_code": 0,
+  "failed": 0,
+  "filtered": false,
+  "host": "compute host",
+  "log_created_utc": "2026-09-22T19:12:01.989760162Z",
+  "log_modified_utc": "2026-09-22T20:29:47.366760050Z",
+  "log_path_on_box": "/tmp/t-0076-full-suite-reviewed.log",
+  "log_sha256": "7e144b98fbccba48f3f1c876b0aa4feaac5b6ab4f6fb9eab8863a9e581fdc471",
+  "passed": 927,
+  "previous_completed_gate": {
+    "commit": "2579095",
+    "failures": [
+      "tests/test_wp16.py::test_static_read_call_check_is_clean",
+      "tests/test_wp16.py::test_0_9r_parts_pass",
+      "tests/test_wp24_mech.py::test_0_16_adaptation_closed_form"
+    ],
+    "log_sha256": "e3201e36a4daa31c10ae97cfb177ba6720312985995df9607e1e379986bfd621",
+    "resolution": "Cherry-picked reviewed upstream fix 2b6abfd for both static-read failures; reran the entire suite with BLAS/OpenMP limited to one thread and the existing 300 s adaptation timeout unchanged. No assertion or reference relaxed.",
+    "summary": "3 failed, 924 passed, 30 skipped, 49 warnings in 4569.34s"
+  },
+  "pytest_invocations_in_final_gate": 1,
+  "pytest_wall_s": 4663.36,
+  "regeneration_byte_identical": true,
+  "remaining_lane_python_processes_after_gate_and_regeneration": 0,
+  "skipped": 30,
+  "substrate_id": "rest:5836215ca8694178",
+  "summary": "927 passed, 30 skipped, 49 warnings in 4663.36s (1:17:43)",
+  "tested_commit": "d73d2f04719a4e88268c8a197eab227f14786045",
+  "warnings": 49
+}

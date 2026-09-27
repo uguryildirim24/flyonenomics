@@ -1,0 +1,1664 @@
+{
+  "class": "development",
+  "sub_tier": "T3e",
+  "stage": "screen",
+  "wave": "wp29",
+  "engine_model": "lif",
+  "substrate": "1.0-4.0-0.0-False-100-<w>-kc-6.0",
+  "item": 110,
+  "flags": [],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "ranked": [],
+  "shortlist": [],
+  "qualified": [],
+  "n_screen_passers": 1,
+  "n_qualified": 0,
+  "failed_stage": "R-reflex",
+  "p2_partial_b": true,
+  "stop_rule": "item 110: no R-screen passer kept item 74 floors with dark MN9 under 5 Hz in every seed; rest search closes at P2-partial-B",
+  "followup": "none",
+  "job_bare_mean": 56.0,
+  "closest_miss": {
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "arm_id": "sens",
+    "w_bg": 1.0,
+    "pair_weights": [
+      1.0,
+      1.2
+    ],
+    "grade_weight": 1.4,
+    "screen_passed": true,
+    "failed_checks": [],
+    "S": 0.0,
+    "J": 119.20220877690859,
+    "measured_F_max_pair": 2.679567771889278,
+    "measured_kc_hz_mean": 0.08754104693838131,
+    "measured_central_hz_mean": 4.831463916491017,
+    "mn9_dark_max_hz": 2.9,
+    "mn9_dark_every_seed_under_5": true,
+    "mn9_dark": [
+      {
+        "w_bg": 1.0,
+        "seed": 1,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 1,
+        "hz": 2.6
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 2,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 2,
+        "hz": 2.9
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 3,
+        "hz": 0.3
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 3,
+        "hz": 1.8
+      }
+    ],
+    "mn9_dark_sugar_max_hz": 4.0,
+    "mn9_dark_sugar_every_seed_under_5": true,
+    "a_hz": [
+      33.0,
+      34.0,
+      22.0,
+      19.0,
+      22.0,
+      21.0
+    ],
+    "b_hz": [
+      33.0,
+      34.0,
+      22.0,
+      26.0,
+      23.0,
+      27.0,
+      30.0,
+      27.0,
+      25.0,
+      27.0
+    ],
+    "reflex_passed": false,
+    "reflex_harmonised": false,
+    "reflex_verdicts": {
+      "original": {
+        "reflex_passed": false,
+        "mean_hz": 50.0,
+        "seed_min_hz": 40.0,
+        "reflex_violations": {
+          "a": 0.7444404749474958,
+          "b": 0.6014799920341215,
+          "c": 0.0
+        }
+      },
+      "harmonised": {
+        "reflex_passed": false,
+        "mean_hz": 28.0,
+        "seed_min_hz": 22.400000000000002,
+        "job_bare_mean": 56.0,
+        "reflex_violations": {
+          "a": 0.1646219796945538,
+          "b": 0.021661496781179467,
+          "c": 0.0
+        }
+      }
+    },
+    "retention": {
+      "upstream": 0.5589285714285714,
+      "extended": 0.5589285714285714
+    },
+    "rates_hz": {
+      "DAN": 0.8092336103416436,
+      "ER": 0.0,
+      "KC": 0.08754104693838131,
+      "ascending": 0.000546683930369731,
+      "central": 4.831463916491017,
+      "descending": 1.6435463176802667,
+      "endocrine": 0.0,
+      "motor": 0.05157232704402517,
+      "optic": 0.00017842785710293354,
+      "visual_centrifugal": 0.3230279898218829,
+      "visual_projection": 0.02077486650937539
+    },
+    "lab": {
+      "single_unit_fano_100ms_mean": 0.35032682058882497,
+      "mean_pairwise_corr_50ms_mean": 1.5670950465225903e-05,
+      "pca_participation_ratio": 20.012651339589457,
+      "fano_n_scored": 191,
+      "fano_n_silent": 1809
+    },
+    "deepest": "T2"
+  },
+  "t0": [
+    {
+      "arm_id": "sens",
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "arm_id": "nomotor",
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "arm_id": "indeg",
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "arm_id": "thdeg-0.5",
+      "difference_hz": 10.8,
+      "retention": 0.19285714285714287,
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "arm_id": "thdeg-1.0",
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "arm_id": "thdeg-2.0",
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    }
+  ],
+  "arms": [
+    {
+      "id": "sens",
+      "bg_policy": "sens",
+      "ladder": [
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "beta": null,
+      "t0": {
+        "arm_id": "sens",
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "seeds": 10,
+        "job_index": 0,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen passer, item 74 fail",
+      "failed_stage": "R-reflex",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-sens",
+          "arm_id": "sens",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            1.0
+          ],
+          "grade_weight": 1.2,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 22.912824418481335,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 2.679567771889278,
+          "measured_kc_hz_mean": 0.0,
+          "measured_central_hz_mean": 0.0,
+          "mn9_dark_max_hz": 0.3,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 1.0,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 1.0,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 1.0,
+              "seed": 3,
+              "hz": 0.3
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            43.0,
+            40.0,
+            43.0,
+            33.0,
+            34.0,
+            22.0
+          ],
+          "b_hz": [
+            43.0,
+            40.0,
+            43.0,
+            42.0,
+            39.0,
+            39.0,
+            35.0,
+            41.0,
+            45.0,
+            40.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 0.0,
+            "ascending": 0.0,
+            "central": 0.0,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 0.0,
+            "visual_centrifugal": 0.0,
+            "visual_projection": 0.0
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+          "arm_id": "sens",
+          "w_bg": 1.0,
+          "pair_weights": [
+            1.0,
+            1.2
+          ],
+          "grade_weight": 1.4,
+          "screen_passed": true,
+          "failed_checks": [],
+          "S": 0.0,
+          "J": 119.20220877690859,
+          "measured_F_max_pair": 2.679567771889278,
+          "measured_kc_hz_mean": 0.08754104693838131,
+          "measured_central_hz_mean": 4.831463916491017,
+          "mn9_dark_max_hz": 2.9,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 1.0,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 1.2,
+              "seed": 1,
+              "hz": 2.6
+            },
+            {
+              "w_bg": 1.0,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 1.2,
+              "seed": 2,
+              "hz": 2.9
+            },
+            {
+              "w_bg": 1.0,
+              "seed": 3,
+              "hz": 0.3
+            },
+            {
+              "w_bg": 1.2,
+              "seed": 3,
+              "hz": 1.8
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 4.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            33.0,
+            34.0,
+            22.0,
+            19.0,
+            22.0,
+            21.0
+          ],
+          "b_hz": [
+            33.0,
+            34.0,
+            22.0,
+            26.0,
+            23.0,
+            27.0,
+            30.0,
+            27.0,
+            25.0,
+            27.0
+          ],
+          "reflex_passed": false,
+          "reflex_harmonised": false,
+          "reflex_verdicts": {
+            "original": {
+              "reflex_passed": false,
+              "mean_hz": 50.0,
+              "seed_min_hz": 40.0,
+              "reflex_violations": {
+                "a": 0.7444404749474958,
+                "b": 0.6014799920341215,
+                "c": 0.0
+              }
+            },
+            "harmonised": {
+              "reflex_passed": false,
+              "mean_hz": 28.0,
+              "seed_min_hz": 22.400000000000002,
+              "job_bare_mean": 56.0,
+              "reflex_violations": {
+                "a": 0.1646219796945538,
+                "b": 0.021661496781179467,
+                "c": 0.0
+              }
+            }
+          },
+          "retention": {
+            "upstream": 0.5589285714285714,
+            "extended": 0.5589285714285714
+          },
+          "rates_hz": {
+            "DAN": 0.8092336103416436,
+            "ER": 0.0,
+            "KC": 0.08754104693838131,
+            "ascending": 0.000546683930369731,
+            "central": 4.831463916491017,
+            "descending": 1.6435463176802667,
+            "endocrine": 0.0,
+            "motor": 0.05157232704402517,
+            "optic": 0.00017842785710293354,
+            "visual_centrifugal": 0.3230279898218829,
+            "visual_projection": 0.02077486650937539
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 0.35032682058882497,
+            "mean_pairwise_corr_50ms_mean": 1.5670950465225903e-05,
+            "pca_participation_ratio": 20.012651339589457,
+            "fano_n_scored": 191,
+            "fano_n_silent": 1809
+          },
+          "deepest": "T2"
+        }
+      ]
+    },
+    {
+      "id": "nomotor",
+      "bg_policy": "nomotor",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "beta": null,
+      "t0": {
+        "arm_id": "nomotor",
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "seeds": 10,
+        "job_index": 0,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen fail",
+      "failed_stage": "R-screen",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-nomotor",
+          "arm_id": "nomotor",
+          "w_bg": 0.75,
+          "pair_weights": [
+            0.75,
+            0.8
+          ],
+          "grade_weight": 0.85,
+          "screen_passed": false,
+          "failed_checks": [
+            "F",
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 25.74263225507069,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 43.072378850357175,
+          "measured_kc_hz_mean": 6.438735432361085e-06,
+          "measured_central_hz_mean": 8.78249523235973e-06,
+          "mn9_dark_max_hz": 1.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.75,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.6
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 1.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 1.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            24.0,
+            34.0,
+            32.0,
+            24.0,
+            26.0,
+            28.0
+          ],
+          "b_hz": [
+            24.0,
+            34.0,
+            32.0,
+            28.0,
+            32.0,
+            34.0,
+            33.0,
+            33.0,
+            35.0,
+            31.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 6.438735432361085e-06,
+            "ascending": 1.4386419220256078e-05,
+            "central": 8.78249523235973e-06,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 6.449199654322899e-06,
+            "visual_centrifugal": 0.00019083969465648855,
+            "visual_projection": 4.139244174013825e-06
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 0.9899999999999998,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 1,
+            "fano_n_silent": 1999
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-nomotor",
+          "arm_id": "nomotor",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            0.85
+          ],
+          "grade_weight": 0.9,
+          "screen_passed": false,
+          "failed_checks": [
+            "F",
+            "stability_ratio",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 10.605179477784505,
+          "J": 93.67259885021507,
+          "measured_F_max_pair": 43.072378850357175,
+          "measured_kc_hz_mean": 0.13032000515098838,
+          "measured_central_hz_mean": 3.1112717053096457,
+          "mn9_dark_max_hz": 1.5,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.6
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 1,
+              "hz": 1.4
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 1.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 2,
+              "hz": 0.7
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 3,
+              "hz": 1.5
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 3.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            24.0,
+            26.0,
+            28.0,
+            30.0,
+            25.0,
+            32.0
+          ],
+          "b_hz": [
+            24.0,
+            26.0,
+            28.0,
+            30.0,
+            31.0,
+            33.0,
+            30.0,
+            32.0,
+            27.0,
+            29.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.4015697137580794,
+            "ER": 0.03273381294964029,
+            "KC": 0.13032000515098838,
+            "ascending": 0.03205294202273055,
+            "central": 3.1112717053096457,
+            "descending": 1.2574287913779831,
+            "endocrine": 0.0,
+            "motor": 0.10786163522012578,
+            "optic": 0.00891709338871046,
+            "visual_centrifugal": 0.515648854961832,
+            "visual_projection": 0.031541040605985345
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 1.245943428632152,
+            "mean_pairwise_corr_50ms_mean": 0.0005321333028057764,
+            "pca_participation_ratio": 1.3211762490635037,
+            "fano_n_scored": 456,
+            "fano_n_silent": 1544
+          },
+          "deepest": "T1"
+        }
+      ]
+    },
+    {
+      "id": "indeg",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "beta": null,
+      "t0": {
+        "arm_id": "indeg",
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "seeds": 10,
+        "job_index": 0,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen fail",
+      "failed_stage": "R-screen",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-indeg",
+          "arm_id": "indeg",
+          "w_bg": 0.75,
+          "pair_weights": [
+            0.75,
+            0.8
+          ],
+          "grade_weight": 0.85,
+          "screen_passed": false,
+          "failed_checks": [
+            "F",
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 24.92336615087261,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 18.95531460689848,
+          "measured_kc_hz_mean": 6.438735432361085e-06,
+          "measured_central_hz_mean": 8.78249523235973e-06,
+          "mn9_dark_max_hz": 0.3,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.75,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.3
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.1
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 1.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            25.0,
+            32.0,
+            34.0,
+            47.0,
+            42.0,
+            37.0
+          ],
+          "b_hz": [
+            25.0,
+            32.0,
+            34.0,
+            41.0,
+            41.0,
+            36.0,
+            45.0,
+            34.0,
+            42.0,
+            36.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 6.438735432361085e-06,
+            "ascending": 1.4386419220256078e-05,
+            "central": 8.78249523235973e-06,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 6.449199654322899e-06,
+            "visual_centrifugal": 0.00019083969465648855,
+            "visual_projection": 4.139244174013825e-06
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 0.9899999999999998,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 1,
+            "fano_n_silent": 1999
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-indeg",
+          "arm_id": "indeg",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            0.85
+          ],
+          "grade_weight": 0.9,
+          "screen_passed": false,
+          "failed_checks": [
+            "F",
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 13.765589656759,
+          "J": 192.85658404026717,
+          "measured_F_max_pair": 18.95531460689848,
+          "measured_kc_hz_mean": 3.219367716180542e-05,
+          "measured_central_hz_mean": 0.017524841915085815,
+          "mn9_dark_max_hz": 1.7,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.3
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 1,
+              "hz": 1.5
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 2,
+              "hz": 0.4
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.1
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 3,
+              "hz": 1.7
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 3.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            47.0,
+            42.0,
+            37.0,
+            24.0,
+            31.0,
+            34.0
+          ],
+          "b_hz": [
+            47.0,
+            42.0,
+            37.0,
+            25.0,
+            26.0,
+            34.0,
+            41.0,
+            25.0,
+            39.0,
+            35.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.02169898430286242,
+            "ER": 0.005035971223021583,
+            "KC": 3.219367716180542e-05,
+            "ascending": 0.0009782765069774133,
+            "central": 0.017524841915085815,
+            "descending": 0.04795996920708237,
+            "endocrine": 0.0008771929824561404,
+            "motor": 0.036163522012578615,
+            "optic": 0.0005817178088199255,
+            "visual_centrifugal": 0.028816793893129772,
+            "visual_projection": 0.001436317728382797
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 1.076733649338389,
+            "mean_pairwise_corr_50ms_mean": 0.0010329384231259665,
+            "pca_participation_ratio": 1.9244225963173869,
+            "fano_n_scored": 139,
+            "fano_n_silent": 1861
+          },
+          "deepest": "T1"
+        }
+      ]
+    },
+    {
+      "id": "thdeg-0.5",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "beta": 0.5,
+      "t0": {
+        "arm_id": "thdeg-0.5",
+        "difference_hz": 10.8,
+        "retention": 0.19285714285714287,
+        "t0_passed": false,
+        "seeds": 10,
+        "job_index": 1,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen fail",
+      "failed_stage": "R-screen",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-0.5",
+          "arm_id": "thdeg-0.5",
+          "w_bg": 0.75,
+          "pair_weights": [
+            0.75,
+            0.8
+          ],
+          "grade_weight": 0.85,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 17.824046010856293,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.0240982300884958,
+          "measured_kc_hz_mean": 0.0,
+          "measured_central_hz_mean": 2.50928435210278e-06,
+          "mn9_dark_max_hz": 0.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.75,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            31.0,
+            31.0,
+            32.0,
+            32.0,
+            28.0,
+            30.0
+          ],
+          "b_hz": [
+            31.0,
+            31.0,
+            32.0,
+            34.0,
+            36.0,
+            30.0,
+            35.0,
+            35.0,
+            30.0,
+            26.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 0.0,
+            "ascending": 0.0,
+            "central": 2.50928435210278e-06,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 3.4395731489722126e-06,
+            "visual_centrifugal": 0.0,
+            "visual_projection": 0.0
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-0.5",
+          "arm_id": "thdeg-0.5",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            0.85
+          ],
+          "grade_weight": 0.9,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 8.517193191416236,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.7665857408267536,
+          "measured_kc_hz_mean": 3.8632412594166507e-05,
+          "measured_central_hz_mean": 6.022282445046673e-05,
+          "mn9_dark_max_hz": 0.2,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 3,
+              "hz": 0.2
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            32.0,
+            28.0,
+            30.0,
+            41.0,
+            36.0,
+            36.0
+          ],
+          "b_hz": [
+            32.0,
+            28.0,
+            30.0,
+            34.0,
+            34.0,
+            27.0,
+            32.0,
+            32.0,
+            26.0,
+            33.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.00011990407673860912,
+            "KC": 3.8632412594166507e-05,
+            "ascending": 0.0002014098690835851,
+            "central": 6.022282445046673e-05,
+            "descending": 2.566076469078778e-05,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 0.00011866527363954133,
+            "visual_centrifugal": 0.0001272264631043257,
+            "visual_projection": 4.967093008816589e-05
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": 0.9899999999999998,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": 1.0,
+            "fano_n_scored": 2,
+            "fano_n_silent": 1998
+          },
+          "deepest": "T1"
+        }
+      ]
+    },
+    {
+      "id": "thdeg-1.0",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "beta": 1.0,
+      "t0": {
+        "arm_id": "thdeg-1.0",
+        "difference_hz": 0.4,
+        "retention": 0.0071428571428571435,
+        "t0_passed": false,
+        "seeds": 10,
+        "job_index": 1,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen fail",
+      "failed_stage": "R-screen",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-1.0",
+          "arm_id": "thdeg-1.0",
+          "w_bg": 0.75,
+          "pair_weights": [
+            0.75,
+            0.8
+          ],
+          "grade_weight": 0.85,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 17.824046010856293,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.0474945205479451,
+          "measured_kc_hz_mean": 0.0,
+          "measured_central_hz_mean": 2.50928435210278e-06,
+          "mn9_dark_max_hz": 0.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.75,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            27.0,
+            28.0,
+            26.0,
+            26.0,
+            22.0,
+            19.0
+          ],
+          "b_hz": [
+            27.0,
+            28.0,
+            26.0,
+            27.0,
+            19.0,
+            30.0,
+            27.0,
+            24.0,
+            24.0,
+            18.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 0.0,
+            "ascending": 0.0,
+            "central": 2.50928435210278e-06,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 2.5796798617291596e-06,
+            "visual_centrifugal": 0.0,
+            "visual_projection": 0.0
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-1.0",
+          "arm_id": "thdeg-1.0",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            0.85
+          ],
+          "grade_weight": 0.9,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 17.824046010856293,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.0474945205479451,
+          "measured_kc_hz_mean": 0.0,
+          "measured_central_hz_mean": 3.2620696577336146e-05,
+          "mn9_dark_max_hz": 0.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            26.0,
+            22.0,
+            19.0,
+            24.0,
+            26.0,
+            23.0
+          ],
+          "b_hz": [
+            26.0,
+            22.0,
+            19.0,
+            21.0,
+            28.0,
+            31.0,
+            23.0,
+            23.0,
+            24.0,
+            24.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 0.0,
+            "ascending": 7.193209610128039e-05,
+            "central": 3.2620696577336146e-05,
+            "descending": 5.132152938157556e-05,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 6.062247675063525e-05,
+            "visual_centrifugal": 0.0,
+            "visual_projection": 2.8974709218096774e-05
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        }
+      ]
+    },
+    {
+      "id": "thdeg-2.0",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "beta": 2.0,
+      "t0": {
+        "arm_id": "thdeg-2.0",
+        "difference_hz": 0.0,
+        "retention": 0.0,
+        "t0_passed": false,
+        "seeds": 10,
+        "job_index": 1,
+        "same_job_bare_mean": 56.0
+      },
+      "verdict": "R-screen fail",
+      "failed_stage": "R-screen",
+      "candidates": [
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-2.0",
+          "arm_id": "thdeg-2.0",
+          "w_bg": 0.75,
+          "pair_weights": [
+            0.75,
+            0.8
+          ],
+          "grade_weight": 0.85,
+          "screen_passed": false,
+          "failed_checks": [
+            "F",
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 27.824046010856293,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.053642857142857,
+          "measured_kc_hz_mean": 0.0,
+          "measured_central_hz_mean": 0.0,
+          "mn9_dark_max_hz": 0.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.75,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.75,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            5.0,
+            6.0,
+            5.0,
+            4.0,
+            4.0,
+            3.0
+          ],
+          "b_hz": [
+            5.0,
+            6.0,
+            5.0,
+            4.0,
+            3.0,
+            1.0,
+            2.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 0.0,
+            "ascending": 1.4386419220256078e-05,
+            "central": 0.0,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 4.299466436215266e-07,
+            "visual_centrifugal": 6.361323155216285e-05,
+            "visual_projection": 0.0
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        },
+        {
+          "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-2.0",
+          "arm_id": "thdeg-2.0",
+          "w_bg": 0.8,
+          "pair_weights": [
+            0.8,
+            0.85
+          ],
+          "grade_weight": 0.9,
+          "screen_passed": false,
+          "failed_checks": [
+            "stability_ratio",
+            "central",
+            "DAN",
+            "gradedness"
+          ],
+          "S": 17.824046010856293,
+          "J": 235.75248993251176,
+          "measured_F_max_pair": 1.053642857142857,
+          "measured_kc_hz_mean": 6.438735432361085e-06,
+          "measured_central_hz_mean": 8.78249523235973e-06,
+          "mn9_dark_max_hz": 0.0,
+          "mn9_dark_every_seed_under_5": true,
+          "mn9_dark": [
+            {
+              "w_bg": 0.8,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 1,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 2,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.8,
+              "seed": 3,
+              "hz": 0.0
+            },
+            {
+              "w_bg": 0.85,
+              "seed": 3,
+              "hz": 0.0
+            }
+          ],
+          "mn9_dark_sugar_max_hz": 0.0,
+          "mn9_dark_sugar_every_seed_under_5": true,
+          "a_hz": [
+            4.0,
+            4.0,
+            3.0,
+            4.0,
+            6.0,
+            5.0
+          ],
+          "b_hz": [
+            4.0,
+            4.0,
+            3.0,
+            4.0,
+            8.0,
+            3.0,
+            3.0,
+            5.0,
+            2.0,
+            7.0
+          ],
+          "reflex_passed": null,
+          "reflex_harmonised": null,
+          "reflex_verdicts": null,
+          "retention": null,
+          "rates_hz": {
+            "DAN": 0.0,
+            "ER": 0.0,
+            "KC": 6.438735432361085e-06,
+            "ascending": 0.00014386419220256078,
+            "central": 8.78249523235973e-06,
+            "descending": 0.0,
+            "endocrine": 0.0,
+            "motor": 0.0,
+            "optic": 3.4825678133343654e-05,
+            "visual_centrifugal": 0.0,
+            "visual_projection": 1.65569766960553e-05
+          },
+          "lab": {
+            "single_unit_fano_100ms_mean": null,
+            "mean_pairwise_corr_50ms_mean": null,
+            "pca_participation_ratio": null,
+            "fano_n_scored": 0,
+            "fano_n_silent": 2000
+          },
+          "deepest": "T1"
+        }
+      ]
+    },
+    {
+      "id": "hubs",
+      "verdict": "skipped",
+      "failed_stage": "resolve",
+      "skip_reason": "registry labels do not resolve LPi13, LPi15",
+      "hubs": {
+        "resolved": false,
+        "counts": {
+          "MBON06": 2,
+          "LPi13": 0,
+          "LPi15": 0
+        },
+        "missing": [
+          "LPi13",
+          "LPi15"
+        ],
+        "skip_reason": "registry labels do not resolve LPi13, LPi15",
+        "resolve_later": null,
+        "n_idx": 2
+      },
+      "t0": null,
+      "candidates": []
+    }
+  ],
+  "k_distribution": {
+    "n": 138639,
+    "n_zero": 1549,
+    "k_min": 0.0,
+    "k_max": 69948.0,
+    "k_median_positive": 200.0,
+    "k_p99": 3476.86,
+    "k_mean": 393.05622516030843,
+    "choice": "K_i is incoming synapse count (sum of |Excitatory x Connectivity| onto i); K_median over K_i > 0; K_i < 1 uses 1 in 1/sqrt(K_i/K_median)"
+  },
+  "hubs": {
+    "resolved": false,
+    "counts": {
+      "MBON06": 2,
+      "LPi13": 0,
+      "LPi15": 0
+    },
+    "missing": [
+      "LPi13",
+      "LPi15"
+    ],
+    "skip_reason": "registry labels do not resolve LPi13, LPi15",
+    "resolve_later": null,
+    "n_idx": 2
+  },
+  "include_hubs": false,
+  "n_tasks": 50,
+  "records": {
+    "screen": "validation/records/p2/rest-T3e.json",
+    "rows": "validation/records/p2/rest-T3e-rows.json",
+    "plan": "validation/records/p2/rest-T3e-plan.json"
+  },
+  "mean_wall_per_brain_s": 45.47216364591608,
+  "reason": "Arm A sens at 1.0/1.2 mV is the only R-screen passer (S 0, F 2.680, KC 0.0875 Hz, central 4.83 Hz, dark MN9 max 2.9 Hz on the 12 s pair and 4.0 Hz on sugar-silent). Item 74 fails: min(a)=19 Hz against 22.4 Hz and mean(b)=27.4 Hz against 28.0 Hz. No freeze box. Arms B\u2013D fail the R-screen. Arm E skipped (LPi13 and LPi15 missing)."
+}

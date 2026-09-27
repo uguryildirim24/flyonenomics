@@ -1,0 +1,13 @@
+[project]
+name = "flyonenomics-courtship-body"
+version = "0.1.0"
+description = "Isolated NeuroMechFly one-way motor playback"
+requires-python = "==3.12.*"
+dependencies = [
+  "flygym==1.1.0",
+  "mujoco==3.2.3",
+  "numpy==1.26.4",
+]
+
+[tool.uv]
+package = false

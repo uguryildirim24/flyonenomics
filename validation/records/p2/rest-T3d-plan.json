@@ -1,0 +1,511 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "engine_model": "lif",
+  "rho_mech": 1.0,
+  "rho_sfa": 1.4863463034318214,
+  "rho_blend": 1.2431731517159106,
+  "q_plan": 27.0,
+  "pairs": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      4.0
+    ]
+  ],
+  "grid": [
+    {
+      "g_gaba_kc": 2.0
+    },
+    {
+      "g_gaba_kc": 3.0
+    },
+    {
+      "g_gaba_kc": 4.0
+    },
+    {
+      "g_gaba_kc": 6.0
+    },
+    {
+      "g_gaba_kc": 2.0,
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "g_gaba_kc": 3.0,
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "g_gaba_kc": 4.0,
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    },
+    {
+      "g_gaba_kc": 6.0,
+      "b_mv": 1.0,
+      "tau_ms": 50.0,
+      "scope": "non_sensory"
+    }
+  ],
+  "units": [
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0
+    }
+  ],
+  "baseline": false,
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "ibm": {
+    "workers": 36.0,
+    "worker_s_per_brain_s": 45.75,
+    "setup_s": 600.0,
+    "timeout_s": 9000.0,
+    "build_s": 250.0
+  },
+  "job_shapes": {
+    "B_brain_s": 108,
+    "n_jobs": 3,
+    "n_tasks": 242,
+    "t0_brain_s": 1560.0,
+    "t1_brain_s": 16416.0,
+    "n_units": 24,
+    "slices": [
+      [
+        0,
+        9
+      ],
+      [
+        9,
+        18
+      ],
+      [
+        18,
+        19
+      ]
+    ],
+    "t1_slice_worker_s_per_brain_s": 75.0,
+    "pack_worker_s_per_brain_s": 45.75,
+    "launch": true,
+    "reason": null,
+    "wave": "T0+T1",
+    "max_boxes": 3,
+    "makespan_s": 8400.0
+  },
+  "brain_s_at_caps": 27736.0,
+  "ibm_engine_hours_at_caps": 352.47833333333335,
+  "cap_projection_engine_hours": 258.6048790199437,
+  "t1_max_units": 40,
+  "cap_engine_hours": 400
+}

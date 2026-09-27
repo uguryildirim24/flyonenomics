@@ -1,0 +1,247 @@
+version: v0.1
+compartments:
+- gamma1_L
+- gamma2_L
+- gamma3_L
+- gamma4_L
+- gamma5_L
+- alpha1_L
+- alpha2_L
+- alpha3_L
+- beta1_L
+- beta2_L
+- alpha_prime1_L
+- alpha_prime2_L
+- alpha_prime3_L
+- beta_prime1_L
+- beta_prime2_L
+- gamma1_R
+- gamma2_R
+- gamma3_R
+- gamma4_R
+- gamma5_R
+- alpha1_R
+- alpha2_R
+- alpha3_R
+- beta1_R
+- beta2_R
+- alpha_prime1_R
+- alpha_prime2_R
+- alpha_prime3_R
+- beta_prime1_R
+- beta_prime2_R
+- EB
+- PB
+- FB
+- NO_L
+- NO_R
+- LAL_L
+- LAL_R
+cx_compartments:
+- EB
+- PB
+- FB
+- NO_L
+- NO_R
+- LAL_L
+- LAL_R
+aso_citation: Aso et al. 2014, eLife 3:e04577 (MBON and DAN nomenclature table); Li et al. 2020, eLife
+  9:e62576 (hemibrain numbering PAM01-PAM15, PPL101-PPL106, MBON01-MBON35; PAM15 is gamma5beta-prime2a,
+  new in Li 2020).
+mbon_compartments:
+  MBON01:
+  - gamma5
+  - beta_prime2
+  MBON02:
+  - beta2
+  - beta_prime2
+  MBON03:
+  - beta_prime2
+  MBON04:
+  - beta_prime2
+  MBON05:
+  - gamma4
+  MBON06:
+  - beta1
+  MBON07:
+  - alpha1
+  MBON09:
+  - gamma3
+  - beta_prime1
+  MBON10:
+  - beta_prime1
+  MBON11:
+  - gamma1
+  MBON12:
+  - gamma2
+  - alpha_prime1
+  MBON13:
+  - alpha_prime2
+  MBON14:
+  - alpha3
+  MBON15:
+  - alpha_prime1
+  MBON15-like:
+  - alpha_prime1
+  MBON16:
+  - alpha_prime3
+  MBON17:
+  - alpha_prime3
+  MBON17-like:
+  - alpha_prime3
+  MBON18:
+  - alpha2
+  MBON19:
+  - alpha2
+  - alpha3
+  MBON20:
+  - gamma1
+  - gamma2
+  MBON21:
+  - gamma4
+  - gamma5
+  MBON22: []
+  MBON23:
+  - alpha2
+  MBON24:
+  - beta2
+  - gamma5
+  MBON25:
+  - gamma1
+  - gamma2
+  MBON25,MBON34:
+  - gamma1
+  - gamma2
+  MBON26:
+  - beta_prime2
+  MBON27:
+  - gamma5
+  MBON28:
+  - alpha_prime3
+  MBON29:
+  - gamma4
+  - gamma5
+  MBON30:
+  - gamma1
+  - gamma2
+  - gamma3
+  MBON31:
+  - alpha_prime1
+  MBON32:
+  - gamma2
+  MBON33:
+  - gamma2
+  - gamma3
+  MBON34:
+  - gamma2
+  MBON35:
+  - gamma2
+mbon_notes: Dendritic compartment only; the axonal '>...' suffix is not exposure. Sub-slice suffixes (a/m/p/d/sp)
+  collapse to the Phase 1 compartment. MBON22-calyx has no Phase 1 compartment and keeps a zero W row.
+  MBON11 also arborizes in the peduncle core (pedc), which is not a Phase 1 compartment; its weight goes
+  fully to gamma1.
+dan_compartments:
+  PAM01:
+  - gamma5
+  PAM02:
+  - beta_prime2
+  PAM03:
+  - beta2
+  - beta_prime2
+  PAM04:
+  - beta2
+  PAM05:
+  - beta_prime2
+  PAM06:
+  - beta_prime2
+  PAM07:
+  - gamma4
+  PAM08:
+  - gamma4
+  PAM09:
+  - beta1
+  PAM10:
+  - beta1
+  PAM11:
+  - alpha1
+  PAM12:
+  - gamma3
+  PAM13:
+  - beta_prime1
+  PAM14:
+  - beta_prime1
+  PAM15:
+  - gamma5
+  - beta_prime2
+  PPL101:
+  - gamma1
+  PPL102:
+  - gamma1
+  PPL103:
+  - gamma2
+  - alpha_prime1
+  PPL104:
+  - alpha_prime3
+  PPL105:
+  - alpha_prime2
+  - alpha2
+  PPL106:
+  - alpha3
+bilateral_dan_prefixes:
+- PPL1
+bilateral_note: PPL1 DANs send axons bilaterally to the same compartments (Li et al. 2020); their M columns
+  split equally across both sides.
+unplaced_dan_types:
+- hemibrain_type: PPL107
+  reason: No MB lobe innervation; SMP/CRE/SIP (FlyWire cell-type explorer).
+- hemibrain_type: PPL108
+  reason: No MB lobe innervation; SMP/CRE/SIP (FlyWire cell-type explorer).
+- hemibrain_type: PPL201
+  reason: Innervates the calyx, LH and SLP, not the lobes (Mao and Davis 2009); no calyx compartment in
+    Phase 1.
+- hemibrain_type: PPL202
+  reason: PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao
+    and Davis 2009).
+- hemibrain_type: PPL203
+  reason: PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao
+    and Davis 2009).
+- hemibrain_type: PPL204
+  reason: PPL2ab cluster; calyx/LH/protocerebrum or lobula/protocerebrum, no MB lobe compartments (Mao
+    and Davis 2009).
+- hemibrain_type: CB2730
+  reason: cell_class DAN with no hemibrain_type; the Aso 2014 table cannot place it.
+pedc_note: PAM09 (beta1-ped), PPL101 (gamma1pedc) and MBON11 (gamma1pedc) also arborize in the peduncle
+  core, which is not a Phase 1 compartment; their M/W weights go fully to the named lobe compartment.
+kc_lobe_note: Gamma KCs spread over gamma1-gamma5; alpha/beta KCs over alpha1-alpha3 and beta1-beta2;
+  alpha-prime/beta-prime KCs over their five.
+cxdan:
+  threshold_source: data/params-v0.1.yaml cxdan.min_cx_output_fraction (0.2)
+  pre_count: 40
+  post_count: 30
+  excluded:
+  - root: 720575940617091890
+    fraction: 0.002801120514050126
+  - root: 720575940627818499
+    fraction: 0.14143919944763184
+  - root: 720575940635492276
+    fraction: 0.01958136446774006
+  - root: 720575940627146186
+    fraction: 0.013456686399877071
+  - root: 720575940623486858
+    fraction: 0.10263929516077042
+  - root: 720575940623150369
+    fraction: 0.09791667014360428
+  - root: 720575940614694517
+    fraction: 0.08210526406764984
+  - root: 720575940631700731
+    fraction: 0.0177849642932415
+  - root: 720575940610941906
+    fraction: 0.01097560953348875
+  - root: 720575940627713284
+    fraction: 0.0
+target_mask_totals:
+  EB: 329
+  PB: 134
+  FB: 2082
+  'NO': 16
+  LAL: 547

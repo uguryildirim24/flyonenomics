@@ -1,0 +1,35 @@
+{
+  "freeze_sha": "566bc949ed3617538f8efb6363e01337debd7796",
+  "workspace": "uguryildirim24",
+  "profile": "flyonenomics",
+  "lane_metered_cap_usd": 12,
+  "balance_at_submission": {
+    "confirmed_credit_band_usd": 30,
+    "metered_to_date_usd": 10.04,
+    "confirmed_remaining_usd": 19.96,
+    "source": "Rolf confirmed the credit band and the billing summary before the submit"
+  },
+  "dose_outcomes": {
+    "new_conditions": 13,
+    "paired_seeds": 10,
+    "completed": 130,
+    "projected_usd": 3.36375,
+    "actual_metered_usd": 5.37837383,
+    "worker_wall_estimated_usd": 4.18128235,
+    "modal_app_id": "ap-TyIdn6O5wGxNfNoXBlhIVx"
+  },
+  "prefreeze_checks": {
+    "projected_usd": 0.05175,
+    "actual_metered_usd": 0.10343066,
+    "modal_app_id": "ap-LcCUkBElSgqli07sMm9IZ3"
+  },
+  "replays": {
+    "projected_success_usd": 0.1035,
+    "actual_success_metered_usd": 0.21723087,
+    "failed_attempt_metered_usd": 0.03163343,
+    "failure": "First replay attempt used nonexistent annotation columns; corrected super_class/cell_sub_class and all four completed with matching full-neuron counts",
+    "app_ids": ["ap-NMSXbJZVPppKcwOUWmaNSS", "ap-OF7AcNp2JF1BBFCxSp0IcY"]
+  },
+  "lane_total_metered_usd": 5.73066879,
+  "billing_source": "MODAL_PROFILE=flyonenomics modal billing report --for today --json; per-application metered cost, later report for outcome app after all replays (billing may settle further). Workspace total includes other concurrent apps and cannot be attributed to this lane."
+}

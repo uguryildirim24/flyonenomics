@@ -1,0 +1,21 @@
+{
+  "test": "0.4",
+  "description": "100 chunks of 10 ms equal one run of 1000 ms",
+  "seed": 5,
+  "duration_ms": 1000,
+  "chunk_ms": 10,
+  "connectome_version": "630",
+  "extended_idx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "extended_rate_hz": 50.0,
+  "background": true,
+  "background_weights_mv": 0.5
+}

@@ -1,0 +1,25 @@
+{
+  "_paper_fixture": "synthetic",
+  "_notice": "MADE-UP display-contract fixture, NOT output from a model or inference run. Omitted raw-cell arrays are not used by the filler.",
+  "version": "male-history-v1",
+  "H_per_seed_condition": [
+    [0.00, 0.10, 0.02, 0.03], [0.01, 0.11, 0.03, 0.04],
+    [0.02, 0.12, 0.04, 0.05], [0.03, 0.13, 0.05, 0.06],
+    [0.04, 0.14, 0.06, 0.07], [0.05, 0.15, 0.07, 0.08],
+    [0.06, 0.16, 0.08, 0.09], [0.07, 0.17, 0.09, 0.10],
+    [0.08, 0.18, 0.10, 0.11], [0.09, 0.19, 0.11, 0.12]
+  ],
+  "primary": [
+    {"name": "genotype", "mean": 0.1, "ci95": [0.02, 0.18], "p_exact": 0.009765625, "p_holm": 0.02, "reading": "detected difference", "per_seed": [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]},
+    {"name": "difference_in_differences", "mean": -0.09, "ci95": [-0.2, 0.03], "p_exact": 0.1201171875, "p_holm": 0.12, "reading": "no detected difference", "per_seed": [-0.09, -0.09, -0.09, -0.09, -0.09, -0.09, -0.09, -0.09, -0.09, -0.09]}
+  ],
+  "genotype_gaps": [0.1, 0.01],
+  "affine_secondary": {
+    "mean": 0.025, "ci95": [-0.01, 0.06],
+    "residual": [0.02, 0.03, 0.02, 0.03, 0.02, 0.03, 0.02, 0.03, 0.02, 0.03],
+    "unresolved_cells": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "bootstrap": {"replicates": 10000, "invalid": 2, "pair_selection_uncertainty_included": false, "template_uncertainty_included": true},
+  "pair_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "raw_sha256": {}, "calibration_sha256": {}
+}

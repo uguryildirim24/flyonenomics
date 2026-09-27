@@ -1,0 +1,33 @@
+{
+  "behaviour_sha256": "604ce8c88517f95c42c21cef7d72ba2c1dca90b295c5fedb92c93f92be674cf7",
+  "compatibility": "development",
+  "controller": "open_loop",
+  "encoder": "photoreceptors",
+  "engine_model": "lif",
+  "failures": [
+    "vcal_no_selection",
+    "v1_failed",
+    "tubu_vtcal"
+  ],
+  "open_loop_encoder": {
+    "inject_at": "photoreceptors",
+    "mean_delta_steer_hz": 2.6111111111111107,
+    "r_light_hz": 150.0
+  },
+  "platform": "linux-aarch64",
+  "reason": "TuBu path failed; open-loop encoder selected",
+  "source_record_sha256": {
+    "V1-open-loop": "8e5ea9c78913dc580edd4ddb87cdc553e3b1be7e111c8b8d85ac753b841e8624",
+    "V3-open-loop": "8ae37b1842c258b3e4c69d58221dc03ec7da665e849115d8ac0ad7fdd185f976",
+    "bias-open-loop": "125463d47ae2f24ea71141bb26f9afd9d64703e1c54f321b36688a994613518f",
+    "open-loop": "83739762562605bd17a48053d6569889ffa4d20f1d0a52d730bee06207429a8a",
+    "visual-vcal": "cb812c849dd20b4e670be5641e7fb33730a32f42ba2e4b0a0996a9d2dc650446",
+    "vtcal": "0359b0256ad99b912fe6ae96fcdc7c6f448203cb2660cb420f1c1eee6257c9e9"
+  },
+  "status": "open loop",
+  "step3_completed": true,
+  "step_reached": 3,
+  "substrate_id": "rest:379cc4cc9030cdd1",
+  "visual_sha256": "f4b1a5ba3f03adac37ce8218b5f5a8b2af9456a734c91613d5d88d7d8ac489b9",
+  "waiting_for": []
+}

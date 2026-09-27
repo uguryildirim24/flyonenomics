@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.3",
+  "name": "vpath-v2",
+  "description": "V2 recorded L1 column-subset rise and Mi1 non-rise in V1 stripe blocks.",
+  "seed": 20260912,
+  "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "behaviour_version": "base-v0.2"
+  },
+  "layers": {"background": true, "dopamine_A": true, "transporter_C": true, "dan_fast_synapses": "retain"},
+  "arms": [{"label": "wild-type", "genotype": {"named": "wild_type", "manipulations": []},
+    "protocol": [{"type": "probe", "assay": "open_loop_steering", "duration_s": 16, "label": "v2-signs",
+      "params": {"blocks": [
+        {"stimulus": "ambient", "azimuth_deg": null, "distractor": null, "transition_s": 1, "dwell_s": 3},
+        {"stimulus": "stripe", "azimuth_deg": 45, "distractor": null, "transition_s": 1, "dwell_s": 3},
+        {"stimulus": "ambient", "azimuth_deg": null, "distractor": null, "transition_s": 1, "dwell_s": 3},
+        {"stimulus": "stripe", "azimuth_deg": -45, "distractor": null, "transition_s": 1, "dwell_s": 3}
+      ]}}]}],
+  "record": {"spikes": ["L1", "Mi1"], "rates": ["L1", "Mi1"], "arena": false, "popcount": true, "live": false},
+  "meta": {"class": "matching-layers", "purpose": "V2 lamina ON-pathway sign", "recorded": true}
+}

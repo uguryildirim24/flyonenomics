@@ -1,0 +1,11 @@
+{
+  "GEN_MEAN": {"pointer": "/primary/0/mean", "format": "number"},
+  "GEN_CI": {"pointer": "/primary/0/ci95", "format": "interval"},
+  "GEN_HOLM": {"pointer": "/primary/0/p_holm", "format": "number"},
+  "INTERACTION_MEAN": {"pointer": "/primary/1/mean", "format": "number"},
+  "INTERACTION_CI": {"pointer": "/primary/1/ci95", "format": "interval"},
+  "CONF_MEAN": {"pointer": "/primary/mean", "record": "confirmation", "format": "number"},
+  "CONF_CI": {"pointer": "/primary/ci95", "record": "confirmation", "format": "interval"},
+  "CONF_P": {"pointer": "/primary/sign_randomisation/p", "record": "confirmation", "format": "number"},
+  "CONF_DECISION": {"pointer": "/primary/confirmed", "record": "confirmation", "format": "decision"}
+}

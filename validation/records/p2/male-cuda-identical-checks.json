@@ -1,0 +1,57 @@
+{
+  "schema": "cuda-identical-checks-v1",
+  "speed_pilot_counts": {
+    "matching_neurons": 162517,
+    "n": 162517,
+    "total_spikes": 202658,
+    "files": {
+      "camber-runs/cuda-identical/downloads/identical-1790398786427549000/speed-1ms/seed-501-control-member-0.npz": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
+      "camber-runs/cuda-identical/downloads/identical-1790398786427549000/speed-10ms/seed-501-control-member-0.npz": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2"
+    }
+  },
+  "comparison_to_existing_pilots": [
+    {
+      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790391687-0/seed-501-control-member-0.npz",
+      "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
+      "gpu": "L4",
+      "chunk_ms": 10.0,
+      "matching_neurons": 162517,
+      "n": 162517
+    },
+    {
+      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790393120-0/seed-501-control-member-0.npz",
+      "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
+      "gpu": "L4",
+      "chunk_ms": 10.0,
+      "matching_neurons": 162517,
+      "n": 162517
+    },
+    {
+      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790393710-0/seed-501-control-member-0.npz",
+      "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
+      "gpu": "A100-40GB",
+      "chunk_ms": 10.0,
+      "matching_neurons": 162517,
+      "n": 162517
+    },
+    {
+      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790394331306579000-0/seed-501-control-member-0.npz",
+      "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
+      "gpu": "L4",
+      "chunk_ms": 1.0,
+      "matching_neurons": 162517,
+      "n": 162517
+    }
+  ],
+  "spikes_per_backend": 58655422,
+  "all_spike_symmetric_differences_zero": true,
+  "all_window_count_differences_zero": true,
+  "cuda_kernel_source_matches": true,
+  "input_directory_present": true,
+  "saved_modal_manifest_matches": true,
+  "notes": [
+    "No new pytest tests or test suite run; full gate deferred to review by brief.",
+    "Read-only upload-reuse preflight exercised against the existing immutable input manifest; no additional GPU submit.",
+    "Syntax compilation and git diff --check clean."
+  ]
+}

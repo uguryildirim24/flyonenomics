@@ -1,0 +1,5204 @@
+{
+  "class": "development",
+  "sub_tier": "T3b",
+  "stage": "T0",
+  "engine_model": "lif+std",
+  "rho_mech": 1.3459778442507917,
+  "q_plan": 27.0,
+  "evaluation_commit": "d9bc7a5127ca93f6a4118c9fefe62c8db7a19631",
+  "plan": "validation/records/p2/rest-T3b-plan.json",
+  "plan_file_sha256": "ec5b5364d21c51e3b2ed11e6540182a9af2865b7a4689af35726b5484b22a03f",
+  "collect": "collect-t0-packed",
+  "jobs": [
+    "27534",
+    "27569",
+    "27570",
+    "27571",
+    "27572"
+  ],
+  "t0_brain_s": 11100.0,
+  "n_units": 180,
+  "n_search_units": 180,
+  "n_baseline": 0,
+  "n_passers": 4,
+  "t2_b_unreachable": 180,
+  "t2_b_unreachable_passers": 4,
+  "bare_mismatch": 0,
+  "grid_edge": 0,
+  "global_bare_mean": 56.0,
+  "job_bare_means": [
+    56.0,
+    56.0,
+    56.0,
+    56.0,
+    56.0
+  ],
+  "median_wall_per_brain_s": 43.535228096333334,
+  "planned_worker_s_per_brain_s": 67.29889221253958,
+  "measured_rate_replaces_plan": false,
+  "cap_projection_t0_engine_hours": 210.57823373303634,
+  "cap_projection_admitted_engine_hours": 238.1976990970626,
+  "admission": {
+    "n_admitted": 4,
+    "n_excluded": 0,
+    "failed_stage": null,
+    "reason": null,
+    "admitted": [
+      {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        },
+        "M": 0.005,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "difference_hz": 49.4,
+        "retention": 0.8821428571428571,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "27534",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        },
+        "M": 0.005,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "difference_hz": 40.1,
+        "retention": 0.7160714285714286,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "27534",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        },
+        "M": 0.005,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "difference_hz": 36.1,
+        "retention": 0.6446428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "27534",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3b",
+        "engine_model": "lif+std",
+        "g_gaba": 1.0,
+        "g_glu": 8.0,
+        "setting": {
+          "scope": "non_sensory",
+          "U": 0.05,
+          "tau_ms": 100.0
+        },
+        "M": 0.005,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "difference_hz": 29.4,
+        "retention": 0.525,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "27534",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      }
+    ],
+    "excluded": []
+  },
+  "units": [
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 26.0,
+      "retention": 0.4642857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.0,
+      "retention": 0.017857142857142856,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.6,
+      "retention": 0.04642857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 49.4,
+      "retention": 0.8821428571428571,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 8.3,
+      "retention": 0.14821428571428572,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 12.1,
+      "retention": 0.21607142857142855,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.2,
+      "retention": 0.03928571428571429,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 20.4,
+      "retention": 0.36428571428571427,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.9,
+      "retention": 0.033928571428571426,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 40.1,
+      "retention": 0.7160714285714286,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 5.6,
+      "retention": 0.09999999999999999,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 9.6,
+      "retention": 0.17142857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.4,
+      "retention": 0.04285714285714286,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 16.3,
+      "retention": 0.2910714285714286,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.9,
+      "retention": 0.016071428571428573,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.4,
+      "retention": 0.04285714285714286,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 36.1,
+      "retention": 0.6446428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 5.1,
+      "retention": 0.09107142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 5.7,
+      "retention": 0.10178571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.1,
+      "retention": 0.019642857142857146,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 11.5,
+      "retention": 0.20535714285714285,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.0,
+      "retention": 0.017857142857142856,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.7,
+      "retention": 0.048214285714285716,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 29.4,
+      "retention": 0.525,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27534",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 4.2,
+      "retention": 0.075,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 5.9,
+      "retention": 0.10535714285714286,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.5,
+      "retention": 0.026785714285714284,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.6,
+      "retention": 0.028571428571428574,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 4.9,
+      "retention": 0.08750000000000001,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.8,
+      "retention": 0.03214285714285715,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.3,
+      "retention": 0.04107142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.4,
+      "retention": 0.024999999999999998,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 4.2,
+      "retention": 0.075,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.8,
+      "retention": 0.03214285714285715,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.7,
+      "retention": 0.048214285714285716,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.1,
+      "retention": 0.019642857142857146,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 2.8,
+      "retention": 0.049999999999999996,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.0,
+      "retention": 0.017857142857142856,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.5,
+      "retention": 0.026785714285714284,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.2,
+      "retention": 0.02142857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.1,
+      "retention": 0.019642857142857146,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27569",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.8,
+      "retention": 0.03214285714285715,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.1,
+      "retention": 0.019642857142857146,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.0,
+      "retention": 0.017857142857142856,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.2,
+      "retention": 0.02142857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.2,
+      "retention": 0.02142857142857143,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.8,
+      "retention": 0.014285714285714287,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 1.1,
+      "retention": 0.019642857142857146,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.3,
+      "retention": 0.005357142857142857,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.7,
+      "retention": 0.012499999999999999,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27570",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.5,
+      "retention": 0.008928571428571428,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.4,
+      "retention": 0.0071428571428571435,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27571",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory_excitatory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 100.0
+      },
+      "M": 0.005,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.2,
+      "retention": 0.0035714285714285718,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.05,
+        "tau_ms": 400.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 100.0
+      },
+      "M": 0.02,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.2,
+        "tau_ms": 400.0
+      },
+      "M": 0.08,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.1,
+      "retention": 0.0017857142857142859,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 100.0
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3b",
+      "engine_model": "lif+std",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "scope": "non_sensory",
+        "U": 0.5,
+        "tau_ms": 400.0
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "difference_hz": 0.0,
+      "retention": 0.0,
+      "t0_passed": false,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "27572",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    }
+  ]
+}

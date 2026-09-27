@@ -1,0 +1,1342 @@
+{
+  "compatibility": "development",
+  "interrupted_open_loop": {
+    "brain_s": null,
+    "reason": "Stopped after finding invalid first VT-cal; partial compute is unquantified.",
+    "run_dir": "camber-runs/wp20/runs/20260920T023402.112850Z-c9c1cf62"
+  },
+  "open_loop": {
+    "bias_interval_hz": {
+      "ci95": [
+        1.4318127768218152,
+        2.4464863343666607
+      ],
+      "mean": 1.8974968906816918,
+      "n": 10
+    },
+    "brain_s": 346.0,
+    "ended_utc": "2026-09-20T07:17:40Z",
+    "exit_code": 0,
+    "runs": {
+      "bias": {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 150.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 130.0,
+        "experiment_sha256": "f0fccd9dc0e89a1c2299fac24a74354e7cf7a619b5d6e0e8cd8d275197dff0ec",
+        "grid_rate_hz": null,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cda2d6fefd616bc63e7eab5059e8746caf97a5e",
+          "code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2",
+            "visual-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T07:17:39.140267+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "861f6a67676aae861b47f7ba1624089af95e594c29c17642fa8ceb027b30f39f",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "run_code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "4ee179d03bc2cbc55563f5171fb3eb089ac0ac40975d5526a2bae2f4e13d571a",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T065341.043782Z-861f6a67",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "data/visual-v0.2.yaml": "cce0738c34aff90e10380165d446ebbcbe2b3687"
+        },
+        "probe_inject_at": [
+          "photoreceptors"
+        ],
+        "probe_s": 100.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T065341.043782Z-861f6a67",
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "0aff1c045fcb55dccff6460ef31b93ae7d42c0eb",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": "v0.2"
+        },
+        "wall_s": 1434.4808754789992
+      },
+      "v1": {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 150.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 180.0,
+        "experiment_sha256": "f308f0b0129c2524b9754f08ea9d8ee554f43cf39ec001a53ef643999108f5dc",
+        "grid_rate_hz": null,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cda2d6fefd616bc63e7eab5059e8746caf97a5e",
+          "code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2",
+            "visual-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T06:42:05.188820+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "646a4a97f04d7f4326ec8f16474215427b682acca28792cc89e798cbab9d9ee2",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "run_code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "d729e03e74e4db01819ee010f9002b66c070c6db2546e78fe3d201a1de5cafca",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T060800.615620Z-646a4a97",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "data/visual-v0.2.yaml": "cce0738c34aff90e10380165d446ebbcbe2b3687"
+        },
+        "probe_inject_at": [
+          "photoreceptors"
+        ],
+        "probe_s": 160.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T060800.615620Z-646a4a97",
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "settle_s": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "0aff1c045fcb55dccff6460ef31b93ae7d42c0eb",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": "v0.2"
+        },
+        "wall_s": 2040.9432325340022
+      },
+      "v3": {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 150.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 36.0,
+        "experiment_sha256": "80c348e501232b1ca46a7083f0fcbe3b6dbc290ac6fed14f18cafa2beaaca33f",
+        "grid_rate_hz": null,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cda2d6fefd616bc63e7eab5059e8746caf97a5e",
+          "code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2",
+            "visual-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T06:53:25.536032+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "e230e38e13e7f574070f5ef77867b50adb50f9ff05e89a7957095a615b1b106d",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:b4bc791086f2d6a21b8fd19317fd26ec2c22dd011f823d75e66685ec1daa3a1d",
+          "run_code_scope": "git:5a15247476ecf5018c7c85ac9720819213a2a098dfe339ce632533fcfce3d621",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "f192a549f5a048b4484fc7f785da2b8563e5bedbb5bbdecb84d5522d6263b8a7",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T064224.283616Z-e230e38e",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "data/visual-v0.2.yaml": "cce0738c34aff90e10380165d446ebbcbe2b3687"
+        },
+        "probe_inject_at": [
+          "photoreceptors"
+        ],
+        "probe_s": 30.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T064224.283616Z-e230e38e",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "0aff1c045fcb55dccff6460ef31b93ae7d42c0eb",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": "v0.2"
+        },
+        "wall_s": 657.7222849050013
+      }
+    },
+    "started_utc": "2026-09-20T06:07:44Z",
+    "v3_intervals": {
+      "DAN_hz": {
+        "ci95": [
+          0.8149584487534626,
+          0.8326869806094183
+        ],
+        "mean": 0.8216066481994461,
+        "n": 3
+      },
+      "KC_hz": {
+        "ci95": [
+          0.0845470349623334,
+          0.08854548966582963
+        ],
+        "mean": 0.08716760028330435,
+        "n": 3
+      },
+      "central_hz": {
+        "ci95": [
+          4.82445046672689,
+          4.8345566094549834
+        ],
+        "mean": 4.82814538793536,
+        "n": 3
+      },
+      "steering_diff_hz": {
+        "ci95": [
+          1.049999999999999,
+          3.6999999999999993
+        ],
+        "mean": 2.016666666666666,
+        "n": 3
+      }
+    },
+    "wall_s": 4196.28
+  },
+  "qualification_note": "Oracle linux-aarch64 measurements are not canonical-platform matching-layers qualification.",
+  "rejected_first_attempt": {
+    "brain_s": 481.0,
+    "ended_utc": "2026-09-20T02:21:50Z",
+    "exit_code": 2,
+    "reason": "WP18 fixture defaulted to photoreceptors; not TuBu evidence.",
+    "started_utc": "2026-09-19T23:47:30Z",
+    "wall_s": 9259.9
+  },
+  "status": {
+    "behaviour_sha256": "604ce8c88517f95c42c21cef7d72ba2c1dca90b295c5fedb92c93f92be674cf7",
+    "compatibility": "development",
+    "controller": "open_loop",
+    "encoder": "photoreceptors",
+    "engine_model": "lif",
+    "failures": [
+      "vcal_no_selection",
+      "v1_failed",
+      "tubu_vtcal"
+    ],
+    "open_loop_encoder": {
+      "inject_at": "photoreceptors",
+      "mean_delta_steer_hz": 2.6111111111111107,
+      "r_light_hz": 150.0
+    },
+    "platform": "linux-aarch64",
+    "reason": "TuBu path failed; open-loop encoder selected",
+    "source_record_sha256": {
+      "V1-open-loop": "8e5ea9c78913dc580edd4ddb87cdc553e3b1be7e111c8b8d85ac753b841e8624",
+      "V3-open-loop": "8ae37b1842c258b3e4c69d58221dc03ec7da665e849115d8ac0ad7fdd185f976",
+      "bias-open-loop": "125463d47ae2f24ea71141bb26f9afd9d64703e1c54f321b36688a994613518f",
+      "open-loop": "83739762562605bd17a48053d6569889ffa4d20f1d0a52d730bee06207429a8a",
+      "visual-vcal": "cb812c849dd20b4e670be5641e7fb33730a32f42ba2e4b0a0996a9d2dc650446",
+      "vtcal": "0359b0256ad99b912fe6ae96fcdc7c6f448203cb2660cb420f1c1eee6257c9e9"
+    },
+    "status": "open loop",
+    "step3_completed": true,
+    "step_reached": 3,
+    "substrate_id": "rest:379cc4cc9030cdd1",
+    "visual_sha256": "f4b1a5ba3f03adac37ce8218b5f5a8b2af9456a734c91613d5d88d7d8ac489b9",
+    "waiting_for": []
+  },
+  "valid_brain_s": 1146.0,
+  "valid_stage_wall_s": 15608.220000000001,
+  "vtcal": {
+    "brain_s": 800.0,
+    "central_input_intervals": [
+      {
+        "ci95": {
+          "LAL_neurons": [
+            -0.030469226081657252,
+            0.035648994515539156
+          ],
+          "TuBu": [
+            5.784444444444444,
+            5.8311111111111105
+          ],
+          "visual_projection": [
+            2.0696220870065896e-05,
+            0.0006001904052320081
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": 0.008429819215925227,
+          "TuBu": 5.814074074074074,
+          "visual_projection": 0.00031734205334105957
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            0.020109689213893778,
+            -0.030469226081657252,
+            0.035648994515539156
+          ],
+          "TuBu": [
+            5.826666666666667,
+            5.7844444444444445,
+            5.831111111111111
+          ],
+          "visual_projection": [
+            0.0006001904052320081,
+            2.0696220870065896e-05,
+            0.00033113953392110464
+          ]
+        },
+        "rate_hz": 40.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T023947.421118Z-5bdd9bcb",
+        "seed_count": 3
+      },
+      {
+        "ci95": {
+          "LAL_neurons": [
+            0.02071907373552695,
+            0.06550883607556368
+          ],
+          "TuBu": [
+            9.197777777777777,
+            9.435555555555556
+          ],
+          "visual_projection": [
+            -0.0001241773252204162,
+            0.00014487354609048556
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": 0.03889904529758267,
+          "TuBu": 9.304074074074075,
+          "visual_projection": 3.449370145011387e-05
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            0.030469226081657363,
+            0.06550883607556368,
+            0.02071907373552695
+          ],
+          "TuBu": [
+            9.278888888888888,
+            9.435555555555556,
+            9.197777777777777
+          ],
+          "visual_projection": [
+            -0.0001241773252204162,
+            8.278488348027226e-05,
+            0.00014487354609048556
+          ]
+        },
+        "rate_hz": 70.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T030705.592357Z-ff9d26be",
+        "seed_count": 3
+      },
+      {
+        "ci95": {
+          "LAL_neurons": [
+            0.010664229128580116,
+            0.05514929920780043
+          ],
+          "TuBu": [
+            12.381111111111112,
+            12.481111111111113
+          ],
+          "visual_projection": [
+            -0.00045531685914152256,
+            0.000848545055672837
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": 0.03798496851513322,
+          "TuBu": 12.424814814814816,
+          "visual_projection": 0.0001241773252204162
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            0.04814137720901912,
+            0.05514929920780043,
+            0.010664229128580116
+          ],
+          "TuBu": [
+            12.412222222222223,
+            12.381111111111112,
+            12.481111111111113
+          ],
+          "visual_projection": [
+            -2.0696220870065896e-05,
+            -0.00045531685914152256,
+            0.000848545055672837
+          ]
+        },
+        "rate_hz": 100.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T033404.384022Z-7c7047a4",
+        "seed_count": 3
+      },
+      {
+        "ci95": {
+          "LAL_neurons": [
+            0.0033516148689825,
+            0.07647775746496044
+          ],
+          "TuBu": [
+            16.57888888888889,
+            16.61
+          ],
+          "visual_projection": [
+            -0.00020696220870069018,
+            8.278488348027573e-05
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": 0.030164533820841017,
+          "TuBu": 16.58925925925926,
+          "visual_projection": -4.8291182030161854e-05
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            0.07647775746496044,
+            0.0033516148689825,
+            0.010664229128580116
+          ],
+          "TuBu": [
+            16.57888888888889,
+            16.61,
+            16.57888888888889
+          ],
+          "visual_projection": [
+            8.278488348027573e-05,
+            -2.06962208700711e-05,
+            -0.00020696220870069018
+          ]
+        },
+        "rate_hz": 150.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T040108.668457Z-bd0823e2",
+        "seed_count": 3
+      },
+      {
+        "ci95": {
+          "LAL_neurons": [
+            -0.063071297989031,
+            0.03046922608165803
+          ],
+          "TuBu": [
+            24.736666666666668,
+            24.925555555555558
+          ],
+          "visual_projection": [
+            -8.278488348027746e-05,
+            0.0007243677304524226
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": -0.02752386756043046,
+          "TuBu": 24.844444444444445,
+          "visual_projection": 0.00039322819653131333
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            -0.049969530773918414,
+            0.03046922608165803,
+            -0.063071297989031
+          ],
+          "TuBu": [
+            24.73666666666667,
+            24.925555555555555,
+            24.871111111111112
+          ],
+          "visual_projection": [
+            0.0005381017426217948,
+            -8.278488348027746e-05,
+            0.0007243677304524226
+          ]
+        },
+        "rate_hz": 280.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T042813.536470Z-cdd906fe",
+        "seed_count": 3
+      },
+      {
+        "ci95": {
+          "LAL_neurons": [
+            -0.01822059719683129,
+            0.025868372943327212
+          ],
+          "TuBu": [
+            9.324330555555553,
+            9.423777777777776
+          ],
+          "visual_projection": [
+            -6.622790678422353e-05,
+            0.0002545635167018492
+          ]
+        },
+        "mean_hz": {
+          "LAL_neurons": 0.0038086532602071175,
+          "TuBu": 9.376999999999999,
+          "visual_projection": 9.520261600231682e-05
+        },
+        "per_seed_hz": {
+          "LAL_neurons": [
+            0.030469226081657363,
+            0.06550883607556368,
+            0.02071907373552695,
+            0.00030469226081653034,
+            -0.010054844606947277,
+            -0.05575868372943327,
+            0.006703229737964889,
+            0.04204753199268718,
+            -0.03839122486288837,
+            -0.0234613040828765
+          ],
+          "TuBu": [
+            9.278888888888888,
+            9.435555555555556,
+            9.197777777777777,
+            9.42222222222222,
+            9.485555555555555,
+            9.423333333333332,
+            9.336666666666666,
+            9.368888888888888,
+            9.431111111111111,
+            9.39
+          ],
+          "visual_projection": [
+            -0.0001241773252204162,
+            8.278488348027226e-05,
+            0.00014487354609048556,
+            0.0002069622087006867,
+            0.00010348110435034856,
+            0.0001241773252204162,
+            -0.00045531685914152603,
+            0.00012417732522041793,
+            0.0006208866261020705,
+            0.00012417732522041272
+          ]
+        },
+        "rate_hz": 70.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T045511.536985Z-76b506a5",
+        "seed_count": 10
+      }
+    ],
+    "ended_utc": "2026-09-20T05:49:42Z",
+    "exit_code": 2,
+    "runs": [
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 40.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 96.0,
+        "experiment_sha256": "d759f7856a86a4a94e0ee338fb7f57dca2524b6f82bf3eab1fc70a9854d062b9",
+        "grid_rate_hz": 40.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T03:06:49.661699+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "5bdd9bcbbb52ff010d855c1927ba375d3c3be9393e871ba362e06e430f1ab308",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "32ad16b9aa047f2b1aeb4082382c57c764dbff0b55e84c4ddb329f784ca4adce",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T023947.421118Z-5bdd9bcb",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 78.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T023947.421118Z-5bdd9bcb",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 1618.5059486650025
+      },
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 70.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 96.0,
+        "experiment_sha256": "6caf1c084aaa1d9a823a7f70b1984fc313693b0a2393909a3e5cbefac451cc4a",
+        "grid_rate_hz": 70.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T03:33:48.463742+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "ff9d26be470c553d7f4c80a5157022cd0019261f8bfb74bb3425a03cb48eed71",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "819592293d3cd0cbf3246b5434e7ac9dfec64223ea59d5bbfae1f31911059418",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T030705.592357Z-ff9d26be",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 78.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T030705.592357Z-ff9d26be",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 1599.1141246340012
+      },
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 100.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 96.0,
+        "experiment_sha256": "403d044343460398e13cea6a2cd90ffb325bbecb568d88ab51e10cd8379b3690",
+        "grid_rate_hz": 100.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T04:00:52.506507+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "7c7047a47bccbfc2b009a15c48d644c9fa21eb6b8c5c17e5c32b6c1fba25c178",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "cac55625ec49f0d67b2c2200b4b75abb4bbdd3eac693232f656dc59922b5aff7",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T033404.384022Z-7c7047a4",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 78.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T033404.384022Z-7c7047a4",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 1604.2931391199963
+      },
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 150.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 96.0,
+        "experiment_sha256": "6de24854a2bcbd6e0596c64231023c8df241574a0fe14879b723d3cab791938d",
+        "grid_rate_hz": 150.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T04:27:58.391465+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "bd0823e204f0fe715b5f884675d51f6deb6a59b188294667d4c7451ced6392e2",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "22b9d180033c9e6efbeab0b12b42850ceadf5bb5bf8d7c043aeef6251a119541",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T040108.668457Z-bd0823e2",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 78.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T040108.668457Z-bd0823e2",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 1606.0882739980007
+      },
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 280.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 96.0,
+        "experiment_sha256": "63ad202f0f7ed3836db0bde424cbb86a3f804b42128599ceb0410a68c475c125",
+        "grid_rate_hz": 280.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T04:54:56.223778+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "cdd906fe0066296044369b22d7d43da7d1aa069a5c8f8c3cdfc007a8318ecf88",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "c3a235542861489b332181467421978e1de7b5dd8d0493565b0e72e5138452da",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T042813.536470Z-cdd906fe",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 78.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T042813.536470Z-cdd906fe",
+        "seeds": [
+          1,
+          2,
+          3
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 1599.0397527059977
+      },
+      {
+        "behaviour_settings": {
+          "K_steer": 0.0,
+          "bias_hz": 0.0,
+          "r_vis_max": 70.0,
+          "sigma_vis": 20.0,
+          "sign_steer": 1,
+          "v_fwd": 15.251167474671366
+        },
+        "brain_s": 320.0,
+        "experiment_sha256": "0f2d88491149905c8411e13eb04ab018e64351997b53875bc9a0f29a409b4762",
+        "grid_rate_hz": 70.0,
+        "identity": {
+          "assay": "open_loop_steering",
+          "code_commit": "2cfe2289225b95d26d501d21137df45c320d124d",
+          "code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "connectome_version": "783",
+          "data_versions": {
+            "behaviour-base-v0.2.yaml": "base-v0.2",
+            "behaviour-v0.1.yaml": "v0.1",
+            "compartments-v0.1.yaml": "v0.1",
+            "dopamine-v0.1.yaml": "v0.1",
+            "dopamine-v0.2.yaml": "v0.2",
+            "drive-v0.2.yaml": "v0.2",
+            "params-v0.1.yaml": "v0.1",
+            "params-v0.2.yaml": "v0.2",
+            "populations-v0.1.yaml": "v0.1",
+            "populations-v0.2.yaml": "v0.2",
+            "receptors-v0.1.yaml": "v0.1",
+            "rest-tier3-v0.2.yaml": "v0.2",
+            "transmitters-v0.2.yaml": "v0.2"
+          },
+          "date": "2026-09-20T05:49:40.589246+00:00",
+          "engine_model": "lif",
+          "fixture_hash": "",
+          "inputs": {},
+          "layer_flags": {
+            "background": true,
+            "dan_fast_synapses": "retain",
+            "dopamine_A": true,
+            "learning_D": false,
+            "receptor_kinetics_B": false,
+            "transporter_C": true
+          },
+          "machine": "aarch64 aarch64",
+          "mechanisms": null,
+          "overrides_hash": "",
+          "platform": "linux-aarch64",
+          "protocol_hash": "76b506a57524552e5653c70a54f04a7d16103cedfad662ae2e21b0a64c7ba001",
+          "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+          "run_code_hash": "git:22bdecec4e6199ff132406cececcff74dcd8726de9d6343e50ff8979f2ee6715",
+          "run_code_scope": "git:f794af3ca62d705cdc1174b94d714284e144a2de25c616f989e1a2c20cf075c0",
+          "substrate_id": "rest:379cc4cc9030cdd1",
+          "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619"
+        },
+        "manifest_sha256": "93ac7be71a33942cae79d7724e0160bf3073c4d94b43552957960d431d5dc835",
+        "original_run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T045511.536985Z-76b506a5",
+        "pinned_input_snapshot_blobs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c"
+        },
+        "probe_inject_at": [
+          "TuBu",
+          "TuBu"
+        ],
+        "probe_s": 260.0,
+        "run_dir": "camber-runs/wp20/runs/20260920T045511.536985Z-76b506a5",
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "settle_s": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        "snapshot_note": "Declared pinned bytes at the mapped source commit; not a replacement for the manifest runtime inputs map.",
+        "source_mac_commit": "57ae3639d39d3c086e446242860bf55c192caecd",
+        "source_scope_verified": true,
+        "substrate": {
+          "annotation_version": "v2.1.0",
+          "behaviour_version": "base-v0.2",
+          "connectome_version": "783",
+          "dopamine_version": "v0.2",
+          "drive_version": "v0.2",
+          "params_version": "v0.2",
+          "populations_version": "v0.2",
+          "receptor_map_version": "v0.1",
+          "transmitters_version": "v0.2",
+          "visual_version": null
+        },
+        "wall_s": 3265.355542954996
+      }
+    ],
+    "started_utc": "2026-09-20T02:39:30Z",
+    "wall_s": 11411.94
+  }
+}

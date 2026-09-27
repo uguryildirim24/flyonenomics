@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.2",
+  "name": "sugar-reflex",
+  "description": "",
+  "seed": 20260912,
+  "seeds": [
+    1
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.1",
+    "drive_version": "dev",
+    "dopamine_version": "v0.1",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1.0,
+          "label": "upstream",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150.0,
+            "mode": "upstream"
+          }
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1.0,
+          "label": "extended",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150.0,
+            "mode": "extended"
+          }
+        }
+      ],
+      "layers": null
+    },
+    {
+      "label": "mn9-threshold",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "population": "MN9",
+            "type": "shift_threshold",
+            "delta_mv": 3.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1.0,
+          "label": "upstream",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150.0,
+            "mode": "upstream"
+          }
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1.0,
+          "label": "extended",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150.0,
+            "mode": "extended"
+          }
+        }
+      ],
+      "layers": null
+    }
+  ],
+  "comparison": "paired",
+  "record": {
+    "spikes": [
+      "sugar_GRN_R",
+      "MN9"
+    ],
+    "rates": [
+      "sugar_GRN_R",
+      "MN9"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": true
+  },
+  "meta": {
+    "_resolved_populations": {
+      "MN9": [
+        138332
+      ],
+      "sugar_GRN_R": [
+        69093,
+        97602,
+        122795,
+        124291,
+        29281,
+        100605,
+        110469,
+        51107,
+        49584,
+        129730,
+        126873,
+        28825,
+        126600,
+        126752,
+        32863,
+        108426,
+        111357,
+        14842,
+        90589,
+        92298,
+        12494
+      ]
+    }
+  }
+}

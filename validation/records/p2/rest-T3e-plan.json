@@ -1,0 +1,188 @@
+{
+  "class": "development",
+  "sub_tier": "T3e",
+  "stage": "screen",
+  "wave": "wp29",
+  "engine_model": "lif",
+  "substrate": "1.0-4.0-0.0-False-100-<w>-kc-6.0",
+  "flags": [],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "launch": true,
+  "reason": null,
+  "n_jobs": 2,
+  "n_tasks": 50,
+  "n_arms": 6,
+  "brain_s": 2784.0,
+  "list_usd": 4.48996913580247,
+  "engine_usd": 3.5444444444444447,
+  "list_cap_usd": 20.0,
+  "pack_worker_s_per_brain_s": 75.0,
+  "max_instances": 2,
+  "common_ladder": [
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "sens_ladder": [
+    0.8,
+    1.0,
+    1.2,
+    1.4
+  ],
+  "thdeg_betas": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "hub_factors": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "include_hubs": false,
+  "hubs": {
+    "resolved": false,
+    "counts": {
+      "MBON06": 2,
+      "LPi13": 0,
+      "LPi15": 0
+    },
+    "missing": [
+      "LPi13",
+      "LPi15"
+    ],
+    "skip_reason": "registry labels do not resolve LPi13, LPi15",
+    "resolve_later": null,
+    "n_idx": 2
+  },
+  "k_choice": "K_i is incoming synapse count (sum of |Excitatory x Connectivity| onto i); K_median over K_i > 0; K_i < 1 uses 1 in 1/sqrt(K_i/K_median)",
+  "lab_measures": {
+    "single_unit_fano_ms": 100,
+    "central_fano_n": 2000,
+    "pairwise_corr_ms": 50,
+    "pair_n": 500,
+    "pca_participation_ratio": true,
+    "recorded_only": true
+  },
+  "passer_followup_brain_s": 1908.0,
+  "job_shapes": [
+    {
+      "job_index": 0,
+      "n_tasks": 25,
+      "brain_s": 1392.0,
+      "kinds": {
+        "t1": 9,
+        "unit": 3,
+        "t3e-sugar": 12,
+        "bare": 1
+      }
+    },
+    {
+      "job_index": 1,
+      "n_tasks": 25,
+      "brain_s": 1392.0,
+      "kinds": {
+        "t1": 9,
+        "unit": 3,
+        "t3e-sugar": 12,
+        "bare": 1
+      }
+    }
+  ],
+  "ibm": {
+    "workers": 36.0,
+    "worker_s_per_brain_s": 45.75,
+    "setup_s": 600.0,
+    "timeout_s": 9000.0,
+    "build_s": 250.0
+  },
+  "arms": [
+    {
+      "id": "sens",
+      "bg_policy": "sens",
+      "ladder": [
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "why_ladder": "sensory-only drive; central brain sees network-filtered input, so the ladder starts at 0.80 and steps 0.20 mV to 1.40",
+      "scale": null,
+      "beta": null,
+      "hub_factor": null
+    },
+    {
+      "id": "nomotor",
+      "bg_policy": "nomotor",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "why_ladder": "common 0.05 mV ladder; item 42 relaxed for this arm only",
+      "scale": null,
+      "beta": null,
+      "hub_factor": null
+    },
+    {
+      "id": "indeg",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "why_ladder": "common ladder; incoming gain 1/sqrt(K_i/K_median)",
+      "scale": "indeg",
+      "beta": null,
+      "hub_factor": null
+    },
+    {
+      "id": "thdeg-0.5",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV",
+      "scale": null,
+      "beta": 0.5,
+      "hub_factor": null
+    },
+    {
+      "id": "thdeg-1.0",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV",
+      "scale": null,
+      "beta": 1.0,
+      "hub_factor": null
+    },
+    {
+      "id": "thdeg-2.0",
+      "bg_policy": "default",
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV",
+      "scale": null,
+      "beta": 2.0,
+      "hub_factor": null
+    }
+  ],
+  "note": "Screen wave only. A passer then gets 10-seed reflex at rest and the experiment-4 freeze (seeds 11-20) before RANKED. No up.sh before GO wp29."
+}

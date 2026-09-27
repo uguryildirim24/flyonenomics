@@ -1,0 +1,62 @@
+version: male-cns-v1.0
+transmitter_rule:
+  blob_id: ac6342f618c43d3354dbe76d757fcd9888f0d397
+  scope: brain
+scales:
+  g_gaba: 1.0
+  g_glu: 4.0
+  g_his: 1.0
+  g_gaba_kc: 6.0
+  unk: positive:1; negative:g_gaba
+  sha256: fb6270f518f06cd0adb42748ae10baa360dec752edd237ce7ecdefa70450a84c
+background:
+  n_bg: 100
+  r_bg: 10.0
+  groups:
+    DAN:
+      size: 367
+      w_bg: 0.0
+    ER:
+      size: 282
+      w_bg: 0.0
+    KC:
+      size: 4064
+      w_bg: 0.0
+    ascending:
+      size: 1849
+      w_bg: 0.0
+    central:
+      size: 39533
+      w_bg: 0.0
+    descending:
+      size: 1314
+      w_bg: 0.0
+    endocrine:
+      size: 87
+      w_bg: 0.0
+    motor:
+      size: 887
+      w_bg: 0.0
+    optic:
+      size: 89353
+      w_bg: 0.0
+    sensory:
+      size: 15016
+      w_bg: 1.0
+    visual_centrifugal:
+      size: 562
+      w_bg: 0.0
+    visual_projection:
+      size: 9203
+      w_bg: 0.0
+threshold: null
+optic_exemption: false
+mechanisms: null
+provenance:
+  item: 155
+  connectome_version: male-cns:v1.0
+  item_ruling: Item 122 settings applied unchanged; no setting selected by a male
+    firing outcome.
+  record: validation/records/p2/malecns-rest.json
+  record_sha256: d4815a59674e3a6dc38ba9c3081e029d99834a09fa4f426d6dd7822a3adbbbf5
+  inputs_record_sha256: 69bfaa84723163e12b76f64a5c495fcd8169b07898de850077fc0df79f9c9fba

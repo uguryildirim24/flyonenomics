@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "configuration_commit": "a837bbfe3d95b8632998a027cea6aaebedd1a4b6",
+  "iteration": 1,
+  "sha256": "629d4017d96588401a2517c7d7afec719d4b26944453bed2253bfff635975e81",
+  "measurement_record": "validation/records/p2/wp19-K2r-iteration-1-b51d49f2968ad52d.json",
+  "input_identity": {
+    "code_scope": "git:5f3651307f0ee5a7d6d34713cf57dc4db040850f5b0a413314a0413204f5f352",
+    "inputs": {
+      "data/drive-v0.2.yaml": "379cc4cc9030cdd1bc2235ae28a97f96d0f90c9a95879a51388a5cff513ec278",
+      "data/params-v0.2.yaml": "509041e810f75da90b38b26d4f5d5cd28a34e247570640e41956a7a7c4717c26",
+      "data/experiments/p2/rest-k2r.json": "da6940acbb90a30193bff7b289a333fbafbdf839da862e0df2dccab3003d3ff2"
+    },
+    "overrides": ""
+  }
+}

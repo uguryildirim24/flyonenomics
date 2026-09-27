@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inside a simulated male fly brain</title>
+<style>
+:root{color-scheme:dark;--bg:#020409;--ink:#e8f1f8;--muted:#8ea2b4;--accent:#63d5ff;--font:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:14px/1.4 var(--font)}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh}
+.stage{position:relative;width:min(100vw,calc((100vh - 60px)*16/9));aspect-ratio:16/9;background:#000;overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#gl{touch-action:none}#hud{pointer-events:none}
+.bar{width:min(100vw,calc((100vh - 60px)*16/9));display:flex;gap:10px;align-items:center;padding:12px 14px;height:60px}
+button{font:inherit;color:var(--ink);background:#0d1520;border:1px solid #243242;border-radius:7px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+button:hover{background:#15212f}button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}
+input[type=range]{flex:1;min-width:40px;accent-color:var(--accent)}
+#clock{font-variant-numeric:tabular-nums;color:var(--muted);min-width:96px;text-align:right}
+.loading{position:fixed;inset:0;display:grid;place-content:center;background:var(--bg);z-index:5;font-size:18px;color:var(--muted);text-align:center}
+#failure{color:#ff8a8a;white-space:pre-wrap;max-width:800px;font-size:14px}
+body.film .bar{display:none}
+@media(max-width:600px){.bar{gap:6px;padding:8px}button{padding:5px 8px}#clock{min-width:0;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="loading" id="loading"><div>Loading the brain…</div><div id="failure"></div></div>
+<div class="stage" id="stage"><canvas id="gl" aria-label="Cinematic playback of recorded model activity in a male fly brain model"></canvas><canvas id="hud" aria-hidden="true"></canvas></div>
+<div class="bar"><button id="play">Pause</button><input id="scrub" type="range" min="0" max="1000" value="0" step="1" aria-label="Film time"><span id="clock"></span><button id="free" aria-pressed="false" title="Drag to orbit, scroll to zoom, right-drag to pan">Free camera</button></div>
+<!-- Three.js (MIT): Copyright © 2010–2023 three.js authors. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+<script>
+(async()=>{
+'use strict';
+const filmMode=location.hash==='#film';if(filmMode)document.body.classList.add('film');
+const bytes=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const threeURL=URL.createObjectURL(new Blob([bytes('__THREE__')],{type:'text/javascript'}));
+const THREE=await import(threeURL);
+const controlsSource=new TextDecoder().decode(bytes('__CONTROLS__')).replace("from 'three'",`from '${threeURL}'`);
+const {OrbitControls}=await import(URL.createObjectURL(new Blob([controlsSource],{type:'text/javascript'})));
+// Embedded Three.js postprocessing modules, linked to each other through blob URLs (no network).
+const moduleSources=__MODULES__, linked={};
+function link(path){if(linked[path])return linked[path];const dir=path.split('/').slice(0,-1);
+ const source=new TextDecoder().decode(bytes(moduleSources[path])).replace(/from\s*['"]([^'"]+)['"]/g,(m,spec)=>{if(spec==='three')return `from '${threeURL}'`;const parts=[...dir];for(const p of spec.split('/')){if(p==='..')parts.pop();else if(p!=='.')parts.push(p);}return `from '${link(parts.join('/'))}'`;});
+ return linked[path]=URL.createObjectURL(new Blob([source],{type:'text/javascript'}));}
+const {EffectComposer}=await import(link('postprocessing/EffectComposer.js'));
+const {RenderPass}=await import(link('postprocessing/RenderPass.js'));
+const {UnrealBloomPass}=await import(link('postprocessing/UnrealBloomPass.js'));
+const {OutputPass}=await import(link('postprocessing/OutputPass.js'));
+const stream=new Blob([bytes('__PAYLOAD__')]).stream().pipeThrough(new DecompressionStream('gzip'));
+const data=JSON.parse(await new Response(stream).text());
+const byId=id=>document.getElementById(id), f32=s=>new Float32Array(bytes(s).buffer), u32=s=>new Uint32Array(bytes(s).buffer);
+const show=data.display, series=data.playback, cells=data.cells, N=cells.length;
+const E=series.bin_edges_s, binWidth=E[1]-E[0], BINS=series.times_s.length;
+
+// ---------- Recorded activity: whole spike counts per cell and bin; nothing else is animated from data.
+const column=new Map(series.body_ids.map((id,i)=>[id,i]));
+const cellColumn=cells.map(c=>column.get(c.body_id));            // undefined: anatomy only, never animated
+const recorded=cellColumn.map(c=>c!==undefined);
+const spikes=(arm,bin,k)=>Math.round(series.conditions[arm].values[bin][cellColumn[k]]*binWidth);
+const maxCount=Math.round(series.maximum*binWidth);                 // one fixed scale for every arm and bin
+if(maxCount>12)throw new Error('more spikes per bin than flash slots');
+const ARMS=['wt-a','fumin-a','wt-b','fumin-b'].map(id=>series.conditions.findIndex(c=>c.id===id));
+if(ARMS.some(i=>i<0))throw new Error('expected the four recorded arms');
+
+// ---------- Film timeline (seconds). Each recorded 100 ms bin is held for HOLD seconds.
+const HOLD=.65, FLASH=.42, TITLE=5, ANAT=8.5, SETUP=4.6, INTER=1.6, ARM=BINS*HOLD, END=6.4;
+const segments=[];let clock=0;const add=(kind,length,arm)=>{segments.push({kind,start:clock,end:clock+length,arm});clock+=length;};
+add('title',TITLE);add('anatomy',ANAT);add('setup',SETUP);ARMS.forEach((arm,i)=>{add('inter',INTER,i);add('arm',ARM,i);});add('end',END);
+const DURATION=clock;
+const segmentAt=t=>segments.find(s=>t>=s.start&&t<s.end)||segments.at(-1);
+
+// ---------- Scene
+const glCanvas=byId('gl'), hud=byId('hud'), ctx=hud.getContext('2d');
+const renderer=new THREE.WebGLRenderer({canvas:glCanvas,antialias:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;renderer.outputColorSpace=THREE.SRGBColorSpace;
+const scene=new THREE.Scene();scene.background=new THREE.Color('#020409');
+const camera=new THREE.PerspectiveCamera(30,16/9,5,20000);
+
+// Region surfaces as faint rim-lit glass (a display style only).
+const rimVertex=`varying vec3 vN;varying vec3 vV;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vN=normalize(normalMatrix*normal);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}`;
+const rimFragment=`uniform vec3 color;uniform float strength;varying vec3 vN;varying vec3 vV;void main(){float f=pow(1.-abs(dot(normalize(vN),normalize(vV))),2.6);gl_FragColor=vec4(color*(.05+f)*strength,1.);}`;
+const shells=[];
+const shellStyle={shell:['#5a8fc4',.2],cx:['#c77fa8',.1],mb:['#8f7fd0',.08],optic:['#4d86b0',.08],visual:['#d9a95a',.09],vnc:['#5a8fc4',.16]};
+for(const mesh of data.meshes){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(f32(mesh.vertices),3));g.setIndex(new THREE.BufferAttribute(u32(mesh.faces),1));g.computeVertexNormals();
+ const [color,strength]=shellStyle[mesh.group];
+ const m=new THREE.ShaderMaterial({vertexShader:rimVertex,fragmentShader:rimFragment,uniforms:{color:{value:new THREE.Color(color)},strength:{value:strength}},transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false});
+ const o=new THREE.Mesh(g,m);o.renderOrder=1;o.userData={group:mesh.group,name:mesh.name,base:strength,cord:mesh.group==='vnc'||mesh.name==='VNC'||mesh.name==='CV'};scene.add(o);shells.push(o);}
+
+// Neurons: one merged line mesh. Per vertex: cell index and normalised path position u (0 at one
+// end of the arbor, 1 at the farthest point). u only places the illustrative flash path.
+let vertexTotal=0;const pointArrays=cells.map(c=>{const p=f32(c.points);vertexTotal+=p.length/3;return p;});
+const position=new Float32Array(vertexTotal*3), pathU=new Float32Array(vertexTotal), cellIndex=new Float32Array(vertexTotal);
+const centroid=cells.map(()=>new THREE.Vector3()), sideCentroid=cells.map(()=>new THREE.Vector3());
+let offset=0;
+cells.forEach((cell,k)=>{const p=pointArrays[k],nv=p.length/3,ids=new Map(),vid=new Int32Array(nv);let n=0;
+ for(let i=0;i<nv;i++){const key=p[3*i]+','+p[3*i+1]+','+p[3*i+2];let id=ids.get(key);if(id===undefined){id=n++;ids.set(key,id);}vid[i]=id;}
+ const adj=Array.from({length:n},()=>[]),xs=new Float32Array(n);
+ for(let i=0;i<nv;i++)xs[vid[i]]=p[3*i];
+ for(let s=0;s<nv;s+=2){const a=vid[s],b=vid[s+1],L=Math.hypot(p[3*s]-p[3*s+3],p[3*s+1]-p[3*s+4],p[3*s+2]-p[3*s+5]);adj[a].push(b,L);adj[b].push(a,L);}
+ const walk=(roots)=>{const d=new Float64Array(n).fill(-1);for(const r of roots){if(d[r]>=0)continue;d[r]=0;const stack=[r];while(stack.length){const u=stack.pop(),e=adj[u];for(let j=0;j<e.length;j+=2){const v=e[j];if(d[v]<0){d[v]=d[u]+e[j+1];stack.push(v);}}}}return d;};
+ const argmax=d=>{let best=0;for(let i=1;i<n;i++)if(d[i]>d[best])best=i;return best;};
+ // Ends of the longest path; start from the more lateral end (a display choice, not a claim).
+ const a=argmax(walk([0])),b=argmax(walk([a])),root=Math.abs(xs[a])>=Math.abs(xs[b])?a:b;
+ const order=[root];for(let i=0;i<n;i++)order.push(i);
+ const d=walk(order);let longest=0;for(let i=0;i<n;i++)longest=Math.max(longest,d[i]);
+ let side=0;
+ for(let i=0;i<nv;i++){const j=offset+i;position[3*j]=p[3*i];position[3*j+1]=p[3*i+1];position[3*j+2]=p[3*i+2];pathU[j]=longest?d[vid[i]]/longest:0;cellIndex[j]=k;
+  centroid[k].x+=p[3*i];centroid[k].y+=p[3*i+1];centroid[k].z+=p[3*i+2];}
+ centroid[k].divideScalar(nv);offset+=nv;});
+const lineGeometry=new THREE.BufferGeometry();
+lineGeometry.setAttribute('position',new THREE.BufferAttribute(position,3));
+lineGeometry.setAttribute('pathU',new THREE.BufferAttribute(pathU,1));
+lineGeometry.setAttribute('cell',new THREE.BufferAttribute(cellIndex,1));
+// State texture, one column per cell: row 0 = colour and steady intensity; rows 1-3 = up to 12 flash heads.
+const state=new Float32Array(N*4*4);
+const stateTexture=new THREE.DataTexture(state,N,4,THREE.RGBAFormat,THREE.FloatType);stateTexture.magFilter=stateTexture.minFilter=THREE.NearestFilter;stateTexture.needsUpdate=true;
+// Two passes over the same lines. Base: normal blending, so dense regions settle at each cell's own
+// colour instead of summing to white. Flashes: additive, drawn only for cells with a flash in flight.
+const lineVertex=`uniform sampler2D stateMap;attribute float pathU;attribute float cell;varying float vU;flat varying vec4 vLook;flat varying vec4 vH0;flat varying vec4 vH1;flat varying vec4 vH2;flat varying float vCell;uniform float flashPass;
+ void main(){int k=int(cell+.5);vLook=texelFetch(stateMap,ivec2(k,0),0);vH0=texelFetch(stateMap,ivec2(k,1),0);vH1=texelFetch(stateMap,ivec2(k,2),0);vH2=texelFetch(stateMap,ivec2(k,3),0);vU=pathU;vCell=cell;
+ float live=max(max(max(vH0.x,vH0.y),max(vH0.z,vH0.w)),max(max(max(vH1.x,vH1.y),max(vH1.z,vH1.w)),max(max(vH2.x,vH2.y),max(vH2.z,vH2.w))));
+ gl_Position=flashPass>.5&&live<0.?vec4(2.,2.,2.,1.):projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
+const baseMaterial=new THREE.ShaderMaterial({uniforms:{stateMap:{value:stateTexture},flashPass:{value:0},alpha:{value:.36}},transparent:true,depthWrite:false,depthTest:false,vertexShader:lineVertex,
+ fragmentShader:`uniform float alpha;flat varying vec4 vLook;void main(){gl_FragColor=vec4(vLook.rgb*vLook.a,alpha);}`});
+const flashMaterial=new THREE.ShaderMaterial({uniforms:{stateMap:{value:stateTexture},flashPass:{value:1},flashGain:{value:1.8},time:{value:0}},transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,depthTest:false,vertexShader:lineVertex,
+ fragmentShader:`uniform float flashGain;uniform float time;varying float vU;flat varying vec4 vLook;flat varying vec4 vH0;flat varying vec4 vH1;flat varying vec4 vH2;flat varying float vCell;
+ float comet(float h){if(h<0.)return 0.;float x=h-vU;return x>=0.?exp(-x/.16)*step(x,1.3):exp(x/.012);}
+ float heads(vec4 h){return comet(h.x)+comet(h.y)+comet(h.z)+comet(h.w);}
+ void main(){float f=heads(vH0)+heads(vH1)+heads(vH2);if(f<.004)discard;
+  // Flicker along the flash only: the lightning texture is illustrative; the number of flashes is recorded.
+  float n=fract(sin(dot(vec2(floor(vU*140.)+vCell*1.37,floor(time*30.)),vec2(12.9898,78.233)))*43758.5453);
+  f*=.62+.76*n;gl_FragColor=vec4(vLook.rgb*flashGain*f+vec3(.9)*f*f,1.);}`});
+const neurons=new THREE.LineSegments(lineGeometry,baseMaterial);neurons.frustumCulled=false;neurons.renderOrder=2;scene.add(neurons);
+const sparks=new THREE.LineSegments(lineGeometry,flashMaterial);sparks.frustumCulled=false;sparks.renderOrder=3;scene.add(sparks);
+
+// Colours on black. Groups keep their atlas hue; recorded glow uses the same hue, brighter.
+const groupColour=Object.fromEntries(data.groups.map(g=>[g.id,new THREE.Color(g.color)]));
+const glowColour={ER:new THREE.Color('#34f0bf'),TuBu:new THREE.Color('#ffb43c')};
+const dimColour=new THREE.Color('#1c3148');
+const DIM=1, SILENT=.16, GLOW=1.25;
+const groupsOf=cells.map(c=>c.group);
+const recordedGroups=data.groups.filter(g=>cells.some((c,k)=>c.group===g.id&&recorded[k])).map(g=>g.id);
+const unit=(v,a,b)=>Math.min(1,Math.max(0,(v-a)/(b-a))), ease=x=>x*x*(3-2*x);
+const hash=(a,b,c,d)=>{let h=(a*374761393+b*668265263+c*2147483647+d*1274126177)|0;h=Math.imul(h^(h>>>13),1274126177);h^=h>>>16;return (h>>>0)/4294967296;};
+
+// Group anchors for the anatomy labels: one hemisphere's centroid of each group.
+const anchor={};for(const g of data.groups){const v=new THREE.Vector3();let n=0;cells.forEach((c,k)=>{if(c.group===g.id&&centroid[k].x>0){v.add(centroid[k]);n++;}});anchor[g.id]=v.divideScalar(Math.max(n,1));}
+const focus=new THREE.Vector3();{let n=0;cells.forEach((c,k)=>{if(recorded[k]){focus.add(centroid[k]);n++;}});focus.divideScalar(n);}
+const cordCentre=new THREE.Vector3(0,-60,-330);
+
+// ---------- Look of every cell at film time t
+const INTRO_ORDER={ER:0,TuBu:1,CX_DAN:2,MB_DAN:2,KC:3};
+function look(t){const s=segmentAt(t);state.fill(0,0,4*N);state.fill(-1,4*N);const out={segment:s.kind,arm:null,bin:null,flashes:0};
+ if(s.kind==='arm'){const arm=ARMS[s.arm],local=t-s.start,bin=Math.min(BINS-1,Math.floor(local/HOLD)),inBin=local-bin*HOLD;out.arm=series.conditions[arm].id;out.bin=bin;
+  for(let k=0;k<N;k++){const o=4*k;
+   if(!recorded[k]){dimColour.toArray(state,o);state[o+3]=DIM;continue;}
+   const n=spikes(arm,bin,k);glowColour[groupsOf[k]].toArray(state,o);
+   // Steady glow is linear in this cell's recorded spike count in this bin, on one fixed scale.
+   state[o+3]=SILENT+GLOW*n/maxCount;
+   // One travelling flash per recorded spike; start times inside the bin are illustrative.
+   for(let j=0;j<n;j++){const start=(j+hash(k,bin,j,arm))/n*(HOLD-FLASH),h=(inBin-start)/FLASH*1.3;
+    if(h>=0&&h<=1.3){state[4*N*(1+(j>>2))+4*k+(j&3)]=h;out.flashes++;}}}
+ }else{
+  // No data outside the four runs: steady anatomy colours in the intro, dim everywhere else.
+  const reveal=s.kind==='anatomy'?t-s.start:s.kind==='setup'?99:-1;
+  const fade=s.kind==='setup'?1-ease(unit(t,s.start,s.start+1.4)):1;
+  for(let k=0;k<N;k++){const o=4*k,g=groupsOf[k],on=fade*ease(unit(reveal,1.4+INTRO_ORDER[g],2.2+INTRO_ORDER[g]));
+   dimColour.clone().lerp(groupColour[g],on).toArray(state,o);state[o+3]=DIM+(g==='KC'||g==='MB_DAN'?.3:.6)*on;}}
+ stateTexture.needsUpdate=true;flashMaterial.uniforms.time.value=t;return out;}
+
+// ---------- Camera: poses around a target, eased between keys
+const pose=(target,az,el,dist)=>({target:target.clone(),az,el,dist});
+const front=(az,el,dist)=>pose(focus,az,el,dist);
+const armMoves=[[front(-15,6,780),front(-4,10,630)],[front(6,10,600),front(16,4,520)],[front(-24,16,700),front(-7,8,470)],[front(8,4,520),front(22,12,720)]];
+function interp(a,b,x){x=ease(x);return pose(a.target.clone().lerp(b.target,x),a.az+(b.az-a.az)*x,a.el+(b.el-a.el)*x,Math.exp(Math.log(a.dist)+(Math.log(b.dist)-Math.log(a.dist))*x));}
+function cameraPose(t){const s=segmentAt(t),x=unit(t,s.start,s.end);
+ const overview=pose(cordCentre,112,24,2350);
+ if(s.kind==='title')return interp(pose(cordCentre,126,26,2500),overview,x);
+ if(s.kind==='anatomy')return interp(overview,front(-18,4,860),x);
+ if(s.kind==='setup')return interp(front(-18,4,860),armMoves[0][0],x);
+ if(s.kind==='inter')return s.arm===0?armMoves[0][0]:interp(armMoves[s.arm-1][1],armMoves[s.arm][0],x);
+ if(s.kind==='arm')return interp(armMoves[s.arm][0],armMoves[s.arm][1],x);
+ return interp(armMoves[3][1],pose(focus.clone().lerp(cordCentre,.35),60,22,1900),x);}
+function place(p){const a=THREE.MathUtils.degToRad(p.az),e=THREE.MathUtils.degToRad(p.el);camera.position.set(p.target.x+p.dist*Math.sin(a)*Math.cos(e),p.target.y+p.dist*Math.sin(e),p.target.z+p.dist*Math.cos(a)*Math.cos(e));camera.up.set(0,1,0);camera.lookAt(p.target);}
+// Region surfaces: the nerve cord is shown in the wide shots and fades in the brain close-ups.
+function shellsAt(t){const s=segmentAt(t);const wide=s.kind==='title'?1:s.kind==='anatomy'?1-ease(unit(t,s.start+1,s.start+5)):s.kind==='end'?ease(unit(t,s.start+.5,s.start+3.5)):0;
+ const dim=s.kind==='arm'?.6:1;for(const o of shells)o.material.uniforms.strength.value=o.userData.base*(o.userData.cord?wide:dim);}
+
+// ---------- Post-processing
+const composerTarget=new THREE.WebGLRenderTarget(16,16,{type:THREE.HalfFloatType,samples:4});
+const composer=new EffectComposer(renderer,composerTarget);
+composer.addPass(new RenderPass(scene,camera));
+const bloom=new UnrealBloomPass(new THREE.Vector2(16,16),.5,.4,.55);composer.addPass(bloom);
+composer.addPass(new OutputPass());
+let W=1280,H=720;
+function setSize(w,h,dpr=1){W=Math.round(w*dpr);H=Math.round(h*dpr);renderer.setPixelRatio(1);renderer.setSize(W,H,false);composer.setSize(W,H);hud.width=W;hud.height=H;camera.aspect=W/H;camera.updateProjectionMatrix();}
+
+// ---------- HUD (drawn on a 2D canvas above the 3D view; composited for the clip)
+const FONT='"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif';
+const C={ink:'#eef5fb',muted:'#9db0c2',faint:'#6f8396',accent:'#63d5ff',cx:'#ff7fc0'};
+let k=1;
+function font(size,weight=500){ctx.font=`${weight} ${size*k}px ${FONT}`;}
+function text(s,x,y,{size=18,weight=500,color=C.ink,align='left',alpha=1,spacing=0,shadow=true}={}){ctx.save();ctx.globalAlpha*=alpha;font(size,weight);ctx.textAlign=align;ctx.letterSpacing=`${spacing*k}px`;ctx.fillStyle=color;if(shadow){ctx.shadowColor='rgba(0,0,0,.85)';ctx.shadowBlur=10*k;}ctx.fillText(s,x*k,y*k);ctx.restore();}
+function wrap(s,width,size,weight=500){font(size,weight);const out=[];let row='';for(const w of s.split(' ')){const next=row?row+' '+w:w;if(ctx.measureText(next).width>width*k&&row){out.push(row);row=w;}else row=next;}out.push(row);return out;}
+const fadeIO=(t,s,e,f=.6)=>Math.min(ease(unit(t,s,s+f)),1-ease(unit(t,e-f,e)));
+const flyText=show.fly.replace(/,.*$/,'');
+function vignette(){const g=ctx.createRadialGradient(W/2,H/2,Math.min(W,H)*.35,W/2,H/2,Math.hypot(W,H)*.62);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.72)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+ // Soft bands behind the top titles and bottom captions keep text readable over bright activity.
+ const top=ctx.createLinearGradient(0,0,0,170*k);top.addColorStop(0,'rgba(1,3,8,.72)');top.addColorStop(1,'rgba(1,3,8,0)');ctx.fillStyle=top;ctx.fillRect(0,0,W,170*k);
+ const bottom=ctx.createLinearGradient(0,H-250*k,0,H);bottom.addColorStop(0,'rgba(1,3,8,0)');bottom.addColorStop(.55,'rgba(1,3,8,.62)');bottom.addColorStop(1,'rgba(1,3,8,.86)');ctx.fillStyle=bottom;ctx.fillRect(0,H-250*k,W,250*k);}
+function captions(alpha){text(show.flashes,640,672,{size:14.5,color:C.muted,align:'center',alpha});text(show.signature,640,694,{size:14.5,color:C.muted,align:'center',alpha});}
+function drawHUD(t,info){ctx.clearRect(0,0,W,H);k=W/1280;vignette();const s=segmentAt(t);
+ if(s.kind==='title'){const a=fadeIO(t,s.start,s.end,.9);
+  text(show.project.toUpperCase(),640,236,{size:15,weight:600,color:C.accent,align:'center',alpha:a,spacing:6});
+  text('Inside a simulated male fly brain',640,306,{size:54,weight:600,align:'center',alpha:a});
+  text('Can an ADHD-like change be made in a fly brain model, and what happens?',640,352,{size:22,color:C.muted,align:'center',alpha:a});
+  text(show.author,640,420,{size:19,weight:500,align:'center',alpha:a});
+  text(show.model,640,672,{size:14.5,color:C.muted,align:'center',alpha:a});text(show.signature,640,694,{size:14.5,color:C.muted,align:'center',alpha:a});}
+ if(s.kind==='anatomy'){const a=fadeIO(t,s.start+.3,s.end,.8);
+  text('The wiring is real',56,76,{size:34,weight:600,alpha:a});
+  text('MaleCNS connectome of an adult male fly: Janelia, Google and Cambridge',56,106,{size:17,color:C.muted,alpha:a});
+  const labels=[['ER','Ring neurons'],['TuBu','Tubercle-to-bulb (TuBu) neurons'],['CX_DAN','Central-complex dopamine neurons'],['MB_DAN','Mushroom-body dopamine neurons'],['KC','Kenyon cells (a sample)']];
+  // Slots follow the anchors' screen height so leader lines do not cross.
+  const slot=labels.map(([g])=>anchor[g].clone().project(camera).y).map((y,i)=>[y,i]).sort((a,b)=>b[0]-a[0]).map(([,i])=>i);
+  labels.forEach(([g,label],i)=>{const la=Math.min(a,ease(unit(t-s.start,1.8+INTRO_ORDER[g],2.6+INTRO_ORDER[g])));if(la<=0)return;
+   // Callouts in a column on the right, each with a leader line to its group on screen.
+   const p=anchor[g].clone().project(camera),x=(p.x+1)/2*1280,y=(1-p.y)/2*720,lx=922,ly=236+slot.indexOf(i)*46;
+   ctx.save();ctx.globalAlpha=la;ctx.strokeStyle='rgba(220,235,250,.5)';ctx.lineWidth=1.1*k;ctx.beginPath();ctx.moveTo(x*k,y*k);ctx.lineTo((lx-8)*k,(ly-6)*k);ctx.lineTo((lx+12)*k,(ly-6)*k);ctx.stroke();
+   ctx.fillStyle='#'+groupColour[g].getHexString();ctx.beginPath();ctx.arc(x*k,y*k,3.2*k,0,7);ctx.fill();ctx.restore();
+   text(label,lx+20,ly+6,{size:17,weight:600,alpha:la});});
+  text('Anatomy only: no activity is shown yet.',640,694,{size:15,color:C.muted,align:'center',alpha:a});}
+ if(s.kind==='setup'){const a=fadeIO(t,s.start,s.end,.7);ctx.save();ctx.globalAlpha=.55*a;ctx.fillStyle='#01030a';ctx.fillRect(0,0,W,H);ctx.restore();
+  text('The experiment',640,214,{size:36,weight:600,align:'center',alpha:a});
+  const lines=['Input is injected into TuBu neurons. The fly does not see.','Two brains: normal dopamine cleanup, or broken cleanup (the fumin mutant).','Two histories: input A first or input B first, then A + B together.',`${flyText}, the most typical of the ten. Model time is slowed ${(HOLD/binWidth).toFixed(1)}×.`];
+  lines.forEach((l,i)=>text(l,640,282+i*40,{size:21,color:i===0?C.ink:C.muted,align:'center',alpha:a}));
+  captions(a);}
+ if(s.kind==='inter'){const a=fadeIO(t,s.start,s.end,.45),c=show.conditions[series.conditions[ARMS[s.arm]].id];
+  text(c.title,640,334,{size:50,weight:600,align:'center',alpha:a});
+  ctx.save();ctx.globalAlpha=a;ctx.fillStyle=c.colour;ctx.fillRect((640-44)*k,352*k,88*k,4*k);ctx.restore();
+  text(`${c.detail} · ${c.science}`,640,394,{size:21,color:C.muted,align:'center',alpha:a});captions(a);}
+ if(s.kind==='arm'){const arm=ARMS[s.arm],cond=series.conditions[arm],c=show.conditions[cond.id],bin=info.bin,a=fadeIO(t,s.start,s.end,.35);
+  ctx.save();ctx.globalAlpha=a;ctx.fillStyle=c.colour;ctx.fillRect(56*k,44*k,5*k,56*k);ctx.restore();
+  text(c.title,74,76,{size:34,weight:600,alpha:a});text(`${c.detail} · ${c.science}`,74,102,{size:17,color:C.muted,alpha:a});
+  text(`${E[bin].toFixed(1)}–${E[bin+1].toFixed(1)} s`,1224,76,{size:32,weight:600,align:'right',alpha:a});
+  text(show.time_suffix,1224,100,{size:15,color:C.muted,align:'right',alpha:a});
+  ctx.save();ctx.globalAlpha=a;for(let i=0;i<BINS;i++){ctx.fillStyle=i<=bin?'rgba(238,245,251,.9)':'rgba(238,245,251,.2)';ctx.fillRect((1224-BINS*12+i*12)*k,112*k,9*k,3*k);}
+  for(let i=0;i<4;i++){ctx.fillStyle=i===s.arm?C.ink:'rgba(238,245,251,.25)';ctx.beginPath();ctx.arc((1224-3*14+i*14)*k,130*k,3*k,0,7);ctx.fill();}ctx.restore();
+  // Legend: recorded glow, anatomy-only dim, and the separate dopamine group total.
+  const lx=56,ly=548;
+  [['ER','Ring neurons'],['TuBu','TuBu neurons']].forEach(([g,label],i)=>{ctx.save();ctx.globalAlpha=a;ctx.shadowColor='#'+glowColour[g].getHexString();ctx.shadowBlur=10*k;ctx.fillStyle='#'+glowColour[g].getHexString();ctx.beginPath();ctx.arc((lx+6+i*170)*k,(ly-5)*k,5*k,0,7);ctx.fill();ctx.restore();text(label,lx+18+i*170,ly,{size:16,weight:600,alpha:a});});
+  text(`Brightness = each cell's recorded spikes in the ${Math.round(binWidth*1000)} ms bin (0 to ${maxCount}); one flash per spike`,lx,ly+24,{size:14,color:C.muted,alpha:a});
+  ctx.save();ctx.globalAlpha=a;ctx.fillStyle='#'+dimColour.getHexString();ctx.fillRect(lx*k,(ly+38)*k,14*k,3*k);ctx.restore();
+  text('Dim blue: anatomy only, not recorded',lx+22,ly+44,{size:14,color:C.muted,alpha:a});
+  const total=cond.aggregates.CX_DAN,max=series.aggregate_specs[0].maximum||1,bx=1224-236,by=ly-14;
+  text('Central-complex dopamine neurons',1224,ly-40,{size:14,weight:600,color:C.cx,align:'right',alpha:a});
+  text('whole-group total, not per cell',1224,ly-22,{size:13,color:C.muted,align:'right',alpha:a});
+  ctx.save();ctx.globalAlpha=a;ctx.strokeStyle='rgba(255,127,192,.35)';ctx.lineWidth=1*k;ctx.strokeRect(bx*k,by*k,236*k,40*k);
+  ctx.strokeStyle=C.cx;ctx.lineWidth=1.6*k;ctx.beginPath();total.forEach((v,i)=>{const x0=bx+i*236/BINS,x1=bx+(i+1)*236/BINS,y=by+40-36*v/max;i?ctx.lineTo(x0*k,y*k):ctx.moveTo(x0*k,y*k);ctx.lineTo(x1*k,y*k);});ctx.stroke();
+  ctx.fillStyle='rgba(255,127,192,.22)';ctx.fillRect((bx+bin*236/BINS)*k,by*k,236/BINS*k,40*k);ctx.restore();
+  text(`${total[bin].toFixed(0)} spikes/s`,1224,ly+50,{size:18,weight:600,color:C.cx,align:'right',alpha:a});
+  captions(a);}
+ if(s.kind==='end'){const a=fadeIO(t,s.start,s.end+1,.9);ctx.save();ctx.globalAlpha=.5*a;ctx.fillStyle='#01030a';ctx.fillRect(0,0,W,H);ctx.restore();
+  text(show.project.toUpperCase(),640,218,{size:15,weight:600,color:C.accent,align:'center',alpha:a,spacing:6});
+  text('A male fly brain model',640,280,{size:46,weight:600,align:'center',alpha:a});
+  text(show.author,640,334,{size:26,weight:500,align:'center',alpha:a});
+  text('Built on the MaleCNS v1.0 connectome: Janelia Research Campus, Google Research, University of Cambridge',640,404,{size:16,color:C.muted,align:'center',alpha:a});
+  text('Berg et al., Cell (2026) · CC BY 4.0 · geometry simplified and recoloured',640,428,{size:16,color:C.muted,align:'center',alpha:a});
+  captions(a);}}
+
+// ---------- One frame of the film is a pure function of t
+let freeCamera=false;
+function renderFrame(t){const info=look(t);if(!freeCamera)place(cameraPose(t));shellsAt(t);composer.render();drawHUD(t,info);return info;}
+const composite=document.createElement('canvas'),cctx=composite.getContext('2d');
+function compose(){composite.width=W;composite.height=H;cctx.drawImage(glCanvas,0,0);cctx.drawImage(hud,0,0);return composite;}
+
+// ---------- Interactive player
+const controls=new OrbitControls(camera,glCanvas);controls.enabled=false;controls.enableDamping=false;
+let playing=!filmMode,filmTime=0,last=performance.now();
+const clockText=t=>`${Math.floor(t/60)}:${String(Math.floor(t%60)).padStart(2,'0')}`;
+function fit(){const r=byId('stage').getBoundingClientRect();setSize(r.width,r.height,Math.min(devicePixelRatio,2));}
+byId('play').onclick=()=>{playing=!playing;byId('play').textContent=playing?'Pause':'Play';last=performance.now();};
+byId('scrub').oninput=e=>{filmTime=e.target.value/1000*DURATION;};
+byId('free').onclick=()=>{freeCamera=!freeCamera;controls.enabled=freeCamera;byId('free').setAttribute('aria-pressed',freeCamera);if(freeCamera){controls.target.copy(cameraPose(filmTime).target);controls.update();}};
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===document.body){e.preventDefault();byId('play').click();}});
+function tick(now){if(playing){filmTime=(filmTime+(now-last)/1000)%DURATION;}last=now;renderFrame(filmTime);byId('scrub').value=Math.round(filmTime/DURATION*1000);byId('clock').textContent=`${clockText(filmTime)} / ${clockText(DURATION)}`;requestAnimationFrame(tick);}
+
+// ---------- Recording API for the clip script: exact frame times, encoded in the browser (WebCodecs).
+let encoder=null,chunks=[],decoderConfig=null,encodeError=null;
+window.filmSetSize=(w,h)=>{setSize(w,h,1);return [W,H];};
+window.filmSnapshot=(t,type='image/png',quality)=>{renderFrame(t);return compose().toDataURL(type,quality);};
+window.filmCells=()=>cells.map(c=>({body_id:c.body_id,group:c.group}));
+window.filmProbe=t=>{const info=look(t);const glow=[],flashes=[];for(let kk=0;kk<N;kk++){glow.push(state[4*kk+3]);let f=0;for(let j=0;j<12;j++)if(state[4*N*(1+(j>>2))+4*kk+(j&3)]>=0)f++;flashes.push(f);}return {...info,glow,flashes};};
+window.filmEncodeStart=async({width,height,fps,bitrate,codec})=>{setSize(width,height,1);chunks=[];decoderConfig=null;encodeError=null;
+ encoder=new VideoEncoder({output:(chunk,meta)=>{const buf=new Uint8Array(chunk.byteLength);chunk.copyTo(buf);chunks.push({key:chunk.type==='key',ts:chunk.timestamp,data:buf});if(meta&&meta.decoderConfig&&meta.decoderConfig.description)decoderConfig=new Uint8Array(meta.decoderConfig.description instanceof ArrayBuffer?meta.decoderConfig.description:meta.decoderConfig.description.buffer.slice(meta.decoderConfig.description.byteOffset,meta.decoderConfig.description.byteOffset+meta.decoderConfig.description.byteLength));},error:e=>{encodeError=String(e);}});
+ const config={codec,width:W,height:H,bitrate,framerate:fps,avc:{format:'avc'}};
+ if(!(await VideoEncoder.isConfigSupported(config)).supported)throw new Error('H.264 encoder configuration unsupported');
+ encoder.configure(config);return config;};
+window.filmEncodeFrames=async(from,to,fps,keyEvery)=>{for(let i=from;i<to;i++){renderFrame(i/fps);const frame=new VideoFrame(compose(),{timestamp:Math.round(i*1e6/fps),duration:Math.round(1e6/fps)});encoder.encode(frame,{keyFrame:i%keyEvery===0});frame.close();while(encoder.encodeQueueSize>2)await new Promise(r=>setTimeout(r,0));if(encodeError)throw new Error(encodeError);}return chunks.length;};
+window.filmEncodeFinish=async()=>{await encoder.flush();encoder.close();if(encodeError)throw new Error(encodeError);const b64=u=>{let s='';for(let i=0;i<u.length;i+=32768)s+=String.fromCharCode.apply(null,u.subarray(i,i+32768));return btoa(s);};
+ const out={description:b64(decoderConfig),chunks:chunks.map(c=>({key:c.key,ts:c.ts,size:c.data.length}))};const all=new Uint8Array(chunks.reduce((n,c)=>n+c.data.length,0));let o=0;for(const c of chunks){all.set(c.data,o);o+=c.data.length;}out.data=b64(all);chunks=[];return out;};
+window.filmEvidence={duration_s:DURATION,segments:segments.map(s=>({kind:s.kind,start_s:+s.start.toFixed(3),end_s:+s.end.toFixed(3),condition:s.arm===undefined?null:series.conditions[ARMS[s.arm]].id})),
+ hold_s_per_bin:HOLD,flash_s:FLASH,bin_s:binWidth,bins:BINS,max_spikes_per_bin:maxCount,recorded_cells:recorded.filter(Boolean).length,anatomy_only_cells:recorded.filter(x=>!x).length,recorded_groups:recordedGroups,
+ glow_rule:'steady intensity = dim + gain * recorded spikes / max spikes, per cell and bin; one travelling flash per recorded spike; anatomy-only cells get neither',
+ glow_silent:SILENT,glow_gain:GLOW,dim_anatomy_only:DIM,
+ captions:[show.flashes,show.signature],three:THREE.REVISION,renderer:renderer.getContext().getParameter(renderer.getContext().VERSION)};
+fit();new ResizeObserver(()=>{if(!filmMode)fit();}).observe(byId('stage'));
+renderFrame(0);byId('loading').remove();
+window.atlasReady=true;if(!filmMode)requestAnimationFrame(tick);
+})().catch(error=>{document.getElementById('failure').textContent='Unable to play this film. Use a current desktop browser with WebGL2.\n'+error;console.error(error);});
+</script>
+</body>
+</html>

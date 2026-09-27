@@ -1,0 +1,165 @@
+# Every constant in SPEC section 5, version v0.1.
+# Code reads values from this file and never hard-codes them.
+# Each row carries value, unit, source, range, and level.
+version: v0.1
+
+lif:
+  v_0: { value: -52, unit: "mV", source: "Shiu 2024 defaults (Kakaria and de Bivort 2017)", range: "fixed", level: "0, 1" }
+  v_rst: { value: -52, unit: "mV", source: "Shiu 2024", range: "fixed", level: "0, 1" }
+  v_th: { value: -45, unit: "mV", source: "Shiu 2024", range: "fixed", level: "0, 1" }
+  t_mbr: { value: 20, unit: "ms", source: "Shiu 2024", range: "fixed", level: "0, 1" }
+  tau: { value: 5, unit: "ms", source: "Shiu 2024 (Jurgensen 2021)", range: "fixed", level: "0, 1" }
+  t_rfc: { value: 2.2, unit: "ms", source: "Shiu 2024 (Lazar 2021)", range: "fixed", level: "0, 1" }
+  t_dly: { value: 1.8, unit: "ms", source: "Shiu 2024 (Paul 2015)", range: "fixed", level: "0, 1" }
+  w_syn: { value: 0.275, unit: "mV", source: "Shiu 2024, that paper's free parameter", range: "fixed", level: "1, 2" }
+  dt: { value: 0.1, unit: "ms", source: "Shiu 2024", range: "fixed", level: "0" }
+
+engine:
+  chunk_ms: { value: 10, unit: "ms", source: "design choice", range: "fixed", level: "0" }
+  silence_vth: { value: 1000000.0, unit: "mV", source: "proof run", range: "fixed", level: "0" }
+
+input:
+  r_poi: { value: 150, unit: "Hz", source: "Shiu 2024 code default (notebook text says 200)", range: "fixed", level: "1" }
+  f_poi: { value: 250, unit: "1", source: "Shiu 2024", range: "fixed", level: "1" }
+  w_in: { value: 68.75, unit: "mV", source: "w_syn x f_poi", range: "derived", level: "1" }
+
+bg:
+  n_bg: { value: 100, unit: "1", source: "design choice", range: "fixed", level: "2" }
+  r_bg: { value: 10, unit: "Hz per input", source: "design choice", range: "fixed", level: "2" }
+  w_bg: { value: "calibrated (K1)", unit: "mV", source: "drive-v0.1.yaml; K1 in the calibration state of section 3.3 (layer A on, pools clamped at DA_ref)", range: "0 to 2", level: "2" }
+  target:
+    central: { value: 1, unit: "Hz", source: "placeholder", range: "0.3 to 3", level: "2" }
+    DAN: { value: 5, unit: "Hz", source: "placeholder; tonic DAN firing reported in the 1 to 10 Hz range", range: "1 to 10", level: "2, 3" }
+    KC: { value: 0.1, unit: "Hz", source: "placeholder; Kenyon cells are sparse", range: "0.02 to 0.5", level: "2" }
+    ER: { value: 2, unit: "Hz", source: "placeholder", range: "0.5 to 5", level: "2" }
+    descending: { value: 1, unit: "Hz", source: "placeholder", range: "0.3 to 3", level: "2" }
+    motor: { value: 0.5, unit: "Hz", source: "placeholder", range: "0.1 to 2", level: "2" }
+    other: { value: 1, unit: "Hz", source: "placeholder", range: "0.3 to 3", level: "2" }
+  k1_max_evals: { value: 40, unit: "1", source: "design choice", range: "fixed", level: "2" }
+
+settle:
+  min_s: { value: 2, unit: "s", source: "design choice", range: "fixed", level: "2, 3" }
+  max_s: { value: 10, unit: "s", source: "design choice", range: "fixed", level: "2, 3" }
+  window_s: { value: 0.5, unit: "s", source: "design choice", range: "fixed", level: "2, 3" }
+  tol_abs_da: { value: 0.002, unit: "uM", source: "design choice", range: "fixed", level: "3" }
+  tol_rel_da: { value: 0.02, unit: "relative", source: "design choice", range: "fixed", level: "3" }
+  tol_rate: { value: 0.10, unit: "relative", source: "design choice", range: "fixed", level: "3" }
+  tol_abs_rate: { value: 0.2, unit: "Hz", source: "design choice", range: "fixed", level: "3" }
+
+qual:
+  tol_rel_mod: { value: 0.2, unit: "relative", source: "design choice (test 3.1b)", range: "fixed", level: "2, 3" }
+  tol_abs_dV: { value: 0.1, unit: "mV", source: "design choice (test 3.1b; 0.1 mV is under a fifth of the 0.6 mV tonic D2 term)", range: "fixed", level: "2, 3" }
+  tol_abs_g: { value: 0.01, unit: "1", source: "design choice (test 3.1b; 0.1 mV is under a fifth of the 0.6 mV tonic D2 term)", range: "fixed", level: "2, 3" }
+
+da:
+  DA_ref: { value: 0.02, unit: "uM", source: "placeholder; tonic extracellular dopamine in the tens of nM range; wild-type tonic target, and under the absolute formulation the level whose receptor effect is built into the resting state", range: "0.005 to 0.1", level: "2, 3" }
+  alpha_c: { value: "calibrated (K2)", unit: "uM per weighted DAN spike", source: "dopamine-v0.1.yaml", range: "up to alpha_max", level: "3" }
+  alpha_max: { value: 0.1, unit: "uM per spike", source: "design choice", range: "fixed", level: "3" }
+  R_min: { value: 0.5, unit: "weighted spikes/s", source: "design choice", range: "fixed", level: "3" }
+  Km: { value: 1.3, unit: "uM", source: "Vickrey, Xiao, and Venton 2013 (larval CNS, diffusion-corrected); adult transfer assumed", range: "0.5 to 3", level: "3" }
+  Vmax: { value: 0.11, unit: "uM/s", source: "Vickrey, Xiao, and Venton 2013; adult transfer assumed", range: "0.05 to 2.5", level: "3" }
+  k_ns: { value: 0.05, unit: "1/s", source: "placeholder, non-transporter clearance", range: "0.01 to 0.5", level: "3" }
+
+rec:
+  Kd_D1: { value: 1.0, unit: "uM", source: "L3 report placeholder (mammalian D1 range)", range: "0.3 to 3", level: "3" }
+  Kd_D2: { value: 0.05, unit: "uM", source: "L3 report placeholder (mammalian D2 range)", range: "0.01 to 0.3", level: "3" }
+  gamma_D1: { value: 0.3, unit: "1", source: "Durstewitz and Seamans 2002 style gain; placeholder; act on absolute occupancy (section 3.4), so they shape the resting state too", range: "0.1 to 1", level: "2, 3, 4" }
+  gamma_D2: { value: 0.3, unit: "1", source: "Durstewitz and Seamans 2002 style gain; placeholder; act on absolute occupancy (section 3.4), so they shape the resting state too", range: "0.1 to 1", level: "2, 3, 4" }
+  dV_D1: { value: 1.5, unit: "mV", source: "placeholder; act on absolute occupancy (section 3.4)", range: "0.5 to 3", level: "2, 3, 4" }
+  dV_D2: { value: 2.0, unit: "mV", source: "placeholder; act on absolute occupancy (section 3.4)", range: "0.5 to 3", level: "2, 3, 4" }
+  gain_clip: { value: [0.2, 3.0], unit: "1", source: "design choice", range: "fixed", level: "3" }
+  vth_clip: { value: [-52.0, -30.0], unit: "mV", source: "design choice", range: "fixed", level: "3" }
+  formulation: { value: "absolute", unit: "name", source: "Rolf's resolution 10 (section 10); the deviation form is not implemented; recorded in every manifest", range: "fixed", level: "0, 3" }
+
+drug:
+  mph:
+    Ki: { value: 0.2, unit: "uM brain", source: "L3 report placeholder (mammalian DAT)", range: "0.05 to 1", level: "3" }
+  3iy:
+    EC50: { value: 10, unit: "uM brain", source: "placeholder; Kume 2005 fed 3-IY at milligrams per millilitre", range: "1 to 100", level: "3" }
+
+pk:
+  kappa: { value: 0.01, unit: "brain uM per food uM", source: "free parameter with no fly source; L2 report says brain is 10 to 100 times below food; Rolf accepted 0.01 (resolution 9), reported in every drugged summary and swept in 3.9", range: "0.001 to 0.1", level: "3" }
+  k_a: { value: 0.5, unit: "1/h", source: "L3 report placeholder", range: "0.2 to 2", level: "3" }
+  k_e: { value: 0.35, unit: "1/h", source: "L3 report placeholder (half-life about 2 h)", range: "0.1 to 1", level: "3" }
+
+dose:
+  mph:
+    default: { value: 0.5, unit: "mM food", source: "Qu 2024, van der Voet 2016 range 0.1 to 1.0 mM", range: "0.1 to 1", level: "3, 4" }
+
+arena:
+  R_platform: { value: 58.5, unit: "mm", source: "Colomb 2012; XML ARENA_DIAMETER_MM 117", range: "fixed", level: "4" }
+  R_wall: { value: 146.5, unit: "mm", source: "XML OUTER_DIAMETER_MM 293", range: "fixed", level: "4" }
+  stripe_width: { value: 5, unit: "deg, subtended from the arena centre", source: "XML STRIPE_WIDTH; CeTrAn converts degrees to radians", range: "fixed", level: "4" }
+  stripe_azimuths: { value: [0, 180], unit: "deg", source: "Buridan paradigm; reference frame rotated by 90", range: "fixed", level: "4" }
+  edge_margin: { value: 5, unit: "mm", source: "design choice", range: "fixed", level: "4" }
+  v_fwd: { value: "set at ingestion", unit: "mm/s", source: "calibration half's median walking speed", range: "half to double in 4.8", level: "4" }
+  sigma_h: { value: 5, unit: "deg/sqrt(s)", source: "placeholder", range: "0 to 20", level: "4" }
+  sigma_edge: { value: 20, unit: "deg", source: "placeholder", range: "0 to 45", level: "4" }
+
+steer:
+  sign_steer: { value: 1, unit: "1", source: "Rayshubskiy 2024 convention; set once by the sign check", range: "+-1", level: "4" }
+  K_steer: { value: 4, unit: "deg/s per Hz", source: "placeholder; K3 grid {1, 2, 4, 8}", range: "1 to 8", level: "4" }
+  tau_rate: { value: 50, unit: "ms", source: "design choice", range: "fixed", level: "4" }
+
+vis:
+  r_vis_max: { value: 100, unit: "Hz", source: "placeholder; K3 grid {40, 70, 100, 150}", range: "40 to 150", level: "4" }
+  sigma_vis: { value: 20, unit: "deg", source: "placeholder; K3 grid {15, 20, 30}; ring-neuron receptive fields are tens of degrees wide (Seelig 2013)", range: "15 to 30", level: "4" }
+  pref_range: { value: [0, 150], unit: "deg ipsilateral", source: "placeholder", range: "fixed", level: "4" }
+  inject_at: { value: "TuBu", unit: "population", source: "design choice", range: "ER as alternative", level: "4" }
+
+distractor:
+  azimuth: { value: 90, unit: "deg arena frame", source: "L2 report (lateral flashes at 90 deg)", range: "fixed", level: "4" }
+  flicker_hz: { value: 3, unit: "Hz", source: "L2 report", range: "fixed", level: "4" }
+  contrast: { value: 1.0, unit: "1", source: "design choice", range: "fixed", level: "4" }
+  onset_s: { value: 5, unit: "s recording time", source: "design choice", range: "fixed", level: "4" }
+  duration_s: { value: 10, unit: "s recording time", source: "design choice", range: "fixed", level: "4" }
+
+buridan:
+  duration_s: { value: 20, unit: "s", source: "design choice", range: "fixed", level: "4" }
+
+openloop:
+  azimuths: { value: [-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150], unit: "deg", source: "design choice", range: "fixed", level: "4" }
+  dwell_s: { value: 2, unit: "s", source: "design choice", range: "fixed", level: "4" }
+  transition_s: { value: 1, unit: "s", source: "design choice", range: "fixed", level: "4" }
+
+metrics:
+  fix_angle: { value: 30, unit: "deg", source: "L3 report definition of fixation index", range: "fixed", level: "4" }
+  resample_hz: { value: 10, unit: "Hz", source: "CeTrAn v.4 set.sampling.rate", range: "fixed", level: "4" }
+  step_min_mm: { value: 0.8, unit: "mm per 0.1 s step", source: "CeTrAn v.4 slider default 8/10; 0.6 in defaultvalues.r; 4.0b picks the one matching the published table", range: "0.6 or 0.8", level: "4" }
+  step_max_mm: { value: 70, unit: "mm per 0.1 s step", source: "CeTrAn v.4 load.buridan.data", range: "fixed", level: "4" }
+  walk_area_fraction: { value: 0.8, unit: "fraction of R_platform", source: "CeTrAn v.4 c.nwalks", range: "fixed", level: "4" }
+  switch_angle: { value: 20, unit: "deg", source: "design choice", range: "fixed", level: "4" }
+  switch_window_s: { value: 1, unit: "s", source: "design choice", range: "fixed", level: "4" }
+  min_window_fraction: { value: 0.5, unit: "fraction", source: "design choice", range: "fixed", level: "4" }
+  cetran_tol_deg: { value: 2, unit: "deg", source: "design choice", range: "fixed", level: "4" }
+  cetran_tol_walks: { value: 1, unit: "count", source: "design choice", range: "fixed", level: "4" }
+
+rate_bin_ms: { value: 50, unit: "ms", source: "design choice", range: "fixed", level: "all" }
+
+live:
+  every_ms: { value: 100, unit: "ms", source: "design choice", range: "fixed", level: "3.8" }
+  spike_sample: { value: 200, unit: "spikes", source: "design choice", range: "fixed", level: "3.8" }
+
+artefact:
+  sync_bin_ms: { value: 1, unit: "ms", source: "L3 report", range: "fixed", level: "2" }
+  sync_fano_max: { value: 3, unit: "1", source: "design placeholder; null is 1; tightened in WP3", range: "2 to 5", level: "2" }
+  sync_bin_fraction_max: { value: 0.05, unit: "fraction of neurons in one bin", source: "design choice", range: "fixed", level: "2" }
+  jitter_sigma: { value: 0.3, unit: "log-normal sigma", source: "L3 report (+-30%)", range: "fixed", level: "2" }
+  jitter_seeds: { value: 5, unit: "1", source: "design choice", range: "fixed", level: "2" }
+  completeness_min: { value: 0.5, unit: "fraction", source: "placeholder", range: "fixed", level: "2" }
+  encoder_perms: { value: 3, unit: "1", source: "design choice", range: "fixed", level: "4" }
+
+cxdan:
+  min_cx_output_fraction: { value: 0.2, unit: "fraction", source: "design choice", range: "fixed", level: "2" }
+
+stats:
+  bootstrap_n: { value: 10000, unit: "1", source: "design choice", range: "fixed", level: "all" }
+  equivalence_margin: { value: 0.05, unit: "relative", source: "test 3.4 (the fumin null; acceptance clause 5 until S2)", range: "fixed", level: "3" }
+
+budget_margin: { value: 1.25, unit: "1", source: "design choice (section 3.10)", range: "fixed", level: "all" }
+
+validation:
+  seeds: { value: 10, unit: "1", source: "feasibility section 11", range: "fixed", level: "3, 4" }
+
+orchestrator:
+  n_workers: { value: 4, unit: "1", source: "memory budget (section 3.10)", range: "1 to 5", level: "all" }

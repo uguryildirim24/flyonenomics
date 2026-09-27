@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.3",
+  "name": "rest-bitter",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "behaviour_version": "base-v0.2",
+    "visual_version": null
+  },
+  "layers": {
+    "background": true,
+    "dopamine_A": true,
+    "transporter_C": true
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "extended",
+            "rate_hz": 150
+          },
+          "label": "sugar"
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "extended",
+            "rate_hz": 150
+          },
+          "label": "sugar-bitter"
+        }
+      ]
+    }
+  ],
+  "record": {
+    "rates": [
+      "MN9",
+      "DAN",
+      "KC",
+      "DN_all",
+      "bitter_GRN_R"
+    ],
+    "spikes": [],
+    "popcount": true,
+    "live": false
+  },
+  "meta": {
+    "wp19_coactivation": {
+      "population": "bitter_GRN_R",
+      "rate_hz": 150,
+      "probe_label": "sugar-bitter"
+    }
+  }
+}

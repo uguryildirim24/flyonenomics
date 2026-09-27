@@ -1,0 +1,197 @@
+{
+  "status": "d-0025 repaired source qualified at cb9229a: 951 passed, 30 skipped, exit 0; see d0025_requalification. Earlier gates retained below.",
+  "deadline_change": {
+    "commit": "50e09e9",
+    "function": "src/flyonenomics/validation/level0_mech.py::check_0_16",
+    "before": "run_isolated(\"measure_0_16\", timeout_s=300)",
+    "after": "run_isolated(\"measure_0_16\")",
+    "before_child_timeout_s": 300,
+    "after_shared_child_timeout_s": 2400,
+    "outer_full_suite_timeout_s": 5400,
+    "numerical_settings_assertions_tolerances_changed": false,
+    "caveat": "A pass with the changed child deadline is not a pass under the original 300-second deadline."
+  },
+  "earlier_failures": [
+    {
+      "commit": "4c32070",
+      "status": "interrupted after 812 passed, 30 skipped, 3 failed",
+      "failures": [
+        "unbound NPZ read in adhd_study.load_rates",
+        "server YAML read binding",
+        "adaptation TimeoutExpired at 300 seconds"
+      ]
+    },
+    {
+      "commit": "a308610",
+      "status": "interrupted after 802 passed, 30 skipped, 1 failed",
+      "failures": [
+        "adaptation TimeoutExpired at 300 seconds"
+      ]
+    }
+  ],
+  "adaptation_target": {
+    "commit": "99c7d3120f0b845a944c8a1defb9f1476baefa95",
+    "command": "timeout 5400 .venv/bin/pytest -q tests/test_wp24_mech.py::test_0_16_adaptation_closed_form",
+    "exit_code": 0,
+    "pytest_elapsed_s": 241.36,
+    "driver_elapsed_s": 242,
+    "passed": 1
+  },
+  "pre_merge_full": {
+    "commit": "99c7d3120f0b845a944c8a1defb9f1476baefa95",
+    "command": "timeout 5400 .venv/bin/pytest -q -rf",
+    "directory": "<compute-run-root>",
+    "host": "compute host",
+    "one_pytest_process": true,
+    "tree_has_git": true,
+    "exit_code": 0,
+    "pytest_elapsed_s": 4696.25,
+    "driver_elapsed_s": 4700,
+    "passed": 932,
+    "skipped": 30,
+    "warnings": 49
+  },
+  "merged_full": {
+    "commit": "9986612e75f3576cc47355c96c0e3c4bb11cd371",
+    "command": "timeout 5400 .venv/bin/pytest -q -rf --durations=20 --junitxml=camber-runs/adhd-study/merged-full-suite.xml",
+    "directory": "<compute-run-root>-qualified",
+    "host": "compute host",
+    "started_utc": "2026-09-22T21:41:02Z",
+    "driver_pid": 2110932,
+    "status": "outer timeout; not qualified",
+    "one_pytest_process": true,
+    "tree_has_git": true,
+    "exit_code": 124,
+    "driver_elapsed_s": 5400,
+    "finished_utc": "2026-09-22T23:11:02Z",
+    "completed_pass_reports_before_timeout": 893,
+    "skip_reports_before_timeout": 30,
+    "failure_or_error_reports_before_timeout": 0,
+    "concurrent_work": "ten authorised stage-5a workers",
+    "junit_produced": false
+  },
+  "environment": {
+    "FLYONENOMICS_CACHE_DIR": "<compute-home>/flyo-cache"
+  },
+  "logs_sha256": {
+    "adaptation-fixed.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "adaptation-fixed.log": "e58c4720b2e4e4fc7356f0410593fd3b5235b3231abaca2bb5efc10277fc472f",
+    "adaptation-fixed.seconds": "3b2b717b495cea40b7e1adeddc02cb9a68be0e674131fd80bd1f8b159c9dbaff",
+    "full-suite-adaptation-timeout.log": "174e584475cff541892e0c7e1d0aa2b7ade652c34b27feea164f4f7730973f0d",
+    "full-suite-interrupted.log": "481231aced9380be58f8bc0e81ab5a2fc23d254b67303f3e4f3cb76b3ed19397",
+    "qualified-full-suite.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "qualified-full-suite.log": "c47e730144d11191197b737450ea503bfed933a6ed7055a636669eb9208437b8",
+    "qualified-full-suite.seconds": "869382f070ef76ff6ef746044dc792aca70abd83eae8c4d83cc5fb530238fb6b",
+    "merged-full-suite.exit": "ca2ebdf97d7469496b1f4b78958f9dc8447efdcb623953fee7b6996b762f6fff",
+    "merged-full-suite.finished": "9ddd1683716849f0730f193a0a0cbd58ad60de4c4e0d1d915dd6c1a9f3a14ae7",
+    "merged-full-suite.log": "8dc2ba36ec8b220b983e84b9a341470b42fdf95af35c544f8a2ff3a58ecbcbe9",
+    "merged-full-suite.seconds": "b1c8251f4d45ad3b1943ec1482ac0fa7fa57d12909798aceec9bfb5ddcccf46a",
+    "merged-full-suite.started": "acb6f65be177ad849a0108f7e2ad7f47f4b3abbd2d316081d99b1a51ae861dc2",
+    "merged-gate-driver.log": "f2a61742dd0956bd2415870f131f34b241196fa252944d7743dc9f75d7db5d66",
+    "replay-full-suite.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "replay-full-suite.finished": "09dab3080e877bda4734d582a45dd6ac41e111cf89e7190a6388724b0283a6f6",
+    "replay-full-suite.log": "682e098d1d182ac77f3ba9f28619d16534ac56e337fa4459d2a2310d6c8cb5cf",
+    "replay-full-suite.started": "856fc47747f126d5d117528039c1ff288ae986aa0e991f1ab3f926be32c6d23e",
+    "replay-full-suite.seconds": "ac5afd404b963a507ca06aaa891b9b0c387f1baf30a366f0300a0a84499fe2a6",
+    "replay-full-suite.observer.json": "ed51e9c238b7c970a970d84265d537ec8c9e2675664579e94091285b6e5568f0",
+    "replay-full-suite.xml": "3d49d1b8ea3e72eda2126649f321543311c9de13c0efd559777c6a12c24e543f",
+    "gate-observer-d0019.log": "d08b208356d03fcdf45820b166a49f1ca7591182d3b8e2d0d1c9d27c9d477752"
+  },
+  "rerun_plan": "Repeat the unchanged full-suite command, one pytest process and timeout 5400, after neural study workers finish. Do not increase a deadline or waive a failure.",
+  "idle_replay_full": {
+    "commit": "b6b5ccca8b5036a00edf5428aa328b6b7f265fd9",
+    "status": "passed",
+    "command": "timeout 5400 .venv/bin/pytest -q -rf --durations=20 --junitxml=camber-runs/adhd-study/replay-full-suite.xml",
+    "host": "compute host",
+    "directory": "<compute-run-root>-qualified",
+    "started_utc": "2026-09-23T00:53:56Z",
+    "driver_pid": 3436717,
+    "one_pytest_process": true,
+    "tree_has_git": true,
+    "neural_workers_idle": true,
+    "next_action_if_exit_zero": "d-0023: pair from5a-01, commit, ten-worker5b. Once steady and headroom sufficient, nice10 two-worker original seeds101/102 replay; otherwise after5b. Other8 after5b alongside analysis.",
+    "next_action_if_failure": "Stop with ha waiting; no 5b or replay.",
+    "controller_change": {
+      "decision": "d-0019",
+      "shell_pid": 3436717,
+      "shell_only_suspended": true,
+      "timeout_pid": 3436721,
+      "pytest_pid": 3436722,
+      "observer_pid": 3546997,
+      "gate_processes_and_deadline_untouched": true,
+      "exit_capture": "Observer reads original timeout process exit status from /proc stat field52 while zombie; then kills obsolete stopped shell, never executing its replay branch."
+    },
+    "exit_code": 0,
+    "passed": 947,
+    "skipped": 30,
+    "warnings": 49,
+    "pytest_elapsed_s": 4433.22,
+    "observer_elapsed_s": 4435,
+    "finished_utc": "2026-09-23T02:07:51Z",
+    "junit_produced": true,
+    "adaptation": [
+      {
+        "classname": "tests.test_wp24_mech",
+        "name": "test_0_16_adaptation_closed_form",
+        "time": "92.003"
+      }
+    ],
+    "exit_capture": {
+      "decision": "d-0019",
+      "timeout_pid": 3436721,
+      "stopped_controller_pid": 3436717,
+      "exit_status_source": "/proc/<timeout pid>/stat field 52 while zombie (parent stopped)",
+      "raw_wait_status": 0,
+      "exit_code": 0,
+      "observed_finished_utc": "2026-09-23T02:07:51.978950+00:00",
+      "observer_elapsed_s": 4435,
+      "gate_command_timeout_and_processes_unchanged": true,
+      "automatic_replay_cancelled": true
+    }
+  },
+  "d0025_requalification": {
+    "source_commit": "cb9229af586756bee1bad9f4de1e693b3aa82d79",
+    "command": "timeout 5400 .venv/bin/pytest -q -rf --durations=20 --junitxml=camber-runs/adhd-study/paired-input-full-suite.xml",
+    "exit_code": 0,
+    "started_utc": "2026-09-23T06:49:42Z",
+    "finished_utc": "2026-09-23T08:16:01Z",
+    "elapsed_wall_s": 5179,
+    "pytest_elapsed_s": 5175.98,
+    "passed": 951,
+    "skipped": 30,
+    "warnings": 49,
+    "junit_suites": [
+      {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "30",
+        "tests": "981",
+        "time": "5175.964",
+        "timestamp": "2026-09-23T06:49:42.651237+00:00",
+        "hostname": "<compute-instance>"
+      }
+    ],
+    "adaptation_test": [
+      {
+        "classname": "tests.test_wp24_mech",
+        "name": "test_0_16_adaptation_closed_form",
+        "time": "509.330"
+      }
+    ],
+    "outer_deadline_s": 5400,
+    "adaptation_child_deadline_s": 2400,
+    "former_adaptation_child_deadline_s": 300,
+    "not_a_pass_under_former_300s_budget": true,
+    "neural_workers_idle": true,
+    "sha256": {
+      "paired-input-full-suite.commit": "27de223242093cd4cd35efc1fb6dfce4a88dd3f0bba4a8317c98e66e68c29b5f",
+      "paired-input-full-suite.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "paired-input-full-suite.finished": "8b5611e3c0a94fc639a2bc86f47e38467012cd617ff9a44bc5e8f0be75e2b018",
+      "paired-input-full-suite.log": "1b61463782b018c0991ffd98f1f113f869493bd3e74b08fdd596f6f264ed28b3",
+      "paired-input-full-suite.started": "03496f713b1c0baf3c29f2f0e53bc3468da16aa7076de38de888e5cccc274cb4",
+      "paired-input-full-suite.xml": "92e6d7fe85051fd2947ecb67da31f1a4b765652db85019e7e91a3aaa02a9021e"
+    },
+    "prior_gate_does_not_qualify_repair": true
+  }
+}

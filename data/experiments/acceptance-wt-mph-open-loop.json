@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.2",
+  "name": "wildtype-mph-vs-vehicle-open-loop-distractor",
+  "description": "Paired wild-type methylphenidate versus vehicle acceptance variant with open-loop steering probes under the frozen section 9.1 fallback",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "behaviour_version": "v0.1",
+    "dopamine_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "comparison": "paired",
+  "arms": [
+    {
+      "label": "wt-mph",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 33,
+          "label": "baseline",
+          "params": {
+            "azimuths": [
+              -150,
+              -120,
+              -90,
+              -60,
+              -30,
+              0,
+              30,
+              60,
+              90,
+              120,
+              150
+            ]
+          }
+        },
+        {
+          "type": "dose",
+          "drug": "methylphenidate",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 33,
+          "label": "test",
+          "params": {
+            "azimuths": [
+              -150,
+              -120,
+              -90,
+              -60,
+              -30,
+              0,
+              30,
+              60,
+              90,
+              120,
+              150
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "wt-vehicle",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 33,
+          "label": "baseline",
+          "params": {
+            "azimuths": [
+              -150,
+              -120,
+              -90,
+              -60,
+              -30,
+              0,
+              30,
+              60,
+              90,
+              120,
+              150
+            ]
+          }
+        },
+        {
+          "type": "dose",
+          "drug": "vehicle",
+          "c_food_mm": 0.5
+        },
+        {
+          "type": "wait",
+          "hours": 2
+        },
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 33,
+          "label": "test",
+          "params": {
+            "azimuths": [
+              -150,
+              -120,
+              -90,
+              -60,
+              -30,
+              0,
+              30,
+              60,
+              90,
+              120,
+              150
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "TuBu",
+      "steering_L",
+      "steering_R",
+      "DN_all"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "steering_L",
+      "steering_R",
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": true
+  },
+  "meta": {
+    "class": "matching-layers",
+    "purpose": "open-loop acceptance integration gate on fallback record"
+  }
+}

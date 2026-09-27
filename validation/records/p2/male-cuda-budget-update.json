@@ -1,0 +1,12 @@
+{
+  "remaining_metered_cap_usd": 8.0,
+  "recorded_at": 1790395273.027041,
+  "original_lane_cap_usd": 15.0,
+  "workspace_metered_at_update_usd": 10.04,
+  "carry_in_labels": [
+    "fused-tour-1790394796045204000-65",
+    "fused-tour-1790394866145685000-97",
+    "fused-tour-1790395066456269000-129"
+  ],
+  "accounting": "Count the whole cost of each call in flight at the update, plus every later call, against the remaining $8. This conservatively includes their pre-update portions. No further submits are planned; validation is in its last three batches."
+}

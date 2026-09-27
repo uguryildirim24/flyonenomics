@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.3",
+  "name": "feedforward-retention",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "dopamine_version": "v0.1",
+    "drive_version": "v0.2"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "upstream",
+            "rate_hz": 0
+          },
+          "label": "probe-0"
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "upstream",
+            "rate_hz": 150
+          },
+          "label": "probe-1"
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "extended",
+            "rate_hz": 0
+          },
+          "label": "probe-2"
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "params": {
+            "population": "sugar_GRN_R",
+            "mode": "extended",
+            "rate_hz": 150
+          },
+          "label": "probe-3"
+        }
+      ]
+    }
+  ],
+  "record": {
+    "rates": [
+      "MN9",
+      "DAN",
+      "KC",
+      "DN_all"
+    ],
+    "spikes": [],
+    "popcount": true,
+    "live": false
+  },
+  "apply_scales_without_background": true
+}

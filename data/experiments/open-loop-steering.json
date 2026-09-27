@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.2",
+  "name": "open-loop-steering-bare",
+  "description": "Final bare-substrate steering curve with eleven 3-second azimuth periods",
+  "seed": 20260912,
+  "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "substrate": {"connectome_version": "783", "behaviour_version": "v0.1"},
+  "layers": {"background": false, "dopamine_A": true, "transporter_C": true, "dan_fast_synapses": "retain"},
+  "arms": [{"label": "wild-type", "genotype": {"named": "wild_type", "manipulations": []},
+    "protocol": [{"type": "probe", "assay": "open_loop_steering", "duration_s": 33, "label": "tuning",
+      "params": {"azimuths": [-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150]}}]}],
+  "record": {"spikes": ["steering_L", "steering_R", "TuBu"],
+    "rates": ["steering_L", "steering_R"], "arena": true, "popcount": true, "live": false},
+  "meta": {"class": "canonical", "purpose": "level 4.1 matching-layers curve"}
+}

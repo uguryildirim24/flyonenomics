@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title description">
+  <title id="title">Dopamine clearance and input history: frozen factorial design</title>
+  <desc id="description">Four conditions, wild type or fumin crossed with vehicle or release fraction 0.375, each run all eight prefix and test protocols. Ten calibration seeds define the pair and axis; ten separate experimental seeds run 32 arms each. The four prefix protocols A then off, A then A+B, B then off and B then A+B define the history measure H. Each trial has two seconds blank settle, five seconds prefix, one second blank gap and fourteen seconds test; the first two test seconds are primary. No reset within a trial. Artificial TuBu input, not vision.</desc>
+  <defs>
+    <style>
+      text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #15283a; }
+      .title { font-size: 32px; font-weight: bold; }
+      .heading { font-size: 26px; font-weight: bold; }
+      .label { font-size: 23px; }
+      .small { font-size: 20px; }
+      .tiny { font-size: 18px; }
+      .muted { fill: #566a7b; }
+      .center { text-anchor: middle; }
+      .line { stroke: #dfe6eb; stroke-width: 1.5; }
+      .wt { fill: #0072B2; }
+      .fumin { fill: #D55E00; }
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9" fill="none" stroke="#566a7b" stroke-width="1.4"/></marker>
+    <!-- Filled: vehicle. Open: release reduced. Blue: wild type. Vermilion: fumin. -->
+    <g id="row">
+      <path d="M204 0H230" fill="none" stroke="#566a7b" stroke-width="1.3" marker-end="url(#arrow)"/>
+      <circle cx="496" cy="0" r="8.5" fill="#0072B2"/>
+      <circle cx="680" cy="0" r="8.5" fill="#D55E00"/>
+      <circle cx="864" cy="0" r="7.5" fill="#ffffff" stroke="#0072B2" stroke-width="2.5"/>
+      <circle cx="1048" cy="0" r="7.5" fill="#ffffff" stroke="#D55E00" stroke-width="2.5"/>
+    </g>
+  </defs>
+  <rect width="1200" height="1100" fill="#ffffff"/>
+  <text x="42" y="47" class="title">A chemistry-fixed intervention × controlled input history</text>
+  <text x="42" y="80" class="label muted">Artificial input is injected at TuBu. The fly does not see.</text>
+
+  <text x="42" y="130" class="heading">a</text><text x="68" y="130" class="heading">Four conditions · same anatomy, background and release calibration</text>
+  <rect x="42" y="151" width="267" height="145" rx="9" fill="#e8f2f9" stroke="#0072B2" stroke-width="2"/>
+  <rect x="325" y="151" width="267" height="145" rx="9" fill="#fcefe6" stroke="#D55E00" stroke-width="2"/>
+  <rect x="608" y="151" width="267" height="145" rx="9" fill="#e8f2f9" stroke="#0072B2" stroke-width="2"/>
+  <rect x="891" y="151" width="267" height="145" rx="9" fill="#fcefe6" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="175" cy="277" r="8.5" fill="#0072B2"/>
+  <circle cx="458" cy="277" r="8.5" fill="#D55E00"/>
+  <circle cx="741" cy="277" r="7.5" fill="#ffffff" stroke="#0072B2" stroke-width="2.5"/>
+  <circle cx="1024" cy="277" r="7.5" fill="#ffffff" stroke="#D55E00" stroke-width="2.5"/>
+  <g class="center">
+    <text x="175" y="185" class="label wt" font-weight="bold">Wild type · vehicle</text>
+    <text x="458" y="185" class="label fumin" font-weight="bold">fumin · vehicle</text>
+    <text x="741" y="185" class="label wt" font-weight="bold">Wild type · release</text>
+    <text x="1024" y="185" class="label fumin" font-weight="bold">fumin · release</text>
+    <text x="175" y="216" class="small">DAT uptake retained</text>
+    <text x="458" y="216" class="small">DAT uptake removed</text>
+    <text x="741" y="216" class="small">DAT uptake retained</text>
+    <text x="1024" y="216" class="small">DAT uptake removed</text>
+    <text x="175" y="249" class="label">release × 1</text>
+    <text x="458" y="249" class="label">release × 1</text>
+    <text x="741" y="249" class="label">release × 0.375</text>
+    <text x="1024" y="249" class="label">release × 0.375</text>
+  </g>
+  <text x="42" y="326" class="small muted">First-order clearance remains in every condition. Release reduction is not a drug dose.</text>
+
+  <text x="42" y="380" class="heading">b</text><text x="68" y="380" class="heading">All eight input histories in every condition · 32 runs per seed</text>
+  <rect x="42" y="399" width="1116" height="371" rx="8" fill="#f5f7f9"/>
+  <rect x="410" y="439" width="736" height="320" fill="#ffffff"/>
+  <!-- The four prefix histories that define H (manuscript: h_c and H_c). -->
+  <rect x="42" y="604" width="1116" height="166" fill="#e9c46a" fill-opacity="0.22"/>
+  <g class="small" font-weight="bold">
+    <text x="66" y="427">Prefix</text><text x="247" y="427">Test</text>
+    <text x="496" y="427" class="center wt">WT · vehicle</text>
+    <text x="680" y="427" class="center fumin">fumin · vehicle</text>
+    <text x="864" y="427" class="center wt">WT · release</text>
+    <text x="1048" y="427" class="center fumin">fumin · release</text>
+  </g>
+  <g class="label">
+    <text x="66" y="468">blank</text><text x="247" y="468">off</text>
+    <text x="66" y="509">blank</text><text x="247" y="509">A</text>
+    <text x="66" y="550">blank</text><text x="247" y="550">B</text>
+    <text x="66" y="591">blank</text><text x="247" y="591">A+B</text>
+    <text x="66" y="632">A</text><text x="247" y="632">off</text>
+    <text x="66" y="673">A</text><text x="247" y="673">A+B</text>
+    <text x="66" y="714">B</text><text x="247" y="714">off</text>
+    <text x="66" y="755">B</text><text x="247" y="755">A+B</text>
+  </g>
+  <g class="line">
+    <path d="M58 481H1146 M58 522H1146 M58 563H1146 M58 604H1146 M58 645H1146 M58 686H1146 M58 727H1146"/>
+    <path d="M404 399V770 M588 399V770 M772 399V770 M956 399V770"/>
+  </g>
+  <use href="#row" y="460"/><use href="#row" y="501"/><use href="#row" y="542"/><use href="#row" y="583"/>
+  <use href="#row" y="624"/><use href="#row" y="665"/><use href="#row" y="706"/><use href="#row" y="747"/>
+  <rect x="42" y="784" width="22" height="16" fill="#e9c46a" fill-opacity="0.45"/>
+  <text x="74" y="798" class="tiny muted">Shaded: the four histories that define H · filled dot: vehicle · open dot: release reduced</text>
+
+  <text x="42" y="846" class="heading">c</text><text x="68" y="846" class="heading">One continuous trial · no reset between phases</text>
+  <!-- 48 px per second: 2 + 5 + 1 + 14 seconds. -->
+  <rect x="72" y="874" width="96" height="48" fill="#dfe6eb"/>
+  <rect x="168" y="874" width="240" height="48" fill="#d6e6f1"/>
+  <rect x="408" y="874" width="48" height="48" fill="#eceff2"/>
+  <rect x="456" y="874" width="672" height="48" fill="#dcece8"/>
+  <rect x="456" y="874" width="96" height="48" fill="#e9c46a"/>
+  <g class="small center" font-weight="bold">
+    <text x="120" y="905">settle</text><text x="288" y="905">prefix · 5 s</text>
+    <text x="432" y="866" class="tiny">gap</text><text x="810" y="905">test · 14 s</text>
+  </g>
+  <g class="small center">
+    <text x="72" y="948">0</text><text x="168" y="948">2</text><text x="408" y="948">7</text>
+    <text x="456" y="948">8</text><text x="552" y="948">10</text><text x="1128" y="948">22 s</text>
+  </g>
+  <path d="M504 923V966H646" fill="none" stroke="#8a6d1a" stroke-width="2"/>
+  <text x="657" y="973" class="small">first 2 s of test = primary window</text>
+  <text x="72" y="976" class="tiny muted">2 s blank settle · 1 s blank gap</text>
+
+  <rect x="42" y="1004" width="487" height="77" rx="8" fill="#edf3f7"/>
+  <rect x="653" y="1004" width="505" height="77" rx="8" fill="#edf3f7"/>
+  <path d="M541 1042H637" stroke="#566a7b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="62" y="1035" class="small" font-weight="bold">Calibration: ten seeds</text>
+  <text x="62" y="1065" class="small">Off + four labels fix the pair and axis</text>
+  <text x="673" y="1035" class="small" font-weight="bold">Experiment: ten new seeds</text>
+  <text x="673" y="1065" class="small">Paired conditions: H and two contrasts</text>
+</svg>

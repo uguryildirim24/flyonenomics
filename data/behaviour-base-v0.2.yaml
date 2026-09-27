@@ -1,0 +1,9 @@
+version: base-v0.2
+v_fwd_mm_s: 15.251167474671366
+step_min_mm: 0.8
+r_max_hz: 300.0
+brembs_split_sha256: 883c48d78b8404145a3831c9365bfbc3865a6d66b60c02ec6c7f4c944ee0be63
+calibration_half_sha256: 2fae19358c0fc0ccf9c3848202bed8ba6175577db5568a08ba8da37d44899420
+holdout_half_sha256: 5eb9504cb0d673c8870afb49e121e56f27ac563ce11fc52d0323be480c8a1054
+provenance:
+  behaviour-v0.1.yaml: 593e77589812599e48ff96cc3a9c777d344306cb7dde311317b4a282094a7622

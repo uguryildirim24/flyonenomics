@@ -1,0 +1,1853 @@
+{
+ "status": "failed",
+ "class": "development",
+ "tier": 2,
+ "stage": "R-reflex + R-long (final)",
+ "decision_status": "P2-partial-B",
+ "reason": "tier 2 exhausted",
+ "ranked": [],
+ "shortlist": [],
+ "closest_miss": "3.0-6.0-1.0-False-25-3.4",
+ "screen": {
+  "path": "camber-runs/wp17/tier2-combined/full-51.json",
+  "sha256": "abee9b0e91cf4cc3b125ec21cce9cf78f4b49cb41e659c3be00ea210fa34e4dd",
+  "committed": "validation/records/p2/rest-tier2-screen.json",
+  "settings": 51,
+  "evaluations": 2907,
+  "screen_passers": 153,
+  "not_tested_cap": 133
+ },
+ "full_record": {
+  "path": "camber-runs/wp17/tier2-stage2/final-decision.json",
+  "sha256": "bf9abe37325109a4ed2871a57d7af3e985d7968092b98eb335f37e9ad63ef51d"
+ },
+ "verification": {
+  "path": "camber-runs/wp17/receipts/tier2-stage2-final-verification.json",
+  "sha256": "f1fee8f6247f9fa78ac1ebb2c0be37bf485da7acac4d113a47fe457672074b11",
+  "rule": "every stage-2 job regenerates its committed plan task for task and passes read_evaluations"
+ },
+ "admitted": [
+  {
+   "candidate_id": "3.0-8.0-2.0-False-25-2.8",
+   "admission_order": 1,
+   "S": 10.596634733096073,
+   "J": 14.89895436916006,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 2.995732273553991,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    29.0,
+    -16.0,
+    8.0,
+    -3.0,
+    39.0,
+    7.0
+   ],
+   "b_hz": [
+    29.0,
+    -16.0,
+    8.0,
+    2.0,
+    -2.0,
+    57.0,
+    6.0,
+    -33.0,
+    10.0,
+    -36.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-01/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-01"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-25-3.0",
+   "admission_order": 2,
+   "S": 9.115030192171858,
+   "J": 14.913969247062939,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.5141277326297755,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -3.0,
+    39.0,
+    7.0,
+    27.0,
+    46.0,
+    14.0
+   ],
+   "b_hz": [
+    -3.0,
+    39.0,
+    7.0,
+    32.0,
+    -6.0,
+    19.0,
+    -30.0,
+    7.0,
+    24.0,
+    21.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-02/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-02"
+  },
+  {
+   "candidate_id": "3.0-8.0-1.0-False-25-3.4",
+   "admission_order": 3,
+   "S": 10.871071578797833,
+   "J": 15.491920010297374,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.270169119255751,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -5.0,
+    11.0,
+    -10.0,
+    2.0,
+    -28.0,
+    11.0
+   ],
+   "b_hz": [
+    -5.0,
+    11.0,
+    -10.0,
+    25.0,
+    -9.0,
+    8.0,
+    7.0,
+    -19.0,
+    3.0,
+    8.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-01/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+   "job": "t2s2k-01"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-100-0.85",
+   "admission_order": 4,
+   "S": 9.790158867229126,
+   "J": 15.440216349372738,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 2.1892564076870427,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    58.0,
+    -10.0,
+    -16.0,
+    -16.0,
+    75.0,
+    5.0
+   ],
+   "b_hz": [
+    58.0,
+    -10.0,
+    -16.0,
+    6.0,
+    53.0,
+    -20.0,
+    -36.0,
+    4.0,
+    9.0,
+    8.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-03/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-03"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-True-25-2.8",
+   "admission_order": 5,
+   "S": 9.721165995742174,
+   "J": 15.258250053677479,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 1.8971199848858813,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    9.0,
+    6.0,
+    48.0,
+    26.0,
+    21.0,
+    28.0
+   ],
+   "b_hz": [
+    9.0,
+    6.0,
+    48.0,
+    -26.0,
+    -7.0,
+    -9.0,
+    -73.0,
+    -24.0,
+    20.0,
+    -34.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-04/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-04"
+  },
+  {
+   "candidate_id": "3.0-6.0-2.0-False-25-2.8",
+   "admission_order": 6,
+   "S": 11.512925464970229,
+   "J": 15.671500130639913,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -30.0,
+    -24.0,
+    37.0,
+    36.0,
+    22.0,
+    -53.0
+   ],
+   "b_hz": [
+    -30.0,
+    -24.0,
+    37.0,
+    -18.0,
+    9.0,
+    23.0,
+    -22.0,
+    -32.0,
+    -33.0,
+    30.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-05/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-05"
+  },
+  {
+   "candidate_id": "3.0-6.0-2.0-False-25-3.0",
+   "admission_order": 7,
+   "S": 8.987196820661973,
+   "J": 15.705578753425504,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.3862943611198906,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    36.0,
+    22.0,
+    -53.0,
+    -13.0,
+    -20.0,
+    8.0
+   ],
+   "b_hz": [
+    36.0,
+    22.0,
+    -53.0,
+    53.0,
+    34.0,
+    0.0,
+    17.0,
+    12.0,
+    -12.0,
+    16.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-06/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-06"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-100-0.8",
+   "admission_order": 8,
+   "S": 10.126631103850338,
+   "J": 15.733896325377675,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 2.5257286443082556,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    45.0,
+    5.0,
+    -40.0,
+    58.0,
+    -10.0,
+    -16.0
+   ],
+   "b_hz": [
+    45.0,
+    5.0,
+    -40.0,
+    -47.0,
+    22.0,
+    12.0,
+    11.0,
+    -9.0,
+    31.0,
+    10.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-07/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-07"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-400-0.2125",
+   "admission_order": 9,
+   "S": 9.525051116815883,
+   "J": 15.604530360502107,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.9241486572738007,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    5.0,
+    0.0,
+    -22.0,
+    9.0,
+    -49.0,
+    28.0
+   ],
+   "b_hz": [
+    5.0,
+    0.0,
+    -22.0,
+    10.0,
+    1.0,
+    23.0,
+    6.0,
+    9.0,
+    6.0,
+    35.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-01/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+   "job": "t2s2k-01"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-True-25-3.0",
+   "admission_order": 10,
+   "S": 8.971323471505682,
+   "J": 15.554385547273267,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.3704210119636004,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    26.0,
+    21.0,
+    28.0,
+    -28.0,
+    21.0,
+    23.0
+   ],
+   "b_hz": [
+    26.0,
+    21.0,
+    28.0,
+    63.0,
+    -36.0,
+    71.0,
+    23.0,
+    -30.0,
+    -25.0,
+    -14.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-08/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-08"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-True-100-0.8",
+   "admission_order": 11,
+   "S": 11.512925464970229,
+   "J": 15.723042768549158,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -3.0,
+    -45.0,
+    -17.0,
+    7.0,
+    -46.0,
+    -59.0
+   ],
+   "b_hz": [
+    -3.0,
+    -45.0,
+    -17.0,
+    -27.0,
+    1.0,
+    24.0,
+    16.0,
+    -48.0,
+    -7.0,
+    -2.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-09/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-09"
+  },
+  {
+   "candidate_id": "3.0-6.0-2.0-False-100-0.8",
+   "admission_order": 12,
+   "S": 9.944309547056383,
+   "J": 15.883796117651777,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 2.3434070875143007,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    53.0,
+    -44.0,
+    1.0,
+    -3.0,
+    -22.0,
+    2.0
+   ],
+   "b_hz": [
+    53.0,
+    -44.0,
+    1.0,
+    9.0,
+    2.0,
+    66.0,
+    -40.0,
+    43.0,
+    17.0,
+    -59.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-01/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+   "job": "t2s2k-01"
+  },
+  {
+   "candidate_id": "3.0-6.0-2.0-False-400-0.2125",
+   "admission_order": 13,
+   "S": 11.176453228349015,
+   "J": 15.829815409444489,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.575550768806933,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -33.0,
+    15.0,
+    0.0,
+    36.0,
+    -52.0,
+    -47.0
+   ],
+   "b_hz": [
+    -33.0,
+    15.0,
+    0.0,
+    3.0,
+    47.0,
+    7.0,
+    3.0,
+    -20.0,
+    4.0,
+    -12.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-01/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+   "job": "t2s2k-01"
+  },
+  {
+   "candidate_id": "3.0-6.0-2.0-True-25-2.8",
+   "admission_order": 14,
+   "S": 9.581404053367015,
+   "J": 15.948042306838628,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.9805015938249322,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    45.0,
+    31.0,
+    -46.0,
+    -41.0,
+    -7.0,
+    -49.0
+   ],
+   "b_hz": [
+    45.0,
+    31.0,
+    -46.0,
+    38.0,
+    -21.0,
+    45.0,
+    -21.0,
+    -66.0,
+    45.0,
+    19.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-02/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+   "job": "t2s2k-02"
+  },
+  {
+   "candidate_id": "3.0-8.0-0.0-False-25-3.6",
+   "admission_order": 15,
+   "S": 10.637456727616328,
+   "J": 15.77880789276751,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.036554268074246,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -16.0,
+    6.0,
+    33.0,
+    11.0,
+    0.0,
+    1.0
+   ],
+   "b_hz": [
+    -16.0,
+    6.0,
+    33.0,
+    -2.0,
+    -14.0,
+    4.0,
+    25.0,
+    -8.0,
+    -2.0,
+    -2.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-02/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+   "job": "t2s2k-02"
+  },
+  {
+   "candidate_id": "3.0-8.0-0.0-True-25-3.4",
+   "admission_order": 16,
+   "S": 11.512925464970229,
+   "J": 15.935045872488939,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    5.0,
+    -16.0,
+    33.0,
+    -12.0,
+    6.0,
+    16.0
+   ],
+   "b_hz": [
+    5.0,
+    -16.0,
+    33.0,
+    -1.0,
+    9.0,
+    -10.0,
+    -4.0,
+    -27.0,
+    -1.0,
+    -22.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-02/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+   "job": "t2s2k-02"
+  },
+  {
+   "candidate_id": "3.0-8.0-1.0-True-25-3.4",
+   "admission_order": 17,
+   "S": 11.512925464970229,
+   "J": 15.831436258681281,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -29.0,
+    0.0,
+    28.0,
+    32.0,
+    15.0,
+    -3.0
+   ],
+   "b_hz": [
+    -29.0,
+    0.0,
+    28.0,
+    -10.0,
+    11.0,
+    0.0,
+    -51.0,
+    1.0,
+    -18.0,
+    16.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-10/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-10"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-400-0.225",
+   "admission_order": 18,
+   "S": 11.512925464970229,
+   "J": 15.79233475080569,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    9.0,
+    -49.0,
+    28.0,
+    20.0,
+    1.0,
+    -14.0
+   ],
+   "b_hz": [
+    9.0,
+    -49.0,
+    28.0,
+    -39.0,
+    7.0,
+    -15.0,
+    -43.0,
+    13.0,
+    -31.0,
+    -4.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2k-02/R2",
+   "bare_dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+   "job": "t2s2k-02"
+  },
+  {
+   "candidate_id": "3.0-6.0-1.0-False-25-3.4",
+   "admission_order": 19,
+   "S": 8.866750667586105,
+   "J": 16.10126160395004,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.2658482080440234,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    6.0,
+    17.0,
+    16.0,
+    23.0,
+    23.0,
+    0.0
+   ],
+   "b_hz": [
+    6.0,
+    17.0,
+    16.0,
+    11.0,
+    -5.0,
+    9.0,
+    7.0,
+    27.0,
+    51.0,
+    2.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-11/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-11"
+  },
+  {
+   "candidate_id": "3.0-6.0-1.0-True-25-3.4",
+   "admission_order": 20,
+   "S": 11.512925464970229,
+   "J": 16.214038919831676,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -21.0,
+    -17.0,
+    22.0,
+    4.0,
+    -25.0,
+    -13.0
+   ],
+   "b_hz": [
+    -21.0,
+    -17.0,
+    22.0,
+    -14.0,
+    -44.0,
+    30.0,
+    1.0,
+    14.0,
+    7.0,
+    -2.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-12/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-12"
+  }
+ ],
+ "measured_beyond_cap": [
+  {
+   "candidate_id": "3.0-6.0-0.0-False-25-3.4",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.278216023815148,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    10.0,
+    0.0,
+    -4.0,
+    -46.0,
+    -25.0,
+    -3.0
+   ],
+   "b_hz": [
+    10.0,
+    0.0,
+    -4.0,
+    12.0,
+    -41.0,
+    -5.0,
+    -1.0,
+    19.0,
+    -34.0,
+    -9.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-16/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-16"
+  },
+  {
+   "candidate_id": "3.0-6.0-0.0-False-25-3.6",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.266295904880614,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -46.0,
+    -25.0,
+    -3.0,
+    -6.0,
+    6.0,
+    -1.0
+   ],
+   "b_hz": [
+    -46.0,
+    -25.0,
+    -3.0,
+    -1.0,
+    -5.0,
+    -7.0,
+    1.0,
+    -3.0,
+    20.0,
+    1.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-17/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-17"
+  },
+  {
+   "candidate_id": "3.0-6.0-0.0-True-25-3.4",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.52467382716828,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    0.0,
+    0.0,
+    -30.0,
+    4.0,
+    2.0,
+    8.0
+   ],
+   "b_hz": [
+    0.0,
+    0.0,
+    -30.0,
+    -26.0,
+    -2.0,
+    27.0,
+    -4.0,
+    -27.0,
+    5.0,
+    -26.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-20/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-20"
+  },
+  {
+   "candidate_id": "3.0-6.0-1.0-True-25-3.2",
+   "admission_order": null,
+   "S": 9.003326202591856,
+   "J": 16.389249156868658,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 1.4024237430497741,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    13.0,
+    -13.0,
+    3.0,
+    -21.0,
+    -17.0,
+    22.0
+   ],
+   "b_hz": [
+    13.0,
+    -13.0,
+    3.0,
+    35.0,
+    38.0,
+    32.0,
+    3.0,
+    -4.0,
+    3.0,
+    13.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-18/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-18"
+  },
+  {
+   "candidate_id": "3.0-8.0-1.0-True-25-3.2",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.230124170711242,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -20.0,
+    10.0,
+    10.0,
+    -29.0,
+    0.0,
+    28.0
+   ],
+   "b_hz": [
+    -20.0,
+    10.0,
+    10.0,
+    26.0,
+    -39.0,
+    3.0,
+    -35.0,
+    -3.0,
+    -45.0,
+    31.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-13/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-13"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-False-25-3.2",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.172805673286,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    27.0,
+    46.0,
+    14.0,
+    -36.0,
+    17.0,
+    -20.0
+   ],
+   "b_hz": [
+    27.0,
+    46.0,
+    14.0,
+    -57.0,
+    2.0,
+    -14.0,
+    -25.0,
+    -33.0,
+    0.0,
+    -13.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-14/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-14"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-True-100-0.85",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.410975464058428,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    7.0,
+    -46.0,
+    -59.0,
+    -17.0,
+    44.0,
+    16.0
+   ],
+   "b_hz": [
+    7.0,
+    -46.0,
+    -59.0,
+    -16.0,
+    13.0,
+    -5.0,
+    31.0,
+    -3.0,
+    21.0,
+    -10.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-19/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-19"
+  },
+  {
+   "candidate_id": "3.0-8.0-2.0-True-400-0.225",
+   "admission_order": null,
+   "S": 11.512925464970229,
+   "J": 16.01195113239225,
+   "screen_violations": {
+    "F": 0.0,
+    "b": 0.0,
+    "stability_ratio": 0.0,
+    "central": 0.0,
+    "DAN": 0.0,
+    "KC": 0.0,
+    "gradedness": 0.0
+   },
+   "reflex_passed": false,
+   "reflex_violations": {
+    "a": 3.6888794541139363,
+    "b": 3.912023005428146,
+    "c": 3.912023005428146
+   },
+   "retention": {
+    "upstream": 0.0,
+    "extended": 0.0017857142857142859
+   },
+   "a_hz": [
+    -44.0,
+    -16.0,
+    32.0,
+    17.0,
+    -45.0,
+    9.0
+   ],
+   "b_hz": [
+    -44.0,
+    -16.0,
+    32.0,
+    4.0,
+    8.0,
+    7.0,
+    -19.0,
+    12.0,
+    13.0,
+    -24.0
+   ],
+   "long_passed": null,
+   "stage2_dir": "camber-runs/wp17/t2s2p-15/R2",
+   "bare_dir": "camber-runs/wp17/t2s2-bare/bare",
+   "job": "t2s2p-15"
+  }
+ ],
+ "jobs": {
+  "t2s2k-01": {
+   "job_id": "27482",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:07:23Z",
+   "finish": "2026-09-16T21:02:27Z",
+   "running_s": 3304,
+   "commit": "481073811c28e2fb85978e22b6c2259a374a6c70",
+   "code_scope": "git:c89ece9896dcf454bd2d2a64604b5536d2e63c05e8f1715b4759d19f6b182403",
+   "platform": "linux-x86_64",
+   "credits": 2.3495
+  },
+  "t2s2k-02": {
+   "job_id": "27483",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:01:10Z",
+   "finish": "2026-09-16T20:57:29Z",
+   "running_s": 3379,
+   "commit": "481073811c28e2fb85978e22b6c2259a374a6c70",
+   "code_scope": "git:c89ece9896dcf454bd2d2a64604b5536d2e63c05e8f1715b4759d19f6b182403",
+   "platform": "linux-x86_64",
+   "credits": 2.4028
+  },
+  "t2s2p-01": {
+   "job_id": "27455",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:46:47Z",
+   "finish": "2026-09-16T19:14:07Z",
+   "running_s": 1640,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1662
+  },
+  "t2s2p-02": {
+   "job_id": "27454",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:31:05Z",
+   "finish": "2026-09-16T19:02:16Z",
+   "running_s": 1871,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.3305
+  },
+  "t2s2p-03": {
+   "job_id": "27453",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:21:41Z",
+   "finish": "2026-09-16T18:50:16Z",
+   "running_s": 1715,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2196
+  },
+  "t2s2p-04": {
+   "job_id": "27452",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:22:29Z",
+   "finish": "2026-09-16T18:51:04Z",
+   "running_s": 1715,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2196
+  },
+  "t2s2p-05": {
+   "job_id": "27451",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:18:26Z",
+   "finish": "2026-09-16T18:46:46Z",
+   "running_s": 1700,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2089
+  },
+  "t2s2p-06": {
+   "job_id": "27450",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:16:11Z",
+   "finish": "2026-09-16T18:47:47Z",
+   "running_s": 1896,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.3483
+  },
+  "t2s2p-07": {
+   "job_id": "27458",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T19:39:23Z",
+   "finish": "2026-09-16T20:08:09Z",
+   "running_s": 1726,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2274
+  },
+  "t2s2p-08": {
+   "job_id": "27459",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T19:39:36Z",
+   "finish": "2026-09-16T20:07:22Z",
+   "running_s": 1666,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1847
+  },
+  "t2s2p-09": {
+   "job_id": "27460",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T19:43:07Z",
+   "finish": "2026-09-16T20:13:57Z",
+   "running_s": 1850,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.3156
+  },
+  "t2s2p-10": {
+   "job_id": "27462",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T17:51:49Z",
+   "finish": "2026-09-16T18:18:24Z",
+   "running_s": 1595,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1342
+  },
+  "t2s2p-11": {
+   "job_id": "27461",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:12:25Z",
+   "finish": "2026-09-16T20:44:27Z",
+   "running_s": 1922,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.3668
+  },
+  "t2s2p-12": {
+   "job_id": "27456",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:08:11Z",
+   "finish": "2026-09-16T20:36:21Z",
+   "running_s": 1690,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2018
+  },
+  "t2s2p-13": {
+   "job_id": "27457",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T19:42:06Z",
+   "finish": "2026-09-16T20:12:23Z",
+   "running_s": 1817,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2921
+  },
+  "t2s2p-14": {
+   "job_id": "27466",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:44:29Z",
+   "finish": "2026-09-16T21:12:33Z",
+   "running_s": 1684,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1975
+  },
+  "t2s2p-15": {
+   "job_id": "27463",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T19:31:43Z",
+   "finish": "2026-09-16T20:01:08Z",
+   "running_s": 1765,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2551
+  },
+  "t2s2p-16": {
+   "job_id": "27464",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:13:58Z",
+   "finish": "2026-09-16T20:47:08Z",
+   "running_s": 1990,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.4151
+  },
+  "t2s2p-17": {
+   "job_id": "27469",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T17:55:50Z",
+   "finish": "2026-09-16T18:21:40Z",
+   "running_s": 1550,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1022
+  },
+  "t2s2p-18": {
+   "job_id": "27467",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T17:55:18Z",
+   "finish": "2026-09-16T18:22:27Z",
+   "running_s": 1629,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.1584
+  },
+  "t2s2p-19": {
+   "job_id": "27465",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:36:22Z",
+   "finish": "2026-09-16T21:08:00Z",
+   "running_s": 1898,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.3497
+  },
+  "t2s2p-20": {
+   "job_id": "27468",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T20:47:10Z",
+   "finish": "2026-09-16T21:15:21Z",
+   "running_s": 1691,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 1.2025
+  },
+  "t2s2-bare": {
+   "job_id": "27449",
+   "status": "COMPLETED",
+   "node": "LARGE",
+   "start": "2026-09-16T18:00:07Z",
+   "finish": "2026-09-16T18:16:10Z",
+   "running_s": 963,
+   "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+   "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+   "platform": "linux-x86_64",
+   "credits": 0.6848
+  },
+  "t2gpu-m01": {
+   "job_id": "27470",
+   "status": "COMPLETED",
+   "node": "MEDIUM",
+   "start": "2026-09-16T19:31:05Z",
+   "finish": "2026-09-16T20:39:00Z",
+   "running_s": 4075,
+   "commit": "4257ce93e48af4c731f525d8ca6ae89850721a27",
+   "code_scope": "git:a9d6213bd03f11c47ba2c1dc521016b9d4da64b73724a0c4fc41d5d56d600b13",
+   "platform": "linux-x86_64",
+   "credits": 6.7917
+  }
+ },
+ "bare_references": [
+  {
+   "dir": "camber-runs/wp17/t2s2-bare/bare",
+   "identity": {
+    "job_id": "27449",
+    "commit": "3367c065584dc24505de296287c1c3414a6a8b49",
+    "code_scope": "git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487",
+    "platform": "linux-x86_64",
+    "class": "development",
+    "inputs": {
+     "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+     "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+     "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+     "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+    }
+   },
+   "means_hz": {
+    "upstream": 85.3,
+    "extended": 56.0
+   },
+   "node": null
+  },
+  {
+   "dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+   "identity": {
+    "job_id": "27482",
+    "commit": "481073811c28e2fb85978e22b6c2259a374a6c70",
+    "code_scope": "git:c89ece9896dcf454bd2d2a64604b5536d2e63c05e8f1715b4759d19f6b182403",
+    "platform": "linux-x86_64",
+    "class": "development",
+    "inputs": {
+     "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+     "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+     "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+     "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+    }
+   },
+   "means_hz": {
+    "upstream": 85.3,
+    "extended": 56.0
+   },
+   "node": "large-cpu"
+  },
+  {
+   "dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+   "identity": {
+    "job_id": "27483",
+    "commit": "481073811c28e2fb85978e22b6c2259a374a6c70",
+    "code_scope": "git:c89ece9896dcf454bd2d2a64604b5536d2e63c05e8f1715b4759d19f6b182403",
+    "platform": "linux-x86_64",
+    "class": "development",
+    "inputs": {
+     "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+     "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+     "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+     "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+    }
+   },
+   "means_hz": {
+    "upstream": 85.3,
+    "extended": 56.0
+   },
+   "node": "large-cpu"
+  }
+ ],
+ "bare_platform_check": {
+  "checks": [
+   {
+    "camber_dir": "camber-runs/wp17/t2s2-bare/bare",
+    "mac_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "camber_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "relative_difference": {
+     "upstream": 0.0,
+     "extended": 0.0
+    },
+    "tolerance": 0.25,
+    "platform_sensitive": false
+   },
+   {
+    "camber_dir": "camber-runs/wp17/t2s2k-01/R2/bare",
+    "mac_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "camber_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "relative_difference": {
+     "upstream": 0.0,
+     "extended": 0.0
+    },
+    "tolerance": 0.25,
+    "platform_sensitive": false
+   },
+   {
+    "camber_dir": "camber-runs/wp17/t2s2k-02/R2/bare",
+    "mac_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "camber_means_hz": {
+     "upstream": 85.3,
+     "extended": 56.0
+    },
+    "relative_difference": {
+     "upstream": 0.0,
+     "extended": 0.0
+    },
+    "tolerance": 0.25,
+    "platform_sensitive": false
+   }
+  ],
+  "ranked_on": "camber bare references"
+ },
+ "bare_substitution_check": {
+  "27449": {
+   "bare_values_equal_to_27449": true,
+   "decision_identical": true
+  },
+  "27482 (stage2-final)": {
+   "bare_values_equal_to_27449": true,
+   "decision_identical": true
+  },
+  "27483 (stage2-final)": {
+   "bare_values_equal_to_27449": true,
+   "decision_identical": true
+  },
+  "27470 (GPU)": {
+   "bare_values_equal_to_27449": true,
+   "decision_identical": true
+  },
+  "mac": {
+   "bare_values_equal_to_27449": true,
+   "decision_identical": true
+  }
+ },
+ "cross_checks": {
+  "gpu_medium_vs_cpu_large_rows_identical": {
+   "reflex": "165/165",
+   "long": "50/50",
+   "job": "27470",
+   "not_in_decision": true
+  },
+  "bare_references_identical_seed_for_seed": [
+   "27449",
+   "27482",
+   "27483",
+   "27470",
+   "mac-w17-bare-20260915"
+  ]
+ }
+}

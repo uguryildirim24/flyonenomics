@@ -1,0 +1,507 @@
+{
+  "initial_commit": "26c5b5435441e338ec1163125f5c1af701d7df4b",
+  "cuda_kernel_sha256": {
+    "src/flyonenomics/engine/cuda_dopamine.cu": "5eb5c8f31a021574c7caabf349b5b3bfdb52d30d216b085ffc12440a95348e6e",
+    "src/flyonenomics/engine/cuda_tick.cu": "a34de6bb593ce8508c7030be13c2b3a64fab07274571363e2235fee185506a9e"
+  },
+  "same_cuda_rng_one_second_count_comparisons": [
+    {
+      "label": "fused-pilot-1790391687-0",
+      "gpu": "NVIDIA L4",
+      "batch": 1,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790391992-0",
+      "gpu": "NVIDIA L4",
+      "batch": 8,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790392318-0",
+      "gpu": "NVIDIA L4",
+      "batch": 32,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790393120-0",
+      "gpu": "NVIDIA L4",
+      "batch": 1,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790393412-0",
+      "gpu": "NVIDIA L4",
+      "batch": 8,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790393559-0",
+      "gpu": "NVIDIA L4",
+      "batch": 32,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790393710-0",
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "batch": 1,
+      "chunk_ms": 10.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    },
+    {
+      "label": "fused-pilot-1790394331306579000-0",
+      "gpu": "NVIDIA L4",
+      "batch": 1,
+      "chunk_ms": 1.0,
+      "total_spikes": 202658,
+      "neurons_with_different_counts_from_first_gpu_run": 0
+    }
+  ],
+  "gpu_cpu_modulation_identical_count_diagnostic": [
+    {
+      "label": "fused-pilot-1790392949-0",
+      "max_abs": {
+        "pool_um": 0.0,
+        "threshold_mv": 0.0,
+        "gain": 0.0
+      }
+    }
+  ],
+  "static_io_scan": {
+    "passed": false,
+    "hits": [
+      {
+        "file": "scripts/blender/encode.py",
+        "line": 14,
+        "kind": "Path.read_text",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/scene.py",
+        "line": 20,
+        "kind": "Path.read_text",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/scene.py",
+        "line": 21,
+        "kind": "numpy.load",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/scene.py",
+        "line": 23,
+        "kind": "numpy.load",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/scene.py",
+        "line": 29,
+        "kind": "Path.read_text",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/scene.py",
+        "line": 401,
+        "kind": "numpy.load",
+        "name": "run"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 74,
+        "kind": "Path.read_text",
+        "name": "<module>"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 91,
+        "kind": "Path.read_text",
+        "name": "__init__"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 242,
+        "kind": "numpy.load",
+        "name": "values"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 255,
+        "kind": "numpy.load",
+        "name": "values"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 294,
+        "kind": "numpy.load",
+        "name": "load_values"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 330,
+        "kind": "Path.read_text",
+        "name": "spike_flashes"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 335,
+        "kind": "Path.read_bytes",
+        "name": "spike_flashes"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 339,
+        "kind": "numpy.load",
+        "name": "spike_flashes"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 450,
+        "kind": "open",
+        "name": "compose_still"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 488,
+        "kind": "open",
+        "name": "compose_grid"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 497,
+        "kind": "open",
+        "name": "compose_grid"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 507,
+        "kind": "open",
+        "name": "compose_pair"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 507,
+        "kind": "open",
+        "name": "compose_pair"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 546,
+        "kind": "Path.read_bytes",
+        "name": "figures"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 565,
+        "kind": "numpy.load",
+        "name": "figures"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 582,
+        "kind": "Path.read_text",
+        "name": "figures"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 598,
+        "kind": "Path.read_text",
+        "name": "figures"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 613,
+        "kind": "numpy.load",
+        "name": "viewer"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 668,
+        "kind": "Path.read_bytes",
+        "name": "viewer"
+      },
+      {
+        "file": "scripts/blender/tour.py",
+        "line": 669,
+        "kind": "Path.read_text",
+        "name": "viewer"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 31,
+        "kind": "Path.read_text",
+        "name": "neurons"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 41,
+        "kind": "open",
+        "name": "engine_index"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 47,
+        "kind": "Path.read_text",
+        "name": "load_outcome"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 52,
+        "kind": "Path.read_bytes",
+        "name": "load_outcome"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 59,
+        "kind": "numpy.load",
+        "name": "on_rates"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 69,
+        "kind": "Path.read_text",
+        "name": "load_spikes"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 75,
+        "kind": "Path.read_bytes",
+        "name": "load_spikes"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 77,
+        "kind": "numpy.load",
+        "name": "load_spikes"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 77,
+        "kind": "numpy.load",
+        "name": "load_spikes"
+      },
+      {
+        "file": "scripts/courtship_body/playback.py",
+        "line": 108,
+        "kind": "Path.read_bytes",
+        "name": "model"
+      },
+      {
+        "file": "scripts/courtship_body/render.py",
+        "line": 75,
+        "kind": "numpy.load",
+        "name": "<module>"
+      }
+    ],
+    "allowlist": 28
+  },
+  "static_io_hit_paths_unchanged_from_initial_tree": true,
+  "new_cuda_io_hits": [],
+  "gate": "Full timeout 5400 .venv/bin/pytest -q -rf is deferred to the round, per brief. The pre-existing static IO failures above remain outside this lane scope.",
+  "note": "Most runs precede IO-only routing of source-file reads through flyonenomics.io; final A10G batch follows it. CUDA C++ kernel bytes and model equations are unchanged.",
+  "latency_capture_consistency": {
+    "brian": {
+      "group_windows_checked": 420,
+      "inconsistent_first_spike_vs_first_nonzero_chunk": []
+    },
+    "cuda": {
+      "group_windows_checked": 420,
+      "inconsistent_first_spike_vs_first_nonzero_chunk": []
+    }
+  },
+  "modal_final_app_states": [
+    {
+      "app_id": "ap-kcLotYcGMulvN3EYXN5LZA",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-26 00:11:35-04:00",
+      "stopped_at": "2026-09-26 00:19:36-04:00"
+    },
+    {
+      "app_id": "ap-XUm4jPU236NQfsHqD5pm3L",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:57:46-04:00",
+      "stopped_at": "2026-09-26 00:11:00-04:00"
+    },
+    {
+      "app_id": "ap-xIL0sNwIWR16Vc4yS2tJl5",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:54:26-04:00",
+      "stopped_at": "2026-09-26 00:04:44-04:00"
+    },
+    {
+      "app_id": "ap-MZj6jOxaHh2uMWpwWFqoQ0",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:53:16-04:00",
+      "stopped_at": "2026-09-26 00:00:26-04:00"
+    },
+    {
+      "app_id": "ap-Phuszz85jxqZv0Db54SLrl",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:46:55-04:00",
+      "stopped_at": "2026-09-25 23:57:36-04:00"
+    },
+    {
+      "app_id": "ap-rAQUbHylUiHphNEDjhDv3n",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:46:55-04:00",
+      "stopped_at": "2026-09-25 23:54:19-04:00"
+    },
+    {
+      "app_id": "ap-YlKHmuYf4hZwq7lzLhs22l",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:46:55-04:00",
+      "stopped_at": "2026-09-25 23:52:10-04:00"
+    },
+    {
+      "app_id": "ap-H2iN32bfcVsHUjL2lonzD2",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:45:31-04:00",
+      "stopped_at": "2026-09-25 23:50:37-04:00"
+    },
+    {
+      "app_id": "ap-BYdQHQeyWs3eoRCEi5xdmB",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:38:51-04:00",
+      "stopped_at": "2026-09-25 23:45:30-04:00"
+    },
+    {
+      "app_id": "ap-7ukyfI7b1pdi4lGigjt9fD",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:35:11-04:00",
+      "stopped_at": "2026-09-25 23:37:18-04:00"
+    },
+    {
+      "app_id": "ap-ToaLbxOGzxO2WTFRPK8tIW",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:32:39-04:00",
+      "stopped_at": "2026-09-25 23:35:09-04:00"
+    },
+    {
+      "app_id": "ap-o0nv30IqcvxRJ5bmVJ7dmG",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:30:13-04:00",
+      "stopped_at": "2026-09-25 23:32:38-04:00"
+    },
+    {
+      "app_id": "ap-OLflaEgZq82VzJggGSHkIG",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:25:20-04:00",
+      "stopped_at": "2026-09-25 23:30:11-04:00"
+    },
+    {
+      "app_id": "ap-hQCkvZHh5hlzI20PgyYJuk",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:22:29-04:00",
+      "stopped_at": "2026-09-25 23:24:51-04:00"
+    },
+    {
+      "app_id": "ap-U4HsVJY8PDy1MfheqUPIgV",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:19:06-04:00",
+      "stopped_at": "2026-09-25 23:19:33-04:00"
+    },
+    {
+      "app_id": "ap-ey8C6yQx10hdxyPKr2vXSL",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:11:59-04:00",
+      "stopped_at": "2026-09-25 23:18:13-04:00"
+    },
+    {
+      "app_id": "ap-4XVI9tjG3KcCPFi4TYptZP",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:06:32-04:00",
+      "stopped_at": "2026-09-25 23:11:57-04:00"
+    },
+    {
+      "app_id": "ap-EVrc1obVfTamC8p45ZXVMf",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 23:01:27-04:00",
+      "stopped_at": "2026-09-25 23:06:30-04:00"
+    },
+    {
+      "app_id": "ap-mb0JBroB78hbuuln0J8Qev",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 22:57:44-04:00",
+      "stopped_at": "2026-09-25 23:00:02-04:00"
+    },
+    {
+      "app_id": "ap-xwpl1Cir7M8ubNJsAX6dp5",
+      "description": "flyonenomics-fused-cuda",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-25 22:55:07-04:00",
+      "stopped_at": "2026-09-25 22:57:22-04:00"
+    }
+  ],
+  "brian_engine_models_data_unchanged": true,
+  "reference_analysis_byte_identical": true,
+  "full_outcomes": {
+    "rest": 10,
+    "tour": 140
+  },
+  "unexercised_optional_feature": "record_spikes=True full spike-time buffers; count and first-tick recording were exercised.",
+  "full_outcome_cuda_kernel_hashes_match_current": true,
+  "syntax_preflight_files": [
+    "src/flyonenomics/engine/cuda_engine.py",
+    "src/flyonenomics/engine/cuda_dopamine.py",
+    "scripts/cuda_circuit.py",
+    "scripts/cuda_speed.py",
+    "scripts/cuda_compare.py",
+    "scripts/modal/cuda_driver.py",
+    "scripts/modal/cuda_billing.py",
+    "scripts/modal/cuda.py",
+    "scripts/modal/cuda_ledger.py"
+  ],
+  "recomputed_brian_analysis_equals_reviewed_analysis": true
+}

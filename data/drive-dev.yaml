@@ -1,0 +1,84 @@
+drive_version: dev
+configuration_class: development
+g_inh: 4.0
+groups:
+  DAN:
+    size: 361
+    w_bg: 1.1484694984106931
+    target_hz: 5.0
+    measured_hz: 0.7684210526315789
+  ER:
+    size: 278
+    w_bg: 1.1484694984106931
+    target_hz: 2.0
+    measured_hz: 1.235251798561151
+  KC:
+    size: 5177
+    w_bg: 1.098469498410693
+    target_hz: 0.1
+    measured_hz: 1.449913077071663
+  ascending:
+    size: 2317
+    w_bg: 1.098469498410693
+    target_hz: 1.0
+    measured_hz: 1.7881743634009495
+  central:
+    size: 26568
+    w_bg: 1.1984694984106932
+    target_hz: 1.0
+    measured_hz: 4.9439927732610665
+  descending:
+    size: 1299
+    w_bg: 1.1484694984106931
+    target_hz: 1.0
+    measured_hz: 1.8250962278675904
+  endocrine:
+    size: 76
+    w_bg: 1.098469498410693
+    target_hz: 1.0
+    measured_hz: 1.657894736842105
+  motor:
+    size: 106
+    w_bg: 1.098469498410693
+    target_hz: 0.5
+    measured_hz: 1.6132075471698113
+  optic:
+    size: 77529
+    w_bg: 1.1484694984106931
+    target_hz: 1.0
+    measured_hz: 1.4459776341755988
+  sensory:
+    size: 16351
+    w_bg: 0.0
+    target_hz: null
+    measured_hz: 0.08973151489205553
+  visual_centrifugal:
+    size: 524
+    w_bg: 1.1984694984106932
+    target_hz: 1.0
+    measured_hz: 2.4396946564885496
+  visual_projection:
+    size: 8053
+    w_bg: 1.1484694984106931
+    target_hz: 1.0
+    measured_hz: 0.7484415745684838
+objective: 16.78753917022964
+evaluation_count: 40
+seed: 20260912
+date: '2026-09-13'
+params_version: v0.1
+receptor_map_version: v0.1
+arrays_note: base arrays, layer A off
+calibration_state: base arrays (v_th everywhere, gain 1), layer A off; g_inh=4; map-level candidate, not a resting calibration
+qualified: false
+synchrony:
+  F: 2.594354773026666
+  max_bin_fraction: 0.0027986353046401086
+  status: clear
+misses:
+- DAN
+- KC
+- central
+- motor
+- visual_centrifugal
+wall_s: 5185.971368749975

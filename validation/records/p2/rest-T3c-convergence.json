@@ -1,0 +1,352 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "stage": "T0-dt-convergence",
+  "engine_model": "lif+cbi",
+  "item": 88,
+  "seed": 1,
+  "recorded_dt_ms": 0.1,
+  "steps_ms": [
+    0.1,
+    0.05,
+    0.025
+  ],
+  "n_units": 5,
+  "n_rows": 15,
+  "n_tasks": 18,
+  "t0_brain_s": 108.0,
+  "overall_verdict": "mixed",
+  "readmission": false,
+  "evaluation_commit": "c6b7301d415919a918f62ac687c6411cb124dde4",
+  "evaluation_platform": "linux-x86_64",
+  "plan": "validation/records/p2/rest-T3c-convergence-plan.json",
+  "collect": "collect-t3c-dt",
+  "backend": "ibm-vpc",
+  "jobs": [
+    "t3c-dt-00-20260918T153755Z"
+  ],
+  "pulled_to": "camber-runs/wp28/t3c-dt-00",
+  "selection": "required closest miss 1.0-1.0-cbi--72.0-all, then four companions at roughly 25/50/75/100 percent of log h_max from 19.65 to 256.53",
+  "ibm": {
+    "instance_name": "flyo-08",
+    "instance_id": "0757_76e269a2-a44f-4c78-9fac-964f3b13bdbe",
+    "profile": "cx2-64x128",
+    "n_workers": 36,
+    "created_utc": "20260918T152902Z",
+    "torn_down_utc": "20260918T154927Z",
+    "job_id": "t3c-dt-00-20260918T153755Z",
+    "job_started_utc": "20260918T153755Z",
+    "job_exit_utc": "20260918T154827Z",
+    "wall_s": 632,
+    "n_ndjson": 18,
+    "exit_code": 0,
+    "tree": "lane/wp28",
+    "tree_sha": "c6b7301",
+    "pulled_to": "camber-runs/wp28/t3c-dt-00",
+    "list_usd": 0.7486,
+    "box_s": 1225
+  },
+  "bare": {
+    "dt100": {
+      "dt_ms": 0.1,
+      "difference_hz": 50.0,
+      "wall_s": 212.18831373399996,
+      "wall_per_brain_s": 35.36471895566666,
+      "h_max": null,
+      "job_id": "t3c-dt-00-20260918T153755Z"
+    },
+    "dt050": {
+      "dt_ms": 0.05,
+      "difference_hz": 54.0,
+      "wall_s": 261.32393544,
+      "wall_per_brain_s": 43.55398924,
+      "h_max": null,
+      "job_id": "t3c-dt-00-20260918T153755Z"
+    },
+    "dt025": {
+      "dt_ms": 0.025,
+      "difference_hz": 56.0,
+      "wall_s": 306.18915839299996,
+      "wall_per_brain_s": 51.03152639883333,
+      "h_max": null,
+      "job_id": "t3c-dt-00-20260918T153755Z"
+    }
+  },
+  "wall_per_brain_s": [
+    45.61297321266667,
+    43.166939829499995,
+    42.87261080816668,
+    45.47570026666667,
+    43.22733065100001,
+    35.36471895566666,
+    59.11983736616666,
+    59.1085168255,
+    60.59911918816666,
+    64.24878689483334,
+    59.05815193366667,
+    43.55398924,
+    94.27234094800001,
+    93.453214754,
+    90.61600578566669,
+    90.38125824783333,
+    91.310347233,
+    51.03152639883333
+  ],
+  "units": [
+    {
+      "unit_id": "1.0-1.0-cbi--72.0-all",
+      "why": "1.0-1.0-cbi--72.0-all is the T0 closest miss (retention 0.6089285714285715, h_max 19.65); it is the low end of the recorded h_max range and the only unit that kept the reflex",
+      "recorded_h_max": 19.652304217599447,
+      "recorded_retention": 0.6089285714285715,
+      "recorded_difference_hz": 34.1,
+      "verdict": "mixed",
+      "steps": [
+        {
+          "dt_ms": 0.1,
+          "retention": 0.6,
+          "difference_hz": 30.0,
+          "h_max": 18.77497309838314,
+          "cbi_stiff": false,
+          "wall_s": 273.677839276,
+          "wall_per_brain_s": 45.61297321266667,
+          "bare_difference_hz": 50.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        },
+        {
+          "dt_ms": 0.05,
+          "retention": 0.7037037037037037,
+          "difference_hz": 38.0,
+          "h_max": 17.922963175773614,
+          "cbi_stiff": false,
+          "wall_s": 354.71902419699995,
+          "wall_per_brain_s": 59.11983736616666,
+          "bare_difference_hz": 54.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        },
+        {
+          "dt_ms": 0.025,
+          "retention": 0.6428571428571429,
+          "difference_hz": 36.0,
+          "h_max": 16.09293127125584,
+          "cbi_stiff": false,
+          "wall_s": 565.634045688,
+          "wall_per_brain_s": 94.27234094800001,
+          "bare_difference_hz": 56.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_id": "1.0-8.0-cbi--57.0-all",
+      "why": "1.0-8.0-cbi--57.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 256.53; pair (1.0, 8.0), E_inh -57.0 mV, recorded retention 0.05178571428571428",
+      "recorded_h_max": 256.52648256415154,
+      "recorded_retention": 0.05178571428571428,
+      "recorded_difference_hz": 2.9,
+      "verdict": "physical",
+      "steps": [
+        {
+          "dt_ms": 0.1,
+          "retention": 0.02,
+          "difference_hz": 1.0,
+          "h_max": 185.1158358391645,
+          "cbi_stiff": true,
+          "wall_s": 259.36398390600004,
+          "wall_per_brain_s": 43.22733065100001,
+          "bare_difference_hz": 50.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.05,
+          "retention": 0.07407407407407407,
+          "difference_hz": 4.0,
+          "h_max": 193.04582821308608,
+          "cbi_stiff": true,
+          "wall_s": 354.34891160200004,
+          "wall_per_brain_s": 59.05815193366667,
+          "bare_difference_hz": 54.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.025,
+          "retention": 0.07142857142857142,
+          "difference_hz": 4.0,
+          "h_max": 229.14138593927484,
+          "cbi_stiff": true,
+          "wall_s": 547.862083398,
+          "wall_per_brain_s": 91.310347233,
+          "bare_difference_hz": 56.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_id": "1.5-4.0-cbi--72.0-all",
+      "why": "1.5-4.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 36.74; pair (1.5, 4.0), E_inh -72.0 mV, recorded retention 0.04285714285714286",
+      "recorded_h_max": 36.7428842422786,
+      "recorded_retention": 0.04285714285714286,
+      "recorded_difference_hz": 2.4,
+      "verdict": "physical",
+      "steps": [
+        {
+          "dt_ms": 0.1,
+          "retention": 0.08,
+          "difference_hz": 4.0,
+          "h_max": 31.450600790531926,
+          "cbi_stiff": true,
+          "wall_s": 259.00163897699997,
+          "wall_per_brain_s": 43.166939829499995,
+          "bare_difference_hz": 50.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.05,
+          "retention": 0.037037037037037035,
+          "difference_hz": 2.0,
+          "h_max": 33.73556750582779,
+          "cbi_stiff": false,
+          "wall_s": 354.65110095299997,
+          "wall_per_brain_s": 59.1085168255,
+          "bare_difference_hz": 54.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        },
+        {
+          "dt_ms": 0.025,
+          "retention": 0.07142857142857142,
+          "difference_hz": 4.0,
+          "h_max": 30.064620307551234,
+          "cbi_stiff": false,
+          "wall_s": 560.719288524,
+          "wall_per_brain_s": 93.453214754,
+          "bare_difference_hz": 56.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_id": "1.5-8.0-cbi--62.0-all",
+      "why": "1.5-8.0-cbi--62.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 134.04; pair (1.5, 8.0), E_inh -62.0 mV, recorded retention 0.026785714285714284",
+      "recorded_h_max": 134.0436692788588,
+      "recorded_retention": 0.026785714285714284,
+      "recorded_difference_hz": 1.5,
+      "verdict": "physical",
+      "steps": [
+        {
+          "dt_ms": 0.1,
+          "retention": 0.0,
+          "difference_hz": 0.0,
+          "h_max": 134.0436692788588,
+          "cbi_stiff": true,
+          "wall_s": 272.8542016,
+          "wall_per_brain_s": 45.47570026666667,
+          "bare_difference_hz": 50.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.05,
+          "retention": 0.07407407407407407,
+          "difference_hz": 4.0,
+          "h_max": 97.4265093059001,
+          "cbi_stiff": true,
+          "wall_s": 385.49272136900004,
+          "wall_per_brain_s": 64.24878689483334,
+          "bare_difference_hz": 54.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.025,
+          "retention": 0.07142857142857142,
+          "difference_hz": 4.0,
+          "h_max": 113.6991516156642,
+          "cbi_stiff": true,
+          "wall_s": 542.287549487,
+          "wall_per_brain_s": 90.38125824783333,
+          "bare_difference_hz": 56.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        }
+      ]
+    },
+    {
+      "unit_id": "3.0-8.0-cbi--72.0-all",
+      "why": "3.0-8.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 70.05; pair (3.0, 8.0), E_inh -72.0 mV, recorded retention 0.0",
+      "recorded_h_max": 70.04755217563972,
+      "recorded_retention": 0.0,
+      "recorded_difference_hz": 0.0,
+      "verdict": "physical",
+      "steps": [
+        {
+          "dt_ms": 0.1,
+          "retention": 0.0,
+          "difference_hz": 0.0,
+          "h_max": 52.86233684775042,
+          "cbi_stiff": true,
+          "wall_s": 257.23566484900005,
+          "wall_per_brain_s": 42.87261080816668,
+          "bare_difference_hz": 50.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.05,
+          "retention": 0.0,
+          "difference_hz": 0.0,
+          "h_max": 48.37806644983541,
+          "cbi_stiff": true,
+          "wall_s": 363.59471512899995,
+          "wall_per_brain_s": 60.59911918816666,
+          "bare_difference_hz": 54.0,
+          "flags": [
+            "t2-b-unreachable",
+            "cbi-stiff"
+          ]
+        },
+        {
+          "dt_ms": 0.025,
+          "retention": 0.0,
+          "difference_hz": 0.0,
+          "h_max": 49.88286675012611,
+          "cbi_stiff": false,
+          "wall_s": 543.6960347140001,
+          "wall_per_brain_s": 90.61600578566669,
+          "bare_difference_hz": 56.0,
+          "flags": [
+            "t2-b-unreachable"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "T0 background off, one seed, same-job bare at each step. No T0 readmission."
+}

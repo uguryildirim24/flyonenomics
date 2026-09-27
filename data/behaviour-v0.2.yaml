@@ -1,0 +1,12 @@
+version: v0.2
+controller: open_loop
+v_fwd_mm_s: 15.251167474671366
+step_min_mm: 0.8
+r_max_hz: 300.0
+sign_steer: null
+bias_hz: 1.8974968906816918
+K_steer: null
+visual: cce0738c34aff90e10380165d446ebbcbe2b3687
+provenance:
+  behaviour-base-v0.2.yaml: 9f04654b6bd2c9d152b662a6bbdddaf83a5d2136
+  bias-open-loop.json: 125463d47ae2f24ea71141bb26f9afd9d64703e1c54f321b36688a994613518f

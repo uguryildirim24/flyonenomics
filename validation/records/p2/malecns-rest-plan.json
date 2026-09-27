@@ -1,0 +1,183 @@
+{
+  "build_wall_s": 77.72211442500702,
+  "class": "plan",
+  "configuration": "item 122 unchanged, sensory-only 1.0 mV",
+  "configuration_values": {
+    "dopamine_state": {
+      "DA_ref_um": 0.02,
+      "background": true,
+      "drug": null,
+      "genotype": "wild type",
+      "layer_A": true,
+      "layer_C": true,
+      "pools": "clamped at DA_ref"
+    },
+    "engine_model": "lif",
+    "g_gaba": 1.0,
+    "g_gaba_kc": 6.0,
+    "g_glu": 4.0,
+    "g_his": 1.0,
+    "lif": {
+      "dt_ms": 0.1,
+      "t_dly_ms": 1.8,
+      "t_mbr_ms": 20.0,
+      "t_rfc_ms": 2.2,
+      "tau_ms": 5.0,
+      "v_0_mv": -52.0,
+      "v_rst_mv": -52.0,
+      "v_th_mv": -45.0,
+      "w_syn_mv": 0.275
+    },
+    "mechanisms": null,
+    "n_bg": 100,
+    "optic_exemption": false,
+    "r_bg_hz": 10.0,
+    "sigma_th_mv": 0.0,
+    "transmitter_scope": "brain",
+    "unknown_rule": "positive:1; negative:g_gaba",
+    "w_bg_mv": {
+      "all_other_groups": 0.0,
+      "sensory": 1.0
+    }
+  },
+  "cost_probe_note": "One configured dark brain-second, one process; /usr/bin/time -v independently reported 7,112,216 KiB maximum RSS and 3:12.38 total wall including build.",
+  "dataset": "male-cns:v1.0",
+  "duration_s": 1.0,
+  "flywire_reference": {
+    "DAN_hz_mean": 0.8125761772853185,
+    "F_max": 2.6187652193866677,
+    "KC_hz_mean": 0.08885841220784238,
+    "central_hz_mean": 4.831751731406203,
+    "dark_MN9_max_hz": 4.7,
+    "note": "item 121; reflex values are recorded measures, not pass lines",
+    "retention": 0.956,
+    "same_job_bare_hz": 57.0,
+    "sugar_mean_hz": 26.6,
+    "sugar_min_hz": 19.3
+  },
+  "governed_by": [
+    "SPEC-P2 item 121",
+    "SPEC-P2 item 122",
+    "SPEC-P2 item 149",
+    "SPEC-P2 item 150",
+    "SPEC-P2 item 151",
+    "SPEC-P2 item 152",
+    "SPEC-P2 item 153"
+  ],
+  "inputs_sha256": {
+    "data/compartments-male-cns-v1.0.yaml": "de54b5b7723062a7e5541177ffc61c68a0148a9ac63004793683c54958a27521",
+    "data/drive-v0.2.yaml": "379cc4cc9030cdd1bc2235ae28a97f96d0f90c9a95879a51388a5cff513ec278",
+    "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+    "data/populations-male-cns-v1.0.yaml": "4b67f2a4d5d54b5bb552bdd54ec350d99842d239a35d5c4cfb48f73daa3bdb63",
+    "data/receptors-male-cns-v1.0.yaml": "50a273b37d521777aa8e18bb5107cf8a321ab00836a82f229f223d0da70d7f61",
+    "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5",
+    "scripts/malecns_rest.py": "622d201bca8c3fd2bec07963e9cf5e793dab851660cc7dfea8fdd3b99442b620"
+  },
+  "interpretation": "Cost only. Nothing was fitted; the fly does not see.",
+  "male_mapping": {
+    "DAN_count": 367,
+    "KC_count": 4064,
+    "central_count": 39533,
+    "registry": "data/populations-male-cns-v1.0.yaml (item 152)",
+    "sensory_count": 15016,
+    "sugar_reflex": "not runnable: item 152 left sugar_GRN_R empty; no substitute",
+    "transmitters": "data/transmitters-male-cns-v1.0.yaml (item 153)"
+  },
+  "measurement_plan": {
+    "R_long": {
+      "measure_s": 30.0,
+      "metrics": [
+        "F",
+        "ignition",
+        "first_5s_over_last_5s_central_ratio"
+      ],
+      "weight_mv": 1.0
+    },
+    "R_reflex": {
+      "reason": "no MaleCNS sugar source under item 152",
+      "status": "not runnable"
+    },
+    "R_screen": {
+      "measure_s": 10.0,
+      "metrics": [
+        "F",
+        "b",
+        "stability_ratio",
+        "central_hz",
+        "DAN_hz",
+        "KC_hz"
+      ],
+      "weights_mv": [
+        1.0,
+        1.2
+      ]
+    },
+    "dopamine_chain": {
+      "adoption": false,
+      "measure_s": 5.0,
+      "outputs": [
+        "R_c",
+        "Q_c",
+        "alpha_c",
+        "S_c",
+        "mode"
+      ],
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "gradedness": {
+      "measure_s": 10.0,
+      "metric": "central_hz",
+      "weight_mv": 1.4,
+      "why": "next 0.20 mV arm-A grid weight above the 1.0/1.2 pair"
+    },
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "settle_s": 2.0
+  },
+  "part_b_go": "Coordinator go after frozen plan f0cdb28: eight workers, detached",
+  "part_b_started": false,
+  "peak_rss_bytes": 7282909184,
+  "plan": {
+    "brain_s": 701.0,
+    "estimate_formula": "one parallel worker-build wave + total brain_s*1s run wall/workers",
+    "estimated_wall_s": 10009.745299278897,
+    "memory_budget_bytes_above_one_third_free": 60567060480,
+    "runner_shape": "8 persistent workers each build once; 43 arms in longest-first order; parent atomically writes a seed after its 4 arms (5 for seeds 1-3) finish",
+    "seed_jobs": 10,
+    "worker_cap": 10,
+    "workers": 8
+  },
+  "platform": {
+    "cpu_count": 16,
+    "machine": "aarch64",
+    "memory_bytes": {
+      "MemAvailable": 94245847040,
+      "MemTotal": 101036359680
+    },
+    "python": "3.12.14",
+    "release": "6.17.0-1020-oracle",
+    "system": "Linux"
+  },
+  "purpose": "Part A one-worker cost probe; no Part B outcome",
+  "run_wall_s": 113.34691223799018,
+  "runner": "scripts/malecns_rest.py",
+  "seed": 1,
+  "spikes": 203850,
+  "status": "waiting-for-part-b-go",
+  "total_wall_s": 191.12735224200878,
+  "wall_s_per_brain_s": 113.34691223799018
+}

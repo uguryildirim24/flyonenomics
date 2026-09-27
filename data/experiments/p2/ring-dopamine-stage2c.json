@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.3",
+  "name": "ring-dopamine-stage2c",
+  "description": "Stage 2c ring-neuron dopamine probe: TuBu stripe injected on in every arm, wild type. A dark-retained arm, a new matched dark-disconnected arm, and three driven-retain arms that cross the ring d_v clamp with the ring input-gain clamp. Paired, ten seeds.",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "comparison": "ablation",
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "visual_version": "v0.2",
+    "behaviour_version": "base-v0.2"
+  },
+  "layers": {
+    "background": true,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arms": [
+    {
+      "label": "dark",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "dark-disconnect",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "layers": {
+        "dan_fast_synapses": "disconnect"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "driven-retain",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "activate",
+            "population": "CX_DAN",
+            "rate_hz": 50.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "driven-retain-clamped",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "activate",
+            "population": "CX_DAN",
+            "rate_hz": 50.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "driven-retain-both-clamped",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "activate",
+            "population": "CX_DAN",
+            "rate_hz": 50.0
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 20.0,
+          "label": "ring-dopamine-tubu-stripe",
+          "params": {
+            "inject_at": "TuBu",
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "transition_s": 2.0,
+                "dwell_s": 18.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "CX_DAN",
+      "DAN",
+      "TuBu"
+    ],
+    "rates": [
+      "CX_DAN",
+      "TuBu",
+      "ER",
+      "EPG",
+      "dFB"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": false,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {
+    "stage": "ring-dopamine-stage2c",
+    "form": "open-loop-tubu-injection",
+    "dv_clamp": "the final applied d_v for the 228 traced ER cells is replaced by the constant dark reference while the dopamine pool, innervation, source activity and occ1/occ2 stay live",
+    "gain_clamp": "the final applied input gain for the 228 traced ER cells is replaced by the constant dark gain reference while the dopamine pool, innervation, source activity and occ1/occ2 stay live; the gain enters the engine only as the postsynaptic input multiplier",
+    "declared_substrate": {
+      "item": 122,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "bg_policy": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "g_gaba_kc": 6.0,
+      "sigma_th_mv": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "records": [
+        {
+          "path": "validation/records/p2/rest-T3e-decision.json",
+          "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+        },
+        {
+          "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+          "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+        }
+      ]
+    },
+    "dv_clamp_arms": [
+      "driven-retain-clamped",
+      "driven-retain-both-clamped"
+    ],
+    "gain_clamp_arms": [
+      "driven-retain-both-clamped"
+    ]
+  }
+}

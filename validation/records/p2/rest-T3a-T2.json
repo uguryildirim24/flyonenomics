@@ -1,0 +1,87 @@
+{
+  "class": "development",
+  "sub_tier": "T3a",
+  "stage": "T2",
+  "engine_model": "lif+sfa",
+  "rho_mech": 1.4863463034318214,
+  "q_plan": 27.0,
+  "t0_brain_s": 11820.0,
+  "t1_brain_s": 11628.0,
+  "measured_rate": {
+    "planned_worker_s_per_brain_s": 74.31731517159108,
+    "median_wall_per_brain_s": null,
+    "replaced": false,
+    "worker_s_per_brain_s": 74.31731517159108
+  },
+  "admitted": [],
+  "excluded": [],
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "job_shapes": {
+    "B_brain_s": 67,
+    "n_jobs": 0,
+    "n_tasks": 0,
+    "t2_brain_s": 0,
+    "n_candidates": 0,
+    "launch": false,
+    "reason": "no R-screen passer"
+  },
+  "cap_projection_engine_hours": 370.18941033272944,
+  "max_candidates": 20,
+  "t1_collect": {
+    "n_units_evaluated": 17,
+    "n_screen_passers": 0,
+    "n_t2_admitted": 0,
+    "t2_b_unreachable": 15,
+    "grid_edge": 0,
+    "failed_stage": "R-screen",
+    "closest_miss": {
+      "sub_tier": "T3a",
+      "engine_model": "lif+sfa",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "27514",
+      "retention": 0.5321428571428571,
+      "difference_hz": 29.8,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "S": 2.9157495281472015,
+      "J": 92.53561636166792,
+      "screen_passed": false,
+      "violations": {
+        "F": 0.7158514447056676,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 2.199898083441534,
+        "gradedness": 0.0
+      },
+      "candidate_id": "1.0-4.0-0.0-False-100-0.85-sfa-1.0-50.0-non_sensory",
+      "deepest": "T1"
+    }
+  }
+}

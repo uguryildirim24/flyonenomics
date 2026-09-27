@@ -1,0 +1,84 @@
+{
+  "bias_hz": 1.8974968906816918,
+  "declared_substrate": {
+    "arm_id": "sens",
+    "bg_policy": "sens",
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "engine_model": "lif",
+    "freeze": {
+      "F_max": 2.6187652193866677,
+      "KC_hz": 0.08885841220784238,
+      "a_min_hz": 20.0,
+      "bare_hz": 57.0,
+      "central_hz": 4.831751731406203,
+      "mn9_dark_max_hz": 4.7,
+      "reflex_mean_hz": 26.633333333333333,
+      "reflex_min_hz": 19.333333333333336,
+      "retention": 0.956140350877193,
+      "seeds": "11-20"
+    },
+    "g_gaba": 1.0,
+    "g_gaba_kc": 6.0,
+    "g_glu": 4.0,
+    "item": 122,
+    "n_bg": 100,
+    "optic_exemption": false,
+    "records": [
+      {
+        "path": "validation/records/p2/rest-T3e-decision.json",
+        "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+      },
+      {
+        "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+        "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+      }
+    ],
+    "screen": {
+      "F_max": 2.679567771889278,
+      "KC_hz": 0.08754104693838131,
+      "central_hz": 4.831463916491017,
+      "mn9_dark_max_hz": 2.9,
+      "passed": true
+    },
+    "sigma_th_mv": 0.0,
+    "w_bg_mv": 1.0
+  },
+  "encoder": "photoreceptors",
+  "engine_model": "lif",
+  "n": 10,
+  "per_seed_hz": [
+    0.970087027069861,
+    3.664301847574387,
+    1.4297683282198295,
+    1.9641453017366273,
+    1.6473162308940332,
+    1.1233961643039592,
+    1.5870583176541282,
+    1.2110975618371527,
+    3.04509265544575,
+    2.33270547208119
+  ],
+  "platform": "linux-aarch64",
+  "record": "bias-open-loop",
+  "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T065341.043782Z-861f6a67",
+  "settle_s_by_run": [
+    {
+      "run_dir": "<compute-home>/flyonenomics-t-0013/runs/20260920T065341.043782Z-861f6a67",
+      "settle_s": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    }
+  ],
+  "stage": "bias",
+  "status": "recorded",
+  "substrate_id": "rest:379cc4cc9030cdd1"
+}

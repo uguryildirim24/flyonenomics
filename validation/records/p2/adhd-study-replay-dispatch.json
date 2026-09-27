@@ -1,0 +1,34 @@
+{
+  "decision": "d-0023",
+  "purpose": "Dispatch existing unchanged adhd_study.run_seed jobs only; no scientific-code change or monkeypatching",
+  "qualified_bound_source": "b6b5ccca8b5036a00edf5428aa328b6b7f265fd9",
+  "5b_executed_commit": "e34ca1369acf5fd641225be757340ce184e092be",
+  "dispatcher_sha256": "8c26a107455eb46447512db8d3f9ec8e22ec8eb4982a1a7e79420c4ddec65f2e",
+  "dispatcher_source": "#!/usr/bin/env python3\n\"\"\"d-0023 dispatch only: unchanged frozen 5a run_seed jobs, split 2 + 8.\n\nNo runner monkeypatching, parameter changes, seed replacement or shortened arms.\n\"\"\"\nfrom pathlib import Path\nfrom datetime import datetime, timezone\nfrom concurrent.futures import ProcessPoolExecutor\nimport argparse\nimport multiprocessing\nimport os\nimport subprocess\nimport sys\n\nROOT = Path(__file__).resolve().parents[2]\nsys.path.insert(0, str(ROOT / 'scripts'))\nimport adhd_study as study\n\n\ndef main():\n    parser = argparse.ArgumentParser(description=__doc__)\n    parser.add_argument('batch', choices=('first-two', 'remaining-eight'))\n    args = parser.parse_args()\n    os.chdir(ROOT)\n    seeds = [101, 102] if args.batch == 'first-two' else list(range(103, 111))\n    workers = len(seeds)\n    plan_path = study.PLAN\n    identity = study.code_identity()\n    plan = study.read(plan_path)\n    for name, expected in plan['identity']['sha256'].items():\n        if identity['sha256'].get(name) != expected:\n            raise ValueError(f'frozen input or code differs: {name}')\n    if args.batch == 'first-two' and os.getpriority(os.PRIO_PROCESS, 0) != 10:\n        raise ValueError('d-0023 first-two batch must run under nice -n 10')\n    base = ROOT / 'camber-runs/adhd-study'\n    headroom = None\n    if args.batch == 'first-two':\n        finished = base / '5b-01.exit'\n        if finished.exists():\n            if finished.read_text().strip() != '0':\n                raise ValueError('5b failed; no replay continuation')\n            headroom = {'mode': 'after successful 5b; overlap not used'}\n        else:\n            if not all((base / f'5b-01/seed-{seed}-arm-00.json').exists() for seed in range(201, 211)):\n                raise ValueError('5b not yet steady: require all ten first-arm journals')\n            free = subprocess.check_output(['free', '-g'], text=True)\n            available = int(next(line for line in free.splitlines() if line.startswith('Mem:')).split()[6])\n            cores = int(subprocess.check_output(['nproc'], text=True))\n            load = list(os.getloadavg())\n            headroom = {'mode': 'concurrent with steady 5b', 'checked_utc': datetime.now(timezone.utc).isoformat(),\n                        'free_g': free, 'available_gb_as_printed': available, 'available_cpus': cores,\n                        'load_1_5_15': load, 'headroom_cores_using_max_load': cores-max(load),\n                        'all_ten_5b_first_arm_journals_present': True}\n            study.dump(base / 'replay-first-two.headroom.json', headroom)\n            if available < 20 or max(load) > cores-2:\n                print('d-0023: insufficient headroom; defer first-two until after 5b', flush=True)\n                raise SystemExit(78)\n    if args.batch == 'remaining-eight':\n        if (base / '5b-01.exit').read_text().strip() != '0':\n            raise ValueError('remaining eight seeds require successful 5b completion')\n    destination = base / '5a-02'\n    destination.mkdir(parents=True, exist_ok=True)\n    for seed in seeds:\n        if list(destination.glob(f'seed-{seed}*')):\n            raise ValueError(f'refusing to overwrite any seed-{seed} output')\n    request = base / f'replay-{args.batch}.request.json'\n    if request.exists():\n        raise ValueError('refusing to replace a prior batch request')\n    study.dump(request, {'decision': 'd-0023', 'seeds': seeds, 'workers': workers,\n                        'nice': os.getpriority(os.PRIO_PROCESS, 0), 'identity': identity,\n                        'plan_sha256': study.sha(plan_path), 'dispatcher_sha256': study.sha(Path(__file__)),\n                        'dispatcher_source': Path(__file__).read_text(), 'headroom': headroom,\n                        'worker': 'adhd_study.run_seed', 'stage': '5a',\n                        'model_runner_and_analysis_unchanged': True})\n    jobs = [(seed, '5a', str(plan_path.resolve()), str(destination.resolve()), None, identity)\n            for seed in seeds]\n    with ProcessPoolExecutor(max_workers=workers, mp_context=multiprocessing.get_context('spawn'),\n                             max_tasks_per_child=1) as pool:\n        print(list(pool.map(study.run_seed, jobs)), flush=True)\n\n\nif __name__ == '__main__':\n    main()\n",
+  "first_two_command": "nice -n 10 .venv/bin/python camber-runs/adhd-study/replay-batch.py first-two",
+  "remaining_eight_command": ".venv/bin/python camber-runs/adhd-study/replay-batch.py remaining-eight",
+  "seeds": {
+    "first_two": [
+      101,
+      102
+    ],
+    "remaining_eight": [
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ]
+  },
+  "workers": {
+    "first_two": 2,
+    "remaining_eight": 8
+  },
+  "output": "camber-runs/adhd-study/5a-02",
+  "steady_definition": "All ten 5b first-arm audit journals present; no 5b exit/error; numerical outcomes are not inspected for resource decisions.",
+  "overlap_checks": "free -g available>=20 and max(1,5,15 minute load)<=nproc-2, measured immediately before dispatch; otherwise exit78 before any neural job and defer until after5b.",
+  "worker_source_and_plan_checks": "Same code_identity and bound-source comparison as study.run; every existing run_seed also verifies worker identity, male binding and original full arm schedule."
+}

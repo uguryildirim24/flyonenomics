@@ -1,0 +1,44 @@
+[
+  {
+    "condition": "short",
+    "duration_ms": 100,
+    "run_wall_seconds": 22.937881249934435,
+    "build_seconds": 1.5912177079590037,
+    "total_spikes": 1214,
+    "active_neurons": 300,
+    "peak_rss_bytes": 3407708160,
+    "populations": {
+      "sugar": {
+        "n": 21,
+        "spikes": 327,
+        "active": 21
+      },
+      "MN9": {
+        "n": 1,
+        "spikes": 7,
+        "active": 1
+      }
+    }
+  },
+  {
+    "condition": "baseline",
+    "duration_ms": 1000,
+    "run_wall_seconds": 2.0533715409692377,
+    "build_seconds": 1.5912177079590037,
+    "total_spikes": 13113,
+    "active_neurons": 381,
+    "peak_rss_bytes": 3407773696,
+    "populations": {
+      "sugar": {
+        "n": 21,
+        "spikes": 3031,
+        "active": 21
+      },
+      "MN9": {
+        "n": 1,
+        "spikes": 77,
+        "active": 1
+      }
+    }
+  }
+]

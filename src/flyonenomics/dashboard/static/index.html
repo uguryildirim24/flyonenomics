@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyOnenomics Dashboard</title>
+  <link rel="stylesheet" href="/static/vendor/uPlot.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/vendor/uPlot.iife.min.js"></script>
+</head>
+<body>
+  <p id="phase1-status" role="status" hidden></p>
+  <p id="dashboard-error" role="alert" hidden></p>
+  <header class="app-header">
+    <div class="header-content">
+      <div class="header-title">
+        <h1>FlyOnenomics Dashboard</h1>
+        <span class="version-tag">WP8 &bull; Whole-Brain Simulation Analysis</span>
+      </div>
+      <div class="header-status">
+        <span id="global-status-badge" class="badge badge-idle">Ready</span>
+      </div>
+    </div>
+  </header>
+  <main class="dashboard-grid">
+    <!-- Run Picker and Selection Bar -->
+    <section id="runs-picker" class="card picker-card">
+      <div class="card-header">
+        <h2>Run Picker &amp; Protocol Navigation</h2>
+        <button id="refresh-runs-btn" class="btn btn-secondary">Refresh Runs</button>
+      </div>
+      <div class="picker-controls">
+        <div class="control-group">
+          <label for="run-select">Run ID</label>
+          <select id="run-select" class="form-control">
+            <option value="">Select a run...</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="arm-select">Arm</label>
+          <select id="arm-select" class="form-control" disabled>
+            <option value="">Select an arm...</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="seed-select">Seed</label>
+          <select id="seed-select" class="form-control" disabled>
+            <option value="">Select a seed...</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="probe-select">Probe</label>
+          <select id="probe-select" class="form-control" disabled>
+            <option value="0">Probe 0</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label>Lifecycle State</label>
+          <div id="run-lifecycle-badge" class="state-display">-</div>
+        </div>
+        <div class="control-group">
+          <label>Substrate</label>
+          <div id="run-substrate-badge" class="state-display">-</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifest Summary Panel -->
+    <section id="manifest-panel" class="card panel">
+      <div class="card-header">
+        <h2>Manifest Summary</h2>
+        <span class="panel-subtitle">Substrate, layers, free parameters, and validation entries</span>
+      </div>
+      <div class="panel-content">
+        <div class="manifest-grid">
+          <div class="manifest-block">
+            <h3>Layer Status</h3>
+            <div id="manifest-layers" class="tags-container">
+              <em>Select a run to view layers</em>
+            </div>
+          </div>
+          <div class="manifest-block">
+            <h3>Free Parameters</h3>
+            <div id="manifest-params" class="table-scroll">
+              <table class="data-table">
+                <thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+                <tbody><tr><td colspan="2"><em>No data</em></td></tr></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="manifest-block">
+            <h3>Slow-State Approximation</h3>
+            <div id="manifest-slowstate" class="manifest-text">
+              <em>None reported</em>
+            </div>
+          </div>
+          <div class="manifest-block">
+            <h3>Unsettled Reports</h3>
+            <div id="manifest-unsettled" class="manifest-text">
+              <em>None</em>
+            </div>
+          </div>
+          <div class="manifest-block">
+            <h3>Artefact Detector Results</h3>
+            <div id="manifest-artefacts" class="tags-container">
+              <em>None</em>
+            </div>
+          </div>
+          <div class="manifest-block">
+            <h3>Validation Entries</h3>
+            <div id="manifest-validation" class="table-scroll">
+              <table class="data-table">
+                <thead><tr><th>Test ID</th><th>Binding</th><th>Identity Hash</th></tr></thead>
+                <tbody><tr><td colspan="3"><em>No validation data</em></td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raster Plot Panel -->
+    <section id="raster-panel" class="card panel">
+      <div class="card-header">
+        <h2>Spike Raster (Recorded Populations)</h2>
+        <div class="header-actions">
+          <span id="raster-subsample-notice" class="subsample-badge">Subsampling stated here</span>
+        </div>
+      </div>
+      <div class="panel-content">
+        <div class="chart-wrapper">
+          <canvas id="raster-canvas" width="900" height="320"></canvas>
+        </div>
+        <div id="codex-link-box" class="codex-box">
+          <span class="codex-label">FlyWire Codex Link-Out:</span>
+          <a id="codex-pattern-link" href="https://codex.flywire.ai/app/cell_details?root_id=" target="_blank" style="display:none;">https://codex.flywire.ai/app/cell_details?root_id=</a>
+          <span id="codex-links" class="codex-list">Click a spike or select neuron</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Population Rates Panel -->
+    <section id="rates-panel" class="card panel">
+      <div class="card-header">
+        <h2>Population Firing Rates</h2>
+        <span class="panel-subtitle">Hz per rate_bin_ms bin across probe duration</span>
+      </div>
+      <div class="panel-content">
+        <div class="chart-wrapper">
+          <canvas id="rates-canvas" width="900" height="260"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dopamine & Receptor Occupancy Panel -->
+    <section id="dopamine-panel" class="card panel">
+      <div class="card-header">
+        <h2>Dopamine &amp; Receptor Occupancy</h2>
+        <div class="header-actions">
+          <button id="dopamine-toggle" class="btn btn-secondary btn-sm">Toggle Receptors (occ_D1 / occ_D2)</button>
+        </div>
+      </div>
+      <div class="panel-content">
+        <div id="dopamine-empty" class="empty-state">
+          <p>No neuromodulation layer in this run</p>
+        </div>
+        <div id="dopamine-chart-wrapper" class="chart-wrapper" style="display: none;">
+          <canvas id="dopamine-canvas" width="900" height="260"></canvas>
+        </div>
+        <div class="reference-note">
+          <span class="ref-line-sample"></span> Reference baseline: <code id="da-reference">DA_ref loading from Params</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arena Panel -->
+    <section id="arena-panel" class="card panel">
+      <div class="card-header">
+        <h2>Arena Behavior (Top-Down View &amp; Heading)</h2>
+        <span class="panel-subtitle">Trajectory (x, y) and heading angle (h) or steering tuning</span>
+      </div>
+      <div class="panel-content">
+        <div id="arena-empty" class="empty-state">
+          <p>No arena data in this run</p>
+        </div>
+        <div id="arena-chart-wrapper" class="chart-wrapper arena-wrapper" style="display: none;">
+          <canvas id="arena-canvas" width="450" height="450"></canvas>
+          <div id="arena-info" class="arena-info-panel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Table Panel -->
+    <section id="metrics-panel" class="card panel">
+      <div class="card-header">
+        <h2>Run-Level Metrics &amp; Paired Differences</h2>
+        <span class="panel-subtitle">Per-arm summaries and paired bootstrap 95% confidence intervals</span>
+      </div>
+      <div class="panel-content">
+        <div class="metrics-container">
+          <h3>Per-Arm Summaries</h3>
+          <pre id="metrics-notes"></pre>
+        <div id="metrics-summary-table" class="table-scroll">
+            <table class="data-table">
+              <thead><tr><th>Arm</th><th>Metric</th><th>Mean</th><th>SD</th><th>N</th></tr></thead>
+              <tbody><tr><td colspan="5"><em>No metrics loaded</em></td></tr></tbody>
+            </table>
+          </div>
+          <h3>Paired Differences</h3>
+          <div id="metrics-diffs-table" class="table-scroll">
+            <table class="data-table">
+              <thead><tr><th>Contrast</th><th>Metric</th><th>Mean Diff</th><th>SD</th><th>95% CI</th></tr></thead>
+              <tbody><tr><td colspan="5"><em>No paired differences</em></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-Run Compare Panel -->
+    <section id="compare-panel" class="card panel">
+      <div class="card-header">
+        <h2>Two-Run Comparison</h2>
+        <span class="panel-subtitle">Side-by-side metric comparison across experimental runs</span>
+      </div>
+      <div class="panel-content">
+        <div class="compare-controls">
+          <div class="control-group">
+            <label for="compare-run-a">Run A</label>
+            <select id="compare-run-a" class="form-control"></select>
+          </div>
+          <div class="control-group">
+            <label for="compare-run-b">Run B</label>
+            <select id="compare-run-b" class="form-control"></select>
+          </div>
+          <div class="control-group">
+            <label for="compare-metric">Metric Filter</label>
+            <input type="text" id="compare-metric" class="form-control" placeholder="Optional filter (e.g. MN9)">
+          </div>
+          <div class="control-group align-end">
+            <button id="execute-compare-btn" class="btn btn-primary">Compare Runs</button>
+          </div>
+        </div>
+        <p id="compare-pairing"></p>
+        <div id="compare-results" class="table-scroll">
+          <table class="data-table">
+            <thead><tr><th>Metric</th><th>Run A</th><th>Run B</th><th>Difference</th></tr></thead>
+            <tbody><tr><td colspan="4"><em>Select runs and click Compare</em></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Streaming Panel -->
+    <section id="live-panel" class="card panel">
+      <div class="card-header">
+        <h2>Live Mode (WebSocket Streaming)</h2>
+        <div class="header-actions">
+          <span id="live-status-indicator" class="live-status badge badge-idle">Disconnected</span>
+          <button id="live-connect-btn" class="btn btn-secondary btn-sm">Start Live Stream</button>
+        </div>
+      </div>
+      <div class="panel-content">
+        <div class="live-grid">
+          <div class="live-stat-card">
+            <div class="stat-label">Brain Clock</div>
+            <div id="live-time" class="stat-value">0.00 ms (tick 0)</div>
+          </div>
+          <div class="live-stat-card">
+            <div class="stat-label">Spike Sample Rate</div>
+            <div id="live-spikes-count" class="stat-value">0 spikes</div>
+          </div>
+          <div class="live-stat-card">
+            <div class="stat-label">Status State</div>
+            <div id="live-state-display" class="stat-value">-</div>
+          </div>
+        </div>
+        <div class="live-log-wrapper">
+          <h3>Stream Packets (Max 10 Hz)</h3>
+          <pre id="live-packet-log" class="code-log">Live mode stream output will appear here...</pre>
+        </div>
+      </div>
+    </section>
+    <!-- Live Activity View Panel (WP13, SPEC item 66; WP23, SPEC-P2 section 7) -->
+    <section id="live-activity-panel" class="card panel">
+      <div class="card-header">
+        <h2>Live Activity View</h2>
+        <div class="header-actions">
+          <span id="live-activity-status" class="badge badge-idle">No data</span>
+          <button id="live-activity-watch-btn" class="btn btn-secondary btn-sm">Watch Live</button>
+        </div>
+      </div>
+      <div class="panel-content">
+        <p class="panel-subtitle">Version 2 streams chart the whole-network spike count per live window and per-neuron population rates in Hz; version 1 streams keep the partial labels (sum over recorded populations, which may overlap and need not cover the brain; aggregate spikes per second). Measured values only, no smoothing, no interpolation</p>
+        <div class="live-activity-controls">
+          <div class="control-group">
+            <label for="live-activity-rate-a">Rate population 1</label>
+            <select id="live-activity-rate-a" class="form-control"></select>
+          </div>
+          <div class="control-group">
+            <label for="live-activity-rate-b">Rate population 2</label>
+            <select id="live-activity-rate-b" class="form-control"></select>
+          </div>
+        </div>
+        <div id="live-activity-empty" class="empty-state">
+          <p>No data</p>
+        </div>
+        <div id="live-activity-chart" class="live-activity-chart" style="display: none;"></div>
+        <div id="live-activity-stage-strip" class="stage-strip" style="display: none;"></div>
+        <div id="live-activity-raster-wrapper" class="chart-wrapper" style="display: none;">
+          <h3>Sampled Spike Raster (recorded live sample)</h3>
+          <canvas id="live-activity-raster" width="900" height="200"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-content">
+      <span>FlyOnenomics Simulation Architecture &bull; WP8 Dashboard</span>
+      <span>No 3D Viewer in Phase 1 &bull; Codex link-out enabled</span>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+  <script src="/static/live-activity.js"></script>
+</body>
+</html>

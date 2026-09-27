@@ -1,0 +1,65 @@
+{
+  "probes": {
+    "0": {
+      "label": "upstream",
+      "assay": "sugar_reflex",
+      "duration_s": 1.0,
+      "populations": {
+        "sugar_GRN_R": {
+          "mean_rate_hz": 150.76190476190476,
+          "spikes": 3166,
+          "neuron_count": 21,
+          "seconds": 1.0
+        },
+        "MN9": {
+          "mean_rate_hz": 73.0,
+          "spikes": 73,
+          "neuron_count": 1,
+          "seconds": 1.0
+        }
+      },
+      "popcount": {
+        "mean_per_1ms": 13.671,
+        "max_per_1ms": 35,
+        "bins": 1000
+      },
+      "MN9": {
+        "mean_rate_hz": 73.0,
+        "spikes": 73,
+        "neuron_count": 1,
+        "seconds": 1.0
+      }
+    },
+    "1": {
+      "label": "extended",
+      "assay": "sugar_reflex",
+      "duration_s": 1.0,
+      "populations": {
+        "sugar_GRN_R": {
+          "mean_rate_hz": 79.80952380952381,
+          "spikes": 1676,
+          "neuron_count": 21,
+          "seconds": 1.0
+        },
+        "MN9": {
+          "mean_rate_hz": 47.0,
+          "spikes": 47,
+          "neuron_count": 1,
+          "seconds": 1.0
+        }
+      },
+      "popcount": {
+        "mean_per_1ms": 7.987,
+        "max_per_1ms": 22,
+        "bins": 1000
+      },
+      "MN9": {
+        "mean_rate_hz": 47.0,
+        "spikes": 47,
+        "neuron_count": 1,
+        "seconds": 1.0
+      }
+    }
+  },
+  "slow_state": "phase1-drug-only"
+}

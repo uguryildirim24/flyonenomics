@@ -1,0 +1,13 @@
+{
+  "palette": {
+    "neutral": "#6A7B90",
+    "up": [[0.0, "#6A7B90"], [0.12, "#B8502A"], [0.45, "#FF8A2E"], [1.0, "#FFD98A"]],
+    "down": [[0.0, "#6A7B90"], [0.12, "#2748A6"], [0.45, "#2F7FEA"], [1.0, "#7CC4FF"]]
+  },
+  "background": "#04060A", "shell": "#7F97B4", "neuropil": "#5C7593",
+  "shell_rim": 0.3, "shell_power": 4.0, "shell_fill": 0.002, "neuropil_rim": 0.16,
+  "dot_radius": 0.42, "neutral_glow": 1.6, "neutral_alpha": 0.07, "change_glow": 3.0, "change_alpha": 0.95,
+  "down_gain": 0.8, "path_radius": 0.32, "path_glow": 0.45, "path_alpha": 0.6,
+  "flash_glow": 2.2, "flash_gain": 1.2,
+  "bloom": 0.3, "bloom_size": 0.35, "bloom_threshold": 1.2, "samples": 64
+}

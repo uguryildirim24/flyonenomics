@@ -1,0 +1,4 @@
+{
+  "cases": ["bare-v630-for-layers-on-v783", "layers-off-4.3-for-on", "other-protocol-0.6", "uv-lock-drift-all"],
+  "compatible": [true, false, false]
+}

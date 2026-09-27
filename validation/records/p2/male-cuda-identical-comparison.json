@@ -1,0 +1,2247 @@
+{
+  "schema": "cuda-identical-comparison-v1",
+  "definition": "signed differences = CUDA minus Brian2",
+  "plan_sha256": "69fdfba86b08842b981e119f5d41745b3bab746f8d5593730e02f70df58b377c",
+  "rows": [
+    {
+      "seed": 501,
+      "condition": "control",
+      "windows": {
+        "settle": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      },
+      "first_spike_divergence": null,
+      "spike_symmetric_difference": 0,
+      "runs": [
+        {
+          "backend": "brian",
+          "seed": 501,
+          "condition": "control",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "macOS-27.0-arm64-arm-64bit",
+          "python": "3.12.14",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 38.33928299997933,
+          "input_load_s": 1.8714359977748245,
+          "stepping_s": 47.63659699738491,
+          "archive_s": 0.8233687953324988,
+          "total_s": 88.72320975002367,
+          "disabled_random_objects": [
+            "poissoninput",
+            "extended_e0"
+          ],
+          "counts_sha256": "b56725bd2b1dc4460a1ca3ea7a2f679d37df869aa1e8854fac08b18049dd2958",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "d3937c99f7db928d25cfa3009f91fb29a4d965dbefdab1d00eb84b5b4caf02c5",
+              "spikes": 210440
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "7f9e3cccadd28056b191b666628442a3a8c1e87fa4db233d05f4b76877a2171e",
+              "spikes": 235206
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "5eaef826571b94cc7ee80155765d43c8b82da742b4dc9132aadde1f312c09ea8",
+              "spikes": 237869
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "c76712f767416c860668b4ec0bc898404d1cea1897ca9fb3311adf3326fdbfb3",
+              "spikes": 238975
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "d0712edb6d7cff985ac94861c59812edd1e02ce8285b458ea311c5d8fa98feca",
+              "spikes": 235912
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "4f65293ddfac0594553b79963c941fbc45eeaf07c46ddd5148127c2d6cd764b4",
+              "spikes": 232257
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "7c77daef2d922b5aeeb5a60136c7473ebd58dce35a2bc99f39b731627d6b8fb8",
+              "spikes": 233360
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "302ef61bbdc1bb9e1e82ca98c7a8a05ab4336f5f89c51fc961c8a56cbadda624",
+              "spikes": 243766
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "6745073b5a5d95789a798d6eea7577bc35193cac1478c20bc8d29c57cbe59d3d",
+              "spikes": 234669
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "646e05caa789e3bc94853edf9dd86e8ad5d82b75ec45cb49474f37d662810e52",
+              "spikes": 233600
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "b0eed4853d25c030ba9ee39017776450888a491680a83724b6cfa46c85864995",
+              "spikes": 235001
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "d9ff9e2a2740150d0041343e037b7615f7e62328a3bf9da52579b1fa461e16c8",
+              "spikes": 247567
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 1.4250681198910082,
+              "ER": 0.6205673758865248,
+              "KC": 0.015378937007874016,
+              "ascending": 3.5438074634937804,
+              "central": 4.708737004527863,
+              "descending": 3.6267123287671232,
+              "endocrine": 3.4827586206896552,
+              "motor": 9.735062006764375,
+              "optic": 0.012780768412924021,
+              "sensory": 0.8388052743740011,
+              "visual_centrifugal": 2.4724199288256226,
+              "visual_projection": 0.05748125611213735,
+              "P1": 0.037162162162162164,
+              "pIP10": 0.75,
+              "dPR1": 12.0,
+              "vPR6": 0.0,
+              "TN1a": 0.6363636363636364,
+              "TN1c": 0.38461538461538464,
+              "wing_motor": 20.848484848484848,
+              "outside_sensory": 1.4252615236506871
+            },
+            "on": {
+              "DAN": 1.5149863760217985,
+              "ER": 0.47304964539007094,
+              "KC": 0.010580708661417323,
+              "ascending": 3.8068144943212543,
+              "central": 4.972028431942934,
+              "descending": 3.8181126331811264,
+              "endocrine": 3.8298850574712646,
+              "motor": 10.547237880496054,
+              "optic": 0.014989983548397928,
+              "sensory": 0.8862546616941929,
+              "visual_centrifugal": 2.5765124555160144,
+              "visual_projection": 0.05902423122894708,
+              "P1": 0.05540540540540541,
+              "pIP10": 0.8,
+              "dPR1": 10.9,
+              "vPR6": 0.0,
+              "TN1a": 0.7545454545454546,
+              "TN1c": 0.3384615384615385,
+              "wing_motor": 25.10909090909091,
+              "outside_sensory": 1.5075599487461102
+            },
+            "off": {
+              "DAN": 1.5258855585831061,
+              "ER": 0.6007092198581561,
+              "KC": 0.010137795275590552,
+              "ascending": 3.8496484586262847,
+              "central": 5.020554979384312,
+              "descending": 4.0098934550989345,
+              "endocrine": 4.050574712643678,
+              "motor": 10.543404735062007,
+              "optic": 0.01802737457052365,
+              "sensory": 0.904368673415024,
+              "visual_centrifugal": 3.1540925266903916,
+              "visual_projection": 0.06710855155927416,
+              "P1": 0.03918918918918919,
+              "pIP10": 0.2,
+              "dPR1": 11.9,
+              "vPR6": 0.0,
+              "TN1a": 0.5636363636363637,
+              "TN1c": 0.16923076923076924,
+              "wing_motor": 26.03333333333333,
+              "outside_sensory": 1.527722523915092
+            },
+            "measure": {
+              "DAN": 1.5204359673024523,
+              "ER": 0.5368794326241135,
+              "KC": 0.010359251968503937,
+              "ascending": 3.82823147647377,
+              "central": 4.996291705663623,
+              "descending": 3.9140030441400304,
+              "endocrine": 3.940229885057471,
+              "motor": 10.54532130777903,
+              "optic": 0.01650867905946079,
+              "sensory": 0.8953116675546084,
+              "visual_centrifugal": 2.865302491103203,
+              "visual_projection": 0.06306639139411062,
+              "P1": 0.0472972972972973,
+              "pIP10": 0.5,
+              "dPR1": 11.4,
+              "vPR6": 0.0,
+              "TN1a": 0.6590909090909091,
+              "TN1c": 0.25384615384615383,
+              "wing_motor": 25.57121212121212,
+              "outside_sensory": 1.517641236330601
+            }
+          }
+        },
+        {
+          "backend": "cuda",
+          "seed": 501,
+          "condition": "control",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "Linux-4.19.0-gvisor-x86_64-with-glibc2.35",
+          "python": "3.12.1",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 213.173897317,
+          "input_load_s": 17.12402477699993,
+          "stepping_s": 13.61211275100004,
+          "archive_s": 3.4136990670000102,
+          "total_s": 247.54032715300002,
+          "disabled_random_objects": [
+            "CUDA random background replaced; extended rates zero"
+          ],
+          "counts_sha256": "b56725bd2b1dc4460a1ca3ea7a2f679d37df869aa1e8854fac08b18049dd2958",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "d3937c99f7db928d25cfa3009f91fb29a4d965dbefdab1d00eb84b5b4caf02c5",
+              "spikes": 210440
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "7f9e3cccadd28056b191b666628442a3a8c1e87fa4db233d05f4b76877a2171e",
+              "spikes": 235206
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "5eaef826571b94cc7ee80155765d43c8b82da742b4dc9132aadde1f312c09ea8",
+              "spikes": 237869
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "c76712f767416c860668b4ec0bc898404d1cea1897ca9fb3311adf3326fdbfb3",
+              "spikes": 238975
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "d0712edb6d7cff985ac94861c59812edd1e02ce8285b458ea311c5d8fa98feca",
+              "spikes": 235912
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "4f65293ddfac0594553b79963c941fbc45eeaf07c46ddd5148127c2d6cd764b4",
+              "spikes": 232257
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "7c77daef2d922b5aeeb5a60136c7473ebd58dce35a2bc99f39b731627d6b8fb8",
+              "spikes": 233360
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "302ef61bbdc1bb9e1e82ca98c7a8a05ab4336f5f89c51fc961c8a56cbadda624",
+              "spikes": 243766
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "6745073b5a5d95789a798d6eea7577bc35193cac1478c20bc8d29c57cbe59d3d",
+              "spikes": 234669
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "646e05caa789e3bc94853edf9dd86e8ad5d82b75ec45cb49474f37d662810e52",
+              "spikes": 233600
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "b0eed4853d25c030ba9ee39017776450888a491680a83724b6cfa46c85864995",
+              "spikes": 235001
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "d9ff9e2a2740150d0041343e037b7615f7e62328a3bf9da52579b1fa461e16c8",
+              "spikes": 247567
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 1.4250681198910082,
+              "ER": 0.6205673758865248,
+              "KC": 0.015378937007874016,
+              "ascending": 3.5438074634937804,
+              "central": 4.708737004527863,
+              "descending": 3.6267123287671232,
+              "endocrine": 3.4827586206896552,
+              "motor": 9.735062006764375,
+              "optic": 0.012780768412924021,
+              "sensory": 0.8388052743740011,
+              "visual_centrifugal": 2.4724199288256226,
+              "visual_projection": 0.05748125611213735,
+              "P1": 0.037162162162162164,
+              "pIP10": 0.75,
+              "dPR1": 12.0,
+              "vPR6": 0.0,
+              "TN1a": 0.6363636363636364,
+              "TN1c": 0.38461538461538464,
+              "wing_motor": 20.848484848484848,
+              "outside_sensory": 1.4252615236506871
+            },
+            "on": {
+              "DAN": 1.5149863760217985,
+              "ER": 0.47304964539007094,
+              "KC": 0.010580708661417323,
+              "ascending": 3.8068144943212543,
+              "central": 4.972028431942934,
+              "descending": 3.8181126331811264,
+              "endocrine": 3.8298850574712646,
+              "motor": 10.547237880496054,
+              "optic": 0.014989983548397928,
+              "sensory": 0.8862546616941929,
+              "visual_centrifugal": 2.5765124555160144,
+              "visual_projection": 0.05902423122894708,
+              "P1": 0.05540540540540541,
+              "pIP10": 0.8,
+              "dPR1": 10.9,
+              "vPR6": 0.0,
+              "TN1a": 0.7545454545454546,
+              "TN1c": 0.3384615384615385,
+              "wing_motor": 25.10909090909091,
+              "outside_sensory": 1.5075599487461102
+            },
+            "off": {
+              "DAN": 1.5258855585831061,
+              "ER": 0.6007092198581561,
+              "KC": 0.010137795275590552,
+              "ascending": 3.8496484586262847,
+              "central": 5.020554979384312,
+              "descending": 4.0098934550989345,
+              "endocrine": 4.050574712643678,
+              "motor": 10.543404735062007,
+              "optic": 0.01802737457052365,
+              "sensory": 0.904368673415024,
+              "visual_centrifugal": 3.1540925266903916,
+              "visual_projection": 0.06710855155927416,
+              "P1": 0.03918918918918919,
+              "pIP10": 0.2,
+              "dPR1": 11.9,
+              "vPR6": 0.0,
+              "TN1a": 0.5636363636363637,
+              "TN1c": 0.16923076923076924,
+              "wing_motor": 26.03333333333333,
+              "outside_sensory": 1.527722523915092
+            },
+            "measure": {
+              "DAN": 1.5204359673024523,
+              "ER": 0.5368794326241135,
+              "KC": 0.010359251968503937,
+              "ascending": 3.82823147647377,
+              "central": 4.996291705663623,
+              "descending": 3.9140030441400304,
+              "endocrine": 3.940229885057471,
+              "motor": 10.54532130777903,
+              "optic": 0.01650867905946079,
+              "sensory": 0.8953116675546084,
+              "visual_centrifugal": 2.865302491103203,
+              "visual_projection": 0.06306639139411062,
+              "P1": 0.0472972972972973,
+              "pIP10": 0.5,
+              "dPR1": 11.4,
+              "vPR6": 0.0,
+              "TN1a": 0.6590909090909091,
+              "TN1c": 0.25384615384615383,
+              "wing_motor": 25.57121212121212,
+              "outside_sensory": 1.517641236330601
+            }
+          },
+          "gpu": "NVIDIA L4"
+        }
+      ]
+    },
+    {
+      "seed": 501,
+      "condition": "off-gaba",
+      "windows": {
+        "settle": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      },
+      "first_spike_divergence": null,
+      "spike_symmetric_difference": 0,
+      "runs": [
+        {
+          "backend": "brian",
+          "seed": 501,
+          "condition": "off-gaba",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "macOS-27.0-arm64-arm-64bit",
+          "python": "3.12.14",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 43.05721662507858,
+          "input_load_s": 1.9394624589476734,
+          "stepping_s": 83.5111696239328,
+          "archive_s": 8.532630082801916,
+          "total_s": 137.12308854202274,
+          "disabled_random_objects": [
+            "poissoninput",
+            "extended_e0"
+          ],
+          "counts_sha256": "61c3490d1a31f84ce4d44c7ac2fc7a99012f552edb79ee3497be85339548b762",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "eeda31c4550fb33ca983191c370398fb923b494e300d92d7b167af408510f3ac",
+              "spikes": 2014442
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "debfc2ebeca9e47bedb8a91f38a8c1d83248da1c3c8a353176813ad2d09fbc64",
+              "spikes": 2238032
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "3b7b030b59925f8c30b738126b29b8c8e5d1057e8b8dbbc2b79eb5eb7243707f",
+              "spikes": 2237886
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "39272198824d677f1548cc71d927ea3a5f9259a8271e9c1153931adfaed3573c",
+              "spikes": 2238224
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "13715b96e2b22fe923c7ad617bd2becf8cbe328d9913b7950b2e17e711819401",
+              "spikes": 2233304
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "fd072ebab28bb5e05fe9b1170ca3007963192513f4879e67e20e4d2214e48954",
+              "spikes": 2234182
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "6ce9a796f50ce3b306261647fda0828c09119f4b42b4a5d71a8124c3a6cd0a7b",
+              "spikes": 2238190
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "148cb6bc013a92c93ee4cf6555b2de40d378e063a0e1fb9fc35db5b7a97b75b8",
+              "spikes": 2234519
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "7708ed703e71e191ad768a18c08a98a356aa62315205bdb1d66850cf8acdf37a",
+              "spikes": 2239252
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "8a9ffff5fa3b099b314b1888e6569b3929166a934c9a3b9117875b362b5dc601",
+              "spikes": 2239496
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "b3fb917a55d2796eab599d9440d4c4b9ad434a2479f3ea295176e01e4b613b62",
+              "spikes": 2244161
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "da7d1dc9c9d2bb4450615d491ce80c96a94a2eee0f7d133c9340cb4ce88f8488",
+              "spikes": 2245571
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 133.2356948228883,
+              "ER": 4.278368794326241,
+              "KC": 139.85531496062993,
+              "ascending": 51.11005949161709,
+              "central": 26.22183998178737,
+              "descending": 27.556316590563167,
+              "endocrine": 14.068965517241379,
+              "motor": 54.93291995490417,
+              "optic": 0.3179076248139402,
+              "sensory": 16.014917421417156,
+              "visual_centrifugal": 21.33896797153025,
+              "visual_projection": 1.0424318157122678,
+              "P1": 6.179054054054054,
+              "pIP10": 78.75,
+              "dPR1": 0.75,
+              "vPR6": 0.0,
+              "TN1a": 66.31818181818181,
+              "TN1c": 49.07692307692308,
+              "wing_motor": 160.88636363636363,
+              "outside_sensory": 12.784706544362411
+            },
+            "on": {
+              "DAN": 140.64959128065396,
+              "ER": 3.9730496453900708,
+              "KC": 147.4814960629921,
+              "ascending": 53.63190914007572,
+              "central": 27.54068752687628,
+              "descending": 28.98888888888889,
+              "endocrine": 14.409195402298852,
+              "motor": 57.12874859075536,
+              "optic": 0.332132105245487,
+              "sensory": 16.92547948854555,
+              "visual_centrifugal": 22.119217081850532,
+              "visual_projection": 1.0912745843746605,
+              "P1": 6.352702702702702,
+              "pIP10": 84.2,
+              "dPR1": 5.4,
+              "vPR6": 0.0,
+              "TN1a": 71.13636363636364,
+              "TN1c": 52.15384615384615,
+              "wing_motor": 168.2878787878788,
+              "outside_sensory": 13.438581433346215
+            },
+            "off": {
+              "DAN": 140.4675749318801,
+              "ER": 2.861702127659574,
+              "KC": 147.46958661417324,
+              "ascending": 53.956192536506215,
+              "central": 27.594010067538512,
+              "descending": 29.107001522070014,
+              "endocrine": 14.494252873563218,
+              "motor": 57.341826381059754,
+              "optic": 0.3301153850458295,
+              "sensory": 17.02417421417155,
+              "visual_centrifugal": 22.191814946619218,
+              "visual_projection": 1.120547647506248,
+              "P1": 6.297297297297297,
+              "pIP10": 86.2,
+              "dPR1": 0.9,
+              "vPR6": 0.0,
+              "TN1a": 70.9,
+              "TN1c": 52.30769230769231,
+              "wing_motor": 168.14545454545456,
+              "outside_sensory": 13.45729723866279
+            },
+            "measure": {
+              "DAN": 140.558583106267,
+              "ER": 3.4173758865248223,
+              "KC": 147.47554133858267,
+              "ascending": 53.79405083829097,
+              "central": 27.567348797207398,
+              "descending": 29.047945205479454,
+              "endocrine": 14.451724137931034,
+              "motor": 57.235287485907556,
+              "optic": 0.33112374514565823,
+              "sensory": 16.97482685135855,
+              "visual_centrifugal": 22.155516014234877,
+              "visual_projection": 1.1059111159404542,
+              "P1": 6.325,
+              "pIP10": 85.2,
+              "dPR1": 3.15,
+              "vPR6": 0.0,
+              "TN1a": 71.01818181818182,
+              "TN1c": 52.230769230769226,
+              "wing_motor": 168.21666666666667,
+              "outside_sensory": 13.4479393360045
+            }
+          }
+        },
+        {
+          "backend": "cuda",
+          "seed": 501,
+          "condition": "off-gaba",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "Linux-4.19.0-gvisor-x86_64-with-glibc2.35",
+          "python": "3.12.1",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 269.541845288,
+          "input_load_s": 11.641355600999873,
+          "stepping_s": 21.327326863000053,
+          "archive_s": 32.09004572900028,
+          "total_s": 334.87391886600005,
+          "disabled_random_objects": [
+            "CUDA random background replaced; extended rates zero"
+          ],
+          "counts_sha256": "61c3490d1a31f84ce4d44c7ac2fc7a99012f552edb79ee3497be85339548b762",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "eeda31c4550fb33ca983191c370398fb923b494e300d92d7b167af408510f3ac",
+              "spikes": 2014442
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "debfc2ebeca9e47bedb8a91f38a8c1d83248da1c3c8a353176813ad2d09fbc64",
+              "spikes": 2238032
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "3b7b030b59925f8c30b738126b29b8c8e5d1057e8b8dbbc2b79eb5eb7243707f",
+              "spikes": 2237886
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "39272198824d677f1548cc71d927ea3a5f9259a8271e9c1153931adfaed3573c",
+              "spikes": 2238224
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "13715b96e2b22fe923c7ad617bd2becf8cbe328d9913b7950b2e17e711819401",
+              "spikes": 2233304
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "fd072ebab28bb5e05fe9b1170ca3007963192513f4879e67e20e4d2214e48954",
+              "spikes": 2234182
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "6ce9a796f50ce3b306261647fda0828c09119f4b42b4a5d71a8124c3a6cd0a7b",
+              "spikes": 2238190
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "148cb6bc013a92c93ee4cf6555b2de40d378e063a0e1fb9fc35db5b7a97b75b8",
+              "spikes": 2234519
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "7708ed703e71e191ad768a18c08a98a356aa62315205bdb1d66850cf8acdf37a",
+              "spikes": 2239252
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "8a9ffff5fa3b099b314b1888e6569b3929166a934c9a3b9117875b362b5dc601",
+              "spikes": 2239496
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "b3fb917a55d2796eab599d9440d4c4b9ad434a2479f3ea295176e01e4b613b62",
+              "spikes": 2244161
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "da7d1dc9c9d2bb4450615d491ce80c96a94a2eee0f7d133c9340cb4ce88f8488",
+              "spikes": 2245571
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 133.2356948228883,
+              "ER": 4.278368794326241,
+              "KC": 139.85531496062993,
+              "ascending": 51.11005949161709,
+              "central": 26.22183998178737,
+              "descending": 27.556316590563167,
+              "endocrine": 14.068965517241379,
+              "motor": 54.93291995490417,
+              "optic": 0.3179076248139402,
+              "sensory": 16.014917421417156,
+              "visual_centrifugal": 21.33896797153025,
+              "visual_projection": 1.0424318157122678,
+              "P1": 6.179054054054054,
+              "pIP10": 78.75,
+              "dPR1": 0.75,
+              "vPR6": 0.0,
+              "TN1a": 66.31818181818181,
+              "TN1c": 49.07692307692308,
+              "wing_motor": 160.88636363636363,
+              "outside_sensory": 12.784706544362411
+            },
+            "on": {
+              "DAN": 140.64959128065396,
+              "ER": 3.9730496453900708,
+              "KC": 147.4814960629921,
+              "ascending": 53.63190914007572,
+              "central": 27.54068752687628,
+              "descending": 28.98888888888889,
+              "endocrine": 14.409195402298852,
+              "motor": 57.12874859075536,
+              "optic": 0.332132105245487,
+              "sensory": 16.92547948854555,
+              "visual_centrifugal": 22.119217081850532,
+              "visual_projection": 1.0912745843746605,
+              "P1": 6.352702702702702,
+              "pIP10": 84.2,
+              "dPR1": 5.4,
+              "vPR6": 0.0,
+              "TN1a": 71.13636363636364,
+              "TN1c": 52.15384615384615,
+              "wing_motor": 168.2878787878788,
+              "outside_sensory": 13.438581433346215
+            },
+            "off": {
+              "DAN": 140.4675749318801,
+              "ER": 2.861702127659574,
+              "KC": 147.46958661417324,
+              "ascending": 53.956192536506215,
+              "central": 27.594010067538512,
+              "descending": 29.107001522070014,
+              "endocrine": 14.494252873563218,
+              "motor": 57.341826381059754,
+              "optic": 0.3301153850458295,
+              "sensory": 17.02417421417155,
+              "visual_centrifugal": 22.191814946619218,
+              "visual_projection": 1.120547647506248,
+              "P1": 6.297297297297297,
+              "pIP10": 86.2,
+              "dPR1": 0.9,
+              "vPR6": 0.0,
+              "TN1a": 70.9,
+              "TN1c": 52.30769230769231,
+              "wing_motor": 168.14545454545456,
+              "outside_sensory": 13.45729723866279
+            },
+            "measure": {
+              "DAN": 140.558583106267,
+              "ER": 3.4173758865248223,
+              "KC": 147.47554133858267,
+              "ascending": 53.79405083829097,
+              "central": 27.567348797207398,
+              "descending": 29.047945205479454,
+              "endocrine": 14.451724137931034,
+              "motor": 57.235287485907556,
+              "optic": 0.33112374514565823,
+              "sensory": 16.97482685135855,
+              "visual_centrifugal": 22.155516014234877,
+              "visual_projection": 1.1059111159404542,
+              "P1": 6.325,
+              "pIP10": 85.2,
+              "dPR1": 3.15,
+              "vPR6": 0.0,
+              "TN1a": 71.01818181818182,
+              "TN1c": 52.230769230769226,
+              "wing_motor": 168.21666666666667,
+              "outside_sensory": 13.4479393360045
+            }
+          },
+          "gpu": "NVIDIA L4"
+        }
+      ]
+    },
+    {
+      "seed": 502,
+      "condition": "control",
+      "windows": {
+        "settle": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      },
+      "first_spike_divergence": null,
+      "spike_symmetric_difference": 0,
+      "runs": [
+        {
+          "backend": "brian",
+          "seed": 502,
+          "condition": "control",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "macOS-27.0-arm64-arm-64bit",
+          "python": "3.12.14",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 34.907258499995805,
+          "input_load_s": 1.8011054985690862,
+          "stepping_s": 36.72590458393097,
+          "archive_s": 0.7693290010793135,
+          "total_s": 74.26554674992803,
+          "disabled_random_objects": [
+            "extended_e0",
+            "poissoninput"
+          ],
+          "counts_sha256": "39e2c2d2796a55ff27bb48fe5829444eb7c7f38b03671068f3a240e253fbb6f1",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "f1294033ffc3be2422d56c1f74a4fa39e0ce968e0255d4a155e1aeecc2299d96",
+              "spikes": 181634
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "a7bae59fe832f384d4f762b30f97e040658b35037d0ae46e37229791bf5f9815",
+              "spikes": 223467
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "f5ba8e5c76abc853ea0ec920a40e395d49d5e0801b610ad01aede348f3b8a097",
+              "spikes": 223800
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "3971df2f04f03b8be77f8ed69de587953fe579830e8d040a0ec3166161ab8ca9",
+              "spikes": 223617
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "4e83a6776d94e59e604b6b843efe02a4f3158f6513e5b9168acc04f544c88f0f",
+              "spikes": 224144
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "0b83cd68511ddd3e7add53b5e7a355d573ae115e39535f3e5e2f35b46ff84e2d",
+              "spikes": 228236
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "54fdeeb035c14a119680131fb95d22168f5e4932d972af3eae80b6799d25f760",
+              "spikes": 218132
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "3948f943ef4d9b4536c0e57e35a1897591bbb8db9a91a6d250563b2a05950edb",
+              "spikes": 224577
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "72f004fe28e85bceba11907853700317b0645d0bdfb9121beb0b7d8fcb78aae0",
+              "spikes": 221587
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "9c79872e665804b561a1de2eba476dcc31ccacf399b175367847e9fe8bd9bc79",
+              "spikes": 224558
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "92a7d7e090b95d683c299978e78ad779a9b42da1354fa956ee23f2f6fa084181",
+              "spikes": 220385
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "111b9db7efdc9eea45cb3307d32b76f7c0d18d0837fe6edec8e1ae1f9ac43f7c",
+              "spikes": 221097
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 1.3760217983651226,
+              "ER": 0.5815602836879432,
+              "KC": 0.011195866141732283,
+              "ascending": 2.156030286641428,
+              "central": 4.377937419371158,
+              "descending": 3.404109589041096,
+              "endocrine": 2.3620689655172415,
+              "motor": 4.570462232243518,
+              "optic": 0.018673127930791355,
+              "sensory": 0.8152970165157166,
+              "visual_centrifugal": 2.78914590747331,
+              "visual_projection": 0.06144735412365533,
+              "P1": 0.0945945945945946,
+              "pIP10": 5.0,
+              "dPR1": 23.5,
+              "vPR6": 0.0,
+              "TN1a": 3.6363636363636362,
+              "TN1c": 0.0,
+              "wing_motor": 17.333333333333332,
+              "outside_sensory": 1.290214981593345
+            },
+            "on": {
+              "DAN": 1.6463215258855588,
+              "ER": 0.7290780141843972,
+              "KC": 0.007874015748031496,
+              "ascending": 3.3262303948080048,
+              "central": 4.745265980320239,
+              "descending": 3.9966514459665143,
+              "endocrine": 3.567816091954023,
+              "motor": 6.108455467869222,
+              "optic": 0.024464763354336172,
+              "sensory": 0.9062200319659031,
+              "visual_centrifugal": 2.988256227758007,
+              "visual_projection": 0.059306747799630556,
+              "P1": 0.12432432432432432,
+              "pIP10": 5.5,
+              "dPR1": 26.7,
+              "vPR6": 0.0,
+              "TN1a": 3.8,
+              "TN1c": 0.0,
+              "wing_motor": 30.75151515151515,
+              "outside_sensory": 1.4235700096948496
+            },
+            "off": {
+              "DAN": 1.7171662125340599,
+              "ER": 0.524113475177305,
+              "KC": 0.007874015748031496,
+              "ascending": 3.3182260681449436,
+              "central": 4.721700857511446,
+              "descending": 3.96468797564688,
+              "endocrine": 3.6252873563218393,
+              "motor": 5.96978579481398,
+              "optic": 0.024207357335511957,
+              "sensory": 0.9082578582844965,
+              "visual_centrifugal": 2.9516014234875447,
+              "visual_projection": 0.05998044116049115,
+              "P1": 0.1135135135135135,
+              "pIP10": 4.7,
+              "dPR1": 25.4,
+              "vPR6": 0.0,
+              "TN1a": 3.581818181818182,
+              "TN1c": 0.0,
+              "wing_motor": 30.136363636363637,
+              "outside_sensory": 1.4155998942380053
+            },
+            "measure": {
+              "DAN": 1.6817438692098094,
+              "ER": 0.626595744680851,
+              "KC": 0.007874015748031496,
+              "ascending": 3.322228231476474,
+              "central": 4.733483418915842,
+              "descending": 3.980669710806697,
+              "endocrine": 3.596551724137931,
+              "motor": 6.039120631341601,
+              "optic": 0.024336060344924065,
+              "sensory": 0.9072389451251999,
+              "visual_centrifugal": 2.969928825622776,
+              "visual_projection": 0.059643594480060846,
+              "P1": 0.11891891891891893,
+              "pIP10": 5.1,
+              "dPR1": 26.05,
+              "vPR6": 0.0,
+              "TN1a": 3.6909090909090905,
+              "TN1c": 0.0,
+              "wing_motor": 30.443939393939395,
+              "outside_sensory": 1.4195849519664274
+            }
+          }
+        },
+        {
+          "backend": "cuda",
+          "seed": 502,
+          "condition": "control",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "Linux-4.19.0-gvisor-x86_64-with-glibc2.35",
+          "python": "3.12.1",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 185.82390187399994,
+          "input_load_s": 17.156268563000253,
+          "stepping_s": 12.899171316000093,
+          "archive_s": 3.176059099000213,
+          "total_s": 219.25710945699996,
+          "disabled_random_objects": [
+            "CUDA random background replaced; extended rates zero"
+          ],
+          "counts_sha256": "39e2c2d2796a55ff27bb48fe5829444eb7c7f38b03671068f3a240e253fbb6f1",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "f1294033ffc3be2422d56c1f74a4fa39e0ce968e0255d4a155e1aeecc2299d96",
+              "spikes": 181634
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "a7bae59fe832f384d4f762b30f97e040658b35037d0ae46e37229791bf5f9815",
+              "spikes": 223467
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "f5ba8e5c76abc853ea0ec920a40e395d49d5e0801b610ad01aede348f3b8a097",
+              "spikes": 223800
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "3971df2f04f03b8be77f8ed69de587953fe579830e8d040a0ec3166161ab8ca9",
+              "spikes": 223617
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "4e83a6776d94e59e604b6b843efe02a4f3158f6513e5b9168acc04f544c88f0f",
+              "spikes": 224144
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "0b83cd68511ddd3e7add53b5e7a355d573ae115e39535f3e5e2f35b46ff84e2d",
+              "spikes": 228236
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "54fdeeb035c14a119680131fb95d22168f5e4932d972af3eae80b6799d25f760",
+              "spikes": 218132
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "3948f943ef4d9b4536c0e57e35a1897591bbb8db9a91a6d250563b2a05950edb",
+              "spikes": 224577
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "72f004fe28e85bceba11907853700317b0645d0bdfb9121beb0b7d8fcb78aae0",
+              "spikes": 221587
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "9c79872e665804b561a1de2eba476dcc31ccacf399b175367847e9fe8bd9bc79",
+              "spikes": 224558
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "92a7d7e090b95d683c299978e78ad779a9b42da1354fa956ee23f2f6fa084181",
+              "spikes": 220385
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "111b9db7efdc9eea45cb3307d32b76f7c0d18d0837fe6edec8e1ae1f9ac43f7c",
+              "spikes": 221097
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 1.3760217983651226,
+              "ER": 0.5815602836879432,
+              "KC": 0.011195866141732283,
+              "ascending": 2.156030286641428,
+              "central": 4.377937419371158,
+              "descending": 3.404109589041096,
+              "endocrine": 2.3620689655172415,
+              "motor": 4.570462232243518,
+              "optic": 0.018673127930791355,
+              "sensory": 0.8152970165157166,
+              "visual_centrifugal": 2.78914590747331,
+              "visual_projection": 0.06144735412365533,
+              "P1": 0.0945945945945946,
+              "pIP10": 5.0,
+              "dPR1": 23.5,
+              "vPR6": 0.0,
+              "TN1a": 3.6363636363636362,
+              "TN1c": 0.0,
+              "wing_motor": 17.333333333333332,
+              "outside_sensory": 1.290214981593345
+            },
+            "on": {
+              "DAN": 1.6463215258855588,
+              "ER": 0.7290780141843972,
+              "KC": 0.007874015748031496,
+              "ascending": 3.3262303948080048,
+              "central": 4.745265980320239,
+              "descending": 3.9966514459665143,
+              "endocrine": 3.567816091954023,
+              "motor": 6.108455467869222,
+              "optic": 0.024464763354336172,
+              "sensory": 0.9062200319659031,
+              "visual_centrifugal": 2.988256227758007,
+              "visual_projection": 0.059306747799630556,
+              "P1": 0.12432432432432432,
+              "pIP10": 5.5,
+              "dPR1": 26.7,
+              "vPR6": 0.0,
+              "TN1a": 3.8,
+              "TN1c": 0.0,
+              "wing_motor": 30.75151515151515,
+              "outside_sensory": 1.4235700096948496
+            },
+            "off": {
+              "DAN": 1.7171662125340599,
+              "ER": 0.524113475177305,
+              "KC": 0.007874015748031496,
+              "ascending": 3.3182260681449436,
+              "central": 4.721700857511446,
+              "descending": 3.96468797564688,
+              "endocrine": 3.6252873563218393,
+              "motor": 5.96978579481398,
+              "optic": 0.024207357335511957,
+              "sensory": 0.9082578582844965,
+              "visual_centrifugal": 2.9516014234875447,
+              "visual_projection": 0.05998044116049115,
+              "P1": 0.1135135135135135,
+              "pIP10": 4.7,
+              "dPR1": 25.4,
+              "vPR6": 0.0,
+              "TN1a": 3.581818181818182,
+              "TN1c": 0.0,
+              "wing_motor": 30.136363636363637,
+              "outside_sensory": 1.4155998942380053
+            },
+            "measure": {
+              "DAN": 1.6817438692098094,
+              "ER": 0.626595744680851,
+              "KC": 0.007874015748031496,
+              "ascending": 3.322228231476474,
+              "central": 4.733483418915842,
+              "descending": 3.980669710806697,
+              "endocrine": 3.596551724137931,
+              "motor": 6.039120631341601,
+              "optic": 0.024336060344924065,
+              "sensory": 0.9072389451251999,
+              "visual_centrifugal": 2.969928825622776,
+              "visual_projection": 0.059643594480060846,
+              "P1": 0.11891891891891893,
+              "pIP10": 5.1,
+              "dPR1": 26.05,
+              "vPR6": 0.0,
+              "TN1a": 3.6909090909090905,
+              "TN1c": 0.0,
+              "wing_motor": 30.443939393939395,
+              "outside_sensory": 1.4195849519664274
+            }
+          },
+          "gpu": "NVIDIA L4"
+        }
+      ]
+    },
+    {
+      "seed": 502,
+      "condition": "off-gaba",
+      "windows": {
+        "settle": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      },
+      "first_spike_divergence": null,
+      "spike_symmetric_difference": 0,
+      "runs": [
+        {
+          "backend": "brian",
+          "seed": 502,
+          "condition": "off-gaba",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "macOS-27.0-arm64-arm-64bit",
+          "python": "3.12.14",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 41.7881635830272,
+          "input_load_s": 1.9064201258588582,
+          "stepping_s": 83.6753197920043,
+          "archive_s": 8.509131290833466,
+          "total_s": 135.9605116250459,
+          "disabled_random_objects": [
+            "extended_e0",
+            "poissoninput"
+          ],
+          "counts_sha256": "25c5a5710228e8276359bb7e76eb13d0ccde8796b07acc3a86c1ca34ded20f9b",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "e51142329939bc19326dd1c3b929ea82f3450f0158b0098ce62e30dbc47b5257",
+              "spikes": 1983869
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "4655d459cd3e8f454f07e9fa3cf5aa8b3e0f48e10ff1912eaec976c4a3a5b51d",
+              "spikes": 2236607
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "9301173a1ecd3adb56b029eb4712f334f3929f2517dbf83e0add6127227c9d4e",
+              "spikes": 2234792
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "b0f55f2af848372009d524c6148157f98cecbaa90c9c905b6faa6258913807c8",
+              "spikes": 2232692
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "9de1b3d0f5c89201a36c7fec57e6c9f6160b1173c478423595b1b64246179c40",
+              "spikes": 2235877
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "2a39423b6104f9f6b5821ca263458b5917f5021207adb03483034719f3199512",
+              "spikes": 2233899
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "260390d2de06b67730a765ecda925360a192320e40193c74385ae48d26229ae0",
+              "spikes": 2234862
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "543dc3ff74dd77ccbd60104ba8dc6c865533513cee6f6e2f24e8b0c31cbec1f7",
+              "spikes": 2237913
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "66310ccdbb55b416a6f81bd1f5d02f6ecd9d280fe4387372ba76b84a71282cc4",
+              "spikes": 2231621
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "b72bdb4a5f009bb98ea45fe3be27c5f627af24a74c86050106093687448cbffa",
+              "spikes": 2236149
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "a4306c9feddcb3955b1b27c03aaadb8e5dc71668783d0f82b008db4ff31d84e9",
+              "spikes": 2234415
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "e5e63941613bb61d13cf37cde5e628c841fa78e8a26a5f223ab55d537b07d8b7",
+              "spikes": 2231611
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 132.633514986376,
+              "ER": 4.01241134751773,
+              "KC": 139.34375,
+              "ascending": 50.51406165494862,
+              "central": 25.98020640983482,
+              "descending": 27.367199391171994,
+              "endocrine": 14.080459770114942,
+              "motor": 54.44813979706877,
+              "optic": 0.31547905498416395,
+              "sensory": 15.90190463505594,
+              "visual_centrifugal": 20.885231316725978,
+              "visual_projection": 1.0290666087145497,
+              "P1": 5.972972972972973,
+              "pIP10": 80.5,
+              "dPR1": 2.5,
+              "vPR6": 0.0,
+              "TN1a": 66.79545454545455,
+              "TN1c": 49.19230769230769,
+              "wing_motor": 159.96212121212122,
+              "outside_sensory": 12.687744489867866
+            },
+            "on": {
+              "DAN": 140.691553133515,
+              "ER": 5.002836879432624,
+              "KC": 147.45501968503936,
+              "ascending": 53.465765278528934,
+              "central": 27.48683884349784,
+              "descending": 28.75159817351598,
+              "endocrine": 14.666666666666666,
+              "motor": 57.342277339346104,
+              "optic": 0.3354850984298233,
+              "sensory": 16.91826052210975,
+              "visual_centrifugal": 22.282206405693948,
+              "visual_projection": 1.1045528631967838,
+              "P1": 6.274324324324324,
+              "pIP10": 83.3,
+              "dPR1": 4.2,
+              "vPR6": 0.0,
+              "TN1a": 69.52727272727273,
+              "TN1c": 52.246153846153845,
+              "wing_motor": 168.37272727272727,
+              "outside_sensory": 13.426212703642687
+            },
+            "off": {
+              "DAN": 140.60708446866485,
+              "ER": 3.540425531914894,
+              "KC": 147.46648622047243,
+              "ascending": 53.487074094104926,
+              "central": 27.499936761692766,
+              "descending": 28.807762557077627,
+              "endocrine": 14.772413793103448,
+              "motor": 57.13393461104848,
+              "optic": 0.3335019529282733,
+              "sensory": 16.92116409163559,
+              "visual_centrifugal": 22.233807829181494,
+              "visual_projection": 1.106682603498859,
+              "P1": 6.335135135135135,
+              "pIP10": 83.9,
+              "dPR1": 4.1,
+              "vPR6": 0.0,
+              "TN1a": 70.78181818181818,
+              "TN1c": 52.030769230769224,
+              "wing_motor": 168.62121212121212,
+              "outside_sensory": 13.42535711622294
+            },
+            "measure": {
+              "DAN": 140.64931880108992,
+              "ER": 4.271631205673758,
+              "KC": 147.4607529527559,
+              "ascending": 53.47641968631693,
+              "central": 27.4933878025953,
+              "descending": 28.779680365296805,
+              "endocrine": 14.719540229885059,
+              "motor": 57.2381059751973,
+              "optic": 0.3344935256790483,
+              "sensory": 16.91971230687267,
+              "visual_centrifugal": 22.25800711743772,
+              "visual_projection": 1.1056177333478214,
+              "P1": 6.30472972972973,
+              "pIP10": 83.6,
+              "dPR1": 4.15,
+              "vPR6": 0.0,
+              "TN1a": 70.15454545454546,
+              "TN1c": 52.138461538461534,
+              "wing_motor": 168.4969696969697,
+              "outside_sensory": 13.425784909932812
+            }
+          }
+        },
+        {
+          "backend": "cuda",
+          "seed": 502,
+          "condition": "off-gaba",
+          "n": 162517,
+          "edges": 25120209,
+          "input_manifest_sha256": "b5a02098206d5920e64341dc959da44d43a22ac75fc0107f0551a62895875886",
+          "dopamine": "clamped",
+          "provenance": {
+            "substrate": "rest:ed9b0a469d7a6b77",
+            "files_sha256": {
+              "data/drive-male-cns-v1.0.yaml": "ed9b0a469d7a6b77bed2a346d0a71d33252a2484aa5d6c9486b3f201c5bd1913",
+              "data/dopamine-male-cns-v1.0.yaml": "e6fdafe53ccf025db44dee55a85174c89d56c5fe6a012fd1bff3f40d3e60d653",
+              "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+              "data/populations-male-cns-v1.0.yaml": "4b72f418e0bc478588a04903393b2df266a3f75b2b5ae0bc75112398d6e1f656",
+              "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5"
+            }
+          },
+          "source_sha256": {
+            "scripts/cuda_identical.py": "4d32c21ecc2cae751ad7f202692c6aeadcbedd86dbb96c817248180221103905",
+            "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+            "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+            "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+          },
+          "machine": "Linux-4.19.0-gvisor-x86_64-with-glibc2.35",
+          "python": "3.12.1",
+          "numpy": "2.5.3",
+          "brian2": "2.10.1",
+          "build_s": 251.29361000999995,
+          "input_load_s": 11.658276522000278,
+          "stepping_s": 21.446714699000495,
+          "archive_s": 31.43751231099941,
+          "total_s": 316.1102075719999,
+          "disabled_random_objects": [
+            "CUDA random background replaced; extended rates zero"
+          ],
+          "counts_sha256": "25c5a5710228e8276359bb7e76eb13d0ccde8796b07acc3a86c1ca34ded20f9b",
+          "spike_files": [
+            {
+              "file": "spikes-00.npz",
+              "sha256": "e51142329939bc19326dd1c3b929ea82f3450f0158b0098ce62e30dbc47b5257",
+              "spikes": 1983869
+            },
+            {
+              "file": "spikes-01.npz",
+              "sha256": "4655d459cd3e8f454f07e9fa3cf5aa8b3e0f48e10ff1912eaec976c4a3a5b51d",
+              "spikes": 2236607
+            },
+            {
+              "file": "spikes-02.npz",
+              "sha256": "9301173a1ecd3adb56b029eb4712f334f3929f2517dbf83e0add6127227c9d4e",
+              "spikes": 2234792
+            },
+            {
+              "file": "spikes-03.npz",
+              "sha256": "b0f55f2af848372009d524c6148157f98cecbaa90c9c905b6faa6258913807c8",
+              "spikes": 2232692
+            },
+            {
+              "file": "spikes-04.npz",
+              "sha256": "9de1b3d0f5c89201a36c7fec57e6c9f6160b1173c478423595b1b64246179c40",
+              "spikes": 2235877
+            },
+            {
+              "file": "spikes-05.npz",
+              "sha256": "2a39423b6104f9f6b5821ca263458b5917f5021207adb03483034719f3199512",
+              "spikes": 2233899
+            },
+            {
+              "file": "spikes-06.npz",
+              "sha256": "260390d2de06b67730a765ecda925360a192320e40193c74385ae48d26229ae0",
+              "spikes": 2234862
+            },
+            {
+              "file": "spikes-07.npz",
+              "sha256": "543dc3ff74dd77ccbd60104ba8dc6c865533513cee6f6e2f24e8b0c31cbec1f7",
+              "spikes": 2237913
+            },
+            {
+              "file": "spikes-08.npz",
+              "sha256": "66310ccdbb55b416a6f81bd1f5d02f6ecd9d280fe4387372ba76b84a71282cc4",
+              "spikes": 2231621
+            },
+            {
+              "file": "spikes-09.npz",
+              "sha256": "b72bdb4a5f009bb98ea45fe3be27c5f627af24a74c86050106093687448cbffa",
+              "spikes": 2236149
+            },
+            {
+              "file": "spikes-10.npz",
+              "sha256": "a4306c9feddcb3955b1b27c03aaadb8e5dc71668783d0f82b008db4ff31d84e9",
+              "spikes": 2234415
+            },
+            {
+              "file": "spikes-11.npz",
+              "sha256": "e5e63941613bb61d13cf37cde5e628c841fa78e8a26a5f223ab55d537b07d8b7",
+              "spikes": 2231611
+            }
+          ],
+          "group_sizes": {
+            "DAN": 367,
+            "ER": 282,
+            "KC": 4064,
+            "ascending": 1849,
+            "central": 39533,
+            "descending": 1314,
+            "endocrine": 87,
+            "motor": 887,
+            "optic": 89353,
+            "sensory": 15016,
+            "visual_centrifugal": 562,
+            "visual_projection": 9203,
+            "P1": 148,
+            "pIP10": 2,
+            "dPR1": 2,
+            "vPR6": 8,
+            "TN1a": 22,
+            "TN1c": 13,
+            "wing_motor": 66,
+            "outside_sensory": 147501
+          },
+          "group_hz": {
+            "settle": {
+              "DAN": 132.633514986376,
+              "ER": 4.01241134751773,
+              "KC": 139.34375,
+              "ascending": 50.51406165494862,
+              "central": 25.98020640983482,
+              "descending": 27.367199391171994,
+              "endocrine": 14.080459770114942,
+              "motor": 54.44813979706877,
+              "optic": 0.31547905498416395,
+              "sensory": 15.90190463505594,
+              "visual_centrifugal": 20.885231316725978,
+              "visual_projection": 1.0290666087145497,
+              "P1": 5.972972972972973,
+              "pIP10": 80.5,
+              "dPR1": 2.5,
+              "vPR6": 0.0,
+              "TN1a": 66.79545454545455,
+              "TN1c": 49.19230769230769,
+              "wing_motor": 159.96212121212122,
+              "outside_sensory": 12.687744489867866
+            },
+            "on": {
+              "DAN": 140.691553133515,
+              "ER": 5.002836879432624,
+              "KC": 147.45501968503936,
+              "ascending": 53.465765278528934,
+              "central": 27.48683884349784,
+              "descending": 28.75159817351598,
+              "endocrine": 14.666666666666666,
+              "motor": 57.342277339346104,
+              "optic": 0.3354850984298233,
+              "sensory": 16.91826052210975,
+              "visual_centrifugal": 22.282206405693948,
+              "visual_projection": 1.1045528631967838,
+              "P1": 6.274324324324324,
+              "pIP10": 83.3,
+              "dPR1": 4.2,
+              "vPR6": 0.0,
+              "TN1a": 69.52727272727273,
+              "TN1c": 52.246153846153845,
+              "wing_motor": 168.37272727272727,
+              "outside_sensory": 13.426212703642687
+            },
+            "off": {
+              "DAN": 140.60708446866485,
+              "ER": 3.540425531914894,
+              "KC": 147.46648622047243,
+              "ascending": 53.487074094104926,
+              "central": 27.499936761692766,
+              "descending": 28.807762557077627,
+              "endocrine": 14.772413793103448,
+              "motor": 57.13393461104848,
+              "optic": 0.3335019529282733,
+              "sensory": 16.92116409163559,
+              "visual_centrifugal": 22.233807829181494,
+              "visual_projection": 1.106682603498859,
+              "P1": 6.335135135135135,
+              "pIP10": 83.9,
+              "dPR1": 4.1,
+              "vPR6": 0.0,
+              "TN1a": 70.78181818181818,
+              "TN1c": 52.030769230769224,
+              "wing_motor": 168.62121212121212,
+              "outside_sensory": 13.42535711622294
+            },
+            "measure": {
+              "DAN": 140.64931880108992,
+              "ER": 4.271631205673758,
+              "KC": 147.4607529527559,
+              "ascending": 53.47641968631693,
+              "central": 27.4933878025953,
+              "descending": 28.779680365296805,
+              "endocrine": 14.719540229885059,
+              "motor": 57.2381059751973,
+              "optic": 0.3344935256790483,
+              "sensory": 16.91971230687267,
+              "visual_centrifugal": 22.25800711743772,
+              "visual_projection": 1.1056177333478214,
+              "P1": 6.30472972972973,
+              "pIP10": 83.6,
+              "dPR1": 4.15,
+              "vPR6": 0.0,
+              "TN1a": 70.15454545454546,
+              "TN1c": 52.138461538461534,
+              "wing_motor": 168.4969696969697,
+              "outside_sensory": 13.425784909932812
+            }
+          },
+          "gpu": "NVIDIA L4"
+        }
+      ]
+    }
+  ],
+  "paired_gaba_effect": [
+    {
+      "seed": 501,
+      "windows": {
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      }
+    },
+    {
+      "seed": 502,
+      "windows": {
+        "on": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "off": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        },
+        "measure": {
+          "exact": 162517,
+          "n": 162517,
+          "mean": 0.0,
+          "mean_abs": 0.0,
+          "rms": 0.0,
+          "min": 0,
+          "max": 0,
+          "abs_quantiles": {
+            "0": 0.0,
+            "25": 0.0,
+            "50": 0.0,
+            "75": 0.0,
+            "90": 0.0,
+            "95": 0.0,
+            "99": 0.0,
+            "100": 0.0
+          },
+          "signed_histogram": {
+            "0": 162517
+          }
+        }
+      }
+    }
+  ]
+}

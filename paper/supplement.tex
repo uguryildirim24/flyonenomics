@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,microtype,xcolor,hyperref}
+\usepackage{caption,array,amsmath}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\renewcommand{\thetable}{S\arabic{table}}
+\title{A whole-nervous-system model of the male fly as a pharmacology bench: receptor reserve, network tipping and the limits of a virtual body}
+\author{Hasan ``Rolf'' Yildirim\\Lasell University}
+\date{}
+\begin{document}
+\maketitle
+\section*{Supplementary information}
+
+This supplement lists the network and its update rules separately from the experiments. Counts refer to the retained MaleCNS graph, not all cells in the anatomical release. The model keeps traced neurons with a cell-type annotation and all released directed connections between them; no connection is dropped for having a small synapse count. Input is injected into the model, not seen by a fly.
+
+\begin{table}[htbp]
+\caption{Model summary in the population--connectivity--dynamics--input--output format of Nordlie, Gewaltig and Plesser.}
+\small\begin{tabular}{@{}p{0.24\linewidth}p{0.71\linewidth}@{}}\toprule
+Populations & Anatomical classes with dopamine, Kenyon and ellipsoid-body ring cells separated from broader classes; see Table S2. \\
+Topology & MaleCNS directed, aggregated neuron-to-neuron connections between retained cells, weighted by synapse count; no synapse-count cutoff. \\
+Neuron model & Point-neuron leaky integrate-and-fire voltage and exponentially decaying synaptic drive; reset and a fixed refractory interval. \\
+Synapse model & Fixed, signed weights based on the source neuron's transmitter assignment; delayed events are scaled by the target's postsynaptic gain. \\
+Plasticity & None; there is no learning or activity-dependent synaptic weight update. \\
+Input & Independent discrete-time sensory background at dark rest. Other experiments impose TuBu or courtship-population stimulation; these inputs bypass natural vision. \\
+Measurements & Spike counts and firing rates by group, population synchrony and first-spike times. Body motion is playback of saved spikes, not feedback into the network. \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Non-overlapping analysis/drive groups after specialized cells are separated from broad anatomical classes. These are not the overlapping named circuit selectors in Table S5.}
+\centering\small\begin{tabular}{@{}lr@{}}\toprule Group & Neurons \\ \midrule
+Dopamine neurons (DAN) & 367 \\
+Ellipsoid-body ring neurons (ER) & 282 \\
+Kenyon cells (KC) & 4,064 \\
+Ascending & 1,849 \\
+Central intrinsic & 39,533 \\
+Descending & 1,314 \\
+Endocrine & 87 \\
+Motor/efferent & 887 \\
+Optic-lobe intrinsic & 89,353 \\
+Sensory & 15,016 \\
+Visual centrifugal & 562 \\
+Visual projection & 9,203 \\
+\midrule Total & 162,517 \\ \bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{Fixed model settings. Values describe an assumed operating point, not measured physiological constants of this male fly.}
+\small\begin{tabular}{@{}p{0.43\linewidth}p{0.52\linewidth}@{}}\toprule
+Setting & Value or rule \\ \midrule
+Rest/reset; nominal threshold & $-52$ mV; $-45$ mV \\
+Membrane/synaptic decay & $\tau_m=20$ ms; $\tau_s=5$ ms \\
+Step; refractory interval; recurrent delay & $h=0.1$ ms; $2.2$ ms; $1.8$ ms \\
+Recurrent weights & $0.275$ mV $\times$ pair synapse count, signed by presynaptic transmitter. Glutamate weights $\times 4$; GABA onto Kenyon cells $\times 6$; other specified inhibitory scales $\times 1$. \\
+Transmitter sign & Positive: acetylcholine, dopamine, octopamine, serotonin, tyramine. Negative: GABA, glutamate, histamine. Without consensus: negative only when more than half of presynaptic sites favour GABA or glutamate; otherwise positive. \\
+Sensory background & $1$ mV/event for sensory cells, zero elsewhere; $\operatorname{Binomial}(100,0.001)$ events per driven cell per tick (independent $10$ Hz sources). \\
+Random input & Counter-based Philox4x32-10: realization supplies the random key; neuron and tick supply the counter. Batch position does not change the stream. Background counts use binomial inversion, not a Poisson approximation. \\
+Dopamine pool & Euler step $\Delta t=10$ ms; nominal $V_{\max}=0.11\,\mu$M/s, $K_m=1.3\,\mu$M, $k_{ns}=0.05$ s$^{-1}$; clamped reference concentration $0.02\,\mu$M. Release coefficients vary by anatomical compartment. \\
+Receptors & D1/D2 $K_d=1.0/0.05\,\mu$M; threshold coefficients $1.5/2.0$ mV; gain coefficients $0.3/0.3$. Threshold clipped to $[-52,-30]$ mV; gain to $[0.2,3.0]$. \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\caption{State updates. The equations show the continuous leak and the exact between-event step, delayed synaptic delivery, and the compartmental dopamine step.}
+\small
+\begin{minipage}{\linewidth}
+\begin{align*}
+\frac{dv}{dt}&=\frac{v_0-v+g}{\tau_m}, & \frac{dg}{dt}&=-\frac{g}{\tau_s},\\
+g'&=g e^{-h/\tau_s},\\
+v'&=v_0+(v-v_0)e^{-h/\tau_m}\\
+ &\quad +g\frac{\tau_s}{\tau_m-\tau_s}(e^{-h/\tau_m}-e^{-h/\tau_s}),\\
+g_{j,\mathrm{arrival}}&\mathrel{+}=w_{ij}\,\mathrm{gain}_j
+ \quad\text{after a delayed spike from }i,\\
+D_c'&=\max\!\left(0,D_c+\rho\left[\alpha_c\sum_i M_{ci}n_i+S_c\Delta t\right]\right.\\
+&\qquad\left.-\left[\frac{V_{\max,c}D_c}{K_{m,c}+D_c}+k_{ns}D_c\right]\Delta t\right).
+\end{align*}
+Here $v$ is voltage, $v_0$ rest voltage, $g$ synaptic drive, $h$ the neuronal step and $\tau_m,\tau_s$ the decay constants. A spike requires $v'>v_{th}$; it resets voltage and clears drive. Refractory neurons do not integrate or accept drive. The arrival equation is the methods document's verbal rule in notation: $w_{ij}$ is the signed connection weight and $\mathrm{gain}_j$ is the target gain; delivery follows the recurrent delay and affects the next state update. In the pool equation $D_c$ is concentration in compartment $c$, $n_i$ is neuron $i$'s spike count in the pool step, $M_{ci}$ its innervation weight, $\alpha_c$ release per weighted spike, $S_c$ tonic source, $\rho$ release multiplier, $V_{\max,c}$ maximum uptake, $K_{m,c}$ uptake concentration scale, $k_{ns}$ linear loss and $\Delta t$ the pool step in seconds.
+\end{minipage}
+\end{table}
+
+\clearpage
+\begin{table}[htbp]
+\caption{Named cells and readout populations. The selector column gives the MaleCNS annotation field and type-label rule used in the repository, not a cross-specimen identity. Broad groups are from Table S2; source lines are in the fact-check. FlyBase anatomy IDs are assigned only for unique matching adult neuron-type labels; ambiguous and unmatched names remain unassigned.}
+\small\begin{tabular}{@{}p{0.17\linewidth}p{0.22\linewidth}p{0.38\linewidth}p{0.15\linewidth}@{}}\toprule
+Named population & Broad group & MaleCNS selection label/rule & FlyBase anatomy ID \\ \midrule
+P1 & Central & \texttt{hemibrain\_type} starts \texttt{pC1\_} & FBbt:00110621 \\
+pIP10 & Descending & \texttt{hemibrain\_type} equals \texttt{pIP10} & FBbt:00110854 \\
+dPR1 & VNC intrinsic (central) & \texttt{hemibrain\_type} equals \texttt{dPR1} & FBbt:00110856 \\
+vPR6 & VNC intrinsic (central) & \texttt{hemibrain\_type} equals \texttt{vPR6} & ambiguous \\
+pIP1 & No selected group & No pIP1 selector in the MaleCNS population registry; proposed route only. & not found \\
+TuBu & Central & \texttt{hemibrain\_type} starts \texttt{TuBu} & FBbt:00047047 \\
+Wing motor & Motor/efferent & \texttt{cell\_sub\_class} equals \texttt{wm} & ambiguous \\
+Kenyon cells & KC & \texttt{cell\_class} equals \texttt{Kenyon\_Cell} & FBbt:00049825 \\
+Dopamine neurons & DAN & \texttt{cell\_class} equals \texttt{DAN}, plus separately selected central-complex dopamine cells & FBbt:00058206 \\
+Ellipsoid-body ring & ER & \texttt{hemibrain\_type} starts \texttt{ER} followed by a digit & FBbt:00003649 \\
+Photoreceptors & Sensory & \texttt{cell\_type} equals \texttt{R1-6}, \texttt{R7} or \texttt{R8} (named subsets, not all sensory cells) & ambiguous \\
+Random courtship control & Central intrinsic & Fixed cholinergic \texttt{cb\_intrinsic} subset excluding P1 and direct inputs to pIP10; not an anatomical type. & not found \\
+\bottomrule\end{tabular}
+\end{table}
+\end{document}

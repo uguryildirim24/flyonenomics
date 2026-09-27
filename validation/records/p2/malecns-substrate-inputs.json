@@ -1,0 +1,27 @@
+{
+  "dataset": "male-cns:v1.0",
+  "inputs_sha256": {
+    "data/compartments-male-cns-v1.0.yaml": "de54b5b7723062a7e5541177ffc61c68a0148a9ac63004793683c54958a27521",
+    "data/malecns-v1.0-manifest.json#male-engine-sources": "1e88cacc5a4e87a85fe843b331fdf1e2e3990b31f3030ec10b300450f1dd688b",
+    "data/params-v0.1.yaml": "884156a4642f66f6ae038ae627ee27a4f60e8c6f3772e3cb7f1f0730dd644fce",
+    "data/params-v0.2.yaml": "a029f2341e301c2dd36443ae349a33952b017f7c4a0b4e50eabc6dc14369ad9e",
+    "data/populations-male-cns-v1.0.yaml": "4b67f2a4d5d54b5bb552bdd54ec350d99842d239a35d5c4cfb48f73daa3bdb63",
+    "data/receptors-male-cns-v1.0.yaml": "50a273b37d521777aa8e18bb5107cf8a321ab00836a82f229f223d0da70d7f61",
+    "data/transmitters-male-cns-v1.0.yaml": "f20abc07c9e2908a75ad3edde42a735d49ef11dc61dbdb97254bac3c5310afa5",
+    "scripts/malecns_rest.py": "472f74a53b1131d980994e4af24f59190ba32a1b7bc349f213710964de667259",
+    "scripts/malecns_substrate.py": "32a7ff63a016a3826126f6b095753020350141e8b20874b516f866c77208b4ee",
+    "src/flyonenomics/datasets.py": "7f87c06907c718362f9998ee5d98877499815ca161e28e62829b1ee76e832159",
+    "src/flyonenomics/drive/background.py": "e3324b023f3259f7e32b20ffff75e37c2c2b96b53c5bc95c09df725264e6f286",
+    "src/flyonenomics/drive/mechanisms.py": "dc5ac73f4f044a63fbc41b7a5f4179eaf3d14a5bcb89ab90652350a778dd2b4d",
+    "src/flyonenomics/drive/rest.py": "2020fd4eed7e2532c6858a00357ed7b0375e612d2269a4683ee366fc7e297947",
+    "src/flyonenomics/neuromod/calibration.py": "c41aa77aeb7d22c5e683ba868ec14b8dbf684f0e6f09e52d6b04fc64dc926585",
+    "src/flyonenomics/substrate/scales.py": "7b8a4b350f19cd678ed60a07db0bb9ff99943588c19045747833e8f0b16dc5cb",
+    "uv.lock": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+    "validation/records/p2/malecns-k2r-measurement.json": "db6a7188d908eb4681a360d1170c516fd8d1a4dbede925cbb72e3c4ef171a77e",
+    "validation/records/p2/malecns-rest.json": "d4815a59674e3a6dc38ba9c3081e029d99834a09fa4f426d6dd7822a3adbbbf5"
+  },
+  "item": 155,
+  "procedure": "Item 155 unchanged drive; mean recorded K2r seeds 1--3 then WP19 rest_release_constants; substrate_id_for on the generated male drive.",
+  "source_measurement_commit": "5166fc0",
+  "source_record_review_commit": "46755f0bd614f1c9c33e61d98f9e8508af83bf2b"
+}

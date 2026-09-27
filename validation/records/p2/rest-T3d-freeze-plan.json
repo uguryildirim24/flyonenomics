@@ -1,0 +1,71 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "stage": "freeze",
+  "wave": "wp27",
+  "candidate_id": "1.0-4.0-1.0-False-100-0.75-kc-6.0",
+  "flags": [
+    "diagnostic"
+  ],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "diagnostic": true,
+  "launch": true,
+  "reason": null,
+  "n_jobs": 1,
+  "n_tasks": 47,
+  "brain_s": 1708.0,
+  "list_usd": 3.0665895061728397,
+  "list_cap_usd": 10.0,
+  "pack_worker_s_per_brain_s": 75.0,
+  "long_worker_s_per_brain_s": 90.0,
+  "max_instances": 1,
+  "sigma_th": 1.0,
+  "pair_weights": [
+    0.75,
+    0.8
+  ],
+  "seeds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "perturb_weights": [
+    0.7,
+    0.75,
+    0.8
+  ],
+  "perturb_seeds": [
+    11,
+    12,
+    13
+  ],
+  "job_shapes": [
+    {
+      "job_index": 0,
+      "n_tasks": 47,
+      "brain_s": 1708.0,
+      "kinds": {
+        "diag-long": 40,
+        "diag-sugar": 2,
+        "diag-ff": 1,
+        "bare": 1,
+        "t1": 3
+      }
+    }
+  ],
+  "ibm": {
+    "workers": 36.0,
+    "worker_s_per_brain_s": 45.75,
+    "setup_s": 600.0,
+    "timeout_s": 9000.0,
+    "build_s": 250.0
+  }
+}

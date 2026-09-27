@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.2",
+  "name": "buridan-holdout-wt",
+  "seed": 20260912,
+  "seeds": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain"
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "stripes-on",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "steering_L",
+      "steering_R",
+      "TuBu"
+    ],
+    "rates": [
+      "steering_L",
+      "steering_R"
+    ],
+    "arena": true,
+    "popcount": true,
+    "live": false
+  },
+  "meta": {
+    "class": "canonical",
+    "purpose": "level 4.3 sealed holdout"
+  },
+  "description": "Wild-type ten fresh seeds for the first and only Brembs holdout comparison"
+}

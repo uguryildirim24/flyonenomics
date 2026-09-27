@@ -1,0 +1,3891 @@
+{
+  "status": "recorded",
+  "reason": "item 122 declares the sensory-only 1.0 mV substrate; the V3 and three-seed V1 cells are the V-cal screen recorded at r_light",
+  "rates_hz": [
+    50.0,
+    100.0,
+    150.0,
+    300.0
+  ],
+  "r3_max": 6,
+  "candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "sigma_th_mv": 0.0,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "engine_model": "lif",
+      "declared": true,
+      "screen": {
+        "passed": true,
+        "F_max": 2.679567771889278,
+        "KC_hz": 0.08754104693838131,
+        "central_hz": 4.831463916491017,
+        "mn9_dark_max_hz": 2.9
+      },
+      "freeze": {
+        "seeds": "11-20",
+        "F_max": 2.6187652193866677,
+        "KC_hz": 0.08885841220784238,
+        "central_hz": 4.831751731406203,
+        "mn9_dark_max_hz": 4.7,
+        "reflex_mean_hz": 26.633333333333333,
+        "reflex_min_hz": 19.333333333333336,
+        "a_min_hz": 20.0,
+        "bare_hz": 57.0,
+        "retention": 0.956140350877193
+      },
+      "rates": {
+        "50.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.831516611462411,
+              "DAN": 0.820960295475531,
+              "KC": 0.0876569441761638,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.1500000000000004,
+                1.4000000000000004,
+                1.9000000000000004
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 1.1666666666666667,
+              "lo": -2.000000000000001,
+              "hi": 4.333333333333334,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": false,
+            "populations": {
+              "R1_6": {
+                "mean": -8.616837439711098,
+                "lo": -8.722860908244888,
+                "hi": -8.439031103770988,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.00020642391214598297,
+                "lo": -0.0003728583313513348,
+                "hi": 0.0005379974610681212,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.05983865935731158,
+                "lo": 0.020675669652805633,
+                "hi": 0.08033382359495476,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_L": {
+                "mean": -0.5,
+                "lo": -0.8333333333333334,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.2222222222222222,
+                "lo": -1.5,
+                "hi": 1.5833333333333333,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": -0.08798575189987247,
+                "lo": -0.2417420637899581,
+                "hi": 0.07790241687846973,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -0.0003730022524056198,
+                "lo": -0.0010757790405548147,
+                "hi": 0.0003715630418627694,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": 0.007746876439214986,
+                "lo": -0.0474149841779204,
+                "hi": 0.10362125061282702,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": 0.05555555555555555,
+                "lo": -0.25,
+                "hi": 0.25,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": -0.25,
+                "lo": -0.6666666666666666,
+                "hi": 0.25,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "100.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.832556709826357,
+              "DAN": 0.8170821791320407,
+              "KC": 0.09038696799948491,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.3000000000000007,
+                1.5500000000000007,
+                2.5999999999999996
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 2.1111111111111107,
+              "lo": -0.5000000000000018,
+              "hi": 3.5,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": false,
+            "populations": {
+              "R1_6": {
+                "mean": -12.3867547719736,
+                "lo": -12.463244572658278,
+                "hi": -12.347783604596154,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": -0.00016564285340678407,
+                "lo": -0.00037307421293276245,
+                "hi": 8.635263257102642e-07,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.004109283772340332,
+                "lo": 0.00028747158711057985,
+                "hi": 0.006634131122699114,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_L": {
+                "mean": -0.1388888888888889,
+                "lo": -0.5,
+                "hi": 0.3333333333333333,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.4166666666666667,
+                "lo": -0.08333333333333333,
+                "hi": 0.75,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": 0.09144252083971326,
+                "lo": -0.027657726253927734,
+                "hi": 0.28109870677996196,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -0.00019323800222005764,
+                "lo": -0.000995584173092125,
+                "hi": 0.0005382133426495488,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.010176642747842109,
+                "lo": -0.0793020457280385,
+                "hi": 0.07222222222222222,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.7222222222222222,
+                "lo": -2.0,
+                "hi": 0.16666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": 0.36111111111111116,
+                "lo": 0.16666666666666666,
+                "hi": 0.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "150.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.82814538793536,
+              "DAN": 0.8216066481994461,
+              "KC": 0.08716760028330435,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                1.049999999999999,
+                3.6999999999999993,
+                1.3000000000000007
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 2.6111111111111107,
+              "lo": 0.9999999999999982,
+              "hi": 4.5,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": true,
+            "populations": {
+              "R1_6": {
+                "mean": -14.560958767812608,
+                "lo": -14.622779046808773,
+                "hi": -14.526880817136805,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.0006347603832324351,
+                "lo": 8.235368327696562e-05,
+                "hi": 0.0016152876726929291,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "LAL_neurons": {
+                "mean": 0.037393590943530765,
+                "lo": -0.03163301689174132,
+                "hi": 0.1310313321745331,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_L": {
+                "mean": 0.3055555555555556,
+                "lo": -0.5833333333333334,
+                "hi": 1.1666666666666667,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.3888888888888889,
+                "lo": -0.16666666666666666,
+                "hi": 1.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": -0.09014389897957198,
+                "lo": -0.12036371739096759,
+                "hi": -0.043245359100024666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -1.491296257734591e-05,
+                "lo": -0.00020815096479740355,
+                "hi": 0.0002479245761566072,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.008751912763144213,
+                "lo": -0.036522262334536704,
+                "hi": 0.03236395240005348,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.6944444444444445,
+                "lo": -1.0,
+                "hi": -0.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": 0.5,
+                "lo": -0.5,
+                "hi": 1.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "300.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.829763876342468,
+              "DAN": 0.8082179132040629,
+              "KC": 0.08996201146094907,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.25,
+                2.799999999999999,
+                2.3499999999999996
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 1.3333333333333328,
+              "lo": 0.3333333333333339,
+              "hi": 2.833333333333332,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": true,
+            "populations": {
+              "R1_6": {
+                "mean": -16.77685231855339,
+                "lo": -16.878915973465933,
+                "hi": -16.707358473254427,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.00013797574406636796,
+                "lo": -0.0003294147331078625,
+                "hi": 0.00045283731723259717,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.0026050719793198744,
+                "lo": -0.024089673307483173,
+                "hi": 0.033585149529794536,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_L": {
+                "mean": 0.3888888888888889,
+                "lo": 0.08333333333333333,
+                "hi": 0.8333333333333334,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_R": {
+                "mean": 0.055555555555555546,
+                "lo": -0.25,
+                "hi": 0.6666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": false
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": true
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": 0.06089223801857988,
+                "lo": -0.010680117203651474,
+                "hi": 0.12419225879176334,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": 0.0002616861702996727,
+                "lo": -0.00016600265604249667,
+                "hi": 0.0009115034371637388,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.025689708962873824,
+                "lo": -0.03113829834648126,
+                "hi": -0.017854436867673934,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.16666666666666666,
+                "lo": -0.3333333333333333,
+                "hi": 0.16666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": -0.47222222222222215,
+                "lo": -0.6666666666666666,
+                "hi": -0.08333333333333333,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        }
+      },
+      "passed": false
+    }
+  ],
+  "table": [
+    {
+      "rank": 1,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "sigma_th_mv": 0.0,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "engine_model": "lif",
+      "declared": true,
+      "screen": {
+        "passed": true,
+        "F_max": 2.679567771889278,
+        "KC_hz": 0.08754104693838131,
+        "central_hz": 4.831463916491017,
+        "mn9_dark_max_hz": 2.9
+      },
+      "freeze": {
+        "seeds": "11-20",
+        "F_max": 2.6187652193866677,
+        "KC_hz": 0.08885841220784238,
+        "central_hz": 4.831751731406203,
+        "mn9_dark_max_hz": 4.7,
+        "reflex_mean_hz": 26.633333333333333,
+        "reflex_min_hz": 19.333333333333336,
+        "a_min_hz": 20.0,
+        "bare_hz": 57.0,
+        "retention": 0.956140350877193
+      },
+      "rates": {
+        "50.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.831516611462411,
+              "DAN": 0.820960295475531,
+              "KC": 0.0876569441761638,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.1500000000000004,
+                1.4000000000000004,
+                1.9000000000000004
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 1.1666666666666667,
+              "lo": -2.000000000000001,
+              "hi": 4.333333333333334,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": false,
+            "populations": {
+              "R1_6": {
+                "mean": -8.616837439711098,
+                "lo": -8.722860908244888,
+                "hi": -8.439031103770988,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.00020642391214598297,
+                "lo": -0.0003728583313513348,
+                "hi": 0.0005379974610681212,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.05983865935731158,
+                "lo": 0.020675669652805633,
+                "hi": 0.08033382359495476,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_L": {
+                "mean": -0.5,
+                "lo": -0.8333333333333334,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.2222222222222222,
+                "lo": -1.5,
+                "hi": 1.5833333333333333,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": -0.08798575189987247,
+                "lo": -0.2417420637899581,
+                "hi": 0.07790241687846973,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -0.0003730022524056198,
+                "lo": -0.0010757790405548147,
+                "hi": 0.0003715630418627694,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": 0.007746876439214986,
+                "lo": -0.0474149841779204,
+                "hi": 0.10362125061282702,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": 0.05555555555555555,
+                "lo": -0.25,
+                "hi": 0.25,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": -0.25,
+                "lo": -0.6666666666666666,
+                "hi": 0.25,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "100.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.832556709826357,
+              "DAN": 0.8170821791320407,
+              "KC": 0.09038696799948491,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.3000000000000007,
+                1.5500000000000007,
+                2.5999999999999996
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 2.1111111111111107,
+              "lo": -0.5000000000000018,
+              "hi": 3.5,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": false,
+            "populations": {
+              "R1_6": {
+                "mean": -12.3867547719736,
+                "lo": -12.463244572658278,
+                "hi": -12.347783604596154,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": -0.00016564285340678407,
+                "lo": -0.00037307421293276245,
+                "hi": 8.635263257102642e-07,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.004109283772340332,
+                "lo": 0.00028747158711057985,
+                "hi": 0.006634131122699114,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_L": {
+                "mean": -0.1388888888888889,
+                "lo": -0.5,
+                "hi": 0.3333333333333333,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.4166666666666667,
+                "lo": -0.08333333333333333,
+                "hi": 0.75,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": 0.09144252083971326,
+                "lo": -0.027657726253927734,
+                "hi": 0.28109870677996196,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -0.00019323800222005764,
+                "lo": -0.000995584173092125,
+                "hi": 0.0005382133426495488,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.010176642747842109,
+                "lo": -0.0793020457280385,
+                "hi": 0.07222222222222222,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.7222222222222222,
+                "lo": -2.0,
+                "hi": 0.16666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": 0.36111111111111116,
+                "lo": 0.16666666666666666,
+                "hi": 0.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "150.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.82814538793536,
+              "DAN": 0.8216066481994461,
+              "KC": 0.08716760028330435,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                1.049999999999999,
+                3.6999999999999993,
+                1.3000000000000007
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 2.6111111111111107,
+              "lo": 0.9999999999999982,
+              "hi": 4.5,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": true,
+            "populations": {
+              "R1_6": {
+                "mean": -14.560958767812608,
+                "lo": -14.622779046808773,
+                "hi": -14.526880817136805,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.0006347603832324351,
+                "lo": 8.235368327696562e-05,
+                "hi": 0.0016152876726929291,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "LAL_neurons": {
+                "mean": 0.037393590943530765,
+                "lo": -0.03163301689174132,
+                "hi": 0.1310313321745331,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_L": {
+                "mean": 0.3055555555555556,
+                "lo": -0.5833333333333334,
+                "hi": 1.1666666666666667,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_R": {
+                "mean": 0.3888888888888889,
+                "lo": -0.16666666666666666,
+                "hi": 1.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": true
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": false
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": -0.09014389897957198,
+                "lo": -0.12036371739096759,
+                "hi": -0.043245359100024666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": -1.491296257734591e-05,
+                "lo": -0.00020815096479740355,
+                "hi": 0.0002479245761566072,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.008751912763144213,
+                "lo": -0.036522262334536704,
+                "hi": 0.03236395240005348,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.6944444444444445,
+                "lo": -1.0,
+                "hi": -0.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": 0.5,
+                "lo": -0.5,
+                "hi": 1.5,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        },
+        "300.0": {
+          "v3": {
+            "passed": true,
+            "checks": {
+              "per_seed": true,
+              "central": 4.829763876342468,
+              "DAN": 0.8082179132040629,
+              "KC": 0.08996201146094907,
+              "means": true,
+              "ignition": [
+                false,
+                false,
+                false
+              ],
+              "steering_diff_hz": [
+                2.25,
+                2.799999999999999,
+                2.3499999999999996
+              ]
+            }
+          },
+          "v1_three_seed": {
+            "delta_steer": {
+              "mean": 1.3333333333333328,
+              "lo": 0.3333333333333339,
+              "hi": 2.833333333333332,
+              "n": 3,
+              "bootstrap_n": 10000
+            },
+            "steer_pass": true,
+            "populations": {
+              "R1_6": {
+                "mean": -16.77685231855339,
+                "lo": -16.878915973465933,
+                "hi": -16.707358473254427,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "visual_projection": {
+                "mean": 0.00013797574406636796,
+                "lo": -0.0003294147331078625,
+                "hi": 0.00045283731723259717,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "LAL_neurons": {
+                "mean": 0.0026050719793198744,
+                "lo": -0.024089673307483173,
+                "hi": 0.033585149529794536,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              },
+              "steering_L": {
+                "mean": 0.3888888888888889,
+                "lo": 0.08333333333333333,
+                "hi": 0.8333333333333334,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": true
+              },
+              "steering_R": {
+                "mean": 0.055555555555555546,
+                "lo": -0.25,
+                "hi": 0.6666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000,
+                "carried": false
+              }
+            },
+            "depths": {
+              "retina": {
+                "populations": [
+                  "R1_6"
+                ],
+                "carried": true
+              },
+              "lamina": {
+                "populations": [
+                  "L1",
+                  "L2"
+                ],
+                "carried": false
+              },
+              "medulla": {
+                "populations": [
+                  "Mi1",
+                  "Tm1",
+                  "Tm2",
+                  "Tm3",
+                  "Tm4",
+                  "Tm9"
+                ],
+                "carried": false
+              },
+              "lobula": {
+                "populations": [
+                  "T5",
+                  "LC10",
+                  "LC_all",
+                  "LPLC",
+                  "MeTu"
+                ],
+                "carried": false
+              },
+              "central_input": {
+                "populations": [
+                  "TuBu",
+                  "visual_projection",
+                  "LAL_neurons"
+                ],
+                "carried": false
+              },
+              "steering": {
+                "populations": [
+                  "steering_L",
+                  "steering_R"
+                ],
+                "carried": true
+              }
+            },
+            "passed": false,
+            "break_at": "lamina",
+            "contralateral": {
+              "R1_6": {
+                "mean": 0.06089223801857988,
+                "lo": -0.010680117203651474,
+                "hi": 0.12419225879176334,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "L2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Mi1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm1": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm2": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm3": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm4": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "Tm9": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "T5": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC10": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LC_all": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LPLC": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "MeTu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "TuBu": {
+                "mean": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "visual_projection": {
+                "mean": 0.0002616861702996727,
+                "lo": -0.00016600265604249667,
+                "hi": 0.0009115034371637388,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "LAL_neurons": {
+                "mean": -0.025689708962873824,
+                "lo": -0.03113829834648126,
+                "hi": -0.017854436867673934,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_L": {
+                "mean": -0.16666666666666666,
+                "lo": -0.3333333333333333,
+                "hi": 0.16666666666666666,
+                "n": 3,
+                "bootstrap_n": 10000
+              },
+              "steering_R": {
+                "mean": -0.47222222222222215,
+                "lo": -0.6666666666666666,
+                "hi": -0.08333333333333333,
+                "n": 3,
+                "bootstrap_n": 10000
+              }
+            }
+          }
+        }
+      },
+      "passed": false
+    }
+  ],
+  "substrate_id": "rest:379cc4cc9030cdd1",
+  "declared_substrate": {
+    "item": 122,
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "arm_id": "sens",
+    "bg_policy": "sens",
+    "w_bg_mv": 1.0,
+    "g_gaba": 1.0,
+    "g_glu": 4.0,
+    "sigma_th_mv": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "g_gaba_kc": 6.0,
+    "engine_model": "lif",
+    "screen": {
+      "passed": true,
+      "F_max": 2.679567771889278,
+      "KC_hz": 0.08754104693838131,
+      "central_hz": 4.831463916491017,
+      "mn9_dark_max_hz": 2.9
+    },
+    "freeze": {
+      "seeds": "11-20",
+      "F_max": 2.6187652193866677,
+      "KC_hz": 0.08885841220784238,
+      "central_hz": 4.831751731406203,
+      "mn9_dark_max_hz": 4.7,
+      "reflex_mean_hz": 26.633333333333333,
+      "reflex_min_hz": 19.333333333333336,
+      "a_min_hz": 20.0,
+      "bare_hz": 57.0,
+      "retention": 0.956140350877193
+    },
+    "records": [
+      {
+        "path": "validation/records/p2/rest-T3e-decision.json",
+        "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+      },
+      {
+        "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+        "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+      }
+    ]
+  },
+  "executions": [
+    {
+      "protocol": "v3",
+      "r_light_hz": 50.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+        "protocol_hash": "91819089e43649a2d7146dccba7b9ebf254a6c421763c3dcedbd4c53aa2e30e2",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T22:56:04.328500+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v3.json": "0e8c4219a09ce9e045027172bad43ec5a127d38e",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v3-50/runs/20260919T224011.257726Z-91819089",
+      "experiment_sha256": "362cd58a60a1469543817faeea7b047a4b6cff2270bba0f187c00111bed32dcf",
+      "manifest_sha256": "97ad8da8c0c2f1f6df5b607176200fafd3d1e55e99d503c37bea84137d3fe19d",
+      "source_fixture": "data/experiments/p2/vpath-v3.json",
+      "source_fixture_sha256": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+      "wall_s": 969.5410996040009,
+      "brain_s": 36,
+      "frozen": false
+    },
+    {
+      "protocol": "v3",
+      "r_light_hz": 100.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+        "protocol_hash": "c6dbd426b0a1a2dbdd7217696da1a5a42010e97024d78434794f1ee56f6dd9a7",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T22:54:43.012255+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v3.json": "0e8c4219a09ce9e045027172bad43ec5a127d38e",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v3-100/runs/20260919T224011.322538Z-c6dbd426",
+      "experiment_sha256": "05c8c030cf6c3c59496495f765f44123ff23c5f3383e0f52f39206f996b2945c",
+      "manifest_sha256": "97003dc9646aa9ac56000f78835fa22fbdb05e33ff99dd2d29f46d448e30051d",
+      "source_fixture": "data/experiments/p2/vpath-v3.json",
+      "source_fixture_sha256": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+      "wall_s": 888.224979003,
+      "brain_s": 36,
+      "frozen": false
+    },
+    {
+      "protocol": "v3",
+      "r_light_hz": 150.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+        "protocol_hash": "c22a16ef431abab590e992bf48d9f98c056eb3474b13c11a89625f88470acd1f",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T22:55:00.914691+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v3.json": "0e8c4219a09ce9e045027172bad43ec5a127d38e",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v3-150/runs/20260919T224011.226235Z-c22a16ef",
+      "experiment_sha256": "c507d9e89d4e475ce622b49fee634f94d25086e2549ccdf29951a3b152bae1f8",
+      "manifest_sha256": "b654e7a098b002b4260c768de647715c77f0329d526ba926b5344033f903ba6e",
+      "source_fixture": "data/experiments/p2/vpath-v3.json",
+      "source_fixture_sha256": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+      "wall_s": 906.1206472529993,
+      "brain_s": 36,
+      "frozen": false
+    },
+    {
+      "protocol": "v3",
+      "r_light_hz": 300.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+        "protocol_hash": "2b836ca5c4a1da1766ae396d65c6752e6d774e872fdd9e945642680dfd9eacec",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T22:54:35.673564+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v3.json": "0e8c4219a09ce9e045027172bad43ec5a127d38e",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v3-300/runs/20260919T224011.540498Z-2b836ca5",
+      "experiment_sha256": "a5ec3fe846f11f15a7cca5843507580fcb4e9c39ecf4e8966ef427c1f7d36480",
+      "manifest_sha256": "3a5e004fcff61c5213fd1c8b2c044384aec143c7cbd628dc88a9cd6abe9c5735",
+      "source_fixture": "data/experiments/p2/vpath-v3.json",
+      "source_fixture_sha256": "92d445852a5f8e2cd1b2d3030425e72c9ca1f7e140be61ac9a013309b1d7b71f",
+      "wall_s": 880.8571992769976,
+      "brain_s": 36,
+      "frozen": false
+    },
+    {
+      "protocol": "v1",
+      "r_light_hz": 50.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+        "protocol_hash": "bab00acbb41a009a0f2b2a23c3d7907e700ff99086af0b783a6c433e2f25b26f",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T23:17:22.833016+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v1.json": "e28e4619dc973bedb15065e3e263a165564929aa",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v1-50/runs/20260919T225622.653211Z-bab00acb",
+      "experiment_sha256": "5ec3092c98a058d24ad2742d28121b12d16ab0ea0c313c32765bbb1874817f59",
+      "manifest_sha256": "876c282013a3e7f51822d009a2a78e6ff2a16c2a0a00e74ffe873a53e1effa99",
+      "source_fixture": "data/experiments/p2/vpath-v1.json",
+      "source_fixture_sha256": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+      "wall_s": 1277.2377397930031,
+      "brain_s": 54,
+      "frozen": false
+    },
+    {
+      "protocol": "v1",
+      "r_light_hz": 100.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+        "protocol_hash": "4006e2955b4b74e98667b70d1d68692f69fb7e080bda3197cdd95a4075987533",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T23:17:32.569422+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v1.json": "e28e4619dc973bedb15065e3e263a165564929aa",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v1-100/runs/20260919T225622.514385Z-4006e295",
+      "experiment_sha256": "f7f0328458b14901bb26ef200da14bcc80a3506d8b31eb5319db6ec358bd7e65",
+      "manifest_sha256": "1dc19f5134aab2e1be7bb6d706a96ccaeddde630eb18049639e25849655956f0",
+      "source_fixture": "data/experiments/p2/vpath-v1.json",
+      "source_fixture_sha256": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+      "wall_s": 1286.886902639002,
+      "brain_s": 54,
+      "frozen": false
+    },
+    {
+      "protocol": "v1",
+      "r_light_hz": 150.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+        "protocol_hash": "a916bdf8cdc19567c08c154b9420a0157639f6736361e4c0449255035be8da4a",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T23:17:40.937016+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v1.json": "e28e4619dc973bedb15065e3e263a165564929aa",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v1-150/runs/20260919T225622.618930Z-a916bdf8",
+      "experiment_sha256": "cdc9de5fd9075c83b80d9c1b9e31bbb7113ab67bfd0489bbad279f0d0e54aed0",
+      "manifest_sha256": "09c8bcfa8f24be0f32dd4d0e5408d6722b9da1553da07e6dcf6e2af3321827f7",
+      "source_fixture": "data/experiments/p2/vpath-v1.json",
+      "source_fixture_sha256": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+      "wall_s": 1295.2369370670021,
+      "brain_s": 54,
+      "frozen": false
+    },
+    {
+      "protocol": "v1",
+      "r_light_hz": 300.0,
+      "identity": {
+        "code_commit": "1936526f3af931411bb2a675bc76f88f8378f8ea",
+        "code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "run_code_hash": "git:27f7ed82cecc8d5bcdb703677e3a2c92385fe31ff74ba0b59d925a03611ebd21",
+        "code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "run_code_scope": "git:c9a4d4001f2439d15112939a57090273cd8c2015eedd05612b5e273e2426a661",
+        "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+        "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+        "data_versions": {
+          "behaviour-base-v0.2.yaml": "base-v0.2",
+          "behaviour-v0.1.yaml": "v0.1",
+          "compartments-v0.1.yaml": "v0.1",
+          "dopamine-v0.1.yaml": "v0.1",
+          "dopamine-v0.2.yaml": "v0.2",
+          "drive-v0.2.yaml": "v0.2",
+          "params-v0.1.yaml": "v0.1",
+          "params-v0.2.yaml": "v0.2",
+          "populations-v0.1.yaml": "v0.1",
+          "populations-v0.2.yaml": "v0.2",
+          "receptors-v0.1.yaml": "v0.1",
+          "rest-tier3-v0.2.yaml": "v0.2",
+          "transmitters-v0.2.yaml": "v0.2"
+        },
+        "connectome_version": "783",
+        "layer_flags": {
+          "background": true,
+          "dopamine_A": true,
+          "transporter_C": true,
+          "dan_fast_synapses": "retain",
+          "receptor_kinetics_B": false,
+          "learning_D": false
+        },
+        "fixture_hash": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+        "protocol_hash": "dbd5127b5f7eedd0d4ae5af5b227730c42ddc924f91e64831201fd4057b907f7",
+        "assay": "open_loop_steering",
+        "machine": "aarch64 aarch64",
+        "date": "2026-09-19T23:18:10.866343+00:00",
+        "inputs": {
+          "data/behaviour-base-v0.2.yaml": "9f04654b6bd2c9d152b662a6bbdddaf83a5d2136",
+          "data/behaviour-v0.1.yaml": "028414d02235a3f6e4eff51688f49cb58e2beac0",
+          "data/brembs-metrics.json": "0bde62e6256d84b0842d3ddb6c8116d370403e35",
+          "data/compartments-v0.1.yaml": "2cad10d20df23c7ed71e0f0597f357ef0e295d08",
+          "data/dopamine-v0.1.yaml": "3f812a255f10f6858af550cf7e2ea647a841a84b",
+          "data/dopamine-v0.2.yaml": "fc93103940d5d1ea178a20aba707c25b6d6a9628",
+          "data/drive-v0.2.yaml": "9c30bc21cb2d811ad9e4f6a029fa1a2855fd9cea",
+          "data/experiments/ablation.json": "a328701564c502b2a1e3a3d31ac6cf38f6d00754",
+          "data/experiments/acceptance-wt-mph-buridan-distractor.json": "9bd416f4d5f8d4c9572be4d5ec9a39babfb43bc6",
+          "data/experiments/controls-stripes-on.json": "a9849fb737e6e134eb14cce22cfe2f7f7803de9b",
+          "data/experiments/depletion-3iy.json": "07aa92ee3600d33397af955f30ea02c86456c993",
+          "data/experiments/descending-fumin.json": "55395035a39f73ee56429ecb6a4472985b6fd344",
+          "data/experiments/dose-series.json": "f12305d1d818d670de6f4ccd07d8ccae531b046c",
+          "data/experiments/holdout-wt-buridan.json": "99869cca0b25a55c140eadee41dec7cb8218e673",
+          "data/experiments/open-loop-steering.json": "d95cfe7493f81cb889151d9986f8f82027af35ec",
+          "data/experiments/p2/vpath-v1.json": "e28e4619dc973bedb15065e3e263a165564929aa",
+          "data/params-v0.1.yaml": "c1af7b9c54ac3407dd53fbb1619f7705eff4bae6",
+          "data/params-v0.2.yaml": "97576943b94115da1ecca214c3ceb9109225f494",
+          "data/populations-v0.1.yaml": "fbefc6291afb5184c16f67fb9a6fabb0132ef293",
+          "data/populations-v0.2.yaml": "b816634b8672440f35a0453708cc14be7f4f92d3",
+          "data/provenance.json": "11524e3b6714980f53c5cf91db7ddb2f1d8b122d",
+          "data/receptors-v0.1.yaml": "8d960ee23328ae3d672dd96306eb3ce494b08953",
+          "data/transmitters-v0.2.yaml": "29170ce99f3e8d3a626fee089789bf576bec806c",
+          "tests/fixtures/engine/fixture-0-1.json": "ddb7682d4200fe6539330fdd5236996c2839953f",
+          "tests/fixtures/engine/fixture-0-2.json": "fbf964c833e9786440d70ff241ccbc04e78af350",
+          "tests/fixtures/engine/fixture-0-3.json": "b9e862814e239c563f68fac04d89e299729d45bb",
+          "tests/fixtures/engine/fixture-0-3b.json": "ec6206a61cc03833adba9300c0899f8279e66b13",
+          "tests/fixtures/engine/fixture-0-4.json": "663f2aa5170476ecc6f95ec410e44a9bfca6c315",
+          "tests/fixtures/engine/fixture-0-7.json": "74cf5915b6b2085f265a5a6eb1ee5428fd618cd1",
+          "tests/fixtures/engine/fixture-1-0.json": "ab12d81306c34c8ddebeef2147bdc5896fbd3426",
+          "tests/fixtures/engine/fixture-1-0b.json": "661cffb9263e6d137f4850906ba4dba8342dabfe",
+          "tests/fixtures/engine/fixture-1-1.json": "29a7eb79c66a9ccde4a33a09a3ad342c416bcd23",
+          "tests/fixtures/engine/fixture-1-2.json": "e7e7bbb1ca87e1013fcc78024c2c24f9992cc502",
+          "tests/fixtures/engine/fixture-1-3.json": "79296e643419294899ce06cac2fb34e1d5a8a461",
+          "tests/fixtures/experiments/bare-twin-1.2.json": "4a2cfb4c5e4dd6e65857713c85a53a70a95aad23",
+          "tests/fixtures/experiments/binding.json": "5b6272fcb53721fa4770e6c1dd15fc657855e504",
+          "tests/fixtures/experiments/invariance.json": "acf4977fb128dc43012a25fb7ac4be528caa3d96",
+          "tests/fixtures/frozen-v0.1.json": "5c954510773e3df8b51838abd383aa37e4915396",
+          "tests/fixtures/registry/checks.json": "e1fb125a4f2cfc4d5917cc689c20b383700cbbff"
+        },
+        "overrides_hash": "",
+        "platform": "linux-aarch64",
+        "substrate_id": "rest:379cc4cc9030cdd1",
+        "engine_model": "lif",
+        "mechanisms": null
+      },
+      "run_path": "camber-runs/wp18/vcal/stage1/v1-300/runs/20260919T225622.856711Z-dbd5127b",
+      "experiment_sha256": "0d1d3d19a70f0de1ccf563685bdf729e6efbdd447db574666810905c2a3179ea",
+      "manifest_sha256": "f661e8d8b309b9f875e6b4a7a3b9eba54239facd732b094d94524a32317b80c7",
+      "source_fixture": "data/experiments/p2/vpath-v1.json",
+      "source_fixture_sha256": "92c967ace5bbdab00b3ec8d2eadf5b58b93e10ade8f76943e8d52c4c7109c969",
+      "wall_s": 1325.2338045290016,
+      "brain_s": 54,
+      "frozen": false
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.2",
+  "name": "depletion-3iy",
+  "description": "Unexecuted level 3.5: paired 3-IY depletion in wild type and fumin.",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.1",
+    "drive_version": "v0.1",
+    "dopamine_version": "v0.1",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arms": [
+    {
+      "label": "vehicle",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "drug": "vehicle",
+          "type": "dose",
+          "c_food_mm": 3.0
+        },
+        {
+          "type": "wait",
+          "hours": 2.0
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "depletion-3mm",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    },
+    {
+      "label": "3iy",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "drug": "3-iodotyrosine",
+          "type": "dose",
+          "c_food_mm": 3.0
+        },
+        {
+          "type": "wait",
+          "hours": 2.0
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "depletion-3mm",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    },
+    {
+      "label": "fumin",
+      "genotype": {
+        "named": "fumin",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "drug": "vehicle",
+          "type": "dose",
+          "c_food_mm": 3.0
+        },
+        {
+          "type": "wait",
+          "hours": 2.0
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "depletion-3mm",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    },
+    {
+      "label": "fumin-3iy",
+      "genotype": {
+        "named": "fumin",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "drug": "3-iodotyrosine",
+          "type": "dose",
+          "c_food_mm": 3.0
+        },
+        {
+          "type": "wait",
+          "hours": 2.0
+        },
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "depletion-3mm",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    }
+  ],
+  "comparison": "paired",
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {}
+}

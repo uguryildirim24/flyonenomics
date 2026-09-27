@@ -1,0 +1,1580 @@
+[
+  {
+    "label": "fused-reproduce-1790432220611363000-0",
+    "mode": "reproduce",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "control"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.10221920000000001,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.28000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-16.28000000",
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "plan_cost": "0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8",
+        "ephemeral_apps": "16.28005737"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790432220.6113658,
+    "source_sha": "e0f03f2faab9af01e74071fa2e4d1deedd9675fe",
+    "source_diff": " scripts/cuda_circuit.py       | 15 ++++++++----\n scripts/modal/cuda.py         |  3 ++-\n scripts/modal/cuda_billing.py | 13 ++++++----\n scripts/modal/cuda_driver.py  | 55 +++++++++++++++++++++++++++++++++----------\n scripts/modal/cuda_ledger.py  | 11 ++++++++-\n 5 files changed, 74 insertions(+), 23 deletions(-)\n",
+    "app_id": "ap-CDTZ85GbDvpFLHDRKYaeuA",
+    "result": {
+      "batch": 1,
+      "simulated_s": 12.0,
+      "build_s": 107.112417017,
+      "stepping_s": 8.222496539999995,
+      "kernel_and_transfer_s": 7.912843739999559,
+      "neuromod_s": 0.000823764000074334,
+      "collection_s": 0.17264212000007717,
+      "wall_s": 115.430287677,
+      "wall_s_per_sim_s": 0.6852080449999995,
+      "per_brain_wall_s_per_sim_s": 0.6852080449999995,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 527182336,
+      "function_s": 121.078630293
+    },
+    "actual_runtime_estimate_usd": 0.03439305759378384,
+    "local_output": "camber-runs/cuda-circuit/fused-reproduce-1790432220611363000-0",
+    "completed_at": 1790432440.954222,
+    "accounted_usd": 0.0625896124217113,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201921,
+    "billing_rows": [
+      {
+        "object_id": "ap-CDTZ85GbDvpFLHDRKYaeuA",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.03727239"
+      }
+    ],
+    "actual_metered_usd": 0.03727239
+  },
+  {
+    "label": "fused-reproduce-1790432537679168000-0",
+    "mode": "reproduce",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-1.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": null,
+    "check_modulation": false,
+    "projected_usd": 0.10221920000000001,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.32000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-16.32000000",
+        "network_egress_allowance": "0E-8",
+        "plan_cost": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.31732976",
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790432537.679172,
+    "source_sha": "e0f03f2faab9af01e74071fa2e4d1deedd9675fe",
+    "source_diff": " scripts/circuit_tour_dose_fig.py | 42 +++++++++++++++++++++---------\n scripts/cuda_circuit.py          | 15 +++++++----\n scripts/modal/cuda.py            |  3 ++-\n scripts/modal/cuda_billing.py    | 13 +++++++---\n scripts/modal/cuda_driver.py     | 55 +++++++++++++++++++++++++++++++---------\n scripts/modal/cuda_ledger.py     | 11 +++++++-\n tests/fixtures/io-allowlist.json |  6 +++++\n 7 files changed, 110 insertions(+), 35 deletions(-)\n",
+    "app_id": "ap-EFvyHhqMxHRuK2hjkN7Y3D",
+    "result": {
+      "batch": 1,
+      "simulated_s": 12.0,
+      "build_s": 275.821019735,
+      "stepping_s": 18.010769220999975,
+      "kernel_and_transfer_s": 17.629555939999534,
+      "neuromod_s": 0.0009059529985506742,
+      "collection_s": 0.19633430900040594,
+      "wall_s": 293.917006706,
+      "wall_s_per_sim_s": 1.5008974350833313,
+      "per_brain_wall_s_per_sim_s": 1.5008974350833313,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 527182336,
+      "function_s": 298.10366927499996
+    },
+    "actual_runtime_estimate_usd": 0.08467800338905973,
+    "local_output": "camber-runs/cuda-circuit/fused-reproduce-1790432537679168000-0",
+    "completed_at": 1790432867.004809,
+    "accounted_usd": 0.09354677673800788,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201974,
+    "billing_rows": [
+      {
+        "object_id": "ap-EFvyHhqMxHRuK2hjkN7Y3D",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.08577847"
+      }
+    ],
+    "actual_metered_usd": 0.08577847
+  },
+  {
+    "label": "fused-dose-1790433103449328000-0",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-0.10"
+      ],
+      [
+        502,
+        "block-0.10"
+      ],
+      [
+        503,
+        "block-0.10"
+      ],
+      [
+        504,
+        "block-0.10"
+      ],
+      [
+        505,
+        "block-0.10"
+      ],
+      [
+        506,
+        "block-0.10"
+      ],
+      [
+        507,
+        "block-0.10"
+      ],
+      [
+        508,
+        "block-0.10"
+      ],
+      [
+        509,
+        "block-0.10"
+      ],
+      [
+        510,
+        "block-0.10"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.40000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "credits": "-16.40000000",
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.40310823",
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433103.449332,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": "",
+    "app_id": "ap-uSkFnGX8aQ4JeN9onE2sqJ",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 275.112725864,
+      "stepping_s": 103.47055585800001,
+      "kernel_and_transfer_s": 102.03093574299942,
+      "neuromod_s": 0.0015062890004173823,
+      "collection_s": 1.285593910999637,
+      "wall_s": 379.14253165300005,
+      "wall_s_per_sim_s": 8.622546321500002,
+      "per_brain_wall_s_per_sim_s": 0.8622546321500001,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 384.34391655
+    },
+    "actual_runtime_estimate_usd": 0.10917502474000837,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433103449328000-0",
+    "completed_at": 1790433520.321663,
+    "accounted_usd": 0.1184149015506771,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201977,
+    "billing_rows": [
+      {
+        "object_id": "ap-uSkFnGX8aQ4JeN9onE2sqJ",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11079868"
+      }
+    ],
+    "actual_metered_usd": 0.11079868
+  },
+  {
+    "label": "fused-dose-1790433103457696000-10",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-0.25"
+      ],
+      [
+        502,
+        "block-0.25"
+      ],
+      [
+        503,
+        "block-0.25"
+      ],
+      [
+        504,
+        "block-0.25"
+      ],
+      [
+        505,
+        "block-0.25"
+      ],
+      [
+        506,
+        "block-0.25"
+      ],
+      [
+        507,
+        "block-0.25"
+      ],
+      [
+        508,
+        "block-0.25"
+      ],
+      [
+        509,
+        "block-0.25"
+      ],
+      [
+        510,
+        "block-0.25"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.40000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "free_storage": "-0E-8",
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-16.40000000"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.40310823",
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433103.4577,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 73 ++++++++++++++++++++++\n 1 file changed, 73 insertions(+)\n",
+    "app_id": "ap-YdG8DwL2cBZoO5UF1VNZTq",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 276.515017484,
+      "stepping_s": 105.13214764899999,
+      "kernel_and_transfer_s": 103.52886019400131,
+      "neuromod_s": 0.001845127000251523,
+      "collection_s": 1.4439750729997058,
+      "wall_s": 382.204474005,
+      "wall_s_per_sim_s": 8.761012304083332,
+      "per_brain_wall_s_per_sim_s": 0.8761012304083332,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 390.91848525300003
+    },
+    "actual_runtime_estimate_usd": 0.1110425675054772,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433103457696000-10",
+    "completed_at": 1790433526.841507,
+    "accounted_usd": 0.12026452249467375,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201979,
+    "billing_rows": [
+      {
+        "object_id": "ap-YdG8DwL2cBZoO5UF1VNZTq",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11249180"
+      }
+    ],
+    "actual_metered_usd": 0.1124918
+  },
+  {
+    "label": "fused-dose-1790433103483109000-20",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-0.50"
+      ],
+      [
+        502,
+        "block-0.50"
+      ],
+      [
+        503,
+        "block-0.50"
+      ],
+      [
+        504,
+        "block-0.50"
+      ],
+      [
+        505,
+        "block-0.50"
+      ],
+      [
+        506,
+        "block-0.50"
+      ],
+      [
+        507,
+        "block-0.50"
+      ],
+      [
+        508,
+        "block-0.50"
+      ],
+      [
+        509,
+        "block-0.50"
+      ],
+      [
+        510,
+        "block-0.50"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.40000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-16.40000000",
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8",
+        "ephemeral_apps": "16.40310823"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433103.483113,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 146 +++++++++++++++++++++\n 1 file changed, 146 insertions(+)\n",
+    "app_id": "ap-AK8DeNFCuOy2RRzet1s9Wl",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 276.706674782,
+      "stepping_s": 110.51697634200002,
+      "kernel_and_transfer_s": 109.03195557899932,
+      "neuromod_s": 0.0017280590009818297,
+      "collection_s": 1.3307418999997935,
+      "wall_s": 387.889253499,
+      "wall_s_per_sim_s": 9.209748028500002,
+      "per_brain_wall_s_per_sim_s": 0.9209748028500002,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 391.809130841
+    },
+    "actual_runtime_estimate_usd": 0.11129556033277963,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433103483109000-20",
+    "completed_at": 1790433527.445226,
+    "accounted_usd": 0.12042879351533786,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.2019808,
+    "billing_rows": [
+      {
+        "object_id": "ap-AK8DeNFCuOy2RRzet1s9Wl",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11249913"
+      }
+    ],
+    "actual_metered_usd": 0.11249913
+  },
+  {
+    "label": "fused-dose-1790433528856391000-30",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-0.75"
+      ],
+      [
+        502,
+        "block-0.75"
+      ],
+      [
+        503,
+        "block-0.75"
+      ],
+      [
+        504,
+        "block-0.75"
+      ],
+      [
+        505,
+        "block-0.75"
+      ],
+      [
+        506,
+        "block-0.75"
+      ],
+      [
+        507,
+        "block-0.75"
+      ],
+      [
+        508,
+        "block-0.75"
+      ],
+      [
+        509,
+        "block-0.75"
+      ],
+      [
+        510,
+        "block-0.75"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.80000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-16.80000000",
+        "network_egress_allowance": "0E-8",
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8",
+        "reservation_adjustment": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.80197517",
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433528.856394,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 297 +++++++++++++++++++++\n 1 file changed, 297 insertions(+)\n",
+    "app_id": "ap-vByY7OJGOR19HXWiIaWCkY",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 273.680984925,
+      "stepping_s": 119.89731794299996,
+      "kernel_and_transfer_s": 118.3219573509989,
+      "neuromod_s": 0.0017972809999946548,
+      "collection_s": 1.4237532300006137,
+      "wall_s": 394.260491158,
+      "wall_s_per_sim_s": 9.991443161916663,
+      "per_brain_wall_s_per_sim_s": 0.9991443161916663,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 398.599999927
+    },
+    "actual_runtime_estimate_usd": 0.11322454442370841,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433528856391000-30",
+    "completed_at": 1790433942.253442,
+    "accounted_usd": 0.11742772813367845,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201988,
+    "billing_rows": [
+      {
+        "object_id": "ap-vByY7OJGOR19HXWiIaWCkY",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11434533"
+      }
+    ],
+    "actual_metered_usd": 0.11434533
+  },
+  {
+    "label": "fused-dose-1790433533875114000-50",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-1.00"
+      ],
+      [
+        502,
+        "block-1.00"
+      ],
+      [
+        503,
+        "block-1.00"
+      ],
+      [
+        504,
+        "block-1.00"
+      ],
+      [
+        505,
+        "block-1.00"
+      ],
+      [
+        506,
+        "block-1.00"
+      ],
+      [
+        507,
+        "block-1.00"
+      ],
+      [
+        508,
+        "block-1.00"
+      ],
+      [
+        509,
+        "block-1.00"
+      ],
+      [
+        510,
+        "block-1.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.80000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "reservation_adjustment": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-16.80000000",
+        "network_egress_allowance": "0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.80197517",
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433533.875118,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 370 +++++++++++++++++++++\n 1 file changed, 370 insertions(+)\n",
+    "app_id": "ap-y74x9XfYfiI0rx5KDoXaL3",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 272.82996772599995,
+      "stepping_s": 129.070253454,
+      "kernel_and_transfer_s": 127.56173503799988,
+      "neuromod_s": 0.0015385090002837387,
+      "collection_s": 1.3620326440005215,
+      "wall_s": 402.731296812,
+      "wall_s_per_sim_s": 10.755854454500001,
+      "per_brain_wall_s_per_sim_s": 1.07558544545,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 408.68853380999997
+    },
+    "actual_runtime_estimate_usd": 0.11609024852058501,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433533875114000-50",
+    "completed_at": 1790433962.613415,
+    "accounted_usd": 0.12178549513819484,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201995,
+    "billing_rows": [
+      {
+        "object_id": "ap-y74x9XfYfiI0rx5KDoXaL3",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11779169"
+      }
+    ],
+    "actual_metered_usd": 0.11779169
+  },
+  {
+    "label": "fused-dose-1790433533904455000-40",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "block-0.90"
+      ],
+      [
+        502,
+        "block-0.90"
+      ],
+      [
+        503,
+        "block-0.90"
+      ],
+      [
+        504,
+        "block-0.90"
+      ],
+      [
+        505,
+        "block-0.90"
+      ],
+      [
+        506,
+        "block-0.90"
+      ],
+      [
+        507,
+        "block-0.90"
+      ],
+      [
+        508,
+        "block-0.90"
+      ],
+      [
+        509,
+        "block-0.90"
+      ],
+      [
+        510,
+        "block-0.90"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.80000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-16.80000000",
+        "reservation_adjustment": "-0E-8",
+        "network_egress_allowance": "0E-8",
+        "plan_cost": "0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8",
+        "ephemeral_apps": "16.80197517"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433533.904458,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 443 +++++++++++++++++++++\n 1 file changed, 443 insertions(+)\n",
+    "app_id": "ap-OMBu7SWhYOwyPWtwMsbVSu",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 102.473149908,
+      "stepping_s": 123.14995870300002,
+      "kernel_and_transfer_s": 122.38323484200019,
+      "neuromod_s": 0.001104735000254209,
+      "collection_s": 0.6485510279997584,
+      "wall_s": 226.28144155500001,
+      "wall_s_per_sim_s": 10.262496558583335,
+      "per_brain_wall_s_per_sim_s": 1.0262496558583336,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 230.208334059
+    },
+    "actual_runtime_estimate_usd": 0.06539195622464818,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433533904455000-40",
+    "completed_at": 1790433781.4543822,
+    "accounted_usd": 0.07031793122796219,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201996,
+    "billing_rows": [
+      {
+        "object_id": "ap-OMBu7SWhYOwyPWtwMsbVSu",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.06738664"
+      }
+    ],
+    "actual_metered_usd": 0.06738664
+  },
+  {
+    "label": "fused-dose-1790433789245737000-60",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "boost-0.25"
+      ],
+      [
+        502,
+        "boost-0.25"
+      ],
+      [
+        503,
+        "boost-0.25"
+      ],
+      [
+        504,
+        "boost-0.25"
+      ],
+      [
+        505,
+        "boost-0.25"
+      ],
+      [
+        506,
+        "boost-0.25"
+      ],
+      [
+        507,
+        "boost-0.25"
+      ],
+      [
+        508,
+        "boost-0.25"
+      ],
+      [
+        509,
+        "boost-0.25"
+      ],
+      [
+        510,
+        "boost-0.25"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "16.94000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-16.94000000",
+        "plan_cost": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "network_egress_allowance": "0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "16.94114465",
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433789.2457411,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 544 +++++++++++++++++++++\n 1 file changed, 544 insertions(+)\n",
+    "app_id": "ap-hjEzxAhYKrflkQDANOltN3",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 274.91406878699996,
+      "stepping_s": 99.795108529,
+      "kernel_and_transfer_s": 98.15520131200014,
+      "neuromod_s": 0.001653798000347706,
+      "collection_s": 1.480234518998941,
+      "wall_s": 375.278029074,
+      "wall_s_per_sim_s": 8.316259044083333,
+      "per_brain_wall_s_per_sim_s": 0.8316259044083334,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 379.912883081
+    },
+    "actual_runtime_estimate_usd": 0.1079163650662863,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433789245737000-60",
+    "completed_at": 1790434184.6831949,
+    "accounted_usd": 0.11232620561152037,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.201998,
+    "billing_rows": [
+      {
+        "object_id": "ap-hjEzxAhYKrflkQDANOltN3",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.10939265"
+      }
+    ],
+    "actual_metered_usd": 0.10939265
+  },
+  {
+    "label": "fused-dose-1790433949484385000-70",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "boost-0.50"
+      ],
+      [
+        502,
+        "boost-0.50"
+      ],
+      [
+        503,
+        "boost-0.50"
+      ],
+      [
+        504,
+        "boost-0.50"
+      ],
+      [
+        505,
+        "boost-0.50"
+      ],
+      [
+        506,
+        "boost-0.50"
+      ],
+      [
+        507,
+        "boost-0.50"
+      ],
+      [
+        508,
+        "boost-0.50"
+      ],
+      [
+        509,
+        "boost-0.50"
+      ],
+      [
+        510,
+        "boost-0.50"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.13000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "credits": "-17.13000000",
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8",
+        "ephemeral_apps": "17.13465310"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433949.4843898,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 643 +++++++++++++++++++++\n 1 file changed, 643 insertions(+)\n",
+    "app_id": "ap-34OchQHCroT9EeimJdA1JZ",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 102.561738924,
+      "stepping_s": 95.982926706,
+      "kernel_and_transfer_s": 95.13135851300025,
+      "neuromod_s": 0.001164449000100376,
+      "collection_s": 0.7256518189994381,
+      "wall_s": 198.980068858,
+      "wall_s_per_sim_s": 7.9985772255,
+      "per_brain_wall_s_per_sim_s": 0.79985772255,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 203.711309377
+    },
+    "actual_runtime_estimate_usd": 0.05786532915803339,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433949484385000-70",
+    "completed_at": 1790434172.614553,
+    "accounted_usd": 0.06338136246691811,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.2019992,
+    "billing_rows": [
+      {
+        "object_id": "ap-34OchQHCroT9EeimJdA1JZ",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.05965186"
+      }
+    ],
+    "actual_metered_usd": 0.05965186
+  },
+  {
+    "label": "fused-dose-1790433969499545000-80",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "boost-1.00"
+      ],
+      [
+        502,
+        "boost-1.00"
+      ],
+      [
+        503,
+        "boost-1.00"
+      ],
+      [
+        504,
+        "boost-1.00"
+      ],
+      [
+        505,
+        "boost-1.00"
+      ],
+      [
+        506,
+        "boost-1.00"
+      ],
+      [
+        507,
+        "boost-1.00"
+      ],
+      [
+        508,
+        "boost-1.00"
+      ],
+      [
+        509,
+        "boost-1.00"
+      ],
+      [
+        510,
+        "boost-1.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.23000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "plan_cost": "0E-8",
+        "credits": "-17.23000000",
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8",
+        "ephemeral_apps": "17.22873919"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790433969.499549,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 742 +++++++++++++++++++++\n 1 file changed, 742 insertions(+)\n",
+    "app_id": "ap-03BuhAXXK3Lvf1Dn4J2tXt",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 273.661274708,
+      "stepping_s": 97.54396998699997,
+      "kernel_and_transfer_s": 96.0964356380004,
+      "neuromod_s": 0.001426746000959156,
+      "collection_s": 1.295952447000559,
+      "wall_s": 371.722282569,
+      "wall_s_per_sim_s": 8.12866416558333,
+      "per_brain_wall_s_per_sim_s": 0.812866416558333,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 376.240659107
+    },
+    "actual_runtime_estimate_usd": 0.1068732494452273,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790433969499545000-80",
+    "completed_at": 1790434363.370534,
+    "accounted_usd": 0.11188124147023097,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.202006,
+    "billing_rows": [
+      {
+        "object_id": "ap-03BuhAXXK3Lvf1Dn4J2tXt",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.10850938"
+      }
+    ],
+    "actual_metered_usd": 0.10850938
+  },
+  {
+    "label": "fused-dose-1790434179788292000-90",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "boost-2.00"
+      ],
+      [
+        502,
+        "boost-2.00"
+      ],
+      [
+        503,
+        "boost-2.00"
+      ],
+      [
+        504,
+        "boost-2.00"
+      ],
+      [
+        505,
+        "boost-2.00"
+      ],
+      [
+        506,
+        "boost-2.00"
+      ],
+      [
+        507,
+        "boost-2.00"
+      ],
+      [
+        508,
+        "boost-2.00"
+      ],
+      [
+        509,
+        "boost-2.00"
+      ],
+      [
+        510,
+        "boost-2.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.42000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "credits": "-17.42000000",
+        "plan_cost": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "network_egress_allowance": "0E-8",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "ephemeral_apps": "17.41905696",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790434179.788295,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 933 ++++++++++++++++++++-\n 1 file changed, 931 insertions(+), 2 deletions(-)\n",
+    "app_id": "ap-HBw1IFRoWj3mTApEkTezpm",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 273.53670703100005,
+      "stepping_s": 96.90585551699996,
+      "kernel_and_transfer_s": 95.40206723699947,
+      "neuromod_s": 0.0015887129992506743,
+      "collection_s": 1.3539966579980955,
+      "wall_s": 370.95845027200005,
+      "wall_s_per_sim_s": 8.075487959749998,
+      "per_brain_wall_s_per_sim_s": 0.8075487959749997,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 375.911952824
+    },
+    "actual_runtime_estimate_usd": 0.10677987859939514,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790434179788292000-90",
+    "completed_at": 1790434570.79559,
+    "accounted_usd": 0.11106779437718128,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.202018,
+    "billing_rows": [
+      {
+        "object_id": "ap-HBw1IFRoWj3mTApEkTezpm",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.10737294"
+      }
+    ],
+    "actual_metered_usd": 0.10737294
+  },
+  {
+    "label": "fused-dose-1790434194775478000-100",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "rescue-0.50"
+      ],
+      [
+        502,
+        "rescue-0.50"
+      ],
+      [
+        503,
+        "rescue-0.50"
+      ],
+      [
+        504,
+        "rescue-0.50"
+      ],
+      [
+        505,
+        "rescue-0.50"
+      ],
+      [
+        506,
+        "rescue-0.50"
+      ],
+      [
+        507,
+        "rescue-0.50"
+      ],
+      [
+        508,
+        "rescue-0.50"
+      ],
+      [
+        509,
+        "rescue-0.50"
+      ],
+      [
+        510,
+        "rescue-0.50"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.42000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "network_egress_allowance": "0E-8",
+        "reservation_adjustment": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-17.42000000",
+        "free_storage": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "ephemeral_apps": "17.41905696",
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790434194.775481,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 1021 +++++++++++++++++++-\n 1 file changed, 1019 insertions(+), 2 deletions(-)\n",
+    "app_id": "ap-Xd6ihZxiC7kXW73bOUhq4L",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 274.86028933299997,
+      "stepping_s": 112.79660048800002,
+      "kernel_and_transfer_s": 111.16650720199931,
+      "neuromod_s": 0.0014725380015647715,
+      "collection_s": 1.4748481439996795,
+      "wall_s": 388.32491768799997,
+      "wall_s_per_sim_s": 9.399716707333335,
+      "per_brain_wall_s_per_sim_s": 0.9399716707333335,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 396.742112492
+    },
+    "actual_runtime_estimate_usd": 0.11269680117619979,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790434194775478000-100",
+    "completed_at": 1790434614.149508,
+    "accounted_usd": 0.1191255222289695,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.2020202,
+    "billing_rows": [
+      {
+        "object_id": "ap-Xd6ihZxiC7kXW73bOUhq4L",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11419334"
+      }
+    ],
+    "actual_metered_usd": 0.11419334
+  },
+  {
+    "label": "fused-dose-1790434369921548000-110",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "rescue-1.00"
+      ],
+      [
+        502,
+        "rescue-1.00"
+      ],
+      [
+        503,
+        "rescue-1.00"
+      ],
+      [
+        504,
+        "rescue-1.00"
+      ],
+      [
+        505,
+        "rescue-1.00"
+      ],
+      [
+        506,
+        "rescue-1.00"
+      ],
+      [
+        507,
+        "rescue-1.00"
+      ],
+      [
+        508,
+        "rescue-1.00"
+      ],
+      [
+        509,
+        "rescue-1.00"
+      ],
+      [
+        510,
+        "rescue-1.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.55000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "network_egress_allowance": "0E-8",
+        "credits": "-17.55000000",
+        "plan_cost": "0E-8",
+        "free_storage": "-0E-8",
+        "reservation_adjustment": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "llm_tokens": "0E-8",
+        "volumes": "0E-8",
+        "ephemeral_apps": "17.55231794"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790434369.921552,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 1109 +++++++++++++++++++-\n 1 file changed, 1107 insertions(+), 2 deletions(-)\n",
+    "app_id": "ap-WydzVxJoF1QHEFRscLfdgr",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 267.23918215699996,
+      "stepping_s": 111.10898452500004,
+      "kernel_and_transfer_s": 109.58564233700054,
+      "neuromod_s": 0.001525388001596184,
+      "collection_s": 1.3732297820001804,
+      "wall_s": 379.020388945,
+      "wall_s_per_sim_s": 9.259082043750004,
+      "per_brain_wall_s_per_sim_s": 0.9259082043750003,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 383.25922717500004
+    },
+    "actual_runtime_estimate_usd": 0.10886691269698753,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790434369921548000-110",
+    "completed_at": 1790434769.728323,
+    "accounted_usd": 0.11356733446262944,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.2020218,
+    "billing_rows": [
+      {
+        "object_id": "ap-WydzVxJoF1QHEFRscLfdgr",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.10964552"
+      }
+    ],
+    "actual_metered_usd": 0.10964552
+  },
+  {
+    "label": "fused-dose-1790434580300832000-120",
+    "mode": "dose",
+    "gpu": "L4",
+    "tasks": [
+      [
+        501,
+        "rescue-2.00"
+      ],
+      [
+        502,
+        "rescue-2.00"
+      ],
+      [
+        503,
+        "rescue-2.00"
+      ],
+      [
+        504,
+        "rescue-2.00"
+      ],
+      [
+        505,
+        "rescue-2.00"
+      ],
+      [
+        506,
+        "rescue-2.00"
+      ],
+      [
+        507,
+        "rescue-2.00"
+      ],
+      [
+        508,
+        "rescue-2.00"
+      ],
+      [
+        509,
+        "rescue-2.00"
+      ],
+      [
+        510,
+        "rescue-2.00"
+      ]
+    ],
+    "pilot_seconds": null,
+    "chunk_ms": 10.0,
+    "check_modulation": false,
+    "projected_usd": 0.255548,
+    "reserved_usd": 0.4260833333333334,
+    "workspace_billing_before_submit": {
+      "metered_cost": "17.88000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "network_egress_allowance": "0E-8",
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-17.88000000",
+        "reservation_adjustment": "-0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "ephemeral_apps": "17.87897697",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "usd_per_hour": 1.0226000000000002,
+    "timeout_s": 900,
+    "submitted_at": 1790434580.3008351,
+    "source_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
+    "source_diff": " validation/records/p2/male-cuda-dose-receipts.json | 1208 +++++++++++++++++++-\n 1 file changed, 1206 insertions(+), 2 deletions(-)\n",
+    "app_id": "ap-ztVGCKNIIvyIBNFJJWHV2K",
+    "result": {
+      "batch": 10,
+      "simulated_s": 12.0,
+      "build_s": 276.895277978,
+      "stepping_s": 107.11154717699998,
+      "kernel_and_transfer_s": 105.52516350200068,
+      "neuromod_s": 0.0014380300012248881,
+      "collection_s": 1.4293958900006487,
+      "wall_s": 384.660535695,
+      "wall_s_per_sim_s": 8.925962264749998,
+      "per_brain_wall_s_per_sim_s": 0.8925962264749998,
+      "gpu": "NVIDIA L4",
+      "blocks": 232,
+      "registers": 54,
+      "chunk_ms": 10.0,
+      "dopamine_chunk_ms": 10.0,
+      "modulation_check_max_abs": null,
+      "gpu_memory_pool_bytes": 717548032,
+      "function_s": 389.030975173
+    },
+    "actual_runtime_estimate_usd": 0.11050640978108608,
+    "local_output": "camber-runs/cuda-circuit/fused-dose-1790434580300832000-120",
+    "completed_at": 1790434987.029996,
+    "accounted_usd": 0.11553367772761983,
+    "budget_basis": "elapsed-time upper estimate",
+    "billing_checked_at": 1790435392.202023,
+    "billing_rows": [
+      {
+        "object_id": "ap-ztVGCKNIIvyIBNFJJWHV2K",
+        "description": "flyonenomics-fused-cuda",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.11135743"
+      }
+    ],
+    "actual_metered_usd": 0.11135743
+  }
+]

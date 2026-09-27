@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.3",
+  "name": "coupling",
+  "description": "3.10r: wild type, fumin and dop1r1_null, vehicle, ten seeds, 20 s dark spontaneous",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "visual_version": "v0.2",
+    "behaviour_version": "base-v0.2"
+  },
+  "layers": {
+    "background": true,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "comparison": "paired",
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "spontaneous",
+          "duration_s": 20.0,
+          "label": "coupling",
+          "params": {
+            "stimulus": "dark"
+          }
+        }
+      ]
+    },
+    {
+      "label": "fumin",
+      "genotype": {
+        "named": "fumin",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "spontaneous",
+          "duration_s": 20.0,
+          "label": "coupling",
+          "params": {
+            "stimulus": "dark"
+          }
+        }
+      ]
+    },
+    {
+      "label": "dop1r1-null",
+      "genotype": {
+        "named": "dop1r1_null",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "spontaneous",
+          "duration_s": 20.0,
+          "label": "coupling",
+          "params": {
+            "stimulus": "dark"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "DN_all",
+      "DA_exposed",
+      "PAM"
+    ],
+    "rates": [
+      "DA_exposed",
+      "PAM",
+      "PPL1",
+      "CX_DAN",
+      "KC",
+      "MBON",
+      "ER",
+      "EPG",
+      "dFB",
+      "TuBu",
+      "steering_L",
+      "steering_R",
+      "DN_all",
+      "DAN"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {
+    "stage": "3.10r",
+    "form": "spontaneous-dark",
+    "declared_substrate": {
+      "item": 122,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "bg_policy": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "g_gaba_kc": 6.0,
+      "sigma_th_mv": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "records": [
+        {
+          "path": "validation/records/p2/rest-T3e-decision.json",
+          "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+        },
+        {
+          "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+          "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.2",
+  "name": "sugar-reflex",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2
+  ],
+  "substrate": {
+    "connectome_version": "783"
+  },
+  "layers": {
+    "background": false
+  },
+  "arms": [
+    {
+      "label": "wild-type",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "label": "upstream",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150,
+            "mode": "upstream"
+          }
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "label": "extended",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150,
+            "mode": "extended"
+          }
+        }
+      ]
+    },
+    {
+      "label": "mn9-threshold",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": [
+          {
+            "type": "shift_threshold",
+            "population": "MN9",
+            "delta_mv": 3
+          }
+        ]
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "label": "upstream",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150,
+            "mode": "upstream"
+          }
+        },
+        {
+          "type": "probe",
+          "assay": "sugar_reflex",
+          "duration_s": 1,
+          "label": "extended",
+          "params": {
+            "population": "sugar_GRN_R",
+            "rate_hz": 150,
+            "mode": "extended"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "sugar_GRN_R",
+      "MN9"
+    ],
+    "rates": [
+      "sugar_GRN_R",
+      "MN9"
+    ],
+    "popcount": true,
+    "live": true
+  }
+}

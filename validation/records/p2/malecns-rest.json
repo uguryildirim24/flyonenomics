@@ -1,0 +1,1074 @@
+{
+  "R_long": {
+    "F_failed_seeds": [
+      1,
+      5,
+      9
+    ],
+    "F_max": 3.1700168565521545,
+    "flywire_reference": "no separate 30 s values stated in item 121",
+    "per_seed": [
+      {
+        "F": 3.094994417278816,
+        "first5_central_hz": 4.762947411023702,
+        "first5_over_last5": 1.0086285399619033,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 5.004983178610275,
+        "last5_central_hz": 4.722201704904763,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 1
+      },
+      {
+        "F": 2.885271119940141,
+        "first5_central_hz": 4.8505501732729615,
+        "first5_over_last5": 0.9742848723185886,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 5.182682821946222,
+        "last5_central_hz": 4.978574861508108,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 2
+      },
+      {
+        "F": 2.951743102127243,
+        "first5_central_hz": 4.791313586117927,
+        "first5_over_last5": 0.9994122190892668,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.911415779222422,
+        "last5_central_hz": 4.794131485088407,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 3
+      },
+      {
+        "F": 2.859810611639135,
+        "first5_central_hz": 4.774750208686414,
+        "first5_over_last5": 0.9992239559401779,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.9001340652113425,
+        "last5_central_hz": 4.778458503022791,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 4
+      },
+      {
+        "F": 3.1700168565521545,
+        "first5_central_hz": 4.738896618015329,
+        "first5_over_last5": 1.0015118143911046,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.921230364505603,
+        "last5_central_hz": 4.7317431007006805,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 5
+      },
+      {
+        "F": 2.9276402153518117,
+        "first5_central_hz": 4.753497078390206,
+        "first5_over_last5": 0.9971240886757011,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.924898186325349,
+        "last5_central_hz": 4.767207143399186,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 6
+      },
+      {
+        "F": 2.8494572907783504,
+        "first5_central_hz": 4.785526016239597,
+        "first5_over_last5": 0.9997368365427297,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.943085523486707,
+        "last5_central_hz": 4.786785723319758,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 7
+      },
+      {
+        "F": 2.8936817667707144,
+        "first5_central_hz": 4.772352212075988,
+        "first5_over_last5": 0.9967455862012855,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.908304454506362,
+        "last5_central_hz": 4.787934130979182,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 8
+      },
+      {
+        "F": 3.0204483964287223,
+        "first5_central_hz": 4.8177927301242,
+        "first5_over_last5": 1.0026827801941753,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.934560999671161,
+        "last5_central_hz": 4.804902233577011,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 9
+      },
+      {
+        "F": 2.9359421358870006,
+        "first5_central_hz": 4.737889864164116,
+        "first5_over_last5": 0.9888759833166149,
+        "flywire_reference": "no separate 30 s values stated in item 121",
+        "ignited": false,
+        "ignition_peak_hz": 4.989021829863658,
+        "last5_central_hz": 4.791187109503452,
+        "rules": {
+          "F": "< 3",
+          "first5_over_last5": "in [0.5, 2]",
+          "ignited": "false under SPEC-P2 9.2"
+        },
+        "seed": 10
+      }
+    ],
+    "rules": {
+      "F": "< 3 every seed",
+      "first5_over_last5": "[0.5, 2] every seed",
+      "ignition": "false every seed"
+    }
+  },
+  "R_reflex": {
+    "reason": "item 152: sugar_GRN_R is empty; no substitute",
+    "status": "not_run"
+  },
+  "R_screen": {
+    "aggregate": {
+      "1.0": {
+        "DAN_hz_mean": 1.5143869209809264,
+        "F_failed_seeds": [
+          1,
+          5,
+          9
+        ],
+        "F_max": 3.27752730510052,
+        "KC_hz_mean": 0.010233759842519684,
+        "b_max": 0.0027074090710510284,
+        "central_hz_mean": 4.789498899653454,
+        "stability_ratio_range": [
+          0.9667973681091916,
+          1.0251821905420502
+        ]
+      },
+      "1.2": {
+        "DAN_hz_mean": 1.2432970027247956,
+        "F_failed_seeds": [],
+        "F_max": 2.525789300935625,
+        "KC_hz_mean": 0.010745570866141732,
+        "b_max": 0.0025658854150642702,
+        "central_hz_mean": 5.029574532668909,
+        "stability_ratio_range": [
+          0.9748110325871608,
+          1.0052351286173633
+        ]
+      }
+    },
+    "flywire_reference": {
+      "DAN_hz": {
+        "1.0": 0.8125761772853185,
+        "1.2": 0.8224930747922438
+      },
+      "F_max": 2.6187652193866677,
+      "KC_hz": {
+        "1.0": 0.08885841220784238,
+        "1.2": 0.08752752559397334
+      },
+      "R_long": "no separate 30 s values stated in item 121",
+      "b": "criterion held; numeric maximum absent from item 121 summary",
+      "central_hz": {
+        "1.0": 4.831751731406203,
+        "1.2": 4.864218232460102
+      },
+      "gradedness": "not measured; null in item 121 record",
+      "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+    },
+    "per_seed": [
+      {
+        "1.0": {
+          "DAN_hz": 1.7931880108991827,
+          "F": 3.27752730510052,
+          "KC_hz": 0.007874015748031496,
+          "b": 0.002245918888485512,
+          "central_hz": 4.765378291553892,
+          "stability_ratio": 0.9938424767284205
+        },
+        "1.2": {
+          "DAN_hz": 1.1959128065395095,
+          "F": 2.3834020931121827,
+          "KC_hz": 0.010531496062992125,
+          "b": 0.0023997489493406843,
+          "central_hz": 5.075749373940758,
+          "stability_ratio": 0.9921643497802438
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 1
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.1934604904632153,
+          "F": 2.8996983485707304,
+          "KC_hz": 0.010482283464566929,
+          "b": 0.002227459281182892,
+          "central_hz": 4.889340550932133,
+          "stability_ratio": 0.9667973681091916
+        },
+        "1.2": {
+          "DAN_hz": 1.1994550408719347,
+          "F": 2.38771093346555,
+          "KC_hz": 0.011392716535433072,
+          "b": 0.0025474258077616495,
+          "central_hz": 5.080499835580401,
+          "stability_ratio": 1.0028821169372901
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 2
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.5103542234332425,
+          "F": 2.902565010903542,
+          "KC_hz": 0.010949803149606299,
+          "b": 0.002110548434932961,
+          "central_hz": 4.788207320466446,
+          "stability_ratio": 1.0251821905420502
+        },
+        "1.2": {
+          "DAN_hz": 1.1591280653950953,
+          "F": 2.286192644433911,
+          "KC_hz": 0.010875984251968503,
+          "b": 0.0023997489493406843,
+          "central_hz": 5.071742594794222,
+          "stability_ratio": 0.997312915486697
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 3
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.5193460490463215,
+          "F": 2.8793999961157657,
+          "KC_hz": 0.010531496062992125,
+          "b": 0.00199363758868303,
+          "central_hz": 4.7711709204968,
+          "stability_ratio": 1.006080689959161
+        },
+        "1.2": {
+          "DAN_hz": 1.173024523160763,
+          "F": 2.3259084645821204,
+          "KC_hz": 0.010285433070866141,
+          "b": 0.0024428213663801324,
+          "central_hz": 5.061083145726355,
+          "stability_ratio": 0.9853012525372544
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 4
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.7831062670299727,
+          "F": 3.2755083808812695,
+          "KC_hz": 0.007874015748031496,
+          "b": 0.0021351612446697883,
+          "central_hz": 4.768906989097716,
+          "stability_ratio": 0.9801181279313865
+        },
+        "1.2": {
+          "DAN_hz": 1.1768392370572207,
+          "F": 2.33636907872399,
+          "KC_hz": 0.010260826771653544,
+          "b": 0.002473587378551167,
+          "central_hz": 5.060610123188223,
+          "stability_ratio": 1.0052351286173633
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 5
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.397275204359673,
+          "F": 2.8770185997326707,
+          "KC_hz": 0.01031003937007874,
+          "b": 0.002055169613025099,
+          "central_hz": 4.770920496800142,
+          "stability_ratio": 1.0009619523913287
+        },
+        "1.2": {
+          "DAN_hz": 1.1626702997275205,
+          "F": 2.4452497141194627,
+          "KC_hz": 0.011122047244094487,
+          "b": 0.0025658854150642702,
+          "central_hz": 5.046533275997268,
+          "stability_ratio": 0.979263553387168
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 6
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.5321525885558582,
+          "F": 2.916118508365461,
+          "KC_hz": 0.010949803149606299,
+          "b": 0.0022889913055249606,
+          "central_hz": 4.80111805327195,
+          "stability_ratio": 0.9930925297956497
+        },
+        "1.2": {
+          "DAN_hz": 1.403542234332425,
+          "F": 2.4674995931838253,
+          "KC_hz": 0.011294291338582677,
+          "b": 0.0023505233298670293,
+          "central_hz": 4.914160321756507,
+          "stability_ratio": 0.9969941887649456
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 7
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.5024523160762944,
+          "F": 2.7997248261331142,
+          "KC_hz": 0.011171259842519685,
+          "b": 0.002252072090919719,
+          "central_hz": 4.778787342220424,
+          "stability_ratio": 0.992038930158747
+        },
+        "1.2": {
+          "DAN_hz": 1.3880108991825613,
+          "F": 2.525789300935625,
+          "KC_hz": 0.010851377952755906,
+          "b": 0.0024428213663801324,
+          "central_hz": 4.909124022968153,
+          "stability_ratio": 1.0002780237658833
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 8
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.499182561307902,
+          "F": 3.065277414741246,
+          "KC_hz": 0.011491141732283465,
+          "b": 0.0027074090710510284,
+          "central_hz": 4.809991652543444,
+          "stability_ratio": 1.0073997164496118
+        },
+        "1.2": {
+          "DAN_hz": 1.414441416893733,
+          "F": 2.4096070385326334,
+          "KC_hz": 0.010187007874015748,
+          "b": 0.0024920469858537874,
+          "central_hz": 5.024425163787216,
+          "stability_ratio": 0.9748110325871608
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 9
+      },
+      {
+        "1.0": {
+          "DAN_hz": 1.4133514986376023,
+          "F": 2.8005602366704516,
+          "KC_hz": 0.010703740157480315,
+          "b": 0.002030556803288271,
+          "central_hz": 4.751167379151594,
+          "stability_ratio": 0.9757464458727797
+        },
+        "1.2": {
+          "DAN_hz": 1.1599455040871933,
+          "F": 2.3410270912045315,
+          "KC_hz": 0.010654527559055119,
+          "b": 0.00246743417611696,
+          "central_hz": 5.051817468949991,
+          "stability_ratio": 0.9937206277378811
+        },
+        "flywire_reference": {
+          "DAN_hz": {
+            "1.0": 0.8125761772853185,
+            "1.2": 0.8224930747922438
+          },
+          "F_max": 2.6187652193866677,
+          "KC_hz": {
+            "1.0": 0.08885841220784238,
+            "1.2": 0.08752752559397334
+          },
+          "R_long": "no separate 30 s values stated in item 121",
+          "b": "criterion held; numeric maximum absent from item 121 summary",
+          "central_hz": {
+            "1.0": 4.831751731406203,
+            "1.2": 4.864218232460102
+          },
+          "gradedness": "not measured; null in item 121 record",
+          "stability_ratio": "criterion held; numeric per-seed ratios absent from item 121 summary"
+        },
+        "rule": {
+          "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+          "F": "< 3 in every seed at both pair weights",
+          "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+          "b": "< 0.05 in every seed at both pair weights",
+          "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+          "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+        },
+        "seed": 10
+      }
+    ],
+    "rules": {
+      "DAN_hz": "ten-seed mean in [0.5, 10] Hz at both weights",
+      "F": "< 3 in every seed at both pair weights",
+      "KC_hz": "ten-seed mean <= 2 Hz at both weights",
+      "b": "< 0.05 in every seed at both pair weights",
+      "central_hz": "ten-seed mean in [0.5, 8] Hz at both weights",
+      "stability_ratio": "in [0.5, 2] in every seed at both pair weights"
+    }
+  },
+  "brain_s": 701.0,
+  "class": "measurement",
+  "concurrent_cost": {
+    "arm_count": 43,
+    "first_eight_mean_wall_s_per_brain_s": 92.67811046317172,
+    "mean_wall_s_per_brain_s": 91.30558494723844,
+    "median_wall_s_per_brain_s": 91.20445600091868,
+    "range_wall_s_per_brain_s": [
+      87.86035981991638,
+      93.15102197481247
+    ],
+    "revised_finish_utc": "2026-09-22T15:17:20.411682+00:00",
+    "sum_worker_peak_rss_bytes": 58023702528,
+    "worker_peak_rss_bytes": {
+      "3227130": 7251038208,
+      "3227131": 7248539648,
+      "3227132": 7253901312,
+      "3227133": 7259705344,
+      "3227134": 7258861568,
+      "3227135": 7261716480,
+      "3227136": 7243120640,
+      "3227137": 7246819328
+    }
+  },
+  "configuration": "item 122 unchanged; no male tuning",
+  "dataset": "male-cns:v1.0",
+  "dopamine_calibration_chain": {
+    "Q_c_um_per_s": 0.0026666666666666666,
+    "R_c_weighted_spikes_per_s": [
+      51.23333333333333,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      29.666666666666668,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      51.23333333333333,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      29.666666666666668,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      3.342152053117752,
+      0.0,
+      41.9535773276817,
+      0.017474494129419326,
+      0.021500499049822486,
+      11.188476502336561,
+      7.810152426090402
+    ],
+    "S_c_um_per_s": [
+      0.0,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0,
+      0.0026666666666666666,
+      0.0,
+      0.0025734693646430966,
+      0.0025519973384009464,
+      0.0,
+      0.0
+    ],
+    "alpha_c_um_per_weighted_spike": [
+      5.20494469746259e-05,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      8.98876404494382e-05,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      5.20494469746259e-05,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      8.98876404494382e-05,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.0007978890919038367,
+      0.005333333333333333,
+      6.356231903273606e-05,
+      0.005333333333333333,
+      0.005333333333333333,
+      0.00023834046271713305,
+      0.0003414359312320802
+    ],
+    "compartments": [
+      "gamma1_L",
+      "gamma2_L",
+      "gamma3_L",
+      "gamma4_L",
+      "gamma5_L",
+      "alpha1_L",
+      "alpha2_L",
+      "alpha3_L",
+      "beta1_L",
+      "beta2_L",
+      "alpha_prime1_L",
+      "alpha_prime2_L",
+      "alpha_prime3_L",
+      "beta_prime1_L",
+      "beta_prime2_L",
+      "gamma1_R",
+      "gamma2_R",
+      "gamma3_R",
+      "gamma4_R",
+      "gamma5_R",
+      "alpha1_R",
+      "alpha2_R",
+      "alpha3_R",
+      "beta1_R",
+      "beta2_R",
+      "alpha_prime1_R",
+      "alpha_prime2_R",
+      "alpha_prime3_R",
+      "beta_prime1_R",
+      "beta_prime2_R",
+      "EB",
+      "PB",
+      "FB",
+      "NO_L",
+      "NO_R",
+      "LAL_L",
+      "LAL_R"
+    ],
+    "constants": {
+      "DA_ref_um": 0.02,
+      "Km_um": 1.3,
+      "R_min_hz": 0.5,
+      "Vmax_um_per_s": 0.11,
+      "k_ns_per_s": 0.05
+    },
+    "measure_s": 5.0,
+    "mode": [
+      "derived",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "derived",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "derived",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "derived",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "source",
+      "derived",
+      "source",
+      "derived",
+      "source",
+      "source",
+      "derived",
+      "derived"
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "settle_s": 2.0,
+    "status": "computed, not adopted"
+  },
+  "gradedness": {
+    "central_hz_mean_1_4": 5.3062664103407275,
+    "flywire_reference": "not measured; null in item 121 record",
+    "per_seed": [
+      {
+        "1.0": 4.765378291553892,
+        "1.2": 5.075749373940758,
+        "1.4": 5.306050641236435,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 1
+      },
+      {
+        "1.0": 4.889340550932133,
+        "1.2": 5.080499835580401,
+        "1.4": 5.312048162294792,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 2
+      },
+      {
+        "1.0": 4.788207320466446,
+        "1.2": 5.071742594794222,
+        "1.4": 5.31001441833405,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 3
+      },
+      {
+        "1.0": 4.7711709204968,
+        "1.2": 5.061083145726355,
+        "1.4": 5.302699010952875,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 4
+      },
+      {
+        "1.0": 4.768906989097716,
+        "1.2": 5.060610123188223,
+        "1.4": 5.306207472238383,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 5
+      },
+      {
+        "1.0": 4.770920496800142,
+        "1.2": 5.046533275997268,
+        "1.4": 5.282260390053879,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 6
+      },
+      {
+        "1.0": 4.80111805327195,
+        "1.2": 4.914160321756507,
+        "1.4": 5.304586042040826,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 7
+      },
+      {
+        "1.0": 4.778787342220424,
+        "1.2": 4.909124022968153,
+        "1.4": 5.3192725065135456,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 8
+      },
+      {
+        "1.0": 4.809991652543444,
+        "1.2": 5.024425163787216,
+        "1.4": 5.307775782257861,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 9
+      },
+      {
+        "1.0": 4.751167379151594,
+        "1.2": 5.051817468949991,
+        "1.4": 5.311749677484633,
+        "flywire_reference": "not measured under item 121",
+        "passed": true,
+        "rule": "central(1.4) < 3 * central(1.0) and < 3 * central(1.2)",
+        "seed": 10
+      }
+    ],
+    "rule": "at 1.4 mV, central mean < 3 times each pair member"
+  },
+  "interpretation": "Resting-state measurement, not behaviour. The fly does not see. Nothing was fitted; item 155 subsequently accepted the unchanged configuration as the male resting substrate.",
+  "outcome": {
+    "R_long": "F is at or above the historical value 3 on seeds 1, 5, 9; no ignition; every edge ratio is within the historical interval",
+    "R_reflex": "not runnable: item 152 found no male sugar source",
+    "R_screen": "F is at or above the historical value 3 at 1.0 mV on seeds 1, 5, 9",
+    "gradedness": "below the historical comparison line on every seed",
+    "next_step": "item 155 accepts the unchanged configuration; port step 6 adopts the chain and mints the separately versioned male drive and substrate id",
+    "resting_criterion": "not a gate under item 155; the configuration is the male resting substrate and the section 2.3 values are recorded measures"
+  },
+  "part_b_completed_utc": "2026-09-22T15:21:14.364957+00:00",
+  "part_b_started_utc": "2026-09-22T12:57:28.075224+00:00",
+  "platform": {
+    "cpu_count": 16,
+    "machine": "aarch64",
+    "memory_bytes": {
+      "MemAvailable": 85062008832,
+      "MemTotal": 101036359680
+    },
+    "python": "3.12.14",
+    "release": "6.17.0-1020-oracle",
+    "system": "Linux"
+  },
+  "raw": {
+    "files_sha256": {
+      "run-complete.json": "045024a737bb67ab5bb03cab337e8db54cc77f63be46ab75c9297848a832e6cc",
+      "run.log": "74a04902c665a325dec1214a0a6784a4a6fc0e12213c2a8b2a371ecbafd6d2d6",
+      "seed-1.json": "2c50881e68bee211b7a5db0a0499eace693c1585f9c91b0596b55dcd8e0044f9",
+      "seed-10.json": "6c3e94aafdeba42358e82b795e8f9ba2e757e833c5fe6e18e25097692d970179",
+      "seed-2.json": "31d95144c2c9edec9cebaf3192648d329c6439896270c16fdd002decfaf6661a",
+      "seed-3.json": "ee16c19d95d23ba33299d3c9823d2ce53aaf6c093f507ebc0fbe69810d20e022",
+      "seed-4.json": "5d9dd194a658b9f63a7e4919658286dffabb994b0187b14ef5ff81e703dc08b3",
+      "seed-5.json": "dc681fb1c240043d9aa52cb07cf8aae1a09608292040d848b597bc119ff8cde4",
+      "seed-6.json": "28bc1dbafe16d5f62a4e7f162955b2a14c92c47fc4ca6b22554d8d56579269f2",
+      "seed-7.json": "3cfccae2bb6f9ab3a7eced81539bdd1dcb1795dc9614cd3468df6f748229ce66",
+      "seed-8.json": "503c75eb9336d1db3183c790f8267e2a5d3ba4eb153ca89ef711c33482a24407",
+      "seed-9.json": "5aca951720210fcceba8aef6f23b4a636610de63f8db5065181ec7ec84c32fd5",
+      "summary.json": "3365c6830e8b543739c07bc1c362fd24dde7d9d46f7213b897be34fe7bd4196f"
+    },
+    "path": "camber-runs/malecns-rest/run-20260922T125727Z"
+  },
+  "rules_note": "The existing SPEC-P2 2.3 and 9.2 lines were evaluated as frozen comparisons. Under item 155 they are recorded MaleCNS measures, not gates. No new pass line was introduced.",
+  "runner_commit": "2ef6711bf73821f7dec7f24d12577a3d34d0d9a8",
+  "status": "completed",
+  "wall_s": 8626.289733,
+  "workers": 8
+}

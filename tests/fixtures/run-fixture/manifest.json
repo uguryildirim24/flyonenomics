@@ -1,0 +1,1365 @@
+{
+  "state": "done",
+  "identity": {
+    "code_commit": "700a045f87704c4e848b9cb92ab2e15907575866",
+    "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+    "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+    "data_versions": {
+      "behaviour-v0.1.yaml": "v0.1",
+      "compartments-v0.1.yaml": "v0.1",
+      "dopamine-v0.1.yaml": "v0.1",
+      "params-v0.1.yaml": "v0.1",
+      "populations-v0.1.yaml": "v0.1",
+      "receptors-v0.1.yaml": "v0.1"
+    },
+    "connectome_version": "783",
+    "layer_flags": {
+      "background": false,
+      "dopamine_A": true,
+      "transporter_C": true,
+      "dan_fast_synapses": "retain",
+      "receptor_kinetics_B": false,
+      "learning_D": false
+    },
+    "fixture_hash": "",
+    "protocol_hash": "edcaa939c0994cff6543b572f0042f528f8a816d7f7987014f4c11a10aedfcf9",
+    "assay": "sugar_reflex",
+    "machine": "Mac17,8 / Apple M5 Pro",
+    "date": "2026-09-14T13:41:18.122011+00:00"
+  },
+  "compatibility": "development",
+  "stubs": [
+    "IdentityBehaviour"
+  ],
+  "versions": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.1",
+    "drive_version": "dev",
+    "dopamine_version": "v0.1",
+    "behaviour_version": "v0.1"
+  },
+  "checksums": {
+    ".cache/Drosophila_brain_model/2023_03_23_completeness_630_final.csv": "e6b71e17671a9bdb05f55e4bc6774640a1418cb7a05125e0fc994ad40f9bfdfb",
+    ".cache/Drosophila_brain_model/2023_03_23_connectivity_630_final.parquet": "94db8c650533bc36ffa3223f2e62325d5648b8d6bd31c3a4e1c804628c7557b3",
+    ".cache/Drosophila_brain_model/Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+    ".cache/Drosophila_brain_model/Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+    ".cache/Drosophila_brain_model/sez_neurons.pickle": "2bc5a2a8289924f2de39a8e68bdc07025cb6d6c6c6ddc83a973c0cace7cec2ce",
+    ".cache/Drosophila_brain_model/model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+    ".cache/Drosophila_brain_model/utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+    ".cache/Drosophila_brain_model/example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+    ".cache/Drosophila_brain_model/figures.ipynb": "33cd73c0b4b4a291c51b7bab639c4fa28978e49e111ff0d6adbca5687addb84c",
+    "data/reference/l5-baseline-spikes.parquet": "620bfbeba22a4dfb6d41d5567ab69bef8c3c21ca7bb85d95cd5cc7df4d3f3a82",
+    "data/reference/l5-baseline-results.json": "590481c6dd53aef45c8c448253d148933446390c4242a73c40e2e8a7a23841de",
+    ".cache/annotations-v2.1.0.tsv": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6",
+    ".cache/annotations-v1.1.0.tsv": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+    ".cache/annotations-v2.1.0-columns.md": "5bed86549dd6d2837397c2a451db7606718f5d5be8a8a7a7a49219aade1c9802",
+    ".cache/github-importJnx5V7.zip": "2fb9e7c1a9222c9db974b6be9495ca67729a0d8616e576ea97179378126fb25b",
+    ".cache/CeTrAn/1f98ddd83366db53d4aabfa6f42b1153f8e1553d/functions.r": "5c47b79dde9710ef6686f163ce37256d0fbe79e9c6426956fcf7af45793ad5b3",
+    ".cache/CeTrAn/1f98ddd83366db53d4aabfa6f42b1153f8e1553d/utils.r": "cb6714419cf2d2373a9371b99d8b41eff519f21a95bbf6fe7ced15a401e435c0",
+    ".cache/CeTrAn/1f98ddd83366db53d4aabfa6f42b1153f8e1553d/angledev.r": "f84f2f593dc6e4b027aa6b942085359ff0a6f9b67767f655a06bae9a85825797",
+    ".cache/CeTrAn/1f98ddd83366db53d4aabfa6f42b1153f8e1553d/CeTrAn_fromxml_4.rgg": "19277597b0ac5b18c9d946d6a87779907b2fd31b480f45eabb19ec1b1e589c33",
+    ".cache/shiu-archive/results.zip": "f757c8e18e3826c89ba12f930bee455bb6dc22f28403a27161e9b9d9f0a65e93",
+    ".cache/shiu-archive/sugarR.parquet": "f74cd3da19614de479415eefe10b06f69fb77a69600e207244e37e7d60112274",
+    ".cache/shiu-archive/sugarR_150Hz.parquet": "04e8b0309bf7b027004f3d11fa90b3f51773131c533b6419314cdc19cb546df1",
+    ".cache/zenodo-10676866/per_neuron_neuropil_count_post_783.feather": "e2418f4794fe47984bb4bc15ffc194003ea8e349a428551f30af94947d85d712",
+    "behaviour-v0.1.yaml": "593e77589812599e48ff96cc3a9c777d344306cb7dde311317b4a282094a7622",
+    "compartments-v0.1.yaml": "f20bd346d80c042287fb41e5441dca6559333d551ab79d5996a0e16d591dd762",
+    "dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+    "params-v0.1.yaml": "884156a4642f66f6ae038ae627ee27a4f60e8c6f3772e3cb7f1f0730dd644fce",
+    "populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7",
+    "receptors-v0.1.yaml": "a8ea6705f84a00167e8cf6b2146233ec2b9645e458ebb2c696b940f95e203465"
+  },
+  "uv_lock_hash": "be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619",
+  "provenance_hash": "967959eda242d7970be2e7f22df3967b0dda7c7e2081d851a38047f5276d0592",
+  "code_commit": "700a045f87704c4e848b9cb92ab2e15907575866",
+  "protocol_hash": "edcaa939c0994cff6543b572f0042f528f8a816d7f7987014f4c11a10aedfcf9",
+  "seed_derivation": "SeedSequence(S, spawn_key=(s,k,component)); arms omitted; ANALYSIS k=0,s=0",
+  "slow_state": "phase1-drug-only",
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arm_layers": {
+    "wild-type": {
+      "background": false,
+      "dopamine_A": true,
+      "transporter_C": true,
+      "dan_fast_synapses": "retain",
+      "receptor_kinetics_B": false,
+      "learning_D": false
+    },
+    "mn9-threshold": {
+      "background": false,
+      "dopamine_A": true,
+      "transporter_C": true,
+      "dan_fast_synapses": "retain",
+      "receptor_kinetics_B": false,
+      "learning_D": false
+    }
+  },
+  "free_parameters": {
+    "lif.w_syn": 0.275,
+    "pk.kappa": 0.01,
+    "lif.g_inh": 1.0,
+    "rec.formulation": "absolute",
+    "receptor_map_version": "v0.1",
+    "dopamine_version": "v0.1",
+    "drive_version": "dev",
+    "da.tonic_source": [
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666,
+      0.0026666666666666666
+    ]
+  },
+  "calibration_limits": {
+    "phasic_release": "alpha_max placeholder; bare K2 has zero tonic DAN rate",
+    "da.alpha_max": 0.1,
+    "alpha_unit": "\u00b5M per weighted DAN spike",
+    "background_targets": "deferred on the canonical bare substrate (item 47)"
+  },
+  "da.tonic_source": [
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666,
+    0.0026666666666666666
+  ],
+  "tonic_source_rule": "provisional item 24 / SPEC item 51",
+  "formulation": "absolute",
+  "dopamine_qualified": true,
+  "uninnervated_compartments": [],
+  "validation": [
+    {
+      "test_id": "0.1",
+      "identity_hash": "96fd3d9d23ba4a7fa130cffb5f25a729109a4312110794fd4dbe89459cdfaf3d",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.2",
+      "identity_hash": "885488bba9084edbecd36938523e0ad58aec2b439c3608a03280db2151410e85",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.3",
+      "identity_hash": "b5f1bdfe9e3ea87a179bdf29d272ef86c4c101c0c30c3e31f0f05266976e3820",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.3b",
+      "identity_hash": "23e83b0e30b749f50dfbf224fc9b714ee06c9ec4116da665928c48661b8ce895",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "recorded"
+    },
+    {
+      "test_id": "0.4",
+      "identity_hash": "01101436844851c83415138c9d341fe61cce31ea27060ddccb4d84279ab66801",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.5",
+      "identity_hash": "38dee380437f3d93541aefcf4a8df071363db1f31e4623b341b0d62eddda3e5e",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.6-lite",
+      "identity_hash": "1461639d975653d4bf2b07ff60ce650573906328882d4a543631c72bfeeca240",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.7",
+      "identity_hash": "32df363ac7eb0813381ef5bdc43b6de62145d01c008b40014d3faa96512668be",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.8",
+      "identity_hash": "5eb8f8054662d52e87abcd7ccfe65d1296c2177a62ca13e3363a0c81a3168c4b",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "0.9",
+      "identity_hash": "3a0ffd80d25f506eb8106d77074eb16f5aee12790287bbbf605bb2eb2cedec4f",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.0",
+      "identity_hash": "25fed66b49ea0ad1f67675ef4140a75849de6edaaec237551a238eb695ce9025",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.0b",
+      "identity_hash": "397141bac77550a472aab212e792b3e5e95a1d683cce53f17cc20bc336ae2fc1",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.1",
+      "identity_hash": "82fafb1be87a2e677f1403fd8a74e4d8757784dc98e1442e8dc375a078d6dc8b",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.2",
+      "identity_hash": "06a1d0c8f8eb68f8797eea8f226390548479fff32d0921442c3f399371d8f69d",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.3",
+      "identity_hash": "3332d9596fc530415aff0a161b77d1d995c712569942eff5c3367e0168bb8bb2",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "1.4",
+      "identity_hash": "afaffd317fd9536a0f916a01433c7633d17b1bb6aecab3dd1a248c75fb8ac5e5",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "failed"
+    },
+    {
+      "test_id": "2.1",
+      "identity_hash": "fee9e2774d4217708452cd404a03dd0e6a8cef954ebd71093344b2b161f1bc23",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "failed"
+    },
+    {
+      "test_id": "2.2",
+      "identity_hash": "5f55bd7eb87b85c25ecbf02591d466fc926d234a48284d06a177fcb1320c0d3a",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "2.3",
+      "identity_hash": "70fda9f5442b9f876371a5f1feb348aa0cfa0150a28dc38d6c5f3374c24602e7",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "2.4",
+      "identity_hash": "4aeb8793736281bfe332d7242e745e169792e59f22031ec8bd4a0b6add43df64",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "failed"
+    },
+    {
+      "test_id": "2.5",
+      "identity_hash": "d327cdb3c1c9c2e63bff1c0fc7b29a060422237e3b4c1bf7220d20e26e777eb1",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "failed"
+    },
+    {
+      "test_id": "3.1",
+      "identity_hash": "8aaac0a15175c3e56b722596b527927af018c4fb321d73b6cc8d7461fc9d75e3",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "recorded"
+    },
+    {
+      "test_id": "3.1b",
+      "identity_hash": "8a14827a11ad5bd891adf423790c04effb93c9862b5743696e51761b0c8a8350",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.2",
+      "identity_hash": "5c2d69415e78b3c8c35a5a793896744ca700226a66d9b172fc04697b85f191e1",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.3",
+      "identity_hash": "927aef075fba1e107807c189a66c3617d48beabdc96492b9283013b09cc2a94d",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.4",
+      "identity_hash": "6bf4e8c4839f0f181aa92e72eb19c82cd6a173f65da2f0fd9e138508658a1673",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.5",
+      "identity_hash": "0e314e6906fc7d553a54e7c6da277b9f82a50d920202a9883433eb683fcb96ce",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.6",
+      "identity_hash": "f2c55413b1c77939f99a6734b1c8ddb0a576d6303ec3bb86a9233e72abb1b9e5",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "recorded"
+    },
+    {
+      "test_id": "3.7",
+      "identity_hash": "bc5b5b17d1593b3ef93c0f9f114819af917d534dfff0ef3738ba89e319e80c03",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "3.8",
+      "identity_hash": "20931684baf01cf632d8ae33218e673fd88b195d580916fb3ca88681814b4087",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "recorded"
+    },
+    {
+      "test_id": "3.8-dev",
+      "identity_hash": "8146e60aa60961a22ef0dd283d64b387fdc2d88ba20b0031ff99e9243c567d3c",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "3.9",
+      "identity_hash": "31b9f3df638d9adfa819454fd937f32d7587b569b14d8532a1c8001f08fd316c",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "recorded"
+    },
+    {
+      "test_id": "4.0",
+      "identity_hash": "0d965aeb0edca4f59f964c03e5add0294dba6b3fed8c5a8402faeb02bf943aba",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "4.0b",
+      "identity_hash": "e4768814a725063e16ec4ce213ff9bcbb38bff22e89ca6ed738370c705a9bf37",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "4.1",
+      "identity_hash": "9eb4dc53076ee247b11768a8e59f222fd51b03ebaf41fff4601cb4a3e8c4eaed",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "failed"
+    },
+    {
+      "test_id": "4.1-procedure",
+      "identity_hash": "2875da6c3b92a15064a87d45303dcdb85ebceae2d3845b635f045edf03f14bb8",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "4.2",
+      "identity_hash": "2f836d3cad553aa7c29b3516e80f40f7b4a5fcf362cdfb89f21645f1f36d5bd3",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.2-dev",
+      "identity_hash": "ed4d2f6d4fe5d0e253a96591b2bb5bd8cb7bff431741ba10e8d931ea8ee01e06",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.3",
+      "identity_hash": "32a809bb3734cb86af5f72d998c86927f87c92e8cb2ad552c0c298cd12a0cebf",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.4",
+      "identity_hash": "8f24c0538edc8a68a55484ad0091c7dd175ca20524916cffd6a504e4361c6e88",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.5",
+      "identity_hash": "58d5a250ef4c97e33f4fa8d130233889d2e1241ee6057502586f589a91353763",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.6",
+      "identity_hash": "76b06388a2a91afd71f3ad09efc842e9bdb2534f1ab029aac1dc296aa6e2091f",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.7",
+      "identity_hash": "935fd00dd0ea6be70b6623556a34493863a26df14bedc08d8d26cf961f98b66b",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.8",
+      "identity_hash": "e48ffb7d536d2d80c4d5f8b152fe5916fe8eb3e5e96523b2cd7223304a92d855",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "4.8-dev",
+      "identity_hash": "697db950db85961d1f0ca9b57f66f179827831ccce71019af906cce62321ec1c",
+      "binding": "stale",
+      "arm_bindings": {
+        "wild-type": "stale",
+        "mn9-threshold": "stale"
+      },
+      "outcome": "unavailable"
+    },
+    {
+      "test_id": "registry.completeness",
+      "identity_hash": "1f3247fc48fbafa374525ad799266acb05ace093fe294c694695e85e8f5b8663",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "registry.inventory",
+      "identity_hash": "2059f66d1f51cc88bede1644c22a2ce9f0edf4b3768a8f933c4e6db75b28321f",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "registry.labels",
+      "identity_hash": "3193f391ddd073ee2708443d0bb61ea1df7457a018635e57c5b8b542f7fc34ae",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    },
+    {
+      "test_id": "registry.precedence",
+      "identity_hash": "27fcc83ed7a2db22e9bfb02b4d98e3334b5b2ad5fbd1a9f9c20f9aaae1e9549a",
+      "binding": "valid",
+      "arm_bindings": {
+        "wild-type": "valid",
+        "mn9-threshold": "valid"
+      },
+      "outcome": "passed"
+    }
+  ],
+  "artefacts": {
+    "fano": "not run",
+    "jitter": "not run",
+    "permutation": "not run",
+    "completeness": {
+      "outcome": "passed",
+      "measured": {
+        "codex_status": "not fetched",
+        "denominator_source": "Zenodo per-neuron post-synapse counts, FlyWire v783",
+        "denominator_status": "fetched",
+        "threshold": 0.5,
+        "populations": {
+          "DAN": 0.9436803672021699,
+          "PAM": 0.9415912060188314,
+          "PPL1": 0.9499703381451453,
+          "PPL2": 0.9348054237857353,
+          "CX_DAN_candidates": 0.9458800997056711,
+          "CX_DAN": 0.9465756648623206,
+          "EB_other": "unknown",
+          "PB_other": 0.922457462008053,
+          "FB_columnar": 0.9428046591791711,
+          "NO_neurons": 0.9672102039004469,
+          "LAL_neurons": 0.9655504014792876,
+          "KC": 0.9715995714697763,
+          "KC_g": 0.9701289323010402,
+          "KC_ab": 0.9773909218030701,
+          "KC_apbp": 0.9606254723177649,
+          "MBON": 0.9554439574201629,
+          "MBON_MBON01": 0.8964559856279601,
+          "MBON_MBON02": 0.9658685241619503,
+          "MBON_MBON03": 0.9611745346086599,
+          "MBON_MBON04": 0.9491589799240369,
+          "MBON_MBON05": 0.9382978723404255,
+          "MBON_MBON06": 0.9809324800835837,
+          "MBON_MBON07": 0.9850835994739808,
+          "MBON_MBON09": 0.9597503815129714,
+          "MBON_MBON10": 0.9473492439424304,
+          "MBON_MBON11": 0.973568281938326,
+          "MBON_MBON12": 0.9545241443975622,
+          "MBON_MBON13": 0.9558991981672395,
+          "MBON_MBON14": 0.9642062949024974,
+          "MBON_MBON15": 0.9343015214384509,
+          "MBON_MBON15-like": 0.9372278664731495,
+          "MBON_MBON16": 0.9427207637231504,
+          "MBON_MBON17": 0.9216405468489497,
+          "MBON_MBON17-like": 0.917834702754954,
+          "MBON_MBON18": 0.9858120927163243,
+          "MBON_MBON19": 0.9502857142857143,
+          "MBON_MBON20": 0.949683257918552,
+          "MBON_MBON21": 0.9428466076696165,
+          "MBON_MBON22": 0.9816347124117053,
+          "MBON_MBON23": 0.9754189944134078,
+          "MBON_MBON24": 0.9592399187699449,
+          "MBON_MBON25,MBON34": 0.9340452261306532,
+          "MBON_MBON26": 0.9587752793098572,
+          "MBON_MBON27": 0.90625,
+          "MBON_MBON28": 0.9403973509933775,
+          "MBON_MBON29": 0.9309730005094243,
+          "MBON_MBON30": 0.9525108143690051,
+          "MBON_MBON31": 0.9597932946811192,
+          "MBON_MBON32": 0.94335401933901,
+          "MBON_MBON33": 0.9380730497519916,
+          "MBON_MBON35": 0.9348347360007523,
+          "MBON_MBON08": "unknown",
+          "ER": 0.9317431300860951,
+          "EPG": 0.9433139534883721,
+          "PEN": 0.9527543424317618,
+          "PEG": 0.9301627716649995,
+          "D7": 0.9239612022512274,
+          "FB_tangential": 0.9368557823524288,
+          "dFB": 0.9351827700562656,
+          "TuBu": 0.9680317528691424,
+          "MeTu": 0.9043634568823494,
+          "DNa01_L": 0.9656456953642384,
+          "DNa01_R": 0.9746887966804979,
+          "DNa02_L": 0.9727243894703457,
+          "DNa02_R": 0.9756802847186179,
+          "steering_L": 0.9715863721054032,
+          "steering_R": 0.9755299742089703,
+          "DN_all": 0.9633518632004847,
+          "DNp01": 0.9280956112852664,
+          "sugar_GRN_R": 0.9637931034482758,
+          "MN9": 0.9750087382034254,
+          "bitter_GRN_R": 0.9292803970223326,
+          "motor": 0.9634687189828746,
+          "sensory": "unknown"
+        },
+        "details": {
+          "DAN": {
+            "in_model_inputs": 226153,
+            "total_inputs": 239650,
+            "missing_denominators": 0
+          },
+          "PAM": {
+            "in_model_inputs": 125403,
+            "total_inputs": 133182,
+            "missing_denominators": 0
+          },
+          "PPL1": {
+            "in_model_inputs": 76864,
+            "total_inputs": 80912,
+            "missing_denominators": 0
+          },
+          "PPL2": {
+            "in_model_inputs": 22268,
+            "total_inputs": 23821,
+            "missing_denominators": 0
+          },
+          "CX_DAN_candidates": {
+            "in_model_inputs": 67166,
+            "total_inputs": 71009,
+            "missing_denominators": 0
+          },
+          "CX_DAN": {
+            "in_model_inputs": 48264,
+            "total_inputs": 50988,
+            "missing_denominators": 0
+          },
+          "EB_other": {
+            "in_model_inputs": 0,
+            "total_inputs": 0,
+            "missing_denominators": 0
+          },
+          "PB_other": {
+            "in_model_inputs": 7102,
+            "total_inputs": 7699,
+            "missing_denominators": 0
+          },
+          "FB_columnar": {
+            "in_model_inputs": 714958,
+            "total_inputs": 758331,
+            "missing_denominators": 0
+          },
+          "NO_neurons": {
+            "in_model_inputs": 32683,
+            "total_inputs": 33791,
+            "missing_denominators": 0
+          },
+          "LAL_neurons": {
+            "in_model_inputs": 728950,
+            "total_inputs": 754958,
+            "missing_denominators": 0
+          },
+          "KC": {
+            "in_model_inputs": 943190,
+            "total_inputs": 970760,
+            "missing_denominators": 0
+          },
+          "KC_g": {
+            "in_model_inputs": 433928,
+            "total_inputs": 447289,
+            "missing_denominators": 0
+          },
+          "KC_ab": {
+            "in_model_inputs": 373248,
+            "total_inputs": 381882,
+            "missing_denominators": 0
+          },
+          "KC_apbp": {
+            "in_model_inputs": 136014,
+            "total_inputs": 141589,
+            "missing_denominators": 0
+          },
+          "MBON": {
+            "in_model_inputs": 381461,
+            "total_inputs": 399250,
+            "missing_denominators": 0
+          },
+          "MBON_MBON01": {
+            "in_model_inputs": 10978,
+            "total_inputs": 12246,
+            "missing_denominators": 0
+          },
+          "MBON_MBON02": {
+            "in_model_inputs": 11093,
+            "total_inputs": 11485,
+            "missing_denominators": 0
+          },
+          "MBON_MBON03": {
+            "in_model_inputs": 18691,
+            "total_inputs": 19446,
+            "missing_denominators": 0
+          },
+          "MBON_MBON04": {
+            "in_model_inputs": 17493,
+            "total_inputs": 18430,
+            "missing_denominators": 0
+          },
+          "MBON_MBON05": {
+            "in_model_inputs": 24255,
+            "total_inputs": 25850,
+            "missing_denominators": 0
+          },
+          "MBON_MBON06": {
+            "in_model_inputs": 15022,
+            "total_inputs": 15314,
+            "missing_denominators": 0
+          },
+          "MBON_MBON07": {
+            "in_model_inputs": 26218,
+            "total_inputs": 26615,
+            "missing_denominators": 0
+          },
+          "MBON_MBON09": {
+            "in_model_inputs": 35219,
+            "total_inputs": 36696,
+            "missing_denominators": 0
+          },
+          "MBON_MBON10": {
+            "in_model_inputs": 5200,
+            "total_inputs": 5489,
+            "missing_denominators": 0
+          },
+          "MBON_MBON11": {
+            "in_model_inputs": 20553,
+            "total_inputs": 21111,
+            "missing_denominators": 0
+          },
+          "MBON_MBON12": {
+            "in_model_inputs": 16288,
+            "total_inputs": 17064,
+            "missing_denominators": 0
+          },
+          "MBON_MBON13": {
+            "in_model_inputs": 8345,
+            "total_inputs": 8730,
+            "missing_denominators": 0
+          },
+          "MBON_MBON14": {
+            "in_model_inputs": 22547,
+            "total_inputs": 23384,
+            "missing_denominators": 0
+          },
+          "MBON_MBON15": {
+            "in_model_inputs": 1351,
+            "total_inputs": 1446,
+            "missing_denominators": 0
+          },
+          "MBON_MBON15-like": {
+            "in_model_inputs": 2583,
+            "total_inputs": 2756,
+            "missing_denominators": 0
+          },
+          "MBON_MBON16": {
+            "in_model_inputs": 3555,
+            "total_inputs": 3771,
+            "missing_denominators": 0
+          },
+          "MBON_MBON17": {
+            "in_model_inputs": 2764,
+            "total_inputs": 2999,
+            "missing_denominators": 0
+          },
+          "MBON_MBON17-like": {
+            "in_model_inputs": 1899,
+            "total_inputs": 2069,
+            "missing_denominators": 0
+          },
+          "MBON_MBON18": {
+            "in_model_inputs": 11951,
+            "total_inputs": 12123,
+            "missing_denominators": 0
+          },
+          "MBON_MBON19": {
+            "in_model_inputs": 1663,
+            "total_inputs": 1750,
+            "missing_denominators": 0
+          },
+          "MBON_MBON20": {
+            "in_model_inputs": 5247,
+            "total_inputs": 5525,
+            "missing_denominators": 0
+          },
+          "MBON_MBON21": {
+            "in_model_inputs": 5114,
+            "total_inputs": 5424,
+            "missing_denominators": 0
+          },
+          "MBON_MBON22": {
+            "in_model_inputs": 14592,
+            "total_inputs": 14865,
+            "missing_denominators": 0
+          },
+          "MBON_MBON23": {
+            "in_model_inputs": 4365,
+            "total_inputs": 4475,
+            "missing_denominators": 0
+          },
+          "MBON_MBON24": {
+            "in_model_inputs": 6613,
+            "total_inputs": 6894,
+            "missing_denominators": 0
+          },
+          "MBON_MBON25,MBON34": {
+            "in_model_inputs": 1487,
+            "total_inputs": 1592,
+            "missing_denominators": 0
+          },
+          "MBON_MBON26": {
+            "in_model_inputs": 13559,
+            "total_inputs": 14142,
+            "missing_denominators": 0
+          },
+          "MBON_MBON27": {
+            "in_model_inputs": 7250,
+            "total_inputs": 8000,
+            "missing_denominators": 0
+          },
+          "MBON_MBON28": {
+            "in_model_inputs": 4970,
+            "total_inputs": 5285,
+            "missing_denominators": 0
+          },
+          "MBON_MBON29": {
+            "in_model_inputs": 3655,
+            "total_inputs": 3926,
+            "missing_denominators": 0
+          },
+          "MBON_MBON30": {
+            "in_model_inputs": 10129,
+            "total_inputs": 10634,
+            "missing_denominators": 0
+          },
+          "MBON_MBON31": {
+            "in_model_inputs": 7615,
+            "total_inputs": 7934,
+            "missing_denominators": 0
+          },
+          "MBON_MBON32": {
+            "in_model_inputs": 13073,
+            "total_inputs": 13858,
+            "missing_denominators": 0
+          },
+          "MBON_MBON33": {
+            "in_model_inputs": 6241,
+            "total_inputs": 6653,
+            "missing_denominators": 0
+          },
+          "MBON_MBON35": {
+            "in_model_inputs": 19883,
+            "total_inputs": 21269,
+            "missing_denominators": 0
+          },
+          "MBON_MBON08": {
+            "in_model_inputs": 0,
+            "total_inputs": 0,
+            "missing_denominators": 0
+          },
+          "ER": {
+            "in_model_inputs": 158005,
+            "total_inputs": 169580,
+            "missing_denominators": 0
+          },
+          "EPG": {
+            "in_model_inputs": 66198,
+            "total_inputs": 70176,
+            "missing_denominators": 0
+          },
+          "PEN": {
+            "in_model_inputs": 38396,
+            "total_inputs": 40300,
+            "missing_denominators": 0
+          },
+          "PEG": {
+            "in_model_inputs": 10229,
+            "total_inputs": 10997,
+            "missing_denominators": 0
+          },
+          "D7": {
+            "in_model_inputs": 7716,
+            "total_inputs": 8351,
+            "missing_denominators": 0
+          },
+          "FB_tangential": {
+            "in_model_inputs": 258130,
+            "total_inputs": 275528,
+            "missing_denominators": 0
+          },
+          "dFB": {
+            "in_model_inputs": 50195,
+            "total_inputs": 53674,
+            "missing_denominators": 0
+          },
+          "TuBu": {
+            "in_model_inputs": 31462,
+            "total_inputs": 32501,
+            "missing_denominators": 0
+          },
+          "MeTu": {
+            "in_model_inputs": 271177,
+            "total_inputs": 299854,
+            "missing_denominators": 0
+          },
+          "DNa01_L": {
+            "in_model_inputs": 2333,
+            "total_inputs": 2416,
+            "missing_denominators": 0
+          },
+          "DNa01_R": {
+            "in_model_inputs": 2349,
+            "total_inputs": 2410,
+            "missing_denominators": 0
+          },
+          "DNa02_L": {
+            "in_model_inputs": 12268,
+            "total_inputs": 12612,
+            "missing_denominators": 0
+          },
+          "DNa02_R": {
+            "in_model_inputs": 13159,
+            "total_inputs": 13487,
+            "missing_denominators": 0
+          },
+          "steering_L": {
+            "in_model_inputs": 14601,
+            "total_inputs": 15028,
+            "missing_denominators": 0
+          },
+          "steering_R": {
+            "in_model_inputs": 15508,
+            "total_inputs": 15897,
+            "missing_denominators": 0
+          },
+          "DN_all": {
+            "in_model_inputs": 2213351,
+            "total_inputs": 2297552,
+            "missing_denominators": 0
+          },
+          "DNp01": {
+            "in_model_inputs": 9474,
+            "total_inputs": 10208,
+            "missing_denominators": 0
+          },
+          "sugar_GRN_R": {
+            "in_model_inputs": 3913,
+            "total_inputs": 4060,
+            "missing_denominators": 0
+          },
+          "MN9": {
+            "in_model_inputs": 5579,
+            "total_inputs": 5722,
+            "missing_denominators": 0
+          },
+          "bitter_GRN_R": {
+            "in_model_inputs": 1498,
+            "total_inputs": 1612,
+            "missing_denominators": 0
+          },
+          "motor": {
+            "in_model_inputs": 244617,
+            "total_inputs": 253892,
+            "missing_denominators": 0
+          },
+          "sensory": {
+            "in_model_inputs": 426057,
+            "total_inputs": 486557,
+            "missing_denominators": 420
+          }
+        },
+        "tripped_populations": [],
+        "tripped": false
+      },
+      "binding": "valid"
+    },
+    "labels": {
+      "outcome": "passed",
+      "measured": {
+        "per_population": {
+          "DAN": 1,
+          "PAM": 1,
+          "PPL1": 0,
+          "PPL2": 0,
+          "CX_DAN_candidates": 13,
+          "CX_DAN": 13,
+          "KC": 5173,
+          "KC_g": 2488,
+          "KC_ab": 1771,
+          "KC_apbp": 914
+        },
+        "missing_top_nt": {
+          "DAN": 0,
+          "PAM": 0,
+          "PPL1": 0,
+          "PPL2": 0,
+          "CX_DAN_candidates": 0,
+          "CX_DAN": 0,
+          "KC": 0,
+          "KC_g": 0,
+          "KC_ab": 0,
+          "KC_apbp": 0
+        },
+        "kc_dopamine": 5172,
+        "kc_total": 5177,
+        "uses_top_nt": false,
+        "tripped": false
+      },
+      "binding": "valid"
+    }
+  },
+  "artefact_flags": [],
+  "unsettled": [],
+  "unmapped": {
+    "registry_version": "populations-v0.1+annotations-v2.1.0+783",
+    "annotation_commit": "ebd66db2596fcc39c6950fb54ea3efa00f7fe8a0",
+    "annotation_sha256": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6",
+    "connectome_version": "783",
+    "receptor_map_version": "v0.1",
+    "compartments_version": "v0.1",
+    "cxdan_threshold": 0.2,
+    "unmapped_neurons": 129914,
+    "unmapped_fraction": 0.9370667705335439
+  },
+  "wall_times": {
+    "total_s": 198.43199029099196,
+    "max_worker_build_s": 0.912472749943845,
+    "process_start_to_initial_store_s": 1.4848194998921826,
+    "aggregation_s": 0.015528250019997358
+  },
+  "benchmark q2 used": "none (WP9)",
+  "probe_offsets": [
+    {
+      "arm": "mn9-threshold",
+      "seed": 1,
+      "probe": 0,
+      "t_brain_s": 0.0,
+      "record_t_brain_s": 2.0,
+      "settle_s": 2.0,
+      "record_start_tick": 20000,
+      "arena_at_recording_start": {
+        "x": 0.0,
+        "y": 0.0,
+        "h": 0.0,
+        "omega": 0.0,
+        "r_L": 0.0,
+        "r_R": 0.0
+      },
+      "converged": true,
+      "duration_s": 1.0
+    },
+    {
+      "arm": "mn9-threshold",
+      "seed": 1,
+      "probe": 1,
+      "t_brain_s": 3.0,
+      "record_t_brain_s": 5.0,
+      "settle_s": 2.0,
+      "record_start_tick": 20000,
+      "arena_at_recording_start": {
+        "x": 0.0,
+        "y": 0.0,
+        "h": 0.0,
+        "omega": 0.0,
+        "r_L": 0.0,
+        "r_R": 0.0
+      },
+      "converged": true,
+      "duration_s": 1.0
+    },
+    {
+      "arm": "wild-type",
+      "seed": 1,
+      "probe": 0,
+      "t_brain_s": 0.0,
+      "record_t_brain_s": 2.0,
+      "settle_s": 2.0,
+      "record_start_tick": 20000,
+      "arena_at_recording_start": {
+        "x": 0.0,
+        "y": 0.0,
+        "h": 0.0,
+        "omega": 0.0,
+        "r_L": 0.0,
+        "r_R": 0.0
+      },
+      "converged": true,
+      "duration_s": 1.0
+    },
+    {
+      "arm": "wild-type",
+      "seed": 1,
+      "probe": 1,
+      "t_brain_s": 3.0,
+      "record_t_brain_s": 5.5,
+      "settle_s": 2.5,
+      "record_start_tick": 25000,
+      "arena_at_recording_start": {
+        "x": 0.0,
+        "y": 0.0,
+        "h": 0.0,
+        "omega": 0.0,
+        "r_L": 0.0,
+        "r_R": 0.0
+      },
+      "converged": true,
+      "duration_s": 1.0
+    }
+  ],
+  "compartments": [
+    "gamma1_L",
+    "gamma2_L",
+    "gamma3_L",
+    "gamma4_L",
+    "gamma5_L",
+    "alpha1_L",
+    "alpha2_L",
+    "alpha3_L",
+    "beta1_L",
+    "beta2_L",
+    "alpha_prime1_L",
+    "alpha_prime2_L",
+    "alpha_prime3_L",
+    "beta_prime1_L",
+    "beta_prime2_L",
+    "gamma1_R",
+    "gamma2_R",
+    "gamma3_R",
+    "gamma4_R",
+    "gamma5_R",
+    "alpha1_R",
+    "alpha2_R",
+    "alpha3_R",
+    "beta1_R",
+    "beta2_R",
+    "alpha_prime1_R",
+    "alpha_prime2_R",
+    "alpha_prime3_R",
+    "beta_prime1_R",
+    "beta_prime2_R",
+    "EB",
+    "PB",
+    "FB",
+    "NO_L",
+    "NO_R",
+    "LAL_L",
+    "LAL_R"
+  ],
+  "resolved_populations": {
+    "MN9": [
+      138332
+    ],
+    "sugar_GRN_R": [
+      69093,
+      97602,
+      122795,
+      124291,
+      29281,
+      100605,
+      110469,
+      51107,
+      49584,
+      129730,
+      126873,
+      28825,
+      126600,
+      126752,
+      32863,
+      108426,
+      111357,
+      14842,
+      90589,
+      92298,
+      12494
+    ]
+  },
+  "schema_warnings": [],
+  "not_applied": [],
+  "notes": [
+    "Drug concentrations are held within probes and analytically advanced after settle plus recording; only drug state carries between phases."
+  ],
+  "dt_ms": 0.1
+}

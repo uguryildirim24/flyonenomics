@@ -1,0 +1,203 @@
+version: dev
+annotation_version: v2.1.0
+annotation_commit: ebd66db2596fcc39c6950fb54ea3efa00f7fe8a0
+mapping_date: '2026-09-14'
+selector_tolerance_percent: 10
+inventory_note: Development overlay for the WP10 visual-path diagnostic. Loaded only
+  by flyonenomics.diagnostics.visual_path. Never merged into populations-v0.1.yaml.
+  Counts measured on the pinned v2.1.0 file. Resolution drops annotated roots absent
+  from the v783 engine order. Photoreceptor and lamina side labels come from the annotation
+  side column. This file does not replace the frozen registry.
+populations:
+- name: R1_6
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R1-6
+  required: true
+  exclude: []
+  inventory_count: 8452
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 8452 (left 4423, right 4029). In-engine 7932. Brief v783 count
+    8452. Soma coordinates are missing for 8451 of 8452 cells; retinotopy uses pos_*.'
+- name: R7
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R7
+  required: true
+  exclude: []
+  inventory_count: 1343
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 1343 (left 672, right 671). In-engine 1337. Brief v783 count 1343.'
+- name: R8
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R8
+  required: true
+  exclude: []
+  inventory_count: 1324
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 1324 (left 670, right 654). In-engine 1314. Brief v783 count 1324.'
+- name: L1
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L1
+  required: true
+  exclude: []
+  inventory_count: 1579
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Exact cell_type L1, annotation 1579 (left 789, right 790), all in-engine.
+    The brief figure 2066 equals L1 plus L1-3 (487). Overlay keeps L1 only.'
+- name: L2
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L2
+  required: true
+  exclude: []
+  inventory_count: 1554
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 1554 (left 764, right 790). All in-engine. Brief v783 count 1554.'
+- name: Mi1
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi1
+  required: false
+  exclude: []
+  inventory_count: 1580
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 1580 (left 787, right 793). All in-engine.'
+- name: Tm3
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm3
+  required: false
+  exclude: []
+  inventory_count: 1746
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'Annotation 1746 (left 889, right 857). All in-engine.'
+- name: T4
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T4
+  required: false
+  exclude: []
+  inventory_count: 6240
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'cell_type T4a-d. Annotation 6240 (left 3137, right 3103). All in-engine. Exact
+    cell_type T4 is empty.'
+- name: T5
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T5
+  required: false
+  exclude: []
+  inventory_count: 5998
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'cell_type T5a-d. Annotation 5998 (left 3003, right 2995). All in-engine. Exact
+    cell_type T5 is empty.'
+- name: LC_all
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC
+  required: false
+  exclude: []
+  inventory_count: 1496
+  inventory_tolerance: percent
+  overlaps_with:
+  - visual_projection
+  expected_nt: null
+  side: null
+  note: 'cell_type starting LC. Annotation 1496 (left 729, right 767). 1404 are super_class
+    visual_projection. All in-engine.'
+- name: LPLC
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LPLC
+  required: false
+  exclude: []
+  inventory_count: 460
+  inventory_tolerance: percent
+  overlaps_with:
+  - visual_projection
+  expected_nt: null
+  side: null
+  note: 'cell_type is empty on v2.1.0. Selector is hemibrain_type prefix LPLC (LPLC1
+    140, LPLC2 210, LPLC4 110). Annotation 460 (left 232, right 228), all visual_projection,
+    all in-engine. No overlap with LC_all.'
+- name: MeTu
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^MeTu
+  required: false
+  exclude: []
+  inventory_count: 896
+  inventory_tolerance: percent
+  overlaps_with:
+  - visual_projection
+  expected_nt: null
+  side: null
+  note: 'Annotation 896 (left 455, right 441). Matches the frozen MeTu row. All visual_projection,
+    all in-engine.'
+- name: visual_projection
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - visual_projection
+  required: false
+  exclude: []
+  inventory_count: 8053
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC_all
+  - LPLC
+  - MeTu
+  expected_nt: null
+  side: null
+  note: 'Annotation 8053 (left 4016, right 4037). All in-engine. Overlaps LC_all, LPLC,
+    and MeTu as declared.'

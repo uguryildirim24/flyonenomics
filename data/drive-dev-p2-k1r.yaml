@@ -1,0 +1,83 @@
+configuration_class: development
+note: 'development substrate (SPEC-P2 2.6 step 5, data/drive-dev-p2.yaml, no ranked
+  candidate): qualifies nothing; no entry binds canonical'
+candidate_id: 3.0-6.0-2.0-False-25-3.0
+selection: 'SPEC-P2 2.6 step 5: lowest candidate by order key among candidates measured
+  through R-reflex (tier 1 and tier 2); chosen from the interim stage 2 of 2026-09-16
+  (5 of 20 tier-2 admissions measured) and replaced if the final escalation chooses
+  another'
+transmitter_rule:
+  blob_id: 29170ce99f3e8d3a626fee089789bf576bec806c
+  scope: brain
+scales:
+  g_gaba: 3.0
+  g_glu: 6.0
+  g_his: 1.0
+  unk: g_gaba when s_pq < 0, else 1
+  sha256: 1663cdafa49384b3f537b399dff484a1b53d74ed97cd58b2fb37ffbd834a71c0
+background:
+  n_bg: 25
+  r_bg: 10.0
+  groups:
+    DAN:
+      size: 361
+      w_bg: 3.0
+    ER:
+      size: 278
+      w_bg: 3.0
+    KC:
+      size: 5177
+      w_bg: 3.0
+    ascending:
+      size: 2317
+      w_bg: 3.0
+    central:
+      size: 26568
+      w_bg: 3.0
+    descending:
+      size: 1299
+      w_bg: 3.0
+    endocrine:
+      size: 76
+      w_bg: 3.0
+    motor:
+      size: 106
+      w_bg: 3.0
+    optic:
+      size: 77529
+      w_bg: 3.0
+    sensory:
+      size: 16351
+      w_bg: 0.0
+    visual_centrifugal:
+      size: 524
+      w_bg: 3.0
+    visual_projection:
+      size: 8053
+      w_bg: 3.0
+threshold:
+  sigma_th: 2.0
+  seed: 20260912
+  z_sha256: 7739f10c3afbcaed06e756b3aab7c1175e3b1c8f5cf8563654408799e447e1ad
+optic_exemption: false
+provenance:
+  records_sha256:
+    R2: fe9ed787ff3f76cafe4e54bd7b94a4617599a42433ed6b0a842bee5ba778b8d2
+    R3: null
+    R4: 9d9a94df2250ded091128db87c52dab4f27e22510331cc85eb84625f414fb114
+    K1r: 3b2f84d977708290d18df4f843069cc1e54ee80a44597f968111d0f5819a1b33
+  table: C
+  source:
+    path: data/drive-dev-p2.yaml
+    sha256: c81b4a4bfcbe0e5851539453086dc9c362658a86250215ac4095228c82c32238
+  camber_job_ids:
+    map:
+    - '27163'
+    R1:
+    - '27299'
+    tier2_screen_setting:
+    - '27420'
+    R_reflex_R_long:
+    - '27450'
+    bare_reference:
+    - '27449'

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<style>text{font-family:Arial,sans-serif;fill:#29323b}.small{font-size:12px}</style>
+<text x="35" y="34" font-size="22" font-weight="bold">Genotype and release-reduction contrasts</text>
+<text x="35" y="57" font-size="12">Dots: ten paired seeds · lines: frozen 95% whole-seed bootstrap intervals · Holm over two tests</text>
+<path d="M 532.880 100 v 255" stroke="#92999f" stroke-dasharray="5 5"/>
+<text x="35" y="150" font-size="14">Genotype: fumin − WT</text>
+<circle cx="305.833" cy="140" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="413.155" cy="145" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="347.230" cy="150" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="419.205" cy="155" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="542.457" cy="160" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="604.258" cy="140" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="342.255" cy="145" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="566.133" cy="150" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="510.971" cy="155" r="3.5" fill="#2463a5" opacity="0.5"/>
+<circle cx="445.277" cy="160" r="3.5" fill="#2463a5" opacity="0.5"/>
+<path d="M 382.458 177 H 512.393" stroke="#2463a5" stroke-width="3"/>
+<circle cx="449.677" cy="177" r="5" fill="#2463a5"/>
+<text x="250" y="205" class="small">mean -0.085156; 95% CI [-0.15395, -0.020968]; Holm p=0.070312</text>
+<text x="35" y="295" font-size="14">Genotype × release reduction</text>
+<circle cx="807.278" cy="285" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="665.111" cy="290" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="864.167" cy="295" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="511.791" cy="300" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="534.201" cy="305" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="365.095" cy="285" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="680.563" cy="290" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="374.672" cy="295" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="588.391" cy="300" r="3.5" fill="#c64838" opacity="0.5"/>
+<circle cx="385.769" cy="305" r="3.5" fill="#c64838" opacity="0.5"/>
+<path d="M 474.420 322 H 687.294" stroke="#c64838" stroke-width="3"/>
+<circle cx="577.704" cy="322" r="5" fill="#c64838"/>
+<text x="250" y="350" class="small">mean 0.045877; 95% CI [-0.059833, 0.15804]; Holm p=0.43945</text>
+<text x="250.000" y="400" text-anchor="middle" class="small">-0.2895</text>
+<text x="384.000" y="400" text-anchor="middle" class="small">-0.1524</text>
+<text x="518.000" y="400" text-anchor="middle" class="small">-0.01523</text>
+<text x="652.000" y="400" text-anchor="middle" class="small">0.1219</text>
+<text x="786.000" y="400" text-anchor="middle" class="small">0.2591</text>
+<text x="920.000" y="400" text-anchor="middle" class="small">0.3962</text>
+<text x="580" y="439" text-anchor="middle" font-size="14">Independent A-minus-B template units</text>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "freeze_sha": "566bc949ed3617538f8efb6363e01337debd7796",
+  "pre_freeze_reproduction": {
+    "conditions": ["control", "block-1.00"],
+    "seed": 501,
+    "control_per_neuron_on_off_equal": true,
+    "zero_gaba_per_neuron_measure_equal_to_item_158_off_gaba": true,
+    "projected_usd": 0.05175,
+    "worker_wall_estimated_usd": 0.0825
+  },
+  "outcome_projection": {
+    "tasks": 130,
+    "brain_seconds": 1560,
+    "projected_usd": 3.36375,
+    "lane_cap_usd": 12,
+    "submitted": false
+  },
+  "billing_observation": {
+    "metered_usd": 9.95,
+    "credits_consumed_usd": 9.95,
+    "billed_usd": 0,
+    "available_credit_usd": null,
+    "note": "Modal billing summary reports historical credit consumption, not remaining credit. Cannot establish that available credit covers the projected outcome run."
+  }
+}

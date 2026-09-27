@@ -1,0 +1,4280 @@
+{
+  "class": "development",
+  "sub_tier": "T3e",
+  "stage": "screen",
+  "engine_model": "lif",
+  "flags": [],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "n_tasks": 50,
+  "ranked": [
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "sens"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 1.0,
+      "pair_weights": [
+        1.0,
+        1.2
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "sens",
+        "bg_policy": "sens",
+        "ladder": [
+          0.8,
+          1.0,
+          1.2,
+          1.4
+        ],
+        "why_ladder": "sensory-only drive; central brain sees network-filtered input, so the ladder starts at 0.80 and steps 0.20 mV to 1.40"
+      },
+      "grade_weight": 1.4,
+      "ladder": [
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "rates_hz": {
+        "DAN": 0.8092336103416436,
+        "ER": 0.0,
+        "KC": 0.08754104693838131,
+        "ascending": 0.000546683930369731,
+        "central": 4.831463916491017,
+        "descending": 1.6435463176802667,
+        "endocrine": 0.0,
+        "motor": 0.05157232704402517,
+        "optic": 0.00017842785710293354,
+        "visual_centrifugal": 0.3230279898218829,
+        "visual_projection": 0.02077486650937539
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.8092336103416436,
+          "ER": 0.0,
+          "KC": 0.08754104693838131,
+          "ascending": 0.000546683930369731,
+          "central": 4.831463916491017,
+          "descending": 1.6435463176802667,
+          "endocrine": 0.0,
+          "motor": 0.05157232704402517,
+          "optic": 0.00017842785710293354,
+          "visual_centrifugal": 0.3230279898218829,
+          "visual_projection": 0.02077486650937539
+        },
+        {
+          "DAN": 0.8215143120960295,
+          "ER": 0.0,
+          "KC": 0.0851265211512459,
+          "ascending": 0.03694432455761761,
+          "central": 4.8597824450466724,
+          "descending": 1.7908904285347702,
+          "endocrine": 0.0,
+          "motor": 0.3754716981132075,
+          "optic": 0.0001552107383473711,
+          "visual_centrifugal": 0.34370229007633585,
+          "visual_projection": 0.021586158367482098
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.0,
+        "central": 0.0,
+        "DAN": 0.0,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 0.0,
+      "J": 119.20220877690859,
+      "screen_passed": true,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": true,
+        "central": true,
+        "DAN": true,
+        "KC": true,
+        "gradedness": true
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "sens",
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "deepest": "T2",
+      "mn9_dark": [
+        {
+          "w_bg": 1.0,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 1,
+          "hz": 2.6
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 2,
+          "hz": 2.9
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 3,
+          "hz": 0.3
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 3,
+          "hz": 1.8
+        }
+      ],
+      "mn9_dark_max_hz": 2.9,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 2.679567771889278,
+      "measured_kc_hz_mean": 0.08754104693838131,
+      "measured_central_hz_mean": 4.831463916491017,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 0.35032682058882497,
+          "n_scored": 191,
+          "n_silent": 1809
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": 1.5670950465225903e-05,
+          "n_pairs": 703,
+          "n_dropped": 124047
+        },
+        "pca_participation_ratio": {
+          "value": 20.012651339589457,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 1.0,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 1,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 2,
+          "hz": 2.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 3,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 4,
+          "hz": 4.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 5,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 6,
+          "hz": 2.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 7,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 8,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 9,
+          "hz": 4.0
+        },
+        {
+          "w_bg": 1.2,
+          "seed": 10,
+          "hz": 2.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 4.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        33.0,
+        34.0,
+        22.0,
+        19.0,
+        22.0,
+        21.0
+      ],
+      "b_hz": [
+        33.0,
+        34.0,
+        22.0,
+        26.0,
+        23.0,
+        27.0,
+        30.0,
+        27.0,
+        25.0,
+        27.0
+      ],
+      "reflex": {
+        "reflex_passed": false,
+        "reflex_violations": {
+          "a": 0.7444404749474958,
+          "b": 0.6014799920341215,
+          "c": 0.0
+        },
+        "reflex_violation": 1.3459204669816174,
+        "retention": {
+          "upstream": 0.5589285714285714,
+          "extended": 0.5589285714285714
+        },
+        "a_hz": [
+          33.0,
+          34.0,
+          22.0,
+          19.0,
+          22.0,
+          21.0
+        ],
+        "b_hz": [
+          33.0,
+          34.0,
+          22.0,
+          26.0,
+          23.0,
+          27.0,
+          30.0,
+          27.0,
+          25.0,
+          27.0
+        ],
+        "candidate_ff_hz": {
+          "upstream": [
+            36.0,
+            31.0,
+            31.0,
+            30.0,
+            29.0,
+            32.0,
+            34.0,
+            26.0,
+            31.0,
+            33.0
+          ],
+          "extended": [
+            36.0,
+            31.0,
+            31.0,
+            30.0,
+            29.0,
+            32.0,
+            34.0,
+            26.0,
+            31.0,
+            33.0
+          ]
+        },
+        "bare_ff_hz": {
+          "upstream": [
+            50.0,
+            58.0,
+            58.0,
+            63.0,
+            48.0,
+            59.0,
+            61.0,
+            53.0,
+            62.0,
+            48.0
+          ],
+          "extended": [
+            50.0,
+            58.0,
+            58.0,
+            63.0,
+            48.0,
+            59.0,
+            61.0,
+            53.0,
+            62.0,
+            48.0
+          ]
+        },
+        "reflex_harmonised": false,
+        "reflex_verdicts": {
+          "original": {
+            "reflex_passed": false,
+            "mean_hz": 50.0,
+            "seed_min_hz": 40.0,
+            "reflex_violations": {
+              "a": 0.7444404749474958,
+              "b": 0.6014799920341215,
+              "c": 0.0
+            }
+          },
+          "harmonised": {
+            "reflex_passed": false,
+            "mean_hz": 28.0,
+            "seed_min_hz": 22.400000000000002,
+            "job_bare_mean": 56.0,
+            "reflex_violations": {
+              "a": 0.1646219796945538,
+              "b": 0.021661496781179467,
+              "c": 0.0
+            }
+          }
+        },
+        "flags": [],
+        "h_max": null
+      }
+    }
+  ],
+  "misses": [
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "sens"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        1.0
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "sens",
+        "bg_policy": "sens",
+        "ladder": [
+          0.8,
+          1.0,
+          1.2,
+          1.4
+        ],
+        "why_ladder": "sensory-only drive; central brain sees network-filtered input, so the ladder starts at 0.80 and steps 0.20 mV to 1.40"
+      },
+      "grade_weight": 1.2,
+      "ladder": [
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 0.0,
+        "ascending": 0.0,
+        "central": 0.0,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 0.0,
+        "visual_centrifugal": 0.0,
+        "visual_projection": 0.0
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 0.0,
+          "central": 0.0,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 0.0,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 0.0
+        },
+        {
+          "DAN": 0.8092336103416436,
+          "ER": 0.0,
+          "KC": 0.08754104693838131,
+          "ascending": 0.000546683930369731,
+          "central": 4.831463916491017,
+          "descending": 1.6435463176802667,
+          "endocrine": 0.0,
+          "motor": 0.05157232704402517,
+          "optic": 0.00017842785710293354,
+          "visual_centrifugal": 0.3230279898218829,
+          "visual_projection": 0.02077486650937539
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 5.088778407625044
+      },
+      "S": 22.912824418481335,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "sens",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-sens",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 3,
+          "hz": 0.3
+        }
+      ],
+      "mn9_dark_max_hz": 0.3,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 2.679567771889278,
+      "measured_kc_hz_mean": 0.0,
+      "measured_central_hz_mean": 0.0,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 1.0,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        43.0,
+        40.0,
+        43.0,
+        33.0,
+        34.0,
+        22.0
+      ],
+      "b_hz": [
+        43.0,
+        40.0,
+        43.0,
+        42.0,
+        39.0,
+        39.0,
+        35.0,
+        41.0,
+        45.0,
+        40.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "nomotor"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "nomotor",
+        "bg_policy": "nomotor",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common 0.05 mV ladder; item 42 relaxed for this arm only"
+      },
+      "grade_weight": 0.85,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 6.438735432361085e-06,
+        "ascending": 1.4386419220256078e-05,
+        "central": 8.78249523235973e-06,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 6.449199654322899e-06,
+        "visual_centrifugal": 0.00019083969465648855,
+        "visual_projection": 4.139244174013825e-06
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 6.438735432361085e-06,
+          "ascending": 1.4386419220256078e-05,
+          "central": 8.78249523235973e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 6.449199654322899e-06,
+          "visual_centrifugal": 0.00019083969465648855,
+          "visual_projection": 4.139244174013825e-06
+        },
+        {
+          "DAN": 0.4015697137580794,
+          "ER": 0.03273381294964029,
+          "KC": 0.13032000515098838,
+          "ascending": 0.03205294202273055,
+          "central": 3.1112717053096457,
+          "descending": 1.2574287913779831,
+          "endocrine": 0.0,
+          "motor": 0.10786163522012578,
+          "optic": 0.00891709338871046,
+          "visual_centrifugal": 0.515648854961832,
+          "visual_projection": 0.031541040605985345
+        }
+      ],
+      "violations": {
+        "F": 2.664269641061133,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 5.254316603153264
+      },
+      "S": 25.74263225507069,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "nomotor",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-nomotor",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.6
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 1.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 43.072378850357175,
+      "measured_kc_hz_mean": 6.438735432361085e-06,
+      "measured_central_hz_mean": 8.78249523235973e-06,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 0.9899999999999998,
+          "n_scored": 1,
+          "n_silent": 1999
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 1.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        24.0,
+        34.0,
+        32.0,
+        24.0,
+        26.0,
+        28.0
+      ],
+      "b_hz": [
+        24.0,
+        34.0,
+        32.0,
+        28.0,
+        32.0,
+        34.0,
+        33.0,
+        33.0,
+        35.0,
+        31.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "nomotor"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "nomotor",
+        "bg_policy": "nomotor",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common 0.05 mV ladder; item 42 relaxed for this arm only"
+      },
+      "grade_weight": 0.9,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.4015697137580794,
+        "ER": 0.03273381294964029,
+        "KC": 0.13032000515098838,
+        "ascending": 0.03205294202273055,
+        "central": 3.1112717053096457,
+        "descending": 1.2574287913779831,
+        "endocrine": 0.0,
+        "motor": 0.10786163522012578,
+        "optic": 0.00891709338871046,
+        "visual_centrifugal": 0.515648854961832,
+        "visual_projection": 0.031541040605985345
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.4015697137580794,
+          "ER": 0.03273381294964029,
+          "KC": 0.13032000515098838,
+          "ascending": 0.03205294202273055,
+          "central": 3.1112717053096457,
+          "descending": 1.2574287913779831,
+          "endocrine": 0.0,
+          "motor": 0.10786163522012578,
+          "optic": 0.00891709338871046,
+          "visual_centrifugal": 0.515648854961832,
+          "visual_projection": 0.031541040605985345
+        },
+        {
+          "DAN": 0.7228070175438597,
+          "ER": 0.11474820143884891,
+          "KC": 0.25176743287618314,
+          "ascending": 0.07004747518342684,
+          "central": 5.6705849141824745,
+          "descending": 2.3192712342827817,
+          "endocrine": 0.007017543859649123,
+          "motor": 0.24937106918238994,
+          "optic": 0.023980274047990646,
+          "visual_centrifugal": 0.9511450381679389,
+          "visual_projection": 0.06468810795148806
+        }
+      ],
+      "violations": {
+        "F": 2.664269641061133,
+        "b": 0.0,
+        "stability_ratio": 2.945424078778014,
+        "central": 0.0,
+        "DAN": 0.21922694683745256,
+        "KC": 0.0,
+        "gradedness": 4.776258811107906
+      },
+      "S": 10.605179477784505,
+      "J": 93.67259885021507,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": false,
+        "central": true,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "nomotor",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-nomotor",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.6
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 1.4
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.7
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 1.5
+        }
+      ],
+      "mn9_dark_max_hz": 1.5,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 43.072378850357175,
+      "measured_kc_hz_mean": 0.13032000515098838,
+      "measured_central_hz_mean": 3.1112717053096457,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 1.245943428632152,
+          "n_scored": 456,
+          "n_silent": 1544
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": 0.0005321333028057764,
+          "n_pairs": 5886,
+          "n_dropped": 118864
+        },
+        "pca_participation_ratio": {
+          "value": 1.3211762490635037,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 4,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 6,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 3.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        24.0,
+        26.0,
+        28.0,
+        30.0,
+        25.0,
+        32.0
+      ],
+      "b_hz": [
+        24.0,
+        26.0,
+        28.0,
+        30.0,
+        31.0,
+        33.0,
+        30.0,
+        32.0,
+        27.0,
+        29.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "indeg"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "indeg",
+        "bg_policy": "default",
+        "scale": "indeg",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; incoming gain 1/sqrt(K_i/K_median)"
+      },
+      "grade_weight": 0.85,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 6.438735432361085e-06,
+        "ascending": 1.4386419220256078e-05,
+        "central": 8.78249523235973e-06,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 6.449199654322899e-06,
+        "visual_centrifugal": 0.00019083969465648855,
+        "visual_projection": 4.139244174013825e-06
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 6.438735432361085e-06,
+          "ascending": 1.4386419220256078e-05,
+          "central": 8.78249523235973e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 6.449199654322899e-06,
+          "visual_centrifugal": 0.00019083969465648855,
+          "visual_projection": 4.139244174013825e-06
+        },
+        {
+          "DAN": 0.02169898430286242,
+          "ER": 0.005035971223021583,
+          "KC": 3.219367716180542e-05,
+          "ascending": 0.0009782765069774133,
+          "central": 0.017524841915085815,
+          "descending": 0.04795996920708237,
+          "endocrine": 0.0008771929824561404,
+          "motor": 0.036163522012578615,
+          "optic": 0.0005817178088199255,
+          "visual_centrifugal": 0.028816793893129772,
+          "visual_projection": 0.001436317728382797
+        }
+      ],
+      "violations": {
+        "F": 1.843472057730294,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 5.2558480822860245
+      },
+      "S": 24.92336615087261,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "indeg",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-indeg",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.3
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.1
+        }
+      ],
+      "mn9_dark_max_hz": 0.3,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 18.95531460689848,
+      "measured_kc_hz_mean": 6.438735432361085e-06,
+      "measured_central_hz_mean": 8.78249523235973e-06,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 0.9899999999999998,
+          "n_scored": 1,
+          "n_silent": 1999
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 1.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        25.0,
+        32.0,
+        34.0,
+        47.0,
+        42.0,
+        37.0
+      ],
+      "b_hz": [
+        25.0,
+        32.0,
+        34.0,
+        41.0,
+        41.0,
+        36.0,
+        45.0,
+        34.0,
+        42.0,
+        36.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "indeg"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "indeg",
+        "bg_policy": "default",
+        "scale": "indeg",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; incoming gain 1/sqrt(K_i/K_median)"
+      },
+      "grade_weight": 0.9,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.02169898430286242,
+        "ER": 0.005035971223021583,
+        "KC": 3.219367716180542e-05,
+        "ascending": 0.0009782765069774133,
+        "central": 0.017524841915085815,
+        "descending": 0.04795996920708237,
+        "endocrine": 0.0008771929824561404,
+        "motor": 0.036163522012578615,
+        "optic": 0.0005817178088199255,
+        "visual_centrifugal": 0.028816793893129772,
+        "visual_projection": 0.001436317728382797
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.02169898430286242,
+          "ER": 0.005035971223021583,
+          "KC": 3.219367716180542e-05,
+          "ascending": 0.0009782765069774133,
+          "central": 0.017524841915085815,
+          "descending": 0.04795996920708237,
+          "endocrine": 0.0008771929824561404,
+          "motor": 0.036163522012578615,
+          "optic": 0.0005817178088199255,
+          "visual_centrifugal": 0.028816793893129772,
+          "visual_projection": 0.001436317728382797
+        },
+        {
+          "DAN": 0.721606648199446,
+          "ER": 0.12302158273381296,
+          "KC": 0.2511042431266499,
+          "ascending": 0.07131348007480938,
+          "central": 5.7376066445849645,
+          "descending": 2.337233769566333,
+          "endocrine": 0.006140350877192982,
+          "motor": 1.4949685534591195,
+          "optic": 0.02243590570410212,
+          "visual_centrifugal": 0.9367048346055978,
+          "visual_projection": 0.06648867916718408
+        }
+      ],
+      "violations": {
+        "F": 1.843472057730294,
+        "b": 0.0,
+        "stability_ratio": 0.15708753950056809,
+        "central": 3.3509886860794094,
+        "DAN": 3.137342645290932,
+        "KC": 0.0,
+        "gradedness": 5.276698728157795
+      },
+      "S": 13.765589656759,
+      "J": 192.85658404026717,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "indeg",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-indeg",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.3
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 1.5
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.4
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.1
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 1.7
+        }
+      ],
+      "mn9_dark_max_hz": 1.7,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 18.95531460689848,
+      "measured_kc_hz_mean": 3.219367716180542e-05,
+      "measured_central_hz_mean": 0.017524841915085815,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 1.076733649338389,
+          "n_scored": 139,
+          "n_silent": 1861
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": 0.0010329384231259665,
+          "n_pairs": 435,
+          "n_dropped": 124315
+        },
+        "pca_participation_ratio": {
+          "value": 1.9244225963173869,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 2.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 4,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 5,
+          "hz": 2.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 7,
+          "hz": 3.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 8,
+          "hz": 1.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 10,
+          "hz": 1.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 3.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        47.0,
+        42.0,
+        37.0,
+        24.0,
+        31.0,
+        34.0
+      ],
+      "b_hz": [
+        47.0,
+        42.0,
+        37.0,
+        25.0,
+        26.0,
+        34.0,
+        41.0,
+        25.0,
+        39.0,
+        35.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-0.5",
+        "beta": 0.5
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-0.5",
+        "bg_policy": "default",
+        "beta": 0.5,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.85,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 0.0,
+        "ascending": 0.0,
+        "central": 2.50928435210278e-06,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 3.4395731489722126e-06,
+        "visual_centrifugal": 0.0,
+        "visual_projection": 0.0
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 0.0,
+          "central": 2.50928435210278e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 3.4395731489722126e-06,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 0.0
+        },
+        {
+          "DAN": 0.0,
+          "ER": 0.00011990407673860912,
+          "KC": 3.8632412594166507e-05,
+          "ascending": 0.0002014098690835851,
+          "central": 6.022282445046673e-05,
+          "descending": 2.566076469078778e-05,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 0.00011866527363954133,
+          "visual_centrifugal": 0.0001272264631043257,
+          "visual_projection": 4.967093008816589e-05
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 17.824046010856293,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-0.5",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-0.5",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 0.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.0240982300884958,
+      "measured_kc_hz_mean": 0.0,
+      "measured_central_hz_mean": 2.50928435210278e-06,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        31.0,
+        31.0,
+        32.0,
+        32.0,
+        28.0,
+        30.0
+      ],
+      "b_hz": [
+        31.0,
+        31.0,
+        32.0,
+        34.0,
+        36.0,
+        30.0,
+        35.0,
+        35.0,
+        30.0,
+        26.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-0.5",
+        "beta": 0.5
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-0.5",
+        "bg_policy": "default",
+        "beta": 0.5,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.9,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.00011990407673860912,
+        "KC": 3.8632412594166507e-05,
+        "ascending": 0.0002014098690835851,
+        "central": 6.022282445046673e-05,
+        "descending": 2.566076469078778e-05,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 0.00011866527363954133,
+        "visual_centrifugal": 0.0001272264631043257,
+        "visual_projection": 4.967093008816589e-05
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.00011990407673860912,
+          "KC": 3.8632412594166507e-05,
+          "ascending": 0.0002014098690835851,
+          "central": 6.022282445046673e-05,
+          "descending": 2.566076469078778e-05,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 0.00011866527363954133,
+          "visual_centrifugal": 0.0001272264631043257,
+          "visual_projection": 4.967093008816589e-05
+        },
+        {
+          "DAN": 0.001200369344413666,
+          "ER": 0.00035971223021582735,
+          "KC": 0.00034769171334749855,
+          "ascending": 0.0023162134944612286,
+          "central": 0.0017903743852253336,
+          "descending": 0.0033102386451116243,
+          "endocrine": 0.0017543859649122807,
+          "motor": 0.006918238993710693,
+          "optic": 0.0016905502027198425,
+          "visual_centrifugal": 0.0015903307888040714,
+          "visual_projection": 0.0007285069746264332
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 0.6931471805599453,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 8.517193191416236,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-0.5",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-0.5",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.2
+        }
+      ],
+      "mn9_dark_max_hz": 0.2,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.7665857408267536,
+      "measured_kc_hz_mean": 3.8632412594166507e-05,
+      "measured_central_hz_mean": 6.022282445046673e-05,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": 0.9899999999999998,
+          "n_scored": 2,
+          "n_silent": 1998
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": 1.0,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        32.0,
+        28.0,
+        30.0,
+        41.0,
+        36.0,
+        36.0
+      ],
+      "b_hz": [
+        32.0,
+        28.0,
+        30.0,
+        34.0,
+        34.0,
+        27.0,
+        32.0,
+        32.0,
+        26.0,
+        33.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-1.0",
+        "beta": 1.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-1.0",
+        "bg_policy": "default",
+        "beta": 1.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.85,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 0.0,
+        "ascending": 0.0,
+        "central": 2.50928435210278e-06,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 2.5796798617291596e-06,
+        "visual_centrifugal": 0.0,
+        "visual_projection": 0.0
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 0.0,
+          "central": 2.50928435210278e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 2.5796798617291596e-06,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 0.0
+        },
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 7.193209610128039e-05,
+          "central": 3.2620696577336146e-05,
+          "descending": 5.132152938157556e-05,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 6.062247675063525e-05,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 2.8974709218096774e-05
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 17.824046010856293,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-1.0",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-1.0",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 0.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.0474945205479451,
+      "measured_kc_hz_mean": 0.0,
+      "measured_central_hz_mean": 2.50928435210278e-06,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        27.0,
+        28.0,
+        26.0,
+        26.0,
+        22.0,
+        19.0
+      ],
+      "b_hz": [
+        27.0,
+        28.0,
+        26.0,
+        27.0,
+        19.0,
+        30.0,
+        27.0,
+        24.0,
+        24.0,
+        18.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-1.0",
+        "beta": 1.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-1.0",
+        "bg_policy": "default",
+        "beta": 1.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.9,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 0.0,
+        "ascending": 7.193209610128039e-05,
+        "central": 3.2620696577336146e-05,
+        "descending": 5.132152938157556e-05,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 6.062247675063525e-05,
+        "visual_centrifugal": 0.0,
+        "visual_projection": 2.8974709218096774e-05
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 7.193209610128039e-05,
+          "central": 3.2620696577336146e-05,
+          "descending": 5.132152938157556e-05,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 6.062247675063525e-05,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 2.8974709218096774e-05
+        },
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0001609683858090271,
+          "ascending": 0.0020860307869371313,
+          "central": 0.0004541804677306032,
+          "descending": 0.0005388760585065435,
+          "endocrine": 0.002631578947368421,
+          "motor": 0.0,
+          "optic": 0.001046060183931174,
+          "visual_centrifugal": 0.0007633587786259542,
+          "visual_projection": 0.0002980255805289954
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 17.824046010856293,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-1.0",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-1.0",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 0.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.0474945205479451,
+      "measured_kc_hz_mean": 0.0,
+      "measured_central_hz_mean": 3.2620696577336146e-05,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        26.0,
+        22.0,
+        19.0,
+        24.0,
+        26.0,
+        23.0
+      ],
+      "b_hz": [
+        26.0,
+        22.0,
+        19.0,
+        21.0,
+        28.0,
+        31.0,
+        23.0,
+        23.0,
+        24.0,
+        24.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-2.0",
+        "beta": 2.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-2.0",
+        "bg_policy": "default",
+        "beta": 2.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.85,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 0.0,
+        "ascending": 1.4386419220256078e-05,
+        "central": 0.0,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 4.299466436215266e-07,
+        "visual_centrifugal": 6.361323155216285e-05,
+        "visual_projection": 0.0
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 0.0,
+          "ascending": 1.4386419220256078e-05,
+          "central": 0.0,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 4.299466436215266e-07,
+          "visual_centrifugal": 6.361323155216285e-05,
+          "visual_projection": 0.0
+        },
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 6.438735432361085e-06,
+          "ascending": 0.00014386419220256078,
+          "central": 8.78249523235973e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 3.4825678133343654e-05,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 1.65569766960553e-05
+        }
+      ],
+      "violations": {
+        "F": 10.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 27.824046010856293,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": false,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-2.0",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.75-kc-6.0-thdeg-2.0",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 0.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.053642857142857,
+      "measured_kc_hz_mean": 0.0,
+      "measured_central_hz_mean": 0.0,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.75,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.75,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        5.0,
+        6.0,
+        5.0,
+        4.0,
+        4.0,
+        3.0
+      ],
+      "b_hz": [
+        5.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        1.0,
+        2.0,
+        4.0,
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-2.0",
+        "beta": 2.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "flags": [],
+      "retention": null,
+      "difference_hz": null,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-2.0",
+        "bg_policy": "default",
+        "beta": 2.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "grade_weight": 0.9,
+      "ladder": [
+        0.75,
+        0.8,
+        0.85,
+        0.9
+      ],
+      "rates_hz": {
+        "DAN": 0.0,
+        "ER": 0.0,
+        "KC": 6.438735432361085e-06,
+        "ascending": 0.00014386419220256078,
+        "central": 8.78249523235973e-06,
+        "descending": 0.0,
+        "endocrine": 0.0,
+        "motor": 0.0,
+        "optic": 3.4825678133343654e-05,
+        "visual_centrifugal": 0.0,
+        "visual_projection": 1.65569766960553e-05
+      },
+      "pair_rates_hz": [
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 6.438735432361085e-06,
+          "ascending": 0.00014386419220256078,
+          "central": 8.78249523235973e-06,
+          "descending": 0.0,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 3.4825678133343654e-05,
+          "visual_centrifugal": 0.0,
+          "visual_projection": 1.65569766960553e-05
+        },
+        {
+          "DAN": 0.0,
+          "ER": 0.0,
+          "KC": 6.438735432361084e-05,
+          "ascending": 0.002172349302258668,
+          "central": 0.00021956238080899325,
+          "descending": 0.0002822684115986656,
+          "endocrine": 0.0,
+          "motor": 0.0,
+          "optic": 0.0004897092270849188,
+          "visual_centrifugal": 0.00019083969465648855,
+          "visual_projection": 0.00013659505774245623
+        }
+      ],
+      "violations": {
+        "F": 0.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 0.0
+      },
+      "S": 17.824046010856293,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "screen_checks": {
+        "F": true,
+        "b": true,
+        "stability_ratio": false,
+        "central": false,
+        "DAN": false,
+        "KC": true,
+        "gradedness": false
+      },
+      "reflex_passed": null,
+      "long_passed": null,
+      "arm_id": "thdeg-2.0",
+      "candidate_id": "1.0-4.0-0.0-False-100-0.8-kc-6.0-thdeg-2.0",
+      "deepest": "T1",
+      "mn9_dark": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_max_hz": 0.0,
+      "mn9_dark_every_seed_under_5": true,
+      "measured_F_max_pair": 1.053642857142857,
+      "measured_kc_hz_mean": 6.438735432361085e-06,
+      "measured_central_hz_mean": 8.78249523235973e-06,
+      "lab": {
+        "single_unit_fano_100ms": {
+          "mean": null,
+          "n_scored": 0,
+          "n_silent": 2000
+        },
+        "mean_pairwise_corr_50ms": {
+          "mean": null,
+          "n_pairs": 0,
+          "n_dropped": 124750
+        },
+        "pca_participation_ratio": {
+          "value": null,
+          "n": 500
+        },
+        "fano_n": 2000,
+        "pair_n": 500,
+        "chunk_ms": 10.0
+      },
+      "mn9_dark_sugar": [
+        {
+          "w_bg": 0.8,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.8,
+          "seed": 10,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 1,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 2,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 3,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 4,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 5,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 6,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 7,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 8,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 9,
+          "hz": 0.0
+        },
+        {
+          "w_bg": 0.85,
+          "seed": 10,
+          "hz": 0.0
+        }
+      ],
+      "mn9_dark_sugar_max_hz": 0.0,
+      "mn9_dark_sugar_every_seed_under_5": true,
+      "a_hz": [
+        4.0,
+        4.0,
+        3.0,
+        4.0,
+        6.0,
+        5.0
+      ],
+      "b_hz": [
+        4.0,
+        4.0,
+        3.0,
+        4.0,
+        8.0,
+        3.0,
+        3.0,
+        5.0,
+        2.0,
+        7.0
+      ]
+    }
+  ],
+  "qualified": [],
+  "failed_stage": "R-reflex",
+  "closest_miss": {
+    "sub_tier": "T3e",
+    "engine_model": "lif",
+    "g_gaba": 1.0,
+    "g_glu": 4.0,
+    "setting": {
+      "g_gaba_kc": 6.0,
+      "arm_id": "sens"
+    },
+    "M": 6.0,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "g_gaba_kc": 6.0,
+    "w_bg": 1.0,
+    "pair_weights": [
+      1.0,
+      1.2
+    ],
+    "flags": [],
+    "retention": null,
+    "difference_hz": null,
+    "job_id": null,
+    "baseline": false,
+    "arm": {
+      "id": "sens",
+      "bg_policy": "sens",
+      "ladder": [
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "why_ladder": "sensory-only drive; central brain sees network-filtered input, so the ladder starts at 0.80 and steps 0.20 mV to 1.40"
+    },
+    "grade_weight": 1.4,
+    "ladder": [
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ],
+    "rates_hz": {
+      "DAN": 0.8092336103416436,
+      "ER": 0.0,
+      "KC": 0.08754104693838131,
+      "ascending": 0.000546683930369731,
+      "central": 4.831463916491017,
+      "descending": 1.6435463176802667,
+      "endocrine": 0.0,
+      "motor": 0.05157232704402517,
+      "optic": 0.00017842785710293354,
+      "visual_centrifugal": 0.3230279898218829,
+      "visual_projection": 0.02077486650937539
+    },
+    "pair_rates_hz": [
+      {
+        "DAN": 0.8092336103416436,
+        "ER": 0.0,
+        "KC": 0.08754104693838131,
+        "ascending": 0.000546683930369731,
+        "central": 4.831463916491017,
+        "descending": 1.6435463176802667,
+        "endocrine": 0.0,
+        "motor": 0.05157232704402517,
+        "optic": 0.00017842785710293354,
+        "visual_centrifugal": 0.3230279898218829,
+        "visual_projection": 0.02077486650937539
+      },
+      {
+        "DAN": 0.8215143120960295,
+        "ER": 0.0,
+        "KC": 0.0851265211512459,
+        "ascending": 0.03694432455761761,
+        "central": 4.8597824450466724,
+        "descending": 1.7908904285347702,
+        "endocrine": 0.0,
+        "motor": 0.3754716981132075,
+        "optic": 0.0001552107383473711,
+        "visual_centrifugal": 0.34370229007633585,
+        "visual_projection": 0.021586158367482098
+      }
+    ],
+    "violations": {
+      "F": 0.0,
+      "b": 0.0,
+      "stability_ratio": 0.0,
+      "central": 0.0,
+      "DAN": 0.0,
+      "KC": 0.0,
+      "gradedness": 0.0
+    },
+    "S": 0.0,
+    "J": 119.20220877690859,
+    "screen_passed": true,
+    "screen_checks": {
+      "F": true,
+      "b": true,
+      "stability_ratio": true,
+      "central": true,
+      "DAN": true,
+      "KC": true,
+      "gradedness": true
+    },
+    "reflex_passed": null,
+    "long_passed": null,
+    "arm_id": "sens",
+    "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+    "deepest": "T2",
+    "mn9_dark": [
+      {
+        "w_bg": 1.0,
+        "seed": 1,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 1,
+        "hz": 2.6
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 2,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 2,
+        "hz": 2.9
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 3,
+        "hz": 0.3
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 3,
+        "hz": 1.8
+      }
+    ],
+    "mn9_dark_max_hz": 2.9,
+    "mn9_dark_every_seed_under_5": true,
+    "measured_F_max_pair": 2.679567771889278,
+    "measured_kc_hz_mean": 0.08754104693838131,
+    "measured_central_hz_mean": 4.831463916491017,
+    "lab": {
+      "single_unit_fano_100ms": {
+        "mean": 0.35032682058882497,
+        "n_scored": 191,
+        "n_silent": 1809
+      },
+      "mean_pairwise_corr_50ms": {
+        "mean": 1.5670950465225903e-05,
+        "n_pairs": 703,
+        "n_dropped": 124047
+      },
+      "pca_participation_ratio": {
+        "value": 20.012651339589457,
+        "n": 500
+      },
+      "fano_n": 2000,
+      "pair_n": 500,
+      "chunk_ms": 10.0
+    },
+    "mn9_dark_sugar": [
+      {
+        "w_bg": 1.0,
+        "seed": 1,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 2,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 3,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 4,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 5,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 6,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 7,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 8,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 9,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.0,
+        "seed": 10,
+        "hz": 0.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 1,
+        "hz": 3.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 2,
+        "hz": 2.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 3,
+        "hz": 1.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 4,
+        "hz": 4.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 5,
+        "hz": 3.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 6,
+        "hz": 2.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 7,
+        "hz": 3.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 8,
+        "hz": 3.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 9,
+        "hz": 4.0
+      },
+      {
+        "w_bg": 1.2,
+        "seed": 10,
+        "hz": 2.0
+      }
+    ],
+    "mn9_dark_sugar_max_hz": 4.0,
+    "mn9_dark_sugar_every_seed_under_5": true,
+    "a_hz": [
+      33.0,
+      34.0,
+      22.0,
+      19.0,
+      22.0,
+      21.0
+    ],
+    "b_hz": [
+      33.0,
+      34.0,
+      22.0,
+      26.0,
+      23.0,
+      27.0,
+      30.0,
+      27.0,
+      25.0,
+      27.0
+    ],
+    "reflex": {
+      "reflex_passed": false,
+      "reflex_violations": {
+        "a": 0.7444404749474958,
+        "b": 0.6014799920341215,
+        "c": 0.0
+      },
+      "reflex_violation": 1.3459204669816174,
+      "retention": {
+        "upstream": 0.5589285714285714,
+        "extended": 0.5589285714285714
+      },
+      "a_hz": [
+        33.0,
+        34.0,
+        22.0,
+        19.0,
+        22.0,
+        21.0
+      ],
+      "b_hz": [
+        33.0,
+        34.0,
+        22.0,
+        26.0,
+        23.0,
+        27.0,
+        30.0,
+        27.0,
+        25.0,
+        27.0
+      ],
+      "candidate_ff_hz": {
+        "upstream": [
+          36.0,
+          31.0,
+          31.0,
+          30.0,
+          29.0,
+          32.0,
+          34.0,
+          26.0,
+          31.0,
+          33.0
+        ],
+        "extended": [
+          36.0,
+          31.0,
+          31.0,
+          30.0,
+          29.0,
+          32.0,
+          34.0,
+          26.0,
+          31.0,
+          33.0
+        ]
+      },
+      "bare_ff_hz": {
+        "upstream": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ],
+        "extended": [
+          50.0,
+          58.0,
+          58.0,
+          63.0,
+          48.0,
+          59.0,
+          61.0,
+          53.0,
+          62.0,
+          48.0
+        ]
+      },
+      "reflex_harmonised": false,
+      "reflex_verdicts": {
+        "original": {
+          "reflex_passed": false,
+          "mean_hz": 50.0,
+          "seed_min_hz": 40.0,
+          "reflex_violations": {
+            "a": 0.7444404749474958,
+            "b": 0.6014799920341215,
+            "c": 0.0
+          }
+        },
+        "harmonised": {
+          "reflex_passed": false,
+          "mean_hz": 28.0,
+          "seed_min_hz": 22.400000000000002,
+          "job_bare_mean": 56.0,
+          "reflex_violations": {
+            "a": 0.1646219796945538,
+            "b": 0.021661496781179467,
+            "c": 0.0
+          }
+        }
+      },
+      "flags": [],
+      "h_max": null
+    }
+  },
+  "n_screen_passers": 1,
+  "n_qualified": 0,
+  "t0": [
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "sens"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.5589285714285714,
+      "difference_hz": 31.3,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "sens",
+        "bg_policy": "sens",
+        "ladder": [
+          0.8,
+          1.0,
+          1.2,
+          1.4
+        ],
+        "why_ladder": "sensory-only drive; central brain sees network-filtered input, so the ladder starts at 0.80 and steps 0.20 mV to 1.40"
+      },
+      "arm_id": "sens",
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "nomotor"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.5589285714285714,
+      "difference_hz": 31.3,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "nomotor",
+        "bg_policy": "nomotor",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common 0.05 mV ladder; item 42 relaxed for this arm only"
+      },
+      "arm_id": "nomotor",
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "indeg"
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.5589285714285714,
+      "difference_hz": 31.3,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "indeg",
+        "bg_policy": "default",
+        "scale": "indeg",
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; incoming gain 1/sqrt(K_i/K_median)"
+      },
+      "arm_id": "indeg",
+      "t0_passed": true,
+      "seeds": 10,
+      "job_index": 0,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-0.5",
+        "beta": 0.5
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.19285714285714287,
+      "difference_hz": 10.8,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-0.5",
+        "bg_policy": "default",
+        "beta": 0.5,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "arm_id": "thdeg-0.5",
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-1.0",
+        "beta": 1.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.0071428571428571435,
+      "difference_hz": 0.4,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-1.0",
+        "bg_policy": "default",
+        "beta": 1.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "arm_id": "thdeg-1.0",
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    },
+    {
+      "sub_tier": "T3e",
+      "engine_model": "lif",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "arm_id": "thdeg-2.0",
+        "beta": 2.0
+      },
+      "M": 6.0,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "g_gaba_kc": 6.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "flags": [],
+      "retention": 0.0,
+      "difference_hz": 0.0,
+      "job_id": null,
+      "baseline": false,
+      "arm": {
+        "id": "thdeg-2.0",
+        "bg_policy": "default",
+        "beta": 2.0,
+        "ladder": [
+          0.75,
+          0.8,
+          0.85,
+          0.9
+        ],
+        "why_ladder": "common ladder; v_th_i = v_th0 + beta * K_i / 1000 mV"
+      },
+      "arm_id": "thdeg-2.0",
+      "t0_passed": false,
+      "seeds": 10,
+      "job_index": 1,
+      "same_job_bare_mean": 56.0
+    }
+  ],
+  "job_bare_mean": 56.0
+}

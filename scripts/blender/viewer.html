@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Male fly brain model · what changes when a chemical is switched off</title>
+<style>
+:root{--paper:#04060a;--ink:#e2e8f0;--muted:#96a2b2;--line:#1c2430}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;overflow:hidden}
+canvas{display:block;position:fixed;inset:0;width:100%;height:100%;cursor:grab}canvas:active{cursor:grabbing}
+header{position:fixed;left:28px;top:22px;right:28px;z-index:1;display:flex;gap:18px;align-items:flex-start;pointer-events:none}
+header>*{pointer-events:auto}
+h1{margin:0;font-weight:500;font-size:30px;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:13px;margin-top:4px;max-width:440px}
+.panel{margin-left:auto;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+select,button{font:inherit;color:var(--ink);background:#0d131b;border:1px solid var(--line);border-radius:8px;padding:7px 12px}
+select{min-width:280px}button{cursor:pointer}button:hover,select:hover{border-color:#34455a}
+.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+label.toggle{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:14px}
+footer{position:fixed;left:28px;right:28px;bottom:18px;display:flex;align-items:flex-end;gap:24px;pointer-events:none}
+.credit{color:#5f6b7a;font-size:12px;max-width:520px}
+.key{margin-left:auto;width:min(560px,60vw);text-align:center}
+.key .title{font-size:14px;margin-bottom:8px}
+.key .bar{height:14px;border-radius:2px}
+.key .ticks{position:relative;height:20px;color:var(--muted);font-size:12px}
+.key .ticks span{position:absolute;transform:translateX(-50%);top:4px}
+.key .ends{display:flex;justify-content:space-between;font-size:13px;margin-top:2px}
+.stamp{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);color:#ff4040;font-weight:700;font-size:28px;pointer-events:none;opacity:.8}
+#failure{position:fixed;inset:0;display:grid;place-items:center;color:var(--muted);white-space:pre-wrap;padding:40px;text-align:center}
+</style>
+</head>
+<body>
+<canvas id="view"></canvas>
+<header>
+ <div><h1 id="title">Loading…</h1><div class="sub">Every simulated neuron is drawn as a few of its own synapse sites, coloured by how much its firing changed compared with the normal brain. This is model activity: input is injected, and the fly does not see, move or sing.</div></div>
+ <div class="panel">
+  <select id="condition" aria-label="Condition"></select>
+  <div class="row"><button data-view="top">From above</button><button data-view="side">From the side</button><button data-view="front">From the front</button></div>
+  <div class="row"><label class="toggle"><input type="checkbox" id="path"> Courtship path</label><label class="toggle"><input type="checkbox" id="spin"> Turn slowly</label></div>
+ </div>
+</header>
+<footer>
+ <div class="credit">MaleCNS v1.0 · Janelia Research Campus, Google Research &amp; University of Cambridge · Berg et al., Cell (2026), doi:10.1016/j.cell.2026.08.015 · CC BY 4.0. Geometry simplified and recoloured. Three.js r160 (MIT). Drag to turn, scroll to zoom, right-drag to move.</div>
+ <div class="key"><div class="title" id="key-title"></div><div class="bar" id="key-bar"></div><div class="ticks" id="key-ticks"></div><div class="ends"><span id="less">Fires less</span><span id="more">Fires more</span></div></div>
+</footer>
+<div id="failure" hidden></div>
+<!-- Three.js (MIT): Copyright © 2010–2023 three.js authors. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+<script>
+(async()=>{
+'use strict';
+const bytes=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const threeURL=URL.createObjectURL(new Blob([bytes('__THREE__')],{type:'text/javascript'}));
+const THREE=await import(threeURL);
+const controlsSource=new TextDecoder().decode(bytes('__CONTROLS__')).replace("from 'three'",`from '${threeURL}'`);
+const {OrbitControls}=await import(URL.createObjectURL(new Blob([controlsSource],{type:'text/javascript'})));
+// Payload: gzip([u32 JSON length][JSON][pad to 4][arrays]); offsets count from the arrays' start.
+const buffer=await new Response(new Blob([bytes('__PAYLOAD__')]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
+const headLength=new DataView(buffer).getUint32(0,true);
+const data=JSON.parse(new TextDecoder().decode(new Uint8Array(buffer,4,headLength)));
+const TYPES={i8:Int8Array,u8:Uint8Array,i16:Int16Array,u32:Uint32Array};
+const base=Math.ceil((4+headLength)/4)*4;
+const array=a=>new TYPES[a.type](buffer,base+a.offset,a.length);
+const byId=id=>document.getElementById(id);
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+
+const renderer=new THREE.WebGLRenderer({canvas:byId('view'),antialias:true,preserveDrawingBuffer:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.outputColorSpace=THREE.LinearSRGBColorSpace; // shaders already work in display (sRGB) values
+// Light adds up in a float buffer, then one tone-mapping pass keeps each hue while
+// bright regions saturate softly instead of clipping to white.
+const scene=new THREE.Scene();
+const target=new THREE.WebGLRenderTarget(1,1,{type:THREE.HalfFloatType,samples:4});
+const post=new THREE.Mesh(new THREE.PlaneGeometry(2,2),new THREE.ShaderMaterial({depthTest:false,
+ uniforms:{tex:{value:target.texture},bg:{value:new THREE.Vector3(...hex(data.look.background))},exposure:{value:1.6}},
+ vertexShader:`varying vec2 p;void main(){p=uv;gl_Position=vec4(position.xy,0.,1.);}`,
+ fragmentShader:`uniform sampler2D tex;uniform vec3 bg;uniform float exposure;varying vec2 p;
+  void main(){vec3 c=texture2D(tex,p).rgb*exposure;float m=max(max(c.r,c.g),max(c.b,1e-4));
+   c*=(1.-exp(-m))/m;gl_FragColor=vec4(bg+(1.-bg)*c,1.);}`}));
+const postScene=new THREE.Scene();postScene.add(post);const postCamera=new THREE.OrthographicCamera(-1,1,1,-1,0,1);
+const camera=new THREE.PerspectiveCamera(16,1,10,20000);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.autoRotateSpeed=0.6;
+
+const stops=list=>({pos:list.map(s=>s[0]),col:list.map(s=>new THREE.Vector3(...hex(s[1])))});
+const up=stops(data.palette.up),down=stops(data.palette.down);
+const L=data.look;
+// Colour, glow and size follow the Blender figures: hue for direction, brightness for size of change.
+const rampGLSL=`
+uniform vec3 upC[4];uniform vec3 downC[4];uniform float upP[4];uniform float downP[4];
+vec3 ramp(float a,bool rising){
+ vec3 c=rising?upC[0]:downC[0];
+ for(int i=1;i<4;i++){float p0=rising?upP[i-1]:downP[i-1],p1=rising?upP[i]:downP[i];
+  vec3 c0=rising?upC[i-1]:downC[i-1],c1=rising?upC[i]:downC[i];
+  if(a>=p0)c=mix(c0,c1,clamp((a-p0)/max(p1-p0,1e-6),0.,1.));}
+ return c;}`;
+const rampUniforms={upC:{value:up.col},downC:{value:down.col},upP:{value:up.pos},downP:{value:down.pos}};
+
+// Anatomy: a faint fresnel rim, added light only.
+function rimMaterial(colour,strength,power,fill){
+ return new THREE.ShaderMaterial({transparent:true,depthWrite:false,side:THREE.DoubleSide,blending:THREE.AdditiveBlending,
+  uniforms:{colour:{value:new THREE.Vector3(...hex(colour))},strength:{value:strength},power:{value:power},fill:{value:fill}},
+  vertexShader:`varying vec3 n;varying vec3 v;void main(){vec4 p=modelViewMatrix*vec4(position,1.);n=normalize(normalMatrix*normal);v=normalize(-p.xyz);gl_Position=projectionMatrix*p;}`,
+  fragmentShader:`uniform vec3 colour;uniform float strength,power,fill;varying vec3 n;varying vec3 v;
+   void main(){float facing=1.-abs(dot(normalize(n),normalize(v)));gl_FragColor=vec4(colour*(pow(facing,power)*strength+fill),1.);}`});
+}
+const outline=rimMaterial(L.shell,L.shell_rim*1.6,L.shell_power,L.shell_fill*4), inner=rimMaterial(L.neuropil,L.neuropil_rim*1.4,2.4,0);
+for(const m of data.meshes){
+ const g=new THREE.BufferGeometry();
+ const q=array(m.v),pos=new Float32Array(q.length);for(let i=0;i<q.length;i++)pos[i]=q[i]*data.quantum;
+ g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setIndex(new THREE.BufferAttribute(array(m.f),1));g.computeVertexNormals();
+ scene.add(new THREE.Mesh(g,m.outline?outline:inner));
+}
+
+// Synapse-site dots: one shader, one attribute swapped per condition.
+const N=data.neurons, counts=array(data.dust.counts);
+const dq=array(data.dust.pos), points=dq.length/3, dotPos=new Float32Array(dq.length);
+for(let i=0;i<dq.length;i++)dotPos[i]=dq[i]*data.quantum;
+const owner=new Uint32Array(points);{let k=0;for(let n=0;n<N;n++)for(let j=0;j<counts[n];j++)owner[k++]=n;}
+const dotM=new Float32Array(points);
+const dots=new THREE.BufferGeometry();
+dots.setAttribute('position',new THREE.BufferAttribute(dotPos,3));
+dots.setAttribute('m',new THREE.BufferAttribute(dotM,1));
+const dotMaterial=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,
+ uniforms:{...rampUniforms,size:{value:1},neutralGlow:{value:.12},changeGlow:{value:.55},downGain:{value:L.down_gain},
+  neutralAlpha:{value:.25},changeAlpha:{value:1}},
+ vertexShader:rampGLSL+`attribute float m;uniform float size,neutralGlow,changeGlow,downGain,neutralAlpha,changeAlpha;varying vec3 c;
+  void main(){float a=abs(m);bool rising=m>=0.;
+   float glow=neutralGlow+changeGlow*(rising?1.:downGain)*pow(a,.85);
+   float alpha=neutralAlpha+(changeAlpha-neutralAlpha)*min(a*3.,1.);
+   c=ramp(a,rising)*glow*alpha;
+   vec4 p=modelViewMatrix*vec4(position,1.);gl_PointSize=size*(1.+1.1*a)/-p.z;gl_Position=projectionMatrix*p;}`,
+ fragmentShader:`varying vec3 c;void main(){vec2 d=gl_PointCoord*2.-1.;float r=dot(d,d);if(r>1.)discard;gl_FragColor=vec4(c*pow(1.-r,1.6),1.);}`});
+scene.add(new THREE.Points(dots,dotMaterial));
+
+// Courtship path centerlines, coloured by each neuron's own change.
+const pq=array(data.path.pos),pathPos=new Float32Array(pq.length);for(let i=0;i<pq.length;i++)pathPos[i]=pq[i]*data.quantum;
+const pathNeuron=array(data.path.neuron),pathColour=new Float32Array(pathPos.length);
+const pathGeometry=new THREE.BufferGeometry();pathGeometry.setAttribute('position',new THREE.BufferAttribute(pathPos,3));
+pathGeometry.setAttribute('color',new THREE.BufferAttribute(pathColour,3));
+const path=new THREE.LineSegments(pathGeometry,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
+path.visible=false;scene.add(path);
+
+const values=array(data.values);
+function rampJS(a,rising){const s=rising?data.palette.up:data.palette.down;let c=hex(s[0][1]);
+ for(let i=1;i<s.length;i++)if(a>=s[i-1][0]){const t=Math.min(1,(a-s[i-1][0])/(s[i][0]-s[i-1][0])),c0=hex(s[i-1][1]),c1=hex(s[i][1]);c=c0.map((x,j)=>x+(c1[j]-x)*t);}return c;}
+function show(index){
+ const cond=data.conditions[index],base=index*N;
+ for(let k=0;k<points;k++)dotM[k]=values[base+owner[k]]/127;
+ dots.attributes.m.needsUpdate=true;
+ for(let k=0;k<pathNeuron.length;k++){const m=values[base+pathNeuron[k]]/127,a=Math.abs(m),c=rampJS(a,m>=0),g=.35+.9*Math.pow(a,.85);
+  pathColour[3*k]=c[0]*g;pathColour[3*k+1]=c[1]*g;pathColour[3*k+2]=c[2]*g;}
+ pathGeometry.attributes.color.needsUpdate=true;
+ byId('title').textContent=cond.label;
+ try{localStorage.setItem('tour-condition',cond.id)}catch(e){}
+}
+
+// Condition picker and the shared colour key.
+const select=byId('condition'),groups={control:'Baseline',knockout:'Chemical switched off',courtship:'Courtship neurons switched on'};
+for(const [g,title] of Object.entries(groups)){const og=document.createElement('optgroup');og.label=title;
+ data.conditions.forEach((c,i)=>{if(c.group===g){const o=document.createElement('option');o.value=i;o.textContent=c.label;og.appendChild(o);}});
+ if(og.children.length)select.appendChild(og);}
+select.addEventListener('change',()=>show(+select.value));
+const scalePos=v=>Math.sign(v)*Math.min(Math.log1p(Math.abs(v)/data.knee)/Math.log1p(data.cap/data.knee),1);
+const css=rgb=>`rgb(${rgb.map(x=>Math.round(x*255)).join(',')})`;
+const bar=[];for(let i=0;i<=40;i++){const m=i/20-1;bar.push(`${css(rampJS(Math.abs(m),m>=0))} ${i*2.5}%`);}
+byId('key-bar').style.background=`linear-gradient(90deg,${bar.join(',')})`;
+byId('key-title').textContent=`Change in firing rate from the normal brain (${data.unit})`;
+for(const v of data.ticks){const s=document.createElement('span');s.style.left=`${(scalePos(v)+1)*50}%`;s.textContent=v===0?'0':(v>0?'+':'−')+Math.abs(v);byId('key-ticks').appendChild(s);}
+byId('less').style.color=css(rampJS(.7,false));byId('more').style.color=css(rampJS(.7,true));
+if(data.kind==='synthetic'){const s=document.createElement('div');s.className='stamp';s.textContent='SYNTHETIC TEST VALUES · NOT A RESULT';document.body.appendChild(s);}
+
+// Views in atlas µm: +x across, +y dorsal, +z toward the front of the head.
+const centre=new THREE.Vector3(0,-90,-330);
+const views={top:{dir:[0,1,.1],up:[0,0,1],dist:4900},side:{dir:[-1,.8,.12],up:[0,1,0],dist:4300},front:{dir:[0,.12,1],up:[0,1,0],dist:3100,target:[0,-40,0]}};
+function view(name){const v=views[name],t=v.target?new THREE.Vector3(...v.target):centre;
+ camera.up.set(...v.up);controls.target.copy(t);camera.position.copy(t).add(new THREE.Vector3(...v.dir).normalize().multiplyScalar(v.dist));
+ controls.dispose();Object.assign(controls,new OrbitControls(camera,renderer.domElement));controls.target.copy(t);controls.enableDamping=true;controls.autoRotateSpeed=.6;controls.autoRotate=byId('spin').checked;controls.update();}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>view(b.dataset.view)));
+byId('path').addEventListener('change',e=>{path.visible=e.target.checked;});
+byId('spin').addEventListener('change',e=>{controls.autoRotate=e.target.checked;});
+
+function resize(){const w=innerWidth,h=innerHeight,r=renderer.getPixelRatio();renderer.setSize(w,h,false);target.setSize(w*r,h*r);camera.aspect=w/h;camera.updateProjectionMatrix();
+ dotMaterial.uniforms.size.value=h*renderer.getPixelRatio()*1.1/(2*Math.tan(THREE.MathUtils.degToRad(camera.fov/2)));}
+addEventListener('resize',resize);resize();
+let start=0;try{const saved=localStorage.getItem('tour-condition');const i=data.conditions.findIndex(c=>c.id===saved);if(i>=0)start=i;}catch(e){}
+select.value=start;show(start);view('side');
+renderer.setAnimationLoop(()=>{controls.update();renderer.setRenderTarget(target);renderer.setClearColor(0x000000,1);renderer.clear();
+ renderer.render(scene,camera);renderer.setRenderTarget(null);renderer.render(postScene,postCamera);});
+window.tourReady=true;
+})().catch(error=>{const f=document.getElementById('failure');f.hidden=false;f.textContent='Unable to show this viewer. Use a current browser with WebGL and DecompressionStream support.\n'+error;console.error(error);});
+</script>
+</body>
+</html>

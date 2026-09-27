@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Male fly brain anatomy</title>
+<style>
+:root{--ink:#15283a;--muted:#566a7b;--rule:#dfe6eb;--font:"Helvetica Neue",Helvetica,Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.35 var(--font);-webkit-font-smoothing:antialiased}
+#figure{width:1000px;padding:18px 20px 16px;background:#fff}
+.panels{display:grid;column-gap:22px}
+.head{font-size:17px;font-weight:700;margin-bottom:7px}
+.head b{font-size:21px;margin-right:9px}
+.frame{position:relative;overflow:hidden;border:1px solid var(--rule);border-radius:3px}
+.frame img{display:block}
+#main img{width:100%;height:auto}
+#context img{position:absolute;top:0}
+.bar{position:absolute;left:14px;bottom:12px;font-size:15px;font-weight:600}
+.bar i{display:block;height:3px;background:var(--ink);margin-top:4px}
+.note{font-size:15px;color:var(--muted);margin-top:6px}
+.key{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+.key h2{font-size:17px;margin:0 0 10px}
+.rows{display:grid;grid-template-columns:18px 300px 104px 1fr;column-gap:12px;row-gap:8px;align-items:baseline}
+.dot{width:14px;height:14px;border-radius:50%;align-self:start;margin-top:3px}
+.th{font-size:14px;color:var(--muted);font-weight:600}
+.name{font-weight:600}
+.count{font-variant-numeric:tabular-nums;text-align:right;padding-right:10px}
+.why{color:var(--muted);font-size:15px}
+.method,.source{font-size:15px;color:var(--muted);margin:12px 0 0}
+.source{margin-top:6px}
+</style>
+</head>
+<body>
+<div id="figure">
+ <div class="panels"><div id="main"></div><div id="context"></div></div>
+ <div class="key"><h2 id="key-title"></h2><div class="rows" id="rows"></div></div>
+ <p class="method" id="method"></p>
+ <p class="source" id="source"></p>
+</div>
+<script>
+const d=__DATA__;
+const byId=id=>document.getElementById(id);
+const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
+for(const name of ['main','context']){const v=d.views[name],text=d.text.views[name],box=byId(name);
+ const head=el('div','head');head.append(el('b',null,text.letter),text.title);
+ const frame=el('div','frame'),img=el('img');img.src=v.src;img.alt=text.title;frame.append(img);
+ const bar=el('div','bar',`${text.bar_um} µm`),line=el('i');bar.append(line);frame.append(bar);
+ box.append(head,frame,el('div','note',text.note));v.frame=frame;v.line=line;v.bar_um=text.bar_um;}
+const groups=Object.fromEntries(d.groups.map(g=>[g.id,g]));
+byId('key-title').textContent=d.text.key_title;
+byId('rows').append(el('span'),...d.text.key_heads.map((h,i)=>el('span',i===1?'th count':'th',h)));
+for(const id of d.text.order){const g=groups[id];const dot=el('i','dot');dot.style.background=g.color;
+ const count=g.shown===g.total?g.total.toLocaleString('en-GB'):`${g.shown.toLocaleString('en-GB')} of ${g.total.toLocaleString('en-GB')}`;
+ byId('rows').append(dot,el('span','name',g.label),el('span','count',count),el('span','why',d.text.notes[id]||''));}
+byId('method').textContent=d.text.method;byId('source').textContent=d.text.attribution;
+// Both panels share one height. The whole-CNS panel is as wide as everything it draws plus a margin,
+// so only empty background beside the CNS is left out.
+const main=d.views.main,context=d.views.context,[x0,x1]=context.extent,margin=.06;
+const drawn=(x1-x0)/2*(1+2*margin)*context.width;                  // CSS px of the captured canvas
+const ratio=(main.height/main.width)*(drawn/context.height);         // side width per unit of main width
+const total=byId('figure').clientWidth-40-22,mainWidth=total/(1+ratio);
+document.querySelector('.panels').style.gridTemplateColumns=`${mainWidth}px ${total-mainWidth}px`;
+window.figureReady=Promise.all([...document.images].map(i=>i.decode())).then(()=>document.fonts.ready).then(()=>{
+ const height=main.frame.querySelector('img').clientHeight,k=height/context.height,img=context.frame.querySelector('img');
+ context.frame.style.height=height+'px';img.style.height=height+'px';img.style.width=context.width*k+'px';
+ img.style.left=`${context.frame.clientWidth/2-((x0+x1)/4+.5)*context.width*k}px`;
+ // Scale bars: the atlas's pixels per 100 µm at capture, times how much each view is scaled here.
+ main.k=main.frame.querySelector('img').clientWidth/main.width;context.k=k;
+ for(const v of [main,context])v.line.style.width=`${v.scale_px_per_100um*v.k*v.bar_um/100}px`;
+ return true;});
+</script>
+</body>
+</html>

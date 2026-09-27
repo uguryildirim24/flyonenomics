@@ -1,0 +1,210 @@
+[
+  {
+    "label": "identical-1790398786427549000",
+    "submitted_at": 1790398786.4275498,
+    "projected_usd": 0.5453866666666668,
+    "reserved_usd": 1.7043333333333337,
+    "usd_per_hour": 1.0226000000000002,
+    "workspace_billing_before": {
+      "metered_cost": "15.96000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "reservation_adjustment": "-0E-8",
+        "credits": "-15.96000000",
+        "plan_cost": "0E-8",
+        "free_storage": "-0E-8",
+        "network_egress_allowance": "0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "ephemeral_apps": "15.96339805",
+        "llm_tokens": "0E-8"
+      }
+    },
+    "source_sha": "ce45119e32facb8d9dce208177e7e9814a513c71",
+    "source_diff": "",
+    "calls": [
+      {
+        "seed": 501,
+        "condition": "control",
+        "function_s": 251.64511271100002,
+        "stepping_s": 13.61211275100004,
+        "build_s": 213.173897317
+      },
+      {
+        "seed": 501,
+        "condition": "off-gaba",
+        "function_s": 335.824107083,
+        "stepping_s": 21.327326863000053,
+        "build_s": 269.541845288
+      },
+      {
+        "seed": 502,
+        "condition": "control",
+        "function_s": 220.66214122299994,
+        "stepping_s": 12.899171316000093,
+        "build_s": 185.82390187399994
+      },
+      {
+        "seed": 502,
+        "condition": "off-gaba",
+        "function_s": 316.95794672599993,
+        "stepping_s": 21.446714699000495,
+        "build_s": 251.29361000999995
+      },
+      {
+        "batch": 1,
+        "simulated_s": 1.0,
+        "build_s": 112.794089539,
+        "stepping_s": 1.268480218999997,
+        "kernel_and_transfer_s": 1.0980674359998233,
+        "neuromod_s": 0.00024889299986341484,
+        "collection_s": 0.06738000900000429,
+        "wall_s": 114.107058089,
+        "wall_s_per_sim_s": 1.268480218999997,
+        "per_brain_wall_s_per_sim_s": 1.268480218999997,
+        "gpu": "NVIDIA L4",
+        "blocks": 232,
+        "registers": 54,
+        "chunk_ms": 1,
+        "dopamine_chunk_ms": 10.0,
+        "modulation_check_max_abs": null,
+        "gpu_memory_pool_bytes": 527182336,
+        "summaries": [
+          {
+            "pilot": {
+              "group_hz": {
+                "DAN": 1.3514986376021798,
+                "ER": 0.3191489361702128,
+                "KC": 0.011811023622047244,
+                "ascending": 2.263926446727961,
+                "central": 4.373384261250095,
+                "descending": 3.3942161339421615,
+                "endocrine": 3.160919540229885,
+                "motor": 5.101465614430666,
+                "optic": 0.01875706467606012,
+                "sensory": 0.8016116142781033,
+                "visual_centrifugal": 2.53914590747331,
+                "visual_projection": 0.05921981962403564,
+                "P1": 0.02027027027027027,
+                "pIP10": 4.5,
+                "dPR1": 23.5,
+                "vPR6": 0.0,
+                "TN1a": 3.6363636363636362,
+                "TN1c": 0.0,
+                "wing_motor": 18.727272727272727,
+                "outside_sensory": 1.2923370011050772,
+                "outside_targets": 1.2405273148604674
+              },
+              "silent_fraction": 0.9354159872505645,
+              "median_hz": 0.0,
+              "p99_hz": 37.0,
+              "max_hz": 299.0
+            },
+            "synchrony": {
+              "F": 21.328321783497362,
+              "b": 0.002110548434932961
+            }
+          }
+        ],
+        "function_s": 115.642845493
+      },
+      {
+        "batch": 1,
+        "simulated_s": 1.0,
+        "build_s": 96.90959964099999,
+        "stepping_s": 0.6370294010000066,
+        "kernel_and_transfer_s": 0.6266326730000458,
+        "neuromod_s": 3.0804000004991394e-05,
+        "collection_s": 0.009297259000049962,
+        "wall_s": 97.58806917699998,
+        "wall_s_per_sim_s": 0.6370294010000066,
+        "per_brain_wall_s_per_sim_s": 0.6370294010000066,
+        "gpu": "NVIDIA L4",
+        "blocks": 232,
+        "registers": 54,
+        "chunk_ms": 10,
+        "dopamine_chunk_ms": 10.0,
+        "modulation_check_max_abs": null,
+        "gpu_memory_pool_bytes": 929106432,
+        "summaries": [
+          {
+            "pilot": {
+              "group_hz": {
+                "DAN": 1.3514986376021798,
+                "ER": 0.3191489361702128,
+                "KC": 0.011811023622047244,
+                "ascending": 2.263926446727961,
+                "central": 4.373384261250095,
+                "descending": 3.3942161339421615,
+                "endocrine": 3.160919540229885,
+                "motor": 5.101465614430666,
+                "optic": 0.01875706467606012,
+                "sensory": 0.8016116142781033,
+                "visual_centrifugal": 2.53914590747331,
+                "visual_projection": 0.05921981962403564,
+                "P1": 0.02027027027027027,
+                "pIP10": 4.5,
+                "dPR1": 23.5,
+                "vPR6": 0.0,
+                "TN1a": 3.6363636363636362,
+                "TN1c": 0.0,
+                "wing_motor": 18.727272727272727,
+                "outside_sensory": 1.2923370011050772,
+                "outside_targets": 1.2405273148604674
+              },
+              "silent_fraction": 0.9354159872505645,
+              "median_hz": 0.0,
+              "p99_hz": 37.0,
+              "max_hz": 299.0
+            },
+            "synchrony": {
+              "F": 21.328321783497362,
+              "b": 0.002110548434932961
+            }
+          }
+        ],
+        "function_s": 99.660620851
+      }
+    ],
+    "app_id": "ap-R7LQZGLKFAmXnKqbH9xjSK",
+    "local_output": "camber-runs/cuda-identical/downloads/identical-1790398786427549000",
+    "completed_at": 1790400179.538651,
+    "billing_rows": [
+      {
+        "object_id": "ap-R7LQZGLKFAmXnKqbH9xjSK",
+        "description": "flyonenomics-cuda-identical",
+        "environment": "main",
+        "interval_start": "2026-09-26T00:00:00",
+        "cost": "0.40490238"
+      }
+    ],
+    "actual_metered_usd": 0.40490238,
+    "billing_checked_at": 1790400397.131815,
+    "app_final_state": {
+      "app_id": "ap-R7LQZGLKFAmXnKqbH9xjSK",
+      "description": "flyonenomics-cuda-identical",
+      "state": "stopped",
+      "tasks": "0",
+      "created_at": "2026-09-26 00:59:58-04:00",
+      "stopped_at": "2026-09-26 01:22:54-04:00"
+    },
+    "workspace_billing_after": {
+      "metered_cost": "16.44000000",
+      "billed_cost": "0E-8",
+      "adjustments": {
+        "reservation_adjustment": "-0E-8",
+        "free_storage": "-0E-8",
+        "plan_cost": "0E-8",
+        "credits": "-16.44000000",
+        "network_egress_allowance": "0E-8"
+      },
+      "metered_cost_breakdown": {
+        "volumes": "0E-8",
+        "llm_tokens": "0E-8",
+        "ephemeral_apps": "16.44121840"
+      }
+    },
+    "final_checked_at": 1790400461.731096
+  }
+]

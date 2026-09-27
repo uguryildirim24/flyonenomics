@@ -1,0 +1,2570 @@
+version: male-cns-v1.0
+annotation_version: male-cns:v1.0
+mapping_date: '2026-09-22'
+selector_tolerance_percent: 10
+inventory_note: MaleCNS v1.0 typed/traced graph. Every selector is translated before model outcomes; side is explicit on every
+  row (null means all annotated sides).
+laterality_rule: somaSide, then rootSide; L/R become left/right; null side selects all annotated sides
+populations:
+- name: DAN
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - DAN
+  required: true
+  exclude: []
+  inventory_count: 340
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PAM
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PAM
+  required: false
+  exclude: []
+  inventory_count: 316
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PPL1
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PPL1
+  required: false
+  exclude: []
+  inventory_count: 16
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PPL2
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PPL2
+  required: false
+  exclude: []
+  inventory_count: 8
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: CX_DAN_candidates
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(ExR2|FB1C|FB1H|FB2A|FB4L|FB4M|FB5H|PPM120[1-5])$
+    and_column: top_nt
+    and_pattern: ^dopamine$
+  required: false
+  exclude: []
+  inventory_count: 36
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. MaleCNS anatomical CX dopamine types, with official consensus_nt dopamine. Explicit laterality: bilateral/all
+    annotated sides.'
+- name: CX_DAN
+  selector:
+    kind: explicit
+    source: MaleCNS syn-partners central-complex primary_post fraction >= 0.2
+    source_version: male-cns:v1.0
+    source_roots:
+    - 10568
+    - 11255
+    - 12333
+    - 12858
+    - 15888
+    - 16430
+    - 17061
+    - 18156
+    - 21519
+    - 25529
+    - 35293
+    - 36423
+    - 38706
+    - 43756
+    - 44903
+    - 45024
+    - 513354
+    - 515933
+    - 517512
+    - 519947
+    - 521584
+    - 523775
+    - 523776
+    - 533103
+    - 536057
+    - 536208
+    - 539227
+    mapping_date: '2026-09-22'
+    unmapped_count: 0
+  required: true
+  exclude: []
+  inventory_count: 27
+  inventory_tolerance: exact
+  overlaps_with:
+  - CX_DAN_candidates
+  expected_nt: dopamine
+  side: null
+  note: 'MaleCNS v1.0. CX_DAN candidate with central-complex postsynapse fraction >= cxdan.min_cx_output_fraction (0.2). Explicit
+    laterality: bilateral/all annotated sides.'
+- name: EB_other
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^ExR(?!2)
+    and_column: cell_type
+    and_pattern: ^ExR(?!2)
+    not_column: cell_type
+    not_pattern: ^ExR2
+  required: false
+  exclude: []
+  inventory_count: 22
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PB_other
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(SpsP|IbSpsP|LPsP)
+  required: false
+  exclude: []
+  inventory_count: 37
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: FB_columnar
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(hDelta|vDelta|FC|FR|FS|PFL|PFN|PFR|PFG)
+  required: false
+  exclude: []
+  inventory_count: 1808
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: NO_neurons
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(LNO|LCNO|GLNO)
+  required: false
+  exclude: []
+  inventory_count: 16
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC_all
+  - LC_all_L
+  - LC_all_R
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: LAL_neurons
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LAL\d
+  required: false
+  exclude: []
+  inventory_count: 665
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: KC
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - Kenyon_Cell
+  required: true
+  exclude: []
+  inventory_count: 4064
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: KC_g
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCg
+  required: false
+  exclude: []
+  inventory_count: 1557
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: KC_ab
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCab
+  required: false
+  exclude: []
+  inventory_count: 1810
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: KC_apbp
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCa'b'
+  required: false
+  exclude: []
+  inventory_count: 695
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - MBON
+  required: true
+  exclude: []
+  inventory_count: 97
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON01
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON01
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON02
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON02
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON03
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON03
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON04
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON04
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON05
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON05
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON06
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON06
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON07
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON07
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON09
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON09
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON10
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON10
+  required: false
+  exclude: []
+  inventory_count: 9
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON11
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON11
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON12
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON12
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON13
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON13
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON14
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON14
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON15
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON15
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON15-like
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON15-like
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON16
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON16
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON17
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON17
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON17-like
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON17-like
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON18
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON18
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON19
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON19
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON20
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON20
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON21
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON21
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON22
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON22
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON23
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON23
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON24
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON24
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON25,MBON34
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON25,MBON34
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: exact
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON26
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON26
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON27
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON27
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON28
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON28
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON29
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON29
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON30
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON30
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON31
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON31
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON32
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON32
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON33
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON33
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON35
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON35
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: MBON_MBON08
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON08
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: exact
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: ER
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^ER\d
+  required: true
+  exclude: []
+  inventory_count: 282
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: EPG
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - EPG
+    - EPGt
+  required: true
+  exclude: []
+  inventory_count: 50
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PEN
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PEN
+  required: false
+  exclude: []
+  inventory_count: 42
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: PEG
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - PEG
+  required: false
+  exclude: []
+  inventory_count: 18
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: D7
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - Delta7
+  required: false
+  exclude: []
+  inventory_count: 42
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: FB_tangential
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^FB\d
+  required: false
+  exclude:
+  - CX_DAN_candidates
+  inventory_count: 581
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: dFB
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^FB[67]
+  required: false
+  exclude:
+  - CX_DAN_candidates
+  inventory_count: 140
+  inventory_tolerance: percent
+  overlaps_with:
+  - FB_tangential
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: TuBu
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^TuBu
+  required: true
+  exclude: []
+  inventory_count: 156
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire TuBu class translated to MaleCNS named TuBu types. Explicit laterality: bilateral/all annotated
+    sides.'
+- name: MeTu
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^MeTu
+  required: false
+  exclude: []
+  inventory_count: 1007
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: DNa01_L
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa01
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_L
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: DNa01_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa01
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_R
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: DNa02_L
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa02
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_L
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: DNa02_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa02
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_R
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: steering_L
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^DNa0[12]$
+  required: true
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: steering_R
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^DNa0[12]$
+  required: true
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: DN_all
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - descending_neuron
+  required: true
+  exclude: []
+  inventory_count: 1310
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire descending superclass translated to MaleCNS descending_neuron. Explicit laterality: bilateral/all
+    annotated sides.'
+- name: DNp01
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - DNp01
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: sugar_GRN_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - NO_CLEAN_sugar_GRN_R_MATCH
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: exact
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. empty by evidence: do not substitute unlabeled gustatory candidates. Explicit laterality: bilateral/all
+    annotated sides. No clean match: No MaleCNS modality, receptor, or root-level FlyWire cross-match identifies sugar among
+    labellar GRNs.'
+- name: MN9
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MN9
+  required: true
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - motor
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. MaleCNS type MN9, right side, matching the FlyWire source side and pharyngeal nerve. Explicit laterality:
+    right.'
+- name: bitter_GRN_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - NO_CLEAN_bitter_GRN_R_MATCH
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: exact
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. empty by evidence: do not substitute unlabeled gustatory candidates. Explicit laterality: bilateral/all
+    annotated sides. No clean match: No MaleCNS modality or receptor label identifies the FlyWire bitter source.'
+- name: motor
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - vnc_motor
+    - cb_motor
+  required: false
+  exclude: []
+  inventory_count: 805
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire motor superclass translated to typed MaleCNS vnc_motor and cb_motor. Explicit laterality: bilateral/all
+    annotated sides.'
+- name: sensory
+  selector:
+    kind: regex
+    column: super_class
+    pattern: .*sensory.*
+  required: false
+  exclude: []
+  inventory_count: 15016
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire sensory superclass translated to MaleCNS superclasses containing sensory. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: R1_6
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R1-6
+  required: true
+  exclude: []
+  inventory_count: 1394
+  inventory_tolerance: percent
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: R1_6_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R1-6
+  required: false
+  exclude: []
+  inventory_count: 501
+  inventory_tolerance: percent
+  overlaps_with:
+  - R1_6
+  - sensory
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: R1_6_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R1-6
+  required: false
+  exclude: []
+  inventory_count: 893
+  inventory_tolerance: percent
+  overlaps_with:
+  - R1_6
+  - sensory
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: L1
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L1
+  required: false
+  exclude: []
+  inventory_count: 1776
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: L1_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L1
+  required: false
+  exclude: []
+  inventory_count: 884
+  inventory_tolerance: percent
+  overlaps_with:
+  - L1
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: L1_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L1
+  required: false
+  exclude: []
+  inventory_count: 892
+  inventory_tolerance: percent
+  overlaps_with:
+  - L1
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: L2
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L2
+  required: false
+  exclude: []
+  inventory_count: 1779
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: L2_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L2
+  required: false
+  exclude: []
+  inventory_count: 886
+  inventory_tolerance: percent
+  overlaps_with:
+  - L2
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: L2_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L2
+  required: false
+  exclude: []
+  inventory_count: 893
+  inventory_tolerance: percent
+  overlaps_with:
+  - L2
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: L3
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L3
+  required: false
+  exclude: []
+  inventory_count: 1772
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: L3_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L3
+  required: false
+  exclude: []
+  inventory_count: 880
+  inventory_tolerance: percent
+  overlaps_with:
+  - L3
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: L3_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L3
+  required: false
+  exclude: []
+  inventory_count: 892
+  inventory_tolerance: percent
+  overlaps_with:
+  - L3
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: L4
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L4
+  required: false
+  exclude: []
+  inventory_count: 1769
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: L4_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L4
+  required: false
+  exclude: []
+  inventory_count: 878
+  inventory_tolerance: percent
+  overlaps_with:
+  - L4
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: L4_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L4
+  required: false
+  exclude: []
+  inventory_count: 891
+  inventory_tolerance: percent
+  overlaps_with:
+  - L4
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: L5
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L5
+  required: false
+  exclude: []
+  inventory_count: 1787
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: L5_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L5
+  required: false
+  exclude: []
+  inventory_count: 889
+  inventory_tolerance: percent
+  overlaps_with:
+  - L5
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: L5_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - L5
+  required: false
+  exclude: []
+  inventory_count: 898
+  inventory_tolerance: percent
+  overlaps_with:
+  - L5
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Mi1
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi1
+  required: false
+  exclude: []
+  inventory_count: 1773
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Mi1_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi1
+  required: false
+  exclude: []
+  inventory_count: 886
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi1
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Mi1_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi1
+  required: false
+  exclude: []
+  inventory_count: 887
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi1
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Mi4
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi4
+  required: false
+  exclude: []
+  inventory_count: 1772
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Mi4_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi4
+  required: false
+  exclude: []
+  inventory_count: 883
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi4
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Mi4_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi4
+  required: false
+  exclude: []
+  inventory_count: 889
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi4
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Mi9
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi9
+  required: false
+  exclude: []
+  inventory_count: 1775
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Mi9_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi9
+  required: false
+  exclude: []
+  inventory_count: 886
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi9
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Mi9_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Mi9
+  required: false
+  exclude: []
+  inventory_count: 889
+  inventory_tolerance: percent
+  overlaps_with:
+  - Mi9
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Tm1
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm1
+  required: false
+  exclude: []
+  inventory_count: 1777
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Tm1_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm1
+  required: false
+  exclude: []
+  inventory_count: 887
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm1
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Tm1_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm1
+  required: false
+  exclude: []
+  inventory_count: 890
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm1
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Tm2
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm2
+  required: false
+  exclude: []
+  inventory_count: 1766
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Tm2_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm2
+  required: false
+  exclude: []
+  inventory_count: 883
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm2
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Tm2_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm2
+  required: false
+  exclude: []
+  inventory_count: 883
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm2
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Tm3
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm3
+  required: false
+  exclude: []
+  inventory_count: 2054
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Tm3_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm3
+  required: false
+  exclude: []
+  inventory_count: 1017
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm3
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Tm3_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm3
+  required: false
+  exclude: []
+  inventory_count: 1037
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm3
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Tm4
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm4
+  required: false
+  exclude: []
+  inventory_count: 1670
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Tm4_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm4
+  required: false
+  exclude: []
+  inventory_count: 837
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm4
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Tm4_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm4
+  required: false
+  exclude: []
+  inventory_count: 833
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm4
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: Tm9
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm9
+  required: false
+  exclude: []
+  inventory_count: 1771
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: Tm9_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm9
+  required: false
+  exclude: []
+  inventory_count: 884
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm9
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: Tm9_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - Tm9
+  required: false
+  exclude: []
+  inventory_count: 887
+  inventory_tolerance: percent
+  overlaps_with:
+  - Tm9
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: T4
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T4
+  required: false
+  exclude: []
+  inventory_count: 6862
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: T4_L
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T4
+  required: false
+  exclude: []
+  inventory_count: 3424
+  inventory_tolerance: percent
+  overlaps_with:
+  - T4
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: T4_R
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T4
+  required: false
+  exclude: []
+  inventory_count: 3438
+  inventory_tolerance: percent
+  overlaps_with:
+  - T4
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: T5
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T5
+  required: false
+  exclude: []
+  inventory_count: 6719
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: T5_L
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T5
+  required: false
+  exclude: []
+  inventory_count: 3363
+  inventory_tolerance: percent
+  overlaps_with:
+  - T5
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: T5_R
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^T5
+  required: false
+  exclude: []
+  inventory_count: 3356
+  inventory_tolerance: percent
+  overlaps_with:
+  - T5
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: LC10
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC10
+  required: false
+  exclude: []
+  inventory_count: 953
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC_all
+  - LC_all_L
+  - LC_all_R
+  - visual_projection
+  - visual_projection_L
+  - visual_projection_R
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: LC10_L
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC10
+  required: false
+  exclude: []
+  inventory_count: 477
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC10
+  - LC_all
+  - LC_all_L
+  - visual_projection
+  - visual_projection_L
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: LC10_R
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC10
+  required: false
+  exclude: []
+  inventory_count: 476
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC10
+  - LC_all
+  - LC_all_R
+  - visual_projection
+  - visual_projection_R
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: R7
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R7
+  required: false
+  exclude: []
+  inventory_count: 1299
+  inventory_tolerance: percent
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: R7_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R7
+  required: false
+  exclude: []
+  inventory_count: 607
+  inventory_tolerance: percent
+  overlaps_with:
+  - R7
+  - sensory
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: R7_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R7
+  required: false
+  exclude: []
+  inventory_count: 692
+  inventory_tolerance: percent
+  overlaps_with:
+  - R7
+  - sensory
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: R8
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R8
+  required: false
+  exclude: []
+  inventory_count: 1329
+  inventory_tolerance: percent
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: R8_L
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R8
+  required: false
+  exclude: []
+  inventory_count: 625
+  inventory_tolerance: percent
+  overlaps_with:
+  - R8
+  - sensory
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: R8_R
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - R8
+  required: false
+  exclude: []
+  inventory_count: 704
+  inventory_tolerance: percent
+  overlaps_with:
+  - R8
+  - sensory
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: LC_all
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC
+  required: false
+  exclude: []
+  inventory_count: 4582
+  inventory_tolerance: percent
+  overlaps_with:
+  - visual_projection
+  - visual_projection_L
+  - visual_projection_R
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: LC_all_L
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC
+  required: false
+  exclude: []
+  inventory_count: 2279
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC_all
+  - visual_projection
+  - visual_projection_L
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: LC_all_R
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^LC
+  required: false
+  exclude: []
+  inventory_count: 2303
+  inventory_tolerance: percent
+  overlaps_with:
+  - LC_all
+  - visual_projection
+  - visual_projection_R
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: LPLC
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LPLC
+  required: false
+  exclude: []
+  inventory_count: 417
+  inventory_tolerance: percent
+  overlaps_with:
+  - visual_projection
+  - visual_projection_L
+  - visual_projection_R
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: LPLC_L
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LPLC
+  required: false
+  exclude: []
+  inventory_count: 210
+  inventory_tolerance: percent
+  overlaps_with:
+  - LPLC
+  - visual_projection
+  - visual_projection_L
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: LPLC_R
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LPLC
+  required: false
+  exclude: []
+  inventory_count: 207
+  inventory_tolerance: percent
+  overlaps_with:
+  - LPLC
+  - visual_projection
+  - visual_projection_R
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire hemibrain_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: visual_projection
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - visual_projection
+  required: false
+  exclude: []
+  inventory_count: 9201
+  inventory_tolerance: percent
+  overlaps_with:
+  - MeTu
+  - MeTu_L
+  - MeTu_R
+  expected_nt: null
+  side: null
+  note: 'MaleCNS v1.0. FlyWire super_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    bilateral/all annotated sides.'
+- name: visual_projection_L
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - visual_projection
+  required: false
+  exclude: []
+  inventory_count: 4589
+  inventory_tolerance: percent
+  overlaps_with:
+  - MeTu
+  - MeTu_L
+  - visual_projection
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire super_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: visual_projection_R
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - visual_projection
+  required: false
+  exclude: []
+  inventory_count: 4612
+  inventory_tolerance: percent
+  overlaps_with:
+  - MeTu
+  - MeTu_R
+  - visual_projection
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire super_class selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+- name: MeTu_L
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^MeTu
+  required: false
+  exclude: []
+  inventory_count: 501
+  inventory_tolerance: percent
+  overlaps_with:
+  - MeTu
+  expected_nt: null
+  side: left
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    left.'
+- name: MeTu_R
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^MeTu
+  required: false
+  exclude: []
+  inventory_count: 506
+  inventory_tolerance: percent
+  overlaps_with:
+  - MeTu
+  expected_nt: null
+  side: right
+  note: 'MaleCNS v1.0. FlyWire cell_type selector applied to the corresponding canonical MaleCNS column. Explicit laterality:
+    right.'
+# Courtship circuit and fixed specificity control (2026-09-25).
+- name: P1
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^pC1_
+  required: false
+  exclude: []
+  inventory_count: 148
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: P1; 148 annotated cells.'
+- name: pC1x
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^pC1x_
+  required: false
+  exclude: []
+  inventory_count: 8
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: pC1x; 8 annotated cells.'
+- name: pIP10
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^pIP10$
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: exact
+  overlaps_with:
+  - DN_all
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: pIP10; 2 annotated cells.'
+- name: dPR1
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^dPR1$
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: dPR1; 2 annotated cells.'
+- name: vPR6
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^vPR6$
+  required: false
+  exclude: []
+  inventory_count: 8
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: vPR6; 8 annotated cells.'
+- name: TN1a
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^TN1a_
+  required: false
+  exclude: []
+  inventory_count: 22
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: TN1a; 22 annotated cells.'
+- name: TN1c
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^TN1c_
+  required: false
+  exclude: []
+  inventory_count: 13
+  inventory_tolerance: exact
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: 'Courtship circuit: TN1c; 13 annotated cells.'
+- name: wing_motor
+  selector:
+    kind: regex
+    column: cell_sub_class
+    pattern: ^wm$
+  required: false
+  exclude: []
+  inventory_count: 66
+  inventory_tolerance: exact
+  overlaps_with:
+  - motor
+  expected_nt: null
+  side: null
+  note: 'Courtship circuit: wing_motor; 66 annotated cells.'
+- name: courtship_random
+  selector:
+    kind: explicit
+    source: Cholinergic cb_intrinsic excluding P1 and direct presynaptic partners of pIP10; PCG64 seed 20260925
+    source_version: male-cns:v1.0
+    source_roots:
+    - 10238
+    - 11022
+    - 11038
+    - 11099
+    - 11415
+    - 11705
+    - 11783
+    - 12379
+    - 12496
+    - 13479
+    - 13480
+    - 13596
+    - 13986
+    - 14553
+    - 14651
+    - 15605
+    - 15911
+    - 16158
+    - 16267
+    - 16962
+    - 17407
+    - 17940
+    - 18081
+    - 18309
+    - 18446
+    - 18764
+    - 19586
+    - 20521
+    - 21109
+    - 21528
+    - 22119
+    - 22445
+    - 22870
+    - 23076
+    - 23259
+    - 23542
+    - 24606
+    - 24634
+    - 24922
+    - 26277
+    - 27155
+    - 27436
+    - 27945
+    - 28528
+    - 28585
+    - 30852
+    - 31234
+    - 31893
+    - 33684
+    - 34920
+    - 35715
+    - 36690
+    - 36958
+    - 38788
+    - 38942
+    - 39666
+    - 40698
+    - 40909
+    - 41121
+    - 43038
+    - 43354
+    - 44005
+    - 44199
+    - 44397
+    - 45356
+    - 45512
+    - 46400
+    - 46457
+    - 46886
+    - 47484
+    - 48774
+    - 50677
+    - 53371
+    - 53424
+    - 55527
+    - 56356
+    - 56545
+    - 60810
+    - 60890
+    - 61233
+    - 61272
+    - 61278
+    - 63915
+    - 64310
+    - 64434
+    - 65737
+    - 70615
+    - 71363
+    - 74551
+    - 74716
+    - 81901
+    - 87324
+    - 87805
+    - 90919
+    - 92275
+    - 92628
+    - 93216
+    - 93584
+    - 94577
+    - 99598
+    - 100617
+    - 101600
+    - 102049
+    - 102748
+    - 122118
+    - 122249
+    - 126024
+    - 126319
+    - 128467
+    - 139039
+    - 141299
+    - 142975
+    - 143553
+    - 144317
+    - 144778
+    - 144996
+    - 145037
+    - 148860
+    - 149200
+    - 152687
+    - 157325
+    - 159217
+    - 159667
+    - 168683
+    - 169369
+    - 191750
+    - 203543
+    - 236035
+    - 513487
+    - 513816
+    - 516396
+    - 517832
+    - 520025
+    - 520035
+    - 521015
+    - 521448
+    - 524875
+    - 526634
+    - 526670
+    - 531682
+    - 532824
+    - 534983
+    - 539167
+    - 539367
+    - 546535
+    - 557095
+    - 571903
+    - 588857
+    mapping_date: '2026-09-25'
+    unmapped_count: 0
+  required: false
+  exclude: []
+  inventory_count: 148
+  inventory_tolerance: exact
+  overlaps_with:
+  - FB_columnar
+  - LAL_neurons
+  - KC
+  - KC_g
+  - KC_ab
+  - KC_apbp
+  - PEN
+  expected_nt: acetylcholine
+  side: null
+  note: Fixed random central-brain control; PCG64 choice without replacement from sorted eligible root IDs.

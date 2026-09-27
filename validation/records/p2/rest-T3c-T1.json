@@ -1,0 +1,872 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "stage": "T1",
+  "engine_model": "lif+cbi",
+  "item": 89,
+  "dt_ms": 0.05,
+  "recorded_dt_ms": 0.1,
+  "rho_mech": 1.2336139268858282,
+  "unit_id": "1.0-1.0-cbi--72.0-all",
+  "note": "item 89: T1 R-screen for 1.0-1.0-cbi--72.0-all alone at dt 0.05 ms rk4; other 44 stay closed; T0 record not rewritten",
+  "t0_record": "validation/records/p2/rest-T3c-T0.json",
+  "collect": "collect-t1",
+  "backend": "ibm-vpc",
+  "admitted_units": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ]
+    }
+  ],
+  "job_shapes": {
+    "B_brain_s": 54,
+    "slices": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        16,
+        19
+      ]
+    ],
+    "n_jobs": 1,
+    "n_tasks": 15,
+    "t1_brain_s": 684,
+    "n_units": 1,
+    "launch": true,
+    "reason": null
+  },
+  "units": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "n_rows": 57,
+      "n_candidates": 0,
+      "screen_passed": false,
+      "job_ids": [
+        "t3c-t1-00-20260918T163844Z"
+      ],
+      "deepest": "T1",
+      "lowest_S": 37.82404601085629
+    }
+  ],
+  "candidates": [],
+  "scored": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.7,
+      "pair_weights": [
+        0.7,
+        0.75
+      ],
+      "S": 37.82404601085629,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 0.0,
+        "stability_ratio": 10.0,
+        "central": 3.912023005428146,
+        "DAN": 3.912023005428146,
+        "KC": 0.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.7-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.75,
+      "pair_weights": [
+        0.75,
+        0.8
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.75-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.8,
+      "pair_weights": [
+        0.8,
+        0.85
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.8-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.85,
+      "pair_weights": [
+        0.85,
+        0.9
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.85-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.9,
+      "pair_weights": [
+        0.9,
+        0.95
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.9-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 0.95,
+      "pair_weights": [
+        0.95,
+        1.0
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-0.95-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.0,
+      "pair_weights": [
+        1.0,
+        1.05
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.0-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.05,
+      "pair_weights": [
+        1.05,
+        1.1
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.05-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.1,
+      "pair_weights": [
+        1.1,
+        1.15
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.1-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.15,
+      "pair_weights": [
+        1.15,
+        1.2
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.15-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.2,
+      "pair_weights": [
+        1.2,
+        1.25
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.2-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.25,
+      "pair_weights": [
+        1.25,
+        1.3
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.25-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.3,
+      "pair_weights": [
+        1.3,
+        1.35
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.3-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.35,
+      "pair_weights": [
+        1.35,
+        1.4
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.35-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.4,
+      "pair_weights": [
+        1.4,
+        1.45
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.4-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.45,
+      "pair_weights": [
+        1.45,
+        1.5
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.45-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "job_id": "t3c-t0-00-20260918T001123Z",
+      "retention": 0.6089285714285715,
+      "difference_hz": 34.1,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "g_gaba_kc": 1.0,
+      "w_bg": 1.5,
+      "pair_weights": [
+        1.5,
+        1.55
+      ],
+      "S": 70.0,
+      "J": 235.75248993251176,
+      "screen_passed": false,
+      "violations": {
+        "F": 10.0,
+        "b": 10.0,
+        "stability_ratio": 10.0,
+        "central": 10.0,
+        "DAN": 10.0,
+        "KC": 10.0,
+        "gradedness": 10.0
+      },
+      "candidate_id": "1.0-1.0-0.0-False-100-1.5-cbi--72.0-all-kc-1.0",
+      "deepest": "T1"
+    }
+  ],
+  "admitted": [],
+  "excluded": [],
+  "closest_miss": {
+    "sub_tier": "T3c",
+    "engine_model": "lif+cbi",
+    "g_gaba": 1.0,
+    "g_glu": 1.0,
+    "setting": {
+      "E_inh_mv": -72.0,
+      "scope": "all"
+    },
+    "M": 0.05,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "job_id": "t3c-t0-00-20260918T001123Z",
+    "retention": 0.6089285714285715,
+    "difference_hz": 34.1,
+    "flags": [
+      "t2-b-unreachable"
+    ],
+    "g_gaba_kc": 1.0,
+    "w_bg": 0.7,
+    "pair_weights": [
+      0.7,
+      0.75
+    ],
+    "S": 37.82404601085629,
+    "J": 235.75248993251176,
+    "screen_passed": false,
+    "violations": {
+      "F": 10.0,
+      "b": 0.0,
+      "stability_ratio": 10.0,
+      "central": 3.912023005428146,
+      "DAN": 3.912023005428146,
+      "KC": 0.0,
+      "gradedness": 10.0
+    },
+    "candidate_id": "1.0-1.0-0.0-False-100-0.7-cbi--72.0-all-kc-1.0",
+    "deepest": "T1"
+  },
+  "n_units": 1,
+  "n_tasks": 15,
+  "n_screen_passers": 0,
+  "n_t2_admitted": 0,
+  "grid_edge": 0,
+  "t2_b_unreachable": 1,
+  "wall_per_brain_s": [
+    93.99637760991668,
+    92.54923195839582,
+    90.42194243364584,
+    89.1496251273125,
+    88.91105999577778,
+    91.474231886375,
+    93.24104965120834,
+    87.87278637349999,
+    91.46354641383333,
+    90.37704848763889,
+    90.77291661629168,
+    90.96700253893749,
+    88.22963371937499,
+    87.20052653527084,
+    89.58435347691666
+  ],
+  "jobs": [
+    "t3c-t1-00-20260918T163844Z"
+  ],
+  "ibm": {
+    "instance_name": "flyo-10",
+    "instance_id": "0757_da0281c8-8cd0-4db0-b0f7-999c6e65f195",
+    "profile": "cx2-64x128",
+    "n_workers": 36,
+    "created_utc": "20260918T163539Z",
+    "torn_down_utc": "20260918T175915Z",
+    "job_id": "t3c-t1-00-20260918T163844Z",
+    "job_started_utc": "20260918T163844Z",
+    "job_exit_utc": "20260918T175749Z",
+    "wall_s": 4745,
+    "n_ndjson": 15,
+    "exit_code": 0,
+    "tree": "lane/wp28",
+    "tree_sha": "b75b3e7",
+    "pulled_to": "camber-runs/wp28/t3c-t1-00",
+    "list_usd": 3.0653,
+    "box_s": 5016
+  },
+  "evaluation_commit": "b75b3e7b1a7b6f049653bc10b29ed359bea26bdc",
+  "evaluation_platform": "linux-x86_64",
+  "pulled_to": "camber-runs/wp28/t3c-t1-00",
+  "median_wall_per_brain_s": 90.42194243364584
+}

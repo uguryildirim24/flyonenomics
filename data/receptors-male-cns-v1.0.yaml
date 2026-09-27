@@ -1,0 +1,107 @@
+version: male-cns-v1.0
+map_version: receptors-male-cns-v1.0
+note: Hand-curated relative densities; every density a placeholder. rq is carried and reported but has no Phase 1 effect.
+precedence:
+- dFB
+- CX_DAN
+- PAM
+- PPL1
+- PPL2
+- KC
+- MBON
+- ER
+- EPG
+- PEN
+- PEG
+- D7
+- FB_columnar
+- EB_other
+- PB_other
+- NO_neurons
+- LAL_neurons
+rows:
+- population: KC
+  r1: 1.0
+  r2: 0.5
+  rq: 1.0
+  source: Kim 2007 (Dop1R1 in KCs); Berry 2012 (Dop1R2 in KCs); Hiramatsu 2025 (Dop2R postsynaptic in KCs); densities placeholder
+- population: MBON
+  r1: 0.5
+  r2: 0.5
+  rq: 0.0
+  source: Hiramatsu 2025; placeholder
+- population: PAM
+  r1: 0.3
+  r2: 1.0
+  rq: 0.0
+  source: Hiramatsu 2025 (Dop1R1 and Dop2R co-enriched at DAN terminals); placeholder
+- population: PPL1
+  r1: 0.3
+  r2: 1.0
+  rq: 0.0
+  source: Hiramatsu 2025 (Dop1R1 and Dop2R co-enriched at DAN terminals); placeholder
+- population: PPL2
+  r1: 0.3
+  r2: 1.0
+  rq: 0.0
+  source: Hiramatsu 2025 (Dop1R1 and Dop2R co-enriched at DAN terminals); placeholder
+- population: CX_DAN
+  r1: 0.0
+  r2: 1.0
+  rq: 0.0
+  source: assumed autoreceptor as for the mushroom-body DANs; placeholder
+- population: FB_columnar
+  r1: 0.0
+  r2: 0.0
+  rq: 0.0
+  source: targets only; no receptor data used in Phase 1
+- population: EB_other
+  r1: 0.0
+  r2: 0.0
+  rq: 0.0
+  source: targets only; no receptor data used in Phase 1
+- population: PB_other
+  r1: 0.0
+  r2: 0.0
+  rq: 0.0
+  source: targets only; no receptor data used in Phase 1
+- population: NO_neurons
+  r1: 0.0
+  r2: 0.0
+  rq: 0.0
+  source: targets only; no receptor data used in Phase 1
+- population: LAL_neurons
+  r1: 0.0
+  r2: 0.0
+  rq: 0.0
+  source: targets only; no receptor data used in Phase 1
+- population: ER
+  r1: 1.0
+  r2: 0.5
+  rq: 0.0
+  source: Lebestky 2009, Kong 2010 (DopR in ellipsoid-body ring neurons); Qu 2024 (Dop2R in EB); placeholder
+- population: EPG
+  r1: 0.5
+  r2: 0.0
+  rq: 0.0
+  source: placeholder
+- population: PEN
+  r1: 0.5
+  r2: 0.0
+  rq: 0.0
+  source: placeholder
+- population: PEG
+  r1: 0.5
+  r2: 0.0
+  rq: 0.0
+  source: placeholder
+- population: D7
+  r1: 0.5
+  r2: 0.0
+  rq: 0.0
+  source: placeholder
+- population: dFB
+  r1: 1.0
+  r2: 0.5
+  rq: 0.0
+  source: Ueno 2012 (DopR in dFB for sleep); placeholder, and the dFB proxy is itself a placeholder

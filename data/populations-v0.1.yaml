@@ -1,0 +1,1231 @@
+version: v0.1
+annotation_version: v2.1.0
+annotation_commit: ebd66db2596fcc39c6950fb54ea3efa00f7fe8a0
+mapping_date: '2026-09-12'
+selector_tolerance_percent: 10
+inventory_note: Counts measured on the pinned v2.1.0 file. Resolution drops annotated roots absent from
+  the engine order; selector rows accept +-selector_tolerance_percent, explicit lists are exact.
+populations:
+- name: DAN
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - DAN
+  required: true
+  exclude: []
+  inventory_count: 331
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: dopamine
+  side: null
+  note: 'Mushroom-body dopamine neurons: PAM01-PAM15, PPL101-PPL108, PPL201-PPL204, CB2730.'
+- name: PAM
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PAM
+  required: false
+  exclude: []
+  inventory_count: 304
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: ''
+- name: PPL1
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PPL1
+  required: false
+  exclude: []
+  inventory_count: 16
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: ''
+- name: PPL2
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PPL2
+  required: false
+  exclude: []
+  inventory_count: 8
+  inventory_tolerance: percent
+  overlaps_with:
+  - DAN
+  expected_nt: dopamine
+  side: null
+  note: ''
+- name: CX_DAN_candidates
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(FB|PPM12)
+    or_column: cell_type
+    or_pattern: ^ExR2
+    and_column: known_nt
+    and_pattern: ^dopamine$
+    not_column: cell_class
+    not_pattern: ^DAN$
+  required: false
+  exclude: []
+  inventory_count: 40
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: dopamine
+  side: null
+  note: known_nt == dopamine and cell_class != DAN and (cell_type starts with ExR2 or hemibrain_type starts
+    with FB or PPM12). ExR2_1/ExR2_2 rows match cell_type ExR2; FB rows match hemibrain_type FB;
+    PPM1201-PPM1205 rows match hemibrain_type PPM12. Measured on v2.1.0.
+- name: CX_DAN
+  selector:
+    kind: explicit
+    source: CX_DAN_candidates passing the step-3 connectivity filter
+    source_version: '783'
+    source_roots: &id001
+    - 720575940640039040
+    - 720575940626612254
+    - 720575940637031770
+    - 720575940604451505
+    - 720575940623358099
+    - 720575940632126860
+    - 720575940628705271
+    - 720575940620552308
+    - 720575940640002256
+    - 720575940625875402
+    - 720575940625653223
+    - 720575940613124817
+    - 720575940620096414
+    - 720575940636924479
+    - 720575940621782381
+    - 720575940619845547
+    - 720575940627358236
+    - 720575940634338515
+    - 720575940642476448
+    - 720575940622760682
+    - 720575940624323475
+    - 720575940608140380
+    - 720575940623807672
+    - 720575940608312924
+    - 720575940619104027
+    - 720575940632803795
+    - 720575940613052200
+    - 720575940630840493
+    - 720575940625787536
+    - 720575940626314061
+    v783_roots: *id001
+    mapping_date: '2026-09-12'
+    unmapped_count: 0
+  required: true
+  exclude: []
+  inventory_count: 30
+  inventory_tolerance: exact
+  overlaps_with:
+  - CX_DAN_candidates
+  expected_nt: dopamine
+  side: null
+  note: Candidates with central-complex output fraction at least cxdan.min_cx_output_fraction (0.2) on
+    the pinned v783 connectivity. Registry construction re-applies the filter and fails on mismatch.
+- name: EB_other
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^ExR(?!2)
+    and_column: cell_type
+    and_pattern: ^ExR(?!2)
+    not_column: cell_type
+    not_pattern: ^ExR2
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: Measured 0 on v2.1.0; kept as a selector.
+- name: PB_other
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(SpsP|IbSpsP|LPsP)
+  required: false
+  exclude: []
+  inventory_count: 32
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: FB_columnar
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(hDelta|vDelta|FC|FR|FS|PFL|PFN|PFR|PFG)
+  required: false
+  exclude: []
+  inventory_count: 1681
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: NO_neurons
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^(LNO|LCNO|GLNO)
+  required: false
+  exclude: []
+  inventory_count: 16
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: LAL_neurons
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^LAL\d
+  required: false
+  exclude: []
+  inventory_count: 547
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: null
+  note: Ten LAL hemibrain-type neurons are super_class descending, so the overlap
+    with DN_all is declared.
+- name: KC
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - Kenyon_Cell
+  required: true
+  exclude: []
+  inventory_count: 5177
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: acetylcholine
+  side: null
+  note: ''
+- name: KC_g
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCg
+  required: false
+  exclude: []
+  inventory_count: 2490
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: cell_sub_class is empty on v2.1.0; split by hemibrain_type prefix.
+- name: KC_ab
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCab
+  required: false
+  exclude: []
+  inventory_count: 1771
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: cell_sub_class is empty on v2.1.0; split by hemibrain_type prefix.
+- name: KC_apbp
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^KCa'b'
+  required: false
+  exclude: []
+  inventory_count: 916
+  inventory_tolerance: percent
+  overlaps_with:
+  - KC
+  expected_nt: acetylcholine
+  side: null
+  note: cell_sub_class is empty on v2.1.0; split by hemibrain_type prefix.
+- name: MBON
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - MBON
+  required: true
+  exclude: []
+  inventory_count: 96
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: 96 rows; per-type populations below.
+- name: MBON_MBON01
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON01
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON02
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON02
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON03
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON03
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON04
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON04
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON05
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON05
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON06
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON06
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON07
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON07
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON09
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON09
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON10
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON10
+  required: false
+  exclude: []
+  inventory_count: 9
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON11
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON11
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON12
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON12
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON13
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON13
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON14
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON14
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON15
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON15
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON15-like
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON15-like
+  required: false
+  exclude: []
+  inventory_count: 5
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON16
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON16
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON17
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON17
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON17-like
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON17-like
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON18
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON18
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON19
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON19
+  required: false
+  exclude: []
+  inventory_count: 4
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON20
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON20
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON21
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON21
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON22
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON22
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON23
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON23
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON24
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON24
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON25,MBON34
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON25,MBON34
+  required: false
+  exclude: []
+  inventory_count: 6
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON26
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON26
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON27
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON27
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON28
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON28
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON29
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON29
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON30
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON30
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON31
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON31
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON32
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON32
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON33
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON33
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON35
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON35
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: ''
+- name: MBON_MBON08
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - MBON08
+  required: false
+  exclude: []
+  inventory_count: 0
+  inventory_tolerance: percent
+  overlaps_with:
+  - MBON
+  expected_nt: null
+  side: null
+  note: Absent from the hemibrain volume and the file.
+- name: ER
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^ER\d
+  required: true
+  exclude: []
+  inventory_count: 278
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: EPG
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - EPG
+    - EPGt
+  required: true
+  exclude: []
+  inventory_count: 51
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: PEN
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^PEN
+  required: false
+  exclude: []
+  inventory_count: 42
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: PEG
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - PEG
+  required: false
+  exclude: []
+  inventory_count: 20
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: D7
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - Delta7
+  required: false
+  exclude: []
+  inventory_count: 40
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: FB_tangential
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^FB\d
+  required: false
+  exclude:
+  - CX_DAN_candidates
+  inventory_count: 401
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: Excludes every CX_DAN_candidates member so the set never depends on the filter outcome.
+- name: dFB
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^FB[67]
+  required: false
+  exclude:
+  - CX_DAN_candidates
+  inventory_count: 90
+  inventory_tolerance: percent
+  overlaps_with:
+  - FB_tangential
+  expected_nt: null
+  side: null
+  note: Placeholder proxy for the dorsal, sleep-related FB layers.
+- name: TuBu
+  selector:
+    kind: values
+    column: cell_class
+    values:
+    - TuBu
+  required: true
+  exclude: []
+  inventory_count: 150
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: MeTu
+  selector:
+    kind: regex
+    column: cell_type
+    pattern: ^MeTu
+  required: false
+  exclude: []
+  inventory_count: 896
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: DNa01_L
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa01
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_L
+  expected_nt: null
+  side: left
+  note: ''
+- name: DNa01_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa01
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_R
+  expected_nt: null
+  side: right
+  note: ''
+- name: DNa02_L
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa02
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_L
+  expected_nt: null
+  side: left
+  note: ''
+- name: DNa02_R
+  selector:
+    kind: values
+    column: hemibrain_type
+    values:
+    - DNa02
+  required: false
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  - steering_R
+  expected_nt: null
+  side: right
+  note: ''
+- name: steering_L
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^DNa0[12]$
+  required: true
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: left
+  note: Union of DNa01 and DNa02 per side.
+- name: steering_R
+  selector:
+    kind: regex
+    column: hemibrain_type
+    pattern: ^DNa0[12]$
+  required: true
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: right
+  note: Union of DNa01 and DNa02 per side.
+- name: DN_all
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - descending
+  required: true
+  exclude: []
+  inventory_count: 1303
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: DNp01
+  selector:
+    kind: values
+    column: cell_type
+    values:
+    - DNp01
+  required: false
+  exclude: []
+  inventory_count: 2
+  inventory_tolerance: percent
+  overlaps_with:
+  - DN_all
+  expected_nt: null
+  side: null
+  note: ''
+- name: sugar_GRN_R
+  selector:
+    kind: explicit
+    source: Shiu example.ipynb neu_sugar literal (authoritative order, unsorted)
+    source_version: '630'
+    source_roots:
+    - 720575940624963786
+    - 720575940630233916
+    - 720575940637568838
+    - 720575940638202345
+    - 720575940617000768
+    - 720575940630797113
+    - 720575940632889389
+    - 720575940621754367
+    - 720575940621502051
+    - 720575940640649691
+    - 720575940639332736
+    - 720575940616885538
+    - 720575940639198653
+    - 720575940620900446
+    - 720575940617937543
+    - 720575940632425919
+    - 720575940633143833
+    - 720575940612670570
+    - 720575940628853239
+    - 720575940629176663
+    - 720575940611875570
+    v783_roots:
+    - 720575940624963786
+    - 720575940630233916
+    - 720575940637568838
+    - 720575940638202345
+    - 720575940617000768
+    - 720575940630797113
+    - 720575940632889389
+    - 720575940621754367
+    - 720575940621502051
+    - 720575940640649691
+    - 720575940639332736
+    - 720575940616885538
+    - 720575940639198653
+    - 720575940639259967
+    - 720575940617937543
+    - 720575940632425919
+    - 720575940633143833
+    - 720575940612670570
+    - 720575940628853239
+    - 720575940629176663
+    - 720575940611875570
+    mapping_date: '2026-09-12'
+    unmapped_count: 0
+  required: true
+  exclude: []
+  inventory_count: 21
+  inventory_tolerance: exact
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: ''
+- name: MN9
+  selector:
+    kind: explicit
+    source: Shiu notebooks id_mn9 (single root, both versions)
+    source_version: '630'
+    source_roots:
+    - 720575940660219265
+    v783_roots:
+    - 720575940660219265
+    mapping_date: '2026-09-12'
+    unmapped_count: 0
+  required: true
+  exclude: []
+  inventory_count: 1
+  inventory_tolerance: exact
+  overlaps_with:
+  - motor
+  expected_nt: null
+  side: null
+  note: ''
+- name: bitter_GRN_R
+  selector:
+    kind: explicit
+    source: Shiu figures.ipynb neu_bitter literal (authoritative order, unsorted)
+    source_version: '630'
+    source_roots:
+    - 720575940621778381
+    - 720575940602353632
+    - 720575940617094208
+    - 720575940619197093
+    - 720575940626287336
+    - 720575940618600651
+    - 720575940627692048
+    - 720575940630195909
+    - 720575940646212996
+    - 720575940610483162
+    - 720575940645743412
+    - 720575940627578156
+    - 720575940622298631
+    - 720575940621008895
+    - 720575940629146711
+    - 720575940610259370
+    - 720575940610481370
+    - 720575940619028208
+    - 720575940614281266
+    - 720575940613061118
+    - 720575940604027168
+    v783_roots:
+    - 720575940621778381
+    - 720575940602353632
+    - 720575940617094208
+    - 720575940619197093
+    - 720575940626287336
+    - 720575940619072513
+    - 720575940627692048
+    - 720575940630195909
+    - 720575940646212996
+    - 720575940610483162
+    - 720575940645743412
+    - 720575940627578156
+    - 720575940622298631
+    - 720575940621008895
+    - 720575940629146711
+    - 720575940610259370
+    - 720575940610481370
+    - 720575940619028208
+    - 720575940614281266
+    - 720575940613061118
+    - 720575940604027168
+    mapping_date: '2026-09-12'
+    unmapped_count: 0
+  required: false
+  exclude: []
+  inventory_count: 21
+  inventory_tolerance: exact
+  overlaps_with:
+  - sensory
+  expected_nt: null
+  side: null
+  note: SPEC names sez_neurons.pickle as the source, but the pinned pickle holds 106 named SEZ types with
+    no bitter-labelled entry and none of the 21 bitter roots; the paper's Figure 3A neu_bitter literal
+    in the same pinned clone is used instead.
+- name: motor
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - motor
+  required: false
+  exclude: []
+  inventory_count: 106
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''
+- name: sensory
+  selector:
+    kind: values
+    column: super_class
+    values:
+    - sensory
+  required: false
+  exclude: []
+  inventory_count: 16903
+  inventory_tolerance: percent
+  overlaps_with: []
+  expected_nt: null
+  side: null
+  note: ''

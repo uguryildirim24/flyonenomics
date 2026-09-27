@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.2",
+  "name": "buridan-encoder-off-bare",
+  "seed": 20260912,
+  "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "substrate": {"connectome_version": "783", "behaviour_version": "v0.1"},
+  "layers": {"background": false, "dopamine_A": true, "transporter_C": true, "dan_fast_synapses": "retain"},
+  "arms": [{"label": "wild-type", "genotype": {"named": "wild_type", "manipulations": []},
+    "protocol": [{"type": "probe", "assay": "buridan", "duration_s": 20, "label": "encoder-off",
+      "params": {"stripes": true, "encoder": "off", "inject_at": "TuBu"}}]}],
+  "record": {"spikes": ["steering_L", "steering_R", "TuBu"],
+    "rates": ["steering_L", "steering_R"], "arena": true, "popcount": true, "live": false},
+  "meta": {"class": "canonical", "purpose": "level 4.2 encoder control"}
+}

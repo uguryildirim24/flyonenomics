@@ -1,0 +1,782 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "engine_model": "lif+cbi",
+  "rho_mech": 1.2336139268858282,
+  "q_plan": 27.0,
+  "pairs": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      1.0,
+      4.0
+    ],
+    [
+      1.0,
+      8.0
+    ],
+    [
+      1.5,
+      1.0
+    ],
+    [
+      1.5,
+      2.0
+    ],
+    [
+      1.5,
+      4.0
+    ],
+    [
+      1.5,
+      8.0
+    ],
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      2.0
+    ],
+    [
+      2.0,
+      4.0
+    ],
+    [
+      2.0,
+      8.0
+    ],
+    [
+      3.0,
+      6.0
+    ],
+    [
+      3.0,
+      8.0
+    ],
+    [
+      4.0,
+      2.0
+    ]
+  ],
+  "grid": [
+    {
+      "E_inh_mv": -72.0,
+      "scope": "all"
+    },
+    {
+      "E_inh_mv": -62.0,
+      "scope": "all"
+    },
+    {
+      "E_inh_mv": -57.0,
+      "scope": "all"
+    }
+  ],
+  "units": [
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 2.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 6.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    },
+    {
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 4.0,
+      "g_glu": 2.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100
+    }
+  ],
+  "baseline": false,
+  "camber": {
+    "workers": 36,
+    "worker_s_per_brain_s": 50,
+    "build_s": 250,
+    "setup_s": 600,
+    "running_max_s": 7200,
+    "timeout_s": 9000,
+    "margin": 1.25,
+    "slots": 5
+  },
+  "job_shapes": {
+    "B_brain_s": 81,
+    "n_jobs": 1,
+    "n_tasks": 46,
+    "t0_brain_s": 2760,
+    "launch": true,
+    "reason": null
+  },
+  "cap_projection_t0_engine_hours": 115.83634773457926,
+  "t1_max_units": 40,
+  "cap_engine_hours": 400
+}

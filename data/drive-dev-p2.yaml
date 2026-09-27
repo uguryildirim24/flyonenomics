@@ -1,0 +1,130 @@
+# Development rest substrate, SPEC-P2 section 2.6 step 5 (P2-partial-B route).
+# Class development: it qualifies nothing and is not drive-v0.2.yaml. It failed R-reflex (a, b, c).
+# Tier 2 ended P2-partial-B; Rolf authorised tier 3 (WP24). The bare substrate stays canonical.
+# The engine draws n_bg inputs from params bg.n_bg, so use it with bg.n_bg 25 (params-v0.2 says 100).
+configuration_class: development
+candidate_id: 3.0-6.0-1.0-False-25-3.4
+selection: 'SPEC-P2 2.6 step 5 after P2-partial-B: lowest candidate by order key among
+  candidates measured through R-reflex in the decision sets (tier 1 R2 and all 20
+  tier-2 admissions); S 8.866750667586105, failed R-reflex (a, b, c)'
+transmitter_rule:
+  blob_id: 29170ce99f3e8d3a626fee089789bf576bec806c
+  scope: brain
+scales:
+  g_gaba: 3.0
+  g_glu: 6.0
+  g_his: 1.0
+  unk: g_gaba when s_pq < 0, else 1
+  sha256: 1663cdafa49384b3f537b399dff484a1b53d74ed97cd58b2fb37ffbd834a71c0
+background:
+  n_bg: 25
+  r_bg: 10.0
+  groups:
+    DAN:
+      size: 361
+      w_bg: 3.4
+    ER:
+      size: 278
+      w_bg: 3.4
+    KC:
+      size: 5177
+      w_bg: 3.4
+    ascending:
+      size: 2317
+      w_bg: 3.4
+    central:
+      size: 26568
+      w_bg: 3.4
+    descending:
+      size: 1299
+      w_bg: 3.4
+    endocrine:
+      size: 76
+      w_bg: 3.4
+    motor:
+      size: 106
+      w_bg: 3.4
+    optic:
+      size: 77529
+      w_bg: 3.4
+    sensory:
+      size: 16351
+      w_bg: 0.0
+    visual_centrifugal:
+      size: 524
+      w_bg: 3.4
+    visual_projection:
+      size: 8053
+      w_bg: 3.4
+threshold:
+  sigma_th: 1.0
+  seed: 20260912
+  z_sha256: 7739f10c3afbcaed06e756b3aab7c1175e3b1c8f5cf8563654408799e447e1ad
+optic_exemption: false
+provenance:
+  R1:
+    record: validation/records/p2/rest-R1-verification.json
+    sha256: 5015a55f0ad5e3bf7be375117c53a74c5e718e1d78061aaffe93de1059614306
+    summary: camber-runs/wp17/R1-curated-retry/R1/summary.json
+    summary_sha256: a39a831e8af3cbdb6a6f3efaee6a56acaec92ad7ec0c5d6861105d498d00570d
+  R2:
+    record: validation/records/p2/rest-R2-decision.json
+    sha256: fe9ed787ff3f76cafe4e54bd7b94a4617599a42433ed6b0a842bee5ba778b8d2
+  tier2_plan:
+    record: validation/records/p2/rest-tier2-plan.json
+    sha256: 7ba0d9176c41da6f662486c173de76fc475dd1db3c0f40dc205926563a031209
+  tier2_screen:
+    record: validation/records/p2/rest-tier2-screen.json
+    sha256: 8cd37dc57128763744e91bf6de72e29e4f6ccc5cdbd51185350b2e3ac7ab09f2
+    full: camber-runs/wp17/tier2-combined/full-51.json
+    full_sha256: abee9b0e91cf4cc3b125ec21cce9cf78f4b49cb41e659c3be00ea210fa34e4dd
+    setting_index: 5
+  tier2_stage2:
+    record: validation/records/p2/rest-tier2-stage2.json
+    sha256: 8c0ba33df6a09a0e9f733ca5db5f47f17f1f180e80916d5072393fd4c515faaa
+    decide: camber-runs/wp17/tier2-stage2/final-decision.json
+    decide_sha256: bf9abe37325109a4ed2871a57d7af3e985d7968092b98eb335f37e9ad63ef51d
+    admission_order: 19
+  escalation:
+    record: validation/records/p2/rest-escalation.json
+    sha256: 69ab3b441f0023f06c496cba105758ff5407d1d34067f776ac58713dab4ba4ae
+    decision: P2-partial-B
+  R3: null
+  R4: null
+  K1r: null
+  camber_map:
+    plan: validation/records/p2/rest-map-plan.json
+    sha256: 8169b1a820f265d4aaa45b0af5a82a706de0c4c3fbf75eaa95dbb86707ae3420
+    map_sha256: 2fb522e4905bbfd402ed7e1d0e1b3a64479aad785d20763ce7aa2da830ed8dd8
+  camber_job_ids:
+    map:
+    - '27163'
+    R1:
+    - '27299'
+    tier2_screen_setting:
+    - '27420'
+    R_reflex_R_long:
+    - '27461'
+    bare_reference:
+    - '27449'
+  executions:
+    tier2_screen:
+      job_id: '27420'
+      commit: fddd5b3236bbae6ab7dd441ab148d386c541437e
+      code_scope: git:8910ab5b893ac6e3e8482771f58348ea9f6900de31445f533deb9e0e4c744c0f
+      platform: linux-x86_64
+    stage2:
+      job_id: '27461'
+      commit: 3367c065584dc24505de296287c1c3414a6a8b49
+      code_scope: git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487
+      platform: linux-x86_64
+    bare_reference:
+      job_id: '27449'
+      commit: 3367c065584dc24505de296287c1c3414a6a8b49
+      code_scope: git:571adbef5357b6bea612085f593198376944d914bb28e1debb9cc51776a17487
+      platform: linux-x86_64
+  upstream_blob_ids:
+    data/params-v0.2.yaml: 11767573730323f5a2599f47644d28fc15cf3b2e
+    data/transmitters-v0.2.yaml: 29170ce99f3e8d3a626fee089789bf576bec806c
+    data/dopamine-v0.1.yaml: 3f812a255f10f6858af550cf7e2ea647a841a84b
+    data/populations-v0.1.yaml: fbefc6291afb5184c16f67fb9a6fabb0132ef293

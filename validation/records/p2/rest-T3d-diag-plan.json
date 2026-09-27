@@ -1,0 +1,72 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "stage": "diag",
+  "wave": "wp27",
+  "candidate_id": "1.0-4.0-0.0-False-100-0.85-kc-6.0",
+  "flags": [
+    "diagnostic"
+  ],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "diagnostic": true,
+  "launch": true,
+  "reason": null,
+  "n_jobs": 2,
+  "n_tasks": 53,
+  "brain_s": 3068.0,
+  "list_usd": 4.962052469135803,
+  "list_cap_usd": 15.0,
+  "pack_worker_s_per_brain_s": 75.0,
+  "long_worker_s_per_brain_s": 90.0,
+  "max_instances": 2,
+  "sigma_th": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "sigma_weights": [
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "pair_weights": [
+    0.85,
+    0.9
+  ],
+  "job_shapes": [
+    {
+      "job_index": 0,
+      "n_tasks": 16,
+      "brain_s": 704.0,
+      "kinds": {
+        "diag-long": 12,
+        "diag-sugar": 2,
+        "diag-ff": 1,
+        "bare": 1
+      }
+    },
+    {
+      "job_index": 1,
+      "n_tasks": 37,
+      "brain_s": 2364.0,
+      "kinds": {
+        "t1": 12,
+        "unit": 4,
+        "sigma-sugar": 20,
+        "bare": 1
+      }
+    }
+  ],
+  "ibm": {
+    "workers": 36.0,
+    "worker_s_per_brain_s": 45.75,
+    "setup_s": 600.0,
+    "timeout_s": 9000.0,
+    "build_s": 250.0
+  }
+}

@@ -1,0 +1,2 @@
+pinned drive g_inh=1, background=off
+pinned drive g_inh=1, background=off

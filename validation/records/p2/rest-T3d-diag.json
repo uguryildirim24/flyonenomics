@@ -1,0 +1,3824 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "stage": "diag",
+  "candidate_id": "1.0-4.0-0.0-False-100-0.85-kc-6.0",
+  "flags": [
+    "diagnostic"
+  ],
+  "admitted_t1": false,
+  "admitted_t2": false,
+  "diagnostic": true,
+  "n_tasks": 16,
+  "n_long": 12,
+  "long": [
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w085-s1",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": true,
+      "seed": 1,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6800554016620499,
+        "ER": 0.11762589928057554,
+        "KC": 0.23824608846822484,
+        "ascending": 0.06776003452740613,
+        "central": 5.376614724480578,
+        "descending": 2.2147806004618937,
+        "endocrine": 0.005263157894736842,
+        "motor": 1.5669811320754716,
+        "optic": 0.023000425647177185,
+        "sensory": 0.3146474221760137,
+        "visual_centrifugal": 0.9169847328244275,
+        "visual_projection": 0.06451012045200546
+      },
+      "F": 12.99529349266174,
+      "b": 0.0023874955820512266,
+      "stability_ratio": 0.3725837524728152,
+      "first_central_hz": 2.1692261367058117,
+      "last_central_hz": 5.822116832279434,
+      "settled_central_hz": 2.1692261367058117,
+      "max_rolling_central_hz": 5.825504366154773,
+      "ignited": false,
+      "mn9_hz": 1.5,
+      "pools": "clamped",
+      "wall_s": 1560.159670729,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.0540327626290895,
+            "5": 4.555258954331313,
+            "10": 4.536471750442044,
+            "50": 6.583720292336829,
+            "100": 8.016867636656958
+          },
+          "covariance": {
+            "F": 3.0540327626290895,
+            "independent": 147.76410637,
+            "covariance_term": 358.1159587399991,
+            "covariance_fraction": 0.7079068408479982,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0015,
+                "var": 0.00149775,
+                "independent": 0.0014977500000000002,
+                "within_cov": -2.168404344971009e-19
+              },
+              "APL": {
+                "mean": 0.3887,
+                "var": 0.32081231,
+                "independent": 0.31309891,
+                "within_cov": 0.007713399999999981
+              },
+              "DAN": {
+                "mean": 0.2603,
+                "var": 0.24374391,
+                "independent": 0.23889069,
+                "within_cov": 0.004853220000000019
+              },
+              "KC": {
+                "mean": 1.289,
+                "var": 2.9108790000000004,
+                "independent": 1.25625782,
+                "within_cov": 1.6546211800000004
+              },
+              "optic": {
+                "mean": 1.8305,
+                "var": 26.94296975,
+                "independent": 1.82583595,
+                "within_cov": 25.117133799999998
+              },
+              "central": {
+                "mean": 151.9327,
+                "var": 430.3165707099979,
+                "independent": 134.85400669,
+                "within_cov": 295.4625640199979
+              },
+              "rest": {
+                "mean": 9.9406,
+                "var": 12.585471639999994,
+                "independent": 9.274518559999999,
+                "within_cov": 3.3109530799999956
+              }
+            },
+            "pairs": {
+              "MN9:APL": -8.304999999999999e-05,
+              "MN9:DAN": -0.00039045,
+              "MN9:KC": -0.0003334999999999998,
+              "MN9:optic": 0.0013542500000000004,
+              "MN9:central": -0.007899050000000019,
+              "MN9:rest": -1.0899999999999452e-05,
+              "APL:DAN": 0.008021390000000017,
+              "APL:KC": 0.036465700000000045,
+              "APL:optic": 0.010484649999999984,
+              "APL:central": 1.1257595100000017,
+              "APL:rest": -0.003211219999999848,
+              "DAN:KC": 0.027173300000000067,
+              "DAN:optic": 0.012720850000000061,
+              "DAN:central": 0.764918190000003,
+              "DAN:rest": 0.03536182000000032,
+              "KC:optic": -0.14321450000000002,
+              "KC:central": 3.329649699999976,
+              "KC:rest": -0.007433400000000034,
+              "optic:central": 2.5355926499999555,
+              "optic:rest": 1.2229317000000002,
+              "central:rest": 7.331202379999922
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9615412462200217,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00742215393936771,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.5,
+          "block_means_hz": {
+            "MN9": 1.5,
+            "APL": 194.35,
+            "DAN": 0.7210526315789474,
+            "KC": 0.2489858991694031,
+            "optic": 0.023610519934476132,
+            "central": 5.719065723104721,
+            "rest": 0.3427438540840603
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.0641749808615346,
+            "5": 4.591700537616678,
+            "10": 4.5033969826800355,
+            "50": 6.5155422277665265,
+            "100": 7.710124739639319
+          },
+          "covariance": {
+            "F": 3.0641749808615346,
+            "independent": 147.3125579025,
+            "covariance_term": 358.8218902949957,
+            "covariance_fraction": 0.7089457980441236,
+            "blocks": {
+              "MN9": {
+                "mean": 0.00125,
+                "var": 0.0012484375,
+                "independent": 0.0012484375,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3874,
+                "var": 0.31562124,
+                "independent": 0.312313575,
+                "within_cov": 0.003307665000000015
+              },
+              "DAN": {
+                "mean": 0.2549,
+                "var": 0.23822599,
+                "independent": 0.23381213000000003,
+                "within_cov": 0.004413859999999964
+              },
+              "KC": {
+                "mean": 1.30795,
+                "var": 2.9990167974999995,
+                "independent": 1.2750228275,
+                "within_cov": 1.7239939699999995
+              },
+              "optic": {
+                "mean": 1.92125,
+                "var": 24.236248437500002,
+                "independent": 1.9158117675000002,
+                "within_cov": 22.320436670000003
+              },
+              "central": {
+                "mean": 151.44035,
+                "var": 429.2922418775015,
+                "independent": 134.3752948175,
+                "within_cov": 294.9169470600015
+              },
+              "rest": {
+                "mean": 9.86495,
+                "var": 12.008511497499995,
+                "independent": 9.199054347499999,
+                "within_cov": 2.8094571499999965
+              }
+            },
+            "pairs": {
+              "MN9:APL": 6.575e-05,
+              "MN9:DAN": 3.137499999999999e-05,
+              "MN9:KC": 0.00011506250000000015,
+              "MN9:optic": -0.0009015625,
+              "MN9:central": -0.011600437500000005,
+              "MN9:rest": 0.0014688124999999996,
+              "APL:DAN": 0.0021517399999999853,
+              "APL:KC": 0.046300170000000085,
+              "APL:optic": 0.005457750000000039,
+              "APL:central": 1.2444084099999984,
+              "APL:rest": -0.01968163000000045,
+              "DAN:KC": 0.016103544999999997,
+              "DAN:optic": 0.03432337499999999,
+              "DAN:central": 0.7219547850000012,
+              "DAN:rest": 0.031024244999999784,
+              "KC:optic": -0.13669893749999984,
+              "KC:central": 3.455494217500018,
+              "KC:rest": -0.02946135250000026,
+              "optic:central": 4.176027562500053,
+              "optic:rest": 1.267114812500001,
+              "central:rest": 7.717969267500166
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9599298950283879,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00742215393936771,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.25,
+          "block_means_hz": {
+            "MN9": 1.25,
+            "APL": 193.7,
+            "DAN": 0.7060941828254848,
+            "KC": 0.2526463202627004,
+            "optic": 0.02478104967173574,
+            "central": 5.7005326356997665,
+            "rest": 0.3401355032238044
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w085-s1.npz",
+      "n_spikes": 5028829,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w085-s2",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": true,
+      "seed": 2,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.7202216066481995,
+        "ER": 0.09460431654676259,
+        "KC": 0.2550898203592814,
+        "ascending": 0.06961588260681915,
+        "central": 5.724002559470039,
+        "descending": 2.32540415704388,
+        "endocrine": 0.005263157894736842,
+        "motor": 1.430188679245283,
+        "optic": 0.01966103006616879,
+        "sensory": 0.3390373677450921,
+        "visual_centrifugal": 0.8982824427480915,
+        "visual_projection": 0.06498199428784304
+      },
+      "F": 2.906441256532497,
+      "b": 0.0020196337249980163,
+      "stability_ratio": 0.991903682645321,
+      "first_central_hz": 5.699563384522734,
+      "last_central_hz": 5.746085516410719,
+      "settled_central_hz": 5.699563384522734,
+      "max_rolling_central_hz": 5.801377597109305,
+      "ignited": false,
+      "mn9_hz": 0.6,
+      "pools": "clamped",
+      "wall_s": 1477.164415767,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 2.9093425134324606,
+            "5": 4.0026991565045975,
+            "10": 3.5728706850193506,
+            "50": 4.719523892576484,
+            "100": 5.693696457895995
+          },
+          "covariance": {
+            "F": 2.9093425134324606,
+            "independent": 147.22017377999998,
+            "covariance_term": 333.1774444600002,
+            "covariance_fraction": 0.6935451630269099,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0004,
+                "var": 0.00039984,
+                "independent": 0.00039984000000000005,
+                "within_cov": -5.421010862427522e-20
+              },
+              "APL": {
+                "mean": 0.3869,
+                "var": 0.30700838999999996,
+                "independent": 0.31199907,
+                "within_cov": -0.004990680000000025
+              },
+              "DAN": {
+                "mean": 0.262,
+                "var": 0.24895599999999998,
+                "independent": 0.24049878000000002,
+                "within_cov": 0.00845721999999996
+              },
+              "KC": {
+                "mean": 1.3156,
+                "var": 2.94779664,
+                "independent": 1.28223238,
+                "within_cov": 1.66556426
+              },
+              "optic": {
+                "mean": 1.4308,
+                "var": 14.688411360000002,
+                "independent": 1.4275824200000002,
+                "within_cov": 13.260828940000001
+              },
+              "central": {
+                "mean": 151.8221,
+                "var": 421.9410515899981,
+                "independent": 134.72227765,
+                "within_cov": 287.2187739399981
+              },
+              "rest": {
+                "mean": 9.9046,
+                "var": 12.53369884,
+                "independent": 9.23518364,
+                "within_cov": 3.298515199999999
+              }
+            },
+            "pairs": {
+              "MN9:APL": -5.476000000000001e-05,
+              "MN9:DAN": -4.800000000000008e-06,
+              "MN9:KC": 0.00027375999999999995,
+              "MN9:optic": -0.00017232000000000006,
+              "MN9:central": -0.001128840000000006,
+              "MN9:rest": 0.00043815999999999994,
+              "APL:DAN": 0.003732199999999991,
+              "APL:KC": 0.03609435999999999,
+              "APL:optic": -0.002376519999999993,
+              "APL:central": 1.1532295099999956,
+              "APL:rest": 0.019210259999999924,
+              "DAN:KC": 0.02891279999999996,
+              "DAN:optic": -0.0016696000000000488,
+              "DAN:central": 0.5608097999999941,
+              "DAN:rest": 0.014194799999999841,
+              "KC:optic": -0.011860480000000173,
+              "KC:central": 2.9943452400000012,
+              "KC:rest": -0.03469176000000296,
+              "optic:central": 0.9740393199999744,
+              "optic:rest": 0.6776983199999993,
+              "central:rest": 7.454128339999897
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9715121524396582,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00742215393936771,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 0.4,
+          "block_means_hz": {
+            "MN9": 0.4,
+            "APL": 193.45,
+            "DAN": 0.7257617728531855,
+            "KC": 0.25412401004442725,
+            "optic": 0.018455029730810407,
+            "central": 5.714902506963789,
+            "rest": 0.3415026031789815
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.0367155020183514,
+            "5": 4.397026479635851,
+            "10": 4.294940855694984,
+            "50": 6.333201531925597,
+            "100": 7.239396254626282
+          },
+          "covariance": {
+            "F": 3.0367155020183514,
+            "independent": 147.453515765,
+            "covariance_term": 354.6206270750033,
+            "covariance_fraction": 0.7063112732097234,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0016,
+                "var": 0.00159744,
+                "independent": 0.00159744,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3878,
+                "var": 0.31231116000000003,
+                "independent": 0.31256508000000005,
+                "within_cov": -0.0002539200000000186
+              },
+              "DAN": {
+                "mean": 0.2566,
+                "var": 0.24315644,
+                "independent": 0.23532088500000004,
+                "within_cov": 0.007835554999999966
+              },
+              "KC": {
+                "mean": 1.3028,
+                "var": 2.90631216,
+                "independent": 1.269761515,
+                "within_cov": 1.6365506450000002
+              },
+              "optic": {
+                "mean": 1.8452,
+                "var": 23.92603696,
+                "independent": 1.8401910700000002,
+                "within_cov": 22.08584589
+              },
+              "central": {
+                "mean": 151.6772,
+                "var": 430.21740015999967,
+                "independent": 134.59737181,
+                "within_cov": 295.62002834999964
+              },
+              "rest": {
+                "mean": 9.8634,
+                "var": 12.333940439999992,
+                "independent": 9.196707965,
+                "within_cov": 3.1372324749999922
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.00022047999999999995,
+              "MN9:DAN": 0.00013944,
+              "MN9:KC": -0.0006344800000000002,
+              "MN9:optic": -0.0002523199999999999,
+              "MN9:central": 0.00746647999999997,
+              "MN9:rest": 0.002568560000000001,
+              "APL:DAN": 0.002040520000000004,
+              "APL:KC": 0.034724160000000115,
+              "APL:optic": 0.004431440000000064,
+              "APL:central": 1.0197818400000074,
+              "APL:rest": 0.008573480000000355,
+              "DAN:KC": 0.024701519999999977,
+              "DAN:optic": 0.02407168000000004,
+              "DAN:central": 0.6609804799999992,
+              "DAN:rest": 0.01740156000000015,
+              "KC:optic": -0.12522655999999976,
+              "KC:central": 2.803693839999994,
+              "KC:rest": -0.04948752000000134,
+              "optic:central": 3.3821805600000516,
+              "optic:rest": 1.1260543200000015,
+              "central:rest": 7.12370551999993
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9592646841012291,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007400515006599874,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.6,
+          "block_means_hz": {
+            "MN9": 1.6,
+            "APL": 193.9,
+            "DAN": 0.710803324099723,
+            "KC": 0.25165153563840065,
+            "optic": 0.023800126404313223,
+            "central": 5.709448166829782,
+            "rest": 0.3400820604765024
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w085-s2.npz",
+      "n_spikes": 5155952,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w085-s3",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": true,
+      "seed": 3,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.7141274238227147,
+        "ER": 0.12482014388489208,
+        "KC": 0.24908248020088855,
+        "ascending": 0.07237807509710834,
+        "central": 5.7449713941583855,
+        "descending": 2.3391839876828326,
+        "endocrine": 0.005263157894736842,
+        "motor": 1.5132075471698114,
+        "optic": 0.02377303976576507,
+        "sensory": 0.3378264326340897,
+        "visual_centrifugal": 0.9486641221374045,
+        "visual_projection": 0.06662113498075252
+      },
+      "F": 3.078181224470135,
+      "b": 0.0021494673216050316,
+      "stability_ratio": 0.9915773403707014,
+      "first_central_hz": 5.720641373080397,
+      "last_central_hz": 5.769233664558868,
+      "settled_central_hz": 5.720641373080397,
+      "max_rolling_central_hz": 5.834010840108401,
+      "ignited": false,
+      "mn9_hz": 1.3,
+      "pools": "clamped",
+      "wall_s": 1472.4468369850001,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.0973811845139156,
+            "5": 4.849944921630126,
+            "10": 4.885957809855452,
+            "50": 7.825922461353186,
+            "100": 10.913178201511684
+          },
+          "covariance": {
+            "F": 3.0973811845139156,
+            "independent": 148.3655962,
+            "covariance_term": 366.6539381599989,
+            "covariance_fraction": 0.7119223907023837,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0017,
+                "var": 0.00169711,
+                "independent": 0.00169711,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3887,
+                "var": 0.31261231,
+                "independent": 0.31311102999999996,
+                "within_cov": -0.0004987199999999525
+              },
+              "DAN": {
+                "mean": 0.2592,
+                "var": 0.24381536,
+                "independent": 0.23796723999999997,
+                "within_cov": 0.00584812000000004
+              },
+              "KC": {
+                "mean": 1.2953,
+                "var": 2.95869791,
+                "independent": 1.2626463700000001,
+                "within_cov": 1.69605154
+              },
+              "optic": {
+                "mean": 1.957,
+                "var": 27.011751,
+                "independent": 1.9515170800000001,
+                "within_cov": 25.06023392
+              },
+              "central": {
+                "mean": 152.3911,
+                "var": 434.9557407900029,
+                "independent": 135.28486199000002,
+                "within_cov": 299.67087880000287
+              },
+              "rest": {
+                "mean": 9.9828,
+                "var": 12.490904160000014,
+                "independent": 9.31379538,
+                "within_cov": 3.1771087800000135
+              }
+            },
+            "pairs": {
+              "MN9:APL": -6.079000000000002e-05,
+              "MN9:DAN": 0.0003593600000000001,
+              "MN9:KC": -0.00010201000000000003,
+              "MN9:optic": 7.309999999999999e-05,
+              "MN9:central": -0.010864869999999999,
+              "MN9:rest": 0.0010292400000000007,
+              "APL:DAN": 0.0002489600000000203,
+              "APL:KC": 0.036516890000000135,
+              "APL:optic": 0.007814099999999935,
+              "APL:central": 1.1003794300000038,
+              "APL:rest": -0.01131435999999919,
+              "DAN:KC": 0.014958240000000067,
+              "DAN:optic": 0.01634559999999996,
+              "DAN:central": 0.5622268800000043,
+              "DAN:rest": 0.01985824000000047,
+              "KC:optic": -0.07370210000000021,
+              "KC:central": 3.13700817000003,
+              "KC:rest": -0.0009208399999973693,
+              "optic:central": 4.513517300000046,
+              "optic:rest": 1.8363604000000002,
+              "central:rest": 7.37242692000018
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.985837592481897,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007414940961778432,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.7,
+          "block_means_hz": {
+            "MN9": 1.7,
+            "APL": 194.35,
+            "DAN": 0.718005540166205,
+            "KC": 0.2502028201661194,
+            "optic": 0.025242167447019827,
+            "central": 5.736320861251223,
+            "rest": 0.3441988759783471
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 2.979343552474327,
+            "5": 4.398825399026158,
+            "10": 4.135840786982184,
+            "50": 6.0532057459082935,
+            "100": 7.801890139987585
+          },
+          "covariance": {
+            "F": 2.979343552474327,
+            "independent": 147.37614779749998,
+            "covariance_term": 345.01415140000466,
+            "covariance_fraction": 0.7006924221746592,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0013,
+                "var": 0.00129831,
+                "independent": 0.00129831,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38845,
+                "var": 0.3175565975,
+                "independent": 0.3129497375,
+                "within_cov": 0.00460685999999999
+              },
+              "DAN": {
+                "mean": 0.25435,
+                "var": 0.23945607749999998,
+                "independent": 0.2328719625,
+                "within_cov": 0.006584114999999974
+              },
+              "KC": {
+                "mean": 1.3,
+                "var": 2.9543999999999997,
+                "independent": 1.2673202,
+                "within_cov": 1.6870797999999998
+              },
+              "optic": {
+                "mean": 1.54965,
+                "var": 18.595234877499998,
+                "independent": 1.5461150275,
+                "within_cov": 17.049119849999997
+              },
+              "central": {
+                "mean": 151.8406,
+                "var": 427.2531916400003,
+                "independent": 134.750233065,
+                "within_cov": 292.5029585750003
+              },
+              "rest": {
+                "mean": 9.9337,
+                "var": 12.302704309999996,
+                "independent": 9.265359494999998,
+                "within_cov": 3.0373448149999973
+              }
+            },
+            "pairs": {
+              "MN9:APL": -4.984999999999994e-06,
+              "MN9:DAN": -8.0655e-05,
+              "MN9:KC": -8.99999999999998e-05,
+              "MN9:optic": 0.00033545500000000013,
+              "MN9:central": -0.006792779999999998,
+              "MN9:rest": -0.0006138099999999994,
+              "APL:DAN": 0.0015477424999999767,
+              "APL:KC": 0.03161499999999995,
+              "APL:optic": -0.004511542499999965,
+              "APL:central": 0.9889689299999986,
+              "APL:rest": -0.018395765000000175,
+              "DAN:KC": 0.023944999999999994,
+              "DAN:optic": 0.003996522499999988,
+              "DAN:central": 0.812793389999996,
+              "DAN:rest": 0.017113404999999915,
+              "KC:optic": -0.05199500000000001,
+              "KC:central": 2.734770000000026,
+              "KC:rest": -0.03970999999999947,
+              "optic:central": 2.062864210000015,
+              "optic:rest": 1.0527917949999992,
+              "central:rest": 7.754681780000055
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9613013477045669,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007414940961778432,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.3,
+          "block_means_hz": {
+            "MN9": 1.3,
+            "APL": 194.225,
+            "DAN": 0.7045706371191136,
+            "KC": 0.2511106818620823,
+            "optic": 0.01998800448864296,
+            "central": 5.715598885793872,
+            "rest": 0.34250594766058684
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w085-s3.npz",
+      "n_spikes": 5191226,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w090-s1",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": true,
+      "seed": 1,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.7193905817174515,
+        "ER": 0.17374100719424462,
+        "KC": 0.2660227931234306,
+        "ascending": 0.09624514458351316,
+        "central": 5.849570912375791,
+        "descending": 2.4187066974595846,
+        "endocrine": 0.03684210526315789,
+        "motor": 1.8773584905660379,
+        "optic": 0.049742676933792515,
+        "sensory": 0.33882331355880374,
+        "visual_centrifugal": 0.9791984732824428,
+        "visual_projection": 0.08632807649323233
+      },
+      "F": 3.072260167153026,
+      "b": 0.001990781814640902,
+      "stability_ratio": 0.9857682216676266,
+      "first_central_hz": 5.798178259560373,
+      "last_central_hz": 5.8818879855465225,
+      "settled_central_hz": 5.798178259560373,
+      "max_rolling_central_hz": 5.91869918699187,
+      "ignited": false,
+      "mn9_hz": 2.0,
+      "pools": "clamped",
+      "wall_s": 1509.212441454,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.0496572792369707,
+            "5": 4.85384088058817,
+            "10": 5.2924753727852005,
+            "50": 8.41475401619082,
+            "100": 11.219445582586113
+          },
+          "covariance": {
+            "F": 3.0496572792369707,
+            "independent": 153.72512837,
+            "covariance_term": 369.82143041999984,
+            "covariance_fraction": 0.7063773492747552,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0022,
+                "var": 0.0021951600000000003,
+                "independent": 0.0021951600000000003,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3885,
+                "var": 0.31316774999999997,
+                "independent": 0.31298486999999997,
+                "within_cov": 0.00018287999999999638
+              },
+              "DAN": {
+                "mean": 0.2596,
+                "var": 0.24480784,
+                "independent": 0.23838798,
+                "within_cov": 0.0064198599999999995
+              },
+              "KC": {
+                "mean": 1.389,
+                "var": 3.1486790000000004,
+                "independent": 1.3540606,
+                "within_cov": 1.7946184000000005
+              },
+              "optic": {
+                "mean": 3.9979,
+                "var": 37.00629559,
+                "independent": 3.9905721700000005,
+                "within_cov": 33.01572342
+              },
+              "central": {
+                "mean": 155.2383,
+                "var": 435.2415131099988,
+                "independent": 138.09974215,
+                "within_cov": 297.1417709599988
+              },
+              "rest": {
+                "mean": 10.3984,
+                "var": 13.193677440000002,
+                "independent": 9.72718544,
+                "within_cov": 3.4664920000000023
+              }
+            },
+            "pairs": {
+              "MN9:APL": 4.5299999999999854e-05,
+              "MN9:DAN": 2.88799999999999e-05,
+              "MN9:KC": -0.00035579999999999987,
+              "MN9:optic": 0.0011046200000000006,
+              "MN9:central": 0.008375739999999965,
+              "MN9:rest": -0.0015764800000000016,
+              "APL:DAN": 0.0048454,
+              "APL:KC": 0.052173499999999984,
+              "APL:optic": 0.014915849999999953,
+              "APL:central": 0.9608204499999928,
+              "APL:rest": -0.02067840000000043,
+              "DAN:KC": 0.02551559999999997,
+              "DAN:optic": 0.014545159999999946,
+              "DAN:central": 0.7730373199999931,
+              "DAN:rest": -0.001824640000000155,
+              "KC:optic": -0.04658310000000032,
+              "KC:central": 3.1226012999999853,
+              "KC:rest": 0.07892239999999795,
+              "optic:central": 3.427700429999959,
+              "optic:rest": 1.8078366399999979,
+              "central:rest": 6.976661279999689
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0008449670567154,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007515922648028333,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 2.2,
+          "block_means_hz": {
+            "MN9": 2.2,
+            "APL": 194.25,
+            "DAN": 0.7191135734072022,
+            "KC": 0.26830210546648636,
+            "optic": 0.05156651059603503,
+            "central": 5.84349544530603,
+            "rest": 0.3585284280936455
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.16838683790759,
+            "5": 5.256765337901934,
+            "10": 5.743836296960504,
+            "50": 10.024327877219562,
+            "100": 11.285247289248531
+          },
+          "covariance": {
+            "F": 3.16838683790759,
+            "independent": 154.43339295250001,
+            "covariance_term": 391.80077522499965,
+            "covariance_fraction": 0.7172762123838495,
+            "blocks": {
+              "MN9": {
+                "mean": 0.00155,
+                "var": 0.0015475975,
+                "independent": 0.0015475975,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3881,
+                "var": 0.31267839,
+                "independent": 0.31274407000000004,
+                "within_cov": -6.56800000000679e-05
+              },
+              "DAN": {
+                "mean": 0.2631,
+                "var": 0.24967839000000003,
+                "independent": 0.24178102,
+                "within_cov": 0.007897370000000015
+              },
+              "KC": {
+                "mean": 1.3935,
+                "var": 3.19515775,
+                "independent": 1.3583975499999998,
+                "within_cov": 1.8367602
+              },
+              "optic": {
+                "mean": 4.14305,
+                "var": 43.4376866975,
+                "independent": 4.134775057500001,
+                "within_cov": 39.30291164
+              },
+              "central": {
+                "mean": 155.7981,
+                "var": 451.3383363899957,
+                "independent": 138.63823647499999,
+                "within_cov": 312.7000999149957
+              },
+              "rest": {
+                "mean": 10.41395,
+                "var": 12.862795397499994,
+                "independent": 9.7459111825,
+                "within_cov": 3.1168842149999936
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.00015155499999999994,
+              "MN9:DAN": 0.00019219499999999999,
+              "MN9:KC": -9.925000000000038e-06,
+              "MN9:optic": -0.0002717274999999991,
+              "MN9:central": -0.0032370550000000164,
+              "MN9:rest": 0.0025083775000000023,
+              "APL:DAN": 0.0071908899999999915,
+              "APL:KC": 0.04553265000000006,
+              "APL:optic": -0.0012677050000000634,
+              "APL:central": 0.7948073899999955,
+              "APL:rest": -0.003203994999999793,
+              "DAN:KC": 0.019220150000000047,
+              "DAN:optic": -0.011386454999999795,
+              "DAN:central": 0.865869889999999,
+              "DAN:rest": 0.008539755000000149,
+              "KC:optic": 0.07110982500000063,
+              "KC:central": 2.8691976499999896,
+              "KC:rest": -0.010289324999998684,
+              "optic:central": 2.7317817949999608,
+              "optic:rest": 1.5129844524999996,
+              "central:rest": 8.519026504999829
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0230938921156947,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00747985776008194,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.55,
+          "block_means_hz": {
+            "MN9": 1.55,
+            "APL": 194.05,
+            "DAN": 0.728808864265928,
+            "KC": 0.2691713347498551,
+            "optic": 0.053438713255684965,
+            "central": 5.86456749228337,
+            "rest": 0.3590645795262559
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w090-s1.npz",
+      "n_spikes": 5468373,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w090-s2",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": true,
+      "seed": 2,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.7390581717451523,
+        "ER": 0.20755395683453237,
+        "KC": 0.27029167471508597,
+        "ascending": 0.10004315925766076,
+        "central": 5.873313760915387,
+        "descending": 2.411239414934565,
+        "endocrine": 0.04078947368421053,
+        "motor": 1.7726415094339623,
+        "optic": 0.06312476621651253,
+        "sensory": 0.3391413369212892,
+        "visual_centrifugal": 1.0830152671755724,
+        "visual_projection": 0.0879051285235316
+      },
+      "F": 3.2623916654771614,
+      "b": 0.0021206154112479174,
+      "stability_ratio": 1.0061360302830389,
+      "first_central_hz": 5.912563986750978,
+      "last_central_hz": 5.876505570611262,
+      "settled_central_hz": 5.912563986750978,
+      "max_rolling_central_hz": 5.954230653417645,
+      "ignited": false,
+      "mn9_hz": 1.4,
+      "pools": "clamped",
+      "wall_s": 1505.869019251,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.221942854702352,
+            "5": 5.478330453548101,
+            "10": 6.250024322926839,
+            "50": 10.518497292979866,
+            "100": 11.06873003757664
+          },
+          "covariance": {
+            "F": 3.221942854702352,
+            "independent": 154.73533329,
+            "covariance_term": 401.6320142200004,
+            "covariance_fraction": 0.7218827920392674,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0013,
+                "var": 0.00129831,
+                "independent": 0.00129831,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3882,
+                "var": 0.31970076000000003,
+                "independent": 0.31280430000000004,
+                "within_cov": 0.006896459999999993
+              },
+              "DAN": {
+                "mean": 0.2654,
+                "var": 0.24916284,
+                "independent": 0.24419503999999997,
+                "within_cov": 0.004967800000000022
+              },
+              "KC": {
+                "mean": 1.4036,
+                "var": 3.30670704,
+                "independent": 1.36829228,
+                "within_cov": 1.9384147600000001
+              },
+              "optic": {
+                "mean": 4.5971,
+                "var": 53.40957159,
+                "independent": 4.58584837,
+                "within_cov": 48.82372322
+              },
+              "central": {
+                "mean": 155.6106,
+                "var": 443.2217676399996,
+                "independent": 138.47631403999998,
+                "within_cov": 304.7454535999996
+              },
+              "rest": {
+                "mean": 10.4145,
+                "var": 12.756289749999993,
+                "independent": 9.74658095,
+                "within_cov": 3.009708799999993
+              }
+            },
+            "pairs": {
+              "MN9:APL": 9.533999999999996e-05,
+              "MN9:DAN": 0.00055498,
+              "MN9:KC": 0.00017532000000000008,
+              "MN9:optic": -0.0014762300000000003,
+              "MN9:central": 0.011206219999999989,
+              "MN9:rest": 0.0010611500000000003,
+              "APL:DAN": 0.0002717199999999892,
+              "APL:KC": 0.030622480000000007,
+              "APL:optic": 0.006005779999999961,
+              "APL:central": 0.8604650800000044,
+              "APL:rest": -0.0012088999999999572,
+              "DAN:KC": 0.03598455999999994,
+              "DAN:optic": 0.07302965999999977,
+              "DAN:central": 0.6199467599999906,
+              "DAN:rest": -0.0064083000000003665,
+              "KC:optic": 0.04271043999999957,
+              "KC:central": 4.038961840000013,
+              "KC:rest": 0.000707799999998926,
+              "optic:central": 5.553610739999954,
+              "optic:rest": 1.5975020499999957,
+              "central:rest": 8.68760629999997
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0086787203781438,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00747985776008194,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.3,
+          "block_means_hz": {
+            "MN9": 1.3,
+            "APL": 194.1,
+            "DAN": 0.7351800554016621,
+            "KC": 0.27112227158586055,
+            "optic": 0.05929523146177559,
+            "central": 5.857509598735225,
+            "rest": 0.35908354308175017
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.185953103080521,
+            "5": 5.4491271707180315,
+            "10": 6.017669020599726,
+            "50": 10.125408021260657,
+            "100": 12.64005648022909
+          },
+          "covariance": {
+            "F": 3.185953103080521,
+            "independent": 154.97937522249998,
+            "covariance_term": 396.0026996750035,
+            "covariance_fraction": 0.718721565939636,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0018,
+                "var": 0.00179676,
+                "independent": 0.00179676,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3899,
+                "var": 0.31397799000000004,
+                "independent": 0.31384291500000006,
+                "within_cov": 0.0001350749999999845
+              },
+              "DAN": {
+                "mean": 0.26775,
+                "var": 0.2550599375,
+                "independent": 0.24633566750000002,
+                "within_cov": 0.008724269999999978
+              },
+              "KC": {
+                "mean": 1.3721,
+                "var": 3.0537415899999996,
+                "independent": 1.3372978050000002,
+                "within_cov": 1.7164437849999994
+              },
+              "optic": {
+                "mean": 4.56955,
+                "var": 51.204862797500006,
+                "independent": 4.5588565575,
+                "within_cov": 46.646006240000006
+              },
+              "central": {
+                "mean": 155.85965,
+                "var": 444.8668518775048,
+                "independent": 138.7109811775,
+                "within_cov": 306.1558707000048
+              },
+              "rest": {
+                "mean": 10.4803,
+                "var": 13.117211910000009,
+                "independent": 9.81026434,
+                "within_cov": 3.306947570000009
+              }
+            },
+            "pairs": {
+              "MN9:APL": 9.818000000000001e-05,
+              "MN9:DAN": 1.8050000000000032e-05,
+              "MN9:KC": 0.0003802200000000001,
+              "MN9:optic": 0.0036748100000000023,
+              "MN9:central": 0.0023026300000000277,
+              "MN9:rest": 0.0004354600000000021,
+              "APL:DAN": 0.002454274999999992,
+              "APL:KC": 0.04001820999999983,
+              "APL:optic": -0.017417544999999812,
+              "APL:central": 0.9728724650000018,
+              "APL:rest": 0.016781029999999753,
+              "DAN:KC": 0.00932022499999996,
+              "DAN:optic": 0.0019529875000001695,
+              "DAN:central": 0.6285287124999996,
+              "DAN:rest": 0.015549675000000374,
+              "KC:optic": 0.11257044500000024,
+              "KC:central": 3.354774235000008,
+              "KC:rest": 0.0492303699999983,
+              "optic:central": 3.4792863425001315,
+              "optic:rest": 1.3762951350000066,
+              "central:rest": 9.035160105000159
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0460603477167687,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007487070737671218,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.8,
+          "block_means_hz": {
+            "MN9": 1.8,
+            "APL": 194.95,
+            "DAN": 0.7416897506925209,
+            "KC": 0.2650376666022793,
+            "optic": 0.0589398805608224,
+            "central": 5.866884363472107,
+            "rest": 0.3613522739026997
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w090-s2.npz",
+      "n_spikes": 5502163,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-clamped-w090-s3",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": true,
+      "seed": 3,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.7265927977839335,
+        "ER": 0.19496402877697844,
+        "KC": 0.27639559590496426,
+        "ascending": 0.08467846353042727,
+        "central": 5.885331978319783,
+        "descending": 2.5900692840646653,
+        "endocrine": 0.04342105263157895,
+        "motor": 3.3924528301886796,
+        "optic": 0.07155516000464343,
+        "sensory": 0.3380955293254235,
+        "visual_centrifugal": 1.1064885496183208,
+        "visual_projection": 0.0934434372283621
+      },
+      "F": 3.203372790737958,
+      "b": 0.0021566802991943106,
+      "stability_ratio": 1.0014040059251625,
+      "first_central_hz": 5.852454080096357,
+      "last_central_hz": 5.84424872026498,
+      "settled_central_hz": 5.852454080096357,
+      "max_rolling_central_hz": 5.980201746461909,
+      "ignited": false,
+      "mn9_hz": 47.5,
+      "pools": "clamped",
+      "wall_s": 1516.2790367510001,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.179511392236066,
+            "5": 5.542007848801012,
+            "10": 6.67910924430894,
+            "50": 11.001079432905051,
+            "100": 11.429460259196958
+          },
+          "covariance": {
+            "F": 3.179511392236066,
+            "independent": 156.46950435,
+            "covariance_term": 398.4096032400008,
+            "covariance_fraction": 0.7180115412353658,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0541,
+                "var": 0.05117319,
+                "independent": 0.05117319,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3882,
+                "var": 0.31890076,
+                "independent": 0.3127942,
+                "within_cov": 0.006106559999999983
+              },
+              "DAN": {
+                "mean": 0.261,
+                "var": 0.247079,
+                "independent": 0.23983359999999998,
+                "within_cov": 0.007245400000000013
+              },
+              "KC": {
+                "mean": 1.4322,
+                "var": 3.5294031599999998,
+                "independent": 1.39631632,
+                "within_cov": 2.13308684
+              },
+              "optic": {
+                "mean": 5.5109,
+                "var": 66.73028119,
+                "independent": 5.49328281,
+                "within_cov": 61.23699838
+              },
+              "central": {
+                "mean": 156.0204,
+                "var": 433.83598383999924,
+                "independent": 138.80263617999998,
+                "within_cov": 295.03334765999927
+              },
+              "rest": {
+                "mean": 10.8503,
+                "var": 13.051889909999986,
+                "independent": 10.173468049999999,
+                "within_cov": 2.878421859999987
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.0017016199999999974,
+              "MN9:DAN": 0.001979899999999998,
+              "MN9:KC": 0.0013179799999999964,
+              "MN9:optic": 0.004360309999999978,
+              "MN9:central": 0.007496359999999314,
+              "MN9:rest": -0.003601230000000011,
+              "APL:DAN": 0.0076798000000000005,
+              "APL:KC": 0.038119960000000064,
+              "APL:optic": 0.00796861999999976,
+              "APL:central": 1.2206807199999972,
+              "APL:rest": -0.005686459999999727,
+              "DAN:KC": 0.026995800000000014,
+              "DAN:optic": 0.02135509999999985,
+              "DAN:central": 0.6531755999999973,
+              "DAN:rest": -0.02332830000000019,
+              "KC:optic": -0.16881097999999994,
+              "KC:central": 2.92078312000001,
+              "KC:rest": -0.010899659999999756,
+              "optic:central": 3.6371776400000044,
+              "optic:rest": 2.1082817299999874,
+              "central:rest": 8.113853879999851
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0086146720865818,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007523135625617611,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 54.1,
+          "block_means_hz": {
+            "MN9": 54.1,
+            "APL": 194.1,
+            "DAN": 0.7229916897506925,
+            "KC": 0.27664670658682633,
+            "optic": 0.07108178875001613,
+            "central": 5.872935330874049,
+            "rest": 0.374109574871565
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.1649018645762963,
+            "5": 5.595714230709163,
+            "10": 6.458611088028957,
+            "50": 10.426637297687632,
+            "100": 13.244466121864193
+          },
+          "covariance": {
+            "F": 3.1649018645762963,
+            "independent": 156.40750312249997,
+            "covariance_term": 395.8575863150038,
+            "covariance_fraction": 0.7167890817038516,
+            "blocks": {
+              "MN9": {
+                "mean": 0.06845,
+                "var": 0.06376459749999999,
+                "independent": 0.06376459749999999,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38915,
+                "var": 0.31071227749999997,
+                "independent": 0.31338457750000004,
+                "within_cov": -0.002672300000000072
+              },
+              "DAN": {
+                "mean": 0.2564,
+                "var": 0.23825903999999998,
+                "independent": 0.23523726,
+                "within_cov": 0.003021779999999974
+              },
+              "KC": {
+                "mean": 1.3804,
+                "var": 3.152595839999999,
+                "independent": 1.34564916,
+                "within_cov": 1.8069466799999991
+              },
+              "optic": {
+                "mean": 5.2383,
+                "var": 63.45181311,
+                "independent": 5.2229414599999995,
+                "within_cov": 58.22887165
+              },
+              "central": {
+                "mean": 156.18985,
+                "var": 437.6231069774949,
+                "independent": 138.94426856249999,
+                "within_cov": 298.6788384149949
+              },
+              "rest": {
+                "mean": 10.9742,
+                "var": 13.312634360000004,
+                "independent": 10.282257505,
+                "within_cov": 3.0303768550000036
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.0001873174999999956,
+              "MN9:DAN": 0.0007994200000000021,
+              "MN9:KC": 0.0009616199999999964,
+              "MN9:optic": 0.005188365000000028,
+              "MN9:central": -0.006795232500000026,
+              "MN9:rest": 0.009816010000000097,
+              "APL:DAN": 0.006721939999999996,
+              "APL:KC": 0.03711734,
+              "APL:optic": 0.011915554999999856,
+              "APL:central": 0.9307198724999992,
+              "APL:rest": 0.003590070000000445,
+              "DAN:KC": 0.01816543999999992,
+              "DAN:optic": 0.04409987999999987,
+              "DAN:central": 0.5293224599999959,
+              "DAN:rest": -0.0006848800000001098,
+              "KC:optic": -0.21359931999999926,
+              "KC:central": 2.9080810599999722,
+              "KC:rest": -0.07253567999999966,
+              "optic:central": 3.4611587450000343,
+              "optic:rest": 1.9578981400000046,
+              "central:rest": 7.4243481299999985
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0294850158384088,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00753034860320689,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 68.45,
+          "block_means_hz": {
+            "MN9": 68.45,
+            "APL": 194.575,
+            "DAN": 0.7102493074792243,
+            "KC": 0.2666409117249372,
+            "optic": 0.06756568509847928,
+            "central": 5.879313784536626,
+            "rest": 0.3783815467365445
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-clamped-w090-s3.npz",
+      "n_spikes": 5547025,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w085-s1",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": false,
+      "seed": 1,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6091412742382272,
+        "ER": 0.09532374100719423,
+        "KC": 0.19451419741162837,
+        "ascending": 0.05640914976262408,
+        "central": 4.617404396266185,
+        "descending": 1.9496535796766743,
+        "endocrine": 0.007894736842105263,
+        "motor": 1.2160377358490566,
+        "optic": 0.018476957009635104,
+        "sensory": 0.2703810164515932,
+        "visual_centrifugal": 0.7967557251908397,
+        "visual_projection": 0.057059480938780584
+      },
+      "F": 32.3708968279208,
+      "b": 0.002344217716515555,
+      "stability_ratio": 0.04440259578349223,
+      "first_central_hz": 0.2547049081601927,
+      "last_central_hz": 5.736261668172237,
+      "settled_central_hz": 0.2547049081601927,
+      "max_rolling_central_hz": 5.771040349292382,
+      "ignited": true,
+      "mn9_hz": 1.2,
+      "pools": "free",
+      "wall_s": 1489.964314123,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 18.070292746194706,
+            "5": 79.40179469490626,
+            "10": 153.71537487575458,
+            "50": 748.8571581158692,
+            "100": 1493.8398608984385
+          },
+          "covariance": {
+            "F": 18.070292746194706,
+            "independent": 134.42528624000002,
+            "covariance_term": 2556.212391199998,
+            "covariance_fraction": 0.9500396179808578,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0011,
+                "var": 0.00109879,
+                "independent": 0.00109879,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.347,
+                "var": 0.301991,
+                "independent": 0.28672822,
+                "within_cov": 0.015262780000000031
+              },
+              "DAN": {
+                "mean": 0.2346,
+                "var": 0.21856284,
+                "independent": 0.21712,
+                "within_cov": 0.0014428400000000008
+              },
+              "KC": {
+                "mean": 1.1263,
+                "var": 12.00774831,
+                "independent": 1.10326067,
+                "within_cov": 10.90448764
+              },
+              "optic": {
+                "mean": 1.4788,
+                "var": 16.53155056,
+                "independent": 1.475538,
+                "within_cov": 15.05601256
+              },
+              "central": {
+                "mean": 136.7857,
+                "var": 2305.87957551,
+                "independent": 122.95598693,
+                "within_cov": 2182.92358858
+              },
+              "rest": {
+                "mean": 8.9249,
+                "var": 18.31025999000002,
+                "independent": 8.38555363,
+                "within_cov": 9.92470636000002
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.0001817,
+              "MN9:DAN": 0.00034193999999999994,
+              "MN9:KC": -0.00043893000000000003,
+              "MN9:optic": -0.0009266799999999999,
+              "MN9:central": 0.01383572999999999,
+              "MN9:rest": 0.0018826099999999998,
+              "APL:DAN": 0.005493800000000007,
+              "APL:KC": 0.07597389999999998,
+              "APL:optic": 0.03195640000000011,
+              "APL:central": 5.936462100000007,
+              "APL:rest": 0.3092597000000006,
+              "DAN:KC": 0.04087001999999995,
+              "DAN:optic": 0.02117352,
+              "DAN:central": 1.8698747800000035,
+              "DAN:rest": 0.09611846000000046,
+              "KC:optic": 0.09412756,
+              "KC:central": 17.373466089999994,
+              "KC:rest": 0.6326851299999987,
+              "optic:central": 15.876506840000047,
+              "optic:rest": 1.833457880000001,
+              "central:rest": 124.48150607000002
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 15.852843801142225,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.006693643202850569,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.1,
+          "block_means_hz": {
+            "MN9": 1.1,
+            "APL": 173.5,
+            "DAN": 0.6498614958448753,
+            "KC": 0.2175584315240487,
+            "optic": 0.019074152897625405,
+            "central": 5.148900850711436,
+            "rest": 0.30772333896493465
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.03094575808324,
+            "5": 4.538337990318797,
+            "10": 4.624295287189074,
+            "50": 7.21541788408018,
+            "100": 8.731173864815538
+          },
+          "covariance": {
+            "F": 3.03094575808324,
+            "independent": 147.631817765,
+            "covariance_term": 354.0345631949959,
+            "covariance_fraction": 0.7057171391822397,
+            "blocks": {
+              "MN9": {
+                "mean": 0.001,
+                "var": 0.000999,
+                "independent": 0.000999,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38775,
+                "var": 0.3151999375,
+                "independent": 0.3125254675,
+                "within_cov": 0.00267447000000004
+              },
+              "DAN": {
+                "mean": 0.2446,
+                "var": 0.22797084,
+                "independent": 0.22308052499999997,
+                "within_cov": 0.004890315000000034
+              },
+              "KC": {
+                "mean": 1.2385,
+                "var": 2.7116177500000003,
+                "independent": 1.20769317,
+                "within_cov": 1.5039245800000003
+              },
+              "optic": {
+                "mean": 1.9102,
+                "var": 25.199635960000002,
+                "independent": 1.9046692,
+                "within_cov": 23.29496676
+              },
+              "central": {
+                "mean": 151.83355,
+                "var": 428.3461443974993,
+                "independent": 134.7503054475,
+                "within_cov": 293.5958389499993
+              },
+              "rest": {
+                "mean": 9.8992,
+                "var": 12.17433935999999,
+                "independent": 9.232544955,
+                "within_cov": 2.9417944049999907
+              }
+            },
+            "pairs": {
+              "MN9:APL": -3.774999999999997e-05,
+              "MN9:DAN": -0.00014460000000000005,
+              "MN9:KC": 1.1500000000000008e-05,
+              "MN9:optic": -0.0006102,
+              "MN9:central": 0.00011644999999999017,
+              "MN9:rest": 0.0019007999999999994,
+              "APL:DAN": 0.004456349999999998,
+              "APL:KC": 0.043271625000000036,
+              "APL:optic": -0.005080049999999892,
+              "APL:central": 1.0370409874999993,
+              "APL:rest": -0.01861479999999993,
+              "DAN:KC": 0.015412900000000007,
+              "DAN:optic": 0.004365080000000021,
+              "DAN:central": 0.6107636700000043,
+              "DAN:rest": 0.011955679999999802,
+              "KC:optic": -0.04168269999999952,
+              "KC:central": 2.9133483250000154,
+              "KC:rest": -0.003309200000000345,
+              "optic:central": 2.9701027899999985,
+              "optic:rest": 1.3472981600000011,
+              "central:rest": 7.454671839999946
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9851836872593727,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007407727984189153,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.0,
+          "block_means_hz": {
+            "MN9": 1.0,
+            "APL": 193.875,
+            "DAN": 0.6775623268698061,
+            "KC": 0.2392312149893761,
+            "optic": 0.0246385223593752,
+            "central": 5.715333508996461,
+            "rest": 0.3413164155432197
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w085-s1.npz",
+      "n_spikes": 4812810,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w085-s2",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": false,
+      "seed": 2,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6448753462603878,
+        "ER": 0.09784172661870504,
+        "KC": 0.2291674715085957,
+        "ascending": 0.06767371601208459,
+        "central": 5.4243902439024385,
+        "descending": 2.236027713625866,
+        "endocrine": 0.010526315789473684,
+        "motor": 1.4943396226415095,
+        "optic": 0.02575939325929652,
+        "sensory": 0.3185432083664608,
+        "visual_centrifugal": 0.9257633587786259,
+        "visual_projection": 0.06483298149757855
+      },
+      "F": 10.48222284149175,
+      "b": 0.002142254344015753,
+      "stability_ratio": 0.5031573361634386,
+      "first_central_hz": 2.8551641071966274,
+      "last_central_hz": 5.674495633845227,
+      "settled_central_hz": 2.8551641071966274,
+      "max_rolling_central_hz": 5.787865100873231,
+      "ignited": false,
+      "mn9_hz": 1.8,
+      "pools": "free",
+      "wall_s": 1577.737005458,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 2.9839368806760858,
+            "5": 4.396392507037712,
+            "10": 4.401795638618984,
+            "50": 6.5390933684491195,
+            "100": 9.52373330405494
+          },
+          "covariance": {
+            "F": 2.9839368806760858,
+            "independent": 147.43410025,
+            "covariance_term": 345.77217333999624,
+            "covariance_fraction": 0.7010701036366735,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0014,
+                "var": 0.00139804,
+                "independent": 0.0013980400000000001,
+                "within_cov": -2.168404344971009e-19
+              },
+              "APL": {
+                "mean": 0.3868,
+                "var": 0.31118576,
+                "independent": 0.31194486,
+                "within_cov": -0.0007591000000000125
+              },
+              "DAN": {
+                "mean": 0.2425,
+                "var": 0.21949375,
+                "independent": 0.22128659,
+                "within_cov": -0.0017928400000000178
+              },
+              "KC": {
+                "mean": 1.239,
+                "var": 2.777279,
+                "independent": 1.20822594,
+                "within_cov": 1.56905306
+              },
+              "optic": {
+                "mean": 1.9853,
+                "var": 29.237483909999998,
+                "independent": 1.9795163900000001,
+                "within_cov": 27.257967519999998
+              },
+              "central": {
+                "mean": 151.5217,
+                "var": 419.88492910999776,
+                "independent": 134.46823785,
+                "within_cov": 285.4166912599977
+              },
+              "rest": {
+                "mean": 9.9104,
+                "var": 12.212971840000023,
+                "independent": 9.24349058,
+                "within_cov": 2.9694812600000233
+              }
+            },
+            "pairs": {
+              "MN9:APL": -4.151999999999997e-05,
+              "MN9:DAN": 6.050000000000001e-05,
+              "MN9:KC": -0.00013460000000000013,
+              "MN9:optic": -0.0007794199999999999,
+              "MN9:central": -0.003130380000000016,
+              "MN9:rest": 2.5439999999999838e-05,
+              "APL:DAN": 0.0033010000000000123,
+              "APL:KC": 0.0395548,
+              "APL:optic": 0.01758596000000001,
+              "APL:central": 0.9673064399999944,
+              "APL:rest": -0.004842719999999634,
+              "DAN:KC": 0.008742499999999931,
+              "DAN:optic": 0.03496474999999999,
+              "DAN:central": 0.402587749999995,
+              "DAN:rest": -0.0049719999999999764,
+              "KC:optic": -0.017586700000000288,
+              "KC:central": 2.55931369999999,
+              "KC:rest": 0.040214399999999983,
+              "optic:central": 2.267368989999966,
+              "optic:rest": 1.1327828800000006,
+              "central:rest": 6.838444320000008
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9929877987453125,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00742215393936771,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.4,
+          "block_means_hz": {
+            "MN9": 1.4,
+            "APL": 193.4,
+            "DAN": 0.6717451523545706,
+            "KC": 0.23932779602086152,
+            "optic": 0.0256071921474545,
+            "central": 5.703594820447188,
+            "rest": 0.3417025824914664
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.0140912565068776,
+            "5": 4.501475216332679,
+            "10": 4.344661848795696,
+            "50": 6.366339691344459,
+            "100": 6.868499948019104
+          },
+          "covariance": {
+            "F": 3.0140912565068776,
+            "independent": 147.54669491,
+            "covariance_term": 351.10335692999524,
+            "covariance_fraction": 0.7041077317337887,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0012,
+                "var": 0.00119856,
+                "independent": 0.00119856,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38775,
+                "var": 0.31619993750000003,
+                "independent": 0.3125214075,
+                "within_cov": 0.003678530000000013
+              },
+              "DAN": {
+                "mean": 0.2463,
+                "var": 0.22753631000000002,
+                "independent": 0.22459194499999996,
+                "within_cov": 0.00294436500000006
+              },
+              "KC": {
+                "mean": 1.29635,
+                "var": 2.9541266774999997,
+                "independent": 1.2638165925,
+                "within_cov": 1.6903100849999997
+              },
+              "optic": {
+                "mean": 1.6898,
+                "var": 22.36747596,
+                "independent": 1.685676645,
+                "within_cov": 20.681799315
+              },
+              "central": {
+                "mean": 151.90995,
+                "var": 427.64944099749846,
+                "independent": 134.8192363675,
+                "within_cov": 292.83020462999843
+              },
+              "rest": {
+                "mean": 9.90825,
+                "var": 12.022331937499985,
+                "independent": 9.2396533925,
+                "within_cov": 2.7826785449999853
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.00016529999999999995,
+              "MN9:DAN": 4.440000000000032e-06,
+              "MN9:KC": -0.00020561999999999967,
+              "MN9:optic": -0.00062776,
+              "MN9:central": 0.0017580600000000057,
+              "MN9:rest": 0.0010100999999999999,
+              "APL:DAN": 0.00559717500000001,
+              "APL:KC": 0.04594028750000001,
+              "APL:optic": -0.011069949999999995,
+              "APL:central": 1.101016887500002,
+              "APL:rest": -0.02817393750000008,
+              "DAN:KC": 0.022408995000000043,
+              "DAN:optic": -0.0003477399999999853,
+              "DAN:central": 0.6093293149999965,
+              "DAN:rest": 0.0017980250000002584,
+              "KC:optic": 0.06517777000000002,
+              "KC:central": 3.5546863175,
+              "KC:rest": 0.015890112500001052,
+              "optic:central": 2.754466490000027,
+              "optic:rest": 1.0969891500000024,
+              "central:rest": 7.320387912499882
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9578090846447566,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007429366916956989,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.2,
+          "block_means_hz": {
+            "MN9": 1.2,
+            "APL": 193.875,
+            "DAN": 0.6822714681440443,
+            "KC": 0.2504056403322387,
+            "optic": 0.02179571515174967,
+            "central": 5.718209365354212,
+            "rest": 0.3416284522290797
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w085-s2.npz",
+      "n_spikes": 5057737,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w085-s3",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.85,
+      "clamp": false,
+      "seed": 3,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.4714681440443213,
+        "ER": 0.09892086330935251,
+        "KC": 0.13998454703496233,
+        "ascending": 0.045921450151057405,
+        "central": 3.5382716049382714,
+        "descending": 1.5583525789068513,
+        "endocrine": 0.003947368421052632,
+        "motor": 1.0849056603773586,
+        "optic": 0.022764384939828967,
+        "sensory": 0.20510060546755549,
+        "visual_centrifugal": 0.6988549618320611,
+        "visual_projection": 0.04481559667204769
+      },
+      "F": 62.94996492446038,
+      "b": 0.0022143841199085395,
+      "stability_ratio": 0.02352818765322911,
+      "first_central_hz": 0.13617886178861788,
+      "last_central_hz": 5.787902740138512,
+      "settled_central_hz": 0.13617886178861788,
+      "max_rolling_central_hz": 5.804012345679013,
+      "ignited": true,
+      "mn9_hz": 2.7,
+      "pools": "free",
+      "wall_s": 1489.565866514,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 48.21117929091712,
+            "5": 230.546287101767,
+            "10": 456.272793015537,
+            "50": 2257.6472263698356,
+            "100": 4507.064207671234
+          },
+          "covariance": {
+            "F": 48.21117929091712,
+            "independent": 110.38988569,
+            "covariance_term": 5645.991173820001,
+            "covariance_fraction": 0.9808230406311225,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0024,
+                "var": 0.0023942399999999997,
+                "independent": 0.0023942399999999997,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.2741,
+                "var": 0.25436919,
+                "independent": 0.23650938999999999,
+                "within_cov": 0.017859800000000037
+              },
+              "DAN": {
+                "mean": 0.1889,
+                "var": 0.18441679,
+                "independent": 0.17796906999999995,
+                "within_cov": 0.006447720000000046
+              },
+              "KC": {
+                "mean": 0.8482,
+                "var": 2.23155676,
+                "independent": 0.83377206,
+                "within_cov": 1.3977847
+              },
+              "optic": {
+                "mean": 2.0612,
+                "var": 25.432054559999997,
+                "independent": 2.0551459999999997,
+                "within_cov": 23.376908559999997
+              },
+              "central": {
+                "mean": 108.7164,
+                "var": 4847.955371040001,
+                "independent": 100.11445238,
+                "within_cov": 4747.840918660001
+              },
+              "rest": {
+                "mean": 7.3081,
+                "var": 27.57157439000001,
+                "independent": 6.96964255,
+                "within_cov": 20.60193184000001
+              }
+            },
+            "pairs": {
+              "MN9:APL": -5.7839999999999975e-05,
+              "MN9:DAN": -0.00025336,
+              "MN9:KC": 0.0006643200000000004,
+              "MN9:optic": -0.002246879999999999,
+              "MN9:central": -0.01791935999999994,
+              "MN9:rest": 0.005560560000000003,
+              "APL:DAN": 0.017422509999999995,
+              "APL:KC": 0.12020838,
+              "APL:optic": 0.1743250799999999,
+              "APL:central": 12.487834759999998,
+              "APL:rest": 0.72234979,
+              "DAN:KC": 0.04977502,
+              "DAN:optic": 0.11043932000000001,
+              "DAN:central": 6.171572040000001,
+              "DAN:rest": 0.37249990999999993,
+              "KC:optic": 0.3628901600000003,
+              "KC:central": 38.34674952000002,
+              "KC:rest": 2.300269580000001,
+              "optic:central": 69.96775632,
+              "optic:rest": 5.40814428,
+              "central:rest": 289.7766771600001
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 45.952269900326066,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00494810262624514,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 2.4,
+          "block_means_hz": {
+            "MN9": 2.4,
+            "APL": 137.05,
+            "DAN": 0.5232686980609419,
+            "KC": 0.16384006181186014,
+            "optic": 0.026586180654980716,
+            "central": 4.092313483399835,
+            "rest": 0.25197738165017414
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.034523622977011,
+            "5": 4.497172869442786,
+            "10": 4.2009598288525485,
+            "50": 6.399198800176894,
+            "100": 7.985433050000109
+          },
+          "covariance": {
+            "F": 3.034523622977011,
+            "independent": 147.413580635,
+            "covariance_term": 354.21654007499683,
+            "covariance_fraction": 0.7061309228673233,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0011,
+                "var": 0.00109879,
+                "independent": 0.00109879,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38685,
+                "var": 0.3107970775,
+                "independent": 0.3119788875,
+                "within_cov": -0.0011818100000000054
+              },
+              "DAN": {
+                "mean": 0.24435,
+                "var": 0.22124307749999997,
+                "independent": 0.22296739750000003,
+                "within_cov": -0.001724320000000057
+              },
+              "KC": {
+                "mean": 1.2557,
+                "var": 2.8479175099999994,
+                "independent": 1.2246361,
+                "within_cov": 1.6232814099999995
+              },
+              "optic": {
+                "mean": 1.7731,
+                "var": 22.54971639,
+                "independent": 1.76850921,
+                "within_cov": 20.78120718
+              },
+              "central": {
+                "mean": 151.73345,
+                "var": 432.39080109749557,
+                "independent": 134.64112624249998,
+                "within_cov": 297.7496748549956
+              },
+              "rest": {
+                "mean": 9.91315,
+                "var": 12.292607077499994,
+                "independent": 9.2432640075,
+                "within_cov": 3.0493430699999937
+              }
+            },
+            "pairs": {
+              "MN9:APL": -2.5535000000000032e-05,
+              "MN9:DAN": -0.00016878500000000002,
+              "MN9:KC": -8.127000000000026e-05,
+              "MN9:optic": 0.00024959000000000005,
+              "MN9:central": 0.002093204999999987,
+              "MN9:rest": 0.0022955349999999996,
+              "APL:DAN": 0.0027732024999999882,
+              "APL:KC": 0.04178245499999994,
+              "APL:optic": 0.009476264999999984,
+              "APL:central": 1.1149148674999978,
+              "APL:rest": -0.01670207750000019,
+              "DAN:KC": 0.006019704999999986,
+              "DAN:optic": 0.003993015000000044,
+              "DAN:central": 0.47343149249999783,
+              "DAN:rest": 0.020971797499999667,
+              "KC:optic": -0.004381669999999893,
+              "KC:central": 3.277756834999991,
+              "KC:rest": -0.03229245500000033,
+              "optic:central": 1.7050698049999937,
+              "optic:rest": 1.0928937350000005,
+              "central:rest": 7.807900132499981
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9651330259267734,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007400515006599874,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.1,
+          "block_means_hz": {
+            "MN9": 1.1,
+            "APL": 193.425,
+            "DAN": 0.6768698060941828,
+            "KC": 0.24255360247247443,
+            "optic": 0.022870151814159863,
+            "central": 5.711565534894225,
+            "rest": 0.3417974002689377
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w085-s3.npz",
+      "n_spikes": 4514167,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w090-s1",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": false,
+      "seed": 1,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6753462603878116,
+        "ER": 0.24532374100719423,
+        "KC": 0.25045393084798145,
+        "ascending": 0.10237375917134225,
+        "central": 5.890210027100271,
+        "descending": 2.453887605850654,
+        "endocrine": 0.046052631578947366,
+        "motor": 1.8094339622641509,
+        "optic": 0.06732319519147674,
+        "sensory": 0.33738609259372515,
+        "visual_centrifugal": 1.1057251908396946,
+        "visual_projection": 0.08966844654166149
+      },
+      "F": 3.2306764790449427,
+      "b": 0.002048485635355131,
+      "stability_ratio": 0.9979841816034102,
+      "first_central_hz": 5.851174345076784,
+      "last_central_hz": 5.862993074375188,
+      "settled_central_hz": 5.851174345076784,
+      "max_rolling_central_hz": 5.967931345980126,
+      "ignited": false,
+      "mn9_hz": 1.5,
+      "pools": "free",
+      "wall_s": 1516.520014952,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.217549554406849,
+            "5": 6.031294069620485,
+            "10": 7.064097824372168,
+            "50": 12.097940114670816,
+            "100": 14.418653789239054
+          },
+          "covariance": {
+            "F": 3.217549554406849,
+            "independent": 155.70061546,
+            "covariance_term": 403.1188865800053,
+            "covariance_fraction": 0.7213758380092227,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0015,
+                "var": 0.00149775,
+                "independent": 0.0014977500000000002,
+                "within_cov": -2.168404344971009e-19
+              },
+              "APL": {
+                "mean": 0.3874,
+                "var": 0.31612123999999997,
+                "independent": 0.31231454000000003,
+                "within_cov": 0.0038066999999999407
+              },
+              "DAN": {
+                "mean": 0.2427,
+                "var": 0.22519671000000002,
+                "independent": 0.22147633,
+                "within_cov": 0.003720380000000023
+              },
+              "KC": {
+                "mean": 1.2989,
+                "var": 2.9387587899999996,
+                "independent": 1.26708887,
+                "within_cov": 1.6716699199999996
+              },
+              "optic": {
+                "mean": 5.1995,
+                "var": 64.07949975,
+                "independent": 5.18436519,
+                "within_cov": 58.895134559999995
+              },
+              "central": {
+                "mean": 156.0413,
+                "var": 437.0061943099972,
+                "independent": 138.87519253,
+                "within_cov": 298.13100177999723
+              },
+              "rest": {
+                "mean": 10.5073,
+                "var": 12.778946709999985,
+                "independent": 9.83868025,
+                "within_cov": 2.940266459999986
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.0002811000000000001,
+              "MN9:DAN": 3.5950000000000034e-05,
+              "MN9:KC": -0.00014835,
+              "MN9:optic": 0.00340075,
+              "MN9:central": 0.0020380499999999857,
+              "MN9:rest": 0.0023390499999999988,
+              "APL:DAN": -0.00042198000000000235,
+              "APL:KC": 0.035506139999999964,
+              "APL:optic": 0.002813700000000363,
+              "APL:central": 0.9729003799999916,
+              "APL:rest": 0.011071979999999648,
+              "DAN:KC": 0.030956970000000028,
+              "DAN:optic": 0.03748135000000019,
+              "DAN:central": 0.6627764899999988,
+              "DAN:rest": 0.01817828999999982,
+              "KC:optic": 0.16396945000000063,
+              "KC:central": 3.2392554300000143,
+              "KC:rest": 0.12076803000000069,
+              "optic:central": 5.035560649999979,
+              "optic:rest": 2.395493649999999,
+              "central:rest": 8.002948509999896
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0515302520863492,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007515922648028333,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.5,
+          "block_means_hz": {
+            "MN9": 1.5,
+            "APL": 193.7,
+            "DAN": 0.6722991689750693,
+            "KC": 0.25089820359281434,
+            "optic": 0.06706522720530382,
+            "central": 5.8737220507415495,
+            "rest": 0.3622832120815088
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.0807515710144946,
+            "5": 5.0680031720088135,
+            "10": 5.621925981713347,
+            "50": 9.499207961273049,
+            "100": 10.927375422265854
+          },
+          "covariance": {
+            "F": 3.0807515710144946,
+            "independent": 154.0722121275,
+            "covariance_term": 375.9161042500012,
+            "covariance_fraction": 0.709291304418573,
+            "blocks": {
+              "MN9": {
+                "mean": 0.00165,
+                "var": 0.0016472775,
+                "independent": 0.0016472775,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3891,
+                "var": 0.31570119,
+                "independent": 0.31335159,
+                "within_cov": 0.0023496000000000072
+              },
+              "DAN": {
+                "mean": 0.24185,
+                "var": 0.2208585775,
+                "independent": 0.2206907525,
+                "within_cov": 0.00016782499999998257
+              },
+              "KC": {
+                "mean": 1.32525,
+                "var": 2.9621624375,
+                "independent": 1.2920818775000003,
+                "within_cov": 1.6700805599999997
+              },
+              "optic": {
+                "mean": 4.26165,
+                "var": 45.2679892775,
+                "independent": 4.2532990675,
+                "within_cov": 41.01469021
+              },
+              "central": {
+                "mean": 155.4224,
+                "var": 435.1282782399976,
+                "independent": 138.268485945,
+                "within_cov": 296.8597922949976
+              },
+              "rest": {
+                "mean": 10.39025,
+                "var": 12.744354937500006,
+                "independent": 9.7226556175,
+                "within_cov": 3.021699320000007
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.000142015,
+              "MN9:DAN": 5.094749999999998e-05,
+              "MN9:KC": -0.0005866624999999999,
+              "MN9:optic": -0.0027817225,
+              "MN9:central": -0.009796959999999993,
+              "MN9:rest": 0.0016560875000000003,
+              "APL:DAN": 0.002996164999999995,
+              "APL:KC": 0.05024522499999995,
+              "APL:optic": -0.010858015000000165,
+              "APL:central": 1.044944159999993,
+              "APL:rest": -0.008196274999999531,
+              "DAN:KC": 0.019638287499999962,
+              "DAN:optic": 0.01736994749999976,
+              "DAN:central": 0.5351925599999916,
+              "DAN:rest": 0.020768037499999892,
+              "KC:optic": 0.07174833749999898,
+              "KC:central": 3.0350143999999943,
+              "KC:rest": -0.09922881249999982,
+              "optic:central": 2.7998290399999632,
+              "optic:rest": 1.6930410874999993,
+              "central:rest": 7.512758399999711
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0221886802990137,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.00747985776008194,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.65,
+          "block_means_hz": {
+            "MN9": 1.65,
+            "APL": 194.55,
+            "DAN": 0.6699445983379502,
+            "KC": 0.2559880239520958,
+            "optic": 0.05496846341369036,
+            "central": 5.850425355717835,
+            "rest": 0.3582474226804124
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w090-s1.npz",
+      "n_spikes": 5461603,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w090-s2",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": false,
+      "seed": 2,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6850415512465374,
+        "ER": 0.22122302158273383,
+        "KC": 0.2569828085763956,
+        "ascending": 0.09926629261976694,
+        "central": 5.876144233664559,
+        "descending": 2.435411855273287,
+        "endocrine": 0.03289473684210527,
+        "motor": 1.8113207547169812,
+        "optic": 0.05762617859123683,
+        "sensory": 0.3389578619044707,
+        "visual_centrifugal": 1.0490458015267177,
+        "visual_projection": 0.08778095119831118
+      },
+      "F": 3.2477387767197285,
+      "b": 0.0021494673216050316,
+      "stability_ratio": 1.003001587936844,
+      "first_central_hz": 5.848501957241795,
+      "last_central_hz": 5.830999698885877,
+      "settled_central_hz": 5.848501957241795,
+      "max_rolling_central_hz": 5.980615778380006,
+      "ignited": false,
+      "mn9_hz": 1.2,
+      "pools": "free",
+      "wall_s": 1527.265777238,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.234488501550915,
+            "5": 5.787937414870288,
+            "10": 6.624082415596231,
+            "50": 12.276383138390708,
+            "100": 16.356256887726605
+          },
+          "covariance": {
+            "F": 3.234488501550915,
+            "independent": 154.93888633,
+            "covariance_term": 404.29803006000026,
+            "covariance_fraction": 0.7229458896773745,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0012,
+                "var": 0.00119856,
+                "independent": 0.00119856,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3891,
+                "var": 0.31370119,
+                "independent": 0.31334958999999996,
+                "within_cov": 0.000351600000000063
+              },
+              "DAN": {
+                "mean": 0.2468,
+                "var": 0.22908975999999998,
+                "independent": 0.22569299999999998,
+                "within_cov": 0.0033967599999999987
+              },
+              "KC": {
+                "mean": 1.3331,
+                "var": 3.0073443900000005,
+                "independent": 1.29981517,
+                "within_cov": 1.7075292200000005
+              },
+              "optic": {
+                "mean": 4.6149,
+                "var": 49.56839799000001,
+                "independent": 4.6040655699999995,
+                "within_cov": 44.964332420000005
+              },
+              "central": {
+                "mean": 155.8498,
+                "var": 446.7206399600036,
+                "independent": 138.70069038,
+                "within_cov": 308.01994958000364
+              },
+              "rest": {
+                "mean": 10.4632,
+                "var": 12.964845759999989,
+                "independent": 9.79407406,
+                "within_cov": 3.170771699999989
+              }
+            },
+            "pairs": {
+              "MN9:APL": 0.00013308,
+              "MN9:DAN": 3.8400000000000174e-06,
+              "MN9:KC": -0.0007997199999999997,
+              "MN9:optic": 0.0016621200000000004,
+              "MN9:central": 0.003980240000000024,
+              "MN9:rest": 0.001844160000000001,
+              "APL:DAN": 0.006170120000000001,
+              "APL:KC": 0.04069078999999998,
+              "APL:optic": 0.021342410000000145,
+              "APL:central": 0.9064428200000094,
+              "APL:rest": -0.013531120000000563,
+              "DAN:KC": 0.008390920000000024,
+              "DAN:optic": 0.046942680000000125,
+              "DAN:central": 0.6065693600000088,
+              "DAN:rest": -0.010417760000000165,
+              "KC:optic": 0.13757681000000055,
+              "KC:central": 2.8957316200000207,
+              "KC:rest": -0.12699192000000004,
+              "optic:central": 7.100457980000101,
+              "optic:rest": 2.431678320000003,
+              "central:rest": 9.157972640000253
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0605432702268045,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007494283715260497,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.2,
+          "block_means_hz": {
+            "MN9": 1.2,
+            "APL": 194.55,
+            "DAN": 0.6836565096952908,
+            "KC": 0.2575043461464169,
+            "optic": 0.059524822969469496,
+            "central": 5.866513588797711,
+            "rest": 0.3607626797227873
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.186858276846007,
+            "5": 5.202724829010831,
+            "10": 5.6923169111583345,
+            "50": 9.881892081638748,
+            "100": 10.446367927206019
+          },
+          "covariance": {
+            "F": 3.186858276846007,
+            "independent": 153.95013757249998,
+            "covariance_term": 393.8843443650052,
+            "covariance_fraction": 0.7189842139398921,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0016,
+                "var": 0.00159744,
+                "independent": 0.00159744,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.3875,
+                "var": 0.31444375,
+                "independent": 0.312375795,
+                "within_cov": 0.00206795500000001
+              },
+              "DAN": {
+                "mean": 0.24585,
+                "var": 0.2293077775,
+                "independent": 0.2246187825,
+                "within_cov": 0.004688995000000001
+              },
+              "KC": {
+                "mean": 1.34215,
+                "var": 3.0669833775000006,
+                "independent": 1.3088164225,
+                "within_cov": 1.7581669550000005
+              },
+              "optic": {
+                "mean": 4.31015,
+                "var": 47.90955697749999,
+                "independent": 4.3011696625,
+                "within_cov": 43.60838731499999
+              },
+              "central": {
+                "mean": 155.2518,
+                "var": 446.98359675999745,
+                "independent": 138.103818205,
+                "within_cov": 308.8797785549974
+              },
+              "rest": {
+                "mean": 10.3652,
+                "var": 12.990328960000014,
+                "independent": 9.697741265,
+                "within_cov": 3.292587695000014
+              }
+            },
+            "pairs": {
+              "MN9:APL": 7.999999999999999e-05,
+              "MN9:DAN": 0.00030663999999999995,
+              "MN9:KC": -0.00054744,
+              "MN9:optic": -0.00034624000000000026,
+              "MN9:central": 0.0008971199999999735,
+              "MN9:rest": 0.0027656799999999995,
+              "APL:DAN": 0.0011831249999999932,
+              "APL:KC": 0.03996687500000007,
+              "APL:optic": -0.00018312500000017273,
+              "APL:central": 1.0758774999999972,
+              "APL:rest": 0.030534999999999535,
+              "DAN:KC": 0.021232422500000014,
+              "DAN:optic": -0.004350377500000224,
+              "DAN:central": 0.581944969999995,
+              "DAN:rest": 0.001215580000000216,
+              "KC:optic": 0.04803217750000055,
+              "KC:central": 3.591496630000023,
+              "KC:rest": -0.00015317999999986398,
+              "optic:central": 3.1210542299999133,
+              "optic:rest": 1.5196832200000046,
+              "central:rest": 8.138642639999944
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 0.9951660993692965,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007487070737671218,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.6,
+          "block_means_hz": {
+            "MN9": 1.6,
+            "APL": 193.75,
+            "DAN": 0.6810249307479224,
+            "KC": 0.2592524628163029,
+            "optic": 0.05559403578015968,
+            "central": 5.844003613641497,
+            "rest": 0.35738371892562837
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w090-s2.npz",
+      "n_spikes": 5477542,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    },
+    {
+      "job_id": "t3d-diag-00-20260918T160017Z",
+      "commit": "82f5e04701cbb5f7d012f58bae7b2f180914a1ec",
+      "code_scope": "git:08e68ae572d092916494a0451f8da2bf7999e832d8bd28da8977cab1a79095ed",
+      "platform": "linux-x86_64",
+      "class": "development",
+      "inputs": {
+        "data/params-v0.2.yaml": "94d66110ac0b53f0554e5981cc363dca84db9f4e679b2bdb8159189fff4af98f",
+        "data/transmitters-v0.2.yaml": "5e115e9962fb56a0926c73661b3ec0878c8b5c55495289a8baeb2d0a3da45560",
+        "data/dopamine-v0.1.yaml": "71916b1981b9d647936ad4e866cbff6f66926956e4eef44a17189b600e7038f2",
+        "data/populations-v0.1.yaml": "edbf06fa05de0841aac02f8aac8d719645cf3685ef3e4b208cf9adebf31f7fd7"
+      },
+      "stage": "diag",
+      "kind": "evaluation",
+      "task_id": "long-free-w090-s3",
+      "plan_sha256": "04fe19c64e90c48f742cc692d42b3dbc6785ed3dbb1a9c52a0123a7d3d5a498b",
+      "engine_model": "lif",
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "unit": {
+        "sub_tier": "T3d",
+        "engine_model": "lif",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "g_gaba_kc": 6.0,
+        "w_bg": 0.85,
+        "pair_weights": [
+          0.85,
+          0.9
+        ],
+        "flags": [],
+        "retention": null,
+        "difference_hz": null,
+        "job_id": null,
+        "baseline": false
+      },
+      "flags": [
+        "diagnostic"
+      ],
+      "w_bg": 0.9,
+      "clamp": false,
+      "seed": 3,
+      "settle_s": 2.0,
+      "measure_s": 10.0,
+      "edge_s": 1.0,
+      "rates_hz": {
+        "DAN": 0.6800554016620499,
+        "ER": 0.19028776978417267,
+        "KC": 0.24286266177322774,
+        "ascending": 0.09935261113508848,
+        "central": 5.866117133393557,
+        "descending": 2.4022324865280984,
+        "endocrine": 0.02631578947368421,
+        "motor": 1.6839622641509433,
+        "optic": 0.05673747887887113,
+        "sensory": 0.338541985199682,
+        "visual_centrifugal": 1.0274809160305343,
+        "visual_projection": 0.08914690177573575
+      },
+      "F": 3.0884170125806967,
+      "b": 0.002062911590533688,
+      "stability_ratio": 1.0056868395773295,
+      "first_central_hz": 5.910794941282746,
+      "last_central_hz": 5.877371273712737,
+      "settled_central_hz": 5.910794941282746,
+      "max_rolling_central_hz": 5.939400782896718,
+      "ignited": false,
+      "mn9_hz": 1.9,
+      "pools": "free",
+      "wall_s": 1524.324282825,
+      "h_max": null,
+      "from_startup_s": 32.0,
+      "windows": {
+        "early": {
+          "start_s": 2.0,
+          "stop_s": 12.0,
+          "F_bins": {
+            "1": 3.123430362256872,
+            "5": 5.298785825863733,
+            "10": 6.044861466507676,
+            "50": 9.582753096291746,
+            "100": 11.335502380332912
+          },
+          "covariance": {
+            "F": 3.123430362256872,
+            "independent": 154.11920726,
+            "covariance_term": 383.35069450000327,
+            "covariance_fraction": 0.713250534113036,
+            "blocks": {
+              "MN9": {
+                "mean": 0.0021,
+                "var": 0.00209559,
+                "independent": 0.00209559,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.386,
+                "var": 0.318004,
+                "independent": 0.31145200000000006,
+                "within_cov": 0.006551999999999947
+              },
+              "DAN": {
+                "mean": 0.2473,
+                "var": 0.23694270999999997,
+                "independent": 0.22599270999999999,
+                "within_cov": 0.010949999999999988
+              },
+              "KC": {
+                "mean": 1.2649,
+                "var": 2.80092799,
+                "independent": 1.23424443,
+                "within_cov": 1.56668356
+              },
+              "optic": {
+                "mean": 4.3958,
+                "var": 48.87514236,
+                "independent": 4.38583614,
+                "within_cov": 44.489306219999996
+              },
+              "central": {
+                "mean": 155.4221,
+                "var": 435.02713158999904,
+                "independent": 138.26924497,
+                "within_cov": 296.75788661999906
+              },
+              "rest": {
+                "mean": 10.3586,
+                "var": 12.753406040000016,
+                "independent": 9.69034142,
+                "within_cov": 3.0630646200000164
+              }
+            },
+            "pairs": {
+              "MN9:APL": -0.00031059999999999996,
+              "MN9:DAN": -1.932999999999991e-05,
+              "MN9:KC": 0.00044371000000000037,
+              "MN9:optic": 0.00216882,
+              "MN9:central": 0.015013590000000021,
+              "MN9:rest": 0.003946940000000003,
+              "APL:DAN": 0.0013422000000000017,
+              "APL:KC": 0.029548600000000036,
+              "APL:optic": 0.01462119999999989,
+              "APL:central": 0.9332694000000004,
+              "APL:rest": -0.0019195999999994662,
+              "DAN:KC": 0.013590230000000036,
+              "DAN:optic": -0.005881340000000179,
+              "DAN:central": 0.6770146700000055,
+              "DAN:rest": -0.004181779999999691,
+              "KC:optic": -0.2126474200000006,
+              "KC:central": 3.3623857100000123,
+              "KC:rest": -0.08109313999999834,
+              "optic:central": 5.294132819999959,
+              "optic:rest": 1.8750661199999996,
+              "central:rest": 6.811634940000204
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0151112861234286,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007523135625617611,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 2.1,
+          "block_means_hz": {
+            "MN9": 2.1,
+            "APL": 193.0,
+            "DAN": 0.6850415512465374,
+            "KC": 0.24433069345180605,
+            "optic": 0.0566987836809452,
+            "central": 5.850414063088158,
+            "rest": 0.35715615625969727
+          }
+        },
+        "late": {
+          "start_s": 12.0,
+          "stop_s": 32.0,
+          "F_bins": {
+            "1": 3.1233865658806743,
+            "5": 4.990287559517158,
+            "10": 5.561005319886362,
+            "50": 9.626407470745503,
+            "100": 11.96569367365869
+          },
+          "covariance": {
+            "F": 3.1233865658806743,
+            "independent": 154.0727913225,
+            "covariance_term": 383.2110725549956,
+            "covariance_fraction": 0.713237635296582,
+            "blocks": {
+              "MN9": {
+                "mean": 0.00135,
+                "var": 0.0013481775,
+                "independent": 0.0013481775,
+                "within_cov": 0.0
+              },
+              "APL": {
+                "mean": 0.38795,
+                "var": 0.31584479749999994,
+                "independent": 0.31264888750000003,
+                "within_cov": 0.003195909999999913
+              },
+              "DAN": {
+                "mean": 0.24575,
+                "var": 0.22585693750000002,
+                "independent": 0.2245053525,
+                "within_cov": 0.0013515850000000162
+              },
+              "KC": {
+                "mean": 1.3237,
+                "var": 2.9331183099999993,
+                "independent": 1.29104946,
+                "within_cov": 1.6420688499999994
+              },
+              "optic": {
+                "mean": 4.31465,
+                "var": 46.50194537749999,
+                "independent": 4.3057998575,
+                "within_cov": 42.196145519999995
+              },
+              "central": {
+                "mean": 155.40045,
+                "var": 439.3902897974949,
+                "independent": 138.2586463925,
+                "within_cov": 301.1316434049949
+              },
+              "rest": {
+                "mean": 10.3458,
+                "var": 12.853622359999989,
+                "independent": 9.678793194999999,
+                "within_cov": 3.1748291649999896
+              }
+            },
+            "pairs": {
+              "MN9:APL": -2.3732500000000004e-05,
+              "MN9:DAN": 0.00016823750000000002,
+              "MN9:KC": -0.00013699500000000022,
+              "MN9:optic": 0.00032522249999999975,
+              "MN9:central": 0.003509392499999958,
+              "MN9:rest": -0.0005168300000000011,
+              "APL:DAN": 0.004311287499999997,
+              "APL:KC": 0.040920584999999954,
+              "APL:optic": 0.008731532499999917,
+              "APL:central": 1.0313454224999958,
+              "APL:rest": -0.03920311000000076,
+              "DAN:KC": 0.019950725000000002,
+              "DAN:optic": 0.022824762499999984,
+              "DAN:central": 0.6998394124999976,
+              "DAN:rest": 0.01646964999999989,
+              "KC:optic": -0.01045220500000088,
+              "KC:central": 3.289924334999995,
+              "KC:rest": 0.0483645399999979,
+              "optic:central": 2.474898407499836,
+              "optic:rest": 1.7146940299999969,
+              "central:rest": 8.204974389999961
+            },
+            "dominant_pair": "central:rest"
+          },
+          "shuffle_F_1ms": 1.0199140846844907,
+          "median_22r": {
+            "median_hz": 0.0,
+            "fraction_above_50_hz": 0.007472644782492661,
+            "passed": false,
+            "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+          },
+          "mn9_hz": 1.35,
+          "block_means_hz": {
+            "MN9": 1.35,
+            "APL": 193.975,
+            "DAN": 0.6807479224376731,
+            "KC": 0.255688622754491,
+            "optic": 0.05565207857704859,
+            "central": 5.849599111646465,
+            "rest": 0.3567148226045581
+          }
+        }
+      },
+      "npz": "results/t3d-diag-00/long-free-w090-s3.npz",
+      "n_spikes": 5469342,
+      "block_sizes": {
+        "MN9": 1,
+        "APL": 2,
+        "DAN": 361,
+        "KC": 5177,
+        "optic": 77529,
+        "central": 26566,
+        "rest": 29003
+      }
+    }
+  ],
+  "median_22r": {
+    "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz",
+    "free_pool_windows": [
+      {
+        "seed": 1,
+        "w_bg": 0.85,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.006693643202850569,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 1,
+        "w_bg": 0.85,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007407727984189153,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 2,
+        "w_bg": 0.85,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.00742215393936771,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 2,
+        "w_bg": 0.85,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007429366916956989,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 3,
+        "w_bg": 0.85,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.00494810262624514,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 3,
+        "w_bg": 0.85,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007400515006599874,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 1,
+        "w_bg": 0.9,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007515922648028333,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 1,
+        "w_bg": 0.9,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.00747985776008194,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 2,
+        "w_bg": 0.9,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007494283715260497,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 2,
+        "w_bg": 0.9,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007487070737671218,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 3,
+        "w_bg": 0.9,
+        "window": "early",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007523135625617611,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      },
+      {
+        "seed": 3,
+        "w_bg": 0.9,
+        "window": "late",
+        "median_hz": 0.0,
+        "fraction_above_50_hz": 0.007472644782492661,
+        "passed": false,
+        "rule": "2.2r: all-neuron median in [0.2, 5] Hz and <1 percent above 50 Hz"
+      }
+    ],
+    "passed": false
+  },
+  "reflex": {
+    "reflex_passed": false,
+    "reflex_violations": {
+      "a": 3.6888794541139363,
+      "b": 0.6904840631404616,
+      "c": 0.0
+    },
+    "reflex_violation": 4.379363517254398,
+    "retention": {
+      "upstream": 1.0214285714285716,
+      "extended": 0.5589285714285714
+    },
+    "a_hz": [
+      25.666666666666664,
+      28.0,
+      29.0,
+      24.0,
+      -6.0,
+      24.666666666666668
+    ],
+    "b_hz": [
+      25.666666666666664,
+      28.0,
+      29.0,
+      25.0,
+      28.0,
+      20.0,
+      24.0,
+      23.0,
+      24.666666666666668,
+      23.333333333333332
+    ],
+    "candidate_ff_hz": {
+      "upstream": [
+        58.0,
+        60.0,
+        50.0,
+        50.0,
+        57.0,
+        58.0,
+        63.0,
+        58.0,
+        59.0,
+        59.0
+      ],
+      "extended": [
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3,
+        31.3
+      ]
+    },
+    "bare_ff_hz": {
+      "upstream": [
+        50.0,
+        58.0,
+        58.0,
+        63.0,
+        48.0,
+        59.0,
+        61.0,
+        53.0,
+        62.0,
+        48.0
+      ],
+      "extended": [
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0
+      ]
+    },
+    "reflex_harmonised": false,
+    "reflex_verdicts": {
+      "original": {
+        "reflex_passed": false,
+        "mean_hz": 50.0,
+        "seed_min_hz": 40.0,
+        "reflex_violations": {
+          "a": 3.6888794541139363,
+          "b": 0.6904840631404616,
+          "c": 0.0
+        }
+      },
+      "harmonised": {
+        "reflex_passed": false,
+        "mean_hz": 28.0,
+        "seed_min_hz": 22.400000000000002,
+        "job_bare_mean": 56.0,
+        "reflex_violations": {
+          "a": 3.109060958860994,
+          "b": 0.11066556788751958,
+          "c": 0.0
+        }
+      }
+    },
+    "flags": [
+      "diagnostic"
+    ],
+    "h_max": null,
+    "diagnostic": true
+  },
+  "job_bare_mean": 56.0,
+  "t0_retention": 0.5589285714285714,
+  "t0_difference_hz": 31.3,
+  "mean_wall_per_brain_s": 46.97232719725282
+}

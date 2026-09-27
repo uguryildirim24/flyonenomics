@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Male fly brain atlas</title>
+<style>
+:root{color-scheme:light;--ink:#15283a;--muted:#566a7b;--faint:#8394a2;--rule:#dfe6eb;--paper:#f7f9fa;--card:#fff;--accent:#0f5f7a;--cx:#b8336a;--font:"Helvetica Neue",Helvetica,Arial,sans-serif}
+[hidden]{display:none!important}*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.45 var(--font);-webkit-font-smoothing:antialiased}
+header{padding:28px 44px 18px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.kicker{font-size:11px;font-weight:700;letter-spacing:2.4px;color:var(--accent);text-transform:uppercase}
+h1{font-size:40px;font-weight:600;letter-spacing:-1.2px;line-height:1.08;margin:8px 0 6px}
+h2{font-size:14px;font-weight:700;margin:0 0 8px}p{margin:0}
+.subtitle{color:var(--muted);font-size:15px;max-width:980px}
+.badge{border:1px solid #c9d6de;border-radius:20px;padding:7px 14px;font-size:12px;white-space:nowrap;color:var(--muted);background:var(--card)}
+.honest{margin:0 44px;padding:9px 14px;border-left:3px solid var(--accent);background:#eaf2f5;font-size:13px;font-weight:600;color:#1f3d4f}
+.honest span{font-weight:400;color:#3c5a6c}
+main{display:grid;grid-template-columns:minmax(0,1fr) 340px;padding:18px 44px 0;gap:32px}
+.view-top{display:flex;align-items:center;justify-content:space-between;min-height:36px;gap:12px}
+.tag{font-size:11px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
+.letter{text-transform:none;font-size:17px;letter-spacing:0;color:var(--ink);margin-right:9px}.letter:empty{display:none}
+button{font:inherit;border:1px solid #c9d6de;background:var(--card);color:var(--ink);padding:5px 12px;border-radius:6px;cursor:pointer}
+button:hover{background:#e9f0f4}button:disabled{opacity:.45;cursor:default}.buttons{display:flex;gap:6px;flex-wrap:wrap}
+.banner{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:8px 0 2px}
+.chip{display:inline-block;width:12px;height:12px;border-radius:3px;transform:translateY(1px)}
+.banner strong{font-size:22px;font-weight:600;letter-spacing:-.4px}
+.banner .detail{color:var(--muted);font-size:15px}
+.banner .when{margin-left:auto;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink)}
+#viewport{height:500px;position:relative;overflow:hidden;border-radius:10px;background:#fbfcfd;border:1px solid var(--rule)}
+canvas{display:block;width:100%;height:100%;touch-action:none}#main-canvas{cursor:grab}#main-canvas:active{cursor:grabbing}
+.scalebar{position:absolute;left:18px;bottom:14px;pointer-events:none;font-size:12px;color:#40596c}
+.scale{display:block;border-bottom:2px solid #40596c;height:6px;margin-top:4px;position:relative}
+.scale:before,.scale:after{content:"";position:absolute;bottom:-2px;height:8px;border-left:2px solid #40596c}.scale:after{right:0}
+.orient{position:absolute;right:16px;bottom:14px;font-size:11px;color:var(--faint);pointer-events:none;text-align:right}
+.note{font-size:12px;color:var(--muted)}.hint{margin-top:8px}
+#hover{min-height:22px;font-size:12px;color:#3d5b72;margin-top:2px}
+.playback{border-top:1px solid var(--rule);margin-top:12px;padding:14px 0}
+.playback-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.playback h2{margin:0}
+.dummy{font-size:11px;font-weight:700;color:#8a5a10;background:#f6ecd6;border-radius:4px;padding:4px 8px;max-width:70%}
+.condition-row{display:flex;align-items:center;gap:12px;margin:10px 0;flex-wrap:wrap}
+select{font:inherit;border:1px solid #c9d6de;background:var(--card);color:var(--ink);padding:6px;border-radius:6px;max-width:100%}#condition{min-width:300px}
+.timeline{display:flex;align-items:center;gap:12px;margin-top:10px}
+input[type=range]{flex:1;accent-color:var(--accent);min-width:20px}
+#time{min-width:64px;font-variant-numeric:tabular-nums;text-align:right}
+#series-details{margin-top:8px}
+.statbar{display:flex;gap:34px;border-top:1px solid var(--rule);padding:14px 0}
+.stat strong{font-size:22px;font-weight:600;letter-spacing:-.6px}.stat span{display:block;font-size:11px;color:var(--muted)}
+aside{border-left:1px solid var(--rule);padding-left:26px}
+#context{height:270px;position:relative}
+#context-label{position:absolute;bottom:0;left:0;font-size:11px;color:var(--muted)}
+.panel{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+.group{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:5px 0;cursor:pointer;font-size:13px}
+.group-left{display:flex;gap:9px;align-items:center}
+.swatch{height:10px;width:10px;border-radius:50%;display:inline-block;flex-shrink:0}
+.count{color:var(--muted);font-size:11px}.status{font-size:11px;color:var(--muted);text-align:right;white-space:nowrap}
+.status.rec{color:var(--accent);font-weight:700}
+.group input,.anatomy input{accent-color:var(--accent)}
+.anatomy{display:grid;grid-template-columns:1fr 1fr;gap:3px 8px;padding-top:10px;font-size:12px}.anatomy label{display:flex;align-items:center;gap:5px}
+#colorbar{margin-top:6px}#colorbar svg{display:block;width:100%;height:auto;overflow:visible}
+.key{display:flex;align-items:center;gap:8px;font-size:12px;margin-top:8px;color:var(--ink)}
+.key i{display:inline-block;width:26px;height:0;border-top:3px solid;border-radius:2px}
+#aggregate-plot{width:100%;height:auto;display:block;margin-top:4px}
+#aggregate-value{font-variant-numeric:tabular-nums;color:var(--cx);font-weight:600;font-size:13px}
+details{margin-top:12px;font-size:11px;color:var(--muted)}summary{cursor:pointer}
+footer{margin:18px 44px 0;padding:14px 0 18px;border-top:1px solid var(--rule);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:24px}
+footer p{max-width:1040px}
+.loading{position:fixed;inset:0;display:grid;place-content:center;background:var(--paper);z-index:5;font-size:18px}
+#failure{color:#ab3548;white-space:pre-wrap;max-width:800px;font-size:14px}
+.figure-only{display:none}
+/* Figure mode (#figure): the same live renderer, laid out as a clean still with no controls. */
+body.figure{background:#fff;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+body.figure header{padding:26px 48px 10px;flex:none}
+body.figure h1{font-size:34px}
+body.figure .badge,body.figure .buttons,body.figure .hint,body.figure #hover,body.figure .playback,body.figure .statbar,body.figure details,body.figure .anatomy,body.figure .group input,body.figure .interactive{display:none!important}
+body.figure .figure-only{display:block}
+body.figure main{flex:1;min-height:0;padding:10px 48px 0;grid-template-columns:minmax(0,1fr) 360px;gap:34px}
+body.figure main>section{display:flex;flex-direction:column;min-height:0}
+body.figure #viewport{flex:1;height:auto;min-height:0;background:#fff;border:0;border-radius:0}
+body.figure aside{overflow:hidden}
+body.figure .honest{margin:0 48px;flex:none}
+body.figure footer{margin:14px 48px 0;padding:12px 0 18px;flex:none}
+body.figure .group{cursor:default}
+body.figure #context{height:330px}
+body.values #viewport{background:#0b1017;border-color:#0b1017}body.values .scalebar{color:#c9d6df}body.values .scale,body.values .scale:before,body.values .scale:after{border-color:#c9d6df}body.values .orient{color:#7f93a3}
+body.figure.values #sampling,body.figure #aggregate-note{display:none}body.figure #aggregate-plot{max-height:150px}
+
+@media(max-width:900px){header{padding:20px;align-items:start}h1{font-size:30px}.badge{display:none}.honest{margin:0 20px}main{grid-template-columns:1fr;padding:16px 20px}aside{border:0;padding:0}#context{height:240px}#viewport{height:420px}footer{margin:20px}.statbar{gap:22px}.banner .when{margin-left:0}}
+@media(max-width:540px){.view-top{align-items:start;flex-direction:column}.buttons{gap:4px}button{padding:5px 8px}.timeline{gap:6px}.statbar{gap:16px}.stat strong{font-size:18px}#viewport{height:330px}.subtitle{font-size:13px}header{padding:18px}footer{display:block}}
+</style>
+</head>
+<body>
+<div class="loading" id="loading"><div>Preparing the male fly brain…</div><div id="failure"></div></div>
+<header><div><div class="kicker" id="kicker"></div><h1 id="title"></h1><p class="subtitle" id="subtitle"></p></div><div class="badge" id="badge"></div></header>
+<div class="honest" id="honest" hidden></div>
+<main>
+<section>
+<div class="view-top"><span class="tag"><b class="letter" id="view-letter"></b><span id="view-title">Brain · front view</span></span><div class="buttons"><button id="brain">Brain</button><button id="cns">Whole CNS</button><button id="reset">Reset view</button><button id="export">Save view</button></div></div>
+<div class="banner" id="banner" hidden><i class="chip" id="banner-chip"></i><strong id="banner-title"></strong><span class="detail" id="banner-detail"></span><span class="when" id="banner-time"></span></div>
+<div id="viewport"><canvas id="main-canvas" aria-label="Interactive 3D male fly brain. Drag to rotate, scroll or pinch to zoom, right-drag to pan."></canvas><div class="scalebar"><span id="scale-text">100 µm</span><span class="scale" id="scale"></span></div><div class="orient" id="orient">Front view · top of head up<br>fly's left on the right</div></div>
+<p class="note hint">Drag to rotate · scroll or pinch to zoom · right-drag to pan · hover a neuron for its name</p>
+<div id="hover">Native MaleCNS space: no template warping or mirroring</div>
+<div class="playback"><div class="playback-head"><h2>Activity playback</h2><span class="dummy" id="series-label"></span></div>
+<div class="condition-row" id="condition-row" hidden><label for="condition">Condition</label><select id="condition" aria-label="Condition"></select><span class="note" id="phase"></span></div>
+<div class="timeline"><button id="mode">Show values</button><button id="play" disabled>Play</button><input id="timeline" type="range" min="0" value="0" step="1" aria-label="Playback time" disabled><span id="time">0.00 s</span></div>
+<p class="note" id="series-details"></p></div>
+<div class="statbar"><div class="stat"><strong id="cell-count">—</strong><span>neurons shown</span></div><div class="stat"><strong id="roi-count">—</strong><span>brain-region surfaces</span></div><div class="stat"><strong>1 µm</strong><span>outline simplification</span></div><div class="stat"><strong>Offline</strong><span>everything embedded</span></div></div>
+</section>
+<aside>
+<div id="context-block"><span class="tag"><b class="letter" id="context-letter"></b><span id="context-title">Whole central nervous system</span></span><div id="context"><canvas id="context-canvas" aria-label="Whole central nervous system, for context"></canvas><div id="context-label">Brain, neck connective and nerve cord · same scale in all directions</div></div></div>
+<div class="panel" id="scale-panel" hidden><h2 id="scale-title"></h2><div id="colorbar"></div><p class="note" id="scale-note"></p>
+<div class="key"><svg id="grey-swatch" width="30" height="12" viewBox="0 0 30 12" aria-hidden="true"></svg><span id="grey-key">Grey: anatomy only, not recorded (not zero)</span></div></div>
+<div class="panel" id="legend-panel"><h2 id="legend-title">Cell groups</h2><div id="groups"></div><p class="note" id="sampling"></p><div class="anatomy" id="anatomy"></div></div>
+<div class="panel" id="aggregate-panel" hidden><h2 id="aggregate-title"></h2><p id="aggregate-value"></p><svg id="aggregate-plot" viewBox="0 0 300 140" role="img" aria-label="Central-complex dopamine group total over time, not per-cell activity"></svg><p class="note" id="aggregate-note"></p></div>
+<details><summary>What is shown?</summary><p id="explain"></p></details>
+</aside>
+</main>
+<footer><p id="attribution">MaleCNS v1.0 · Janelia Research Campus, Google Research and University of Cambridge · Berg et al., Cell (2026), doi:10.1016/j.cell.2026.08.015 · CC BY 4.0. Geometry simplified and recoloured. Rendered with Three.js (MIT).</p><p class="interactive">Male fly brain atlas<br>anatomy and activity viewer</p></footer>
+<!-- Three.js (MIT): Copyright © 2010–2023 three.js authors. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+<script>
+(async()=>{
+'use strict';
+const figure=location.hash==='#figure';if(figure)document.body.classList.add('figure');
+const bytes=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const threeURL=URL.createObjectURL(new Blob([bytes('__THREE__')],{type:'text/javascript'}));
+const THREE=await import(threeURL);
+const controlsSource=new TextDecoder().decode(bytes('__CONTROLS__')).replace("from 'three'",`from '${threeURL}'`);
+const controlsURL=URL.createObjectURL(new Blob([controlsSource],{type:'text/javascript'}));
+const {OrbitControls}=await import(controlsURL);
+const stream=new Blob([bytes('__PAYLOAD__')]).stream().pipeThrough(new DecompressionStream('gzip'));
+const data=JSON.parse(await new Response(stream).text());
+const byId=id=>document.getElementById(id), f32=s=>new Float32Array(bytes(s).buffer), u32=s=>new Uint32Array(bytes(s).buffer);
+const show=data.display, series=data.playback, hasValues=!!series.start_in_values;
+const groupLabel=id=>data.groups.find(g=>g.id===id).label;
+// Page text comes from the build's plain-language display block, never from file or record names.
+byId('kicker').textContent=show.kicker;byId('title').textContent=show.title;byId('subtitle').textContent=show.subtitle;byId('badge').textContent=show.badge;document.title=show.page_title;
+// Required plain labels: the model/input/scope lines for recorded activity, or the dummy-data warning.
+function honest(){const lines=valueMode&&show.value_honest.length?show.value_honest:show.honest;byId('honest').hidden=!lines.length;byId('honest').replaceChildren(...lines.map((line,i)=>{const s=document.createElement(i?'span':'b');s.textContent=(i?' ':'')+line;return s;}));}
+byId('explain').textContent=show.explain;
+const scene=new THREE.Scene();const lightStage=new THREE.Color(figure?'#ffffff':'#fbfcfd'),darkStage=new THREE.Color('#0b1017');scene.background=lightStage;
+scene.add(new THREE.HemisphereLight(0xffffff,0xc3d0db,2.0));
+const key=new THREE.DirectionalLight(0xffffff,2.4);key.position.set(-250,400,800);scene.add(key);
+const fill=new THREE.DirectionalLight(0xd6e9f6,1.3);fill.position.set(350,-100,-300);scene.add(fill);
+const groups={}, cellObjects=[], meshObjects=[];
+const anatomyOpacity={CX_DAN:.85,ER:.5,TuBu:.7,MB_DAN:.22,KC:.4};
+for(const id of ['shell','cx','mb','optic','visual','vnc',...data.groups.map(g=>g.id)]){groups[id]=new THREE.Group();scene.add(groups[id]);}
+for(const mesh of data.meshes){
+ const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(f32(mesh.vertices),3));geometry.setIndex(new THREE.BufferAttribute(u32(mesh.faces),1));geometry.computeVertexNormals();
+ const material=new THREE.MeshPhongMaterial({color:mesh.color,transparent:true,opacity:mesh.opacity,depthWrite:false,side:THREE.FrontSide,shininess:25});
+ const object=new THREE.Mesh(geometry,material);object.name=mesh.name;object.renderOrder=1;object.userData.opacity=mesh.opacity;meshObjects.push(object);
+ // Do not superimpose the distant nerve cord behind the front brain view.
+ if(mesh.group==='vnc'||mesh.name==='VNC'||mesh.name==='CV')object.layers.set(1);
+ groups[mesh.group].add(object);
+}
+for(const cell of data.cells){
+ const group=data.groups.find(g=>g.id===cell.group), geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(f32(cell.points),3));
+ const material=new THREE.LineBasicMaterial({color:group.color,transparent:true,opacity:anatomyOpacity[cell.group],depthWrite:false});
+ const object=new THREE.LineSegments(geometry,material);object.userData=cell;object.renderOrder=2;groups[cell.group].add(object);cellObjects.push(object);
+}
+const renderers=[];
+function renderer(canvas){const r=new THREE.WebGLRenderer({canvas,antialias:true,preserveDrawingBuffer:true,alpha:false});r.setPixelRatio(Math.min(devicePixelRatio,2));r.outputColorSpace=THREE.SRGBColorSpace;renderers.push(r);return r;}
+const main=renderer(byId('main-canvas')), context=renderer(byId('context-canvas'));
+const camera=new THREE.OrthographicCamera(-420,420,250,-250,1,5000);
+const contextCamera=new THREE.OrthographicCamera(-520,520,650,-650,1,5000);contextCamera.layers.enable(1);
+// Native +x is the fly's left. The front brain view looks along native +z,
+// with native -y upward. The whole-CNS view instead puts native -z upward.
+contextCamera.position.set(110,-1650,-170);contextCamera.up.set(0,0,1);contextCamera.lookAt(0,0,-290);
+const controls=new OrbitControls(camera,main.domElement);controls.enableDamping=false;controls.minZoom=.35;controls.maxZoom=12;
+let view='brain', halfWidth=480, valueMode=false, playing=false, frame=0, lastStep=0, dirty=true;
+const figureZoom=figure?(hasValues?show.figure_zoom:1):1;
+let brainCentreY=-30;  // a playback figure is centred on the recorded cells instead
+function preset(name){view=name;camera.zoom=name==='brain'?figureZoom:1;camera.layers.set(0);if(name==='cns')camera.layers.enable(1);
+ if(name==='brain'){camera.up.set(0,1,0);camera.position.set(0,brainCentreY,1400);controls.target.set(0,brainCentreY,0);}else{camera.up.set(0,0,1);camera.position.set(110,-1650,-170);controls.target.set(0,0,-290);}
+ camera.lookAt(controls.target);controls.update();byId('view-title').textContent=name==='brain'?show.view_brain:'Whole central nervous system';byId('orient').hidden=name!=='brain';resize();}
+function resize(){const w=byId('viewport').clientWidth,h=byId('viewport').clientHeight;main.setSize(w,h,false);halfWidth=view==='cns'?Math.max(450,640*w/h):Math.max(400,215*w/h);camera.left=-halfWidth;camera.right=halfWidth;camera.top=halfWidth*h/w;camera.bottom=-camera.top;camera.updateProjectionMatrix();const cw=byId('context').clientWidth,ch=byId('context').clientHeight;context.setSize(cw,ch,false);contextCamera.top=630;contextCamera.bottom=-710;contextCamera.left=-670*cw/ch;contextCamera.right=670*cw/ch;contextCamera.updateProjectionMatrix();dirty=true;}
+const scalePx=()=>100*byId('viewport').clientWidth*camera.zoom/(camera.right-camera.left);
+function scale(){byId('scale').style.width=scalePx()+'px';}
+function render(){scale();main.render(scene,camera);context.render(scene,contextCamera);dirty=false;}
+controls.addEventListener('change',()=>{dirty=true;});new ResizeObserver(resize).observe(byId('viewport'));window.addEventListener('resize',resize);
+const anatomyGroups=series.anatomy_only_groups||[];
+for(const group of data.groups){
+ const label=document.createElement('label');label.className='group';
+ label.innerHTML=`<span class="group-left"><input type="checkbox" checked data-group="${group.id}"><i class="swatch" style="background:${group.color}"></i><span><span class="name"></span><br><span class="count"></span></span></span>`;
+ label.querySelector('input').setAttribute('aria-label','Show '+group.label);label.querySelector('.name').textContent=group.label;
+ label.querySelector('.count').textContent=group.shown===group.total?`${group.total.toLocaleString()} cells, all shown`:`${group.shown} of ${group.total.toLocaleString()} cells shown`;
+ label.querySelector('input').addEventListener('change',e=>{groups[group.id].visible=e.target.checked;dirty=true;});byId('groups').append(label);
+}
+for(const [id,label] of [['shell','Brain and cord outline'],['cx','Central complex'],['mb','Mushroom bodies'],['optic','Optic lobes'],['visual','Tubercle and bulb'],['vnc','Nerve-cord regions']]){
+ const el=document.createElement('label');el.innerHTML=`<input type="checkbox" checked data-group="${id}"><span></span>`;el.querySelector('span').textContent=label;el.querySelector('input').addEventListener('change',e=>{groups[id].visible=e.target.checked;dirty=true;});byId('anatomy').append(el);
+}
+const kc=data.groups.find(g=>g.id==='KC');byId('sampling').textContent=`Kenyon cells: up to 8 per cell type and side (${kc.shown} of ${kc.total.toLocaleString()}), a sample for shape, not density. Every other group is shown in full.`;
+byId('cell-count').textContent=data.cells.length.toLocaleString();byId('roi-count').textContent=data.meshes.length;
+const timeline=byId('timeline');timeline.max=series.times_s.length-1;
+const conditions=series.conditions,conditionSelect=byId('condition');let condition=conditions[0];
+const valueIndex=new Map(series.body_ids.map((id,i)=>[id,i]));
+const cellColumns=data.cells.map(c=>valueIndex.get(c.body_id));
+const recordedGroups=data.groups.filter(g=>data.cells.some((c,i)=>c.group===g.id&&cellColumns[i]!==undefined)).map(g=>g.id);
+const conditionText=id=>show.conditions[id];
+byId('condition-row').hidden=!hasValues;
+for(const entry of conditions){const option=document.createElement('option');option.value=entry.id;const t=conditionText(entry.id);option.textContent=t.detail?`${t.title} · ${t.detail}`:t.title;conditionSelect.append(option);}
+byId('series-label').textContent=show.series_label;
+// Value colour: a colour-blind-safe sequential scale (inferno, from 0.1 to 1) on a dark
+// stage, so overlapping quiet cells stay dark and busy cells stand out. One fixed range over every
+// condition and time. Unrecorded cells stay grey.
+const stops=['#160b39','#420a68','#6a176e','#932667','#bc3754','#dd513a','#f37819','#fca50a','#f6d746','#fcffa4'].map(c=>new THREE.Color(c));
+const signedDelta=series.unit==='Hz change from control';
+const signedMax=Math.max(Math.abs(series.minimum),Math.abs(series.maximum),1);
+const ramp=t=>{t=Math.min(1,Math.max(0,t));if(signedDelta){const z=2*t-1;return new THREE.Color('#aab5ba').lerp(new THREE.Color(z>=0?'#cf3f34':'#3475b6'),Math.abs(z));}t*=stops.length-1;const i=Math.min(stops.length-2,Math.floor(t));return stops[i].clone().lerp(stops[i+1],t-i);};
+const scaleSpec=show.scale, span=series.maximum-series.minimum;
+const norm=v=>signedDelta?.5+.5*Math.asinh(v)/Math.asinh(signedMax):span?(v-series.minimum)/span:.5;
+const levels=scaleSpec.levels;
+const valueColour=v=>levels?ramp(Math.round(norm(v)*(levels.length-1))/(levels.length-1)):ramp(norm(v));
+const valueOpacity=v=>signedDelta?.08+.92*Math.abs(2*norm(v)-1):.3+.7*norm(v);
+const grey=show.anatomy_only;
+const svgNS='http://www.w3.org/2000/svg';
+function svgEl(parent,tag,attrs,text){const n=document.createElementNS(svgNS,tag);for(const [k,v] of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;parent.append(n);return n;}
+function colorbar(){const svg=document.createElementNS(svgNS,'svg'),x0=4,x1=296;svg.setAttribute('viewBox','0 0 300 58');svgEl(svg,'rect',{x:0,y:0,width:300,height:26,rx:4,fill:'#'+darkStage.getHexString()});
+ if(levels){const w=(x1-x0)/levels.length;levels.forEach((level,i)=>{svgEl(svg,'rect',{x:x0+i*w+.75,y:4,width:w-1.5,height:18,fill:'#'+valueColour(level).getHexString(),'fill-opacity':valueOpacity(level)});svgEl(svg,'text',{x:x0+i*w+w/2,y:38,'text-anchor':'middle','font-size':11,fill:'#40596c'},level.toFixed(0));});}
+ else{const grad=svgEl(svgEl(svg,'defs',{}),'linearGradient',{id:'cb'});for(let i=0;i<=20;i++)svgEl(grad,'stop',{offset:i/20,'stop-color':'#'+ramp(i/20).getHexString()});
+  svgEl(svg,'rect',{x:x0,y:4,width:x1-x0,height:18,fill:'url(#cb)'});for(const [t,label] of scaleSpec.ticks)svgEl(svg,'text',{x:x0+(x1-x0)*norm(t),y:38,'text-anchor':'middle','font-size':11,fill:'#40596c'},label);}
+ svgEl(svg,'text',{x:x0,y:54,'font-size':11,fill:'#566a7b'},scaleSpec.low);svgEl(svg,'text',{x:x1,y:54,'font-size':11,fill:'#566a7b','text-anchor':'end'},scaleSpec.high);
+ byId('colorbar').replaceChildren(svg);}
+byId('scale-title').textContent=scaleSpec.title;byId('scale-note').textContent=scaleSpec.note;colorbar();
+svgEl(byId('grey-swatch'),'rect',{width:30,height:12,rx:3,fill:'#'+darkStage.getHexString()});svgEl(byId('grey-swatch'),'rect',{x:4,y:5,width:22,height:2.5,fill:grey.color,'fill-opacity':Math.min(1,grey.opacity*4)});
+if(anatomyGroups.length)byId('grey-key').textContent='Grey: '+anatomyGroups.map(groupLabel).join(', ')+'. Anatomy only, not recorded (not zero).';
+for(const g of data.groups){const label=byId('groups').querySelector(`[data-group="${g.id}"]`).closest('label');const note=document.createElement('span');note.className='status'+(recordedGroups.includes(g.id)&&anatomyGroups.length?' rec':'');note.textContent=!anatomyGroups.length?'':anatomyGroups.includes(g.id)?(g.id==='CX_DAN'&&series.aggregate_specs.length?'group total below':'anatomy only'):'recorded per cell';label.append(note);}
+const seriesDetails=()=>show.method;
+const aggregateSpec=series.aggregate_specs.find(s=>s.id==='CX_DAN');
+if(aggregateSpec){byId('aggregate-panel').hidden=false;byId('aggregate-title').textContent=show.aggregate.title;byId('aggregate-note').textContent=show.aggregate.note;}
+function updateAggregate(){if(!aggregateSpec)return;const values=condition.aggregates.CX_DAN,svg=byId('aggregate-plot'),E=series.bin_edges_s,t0=E[0],t1=E.at(-1),max=aggregateSpec.maximum||1;
+ const X0=40,X1=292,Y0=14,Y1=104,x=t=>X0+(X1-X0)*(t-t0)/(t1-t0),y=v=>Y1-(Y1-Y0)*v/max;
+ svg.replaceChildren();const el=(tag,attrs,text)=>svgEl(svg,tag,attrs,text);
+ el('path',{d:`M${X0} ${Y0}V${Y1}H${X1}`,fill:'none',stroke:'#aebcc6'});
+ // Recorded bins are drawn as steps: each value holds for its whole bin, with no interpolation.
+ el('path',{d:values.map((v,i)=>`${i?'L':'M'}${x(E[i]).toFixed(1)} ${y(v).toFixed(1)}H${x(E[i+1]).toFixed(1)}`).join(''),fill:'none',stroke:'#b8336a','stroke-width':1.6,'stroke-linejoin':'round'});
+ el('rect',{x:x(E[frame]),y:Y0,width:Math.max(1.5,x(E[frame+1])-x(E[frame])),height:Y1-Y0,fill:'#15283a','fill-opacity':.08});
+ el('circle',{cx:(x(E[frame])+x(E[frame+1]))/2,cy:y(values[frame]),r:3.4,fill:'#b8336a'});
+ for(const [px,py,text,anchor] of [[X0-5,Y0+4,max.toFixed(0),'end'],[X0-5,Y1+4,'0','end'],[X0,Y1+16,t0.toFixed(1),'start'],[X1,Y1+16,t1.toFixed(1)+' s','end']])el('text',{x:px,y:py,fill:'#566a7b','font-size':11,'text-anchor':anchor},text);
+ el('text',{x:10,y:(Y0+Y1)/2,fill:'#566a7b','font-size':10,'text-anchor':'middle',transform:`rotate(-90 10 ${(Y0+Y1)/2})`},aggregateSpec.unit);
+ el('text',{x:(X0+X1)/2,y:Y1+30,fill:'#566a7b','font-size':10,'text-anchor':'middle'},show.time_axis);
+ byId('aggregate-value').textContent=`${values[frame].toFixed(0)} ${aggregateSpec.unit} in this bin · whole group, not per cell`;
+}
+function when(){const edges=series.bin_edges_s;return edges?`${edges[frame].toFixed(2)}–${edges[frame+1].toFixed(2)} s ${show.time_suffix}`:`${series.times_s[frame].toFixed(2)} s`;}
+function phaseText(){const t=series.times_s[frame],phase=conditionText(condition.id).phases?.find(p=>p.start_s<=t&&t<p.end_s);return phase?phase.label:'';}
+function updateValues(){byId('series-details').textContent=seriesDetails();
+ for(let i=0;i<cellObjects.length;i++){const o=cellObjects[i],col=cellColumns[i],group=data.groups.find(g=>g.id===o.userData.group);const v=col===undefined?null:condition.values[frame][col];
+  if(!valueMode){o.material.color.set(group.color);o.material.opacity=anatomyOpacity[o.userData.group];}
+  else if(v===null){o.material.color.set(grey.color);o.material.opacity=grey.opacity;}
+  else{o.material.color.copy(valueColour(v));o.material.opacity=valueOpacity(v);}}
+ byId('time').textContent=series.times_s[frame].toFixed(2)+' s';timeline.value=frame;byId('phase').textContent=[phaseText(),when()].filter(Boolean).join(' · ');
+ const t=conditionText(condition.id);byId('banner').hidden=!valueMode||!hasValues&&!figure;byId('banner-chip').style.background=t.colour||'#8394a2';byId('banner-title').textContent=t.title;byId('banner-detail').textContent=[t.detail,t.science].filter(Boolean).join(' · ');byId('banner-time').textContent=when();
+ byId('scale-panel').hidden=!valueMode;honest();updateAggregate();dirty=true;}
+function stop(){playing=false;byId('play').textContent='Play';}
+function setMode(enabled){valueMode=enabled;if(!valueMode)stop();
+ for(const g of data.groups){const sw=byId('groups').querySelector(`[data-group="${g.id}"]`).closest('label').querySelector('.swatch');sw.style.background=!enabled||!anatomyGroups.length?g.color:recordedGroups.includes(g.id)?`linear-gradient(90deg,${signedDelta?'#3475b6,#aab5ba,#cf3f34':stops.map(c=>'#'+c.getHexString()).join(',')})`:grey.color;sw.style.width=enabled&&recordedGroups.includes(g.id)&&anatomyGroups.length?'22px':'10px';}
+ // Values play on a dark stage: quiet cells stay dark and region surfaces recede.
+ scene.background=valueMode?darkStage:lightStage;for(const o of meshObjects)o.material.opacity=o.userData.opacity*(valueMode?.3:1);document.body.classList.toggle('values',valueMode);byId('mode').textContent=valueMode?'Group colours':'Show values';byId('play').disabled=!valueMode;timeline.disabled=!valueMode;
+ byId('legend-title').textContent=valueMode&&anatomyGroups.length?'Cell groups and what was recorded':'Cell groups';updateValues();}
+byId('mode').onclick=()=>setMode(!valueMode);
+byId('play').onclick=()=>{playing=!playing;lastStep=performance.now();byId('play').textContent=playing?'Pause':'Play';};
+timeline.oninput=()=>{stop();frame=+timeline.value;updateValues();};
+conditionSelect.onchange=()=>{stop();condition=conditions.find(c=>c.id===conditionSelect.value);updateValues();};
+byId('brain').onclick=()=>preset('brain');byId('cns').onclick=()=>preset('cns');byId('reset').onclick=()=>preset(view);
+byId('export').onclick=()=>{render();const link=document.createElement('a');link.download=`male-fly-brain-${condition.id}.png`;
+ // Every exported view carries the plain labels, condition, time and colour scale.
+ const t=conditionText(condition.id);
+ const lines=valueMode?[...show.honest,`${t.title}${t.detail?' · '+t.detail:''}${t.science?' · '+t.science:''} · ${when()}`,show.method,`${scaleSpec.title}: ${scaleSpec.low} to ${scaleSpec.high}. ${scaleSpec.note}`,byId('grey-key').textContent]:[show.title];
+ if(valueMode&&aggregateSpec)lines.push(`${show.aggregate.title}: ${byId('aggregate-value').textContent}`);
+ lines.push('MaleCNS v1.0 · Janelia / Google / Cambridge · Berg et al., Cell (2026) · CC BY 4.0');
+ const canvas=document.createElement('canvas');canvas.width=main.domElement.width;const ctx=canvas.getContext('2d');ctx.font='20px "Helvetica Neue",Helvetica,Arial,sans-serif';const wrapped=[];for(const line of lines){let row='';for(const word of line.split(' ')){if(ctx.measureText(row+' '+word).width>canvas.width-48){wrapped.push(row);row=word;}else row+=(row?' ':'')+word;}wrapped.push(row);}
+ canvas.height=main.domElement.height+36+28*wrapped.length;ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(main.domElement,0,0);ctx.fillStyle='#15283a';ctx.font='20px "Helvetica Neue",Helvetica,Arial,sans-serif';wrapped.forEach((line,i)=>ctx.fillText(line,24,main.domElement.height+30+28*i));link.href=canvas.toDataURL('image/png');link.click();};
+const raycaster=new THREE.Raycaster();raycaster.params.Line.threshold=1.2;const mouse=new THREE.Vector2();let lastHover=0;const defaultHover=byId('hover').textContent;
+main.domElement.addEventListener('pointermove',e=>{if(e.buttons||performance.now()-lastHover<100)return;lastHover=performance.now();const r=main.domElement.getBoundingClientRect();mouse.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);raycaster.setFromCamera(mouse,camera);const hits=raycaster.intersectObjects(cellObjects.filter(o=>o.parent.visible),false);if(hits.length){const cell=hits[0].object.userData;const i=data.cells.indexOf(cell);byId('hover').textContent=`${groupLabel(cell.group)} · type ${cell.type} · ${cell.side} side · MaleCNS body ${cell.body_id}`+(valueMode?(cellColumns[i]===undefined?' · anatomy only, not recorded':` · ${condition.values[frame][cellColumns[i]].toFixed(1)} ${series.unit}`):'');}else byId('hover').textContent=defaultHover;});
+function animate(now){if(playing){let duration=frame+1<series.times_s.length?(series.times_s[frame+1]-series.times_s[frame])*1000:100;if(now-lastStep>=duration){frame=(frame+1)%series.times_s.length;lastStep=now;updateValues();}}if(dirty)render();requestAnimationFrame(animate);}
+if(figure){byId('context-block').hidden=hasValues;if(!hasValues){show.view_brain='Brain, front view';byId('view-letter').textContent='a';byId('context-letter').textContent='b';}byId('attribution').textContent=show.figure_attribution;}
+if(figure&&hasValues){scene.updateMatrixWorld(true);const box=new THREE.Box3();cellObjects.forEach((o,i)=>{if(cellColumns[i]!==undefined)box.expandByObject(o);});brainCentreY=box.getCenter(new THREE.Vector3()).y;}
+preset('brain');setMode(hasValues);render();byId('loading').remove();
+// Build scripts set a still's condition, bin and mode here rather than clicking controls
+// that figure mode hides. Returns after two painted frames.
+window.atlasSet=async({condition:id=condition.id,frame:f=frame,value_mode:v=valueMode}={})=>{stop();if(!(Number.isInteger(f)&&f>=0&&f<series.times_s.length))throw new Error('frame out of range');condition=conditions.find(c=>c.id===id);if(!condition)throw new Error('unknown condition '+id);conditionSelect.value=id;frame=f;if(v!==valueMode)setMode(v);else updateValues();render();await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));return window.atlasState();};
+// Horizontal extent of everything the whole-CNS view draws, in its normalised screen x (-1 to 1).
+function contextExtent(){scene.updateMatrixWorld(true);const box=new THREE.Box3();scene.traverse(o=>{if((o.isMesh||o.isLineSegments)&&o.visible&&o.layers.test(contextCamera.layers))box.expandByObject(o);});
+ const xs=[];for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z])xs.push(new THREE.Vector3(x,y,z).project(contextCamera).x);return [Math.min(...xs),Math.max(...xs)];}
+window.atlasState=()=>({condition:condition.id,frame,time_s:series.times_s[frame],value_mode:valueMode,phase:byId('phase').textContent,when:when(),per_cell_count:cellColumns.filter(i=>i!==undefined).length,anatomy_only_count:cellColumns.filter(i=>i===undefined).length,anatomy_only_opacities:[...new Set(cellObjects.filter((o,i)=>cellColumns[i]===undefined).map(o=>o.material.opacity))],aggregate:aggregateSpec?condition.aggregates.CX_DAN[frame]:null,scale_px_per_100um:scalePx(),context_scale_px_per_100um:100*byId('context').clientHeight*contextCamera.zoom/(contextCamera.top-contextCamera.bottom),context_extent:contextExtent(),figure});
+window.atlasEvidence={cells:data.cells.length,meshes:data.meshes.length,groups:data.groups.map(g=>({id:g.id,label:g.label,color:g.color,shown:g.shown,total:g.total})),renderer:main.getContext().getParameter(main.getContext().VERSION),three:THREE.REVISION,playback_label:series.label,display:show,conditions:conditions.map(c=>({id:c.id,label:c.label})),per_cell_groups:recordedGroups,anatomy_only_groups:anatomyGroups,per_cell_range:[series.minimum,series.maximum],aggregate_specs:series.aggregate_specs,colour_levels:levels?levels.map(l=>'#'+valueColour(l).getHexString()):null};
+window.atlasReady=true;requestAnimationFrame(animate);
+})().catch(error=>{document.getElementById('failure').textContent='Unable to render this atlas. Use a current browser with WebGL2 and DecompressionStream support.\n'+error;console.error(error);});
+</script>
+</body>
+</html>

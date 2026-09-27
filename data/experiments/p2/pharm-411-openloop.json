@@ -1,0 +1,777 @@
+{
+  "schema_version": "1.3",
+  "name": "pharm-411-openloop",
+  "description": "4.11: open-loop probe, vehicle only, wild type, fumin and maximum selected genotypes",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.2",
+    "populations_version": "v0.2",
+    "transmitters_version": "v0.2",
+    "drive_version": "v0.2",
+    "dopamine_version": "v0.2",
+    "visual_version": "v0.2",
+    "behaviour_version": "v0.2"
+  },
+  "layers": {
+    "background": true,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "comparison": "paired",
+  "arms": [
+    {
+      "label": "wt-vehicle",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 47.0,
+          "label": "openloop",
+          "params": {
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 0.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": {
+                  "azimuth": 90,
+                  "flicker_hz": 3,
+                  "contrast": 1.0
+                },
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "fumin-vehicle",
+      "genotype": {
+        "named": "fumin",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 47.0,
+          "label": "openloop",
+          "params": {
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 0.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": {
+                  "azimuth": 90,
+                  "flicker_hz": 3,
+                  "contrast": 1.0
+                },
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "dat-half-vehicle",
+      "genotype": {
+        "named": "dat_half",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 47.0,
+          "label": "openloop",
+          "params": {
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 0.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": {
+                  "azimuth": 90,
+                  "flicker_hz": 3,
+                  "contrast": 1.0
+                },
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "dopamine-depleted-vehicle",
+      "genotype": {
+        "named": "dopamine_depleted",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 47.0,
+          "label": "openloop",
+          "params": {
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 0.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": {
+                  "azimuth": 90,
+                  "flicker_hz": 3,
+                  "contrast": 1.0
+                },
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "dop1r1-null-vehicle",
+      "genotype": {
+        "named": "dop1r1_null",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "open_loop_steering",
+          "duration_s": 47.0,
+          "label": "openloop",
+          "params": {
+            "blocks": [
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 0.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 30.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 60.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 90.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 120.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": 150.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 2.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": null,
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              },
+              {
+                "stimulus": "stripe",
+                "azimuth_deg": -45.0,
+                "distractor": {
+                  "azimuth": 90,
+                  "flicker_hz": 3,
+                  "contrast": 1.0
+                },
+                "transition_s": 1.0,
+                "dwell_s": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "TuBu",
+      "steering_L",
+      "steering_R",
+      "DN_all",
+      "DA_exposed",
+      "PAM",
+      "PPL1",
+      "KC",
+      "MBON",
+      "dFB"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "ER",
+      "EPG",
+      "steering_L",
+      "steering_R",
+      "DN_all",
+      "DA_exposed",
+      "PAM",
+      "PPL1",
+      "KC",
+      "MBON",
+      "dFB",
+      "R1_6",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "Mi1",
+      "Mi4",
+      "Mi9",
+      "Tm1",
+      "Tm2",
+      "Tm3",
+      "Tm4",
+      "Tm9",
+      "T4",
+      "T5",
+      "LC10",
+      "LC_all",
+      "LPLC",
+      "MeTu",
+      "visual_projection",
+      "TuBu"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {
+    "stage": "4.11",
+    "form": "openloop",
+    "selection": "maximum",
+    "selected": [
+      "dat_half",
+      "dopamine_depleted",
+      "dop1r1_null"
+    ],
+    "declared_substrate": {
+      "item": 122,
+      "candidate_id": "1.0-4.0-0.0-False-100-1.0-kc-6.0-sens",
+      "arm_id": "sens",
+      "bg_policy": "sens",
+      "w_bg_mv": 1.0,
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "g_gaba_kc": 6.0,
+      "sigma_th_mv": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "records": [
+        {
+          "path": "validation/records/p2/rest-T3e-decision.json",
+          "sha256": "2510506861e19aa09ebad55dc83c8cbf74524e28291274d091942374a022f212"
+        },
+        {
+          "path": "validation/records/p2/rest-T3e-freeze-partial.json",
+          "sha256": "c0b01a8df7f54f6ab58180bf2a773d31b0445137ca4e3cea0a9961f784d87439"
+        }
+      ]
+    }
+  }
+}

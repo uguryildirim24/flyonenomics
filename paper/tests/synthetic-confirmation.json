@@ -1,0 +1,15 @@
+{
+  "_paper_fixture": "synthetic",
+  "version": "male-history-confirm-v1",
+  "primary": {
+    "name": "genotype", "mean": -0.1, "ci95": [-0.2, -0.01],
+    "per_seed": [-0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1, -0.1],
+    "sign_randomisation": {"extreme": 0, "draws": 1000000, "seed": 14620260926, "p": 0.000000999999000001},
+    "confirmed": true, "interval_reading": "interval excludes zero"
+  },
+  "bootstrap": {"replicates": 10000, "invalid": 0, "seed": 14620260925, "template_uncertainty_included": true, "pair_selection_uncertainty_included": false},
+  "secondaries": {
+    "paired_t": {"statistic": -4.0, "p_two_sided": 0.001}, "cohen_d_paired": -0.5,
+    "pooled_pilot_plus_confirmation": {"mean": -0.08, "per_seed": [-0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08, -0.08], "n": 50, "decision": false}
+  }
+}

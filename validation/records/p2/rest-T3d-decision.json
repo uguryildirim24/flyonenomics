@@ -1,0 +1,55 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "engine_model": "lif",
+  "ranked": [],
+  "shortlist": [],
+  "failed_stage": "R-screen",
+  "closest_miss": {
+    "sub_tier": "T3d",
+    "engine_model": "lif",
+    "g_gaba": 1.0,
+    "g_glu": 4.0,
+    "setting": {
+      "g_gaba_kc": 6.0
+    },
+    "M": 6.0,
+    "sigma_th": 0.0,
+    "optic_exemption": false,
+    "n_bg": 100,
+    "job_id": null,
+    "retention": null,
+    "difference_hz": null,
+    "flags": [],
+    "g_gaba_kc": 6.0,
+    "w_bg": 0.85,
+    "pair_weights": [
+      0.85,
+      0.9
+    ],
+    "S": 0.07137225995867232,
+    "J": 67.29406113665814,
+    "screen_passed": false,
+    "violations": {
+      "F": 0.07137225995867232,
+      "b": 0.0,
+      "stability_ratio": 0.0,
+      "central": 0.0,
+      "DAN": 0.0,
+      "KC": 0.0,
+      "gradedness": 0.0
+    },
+    "candidate_id": "1.0-4.0-0.0-False-100-0.85-kc-6.0",
+    "deepest": "T1",
+    "measured_kc_hz_mean_w085": 0.2511042431266499,
+    "measured_F_max_pair": 3.221942854702352,
+    "measured_F_mean_w085": 3.020252153525155,
+    "measured_central_hz_mean_w085": 5.7376066445849645
+  },
+  "p2_partial_b": true,
+  "t1_units_evaluated": 24,
+  "n_screen_passers": 0,
+  "n_t2_admitted": 0,
+  "t2_not_run": true,
+  "item_74_reflex_harmonised": false
+}

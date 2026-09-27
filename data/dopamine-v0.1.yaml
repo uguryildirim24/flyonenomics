@@ -1,0 +1,1331 @@
+version: v0.1
+qualified: true
+status: Q passed; frozen
+date: '2026-09-13'
+params_version: v0.1
+receptor_map_version: v0.1
+connectome_version: '783'
+drive_version: null
+background: false
+lif.g_inh: 1.0
+calibration_state: bare substrate, background off, layer A on, transporter C on without
+  drug, pools clamped at DA_ref
+K1:
+  status: skipped
+  reason: 'item 47: no frozen drive on the bare substrate'
+seed_master: 20260912
+seeds:
+- 1
+- 2
+- 3
+settle_s: 2.0
+measure_s: 5.0
+compartments:
+- gamma1_L
+- gamma2_L
+- gamma3_L
+- gamma4_L
+- gamma5_L
+- alpha1_L
+- alpha2_L
+- alpha3_L
+- beta1_L
+- beta2_L
+- alpha_prime1_L
+- alpha_prime2_L
+- alpha_prime3_L
+- beta_prime1_L
+- beta_prime2_L
+- gamma1_R
+- gamma2_R
+- gamma3_R
+- gamma4_R
+- gamma5_R
+- alpha1_R
+- alpha2_R
+- alpha3_R
+- beta1_R
+- beta2_R
+- alpha_prime1_R
+- alpha_prime2_R
+- alpha_prime3_R
+- beta_prime1_R
+- beta_prime2_R
+- EB
+- PB
+- FB
+- NO_L
+- NO_R
+- LAL_L
+- LAL_R
+R_c:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+per_seed_R_c:
+  1:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  2:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  3:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+alpha_c:
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+- 0.1
+under_innervated:
+- gamma1_L
+- gamma2_L
+- gamma3_L
+- gamma4_L
+- gamma5_L
+- alpha1_L
+- alpha2_L
+- alpha3_L
+- beta1_L
+- beta2_L
+- alpha_prime1_L
+- alpha_prime2_L
+- alpha_prime3_L
+- beta_prime1_L
+- beta_prime2_L
+- gamma1_R
+- gamma2_R
+- gamma3_R
+- gamma4_R
+- gamma5_R
+- alpha1_R
+- alpha2_R
+- alpha3_R
+- beta1_R
+- beta2_R
+- alpha_prime1_R
+- alpha_prime2_R
+- alpha_prime3_R
+- beta_prime1_R
+- beta_prime2_R
+- EB
+- PB
+- FB
+- NO_L
+- NO_R
+- LAL_L
+- LAL_R
+da.tonic_source:
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+- 0.0026666666666666666
+tonic_source_rule: provisional item 24 / SPEC item 51
+qualification:
+  status: passed
+  date: '2026-09-13'
+  background: false
+  dopamine_A: true
+  transporter_C: true
+  master_seed: 20260912
+  order:
+  - 3.1b
+  - '1.4'
+  - '2.2'
+  wall_s: 968.2698943330906
+  3.1b:
+    passed: true
+    per_seed:
+      1:
+        passed: true
+        max_da_error_um: 3.365363543395006e-16
+        da_bound_um: 0.004
+        max_dv_excess_mv: 0.0
+        max_gain_excess: 0.0
+        chunks: 1000
+        per_chunk_arrays_bitwise: true
+        mean_da_c_um:
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        per_neuron_dv_mv:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 80
+            absolute_error: 3.9968028886505635e-15
+            bound: 0.1
+        per_neuron_gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.2648549702353193e-14
+            bound: 0.01
+        settle_s: 2.0
+        settled: true
+      2:
+        passed: true
+        max_da_error_um: 3.365363543395006e-16
+        da_bound_um: 0.004
+        max_dv_excess_mv: 0.0
+        max_gain_excess: 0.0
+        chunks: 1000
+        per_chunk_arrays_bitwise: true
+        mean_da_c_um:
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        per_neuron_dv_mv:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 80
+            absolute_error: 3.9968028886505635e-15
+            bound: 0.1
+        per_neuron_gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.2648549702353193e-14
+            bound: 0.01
+        settle_s: 2.0
+        settled: true
+      3:
+        passed: true
+        max_da_error_um: 3.365363543395006e-16
+        da_bound_um: 0.004
+        max_dv_excess_mv: 0.0
+        max_gain_excess: 0.0
+        chunks: 1000
+        per_chunk_arrays_bitwise: true
+        mean_da_c_um:
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        - 0.019999999999999664
+        per_neuron_dv_mv:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 80
+            absolute_error: 3.9968028886505635e-15
+            bound: 0.1
+        per_neuron_gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.2648549702353193e-14
+            bound: 0.01
+        settle_s: 2.0
+        settled: true
+    mean_da_per_compartment:
+      gamma1_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma2_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma3_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma4_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma5_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha1_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha2_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha3_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta1_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta2_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime1_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime2_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime3_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime1_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime2_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma1_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma2_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma3_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma4_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma5_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha1_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha2_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha3_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta1_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta2_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime1_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime2_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime3_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime1_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime2_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      EB:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      PB:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      FB:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      NO_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      NO_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      LAL_L:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      LAL_R:
+        mean_um: 0.019999999999999664
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+  '1.4':
+    passed: true
+    per_seed:
+      0:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 56.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 56.0
+        floor_met: true
+        settled: true
+      1:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 50.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 50.0
+        floor_met: true
+        settled: true
+      2:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 58.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 58.0
+        floor_met: true
+        settled: true
+      3:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 58.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 58.0
+        floor_met: true
+        settled: true
+      4:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 63.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 63.0
+        floor_met: true
+        settled: true
+      5:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 48.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 48.0
+        floor_met: true
+        settled: true
+      6:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 59.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 59.0
+        floor_met: true
+        settled: true
+      7:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 61.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 61.0
+        floor_met: true
+        settled: true
+      8:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 53.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 53.0
+        floor_met: true
+        settled: true
+      9:
+        silent:
+          mn9_hz: 0.0
+          settle_s: 2.0
+          settled: true
+        sugar:
+          mn9_hz: 62.0
+          settle_s: 2.0
+          settled: true
+        difference_hz: 62.0
+        floor_met: true
+        settled: true
+    mean_hz: 56.8
+    minimum_hz: 48.0
+    mean_required_above_hz: 50.0
+    seed_floor_hz: 40.0
+    rule: 'SPEC item 61: ten-seed mean > 50 Hz and every seed >= 40 Hz'
+    previous_rule:
+      rule: 'previous item-48 interpretation: each seed > 50 Hz'
+      passed: false
+      failed_seeds:
+      - 1
+      - 5
+  '2.2':
+    median_hz: 0.0
+    median_upper_hz: 5.0
+    median_lower_hz: null
+    fraction_above_50_hz: 0.00032458399151753835
+    fraction_bound: 0.01
+    rule: 'SPEC item 60: stimulated sugar reflex, no median floor'
+    passed: true
+    seed: 0
+    stimulus: sugar_reflex
+    settle_s: 2.0
+    settled: true
+    Fano:
+      F: 2.220973410910589
+      max_bin_fraction: 0.00020917635008908027
+      status: clear
+      F_bound: 3.0
+      bin_fraction_bound: 0.05
+    group_rates:
+      DAN:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 5.0
+        diagnostic_lower_hz: 2.5
+        diagnostic_upper_hz: 10.0
+      ER:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 2.0
+        diagnostic_lower_hz: 1.0
+        diagnostic_upper_hz: 4.0
+      KC:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 0.1
+        diagnostic_lower_hz: 0.05
+        diagnostic_upper_hz: 0.2
+      ascending:
+        observed_hz: 0.0495899870522227
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      central:
+        observed_hz: 0.15128726287262875
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      descending:
+        observed_hz: 0.7821401077752117
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      endocrine:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      motor:
+        observed_hz: 8.287735849056604
+        placeholder_background_target_hz: 0.5
+        diagnostic_lower_hz: 0.25
+        diagnostic_upper_hz: 1.0
+      optic:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      sensory:
+        observed_hz: 0.10591401137545103
+        placeholder_background_target_hz: null
+        diagnostic_lower_hz: null
+        diagnostic_upper_hz: null
+      visual_centrifugal:
+        observed_hz: 0.015267175572519082
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      visual_projection:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+    quantiles_hz:
+      '0': 0.0
+      '0.25': 0.0
+      '0.5': 0.0
+      '0.75': 0.0
+      '0.9': 0.0
+      '0.99': 0.0
+      '1': 98.5
+  requalified_date: '2026-09-13'
+  diagnostics:
+    label: historical strict-per-seed escalation, diagnostic under SPEC item 61
+    free_pool_rates_per_group:
+      DAN:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 5.0
+        diagnostic_lower_hz: 2.5
+        diagnostic_upper_hz: 10.0
+      ER:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 2.0
+        diagnostic_lower_hz: 1.0
+        diagnostic_upper_hz: 4.0
+      KC:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 0.1
+        diagnostic_lower_hz: 0.05
+        diagnostic_upper_hz: 0.2
+      ascending:
+        observed_hz: 0.0495899870522227
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      central:
+        observed_hz: 0.15128726287262875
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      descending:
+        observed_hz: 0.7821401077752117
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      endocrine:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      motor:
+        observed_hz: 8.287735849056604
+        placeholder_background_target_hz: 0.5
+        diagnostic_lower_hz: 0.25
+        diagnostic_upper_hz: 1.0
+      optic:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      sensory:
+        observed_hz: 0.10591401137545103
+        placeholder_background_target_hz: null
+        diagnostic_lower_hz: null
+        diagnostic_upper_hz: null
+      visual_centrifugal:
+        observed_hz: 0.015267175572519082
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+      visual_projection:
+        observed_hz: 0.0
+        placeholder_background_target_hz: 1.0
+        diagnostic_lower_hz: 0.5
+        diagnostic_upper_hz: 2.0
+    Fano:
+      F: 2.220973410910589
+      max_bin_fraction: 0.00020917635008908027
+      status: clear
+      F_bound: 3.0
+      bin_fraction_bound: 0.05
+    mean_DA_per_compartment:
+      gamma1_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma2_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma3_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma4_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma5_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha1_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha2_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha3_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta1_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta2_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime1_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime2_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime3_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime1_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime2_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma1_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma2_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma3_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma4_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      gamma5_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha1_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha2_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha3_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta1_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta2_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime1_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime2_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      alpha_prime3_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime1_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      beta_prime2_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      EB:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      PB:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      FB:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      NO_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      NO_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      LAL_L:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+      LAL_R:
+        mean_um: 0.01999999999999975
+        lower_um: 0.016
+        upper_um: 0.024
+        inside: true
+    per_neuron_modulation_bounds:
+      1:
+        dV:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.55351295663786e-15
+            bound: 0.1
+        gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 33178
+            absolute_error: 9.43689570931383e-15
+            bound: 0.01
+        arrays_bitwise: true
+      2:
+        dV:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.55351295663786e-15
+            bound: 0.1
+        gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 33178
+            absolute_error: 9.43689570931383e-15
+            bound: 0.01
+        arrays_bitwise: true
+      3:
+        dV:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 4063
+            absolute_error: 2.55351295663786e-15
+            bound: 0.1
+        gain:
+          n_exceeded: 0
+          worst:
+            neuron_idx: 33178
+            absolute_error: 9.43689570931383e-15
+            bound: 0.01
+        arrays_bitwise: true
+    qualified: false
+    status: failed
+  windows_s:
+    3.1b: 10.0
+    '1.4': 1.0
+    '2.2': 10.0
+  review_3_1b:
+    date: '2026-09-13'
+    wall_s: 1327.1903367920313
+    Q_replayed: true
+    reflex_values_unchanged: true
+    '2.2':
+      median_hz: 0.0
+      median_upper_hz: 5.0
+      median_lower_hz: null
+      fraction_above_50_hz: 0.00032458399151753835
+      fraction_bound: 0.01
+      rule: 'SPEC item 60: stimulated sugar reflex, no median floor'
+      passed: true
+      seed: 0
+      stimulus: sugar_reflex
+      settle_s: 2.0
+      settled: true
+      Fano:
+        F: 2.220973410910589
+        max_bin_fraction: 0.00020917635008908027
+        status: clear
+        F_bound: 3.0
+        bin_fraction_bound: 0.05
+      group_rates:
+        DAN:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 5.0
+          diagnostic_lower_hz: 2.5
+          diagnostic_upper_hz: 10.0
+        ER:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 2.0
+          diagnostic_lower_hz: 1.0
+          diagnostic_upper_hz: 4.0
+        KC:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 0.1
+          diagnostic_lower_hz: 0.05
+          diagnostic_upper_hz: 0.2
+        ascending:
+          observed_hz: 0.0495899870522227
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        central:
+          observed_hz: 0.15128726287262875
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        descending:
+          observed_hz: 0.7821401077752117
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        endocrine:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        motor:
+          observed_hz: 8.287735849056604
+          placeholder_background_target_hz: 0.5
+          diagnostic_lower_hz: 0.25
+          diagnostic_upper_hz: 1.0
+        optic:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        sensory:
+          observed_hz: 0.10591401137545103
+          placeholder_background_target_hz: null
+          diagnostic_lower_hz: null
+          diagnostic_upper_hz: null
+        visual_centrifugal:
+          observed_hz: 0.015267175572519082
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+        visual_projection:
+          observed_hz: 0.0
+          placeholder_background_target_hz: 1.0
+          diagnostic_lower_hz: 0.5
+          diagnostic_upper_hz: 2.0
+      quantiles_hz:
+        '0': 0.0
+        '0.25': 0.0
+        '0.5': 0.0
+        '0.75': 0.0
+        '0.9': 0.0
+        '0.99': 0.0
+        '1': 98.5
+    execution_commit: 29d578b112e910de5359450377316c9118295c76
+qualification_rule: 'SPEC item 60: stimulated bare 2.2, median <= 5 Hz with no floor,
+  fewer than 1% above 50 Hz; SPEC item 61: ten-seed mean MN9 difference > 50 Hz and
+  no seed < 40 Hz'

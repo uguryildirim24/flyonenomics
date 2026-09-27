@@ -1,0 +1,9 @@
+version: v0.2
+inject_at: photoreceptors
+r_dark: 0.0
+pr_acceptance_deg: 5.0
+provenance:
+  item: 122
+  vcal_record: validation/records/p2/visual-vcal.json
+  vcal_sha256: cb812c849dd20b4e670be5641e7fb33730a32f42ba2e4b0a0996a9d2dc650446
+r_light: 150.0

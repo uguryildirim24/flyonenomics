@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.2",
+  "name": "descending-fumin",
+  "description": "Unexecuted level 3.6 descending-rate proxy; no locomotion claim.",
+  "seed": 20260912,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "annotation_version": "v2.1.0",
+    "receptor_map_version": "v0.1",
+    "params_version": "v0.1",
+    "drive_version": "v0.1",
+    "dopamine_version": "v0.1",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain",
+    "receptor_kinetics_B": false,
+    "learning_D": false
+  },
+  "arms": [
+    {
+      "label": "baseline",
+      "genotype": {
+        "named": "wild_type",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "descending-rate",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    },
+    {
+      "label": "fumin",
+      "genotype": {
+        "named": "fumin",
+        "manipulations": []
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 5.0,
+          "label": "descending-rate",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "distractor": null,
+            "inject_at": "TuBu"
+          }
+        }
+      ],
+      "layers": null
+    }
+  ],
+  "comparison": "paired",
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "rates": [
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "rate_bin_ms": 50,
+    "live": false
+  },
+  "meta": {}
+}

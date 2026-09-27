@@ -1,0 +1,1405 @@
+{
+  "class": "development",
+  "sub_tier": "T3d",
+  "stage": "T0",
+  "engine_model": "lif",
+  "rho_mech": 1.0,
+  "rho_blend": 1.2431731517159106,
+  "q_plan": 27.0,
+  "evaluation_commits": {
+    "t3d-t0t1-00": "44ceb12",
+    "t3d-t0t1-01": "c475517",
+    "t3d-t0t1-02": "c4ebb48"
+  },
+  "plan": "validation/records/p2/rest-T3d-plan.json",
+  "plan_file_sha256": "0aa02102a7f9c2a5044b449f300e8943d74c8e9baa3251afd330b5b8a754081b",
+  "collect": "collect-t0-packed",
+  "jobs": [
+    "t3d-t0t1-00-20260918T033534Z",
+    "t3d-t0t1-01-20260918T033952Z",
+    "t3d-t0t1-02-20260918T073742Z"
+  ],
+  "t0_brain_s": 1560.0,
+  "n_units": 24,
+  "n_search_units": 24,
+  "n_baseline": 0,
+  "n_passers": 24,
+  "t2_b_unreachable": 20,
+  "t2_b_unreachable_passers": 20,
+  "bare_mismatch": 0,
+  "grid_edge": 0,
+  "global_bare_mean": 56.0,
+  "job_bare_means": [
+    56.0,
+    56.0,
+    null
+  ],
+  "median_wall_per_brain_s": 36.70423276215834,
+  "planned_worker_s_per_brain_s": 45.75,
+  "measured_rate_replaces_plan": false,
+  "cap_projection_t0_engine_hours": 105.5454005806808,
+  "cap_projection_admitted_engine_hours": 258.6048790199437,
+  "admission": {
+    "n_admitted": 24,
+    "n_excluded": 0,
+    "failed_stage": null,
+    "reason": null,
+    "admitted": [
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 54.4,
+        "retention": 0.9714285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 46.5,
+        "retention": 0.8303571428571429,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 41.7,
+        "retention": 0.7446428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.392299721954883,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 38.2,
+        "retention": 0.6821428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.1760536753820348,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 6.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 6.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 6.0,
+        "difference_hz": 29.8,
+        "retention": 0.5321428571428571,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 1.6694728970965027,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 4.0
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 54.4,
+        "retention": 0.9714285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 4.0
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 46.5,
+        "retention": 0.8303571428571429,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 4.0
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 41.7,
+        "retention": 0.7446428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.392299721954883,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 38.2,
+        "retention": 0.6821428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.1760536753820348,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 4.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 4.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 4.0,
+        "difference_hz": 29.8,
+        "retention": 0.5321428571428571,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 1.6694728970965027,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 3.0
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 54.4,
+        "retention": 0.9714285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 3.0
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 46.5,
+        "retention": 0.8303571428571429,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 3.0
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 41.7,
+        "retention": 0.7446428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.392299721954883,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 38.2,
+        "retention": 0.6821428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.1760536753820348,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 3.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 3.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 3.0,
+        "difference_hz": 29.8,
+        "retention": 0.5321428571428571,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 1.6694728970965027,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 2.0
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 54.4,
+        "retention": 0.9714285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 2.0
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 46.5,
+        "retention": 0.8303571428571429,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 2.0
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 31.3,
+        "retention": 0.5589285714285714,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": null,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 1.0,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 41.7,
+        "retention": 0.7446428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.392299721954883,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 2.0,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 38.2,
+        "retention": 0.6821428571428572,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 2.1760536753820348,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      },
+      {
+        "sub_tier": "T3d",
+        "g_gaba": 1.0,
+        "g_glu": 4.0,
+        "setting": {
+          "g_gaba_kc": 2.0,
+          "b_mv": 1.0,
+          "tau_ms": 50.0,
+          "scope": "non_sensory"
+        },
+        "M": 2.0,
+        "baseline": false,
+        "sigma_th": 0.0,
+        "optic_exemption": false,
+        "n_bg": 100,
+        "engine_model": "lif+sfa",
+        "g_gaba_kc": 2.0,
+        "difference_hz": 29.8,
+        "retention": 0.5321428571428571,
+        "t0_passed": true,
+        "job_bare_mean": 56.0,
+        "global_bare_mean": 56.0,
+        "job_id": "t3d-t0t1-00-20260918T033534Z",
+        "mn9_a_sfa_mv": 1.6694728970965027,
+        "h_max": null,
+        "flags": [
+          "t2-b-unreachable"
+        ],
+        "seeds": 10
+      }
+    ],
+    "excluded": []
+  },
+  "units": [
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 54.4,
+      "retention": 0.9714285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 54.4,
+      "retention": 0.9714285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 54.4,
+      "retention": 0.9714285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 54.4,
+      "retention": 0.9714285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 41.7,
+      "retention": 0.7446428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.392299721954883,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 41.7,
+      "retention": 0.7446428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.392299721954883,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 41.7,
+      "retention": 0.7446428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.392299721954883,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 41.7,
+      "retention": 0.7446428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.392299721954883,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 46.5,
+      "retention": 0.8303571428571429,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 46.5,
+      "retention": 0.8303571428571429,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 46.5,
+      "retention": 0.8303571428571429,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 46.5,
+      "retention": 0.8303571428571429,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 38.2,
+      "retention": 0.6821428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.1760536753820348,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 38.2,
+      "retention": 0.6821428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.1760536753820348,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 38.2,
+      "retention": 0.6821428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.1760536753820348,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 2.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 38.2,
+      "retention": 0.6821428571428572,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 2.1760536753820348,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 2.0
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 3.0
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 4.0
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 31.3,
+      "retention": 0.5589285714285714,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": null,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 2.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 2.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 2.0,
+      "difference_hz": 29.8,
+      "retention": 0.5321428571428571,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 1.6694728970965027,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 3.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 3.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 3.0,
+      "difference_hz": 29.8,
+      "retention": 0.5321428571428571,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 1.6694728970965027,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 4.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 4.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 4.0,
+      "difference_hz": 29.8,
+      "retention": 0.5321428571428571,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 1.6694728970965027,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    },
+    {
+      "sub_tier": "T3d",
+      "g_gaba": 1.0,
+      "g_glu": 4.0,
+      "setting": {
+        "g_gaba_kc": 6.0,
+        "b_mv": 1.0,
+        "tau_ms": 50.0,
+        "scope": "non_sensory"
+      },
+      "M": 6.0,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "engine_model": "lif+sfa",
+      "g_gaba_kc": 6.0,
+      "difference_hz": 29.8,
+      "retention": 0.5321428571428571,
+      "t0_passed": true,
+      "job_bare_mean": 56.0,
+      "global_bare_mean": 56.0,
+      "job_id": "t3d-t0t1-00-20260918T033534Z",
+      "mn9_a_sfa_mv": 1.6694728970965027,
+      "h_max": null,
+      "flags": [
+        "t2-b-unreachable"
+      ],
+      "seeds": 10
+    }
+  ]
+}

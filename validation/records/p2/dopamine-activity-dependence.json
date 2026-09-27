@@ -1,0 +1,515 @@
+{
+ "class": "development",
+ "date": "2026-09-20",
+ "title": "Which part of the dopamine endpoints is neural activity",
+ "substrate_id": "rest:379cc4cc9030cdd1",
+ "dopamine_file": "data/dopamine-v0.2.yaml",
+ "dopamine_sha256": "629d4017d96588401a2517c7d7afec719d4b26944453bed2253bfff635975e81",
+ "neural_record": "validation/records/p2/wp21-neural.json",
+ "runs": {
+  "3.10r": "20260919T201435.279415Z-ec3e4af1",
+  "3.2r/3.3r/3.4r": "20260919T224807.376372Z-88fd3f70",
+  "3.5r": "20260919T234951.845845Z-092b5924",
+  "3.6r": "20260920T001056.516039Z-fb6f4c0e"
+ },
+ "source_of_run_output": "camber-runs/wp21/ in t-0002 worktree (git-ignored); one parquet per arm/seed/probe",
+ "kinetics": {
+  "release_law": "alpha_c = q/max(R_c,R_min); S_c = max(0,q-alpha_c*R_c); hence alpha_c*R_c+S_c = q for every compartment",
+  "q_um_s": 0.0026666666666666666,
+  "constants": {
+   "DA_ref": 0.02,
+   "Vmax": 0.11,
+   "Km": 1.3,
+   "k_ns": 0.05,
+   "R_min": 0.5,
+   "Ki_mph": 0.2,
+   "EC50_3iy": 10.0,
+   "pk.kappa": 0.01,
+   "pk.k_a": 0.5
+  },
+  "closed_form": "Vmax*da/(Km+da)+k_ns*da = q (wild type, no drug); da = q/k_ns when Vmax=0 (fumin)",
+  "measured_R_c": "all 37 compartments exactly 0.0 in both the clamped K2r measurement and the free-pool 3.1br measures",
+  "implied_release_mode": "source: every alpha_c = 0.005333, S_c = 0.002667"
+ },
+ "activity_deviation": {
+  "depletion-3iy|20260919T234951.845845Z-092b5924|fumin-3iy|seed1|probe2": {
+   "fixed_point_um": 0.01841390658021888,
+   "window_mean_um": 0.01845746829283531,
+   "first_row_deviation_um": 0.0017762724521106464,
+   "max_abs_deviation_um": 0.0015719862469375824,
+   "per_compartment_deviation_um": {
+    "EB": 4.974639983543194e-06,
+    "FB": 0.0015719862469375824,
+    "NO_L": 9.949279967499253e-06,
+    "LAL_L": 2.487319991935355e-05
+   },
+   "recording_window_innervated_da_spikes": 0
+  },
+  "descending-pam|20260920T001056.516039Z-fb6f4c0e|baseline|seed1|probe0": {
+   "fixed_point_um": 0.02,
+   "window_mean_um": 0.02007725066368196,
+   "first_row_deviation_um": 0.003805388263275849,
+   "max_abs_deviation_um": 0.0027877739221917677,
+   "per_compartment_deviation_um": {
+    "EB": 8.812495520430647e-06,
+    "FB": 0.0027877739221917677,
+    "NO_L": 1.7625051939550163e-05,
+    "LAL_L": 4.406308658066321e-05
+   },
+   "recording_window_innervated_da_spikes": 0
+  },
+  "dose-p2|20260919T224807.376372Z-88fd3f70|vehicle|seed2|probe12": {
+   "fixed_point_um": 0.02,
+   "window_mean_um": 0.020062882222964897,
+   "first_row_deviation_um": 0.0,
+   "max_abs_deviation_um": 0.002269213696205568,
+   "per_compartment_deviation_um": {
+    "EB": 7.1785472185448285e-06,
+    "FB": 0.002269213696205568,
+    "NO_L": 1.4357110414503493e-05,
+    "LAL_L": 3.589289586252223e-05
+   },
+   "recording_window_innervated_da_spikes": 1
+  }
+ },
+ "firing_census": {
+  "coupling/20260919T201435.279415Z-ec3e4af1|wild-type": {
+   "recording_seconds": 200.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8896978851963746,
+    "PAM": 0.0,
+    "PPL1": 2.7890624999999996,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.09552867383512545
+   }
+  },
+  "coupling/20260919T201435.279415Z-ec3e4af1|fumin": {
+   "recording_seconds": 200.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8874320241691842,
+    "PAM": 0.0,
+    "PPL1": 2.749375,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.08332600195503422
+   }
+  },
+  "coupling/20260919T201435.279415Z-ec3e4af1|dop1r1-null": {
+   "recording_seconds": 200.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8883534743202418,
+    "PAM": 0.0,
+    "PPL1": 2.7575,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.09311909416748126
+   }
+  },
+  "depletion-3iy/20260919T234951.845845Z-092b5924|vehicle": {
+   "recording_seconds": 15.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8866062437059415,
+    "PAM": 0.0,
+    "PPL1": 2.7875,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.09295101553166069
+   }
+  },
+  "depletion-3iy/20260919T234951.845845Z-092b5924|3iy": {
+   "recording_seconds": 15.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8721047331319235,
+    "PAM": 0.0,
+    "PPL1": 2.679166666666667,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.10350820028239383
+   }
+  },
+  "depletion-3iy/20260919T234951.845845Z-092b5924|fumin": {
+   "recording_seconds": 15.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8855991943605237,
+    "PAM": 0.0,
+    "PPL1": 2.7541666666666664,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.08477245574019766
+   }
+  },
+  "depletion-3iy/20260919T234951.845845Z-092b5924|fumin-3iy": {
+   "recording_seconds": 15.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8938569989929507,
+    "PAM": 0.0,
+    "PPL1": 2.7791666666666663,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.09661127403062887
+   }
+  },
+  "descending-pam/20260920T001056.516039Z-fb6f4c0e|baseline": {
+   "recording_seconds": 50.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8798187311178248,
+    "PAM": 0.0,
+    "PPL1": 2.6975000000000002,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.09486803519061583
+   }
+  },
+  "descending-pam/20260920T001056.516039Z-fb6f4c0e|pam": {
+   "recording_seconds": 50.0,
+   "innervated_da_spikes": 549582,
+   "innervated_da_mean_rate_hz": 31.767745664739884,
+   "population_mean_rate_hz": {
+    "DAN": 34.029003021148036,
+    "PAM": 36.15671052631579,
+    "PPL1": 0.9800000000000001,
+    "CX_DAN": 0.0,
+    "DA_exposed": 1.9144379276637342
+   }
+  },
+  "dose-p2/20260919T224807.376372Z-88fd3f70|vehicle": {
+   "recording_seconds": 45.0,
+   "innervated_da_spikes": 1,
+   "innervated_da_mean_rate_hz": 6.422607578676943e-05,
+   "population_mean_rate_hz": {
+    "DAN": 0.8909029875797246,
+    "PAM": 0.0,
+    "PPL1": 2.8083333333333336,
+    "CX_DAN": 0.0007407407407407408,
+    "DA_exposed": 0.09396835740921763
+   }
+  },
+  "dose-p2/20260919T224807.376372Z-88fd3f70|mph": {
+   "recording_seconds": 45.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.8913058073178919,
+    "PAM": 0.0,
+    "PPL1": 2.740277777777778,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.08439593063248978
+   }
+  },
+  "dose-p2/20260919T224807.376372Z-88fd3f70|fumin": {
+   "recording_seconds": 45.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.887344746559248,
+    "PAM": 0.0,
+    "PPL1": 2.7555555555555555,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.08388544947684733
+   }
+  },
+  "dose-p2/20260919T224807.376372Z-88fd3f70|fumin-mph": {
+   "recording_seconds": 45.0,
+   "innervated_da_spikes": 0,
+   "innervated_da_mean_rate_hz": 0.0,
+   "population_mean_rate_hz": {
+    "DAN": 0.887344746559248,
+    "PAM": 0.0,
+    "PPL1": 2.7555555555555555,
+    "CX_DAN": 0.0,
+    "DA_exposed": 0.08388544947684733
+   }
+  }
+ },
+ "endpoints": {
+  "3.2r": {
+   "method": "per-probe per-compartment window means over three seeds; wild type against DA_ref, fumin against the analytic fixed point",
+   "fixed_point_um": {
+    "wild_type": 0.02,
+    "fumin": 0.05333333333333333
+   },
+   "probe-2": {
+    "activity_dependent_fraction_max": 0.0,
+    "note": "all 37 wild-type compartments exactly DA_ref; fumin at fixed point to 1 ULP (6.9e-18)"
+   },
+   "probe-7": {
+    "activity_dependent_fraction_max": 0.0,
+    "note": "all 37 wild-type compartments exactly DA_ref; fumin at fixed point to 1 ULP (6.9e-18)"
+   },
+   "probe-12": {
+    "activity_dependent_fraction_max": 0.0378202282700928,
+    "wt_um": {
+     "EB": 0.020002392849072848,
+     "FB": 0.020756404565401856,
+     "LAL_L": 0.020011964298620843,
+     "LAL_R": 0.02,
+     "NO_L": 0.0200047857034715,
+     "NO_R": 0.02,
+     "PB": 0.02,
+     "alpha1_L": 0.02,
+     "alpha1_R": 0.02,
+     "alpha2_L": 0.02,
+     "alpha2_R": 0.02,
+     "alpha3_L": 0.02,
+     "alpha3_R": 0.02,
+     "alpha_prime1_L": 0.02,
+     "alpha_prime1_R": 0.02,
+     "alpha_prime2_L": 0.02,
+     "alpha_prime2_R": 0.02,
+     "alpha_prime3_L": 0.02,
+     "alpha_prime3_R": 0.02,
+     "beta1_L": 0.02,
+     "beta1_R": 0.02,
+     "beta2_L": 0.02,
+     "beta2_R": 0.02,
+     "beta_prime1_L": 0.02,
+     "beta_prime1_R": 0.02,
+     "beta_prime2_L": 0.02,
+     "beta_prime2_R": 0.02,
+     "gamma1_L": 0.02,
+     "gamma1_R": 0.02,
+     "gamma2_L": 0.02,
+     "gamma2_R": 0.02,
+     "gamma3_L": 0.02,
+     "gamma3_R": 0.02,
+     "gamma4_L": 0.02,
+     "gamma4_R": 0.02,
+     "gamma5_L": 0.02,
+     "gamma5_R": 0.02
+    },
+    "wt_deviation_from_DA_ref_um": {
+     "gamma1_L": 0.0,
+     "gamma2_L": 0.0,
+     "gamma3_L": 0.0,
+     "gamma4_L": 0.0,
+     "gamma5_L": 0.0,
+     "alpha1_L": 0.0,
+     "alpha2_L": 0.0,
+     "alpha3_L": 0.0,
+     "beta1_L": 0.0,
+     "beta2_L": 0.0,
+     "alpha_prime1_L": 0.0,
+     "alpha_prime2_L": 0.0,
+     "alpha_prime3_L": 0.0,
+     "beta_prime1_L": 0.0,
+     "beta_prime2_L": 0.0,
+     "gamma1_R": 0.0,
+     "gamma2_R": 0.0,
+     "gamma3_R": 0.0,
+     "gamma4_R": 0.0,
+     "gamma5_R": 0.0,
+     "alpha1_R": 0.0,
+     "alpha2_R": 0.0,
+     "alpha3_R": 0.0,
+     "beta1_R": 0.0,
+     "beta2_R": 0.0,
+     "alpha_prime1_R": 0.0,
+     "alpha_prime2_R": 0.0,
+     "alpha_prime3_R": 0.0,
+     "beta_prime1_R": 0.0,
+     "beta_prime2_R": 0.0,
+     "EB": 2.3928490728471197e-06,
+     "PB": 0.0,
+     "FB": 0.000756404565401856,
+     "NO_L": 4.785703471500008e-06,
+     "NO_R": 0.0,
+     "LAL_L": 1.1964298620843056e-05,
+     "LAL_R": 0.0
+    },
+    "deviating_compartments": [
+     "EB",
+     "FB",
+     "LAL_L",
+     "NO_L"
+    ],
+    "note": "the four deviations are 3.09e-4 to 3.78e-2 of DA_ref; the other 33 compartments are exactly DA_ref"
+   }
+  },
+  "3.3r": {
+   "method": "wild-type vehicle/methylphenidate and fumin compartment means per dose level",
+   "vehicle_um": [
+    0.020000000000000004,
+    0.020000000000000004,
+    0.020020960740988303
+   ],
+   "mph_um": [
+    0.037989169674944576,
+    0.0484631907095745,
+    0.050704812545102375
+   ],
+   "fumin_um": [
+    0.05333333333333332,
+    0.05333333333333332,
+    0.05333333333333332
+   ],
+   "fixed_point_um": {
+    "vehicle": 0.02,
+    "mph": [
+     0.037989169674944576,
+     0.0484631907095745,
+     0.050704812545102375
+    ],
+    "fumin": 0.05333333333333333
+   },
+   "activity_dependent_fraction": [
+    0.0,
+    0.0,
+    0.0010480370494151195
+   ]
+  },
+  "3.4r": {
+   "method": "fumin methylphenidate minus vehicle, paired per seed",
+   "per_seed_um": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "activity_dependent_fraction": 0.0
+  },
+  "3.5r": {
+   "method": "vehicle and 3 mM 3-IY compartment means per genotype per seed",
+   "vehicle_um": {
+    "fumin": [
+     0.05333333333333332,
+     0.05333333333333332,
+     0.05333333333333332
+    ],
+    "wild_type": [
+     0.020000000000000004,
+     0.020000000000000004,
+     0.020000000000000004
+    ]
+   },
+   "treated_um": {
+    "fumin": [
+     0.01845746829283531,
+     0.01841390658021888,
+     0.01841390658021888
+    ],
+    "wild_type": [
+     0.00686209948680341,
+     0.00686209948680341,
+     0.00686209948680341
+    ]
+   },
+   "fixed_point_um": {
+    "wild_type_vehicle": 0.02,
+    "fumin_vehicle": 0.05333333333333333,
+    "wild_type_3iy": 0.006862099486803409,
+    "fumin_3iy": 0.01841390658021888
+   },
+   "activity_dependent_fraction": {
+    "wild_type_3iy": 0.0,
+    "fumin_3iy": [
+     0.0023656964059557456,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "3.6r": {
+   "method": "PAM 50 Hz drive minus baseline, DN_all firing rate over ten seeds",
+   "pam_minus_baseline_dn_all_hz": [
+    -0.018321785989222406,
+    0.009545804464972996,
+    0.0015396458814471714,
+    0.010469591993841343,
+    -0.004926866820631259,
+    0.015088529638183301,
+    0.04526558891454968,
+    0.030331023864511142,
+    -0.005388760585065322,
+    0.0072363356428022385
+   ],
+   "da_field": {
+    "baseline_fixed_point_um": 0.02,
+    "pam_window_mean_um": [
+     7.397651139450785,
+     7.378224909048112,
+     7.42053318208742,
+     7.405838819055896,
+     7.375833008300863,
+     7.360787077170425,
+     7.421010380207667,
+     7.412623506322375,
+     7.414320012916496,
+     7.376190510856117
+    ],
+    "pam_innervated_da_spikes_per_probe": [
+     54950,
+     54845,
+     55052,
+     55253,
+     54910,
+     54574,
+     55103,
+     55200,
+     54919,
+     54776
+    ]
+   },
+   "note": "The PAM arm is the one place a neural drive moves the dopamine field. It is a stimulus condition, not a drug result, and its recorded endpoint is a firing rate, not a dopamine concentration."
+  },
+  "3.10r": {
+   "method": "DA_exposed mean firing rate, wild type and fumin, paired per seed",
+   "wt_da_exposed_hz": [
+    0.09430596285434995,
+    0.09695340501792114,
+    0.09639947865754317,
+    0.09486803519061583,
+    0.09483545128706419,
+    0.09595959595959595,
+    0.09485988921472792,
+    0.09603290974258716,
+    0.09582926034538938,
+    0.09524275008145976
+   ],
+   "fumin_da_exposed_hz": [
+    0.08312968393613555,
+    0.08334147930922124,
+    0.08410720104268492,
+    0.08516617790811339,
+    0.08356956663408276,
+    0.08367546432062561,
+    0.0825839035516455,
+    0.08126425545780384,
+    0.08335777126099707,
+    0.08306451612903226
+   ],
+   "per_seed_hz": [
+    -0.011176278918214391,
+    -0.013611925708699901,
+    -0.012292277614858252,
+    -0.009701857282502446,
+    -0.011265884652981437,
+    -0.012284131638970339,
+    -0.012275985663082425,
+    -0.014768654284783314,
+    -0.012471489084392315,
+    -0.012178233952427495
+   ],
+   "da_field_fixed_point_um": {
+    "wild_type": 0.02,
+    "fumin": 0.05333333333333333
+   },
+   "da_field_activity_dependent_fraction": 0.0,
+   "note": "the dopamine input has zero spatial and zero seed variance; the DA_exposed firing rate is a neural readout and does vary by seed"
+  }
+ },
+ "conclusion": {
+  "drug_arms": "The 3.2r-3.5r dopamine values are the analytic fixed point of the kinetics and genotype. Neural activity contributes nothing beyond three single-cell transients measurable at the 1e-3 uM level.",
+  "probe12_mechanism": "The four deviating compartments EB, FB, NO_L and LAL_L are the complete target set of the single CX_DAN neuron PPM1205 (engine idx 107102, root 720575940632126860), which fires exactly one spike at t=2436.2 ms in vehicle seed 2 probe 12.",
+  "pam_control": "The descending-PAM arm shows the dopamine machinery does respond to injected neural activity (549,582 innervated-DA spikes over ten 5 s probes, field about 7.4 uM). The model is not structurally incapable of activity-driven dopamine; the spontaneous and drug conditions simply have no innervated DA firing.",
+  "control_run_needed": false,
+  "control_run_reason": "The record and the run output already separate the two cases at every endpoint; a purpose-built control would add no discrimination."
+ }
+}

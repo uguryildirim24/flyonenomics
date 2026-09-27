@@ -1,0 +1,575 @@
+{
+  "class": "development",
+  "sub_tier": "T3c",
+  "stage": "T0-dt-convergence",
+  "engine_model": "lif+cbi",
+  "item": 88,
+  "recorded_dt_ms": 0.1,
+  "steps_ms": [
+    0.1,
+    0.05,
+    0.025
+  ],
+  "seed": 1,
+  "rho_mech": 1.2336139268858282,
+  "n_units": 5,
+  "units": [
+    {
+      "unit_id": "1.0-1.0-cbi--72.0-all",
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 1.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "recorded_h_max": 19.652304217599447,
+      "recorded_retention": 0.6089285714285715,
+      "recorded_difference_hz": 34.1,
+      "why": "1.0-1.0-cbi--72.0-all is the T0 closest miss (retention 0.6089285714285715, h_max 19.65); it is the low end of the recorded h_max range and the only unit that kept the reflex"
+    },
+    {
+      "unit_id": "1.5-4.0-cbi--72.0-all",
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 4.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "recorded_h_max": 36.7428842422786,
+      "recorded_retention": 0.04285714285714286,
+      "recorded_difference_hz": 2.4,
+      "why": "1.5-4.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 36.74; pair (1.5, 4.0), E_inh -72.0 mV, recorded retention 0.04285714285714286"
+    },
+    {
+      "unit_id": "3.0-8.0-cbi--72.0-all",
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 3.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -72.0,
+        "scope": "all"
+      },
+      "M": 0.05,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "recorded_h_max": 70.04755217563972,
+      "recorded_retention": 0.0,
+      "recorded_difference_hz": 0.0,
+      "why": "3.0-8.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 70.05; pair (3.0, 8.0), E_inh -72.0 mV, recorded retention 0.0"
+    },
+    {
+      "unit_id": "1.5-8.0-cbi--62.0-all",
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.5,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -62.0,
+        "scope": "all"
+      },
+      "M": 0.1,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "recorded_h_max": 134.0436692788588,
+      "recorded_retention": 0.026785714285714284,
+      "recorded_difference_hz": 1.5,
+      "why": "1.5-8.0-cbi--62.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 134.04; pair (1.5, 8.0), E_inh -62.0 mV, recorded retention 0.026785714285714284"
+    },
+    {
+      "unit_id": "1.0-8.0-cbi--57.0-all",
+      "sub_tier": "T3c",
+      "engine_model": "lif+cbi",
+      "g_gaba": 1.0,
+      "g_glu": 8.0,
+      "setting": {
+        "E_inh_mv": -57.0,
+        "scope": "all"
+      },
+      "M": 0.2,
+      "baseline": false,
+      "sigma_th": 0.0,
+      "optic_exemption": false,
+      "n_bg": 100,
+      "recorded_h_max": 256.52648256415154,
+      "recorded_retention": 0.05178571428571428,
+      "recorded_difference_hz": 2.9,
+      "why": "1.0-8.0-cbi--57.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 256.53; pair (1.0, 8.0), E_inh -57.0 mV, recorded retention 0.05178571428571428"
+    }
+  ],
+  "selection": "required closest miss 1.0-1.0-cbi--72.0-all, then four companions at roughly 25/50/75/100 percent of log h_max from 19.65 to 256.53",
+  "jobs": [
+    [
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-1.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 1.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 19.652304217599447,
+          "recorded_retention": 0.6089285714285715,
+          "recorded_difference_hz": 34.1,
+          "why": "1.0-1.0-cbi--72.0-all is the T0 closest miss (retention 0.6089285714285715, h_max 19.65); it is the low end of the recorded h_max range and the only unit that kept the reflex"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-4.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 4.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 36.7428842422786,
+          "recorded_retention": 0.04285714285714286,
+          "recorded_difference_hz": 2.4,
+          "why": "1.5-4.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 36.74; pair (1.5, 4.0), E_inh -72.0 mV, recorded retention 0.04285714285714286"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "3.0-8.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 3.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 70.04755217563972,
+          "recorded_retention": 0.0,
+          "recorded_difference_hz": 0.0,
+          "why": "3.0-8.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 70.05; pair (3.0, 8.0), E_inh -72.0 mV, recorded retention 0.0"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-8.0-cbi--62.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -62.0,
+            "scope": "all"
+          },
+          "M": 0.1,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 134.0436692788588,
+          "recorded_retention": 0.026785714285714284,
+          "recorded_difference_hz": 1.5,
+          "why": "1.5-8.0-cbi--62.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 134.04; pair (1.5, 8.0), E_inh -62.0 mV, recorded retention 0.026785714285714284"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-8.0-cbi--57.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -57.0,
+            "scope": "all"
+          },
+          "M": 0.2,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 256.52648256415154,
+          "recorded_retention": 0.05178571428571428,
+          "recorded_difference_hz": 2.9,
+          "why": "1.0-8.0-cbi--57.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 256.53; pair (1.0, 8.0), E_inh -57.0 mV, recorded retention 0.05178571428571428"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "bare",
+        "unit": null,
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.1,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-1.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 1.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 19.652304217599447,
+          "recorded_retention": 0.6089285714285715,
+          "recorded_difference_hz": 34.1,
+          "why": "1.0-1.0-cbi--72.0-all is the T0 closest miss (retention 0.6089285714285715, h_max 19.65); it is the low end of the recorded h_max range and the only unit that kept the reflex"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-4.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 4.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 36.7428842422786,
+          "recorded_retention": 0.04285714285714286,
+          "recorded_difference_hz": 2.4,
+          "why": "1.5-4.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 36.74; pair (1.5, 4.0), E_inh -72.0 mV, recorded retention 0.04285714285714286"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "3.0-8.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 3.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 70.04755217563972,
+          "recorded_retention": 0.0,
+          "recorded_difference_hz": 0.0,
+          "why": "3.0-8.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 70.05; pair (3.0, 8.0), E_inh -72.0 mV, recorded retention 0.0"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-8.0-cbi--62.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -62.0,
+            "scope": "all"
+          },
+          "M": 0.1,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 134.0436692788588,
+          "recorded_retention": 0.026785714285714284,
+          "recorded_difference_hz": 1.5,
+          "why": "1.5-8.0-cbi--62.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 134.04; pair (1.5, 8.0), E_inh -62.0 mV, recorded retention 0.026785714285714284"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-8.0-cbi--57.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -57.0,
+            "scope": "all"
+          },
+          "M": 0.2,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 256.52648256415154,
+          "recorded_retention": 0.05178571428571428,
+          "recorded_difference_hz": 2.9,
+          "why": "1.0-8.0-cbi--57.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 256.53; pair (1.0, 8.0), E_inh -57.0 mV, recorded retention 0.05178571428571428"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "bare",
+        "unit": null,
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.05,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-1.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 1.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 19.652304217599447,
+          "recorded_retention": 0.6089285714285715,
+          "recorded_difference_hz": 34.1,
+          "why": "1.0-1.0-cbi--72.0-all is the T0 closest miss (retention 0.6089285714285715, h_max 19.65); it is the low end of the recorded h_max range and the only unit that kept the reflex"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-4.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 4.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 36.7428842422786,
+          "recorded_retention": 0.04285714285714286,
+          "recorded_difference_hz": 2.4,
+          "why": "1.5-4.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 36.74; pair (1.5, 4.0), E_inh -72.0 mV, recorded retention 0.04285714285714286"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "3.0-8.0-cbi--72.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 3.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -72.0,
+            "scope": "all"
+          },
+          "M": 0.05,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 70.04755217563972,
+          "recorded_retention": 0.0,
+          "recorded_difference_hz": 0.0,
+          "why": "3.0-8.0-cbi--72.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 70.05; pair (3.0, 8.0), E_inh -72.0 mV, recorded retention 0.0"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.5-8.0-cbi--62.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.5,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -62.0,
+            "scope": "all"
+          },
+          "M": 0.1,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 134.0436692788588,
+          "recorded_retention": 0.026785714285714284,
+          "recorded_difference_hz": 1.5,
+          "why": "1.5-8.0-cbi--62.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 134.04; pair (1.5, 8.0), E_inh -62.0 mV, recorded retention 0.026785714285714284"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      },
+      {
+        "kind": "unit",
+        "unit": {
+          "unit_id": "1.0-8.0-cbi--57.0-all",
+          "sub_tier": "T3c",
+          "engine_model": "lif+cbi",
+          "g_gaba": 1.0,
+          "g_glu": 8.0,
+          "setting": {
+            "E_inh_mv": -57.0,
+            "scope": "all"
+          },
+          "M": 0.2,
+          "baseline": false,
+          "sigma_th": 0.0,
+          "optic_exemption": false,
+          "n_bg": 100,
+          "recorded_h_max": 256.52648256415154,
+          "recorded_retention": 0.05178571428571428,
+          "recorded_difference_hz": 2.9,
+          "why": "1.0-8.0-cbi--57.0-all sits on the log-h_max span 19.65 to 256.53 at h_max 256.53; pair (1.0, 8.0), E_inh -57.0 mV, recorded retention 0.05178571428571428"
+        },
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      },
+      {
+        "kind": "bare",
+        "unit": null,
+        "seeds": [
+          1
+        ],
+        "dt_ms": 0.025,
+        "brain_s": 6
+      }
+    ]
+  ],
+  "n_jobs": 1,
+  "n_tasks": 18,
+  "t0_brain_s": 108.0,
+  "cap_list_usd": 8.0,
+  "note": "T0 background off, one seed, same-job bare at each step. No T0 readmission."
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260914T134729.081983Z-a2a66645",
+  "created": "20260914T134729.081983Z",
+  "pid": 89463,
+  "state": "done",
+  "wall_time_s": 86.02786783396732,
+  "n_workers": 2,
+  "worker_pids": [
+    89467,
+    89468
+  ],
+  "estimated_remaining_s": null,
+  "arm": "wild-type",
+  "seed": 1,
+  "phase_index": 1,
+  "brain_time_s": 6.5
+}

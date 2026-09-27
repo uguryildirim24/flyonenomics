@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="590" viewBox="0 0 1280 590">
+<rect width="1280" height="590" fill="#f4f8fa"/>
+<style>text{font-family:system-ui,sans-serif;fill:#193548} .title{font-size:27px;font-weight:700} .axis{font-size:17px} .tick{font-size:15px} .hint{font-size:14px;fill:#526d7a}</style>
+<text x="56" y="52" class="title">GABA receptor scaling changes model brain activity</text>
+<text x="56" y="80" class="hint">Outside sensory neurons · rate difference from matched rest · brackets show 95% whole-seed intervals</text>
+<text x="37" y="120" class="axis">GABA blocked</text>
+<path d="M90 135 V465 H550" stroke="#516b79" stroke-width="2" fill="none"/>
+<line x1="90" y1="465.0" x2="550" y2="465.0" stroke="#dce6eb"/>
+<text x="82" y="470.0" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="382.5" x2="550" y2="382.5" stroke="#dce6eb"/>
+<text x="82" y="387.5" text-anchor="end" class="tick">3.5</text>
+<line x1="90" y1="300.0" x2="550" y2="300.0" stroke="#dce6eb"/>
+<text x="82" y="305.0" text-anchor="end" class="tick">7</text>
+<line x1="90" y1="217.5" x2="550" y2="217.5" stroke="#dce6eb"/>
+<text x="82" y="222.5" text-anchor="end" class="tick">10.5</text>
+<line x1="90" y1="135.0" x2="550" y2="135.0" stroke="#dce6eb"/>
+<text x="82" y="140.0" text-anchor="end" class="tick">14</text>
+<text x="90.0" y="488" text-anchor="middle" class="tick">0</text>
+<text x="205.0" y="488" text-anchor="middle" class="tick">0.25</text>
+<text x="320.0" y="488" text-anchor="middle" class="tick">0.5</text>
+<text x="435.0" y="488" text-anchor="middle" class="tick">0.75</text>
+<text x="550.0" y="488" text-anchor="middle" class="tick">1</text>
+<line x1="136.0" x2="136.0" y1="463.2320629145856" y2="462.48844851293984" stroke="#b6464a" stroke-width="3"/>
+<line x1="130.0" x2="142.0" y1="463.2320629145856" y2="463.2320629145856" stroke="#b6464a" stroke-width="2"/>
+<line x1="130.0" x2="142.0" y1="462.48844851293984" y2="462.48844851293984" stroke="#b6464a" stroke-width="2"/>
+<line x1="205.0" x2="205.0" y1="458.4885733571298" y2="457.50161345153106" stroke="#b6464a" stroke-width="3"/>
+<line x1="199.0" x2="211.0" y1="458.4885733571298" y2="458.4885733571298" stroke="#b6464a" stroke-width="2"/>
+<line x1="199.0" x2="211.0" y1="457.50161345153106" y2="457.50161345153106" stroke="#b6464a" stroke-width="2"/>
+<line x1="320.0" x2="320.0" y1="443.3778044107691" y2="440.91517561140023" stroke="#b6464a" stroke-width="3"/>
+<line x1="314.0" x2="326.0" y1="443.3778044107691" y2="443.3778044107691" stroke="#b6464a" stroke-width="2"/>
+<line x1="314.0" x2="326.0" y1="440.91517561140023" y2="440.91517561140023" stroke="#b6464a" stroke-width="2"/>
+<line x1="435.0" x2="435.0" y1="358.07249810412907" y2="355.3417233503018" stroke="#b6464a" stroke-width="3"/>
+<line x1="429.0" x2="441.0" y1="358.07249810412907" y2="358.07249810412907" stroke="#b6464a" stroke-width="2"/>
+<line x1="429.0" x2="441.0" y1="355.3417233503018" y2="355.3417233503018" stroke="#b6464a" stroke-width="2"/>
+<line x1="504.0" x2="504.0" y1="243.27029183700455" y2="235.09663933634351" stroke="#b6464a" stroke-width="3"/>
+<line x1="498.0" x2="510.0" y1="243.27029183700455" y2="243.27029183700455" stroke="#b6464a" stroke-width="2"/>
+<line x1="498.0" x2="510.0" y1="235.09663933634351" y2="235.09663933634351" stroke="#b6464a" stroke-width="2"/>
+<line x1="550.0" x2="550.0" y1="168.8678222036267" y2="167.70308531201238" stroke="#b6464a" stroke-width="3"/>
+<line x1="544.0" x2="556.0" y1="168.8678222036267" y2="168.8678222036267" stroke="#b6464a" stroke-width="2"/>
+<line x1="544.0" x2="556.0" y1="167.70308531201238" y2="167.70308531201238" stroke="#b6464a" stroke-width="2"/>
+<polyline points="90.0,465.0 136.0,462.79977946880746 205.0,458.0399924165163 320.0,442.0862993180676 435.0,356.7791865333601 504.0,238.91677649643054 550.0,168.27287219360255" fill="none" stroke="#b6464a" stroke-width="3"/>
+<circle cx="136.0" cy="462.79977946880746" r="5" fill="#b6464a"/>
+<circle cx="205.0" cy="458.0399924165163" r="5" fill="#b6464a"/>
+<circle cx="320.0" cy="442.0862993180676" r="5" fill="#b6464a"/>
+<circle cx="435.0" cy="356.7791865333601" r="5" fill="#b6464a"/>
+<circle cx="504.0" cy="238.91677649643054" r="5" fill="#b6464a"/>
+<circle cx="550.0" cy="168.27287219360255" r="5" fill="#b6464a"/>
+<text x="320.0" y="527" text-anchor="middle" class="axis">Fraction of GABA receptors blocked</text>
+<text x="677" y="120" class="axis">GABA strengthened</text>
+<path d="M730 135 V465 H1190" stroke="#516b79" stroke-width="2" fill="none"/>
+<line x1="730" y1="465.0" x2="1190" y2="465.0" stroke="#dce6eb"/>
+<text x="722" y="470.0" text-anchor="end" class="tick">-1</text>
+<line x1="730" y1="382.5" x2="1190" y2="382.5" stroke="#dce6eb"/>
+<text x="722" y="387.5" text-anchor="end" class="tick">-0.725</text>
+<line x1="730" y1="300.0" x2="1190" y2="300.0" stroke="#dce6eb"/>
+<text x="722" y="305.0" text-anchor="end" class="tick">-0.45</text>
+<line x1="730" y1="217.5" x2="1190" y2="217.5" stroke="#dce6eb"/>
+<text x="722" y="222.5" text-anchor="end" class="tick">-0.175</text>
+<line x1="730" y1="135.0" x2="1190" y2="135.0" stroke="#dce6eb"/>
+<text x="722" y="140.0" text-anchor="end" class="tick">0.1</text>
+<text x="730.0" y="488" text-anchor="middle" class="tick">0</text>
+<text x="845.0" y="488" text-anchor="middle" class="tick">0.5</text>
+<text x="960.0" y="488" text-anchor="middle" class="tick">1</text>
+<text x="1075.0" y="488" text-anchor="middle" class="tick">1.5</text>
+<text x="1190.0" y="488" text-anchor="middle" class="tick">2</text>
+<line x1="787.5" x2="787.5" y1="249.238156181992" y2="236.38053979295057" stroke="#2878a3" stroke-width="3"/>
+<line x1="781.5" x2="793.5" y1="249.238156181992" y2="249.238156181992" stroke="#2878a3" stroke-width="2"/>
+<line x1="781.5" x2="793.5" y1="236.38053979295057" y2="236.38053979295057" stroke="#2878a3" stroke-width="2"/>
+<line x1="845.0" x2="845.0" y1="301.90044440376676" y2="294.6678859804341" stroke="#2878a3" stroke-width="3"/>
+<line x1="839.0" x2="851.0" y1="301.90044440376676" y2="301.90044440376676" stroke="#2878a3" stroke-width="2"/>
+<line x1="839.0" x2="851.0" y1="294.6678859804341" y2="294.6678859804341" stroke="#2878a3" stroke-width="2"/>
+<line x1="960.0" x2="960.0" y1="352.54374733052657" y2="344.4313787703134" stroke="#2878a3" stroke-width="3"/>
+<line x1="954.0" x2="966.0" y1="352.54374733052657" y2="352.54374733052657" stroke="#2878a3" stroke-width="2"/>
+<line x1="954.0" x2="966.0" y1="344.4313787703134" y2="344.4313787703134" stroke="#2878a3" stroke-width="2"/>
+<line x1="1190.0" x2="1190.0" y1="419.1686791953953" y2="411.9697007138935" stroke="#2878a3" stroke-width="3"/>
+<line x1="1184.0" x2="1196.0" y1="419.1686791953953" y2="419.1686791953953" stroke="#2878a3" stroke-width="2"/>
+<line x1="1184.0" x2="1196.0" y1="411.9697007138935" y2="411.9697007138935" stroke="#2878a3" stroke-width="2"/>
+<polyline points="730.0,165.0 787.5,242.92435983484862 845.0,297.56497244086484 960.0,348.16236500091526 1190.0,415.4113938210588" fill="none" stroke="#2878a3" stroke-width="3"/>
+<circle cx="787.5" cy="242.92435983484862" r="5" fill="#2878a3"/>
+<circle cx="845.0" cy="297.56497244086484" r="5" fill="#2878a3"/>
+<circle cx="960.0" cy="348.16236500091526" r="5" fill="#2878a3"/>
+<circle cx="1190.0" cy="415.4113938210588" r="5" fill="#2878a3"/>
+<text x="960.0" y="527" text-anchor="middle" class="axis">Extra GABA conductance (φ)</text>
+<text x="56" y="561" class="hint">Block concentration: picrotoxin brain-equivalent on recombinant Rdl homomers; potentiation has no calibrated drug concentration.</text>
+</svg>

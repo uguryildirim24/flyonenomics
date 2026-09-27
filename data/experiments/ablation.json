@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.2",
+  "name": "ablation",
+  "description": "Final bare-substrate 2x2 dopamine-pool and fast-DAN factorial, wild type and fumin",
+  "seed": 20260912,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "substrate": {
+    "connectome_version": "783",
+    "behaviour_version": "v0.1"
+  },
+  "layers": {
+    "background": false,
+    "dopamine_A": true,
+    "transporter_C": true,
+    "dan_fast_synapses": "retain"
+  },
+  "comparison": "ablation",
+  "arms": [
+    {
+      "label": "on-retain-wt",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "layers": {
+        "dopamine_A": true,
+        "dan_fast_synapses": "retain"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "on-retain-fumin",
+      "genotype": {
+        "named": "fumin"
+      },
+      "layers": {
+        "dopamine_A": true,
+        "dan_fast_synapses": "retain"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "on-disconnect-wt",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "layers": {
+        "dopamine_A": true,
+        "dan_fast_synapses": "disconnect"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "on-disconnect-fumin",
+      "genotype": {
+        "named": "fumin"
+      },
+      "layers": {
+        "dopamine_A": true,
+        "dan_fast_synapses": "disconnect"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "off-retain-wt",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "layers": {
+        "dopamine_A": false,
+        "dan_fast_synapses": "retain"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "off-retain-fumin",
+      "genotype": {
+        "named": "fumin"
+      },
+      "layers": {
+        "dopamine_A": false,
+        "dan_fast_synapses": "retain"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "off-disconnect-wt",
+      "genotype": {
+        "named": "wild_type"
+      },
+      "layers": {
+        "dopamine_A": false,
+        "dan_fast_synapses": "disconnect"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    },
+    {
+      "label": "off-disconnect-fumin",
+      "genotype": {
+        "named": "fumin"
+      },
+      "layers": {
+        "dopamine_A": false,
+        "dan_fast_synapses": "disconnect"
+      },
+      "protocol": [
+        {
+          "type": "probe",
+          "assay": "buridan",
+          "duration_s": 20,
+          "label": "test",
+          "params": {
+            "stripes": true,
+            "encoder": "on",
+            "inject_at": "TuBu"
+          }
+        }
+      ]
+    }
+  ],
+  "record": {
+    "spikes": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "rates": [
+      "DAN",
+      "CX_DAN",
+      "DN_all"
+    ],
+    "dopamine": true,
+    "receptors": true,
+    "drug": true,
+    "arena": true,
+    "popcount": true,
+    "live": false
+  }
+}

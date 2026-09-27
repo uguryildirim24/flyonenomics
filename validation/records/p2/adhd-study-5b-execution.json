@@ -1,0 +1,462 @@
+{
+  "decision": "d-0023",
+  "status": "aborted on d-0023 checkpoint failure; no genotype/inference results reported",
+  "host": "compute host",
+  "directory": "<compute-run-root>",
+  "commit": "e34ca1369acf5fd641225be757340ce184e092be",
+  "qualified_bound_source_commit": "b6b5ccca8b5036a00edf5428aa328b6b7f265fd9",
+  "bound_source_changes_after_gate": false,
+  "started_utc": "2026-09-23T02:12:36Z",
+  "workers": 10,
+  "driver_pid": 3796221,
+  "parent_python_pid": 3796224,
+  "outer_shell_pid": 3796204,
+  "command": ".venv/bin/python scripts/adhd_study.py 5b --workers 10 --pair validation/records/p2/adhd-study-pair.json --out camber-runs/adhd-study/5b-01",
+  "pair": [
+    -50.0,
+    50.0
+  ],
+  "pair_sha256": "b941a440714244811e9ce305a45e678d5f9e5ea25a4a8f2ed638c0f630eff4dc",
+  "plan_sha256": "c40623ac8b8e099f55acd2b0a8899e65a089dfb795bdc2c5ecbdb29b8207d944",
+  "estimated_wall_h": 20.726,
+  "estimate_basis": "one-worker probe extrapolation, not concurrent throughput; altered firing can change runtime",
+  "reporting_checkpoint": "d-0023: original seeds101/102 exact NPZ bytes and corrected audit; remaining8 checked after5b alongside analysis, report separately and flag any mismatch immediately.",
+  "exit_code": 143,
+  "finished_utc": "2026-09-23T06:04:32Z",
+  "stop_record": {
+    "decision": "d-0023",
+    "reason": "Two-seed replay produced ten exact-byte matches but failed corrected RNG audit; checkpoint unmet. Stop5b before findings.",
+    "stopped_utc": "2026-09-23T06:04:32.371775+00:00",
+    "targets": {
+      "3796224": ".venv/bin/python scripts/adhd_study.py 5b --workers 10 --pair validation/records/p2/adhd-study-pair.json --out camber-runs/adhd-study/5b-01",
+      "3796297": "<compute-run-root>/.venv/bin/python -c from multiprocessing.resource_tracker import main;main(7)",
+      "3796298": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=12) --multiprocessing-fork",
+      "3796301": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=14) --multiprocessing-fork",
+      "3796302": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=16) --multiprocessing-fork",
+      "3796303": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=18) --multiprocessing-fork",
+      "3796304": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=20) --multiprocessing-fork",
+      "3796305": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=22) --multiprocessing-fork",
+      "3796306": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=24) --multiprocessing-fork",
+      "3796307": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=26) --multiprocessing-fork",
+      "3796308": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=28) --multiprocessing-fork",
+      "3796309": "<compute-run-root>/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=8, pipe_handle=30) --multiprocessing-fork"
+    }
+  },
+  "stop_record_sha256": "76a9ca87b3872ab1ebca4fb30c0e1f5dd9f6f6287b6a37bfff28633422f4867f",
+  "completed_arm_files": 60,
+  "planned_arm_files": 320,
+  "complete_seed_manifests": 0,
+  "all_lane_jobs_ended": true,
+  "final_stimulus_pairing_audit": [
+    {
+      "seed": 201,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-201-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25971,
+          "event_array_sha256": "77298ce394c24f4fcc6f2fa84f1fdf15e1246adee163882331c4d032987c12c5",
+          "journal_sha256": "5bcc924e25578e56302b657f40f83cba7132139d164f9e65c36dc801dfb60f92"
+        },
+        {
+          "file": "seed-201-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 25829,
+          "event_array_sha256": "2eaf772e0815eac7ee358148ee64ec10c2c24b5e1de751fda8d4adfdc8dc1516",
+          "journal_sha256": "f654530645a0fc9f9f5b2d4fa00e33af598785b79b13ca4c937216cdd7e75235"
+        }
+      ]
+    },
+    {
+      "seed": 202,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-202-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25981,
+          "event_array_sha256": "4a15f00ae03c6940a46f5a995ce59259f45ee966b7f27f4b8f682ea0826201c3",
+          "journal_sha256": "93c93ceeabd23a56dc205d12bf5871a31f3623ba102d755a0b97bc7bc320dd88"
+        },
+        {
+          "file": "seed-202-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 25934,
+          "event_array_sha256": "a13e0ee0d53890da0a29d7a2f5e28052650d86a724818b242855168b5748d224",
+          "journal_sha256": "5086d2cdcac2f2ed2d8133044263b55b46cd454426b72485483a670a53641fba"
+        }
+      ]
+    },
+    {
+      "seed": 203,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-203-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25942,
+          "event_array_sha256": "1ae9056566e50f7156bb91386a8351e170ed1940afe14126d884043fb94c42d4",
+          "journal_sha256": "1ba65633136c906e5158e1f8ec3b5ebbc7d6d9ef05971f4cf524ccab195c7e23"
+        },
+        {
+          "file": "seed-203-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26076,
+          "event_array_sha256": "ec42da9e4a1467963d456fedec44361e27d067065822871136359af8601586e0",
+          "journal_sha256": "98c927f1b89efb0e3982e7a47545cee429c5c096e96cca479357e6da1a9d64df"
+        }
+      ]
+    },
+    {
+      "seed": 204,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-204-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25782,
+          "event_array_sha256": "cb00ebb8080aae5364fece1bcb8f359ec56f0d5d04a44cfbba8584a5ee339514",
+          "journal_sha256": "371b63119c62247e782e44394c6ccd437cad4a3a4b6a65b84f079bc94d1cbf59"
+        },
+        {
+          "file": "seed-204-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26028,
+          "event_array_sha256": "50afefd304681f4893ea8312c10f34fabe4262d860d8f7fbda1c52561adcd05e",
+          "journal_sha256": "4f17aa83625008976fba8a8caad08f1001a1ff1c46b8600602ba9e0e2d08a2d9"
+        }
+      ]
+    },
+    {
+      "seed": 205,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-205-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 26050,
+          "event_array_sha256": "090d29ccdb2fd0d6fb2138272ca6c056f6b89fed20cdd2336ddfef7729044b4a",
+          "journal_sha256": "3c28ffd52ae35db92e787375a98f99f16745aa9a728f10673efa2b497010a09a"
+        },
+        {
+          "file": "seed-205-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26110,
+          "event_array_sha256": "76c69e60e9ef262d43fcdfe684f9ccb03844e968d3afa538bf62d0a748dcc08a",
+          "journal_sha256": "e5b46cc25592794e70979f6274d5b4efef4231bdf377a155425d42aa1b3214ff"
+        }
+      ]
+    },
+    {
+      "seed": 206,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-206-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25968,
+          "event_array_sha256": "d884a7e4700b735cccf9ac9dce20bef48c0c4c966a8f8c66d62db8f60041361a",
+          "journal_sha256": "9c4400c1cb2065646bc71cceb1f8d6017ee5235c9732158d98cf443724470a49"
+        },
+        {
+          "file": "seed-206-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 25683,
+          "event_array_sha256": "522a8114b1a1d10b1946c53fb80554ac87e369d8a5205a314c0324f8c9fb4ac5",
+          "journal_sha256": "30818971523f780f4eec8635e5a70f296334b8c4b33beb1b6feb7f1ce9d64660"
+        }
+      ]
+    },
+    {
+      "seed": 207,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-207-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25848,
+          "event_array_sha256": "6ed71b49e5a333531d29bb6c3c445a511122537693f87328b1827d1cbb5eb1b5",
+          "journal_sha256": "6e4ea55bfd005afcd2c46c6629d5e09594baf6a0554ff43d322b2482b6b5586a"
+        },
+        {
+          "file": "seed-207-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26164,
+          "event_array_sha256": "849f907856fbfacb80312e2a0de26cd3168edb8d00ef05fd85ff161b299cee54",
+          "journal_sha256": "9cbed9ecc6eb05c4d2302e82822324c59da398907c2bbc558f6593902135fcdb"
+        }
+      ]
+    },
+    {
+      "seed": 208,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-208-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 26193,
+          "event_array_sha256": "c78ea35f410c2836ac4c174e0bbf88a78a1d0a07ef98cb557ef238acd2f547ac",
+          "journal_sha256": "cef489302c29421952e8d6f14383d040b7d8984d68d37ed541e8fb94b8344baf"
+        },
+        {
+          "file": "seed-208-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26008,
+          "event_array_sha256": "01fe3fb1fca5c95d1d7d23c1c3b0c9baa23f4ebff5d8e65963d7f82b9df30c63",
+          "journal_sha256": "9bd21577cdff74e999e3c225e241f1dbbe15aae31c98b7440875b234edcffd44"
+        }
+      ]
+    },
+    {
+      "seed": 209,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-209-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 26121,
+          "event_array_sha256": "d280181d3026f0dfe05424563112e5e7b1a873aa074f1527dba2e157e33f756d",
+          "journal_sha256": "677fbced3456c876fedaf398dad8d11922cde343c6b63ee1ca6316fe727baf94"
+        },
+        {
+          "file": "seed-209-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 26017,
+          "event_array_sha256": "00952e10472c420a9872629aa8b5241c2d9753f583d41177d4f9286850b73669",
+          "journal_sha256": "c55aaf7e7aa4e108e35264c20146dbab7083dff15c0ace1adc8c9c12a0f3e75c"
+        }
+      ]
+    },
+    {
+      "seed": 210,
+      "identical_final_stimulus": "AB",
+      "actual_test_events_identical": false,
+      "rows": [
+        {
+          "file": "seed-210-arm-03.npz",
+          "protocol": [
+            "off",
+            "AB"
+          ],
+          "event_count": 25958,
+          "event_array_sha256": "d0599fb513ac12db9e98259128285386006270b2de2051229e41acd23ac97762",
+          "journal_sha256": "31375a9bc78adff1fdc123a0b6b02afd1759371ab54a0e93998ffec9a6ddd752"
+        },
+        {
+          "file": "seed-210-arm-05.npz",
+          "protocol": [
+            "A",
+            "AB"
+          ],
+          "event_count": 25979,
+          "event_array_sha256": "c504f9ece657fa8c428ad97ccc539f307aaddd778c5d701d766c08f816c95b17",
+          "journal_sha256": "9456fdb53ae0f653708b147f4c76b303e1c1a24a21f152d6a7e892cba757e816"
+        }
+      ]
+    }
+  ],
+  "raw_npz_sha256": {
+    "seed-201-arm-00.npz": "53caa2fe16a49b91db84a24fc7bac231f8c1e30b6a1d23bda01b3e500aafc3cd",
+    "seed-201-arm-01.npz": "b0a166a3756c7266640bc3b653ba948c9c94208cf70039acbe5d2fad56df527c",
+    "seed-201-arm-02.npz": "e34f3aecb0dcad0edce9c150a3f5c9752a2b5ecf36d74c9838e847540083af0e",
+    "seed-201-arm-03.npz": "fe5d03ae0fa421ad0f6fc29d3411ab40c0c64b6cce5f5b96600ac5234fc27599",
+    "seed-201-arm-04.npz": "d8c18646a307261b90ccbf9b8b7197f37331389dfaf9d5be0a7ad13a28925e50",
+    "seed-201-arm-05.npz": "4d2596892935fa4371bea87ded7aed0d2c89b1f9fc29df68e05bbe8e8ad5c025",
+    "seed-202-arm-00.npz": "f3a22f371ab117f8d5d463e72da132e5276575f0ebc0832514ce603b37203b9f",
+    "seed-202-arm-01.npz": "e814682d37d7035068efd2ee2373677e4151d8cfc57c2c4cc9628bb5cab2b053",
+    "seed-202-arm-02.npz": "1354897ad5c9ca470d895ab4ff94da676cfe2a997461418b71f74e7b6d44a407",
+    "seed-202-arm-03.npz": "92f52623c14b7c5b2ced691475fc1f9dbc814baab86cdd7485867151e5feab46",
+    "seed-202-arm-04.npz": "98567d55974e66c804b193273b05f61bafbffe09b080b2dab77dbe957ccfa1ec",
+    "seed-202-arm-05.npz": "2960f89bb8109a770a4aa22b11d69547e1dda733590659cbb0fa581e91e98ef3",
+    "seed-203-arm-00.npz": "841b03a60d2def629246930fcd12265bdb85fd84770075e65195f850c90bd436",
+    "seed-203-arm-01.npz": "d539396006a31c0245bab51b0796bff8326c76e992060ed127a0ae9a50b8199f",
+    "seed-203-arm-02.npz": "ec17991f83e3300c5f5e187ceaa3167db48ad252406f3579e3d586bf56ae6f41",
+    "seed-203-arm-03.npz": "90b0676ce6db9bc3dca13306ac92bae35d53adde76976b0bef9cb64c0d6305ac",
+    "seed-203-arm-04.npz": "f5ec64f420aedcbfe729eb0ffaf0b438441a9765ba22c92f5c778b4999e01805",
+    "seed-203-arm-05.npz": "06f7ec780a1576e033818ba93fa376120d3fa6fb503ce29515180a17e1839ac4",
+    "seed-204-arm-00.npz": "06d90f438689b03ec3efd00da9777fb789e41d170eca1cf68988ab6b29b17824",
+    "seed-204-arm-01.npz": "f62cf01d18cabe132e11929201ae89cbc9d17b2441be5182143505a5dfea3caf",
+    "seed-204-arm-02.npz": "d62003f15cb67528fe34e987a19c51a3b3b9d502b6623d44071d8107cccbd967",
+    "seed-204-arm-03.npz": "b443078d23b44a6f31886bca2122739412db9ee46eb4a38047261bb8c83de85e",
+    "seed-204-arm-04.npz": "841358225530451a1fce8903d51a88507c2e03ecd9fced6cfedc2be33a297f3e",
+    "seed-204-arm-05.npz": "59beb350bd1749d84229d409ca018eec01fdd34cd75030af59dc6ed454364772",
+    "seed-205-arm-00.npz": "e159f812dab7e2d7eea1b525e4f0561cba89b656403d5fad8ec2725e906768b9",
+    "seed-205-arm-01.npz": "bd3d2b01b1d62e5242f2cf01b5aae5eb26e5dc5ff2bdbe937e731fdbb070a66e",
+    "seed-205-arm-02.npz": "a1ef1190bdca21a6084dfd892845d32c449cbd2c4b3876b95160b57c31755624",
+    "seed-205-arm-03.npz": "04f35e89d1c03d4c84cb414a1f4eb7e1d592fd4a9c7a44df51352ab9382a8d62",
+    "seed-205-arm-04.npz": "3678ae0bede9adea0779c1e359aad51dcc9422303d23dffcd68fd84facf5963b",
+    "seed-205-arm-05.npz": "dccd5e49dd9440d0a5ea80451e73a157c571a8867e3d3e143ff3e77c5f4cdfe2",
+    "seed-206-arm-00.npz": "53fcbd32f697001f1b3e4cbb58f9585bd5efb8466c060a2c134a11f78932a7cf",
+    "seed-206-arm-01.npz": "bcd4af1968c021cacb01a41f9b6e21e50b7beb7e79595149106ebd81eb000165",
+    "seed-206-arm-02.npz": "e41dbad1fe5e45d20149a7b751bdaede8b009ea577a0a51d6eec0ff14c62f9e7",
+    "seed-206-arm-03.npz": "c806fb0e116fe8e29260c0ce51943e2d051a1fc96778756aeb6af199c53b8f02",
+    "seed-206-arm-04.npz": "e50fe31bcd362ce897e7e240c1db4bffa65ad7cbec19e3b2ed424a330f4a380d",
+    "seed-206-arm-05.npz": "2dc371a5bf0ba14a1779ae0cfa5a4dbbd4cb11e6651fe4a3f2e2292e8e65f354",
+    "seed-207-arm-00.npz": "a124d3d554cea36470a1ad5bddfa7b7bc662c172e18a4996513bcb61dbe53df9",
+    "seed-207-arm-01.npz": "aadb3a7c5be1ceddaf67edfb5a24028910435ce8954985864aaccb6c40a81de2",
+    "seed-207-arm-02.npz": "16bd6871c42608b96af70a11532363f355a3be3e2b6b49d48bc47bb97f15c50e",
+    "seed-207-arm-03.npz": "333f3a6b58269ce42fe268ad65e63d58196f2a96f3b7d5d6713a6a729072ff81",
+    "seed-207-arm-04.npz": "583ece4456e07ec673d9e921a7433920144ee6849d650e86a8246639670e22dd",
+    "seed-207-arm-05.npz": "255b6f57b9b23b2c282ec21ab2ad59ab5e28d47f35b8e870c8c7339ee0b8bf35",
+    "seed-208-arm-00.npz": "60e889fc38d7996d58c0546c895b5e3736974a22b0b61e5c1c2c49549a2d20d8",
+    "seed-208-arm-01.npz": "9459e4cd4355ad431424780c34b81865c293af3b6bbb2c258ff3f92abf961f2a",
+    "seed-208-arm-02.npz": "682dbabb25ce5b5ccd06041e532c6ba6af97be64788c1005e4ccb348c8304509",
+    "seed-208-arm-03.npz": "5b09318e898d2f9feb3e9ddbfae51a10c8a0e5ddd1aae9cb48f2339aa629bb9b",
+    "seed-208-arm-04.npz": "2b261c8b8eaa3f9865698dcca21040dc6073de5da4baad74985dbc269a5063be",
+    "seed-208-arm-05.npz": "1dd20ff8ba3ebcf9b314363c7fb3857f933bb243432f2eba5de2ba0b1754b8a8",
+    "seed-209-arm-00.npz": "9abf8c43f541e3794523b34e663d207a50af8b40b7e3cc8c01de5f84245097bf",
+    "seed-209-arm-01.npz": "c544310069b5672dd216263f801e69d24f5e6c8d236fac2d926b5f06e56a96e4",
+    "seed-209-arm-02.npz": "59e7cff7ced444604749d6a620991dc61a5ee5eae637f47e3cf8bc8c7db1647e",
+    "seed-209-arm-03.npz": "6be41374962187da7f73ec9804aca07be9c6a989aee754defaa10dd27e49e294",
+    "seed-209-arm-04.npz": "ccb90a80f230552b151468f1d3f646c749ca447335763e540776950e96da5d56",
+    "seed-209-arm-05.npz": "8d330ce3ca8acd10d4510f2a6afe04d3f439eb99f9a832dcfae620c8e3cc54f4",
+    "seed-210-arm-00.npz": "1d581f4f1db2d688db66d76b6bdc1a1de1b78aef49b9dc81814055cab63bb0e3",
+    "seed-210-arm-01.npz": "f8480fbece589a1dc69effe355eb8251d7f656ada29c35548cea74cf7abf85c1",
+    "seed-210-arm-02.npz": "36e1845c98be1e37a5ccb2217ed3fdb572457fe0f2b0d81689c7590e936f5a94",
+    "seed-210-arm-03.npz": "001a5f45e07edb5b4b230b28806c6fa2af9de618f3364b0cd6077380da9ff14d",
+    "seed-210-arm-04.npz": "8adee32c1b846e7453f28e4a26feef971f48aab1e18e68066984c6d6d171b68f",
+    "seed-210-arm-05.npz": "bc677bd36304c04f809eeca6331fc2d8610fbccf1191b96207176707222d8490"
+  },
+  "arm_journal_sha256": {
+    "seed-201-arm-00.json": "f894be1e6ff69439976134208134230d6a0826323a3dc127112faa6ade37281b",
+    "seed-201-arm-01.json": "fc318c7ca0a57aeedf97743935bb05080ecf712cacf71e2b5ae7fcfb4b36071d",
+    "seed-201-arm-02.json": "c015ccce40d9328d47368e1071b4ae05692f5a08eed34de0e51e5f99a3029a96",
+    "seed-201-arm-03.json": "5bcc924e25578e56302b657f40f83cba7132139d164f9e65c36dc801dfb60f92",
+    "seed-201-arm-04.json": "fd3b6ac404434b36669b8778c41ee2c5df89fd8a36f0aea2be3ac731ec211980",
+    "seed-201-arm-05.json": "f654530645a0fc9f9f5b2d4fa00e33af598785b79b13ca4c937216cdd7e75235",
+    "seed-202-arm-00.json": "d60401f0243e1507c01e214fca22b34342b88d16a2511e651c565c65e9a6b463",
+    "seed-202-arm-01.json": "51052b8dc17d0cff2ca969ba192772b519d680e6202189585fdefaa8a67561bf",
+    "seed-202-arm-02.json": "1e2c7aba7803e854639c101983c9186cf92431c0bf2c5453e19720282dd339cc",
+    "seed-202-arm-03.json": "93c93ceeabd23a56dc205d12bf5871a31f3623ba102d755a0b97bc7bc320dd88",
+    "seed-202-arm-04.json": "6e29a09605d5cc55f4b9358360b811ee6218611cc412f55ed9273b8dd6acb723",
+    "seed-202-arm-05.json": "5086d2cdcac2f2ed2d8133044263b55b46cd454426b72485483a670a53641fba",
+    "seed-203-arm-00.json": "4ff2c32fde87c17f359d4e180a66cd01c56a76912c2ff122ab401c39f98430e2",
+    "seed-203-arm-01.json": "3131135286019c8e40138801742fa563c28d3d753b80847d4af776ba30f4de2f",
+    "seed-203-arm-02.json": "08ee9be9059393577d68e6d03d24be5477af44a20ded0ab5e61e698b3de78bae",
+    "seed-203-arm-03.json": "1ba65633136c906e5158e1f8ec3b5ebbc7d6d9ef05971f4cf524ccab195c7e23",
+    "seed-203-arm-04.json": "fb8f575984738f8eb66a1b4c9635c6c8a716c606f88f9f6b329eee8d4045d1c8",
+    "seed-203-arm-05.json": "98c927f1b89efb0e3982e7a47545cee429c5c096e96cca479357e6da1a9d64df",
+    "seed-204-arm-00.json": "9061bb2b381a1d6a3120959a85748a86ffcac3bb0084d40da8f893820dd63dc7",
+    "seed-204-arm-01.json": "2aeb8511f7fe8d8999642e8f924401123731663aedbb888a6a12fd47e03ff1e8",
+    "seed-204-arm-02.json": "8fedae1343e9a7e70dcd912571d10f988f79c052ecf6d00a4d3789d6de05d312",
+    "seed-204-arm-03.json": "371b63119c62247e782e44394c6ccd437cad4a3a4b6a65b84f079bc94d1cbf59",
+    "seed-204-arm-04.json": "10785c7d9e15eabbeb4aec18e4d095af4a81ef55f38e2f86d36ecf0a9eba9d97",
+    "seed-204-arm-05.json": "4f17aa83625008976fba8a8caad08f1001a1ff1c46b8600602ba9e0e2d08a2d9",
+    "seed-205-arm-00.json": "2c385269ed6d6bde446355ca2127ddbf796b69670c20aaffa93f9334492677e2",
+    "seed-205-arm-01.json": "4f055f2755af7aa71433a073139123580761d6c8bd6e07cf99025d5a0777b7d1",
+    "seed-205-arm-02.json": "fcd5e2833f46cb417971c2e22c17f79974df6f289718158b13f39b358eeeb2fe",
+    "seed-205-arm-03.json": "3c28ffd52ae35db92e787375a98f99f16745aa9a728f10673efa2b497010a09a",
+    "seed-205-arm-04.json": "8a2afb1c527b4c4607797266525f9c064dc18d9ecb4ff89345372a57b4f639c3",
+    "seed-205-arm-05.json": "e5b46cc25592794e70979f6274d5b4efef4231bdf377a155425d42aa1b3214ff",
+    "seed-206-arm-00.json": "cc3eee34ece1cb1833b43e8f75c8954a177172a260ddad2b3ee5931eaaca1a99",
+    "seed-206-arm-01.json": "78257b7043e892cb4fb5fed3daca9ec39fc114f2212617fbbf5720c29657759c",
+    "seed-206-arm-02.json": "f17926efc3b128bf8db090bf7826da136ea2a4750acd9c745f76e94f8a5d210f",
+    "seed-206-arm-03.json": "9c4400c1cb2065646bc71cceb1f8d6017ee5235c9732158d98cf443724470a49",
+    "seed-206-arm-04.json": "1d13dbbd5bfd4f5e654c01644501d1e48f37dfb5db0e210482b97db9bbcbeb4a",
+    "seed-206-arm-05.json": "30818971523f780f4eec8635e5a70f296334b8c4b33beb1b6feb7f1ce9d64660",
+    "seed-207-arm-00.json": "a98c689b465ac87e9011f88e0ef45aa2611e6ae70b81fb09146c70fa72c0a32a",
+    "seed-207-arm-01.json": "e295e595500f66b795c92671e35fdf2f7977dece8f2745261f6fa7dd3d6aada6",
+    "seed-207-arm-02.json": "2265151bed4be1282c33898c2343892f938a9633b7011086ce52ef16ad61bbdc",
+    "seed-207-arm-03.json": "6e4ea55bfd005afcd2c46c6629d5e09594baf6a0554ff43d322b2482b6b5586a",
+    "seed-207-arm-04.json": "ded47f7e9512661e1805b19895b0c7018ff47f92fa1a9c15fe3ef0f489ff11aa",
+    "seed-207-arm-05.json": "9cbed9ecc6eb05c4d2302e82822324c59da398907c2bbc558f6593902135fcdb",
+    "seed-208-arm-00.json": "04b614ada5fcd5f34673d278bee8a2e0837a615bae2fe15c12dbd2ac8e80f059",
+    "seed-208-arm-01.json": "4c6b1e58c77eda3c41402ca467fcc136fd6d504c344ac3529542ab0b0d50ebf7",
+    "seed-208-arm-02.json": "42d7c9eecf975c73d02cbfc40e813cd8738e438927c2ca4ad67e6f3e539ef8cd",
+    "seed-208-arm-03.json": "cef489302c29421952e8d6f14383d040b7d8984d68d37ed541e8fb94b8344baf",
+    "seed-208-arm-04.json": "3b803e8cdb2336138bbf6d682b5d7dab6739dfb0187749ab859503d30e9e46c2",
+    "seed-208-arm-05.json": "9bd21577cdff74e999e3c225e241f1dbbe15aae31c98b7440875b234edcffd44",
+    "seed-209-arm-00.json": "36872c8cc34580eaeeff2fb1b1d797bb59f4ecddfcf9ebe890fa6eadc71a2ee4",
+    "seed-209-arm-01.json": "2b3a2c9ddfb38aefc70b22e8ab01644d4ffebf1c032752bcb1c8ac6977d80fa3",
+    "seed-209-arm-02.json": "466b6176fae6df95c5cb14bca838f0a5e80419769a94d4dfc670b9955a0e3955",
+    "seed-209-arm-03.json": "677fbced3456c876fedaf398dad8d11922cde343c6b63ee1ca6316fe727baf94",
+    "seed-209-arm-04.json": "f534a336cb5545d17ba17691b18518ca89ec2d491b1be17e01f3ce1f98a1f653",
+    "seed-209-arm-05.json": "c55aaf7e7aa4e108e35264c20146dbab7083dff15c0ace1adc8c9c12a0f3e75c",
+    "seed-210-arm-00.json": "0f7c0b92a17cbd9cdd465d9cdbee95449b69a54e8442a24e8d3e49b81468a18a",
+    "seed-210-arm-01.json": "20853ed07745b08f6980d562a759014d8a6cb17b86e030694e05fd3d1cb129ca",
+    "seed-210-arm-02.json": "ce23fbde6d95352abc9ef7994c9f66238af82e91bbd25ac3d7141059119b74a5",
+    "seed-210-arm-03.json": "31375a9bc78adff1fdc123a0b6b02afd1759371ab54a0e93998ffec9a6ddd752",
+    "seed-210-arm-04.json": "0a7a67003d2f2bccee15f7c9ef6654bff86bc7f206a50e69e374cd00b80d0a26",
+    "seed-210-arm-05.json": "9456fdb53ae0f653708b147f4c76b303e1c1a24a21f152d6a7e892cba757e816"
+  },
+  "logs_sha256": {
+    "5b-01.commit": "87fb8dd8fb7b197851c3aa391dd977e81b109b861665b1e4845a651e3179f67b",
+    "5b-01.exit": "9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396",
+    "5b-01.finished": "12d7c1e27ee395b74fb25b7b4ac879fa4c0745c00fa875bd9793112f2f13b55f",
+    "5b-01.log": "0049b81ad8e8cc0fbefddb4aee240a8c34e3e35fc2a85a562c5fe43e2daee290",
+    "5b-01.started": "9650c46b58b7f669cc597df522538163f159769c417ca2d58a13f5157262da71"
+  },
+  "completed_conditions": [
+    "wt-vehicle"
+  ],
+  "last_no_lane_jobs_check_utc": "2026-09-23T06:11:37Z",
+  "inference_performed": false,
+  "remaining_replay_seeds_started": false,
+  "void_for_inference": true,
+  "superseding_decision": "d-0025",
+  "use_limit": "Evidence of failed pairing only; never analyse these60partialarms."
+}

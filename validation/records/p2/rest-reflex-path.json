@@ -1,0 +1,527 @@
+{
+ "class": "development",
+ "measured": {
+  "(3,6) optic off extended": {
+   "network": "(3,6) optic off",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.1,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.0796098097975659,
+    "ascending": 0.006387570133793699,
+    "central": 0.035983137609153865,
+    "descending": 0.06543494996150885,
+    "motor": 0.7792452830188679
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.7557477937761264,
+    "ascending": 0.13120567375886524,
+    "central": 0.23811895984856027,
+    "descending": 0.08501700340068012,
+    "motor": 0.09569045412418908,
+    "MN9": 0.0017857142857142859
+   }
+  },
+  "(3,6) optic off upstream": {
+   "network": "(3,6) optic off",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18959085071249465,
+    "ascending": 0.05822183858437635,
+    "central": 0.08107121348991267,
+    "descending": 0.19892224788298693,
+    "motor": 1.7792452830188679
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9718782330626705,
+    "ascending": 0.49559147685525357,
+    "central": 0.29421246021664,
+    "descending": 0.16025800049615482,
+    "motor": 0.1441345051585785,
+    "MN9": 0.0
+   }
+  },
+  "(3,6) optic on extended": {
+   "network": "(3,6) optic on",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.1,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.0796098097975659,
+    "ascending": 0.006387570133793699,
+    "central": 0.035983137609153865,
+    "descending": 0.06543494996150885,
+    "motor": 0.7792452830188679
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.7557477937761264,
+    "ascending": 0.13120567375886524,
+    "central": 0.23811895984856027,
+    "descending": 0.08501700340068012,
+    "motor": 0.09569045412418908,
+    "MN9": 0.0017857142857142859
+   }
+  },
+  "(3,6) optic on upstream": {
+   "network": "(3,6) optic on",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18959085071249465,
+    "ascending": 0.05822183858437635,
+    "central": 0.08107121348991267,
+    "descending": 0.19892224788298693,
+    "motor": 1.7792452830188679
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9718782330626705,
+    "ascending": 0.49559147685525357,
+    "central": 0.29421246021664,
+    "descending": 0.16025800049615482,
+    "motor": 0.1441345051585785,
+    "MN9": 0.0
+   }
+  },
+  "(3,8) optic off extended": {
+   "network": "(3,8) optic off",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.1,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.07986667482111186,
+    "ascending": 0.006689684937419077,
+    "central": 0.036163806082505266,
+    "descending": 0.06651270207852193,
+    "motor": 0.8122641509433963
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.7581862517417557,
+    "ascending": 0.1374113475177305,
+    "central": 0.23931453621600077,
+    "descending": 0.08641728345669132,
+    "motor": 0.09974513438368864,
+    "MN9": 0.0017857142857142859
+   }
+  },
+  "(3,8) optic off upstream": {
+   "network": "(3,8) optic off",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18951746070576722,
+    "ascending": 0.057229175658178685,
+    "central": 0.07754441433303222,
+    "descending": 0.19622786759045416,
+    "motor": 1.6566037735849055
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9715020221337429,
+    "ascending": 0.48714180749448943,
+    "central": 0.2814134874127498,
+    "descending": 0.15808732324485236,
+    "motor": 0.1341994650363011,
+    "MN9": 0.0
+   }
+  },
+  "(3,8) optic on extended": {
+   "network": "(3,8) optic on",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.1,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.07986667482111186,
+    "ascending": 0.006689684937419077,
+    "central": 0.036163806082505266,
+    "descending": 0.06651270207852193,
+    "motor": 0.8122641509433963
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.7581862517417557,
+    "ascending": 0.1374113475177305,
+    "central": 0.23931453621600077,
+    "descending": 0.08641728345669132,
+    "motor": 0.09974513438368864,
+    "MN9": 0.0017857142857142859
+   }
+  },
+  "(3,8) optic on upstream": {
+   "network": "(3,8) optic on",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18951746070576722,
+    "ascending": 0.057229175658178685,
+    "central": 0.07754441433303222,
+    "descending": 0.19622786759045416,
+    "motor": 1.6566037735849055
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9715020221337429,
+    "ascending": 0.48714180749448943,
+    "central": 0.2814134874127498,
+    "descending": 0.15808732324485236,
+    "motor": 0.1341994650363011,
+    "MN9": 0.0
+   }
+  },
+  "(4,2) optic off extended": {
+   "network": "(4,2) optic off",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.07403828512017614,
+    "ascending": 0.0036253776435045313,
+    "central": 0.028568202348690157,
+    "descending": 0.05173210161662818,
+    "motor": 0.789622641509434
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.7028564793311659,
+    "ascending": 0.07446808510638296,
+    "central": 0.18905051310152438,
+    "descending": 0.06721344268853771,
+    "motor": 0.09696478220574609,
+    "MN9": 0.0
+   }
+  },
+  "(4,2) optic off upstream": {
+   "network": "(4,2) optic off",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.19376184942816954,
+    "ascending": 0.042900302114803626,
+    "central": 0.09196401686239083,
+    "descending": 0.18083140877598153,
+    "motor": 5.304716981132075
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9932595541900493,
+    "ascending": 0.3651726671565026,
+    "central": 0.33374311901542153,
+    "descending": 0.14568345323741008,
+    "motor": 0.42972869698127625,
+    "MN9": 0.0
+   }
+  },
+  "(4,3) optic off extended": {
+   "network": "(4,3) optic off",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.07353067090697815,
+    "ascending": 0.004100129477772982,
+    "central": 0.02683303221921108,
+    "descending": 0.05250192455735181,
+    "motor": 0.5839622641509434
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.6980376219228981,
+    "ascending": 0.08421985815602835,
+    "central": 0.17756799840589815,
+    "descending": 0.0682136427285457,
+    "motor": 0.07170991658943468,
+    "MN9": 0.0
+   }
+  },
+  "(4,3) optic off upstream": {
+   "network": "(4,3) optic off",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18999449574949542,
+    "ascending": 0.04311609840310747,
+    "central": 0.07754817825956037,
+    "descending": 0.176905311778291,
+    "motor": 2.8150943396226418
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9739473931717716,
+    "ascending": 0.367009551800147,
+    "central": 0.28142714693548604,
+    "descending": 0.14252046638551227,
+    "motor": 0.22804738249904472,
+    "MN9": 0.0
+   }
+  },
+  "(4,4) optic off extended": {
+   "network": "(4,4) optic off",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.07357348174423582,
+    "ascending": 0.003970651704790678,
+    "central": 0.027318578741342962,
+    "descending": 0.05134719014626636,
+    "motor": 0.4650943396226415
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.6984440315838365,
+    "ascending": 0.08156028368794326,
+    "central": 0.18078110989339438,
+    "descending": 0.06671334266853371,
+    "motor": 0.05711306765523635,
+    "MN9": 0.0
+   }
+  },
+  "(4,4) optic off upstream": {
+   "network": "(4,4) optic off",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 0.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.18929117485169103,
+    "ascending": 0.04320241691842901,
+    "central": 0.07182324601023789,
+    "descending": 0.175211701308699,
+    "motor": 1.9169811320754715
+   },
+   "identical_duplicates": true,
+   "fraction_of_bare": {
+    "sensory": 0.9703420384362166,
+    "ascending": 0.3677443056576048,
+    "central": 0.2606510128536109,
+    "descending": 0.14115604068469365,
+    "motor": 0.1552923194497516,
+    "MN9": 0.0
+   }
+  },
+  "bare extended": {
+   "network": "bare",
+   "mode": "extended",
+   "seeds": 10,
+   "mn9_sugar_hz": 56.0,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.10533912298941961,
+    "ascending": 0.04868364264134657,
+    "central": 0.15111412225233364,
+    "descending": 0.7696689761354889,
+    "motor": 8.143396226415092
+   },
+   "identical_duplicates": true
+  },
+  "bare upstream": {
+   "network": "bare",
+   "mode": "upstream",
+   "seeds": 10,
+   "mn9_sugar_hz": 85.3,
+   "mn9_silent_hz": 0.0,
+   "group_delta_hz": {
+    "sensory": 0.1950767537153691,
+    "ascending": 0.11747949935261112,
+    "central": 0.27555329719963867,
+    "descending": 1.2412625096227867,
+    "motor": 12.34433962264151
+   },
+   "identical_duplicates": true
+  }
+ },
+ "structure": {
+  "mn9_direct_input_synapses_by_class": {
+   "ACh": 2411,
+   "GABA": 2777,
+   "Glu": 351,
+   "mod": 31,
+   "unk": 9
+  },
+  "mn9_input_rows_with_curated_sign_differing_from_file": 0,
+  "sugar_grn_count": 21,
+  "flow_into_mn9": {
+   "excitatory": 0.0008146178082914199,
+   "gaba": 0.0005639794101249311,
+   "glu": 0.00011380377338738013
+  },
+  "inhibitory_over_excitatory_flow": {
+   "(1,1)": 0.8320259839812418,
+   "(1.25,1.25)": 1.0400324799765523,
+   "(1.5,1.5)": 1.2480389759718629,
+   "(2,2)": 1.6640519679624837,
+   "(2,6)": 2.2228601463698388,
+   "(2,8)": 2.5022642355735165,
+   "(3,1)": 2.216673862740048,
+   "(3,3)": 2.4960779519437257,
+   "(3,6)": 2.9151840857492424,
+   "(3,8)": 3.1945881749529197,
+   "(4,1)": 2.9089978021194507,
+   "(4,2)": 3.0486998467212896,
+   "(4,3)": 3.1884018913231285,
+   "(4,4)": 3.3281039359249673
+  },
+  "parity_diagonal_g": 1.2018855411401972,
+  "parity_g_gaba_at_g_glu_1": 1.2426234403642455,
+  "top_flow_inputs": [
+   {
+    "cell_type": "CB0553",
+    "super_class": "central",
+    "side": "left",
+    "class": "ACh",
+    "synapses_onto_mn9": 424,
+    "flow": 0.00029787688805555263
+   },
+   {
+    "cell_type": "DNge062",
+    "super_class": "descending",
+    "side": "left",
+    "class": "ACh",
+    "synapses_onto_mn9": 561,
+    "flow": 0.0002416395282859433
+   },
+   {
+    "cell_type": "CB0862",
+    "super_class": "central",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 267,
+    "flow": 0.00013504811784833084
+   },
+   {
+    "cell_type": "CB0862",
+    "super_class": "central",
+    "side": "left",
+    "class": "GABA",
+    "synapses_onto_mn9": 155,
+    "flow": 8.614124337375904e-05
+   },
+   {
+    "cell_type": "DNge051",
+    "super_class": "descending",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 173,
+    "flow": 7.45153491689291e-05
+   },
+   {
+    "cell_type": "DNge055",
+    "super_class": "descending",
+    "side": "right",
+    "class": "Glu",
+    "synapses_onto_mn9": 96,
+    "flow": 6.819333441563855e-05
+   },
+   {
+    "cell_type": "DNge080",
+    "super_class": "descending",
+    "side": "left",
+    "class": "ACh",
+    "synapses_onto_mn9": 70,
+    "flow": 6.226722990411676e-05
+   },
+   {
+    "cell_type": "DNge051",
+    "super_class": "descending",
+    "side": "left",
+    "class": "GABA",
+    "synapses_onto_mn9": 82,
+    "flow": 5.141795160123723e-05
+   },
+   {
+    "cell_type": "CB0493",
+    "super_class": "central",
+    "side": "left",
+    "class": "ACh",
+    "synapses_onto_mn9": 281,
+    "flow": 4.8766289612087527e-05
+   },
+   {
+    "cell_type": "DNge080",
+    "super_class": "descending",
+    "side": "right",
+    "class": "ACh",
+    "synapses_onto_mn9": 88,
+    "flow": 3.789940438290559e-05
+   },
+   {
+    "cell_type": "CB0856",
+    "super_class": "central",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 39,
+    "flow": 3.734705537214862e-05
+   },
+   {
+    "cell_type": "CB0465",
+    "super_class": "central",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 448,
+    "flow": 3.388057501951532e-05
+   },
+   {
+    "cell_type": "CB0857",
+    "super_class": "central",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 100,
+    "flow": 1.9675516521629552e-05
+   },
+   {
+    "cell_type": "CB0806",
+    "super_class": "central",
+    "side": "right",
+    "class": "GABA",
+    "synapses_onto_mn9": 185,
+    "flow": 1.8162219301820247e-05
+   },
+   {
+    "cell_type": "DNge055",
+    "super_class": "descending",
+    "side": "left",
+    "class": "Glu",
+    "synapses_onto_mn9": 20,
+    "flow": 1.6422266517417036e-05
+   },
+   {
+    "cell_type": "nan",
+    "super_class": "central",
+    "side": "center",
+    "class": "mod",
+    "synapses_onto_mn9": 26,
+    "flow": 1.4860590624988289e-05
+   }
+  ]
+ },
+ "row_patterns": [
+  "camber-runs/wp17/bare/bare-*.ndjson",
+  "camber-runs/wp17/t2s2-bare/bare/bare-*.ndjson",
+  "camber-runs/wp17/R2/reflex/candidate-*-ff-*.ndjson",
+  "camber-runs/wp17/t2s2p-*/R2/reflex/candidate-*-ff-*.ndjson"
+ ]
+}

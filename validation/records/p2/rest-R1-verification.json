@@ -1,0 +1,15 @@
+{
+  "job_id": "27299",
+  "commit": "b3622d0d45283f0df8bb501514edb31aae64a0d8",
+  "code_scope": "git:1f24c37fa74ba8d75da9f73693cca240ee87a479487492f400ce11965262f1b1",
+  "platform": "linux-x86_64",
+  "tasks": 36,
+  "evaluations": 684,
+  "all_records": 720,
+  "artifact_hashes_verified": 38,
+  "aggregation_matches": true,
+  "admitted": 9,
+  "excluded": 0,
+  "summary_sha256": "a39a831e8af3cbdb6a6f3efaee6a56acaec92ad7ec0c5d6861105d498d00570d",
+  "guard": "original execution_identity whole-tree clean guard; job command sets core.fileMode=false; source blobs verified by prior full Stash round trip"
+}

@@ -1,0 +1,74 @@
+version: v0.2
+q_plan: 27
+tier3:
+  pairs:
+    - [1.0, 1.0]
+    - [1.0, 2.0]
+    - [1.0, 4.0]
+    - [1.0, 8.0]
+    - [1.5, 1.0]
+    - [1.5, 2.0]
+    - [1.5, 4.0]
+    - [1.5, 8.0]
+    - [2.0, 1.0]
+    - [2.0, 2.0]
+    - [2.0, 4.0]
+    - [2.0, 8.0]
+    - [3.0, 6.0]
+    - [3.0, 8.0]
+    - [4.0, 2.0]
+  baseline_pairs:
+    - [1.0, 1.0]
+    - [1.0, 2.0]
+    - [1.0, 4.0]
+    - [1.0, 8.0]
+    - [1.5, 1.0]
+    - [1.5, 2.0]
+    - [1.5, 4.0]
+    - [1.5, 8.0]
+    - [2.0, 1.0]
+    - [2.0, 2.0]
+    - [2.0, 4.0]
+    - [2.0, 8.0]
+  weights_mv: [0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00, 1.05, 1.10, 1.15, 1.20, 1.25, 1.30, 1.35, 1.40, 1.45, 1.50, 1.55, 1.60]
+  fixed:
+    sigma_th: 0.0
+    optic_exemption: false
+    n_bg: 100
+  sfa:
+    b_mv: [0.1, 0.3, 1.0, 3.0]
+    tau_ms: [50, 150, 500]
+    scope: non_sensory
+  std:
+    scope: [non_sensory_excitatory, non_sensory]
+    U: [0.05, 0.2, 0.5]
+    tau_ms: [100, 400]
+  cbi:
+    E_inh_mv: [-72.0, -62.0, -57.0]
+    scope: all
+  gaba_kc:
+    pairs:
+      - [1.0, 1.0]
+      - [1.0, 2.0]
+      - [1.0, 4.0]
+    g_gaba_kc: [2.0, 3.0, 4.0, 6.0]
+    sfa:
+      - null
+      - {b_mv: 1.0, tau_ms: 50, scope: non_sensory}
+  t1_max_units: 40
+  cap_engine_hours: 400
+  cbi_stiff_limit: 0.1
+camber:
+  workers: 36
+  worker_s_per_brain_s: 50
+  build_s: 250
+  setup_s: 600
+  running_max_s: 7200
+  timeout_s: 9000
+  margin: 1.25
+  slots: 5
+ibm:
+  workers: 36
+  worker_s_per_brain_s: 45.75
+  setup_s: 600
+  timeout_s: 9000

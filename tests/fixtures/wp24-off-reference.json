@@ -1,0 +1,105 @@
+{
+  "commit": "983541d0f2525d2ceb03e7dcf36b5f632a73d79b",
+  "code_scope": "git:f6b043cb130c7fd433899cbe502bd11b36cdf9b95a86eb1b456de44851140c53",
+  "platform": "darwin-arm64",
+  "python": "3.12.14",
+  "platform_system": "darwin",
+  "platform_machine": "arm64",
+  "lif_model": "dv/dt = (v_0 - v + g) / t_mbr : volt (unless refractory)\ndg/dt = -g / tau : volt (unless refractory)\nrfc : second\nv_th_i : volt\ngain_i : 1\nw_bg_i : volt\n",
+  "lif_threshold": "v > v_th_i",
+  "lif_reset": "v = v_rst; w = 0; g = 0 * mV",
+  "lif_on_pre": "g += w * gain_i_post",
+  "lif_model_sha256": "bab90b1f30a516f4af45b4d3ffd1b16f5ec13f2b1b8651d4a091454fbf61d444",
+  "lif_threshold_sha256": "1b39052e24dc0d33bd08177a588399143a315055fdd30c07399c86d7fa64041b",
+  "lif_reset_sha256": "f5f13a37e950f79c9c657716f2e08a1e205026ce435df26261cd7432156c69a9",
+  "lif_on_pre_sha256": "7805b0dd762cfd750d90f202d02e144968626c3e3fb1ae846eff14eb9310e6fc",
+  "object_names": [
+    "neurons_e0",
+    "spikelist_e0",
+    "spikelist_syn_e0",
+    "spikes_e0",
+    "synapses_e0",
+    "traces_e0"
+  ],
+  "namespace_keys": [
+    "eq_rst",
+    "eq_th",
+    "eqs",
+    "f_poi",
+    "t_dly",
+    "t_mbr",
+    "t_rfc",
+    "tau",
+    "v_0",
+    "v_rst",
+    "v_th",
+    "w_syn"
+  ],
+  "state_variable_names": [
+    "N",
+    "dt",
+    "g",
+    "gain_i",
+    "i",
+    "lastspike",
+    "not_refractory",
+    "rfc",
+    "t",
+    "t_in_timesteps",
+    "v",
+    "v_th_i",
+    "w_bg_i"
+  ],
+  "platform_references": {
+    "darwin-arm64": {
+      "commit": "983541d0f2525d2ceb03e7dcf36b5f632a73d79b",
+      "code_scope": "git:f6b043cb130c7fd433899cbe502bd11b36cdf9b95a86eb1b456de44851140c53",
+      "platform": "darwin-arm64",
+      "python": "3.12.14",
+      "platform_system": "darwin",
+      "platform_machine": "arm64",
+      "runs": {
+        "i": {
+          "recipe": "0.16 fixture on lif; spike-table hash of spikes(0) and trace hash of traces(0)",
+          "spike_table_sha256": "c337c08f45fc6602bf44257dff57f6a4a8f190ec79f7e86d9e940038c6202172",
+          "trace_sha256": "a4a40569146731c0deb374247258db35862bc0bcfebb8d16319d75a2751eabf2"
+        }
+      }
+    },
+    "linux-aarch64": {
+      "commit": "7f070b795a3dc9916767bf1f543e75355967501d",
+      "code_scope": "git:f6b043cb130c7fd433899cbe502bd11b36cdf9b95a86eb1b456de44851140c53",
+      "platform": "linux-aarch64",
+      "python": "3.12.14",
+      "platform_system": "linux",
+      "platform_machine": "aarch64",
+      "runs": {
+        "i": {
+          "recipe": "0.16 fixture on lif; spike-table hash of spikes(0) and trace hash of traces(0)",
+          "spike_table_sha256": "c337c08f45fc6602bf44257dff57f6a4a8f190ec79f7e86d9e940038c6202172",
+          "trace_sha256": "65c43c6add1c45ac54c293f65791b1df9ed842e112140faed66d5f97733fb496"
+        }
+      }
+    }
+  },
+  "runs": {
+    "i": {
+      "recipe": "0.16 fixture on lif; spike-table hash of spikes(0) and trace hash of traces(0)",
+      "spike_table_sha256": "c337c08f45fc6602bf44257dff57f6a4a8f190ec79f7e86d9e940038c6202172",
+      "trace_sha256": "a4a40569146731c0deb374247258db35862bc0bcfebb8d16319d75a2751eabf2"
+    },
+    "ii": {
+      "recipe": "2 s probe without stimulus, seed 1, background on, data/drive-dev-p2.yaml through load_drive_rest and apply_rest_substrate, bg.n_bg from the file",
+      "spike_table_sha256": "cf3134f75ead110311672f37097a025820a61c750de3454bf7cc35cc59155181"
+    },
+    "iii": {
+      "recipe": "same probe as (ii) on a constructed copy with mechanisms blocks all null",
+      "spike_table_sha256": "cf3134f75ead110311672f37097a025820a61c750de3454bf7cc35cc59155181"
+    },
+    "iv": {
+      "recipe": "_build_engine Setting(g_gaba=3, g_glu=6) mode extended feedforward true; _probe weight 1.15 seed 1 seconds 1 silent then active; spikes(0) after each",
+      "spike_table_sha256_silent": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "spike_table_sha256_sugar": "c10136fecae7a584a39b0661f344447289411ade1cd913d2a1c3848e0f5229d1"
+    }
+  }
+}
