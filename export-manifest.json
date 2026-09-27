@@ -11,10 +11,8 @@
     ".reports/WP28-report.md": "internal",
     ".reports/WP29-report.md": "internal",
     ".reports/camber-ledger.md": "internal",
-    "CITATION.cff": "not included",
     "HANDOFF.json": "internal",
     "HANDOFF.md": "internal",
-    "NOTICE": "not included",
     "data/behaviour-v0.1.yaml": "private_records",
     "docs/brief.md": "internal",
     "docs/camber.md": "internal",
@@ -1020,7 +1018,9 @@
     "validation/records/p2/rest-tier2-stage2/s2p-20.json": "private_records"
   },
   "files_sha256": {
+    "CITATION.cff": "401bb1d730a18cbf7578cf8c403f1ac93a13a1e47ff052c26e0d5a2b7a54a818",
     "LICENSE": "651776109d1d215f2cd28046720fb3ba452f7fc731111f5fe2ed5ed632054c7d",
+    "NOTICE": "249cd24d1ef97f6492354ae2848e507672165e8a7740011a95c012a186de6da3",
     "README.md": "25cb857a2a674b85f89d82239234c27daa55a6779fdad589a41dc14c56a5c29f",
     "REPRODUCE.md": "631db85e4675750d1eb41738786ac9f4e6c5467c8d1aaf21cd95ed45e6dd0f46",
     "data/behaviour-base-v0.2.yaml": "a85d5b6a21bd90cd2c138ca3bc6e74297c4ccbeabcad3a29ffa5827894795d0f",
@@ -1869,5 +1869,5 @@
     "validation/records/p2/wp21-neural.json": "f7dfcc6d766492f1cfaa4ef1f475817464aa419e3d5b9b45915013fbeed5a4f4",
     "validation/status.json": "7e00f01f07814dad4c6b629dfe5e148c3b8795ee38673e9c7392b0fba5d771d1"
   },
-  "source_commit": "7031efd2f5d29bc9068371f9035083edc3007ea7"
+  "source_commit": "ef818bbaabd23e0b282f9d7d220d1a103de22e67"
 }

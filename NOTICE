@@ -1,0 +1,9 @@
+Third-Party Data Notice
+
+This repository contains material derived from the MaleCNS v1.0 connectome dataset, produced by the FlyEM Project Team at HHMI Janelia Research Campus with the University of Cambridge Department of Zoology, the MRC Laboratory of Molecular Biology and Google Research. The dataset is released under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+Dataset: https://male-cns.janelia.org/
+
+Required citation: Berg S, et al. (2026). Sexual dimorphism in the complete Drosophila male central nervous system connectome. Cell 189(18):5504–5526.e15. https://doi.org/10.1016/j.cell.2026.08.015
+
+Connectivity summaries and per-neuron simulation outputs were computed from the released synapse tables; 3D renders were made from simplified copies of the released meshes. These are modified derivatives of the dataset, not raw imagery.
