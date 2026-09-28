@@ -1,6 +1,6 @@
 # Male fly virtual pharmacology bench — paper
 
-Preprint draft by Hasan "Rolf" Yildirim for his review, **not** a human-reviewed publication. It covers the dopamine study and confirmation, transmitter tour, courtship pathway, GABA dose curve, virtual body and GPU engine. The PDF is generated, not committed. Numerical source lines are in `paper/fact-check.md`.
+Preprint by Hasan "Rolf" Yildirim; not peer reviewed. It covers the dopamine study and follow-up, transmitter knockout tour, courtship pathway, GABA dose curve and rescue, virtual body playback and GPU engine replication. The PDF is generated, not committed. Numerical source lines are in `paper/fact-check.md`.
 
 ## One-command paper build
 
@@ -58,15 +58,13 @@ The result JSON, `adhd-study-secondaries.json`, `adhd-study-5a-descriptive.json`
 `adhd-study-5b-audit.json`, `adhd-study-input-repair.json` and
 `adhd-study-analysis-execution.json` are under `validation/records/p2/`.
 Raw `5a-01` and `5b-02` archives are ignored under local
-`camber-runs/adhd-study/` and preserved on
-`compute host:<compute-run-root>/camber-runs/adhd-study/`.
-Public raw hosting is undecided, not represented by a DOI. The exact 5b-02
+`camber-runs/adhd-study/` and kept on the project's compute machine.
+Raw run arrays are not in this repository and are available from the author on request. The exact 5b-02
 run passed remote/local audits. d-0023's 101/102 calibration NPZ replay was
 byte-identical but failed its RNG audit; d-0025 retained the old calibration
 with unchanged per-arm law and repaired 5b input plumbing before outcomes.
 Seeds 103–110 were not replayed. All 60 5b-01 partial arms were void.
 
 Agents assisted design, implementation, independent computational review and
-writing, not independent human replication. Hasan "Rolf" Yildirim must approve the manuscript,
-figure and disclosure before submitting or releasing data. No unsupported
-manual citation/code/raw audit is claimed.
+writing, not independent human replication. No unsupported manual
+citation/code/raw audit is claimed.

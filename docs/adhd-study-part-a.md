@@ -1,5 +1,7 @@
 # Male dopamine/history study: preparation, not experimental results
 
+**2026-09-28:** For the reviewed findings, see [the first-study results](adhd-study-results.md).
+
 **Completed under d-0025 — 2026-09-24.** 5b-02 finished **320/320 arms and ten audited seeds**, exit 0 at **04:43:34 UTC**. Exact RNG/event checks passed remotely and after transfer; the frozen analysis ran unchanged. [Unreviewed results and intervals](adhd-study-results.md): neither primary survives Holm; the affine secondary is ill-conditioned and reported without repair. This page preserves preparation/qualification history. The earlier d-0023 failure and its 60 partial 5b-01 arms remain **void evidence, never inference data**.
 
 Part A is complete. The coordinator authorised progression on 2026-09-22 after rebinding to the merged male substrate: stage 5a, then a committed pair choice, then stage 5b. The lane report records launch progress; no genotype or rescue finding is claimed here. No result here establishes ADHD, attention, behaviour or a drug dose. The uniform ER receptor assignment is unvalidated; seeds describe stochastic variation in one fixed anatomical model, not different flies or uncertainty in its biological parameters.

@@ -1021,8 +1021,8 @@
     "CITATION.cff": "401bb1d730a18cbf7578cf8c403f1ac93a13a1e47ff052c26e0d5a2b7a54a818",
     "LICENSE": "651776109d1d215f2cd28046720fb3ba452f7fc731111f5fe2ed5ed632054c7d",
     "NOTICE": "249cd24d1ef97f6492354ae2848e507672165e8a7740011a95c012a186de6da3",
-    "README.md": "25cb857a2a674b85f89d82239234c27daa55a6779fdad589a41dc14c56a5c29f",
-    "REPRODUCE.md": "631db85e4675750d1eb41738786ac9f4e6c5467c8d1aaf21cd95ed45e6dd0f46",
+    "README.md": "f8340fd1a0d84e7526beac09b4b59f675e2259f29f4daf7c5b947dd3416e1cbb",
+    "REPRODUCE.md": "1d293bc6f4cc6aee38686fa75aa69506e82131c6a01569984bb17708ff07ed2c",
     "data/behaviour-base-v0.2.yaml": "a85d5b6a21bd90cd2c138ca3bc6e74297c4ccbeabcad3a29ffa5827894795d0f",
     "data/behaviour-v0.2.yaml": "604ce8c88517f95c42c21cef7d72ba2c1dca90b295c5fedb92c93f92be674cf7",
     "data/brembs-metrics.json": "140f90e74a5305ca9f3f667a3c0642824f8fab076abedca006b84c166e99f66f",
@@ -1109,10 +1109,10 @@
     "docs/SPEC.md": "3db144032990f6e66e25de22573c1d2ffbd3eabd79f86b1582880c87492bb934",
     "docs/adhd-confirm-design.md": "95bdb4acb28a9113f3c5c3df1e762246a6df4ce536eeafcaa9b5f455222cf7d8",
     "docs/adhd-confirm-results.md": "0b2517c5177f740eec6a1391735c32307bdde48177c702024568bed39c8976f3",
-    "docs/adhd-experiment.md": "45ff87968b73687e77a361f11cd2c9b4244a7e0d7450a40f995aba5f7e201b34",
+    "docs/adhd-experiment.md": "0e31e6b038c93c469e6ea84d7d76e5ec9f4a38c4ec5b03441d7c6f919f1e15c6",
     "docs/adhd-model-research.md": "5b3f8e99ba01b23460c1b2fa9344ed54ddd14caa7e313ef269f8ae614d252687",
     "docs/adhd-study-design.md": "f0c667ece1e0838855f69d630604b44c8435989905e6cf749ae71a415f716d6d",
-    "docs/adhd-study-part-a.md": "719d2c9fd9b2fc666a01ddd12d748e934b4bf7bd822e2cb1c67c5d59b4266d53",
+    "docs/adhd-study-part-a.md": "27f4921e04172a6ffe6e377a3ccf90ed1e23a8bb75aeb095080d24471d36e3d4",
     "docs/adhd-study-results.md": "452354a569422296c7cfa2da1a687cd99e13dc95385bf9bd7b082fb828321f4a",
     "docs/audit/slop-audit.md": "1676c40bcd7733f80122f4bc37ed43c93258c45456c4bbf3d03b469511ab25e0",
     "docs/behaviour-p2.md": "4b069719881267dcb00c7ab451eeae76bc501d48e0594327587661aab56c74bb",
@@ -1302,7 +1302,7 @@
     "figures/tour/stills/unlabelled-neurons-switched-off.png": "8e0d118e4130ab2860ebdacc9eaa1a2c91060ef1a067b1b291d883a04be540fc",
     "figures/tour/viewer.html": "67f52d7180699ff0a6c1867bbbdda9e40d3fcec300b84553642ddd67e3656a69",
     "paper/.gitignore": "0cf256cc9234b415f912f5b0e9f8c9364688466041611047cd3f599c35f4efa6",
-    "paper/README.md": "d24bc8eee4df2b7ed9b884ffc76aec79c873cd0102449138b39371b8a6556a1d",
+    "paper/README.md": "6aea11cb196e1ed58cce09cdd96d3b90762d872b144c672a7fd7dc474e783e7e",
     "paper/build.py": "72e4726c5a33f3c7a3d983298c6408528a0a00dc9aa94916df17f1b067b8046b",
     "paper/fact-check.md": "e1e237a216fa6f863e598a3d1b8ec26437eacca2f108a81627aecff1bec67c43",
     "paper/figure-fields.md": "d8fee903fa8b77da51922c187de6a4f91f7013a4b207bfeb7dc36f6918c778df",
@@ -1869,5 +1869,5 @@
     "validation/records/p2/wp21-neural.json": "f7dfcc6d766492f1cfaa4ef1f475817464aa419e3d5b9b45915013fbeed5a4f4",
     "validation/status.json": "7e00f01f07814dad4c6b629dfe5e148c3b8795ee38673e9c7392b0fba5d771d1"
   },
-  "source_commit": "ef818bbaabd23e0b282f9d7d220d1a103de22e67"
+  "source_commit": "8ddad795bbbb247c144e10c6530597b076e6f179"
 }

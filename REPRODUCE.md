@@ -1,13 +1,15 @@
-# Reproduce the current results
+# Reproduce the results
 
-This guide covers the **male substrate, rest measurement, literature research,
-3D atlas and completed first perturbation experiment** reported on the front page.
-The first ten-seed study is complete: the vehicle genotype contrast was nominal
-only (Holm p = 0.0703125), and the release interaction had **no detected
-difference**. [Results](docs/adhd-study-results.md) · [paper reproduction records](paper/README.md).
-The follow-up was planned and frozen in advance and is **under review**, not
-yet a reviewed finding. Experimental input is injected at TuBu; **the fly does not see**. Rest metrics
-and neural responses are not behaviour or ADHD.
+This guide covers the male substrate, rest measurement, atlas and the paper's
+dopamine, transmitter, courtship, GABA, virtual-body and GPU results.
+The [first dopamine study](docs/adhd-study-results.md) found a nominal hint
+that failed its two-test correction; its release comparison had no detected
+difference. The [planned follow-up](docs/adhd-confirm-results.md) did not
+confirm the hint: its interval includes zero, meaning no detected difference,
+not equality. The later results and their data boundaries are below. Experimental
+input is injected at TuBu for the dopamine study; **the fly does not see**.
+Other runs use injected sensory background or direct courtship input, not sight.
+Neural responses and playback are not behaviour or ADHD.
 
 [Provenance erratum for frozen parameters and engine notes →](docs/errata.md)
 
@@ -43,8 +45,9 @@ for Brian2's Cython backend. ARM macOS and ARM Linux have recorded runs;
 platform is provenance, not a scientific acceptance rule. The dependency pin
 is [`uv.lock`](uv.lock), SHA-256
 `be51ced5948bb3907d0c7233fff57419fcaa1b363a79f1a9f87d5a07a24ad619`.
-No GPU is needed for numerical runs. Opening the committed atlas needs only a
-current WebGL-capable browser; rebuilding it additionally needs Google Chrome.
+CPU numerical runs need no GPU; the GPU replication in §13 requires an NVIDIA
+GPU. Opening the committed atlas needs only a current WebGL-capable browser;
+rebuilding it additionally needs Google Chrome.
 
 ### Required Shiu code-only checkout
 
@@ -441,12 +444,119 @@ and four-panel PNG `4f43fa1dd14d390f37bc1b27098932cb0177ab3c01c580a38759357ba092
 The 83 seconds are playback time, not neural run time. Raster and video bytes may
 vary by browser, OS or GPU; see [figure methods](docs/3d-model.md#cinematic-film).
 
-The follow-up was planned and frozen in advance in the then-private repository.
-Its result remains **under review**; a reviewed record and reproduction command
-will be linked after integration. It has one primary comparison and no
-multiplicity adjustment.
+## 8. Planned dopamine follow-up
 
-## Checks and historical evidence
+The reviewed [follow-up](docs/adhd-confirm-results.md) and committed
+[plan](validation/records/p2/adhd-confirm-plan.json),
+[result](validation/records/p2/adhd-confirm-results.json),
+[audit](validation/records/p2/adhd-confirm-audit.json) and
+[execution record](validation/records/p2/adhd-confirm-execution.json) bind the
+raw runs and the unchanged `scripts/adhd_study.py` analysis. Its figure script
+can regenerate the descriptive plots entirely from the committed result:
+
+```sh
+python3 scripts/adhd_confirm_describe.py --result validation/records/p2/adhd-confirm-results.json --out docs/figures/adhd-confirm
+```
+
+Recomputing the primary analysis needs the original raw follow-up and pilot
+arrays, which are not in this repository; its exact commands are in the
+follow-up results doc. Patterned input is injected at TuBu; the fly does not see.
+
+## 9. Transmitter knockout tour
+
+The [reviewed tour](docs/circuit-tour-results.md) describes the knockout
+outcomes. `scripts/circuit_tour.py` made them; `scripts/circuit_tour_analysis.py`
+analyses the checksum-bound per-condition JSON and NPZ files in
+`camber-runs/circuit-tour/outcomes/`. The committed
+[cost record](validation/records/p2/circuit-tour-modal-cost.json) is not those
+arrays. With the MaleCNS tables cached as in §1, run one condition and seed
+locally (choose a new output path for each run):
+
+```sh
+uv run --frozen python scripts/circuit_tour.py worker --condition off-gaba --seed 501 --dest camber-runs/circuit-tour/reproduction/seed-501-off-gaba.npz
+```
+
+The script's `KNOCKOUTS` list defines `off-acetylcholine`, `off-gaba`,
+`off-glutamate`, `off-histamine`, `off-dopamine`, `off-octopamine`,
+`off-serotonin` and `off-unclear`; `control` is the paired baseline.
+The background input is injected; the fly does not see.
+
+## 10. Courtship pathway
+
+The same `scripts/circuit_tour.py` and `scripts/circuit_tour_analysis.py`
+produced the direct-P1 and pIP10 comparisons in the
+[courtship results](docs/circuit-tour-results.md); the
+[route re-analysis](docs/p1-routes.md) records the limits of the proposed
+pathway. Its per-condition JSON and NPZ records are in the same ignored
+`camber-runs/circuit-tour/outcomes/` directory. With the cache from §1,
+run a single condition and seed locally:
+
+```sh
+uv run --frozen python scripts/circuit_tour.py worker --condition P1-high --seed 501 --dest camber-runs/circuit-tour/reproduction/seed-501-P1-high.npz
+```
+
+The script's `COURTSHIP` list supplies `P1-low`, `P1-medium`, `P1-high`,
+`pIP10` and `courtship_random`; the baseline is `control` from §9.
+Courtship input is injected, not seen.
+
+## 11. GABA dose and rescue
+
+The [dose results](docs/gaba-dose-results.md) describe the curve and rescue.
+`scripts/circuit_tour.py` runs the conditions;
+`scripts/circuit_tour_dose.py` analyses their per-condition JSON and NPZ files
+against the tour control and writes `analysis.json` and per-neuron paint values
+for the figure tools. With the cache from §1, run one dose condition and seed
+locally:
+
+```sh
+uv run --frozen python scripts/circuit_tour.py worker --condition block-0.75 --seed 501 --dest camber-runs/circuit-tour/reproduction/seed-501-block-0.75.npz
+```
+
+The script's `BLOCK`, `BOOST` and `RESCUE` lists supply `block-0.10`,
+`block-0.25`, `block-0.50`, `block-0.75`, `block-0.90`, `block-1.00`;
+`boost-0.25`, `boost-0.50`, `boost-1.00`, `boost-2.00`; and
+`rescue-0.50`, `rescue-1.00`, `rescue-2.00`. The pre-freeze reference check
+for the earlier tour's control and full GABA-off endpoint uses the public
+`reproduce` mode, restricted to `control` or `block-1.00` at seed 501:
+
+```sh
+uv run --frozen python scripts/circuit_tour.py reproduce --condition block-1.00 --seed 501 --dest camber-runs/circuit-tour/reproduction/seed-501-block-1.00-check.npz
+```
+
+As the dose results explain, those reference responses were reproduced exactly
+neuron by neuron; `reproduce` generates a fresh archive, while comparing with
+the original requires the original arrays. For §§9–11, the full sweep ran
+every condition and seed on rented cloud machines using a private launcher
+that only fans out the same `worker` command; reanalysis of the reported
+numbers needs the raw count arrays, which are not in the repository and are
+available from the author on request. These are dark-rest sensory-background
+injections, not TuBu stimulation or drug exposure in a fly; the fly does not see.
+
+## 12. Virtual body playback
+
+The [courtship body](docs/courtship-body.md) and
+[GABA dose body](docs/gaba-dose-body.md) use
+`scripts/courtship_body/playback.py`, `scripts/courtship_body/dose.py` and
+`scripts/courtship_body/render.py`. Their commands are in
+[`scripts/courtship_body/README.md`](scripts/courtship_body/README.md).
+Pose/clip regeneration cannot be rerun from this repository because exact
+spike replays and intermediate pose arrays are absent; new brain runs require
+separate raw replays. The body playback does not feed movement back to the brain.
+
+## 13. GPU engine replication
+
+The [GPU methods](docs/cuda-methods.md), [agreement](docs/cuda-agreement.md)
+and [GPU dose](docs/gaba-dose-gpu.md) name `scripts/cuda_circuit.py`,
+`scripts/cuda_identical.py`, `scripts/cuda_compare.py` and
+`scripts/cuda_dose.py`. The committed
+[identical-input comparison](validation/records/p2/male-cuda-identical-comparison.json)
+and [dose comparison](validation/records/p2/male-cuda-dose-comparison.json)
+bind the raw outputs; the [backend guide](docs/cuda-backend.md) records the
+full workflow. Identical-input comparison and GPU dose analysis cannot be
+rerun from this repository because saved input events and raw count/spike
+archives are absent; GPU neural runs require an NVIDIA GPU and the public
+`scripts/cuda_*.py` files have no standalone one-condition CUDA command-line
+runner. Computational agreement is not biological validation.
 
 The project's full numerical gate is `uv run --frozen pytest` after provisioning
 both datasets; it is **not a quick installation check**. The recorded male

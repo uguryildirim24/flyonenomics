@@ -1,5 +1,7 @@
 # Dopamine cleanup and release reduction in the male brain model
 
+**2026-09-28:** For the reviewed findings, see [the first-study results](adhd-study-results.md).
+
 **Completed; unreviewed first numbers:** ΔH_gen **−0.085156**, 95% interval **[−0.153954, −0.020968]**, exact p **0.03515625**, Holm p **0.0703125**—nominal only, not Holm significant. ΔΔH **+0.045877**, interval **[−0.059833, +0.158040]**, exact/Holm p **0.439453125**—**no detected difference**, not Holm significant. Neither primary survives Holm. See the [full results, affine-conditioning warning and exact audits](adhd-study-results.md).
 
 5b-02 completed **320/320 arms and ten audited seeds**, exit 0 at **2026-09-24 04:43:34 UTC**. d-0025 exact RNG/event checks passed on the box and after transfer. The 60 old 5b-01 arms remain **void, never analysed**. Original 5a-01 and the committed −50°/+50° pair were retained: **5a used pre-d-0025 plumbing with the same input statistics**, not a retroactively passed old RNG audit. Replay 103–110 was skipped by the coordinator. No code, frozen analysis or tolerance changed during collection; no full-suite rerun. [Part A](adhd-study-part-a.md) preserves the qualification and repair history.

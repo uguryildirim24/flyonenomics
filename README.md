@@ -1,12 +1,13 @@
 # flyonenomics
 
-**How does changing dopamine alter activity in a model of a male fly brain?**
-This undergraduate, AI-assisted project builds a whole-brain spiking model with
-a dopamine layer from the published MaleCNS male fly wiring map. It tests a
-prospectively specified neural-history readout after modelled dopamine-transporter
-loss and reduced release. Input is injected at **TuBu (tubercle-to-bulb)
-neurons**: **the fly does not see**. This is not ADHD in a fly, a behavioural
-assay, or a treatment model.
+This undergraduate, AI-assisted project uses a wiring map of the male fly's
+brain and nerve cord to simulate nerve-cell activity. Can this virtual nervous
+system help ask pharmacology questions without mistaking model output for a
+living fly's behaviour? We change dopamine cleanup and the strength of chemical
+connections, then look at activity across the network. Input is injected into
+the model, not seen by the fly. In the dopamine study, patterned input is injected
+at TuBu (tubercle-to-bulb) neurons; **the fly does not see**. The *fumin*
+fly mutant is hyperactive; here we model transporter loss, not behaviour or ADHD.
 
 [![Recorded model spiking in one simulated fly](figures/3d/experiment-5b/cinematic/primary-teaser.webp)](figures/3d/experiment-5b/cinematic/primary-demo.mp4)
 
@@ -23,14 +24,10 @@ Open [`figures/3d/male-cns-atlas.html`](figures/3d/male-cns-atlas.html) locally
 in a browser to rotate it. Its default playback is explicitly **synthetic dummy
 data**. [Figure methods and attribution →](docs/3d-model.md)
 
-The first ten-seed study is complete: the vehicle genotype contrast was nominal
-only (Holm p = 0.0703125), and the release interaction had **no detected
-difference**. [Results](docs/adhd-study-results.md) · [reproduction records](paper/README.md).
-The follow-up was planned and frozen in advance; its result is under review.
-[Reproduce the results](REPRODUCE.md) · [Cite the paper and MaleCNS source](paper/)
-· [MIT code licence](LICENSE) (source data: CC BY 4.0) ·
-[Feedback welcome via issues](https://github.com/uguryildirim24/flyonenomics/issues).
-The repository name in that link must be set before publishing.
+[Reproduce the results](REPRODUCE.md) · [Read the paper](paper/) ·
+[Citation details](CITATION.cff) · [MIT code licence](LICENSE)
+(source data: CC BY 4.0) ·
+[Feedback via issues](https://github.com/uguryildirim24/flyonenomics/issues).
 
 ## The model and the evidence
 
@@ -57,18 +54,39 @@ Available now:
 
 ## Results
 
-The [reviewed first study](docs/adhd-study-results.md) found a nominal
-*fumin*-minus-wild-type history contrast that **did not survive the
-frozen two-test correction** (Holm p = 0.0703125). The release-reduction
-interaction had an interval including zero: **no detected difference and no
-detected rescue**. [Numerical record and intervals](validation/records/p2/adhd-study-results.json).
-These are stochastic seeds in one fixed model, not independent animals; at most
-this is a candidate neural signature, not ADHD, attention or behaviour.
-The follow-up design and analysis were **planned and frozen in advance** in
-the then-private repository. Its result is under review; no reviewed follow-up
-claim is made here. It has one primary comparison, not the first study's
-two-test correction. The reviewed result and its record will be linked here
-when available.
+- **Dopamine cleanup.** We tested whether disabling the dopamine transporter
+  changes a nerve-cell response depending on earlier input. The first study's
+  hint did not survive its correction for two planned comparisons; reducing
+  dopamine release gave **no detected difference** in the gap between conditions
+  and no established rescue. A separately planned follow-up found **no detected
+  difference** in the cleanup comparison. An interval spanning zero leaves both
+  directions possible; it does not show equality. These are repeated random runs
+  of one model, not different animals. [First study](docs/adhd-study-results.md) ·
+  [follow-up](docs/adhd-confirm-results.md).
+- **Chemical knockout tour.** Disconnecting the model's acetylcholine outputs
+  reduced firing outside sensory cells. Disconnecting GABA or glutamate outputs
+  raised it. Histamine and dopamine readouts had no detected difference in the
+  measured averages. These broad switches test the model's wiring, not drug
+  effects in live flies. [Tour results](docs/circuit-tour-results.md).
+- **Courtship pathway.** Directly injected input into P1 courtship neurons
+  reached some song-related and wing motor neurons. The proposed split between
+  fighting and song routes was not demonstrated; spikes are not courtship or
+  sound. [Pathway results](docs/circuit-tour-results.md).
+- **GABA dose and rescue.** GABA is an inhibitory connection class: weakening
+  it lets more activity through. Firing rose slowly at low block and sharply
+  near full block. Strengthening a separate inhibitory channel, GluCl, partly
+  offset the excess under partial GABA block. The concentration scale is an
+  assumption, not a dose given to a fly. [Dose results](docs/gaba-dose-results.md).
+- **Virtual body.** Recorded spikes drive chosen wing and leg movements in
+  animations. The body sends nothing back to the brain; the clips show a
+  display rule, not observed behaviour. [Courtship playback](docs/courtship-body.md) ·
+  [dose playback](docs/gaba-dose-body.md).
+- **GPU replication.** A second computing engine matched the reference engine's
+  spikes for the tested identical inputs with fixed dopamine. On a separate
+  GABA dose run, the main block and rescue estimates had overlapping intervals;
+  some smaller results and curve fits differed. Computational agreement does
+  not validate the biology. [Engine methods](docs/cuda-methods.md) ·
+  [dose replication](docs/gaba-dose-gpu.md).
 
 ![Four panels of recorded model activity in one illustrative seed](figures/3d/experiment-5b/primary-four-panel.png)
 
@@ -77,7 +95,7 @@ injected at TuBu; the fly does not see. [Recorded film](figures/3d/experiment-5b
 · [offline cinematic viewer](figures/3d/experiment-5b/cinematic/male-cns-cinematic.html)
 · [figure methods](docs/3d-model.md).*
 
-[Paper draft and PDF build](paper/) (`uv run --locked --script paper/build.py`)
+[Paper and PDF build](paper/) (`uv run --locked --script paper/build.py`)
 · [reproduction commands](REPRODUCE.md).
 
 ## Install and reproduce
@@ -100,9 +118,9 @@ laptop runtime promise. See [REPRODUCE.md](REPRODUCE.md) before starting a run.
 
 ## Citation, credits and licences
 
-To cite this project: **Hasan "Rolf" Yildirim**, *flyonenomics* (2026),
-[source repository](https://github.com/uguryildirim24/flyonenomics).
-Cite the MaleCNS paper separately for the underlying connectome.
+To cite this project: **Hasan "Rolf" Yildirim**, *flyonenomics* (2026).
+See [CITATION.cff](CITATION.cff) and the [paper folder](paper/) for citation
+details. Cite the MaleCNS paper separately for the underlying connectome.
 
 MaleCNS: Berg et al., *Sexual dimorphism in the complete Drosophila male central
 nervous system connectome*, **Cell** (2026),
