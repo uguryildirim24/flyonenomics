@@ -1,20 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="590" viewBox="0 0 1280 590">
 <rect width="1280" height="590" fill="#f4f8fa"/>
 <style>text{font-family:system-ui,sans-serif;fill:#193548} .title{font-size:27px;font-weight:700} .axis{font-size:17px} .tick{font-size:15px} .hint{font-size:14px;fill:#526d7a}</style>
-<text x="56" y="52" class="title">GABA receptor scaling changes model brain activity</text>
-<text x="56" y="80" class="hint">Outside sensory neurons · rate difference from matched rest · brackets show 95% whole-seed intervals</text>
+<text x="56" y="52" class="title">GABA conductance scaling changes model brain activity</text>
+<text x="56" y="80" class="hint">Outside sensory neurons · rate difference from matched rest · brackets show 95% whole-repeat intervals</text>
 <text x="37" y="120" class="axis">GABA blocked</text>
 <path d="M90 135 V465 H550" stroke="#516b79" stroke-width="2" fill="none"/>
+<text x="37" y="300.0" text-anchor="middle" transform="rotate(-90 37 300.0)" class="axis">Change in firing (Hz)</text>
 <line x1="90" y1="465.0" x2="550" y2="465.0" stroke="#dce6eb"/>
 <text x="82" y="470.0" text-anchor="end" class="tick">0</text>
-<line x1="90" y1="382.5" x2="550" y2="382.5" stroke="#dce6eb"/>
-<text x="82" y="387.5" text-anchor="end" class="tick">3.5</text>
-<line x1="90" y1="300.0" x2="550" y2="300.0" stroke="#dce6eb"/>
-<text x="82" y="305.0" text-anchor="end" class="tick">7</text>
-<line x1="90" y1="217.5" x2="550" y2="217.5" stroke="#dce6eb"/>
-<text x="82" y="222.5" text-anchor="end" class="tick">10.5</text>
-<line x1="90" y1="135.0" x2="550" y2="135.0" stroke="#dce6eb"/>
-<text x="82" y="140.0" text-anchor="end" class="tick">14</text>
+<line x1="90" y1="347.1428571428571" x2="550" y2="347.1428571428571" stroke="#dce6eb"/>
+<text x="82" y="352.1428571428571" text-anchor="end" class="tick">5</text>
+<line x1="90" y1="229.28571428571428" x2="550" y2="229.28571428571428" stroke="#dce6eb"/>
+<text x="82" y="234.28571428571428" text-anchor="end" class="tick">10</text>
 <text x="90.0" y="488" text-anchor="middle" class="tick">0</text>
 <text x="205.0" y="488" text-anchor="middle" class="tick">0.25</text>
 <text x="320.0" y="488" text-anchor="middle" class="tick">0.5</text>
@@ -45,41 +42,42 @@
 <circle cx="435.0" cy="356.7791865333601" r="5" fill="#b6464a"/>
 <circle cx="504.0" cy="238.91677649643054" r="5" fill="#b6464a"/>
 <circle cx="550.0" cy="168.27287219360255" r="5" fill="#b6464a"/>
-<text x="320.0" y="527" text-anchor="middle" class="axis">Fraction of GABA receptors blocked</text>
+<text x="320.0" y="527" text-anchor="middle" class="axis">Fraction of GABA conductance blocked</text>
 <text x="677" y="120" class="axis">GABA strengthened</text>
 <path d="M730 135 V465 H1190" stroke="#516b79" stroke-width="2" fill="none"/>
+<text x="677" y="300.0" text-anchor="middle" transform="rotate(-90 677 300.0)" class="axis">Change in firing (Hz)</text>
 <line x1="730" y1="465.0" x2="1190" y2="465.0" stroke="#dce6eb"/>
 <text x="722" y="470.0" text-anchor="end" class="tick">-1</text>
 <line x1="730" y1="382.5" x2="1190" y2="382.5" stroke="#dce6eb"/>
-<text x="722" y="387.5" text-anchor="end" class="tick">-0.725</text>
+<text x="722" y="387.5" text-anchor="end" class="tick">-0.75</text>
 <line x1="730" y1="300.0" x2="1190" y2="300.0" stroke="#dce6eb"/>
-<text x="722" y="305.0" text-anchor="end" class="tick">-0.45</text>
+<text x="722" y="305.0" text-anchor="end" class="tick">-0.5</text>
 <line x1="730" y1="217.5" x2="1190" y2="217.5" stroke="#dce6eb"/>
-<text x="722" y="222.5" text-anchor="end" class="tick">-0.175</text>
+<text x="722" y="222.5" text-anchor="end" class="tick">-0.25</text>
 <line x1="730" y1="135.0" x2="1190" y2="135.0" stroke="#dce6eb"/>
-<text x="722" y="140.0" text-anchor="end" class="tick">0.1</text>
+<text x="722" y="140.0" text-anchor="end" class="tick">0</text>
 <text x="730.0" y="488" text-anchor="middle" class="tick">0</text>
 <text x="845.0" y="488" text-anchor="middle" class="tick">0.5</text>
 <text x="960.0" y="488" text-anchor="middle" class="tick">1</text>
 <text x="1075.0" y="488" text-anchor="middle" class="tick">1.5</text>
 <text x="1190.0" y="488" text-anchor="middle" class="tick">2</text>
-<line x1="787.5" x2="787.5" y1="249.238156181992" y2="236.38053979295057" stroke="#2878a3" stroke-width="3"/>
-<line x1="781.5" x2="793.5" y1="249.238156181992" y2="249.238156181992" stroke="#2878a3" stroke-width="2"/>
-<line x1="781.5" x2="793.5" y1="236.38053979295057" y2="236.38053979295057" stroke="#2878a3" stroke-width="2"/>
-<line x1="845.0" x2="845.0" y1="301.90044440376676" y2="294.6678859804341" stroke="#2878a3" stroke-width="3"/>
-<line x1="839.0" x2="851.0" y1="301.90044440376676" y2="301.90044440376676" stroke="#2878a3" stroke-width="2"/>
-<line x1="839.0" x2="851.0" y1="294.6678859804341" y2="294.6678859804341" stroke="#2878a3" stroke-width="2"/>
-<line x1="960.0" x2="960.0" y1="352.54374733052657" y2="344.4313787703134" stroke="#2878a3" stroke-width="3"/>
-<line x1="954.0" x2="966.0" y1="352.54374733052657" y2="352.54374733052657" stroke="#2878a3" stroke-width="2"/>
-<line x1="954.0" x2="966.0" y1="344.4313787703134" y2="344.4313787703134" stroke="#2878a3" stroke-width="2"/>
-<line x1="1190.0" x2="1190.0" y1="419.1686791953953" y2="411.9697007138935" stroke="#2878a3" stroke-width="3"/>
-<line x1="1184.0" x2="1196.0" y1="419.1686791953953" y2="419.1686791953953" stroke="#2878a3" stroke-width="2"/>
-<line x1="1184.0" x2="1196.0" y1="411.9697007138935" y2="411.9697007138935" stroke="#2878a3" stroke-width="2"/>
-<polyline points="730.0,165.0 787.5,242.92435983484862 845.0,297.56497244086484 960.0,348.16236500091526 1190.0,415.4113938210588" fill="none" stroke="#2878a3" stroke-width="3"/>
-<circle cx="787.5" cy="242.92435983484862" r="5" fill="#2878a3"/>
-<circle cx="845.0" cy="297.56497244086484" r="5" fill="#2878a3"/>
-<circle cx="960.0" cy="348.16236500091526" r="5" fill="#2878a3"/>
-<circle cx="1190.0" cy="415.4113938210588" r="5" fill="#2878a3"/>
+<line x1="787.5" x2="787.5" y1="227.66197180019117" y2="213.51859377224562" stroke="#2878a3" stroke-width="3"/>
+<line x1="781.5" x2="793.5" y1="227.66197180019117" y2="227.66197180019117" stroke="#2878a3" stroke-width="2"/>
+<line x1="781.5" x2="793.5" y1="213.51859377224562" y2="213.51859377224562" stroke="#2878a3" stroke-width="2"/>
+<line x1="845.0" x2="845.0" y1="285.5904888441434" y2="277.6346745784774" stroke="#2878a3" stroke-width="3"/>
+<line x1="839.0" x2="851.0" y1="285.5904888441434" y2="285.5904888441434" stroke="#2878a3" stroke-width="2"/>
+<line x1="839.0" x2="851.0" y1="277.6346745784774" y2="277.6346745784774" stroke="#2878a3" stroke-width="2"/>
+<line x1="960.0" x2="960.0" y1="341.2981220635792" y2="332.37451664734476" stroke="#2878a3" stroke-width="3"/>
+<line x1="954.0" x2="966.0" y1="341.2981220635792" y2="341.2981220635792" stroke="#2878a3" stroke-width="2"/>
+<line x1="954.0" x2="966.0" y1="332.37451664734476" y2="332.37451664734476" stroke="#2878a3" stroke-width="2"/>
+<line x1="1190.0" x2="1190.0" y1="414.58554711493485" y2="406.6666707852828" stroke="#2878a3" stroke-width="3"/>
+<line x1="1184.0" x2="1196.0" y1="414.58554711493485" y2="414.58554711493485" stroke="#2878a3" stroke-width="2"/>
+<line x1="1184.0" x2="1196.0" y1="406.6666707852828" y2="406.6666707852828" stroke="#2878a3" stroke-width="2"/>
+<polyline points="730.0,135.0 787.5,220.71679581833345 845.0,280.8214696849513 960.0,336.4786015010068 1190.0,410.4525332031647" fill="none" stroke="#2878a3" stroke-width="3"/>
+<circle cx="787.5" cy="220.71679581833345" r="5" fill="#2878a3"/>
+<circle cx="845.0" cy="280.8214696849513" r="5" fill="#2878a3"/>
+<circle cx="960.0" cy="336.4786015010068" r="5" fill="#2878a3"/>
+<circle cx="1190.0" cy="410.4525332031647" r="5" fill="#2878a3"/>
 <text x="960.0" y="527" text-anchor="middle" class="axis">Extra GABA conductance (φ)</text>
-<text x="56" y="561" class="hint">Block concentration: picrotoxin brain-equivalent on recombinant Rdl homomers; potentiation has no calibrated drug concentration.</text>
+<text x="56" y="561" class="hint">Block is a fraction of GABA conductance removed; neither axis is a calibrated drug concentration.</text>
 </svg>

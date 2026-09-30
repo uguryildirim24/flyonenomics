@@ -110,6 +110,15 @@ opening chapters were checked in the second publication audit, not the
 complete bootstrap book. Ernst's original text remains inaccessible; its
 method-source claim needs full-text verification before submission.
 
+## Body model, physics engine, and supplement sources (checked 30 September 2026)
+
+Crossref DOI work records were queried directly for metadata (not full text):
+
+- Wang-Chen S, Stimpfling VA, Lam TKC, Özdil PG, Genoud L, Hurtak F, Ramdya P (2024), “NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila,” *Nature Methods* **21**(12):2353–2362, [doi:10.1038/s41592-024-02497-y](https://doi.org/10.1038/s41592-024-02497-y). Crossref lists these seven authors, title, journal, issue, pages and publication date 12 November 2024. Project body lineage: `docs/courtship-body.md:18` identifies FlyGym 1.1.0's NeuroMechFly v2. The citation credits the virtual body, not any biological inference from its playback.
+- Todorov E, Erez T, Tassa Y (2012), “MuJoCo: A physics engine for model-based control,” *2012 IEEE/RSJ International Conference on Intelligent Robots and Systems*, pp.5026–5033, [doi:10.1109/IROS.2012.6386109](https://doi.org/10.1109/IROS.2012.6386109). Crossref confirms all authors, title, proceedings, date October 2012 and pages. Project body documentation identifies MuJoCo as the simulator; this reference credits the engine, not neural validation.
+- Nordlie E, Gewaltig M-O, Plesser HE (2009), “Towards Reproducible Descriptions of Neuronal Network Models,” *PLoS Computational Biology* **5**(8):e1000456, [doi:10.1371/journal.pcbi.1000456](https://doi.org/10.1371/journal.pcbi.1000456). Crossref confirmed authors, journal, article and publication date 7 August 2009. Cited for the supplement's model-description format.
+- Zhang HG et al. (1995), “Subunit composition determines picrotoxin and bicuculline sensitivity of Drosophila gamma-aminobutyric acid receptors,” *Molecular Pharmacology* **48**(5):835–840, PMID 7476913. PubMed metadata/abstract checked in the pre-publication review t-0194: supports homomer picrotoxin sensitivity, **not** the unverified 1 µM potency or a concentration axis. The manuscript no longer makes those claims.
+
 ## Internal-method sources (not external biological claims)
 
 The paper transcribes SPEC-P2 §10 items 149–157; `docs/malecns-port.md`,
@@ -166,7 +175,7 @@ method context, not to claim their benchmarks were reproduced here.
   measures motivate describing stochastic runs via effects rather than aligned
   spikes; our interval overlaps alone do not meet an equivalence criterion.
 
-A [26 September 2026 Scite and Crossref status check](../docs/research/citation-health.md)
+A 26 September 2026 Scite and Crossref status check
 covered all 28 registered DOIs in the paper's verified-source list and the
 software citation audit (Shiu shared between the lists). Every checked DOI
 returned a work record and neither service returned a retraction, correction

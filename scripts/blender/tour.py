@@ -13,12 +13,15 @@
     uv run --locked scripts/blender/tour.py figures --values values.npz --out figures/tour \
         --spikes seed-501-P1-high-spikes.npz
     uv run --locked scripts/blender/tour.py viewer --values values.npz --out figures/tour/viewer.html
+    uv run --locked scripts/blender/tour.py tipping --outcomes dose/per-neuron-delta-hz.npz \
+        --out figures/tour/tipping-point
 
 `prepare` builds display geometry once into the main checkout's ignored cache.
 `values` turns the paired per-neuron rate changes into one table per condition.
 `figures` runs Blender headless for every still and clip, then adds plain labels;
 the courtship clip replays one run's exact spikes.
 `viewer` writes the offline Three.js page with the same colour scale.
+`tipping` renders the GABA dose clip, with no text, from the dose experiment's paired rate changes.
 See docs/tour-figures.md. Nothing here runs or changes the model.
 """
 from __future__ import annotations
@@ -238,6 +241,33 @@ def nice_ceiling(x: float) -> float:
     raise AssertionError
 
 
+def per_neuron(data, bodies: np.ndarray, conditions: list[str]) -> list[np.ndarray]:
+    """The named rows of an outcome table, in the scene's neuron order."""
+    roots = data["root_ids"].astype(np.int64)
+    if len(roots) != len(np.unique(roots)):
+        raise ValueError("duplicate neuron ids in outcome table")
+    position = {int(r): i for i, r in enumerate(roots)}
+    missing = [int(b) for b in bodies if int(b) not in position]
+    if missing:
+        raise ValueError(f"{len(missing)} simulated neurons have no value, e.g. {missing[:3]}")
+    take = np.array([position[int(b)] for b in bodies])
+    return [data[c][take] for c in conditions]
+
+
+def scale_cap(table: np.ndarray) -> float:
+    """One fixed visual range for every condition: the 99.5th percentile of all
+    non-zero changes, rounded up. Larger changes saturate at the end colour."""
+    if not np.isfinite(table).all():
+        raise ValueError("non-finite values")
+    return nice_ceiling(float(np.percentile(np.abs(table[table != 0]), 99.5)))
+
+
+def write_values(out: Path, table: np.ndarray, bodies: np.ndarray, meta: dict):
+    out.parent.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(out, values=table.astype(np.float32), body_ids=bodies,
+                        meta=np.frombuffer(json.dumps(meta).encode(), np.uint8))
+
+
 def values(args):
     scene = np.load(cache() / SCENE)
     bodies = scene["body_ids"]
@@ -253,31 +283,17 @@ def values(args):
         kind, unit = "synthetic", "made-up units"
     else:
         data = np.load(args.outcomes)
-        roots = data["root_ids"].astype(np.int64)
-        if len(roots) != len(np.unique(roots)):
-            raise ValueError("duplicate neuron ids in outcome table")
-        position = {int(r): i for i, r in enumerate(roots)}
-        missing = [int(b) for b in bodies if int(b) not in position]
-        if missing:
-            raise ValueError(f"{len(missing)} simulated neurons have no value, e.g. {missing[:3]}")
-        take = np.array([position[int(b)] for b in bodies])
         conditions = ["control"] + [c for c in LABELS if c != "control" and c in data.files]
         unknown = sorted(set(data.files) - set(LABELS) - {"root_ids"})
         if unknown:
             raise ValueError(f"no plain label for conditions {unknown}")
-        table = np.stack([np.zeros(len(bodies))] + [data[c][take] for c in conditions[1:]])
+        table = np.stack([np.zeros(len(bodies)), *per_neuron(data, bodies, conditions[1:])])
         kind, unit = "model", "Hz"
-    if not np.isfinite(table).all():
-        raise ValueError("non-finite values")
-    # One fixed visual range for every condition: the 99.5th percentile of all
-    # non-zero changes, rounded up. Larger changes saturate at the end colour.
-    cap = nice_ceiling(float(np.percentile(np.abs(table[table != 0]), 99.5)))
+    cap = scale_cap(table)
     meta = dict(kind=kind, unit=unit, conditions=conditions, labels=[LABELS[c] for c in conditions],
                 cap=cap, knee=cap / 50,
                 source=str(args.outcomes) if args.outcomes else "synthetic")
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(args.out, values=table.astype(np.float32), body_ids=bodies,
-                        meta=np.frombuffer(json.dumps(meta).encode(), np.uint8))
+    write_values(args.out, table, bodies, meta)
     summary = {c: dict(mean_abs=float(np.abs(v).mean()), up=int((v > 0).sum()), down=int((v < 0).sum()))
                for c, v in zip(conditions, table)}
     print(json.dumps(dict(cap=cap, unit=unit, kind=kind, summary=summary), indent=1))
@@ -602,6 +618,61 @@ def figures(args):
     encode(frames, out, "courtship-path", args.crf, work)
 
 
+# ---------------------------------------------------------------- tipping point
+
+# The GABA dose clip. Block levels in recorded order, as the fraction of GABA-class
+# conductance removed; rest is the paired control, zero change by construction.
+BLOCKS = [0.10, 0.25, 0.50, 0.75, 0.90, 1.00]
+# Clip seconds: rest, then the brake released at a steady rate to full block, then a hold.
+REST_S, RELEASE_S, CLIP_S = 0.5, 4.0, 6.5
+# One CNS turning about its long axis: upright for a 4:5 phone feed, head-left for 16:9.
+TIPPING_VIEWS = {
+    # From above and in front, so the brain sits nearest the camera; head at the top.
+    "portrait": dict(target=[0, -95, -300], direction=[0, 1, 0.6], up=[0, 0, 1], distance=1780, lens=50,
+                     fstop=0.005, dolly=-0.08, spin=dict(axis=[0, 0, 1], start=-30, degrees=50), size=[2160, 2700]),
+    # The same kind of view lying down, head to the left.
+    "landscape": dict(target=[0, -95, -320], direction=[0.3, 1, 0.6], up=[-1, 0.3, 0], distance=2400, lens=50,
+                      fstop=0.005, dolly=-0.08, spin=dict(axis=[0, 0, 1], start=-20, degrees=40), size=[3840, 2160]),
+}
+# Look changes for this clip on top of look.json, held for the whole clip like every
+# look setting: only the block level and the camera change from frame to frame.
+# A wider bloom lets the lit brain glow into the dark around it.
+TIPPING_LOOK = dict(bloom=0.5, bloom_size=0.6)
+
+
+def release(frames: int, fps: int) -> np.ndarray:
+    """Block fraction on each frame."""
+    return np.clip((np.arange(frames) / fps - REST_S) / RELEASE_S, 0.0, 1.0)
+
+
+def tipping(args):
+    """The GABA brake released through the recorded block levels, no text: a 4:5
+    and a 16:9 clip, each as a 4K master and a 1080p60 copy."""
+    bodies = np.load(cache() / SCENE)["body_ids"]
+    conditions = [f"block-{b:.2f}" for b in BLOCKS]
+    table = np.stack([np.zeros(len(bodies)), *per_neuron(np.load(args.outcomes), bodies, conditions)])
+    # The tour's cap (its own rule gives 200 Hz here too), but linear, not the tour's
+    # signed log: the brain's light then follows its total extra firing, and the
+    # small early changes are not lifted towards the full-block brightness.
+    cap = scale_cap(table)
+    meta = dict(kind="model", unit="Hz", conditions=["control", *conditions], labels=["Rest", *conditions],
+                cap=cap, knee=cap / 50, scale="linear", source=str(args.outcomes))
+    frames = round(CLIP_S * 60)
+    theta = release(frames, 60)
+    digest = hashlib.sha256(table.astype(np.float32).tobytes() + json_text(
+        [meta["scale"], cap, LOOK, TIPPING_LOOK, TIPPING_VIEWS, theta.tolist()]).encode()).hexdigest()[:16]
+    work = cache() / "visuals/tour/tipping" / digest
+    write_values(work / "values.npz", table, bodies, meta)
+    levels = [[0.0, "control"], *[[b, c] for b, c in zip(BLOCKS, conditions)]]
+    tasks = [dict(kind="release", view=name, levels=levels, theta=theta.tolist(), size=view["size"],
+                  out=str(work / name)) for name, view in TIPPING_VIEWS.items()]
+    blender("scene.py", dict(scene=str(cache() / SCENE), values=str(work / "values.npz"),
+                             views=TIPPING_VIEWS, tasks=tasks, look=TIPPING_LOOK), work / "job.json")
+    for name in TIPPING_VIEWS:
+        encode(work / name, args.out.resolve(), name, args.crf, work)
+    print(f"cap {cap:g} Hz, {frames} frames, full block from frame {int(np.argmax(theta >= 1))}")
+
+
 # ---------------------------------------------------------------- viewer
 
 def viewer(args):
@@ -699,6 +770,11 @@ def main():
     p.add_argument("--crf", type=int, default=18)
     p.add_argument("--look", help="JSON overrides of scene.LOOK, for look development")
     p.set_defaults(run=figures)
+    p = sub.add_parser("tipping", help="the GABA dose clip: block levels in order, no text")
+    p.add_argument("--outcomes", type=Path, required=True, help="per-neuron-delta-hz.npz from the dose analysis")
+    p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--crf", type=int, default=18)
+    p.set_defaults(run=tipping)
     p = sub.add_parser("viewer", help="offline Three.js page with every condition")
     p.add_argument("--values", type=Path, required=True)
     p.add_argument("--out", type=Path, required=True)

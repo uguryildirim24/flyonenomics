@@ -4,9 +4,9 @@
 \usepackage{caption,array,amsmath}
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \renewcommand{\thetable}{S\arabic{table}}
-\title{A whole-nervous-system model of the male fly as a pharmacology bench: receptor reserve, network tipping and the limits of a virtual body}
+\title{A whole-nervous-system model of the male fly as a pharmacology bench}
 \author{Hasan ``Rolf'' Yildirim\\Lasell University}
-\date{}
+\date{}\hypersetup{pdftitle={A whole-nervous-system model of the male fly as a pharmacology bench},pdfauthor={Hasan "Rolf" Yildirim}}
 \begin{document}
 \maketitle
 \section*{Supplementary information}
@@ -14,7 +14,7 @@
 This supplement lists the network and its update rules separately from the experiments. Counts refer to the retained MaleCNS graph, not all cells in the anatomical release. The model keeps traced neurons with a cell-type annotation and all released directed connections between them; no connection is dropped for having a small synapse count. Input is injected into the model, not seen by a fly.
 
 \begin{table}[htbp]
-\caption{Model summary in the population--connectivity--dynamics--input--output format of Nordlie, Gewaltig and Plesser.}
+\caption{Model summary in the population--connectivity--dynamics--input--output format of Nordlie, Gewaltig and Plesser \cite{nordlie}.}
 \small\begin{tabular}{@{}p{0.24\linewidth}p{0.71\linewidth}@{}}\toprule
 Populations & Anatomical classes with dopamine, Kenyon and ellipsoid-body ring cells separated from broader classes; see Table S2. \\
 Topology & MaleCNS directed, aggregated neuron-to-neuron connections between retained cells, weighted by synapse count; no synapse-count cutoff. \\
@@ -45,7 +45,7 @@ Visual projection & 9,203 \\
 \end{table}
 
 \begin{table}[htbp]
-\caption{Fixed model settings. Values describe an assumed operating point, not measured physiological constants of this male fly.}
+\caption{Fixed model settings based on the leaky integrate-and-fire model of Shiu et al. \cite{shiu}. Values describe an assumed operating point, not measured physiological constants of this male fly.}
 \small\begin{tabular}{@{}p{0.43\linewidth}p{0.52\linewidth}@{}}\toprule
 Setting & Value or rule \\ \midrule
 Rest/reset; nominal threshold & $-52$ mV; $-45$ mV \\
@@ -55,7 +55,7 @@ Recurrent weights & $0.275$ mV $\times$ pair synapse count, signed by presynapti
 Transmitter sign & Positive: acetylcholine, dopamine, octopamine, serotonin, tyramine. Negative: GABA, glutamate, histamine. Without consensus: negative only when more than half of presynaptic sites favour GABA or glutamate; otherwise positive. \\
 Sensory background & $1$ mV/event for sensory cells, zero elsewhere; $\operatorname{Binomial}(100,0.001)$ events per driven cell per tick (independent $10$ Hz sources). \\
 Random input & Counter-based Philox4x32-10: realization supplies the random key; neuron and tick supply the counter. Batch position does not change the stream. Background counts use binomial inversion, not a Poisson approximation. \\
-Dopamine pool & Euler step $\Delta t=10$ ms; nominal $V_{\max}=0.11\,\mu$M/s, $K_m=1.3\,\mu$M, $k_{ns}=0.05$ s$^{-1}$; clamped reference concentration $0.02\,\mu$M. Release coefficients vary by anatomical compartment. \\
+Dopamine pool & Euler step $\Delta t=10$ ms; nominal $V_{\max}=0.11\,\mu$M/s, $K_m=1.3\,\mu$M, $k_{ns}=0.05$ s$^{-1}$; reference concentration $0.02\,\mu$M when clamped for the identical-input implementation check; tour and dose runs instead used free dopamine pools. Release coefficients vary by anatomical compartment. \\
 Receptors & D1/D2 $K_d=1.0/0.05\,\mu$M; threshold coefficients $1.5/2.0$ mV; gain coefficients $0.3/0.3$. Threshold clipped to $[-52,-30]$ mV; gain to $[0.2,3.0]$. \\
 \bottomrule\end{tabular}
 \end{table}
@@ -80,9 +80,9 @@ Here $v$ is voltage, $v_0$ rest voltage, $g$ synaptic drive, $h$ the neuronal st
 
 \clearpage
 \begin{table}[htbp]
-\caption{Named cells and readout populations. The selector column gives the MaleCNS annotation field and type-label rule used in the repository, not a cross-specimen identity. Broad groups are from Table S2; source lines are in the fact-check. FlyBase anatomy IDs are assigned only for unique matching adult neuron-type labels; ambiguous and unmatched names remain unassigned.}
+\caption{Named cells and readout populations. The selector column gives the repository selector and its MaleCNS source field: \texttt{hemibrain\_type} from \texttt{type}, \texttt{cell\_type} from \texttt{flywireType}, \texttt{cell\_class} from \texttt{class}, and \texttt{cell\_sub\_class} from \texttt{subclass}. These labels are not cross-specimen identities. Broad groups are from Table S2; source lines are in the fact-check. FlyBase anatomy IDs are assigned only for unique matching adult neuron-type labels; ambiguous and unmatched names remain unassigned.}
 \small\begin{tabular}{@{}p{0.17\linewidth}p{0.22\linewidth}p{0.38\linewidth}p{0.15\linewidth}@{}}\toprule
-Named population & Broad group & MaleCNS selection label/rule & FlyBase anatomy ID \\ \midrule
+Named population & Broad group & Repository selection rule & FlyBase anatomy ID \\ \midrule
 P1 & Central & \texttt{hemibrain\_type} starts \texttt{pC1\_} & FBbt:00110621 \\
 pIP10 & Descending & \texttt{hemibrain\_type} equals \texttt{pIP10} & FBbt:00110854 \\
 dPR1 & VNC intrinsic (central) & \texttt{hemibrain\_type} equals \texttt{dPR1} & FBbt:00110856 \\
@@ -97,4 +97,8 @@ Photoreceptors & Sensory & \texttt{cell\_type} equals \texttt{R1-6}, \texttt{R7}
 Random courtship control & Central intrinsic & Fixed cholinergic \texttt{cb\_intrinsic} subset excluding P1 and direct inputs to pIP10; not an anatomical type. & not found \\
 \bottomrule\end{tabular}
 \end{table}
+\begin{thebibliography}{2}\raggedright
+\bibitem{nordlie} Nordlie E, Gewaltig M-O, Plesser HE (2009). Towards reproducible descriptions of neuronal network models. \textit{PLoS Computational Biology} 5(8):e1000456. \url{https://doi.org/10.1371/journal.pcbi.1000456}.
+\bibitem{shiu} Shiu PK, et al. (2024). A Drosophila computational brain model reveals sensorimotor processing. \textit{Nature} 634:210--219. \url{https://doi.org/10.1038/s41586-024-07763-9}.
+\end{thebibliography}
 \end{document}

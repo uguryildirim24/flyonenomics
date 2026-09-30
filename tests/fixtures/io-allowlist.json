@@ -111,6 +111,12 @@
     {
       "file": "scripts/blender/tour.py",
       "kind": "numpy.load",
+      "name": "tipping",
+      "reason": "read generated scene cache and ignored GABA dose per-neuron outcome table for the dose clip"
+    },
+    {
+      "file": "scripts/blender/tour.py",
+      "kind": "numpy.load",
       "name": "values",
       "reason": "read generated scene cache and ignored circuit outcome table for figures"
     },

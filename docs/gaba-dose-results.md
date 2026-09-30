@@ -2,15 +2,13 @@
 
 In this male fly network, reducing GABA-class synaptic conductance raises firing outside the sensory neurons. The response is gradual at first and accelerates at high block. Increasing that conductance lowers activity slightly; strengthening the separate glutamate-gated chloride brake brings most, but not all, of the partially blocked response back toward rest. These are **model firing rates**, not drug treatment in a fly, a seizure diagnosis or movement. These dark-rest runs inject sensory background drive without a TuBu stimulus; the fly does not see.
 
-[Concentration-response curves](../figures/3d/gaba-dose/curves.svg) · [3D dose overview](../figures/3d/gaba-dose/overview.png) · [interactive 3D model](../figures/3d/gaba-dose/male-cns-atlas.html). The interactive view and individual images cover every block, potentiation and rescue level. Colours show changes from rest on a shared scale; displayed skeletons are anatomical representatives, not the entire measured population.
+[Conductance-response curves](../figures/3d/gaba-dose/curves.svg) · [3D dose overview](../figures/3d/gaba-dose/overview.png) · [interactive 3D model](../figures/3d/gaba-dose/male-cns-atlas.html). The interactive view and individual images cover every block, potentiation and rescue level. Colours show changes from rest on a shared scale; displayed skeletons are anatomical representatives, not the entire measured population.
 
-## Dose means a brain-equivalent concentration
+## Dose means a fraction of GABA conductance blocked
 
-Picrotoxin is a pore-blocking Rdl antagonist. Its reference potency is **IC50 1.0 µM, Hill slope 1.0** in recombinant *Drosophila* Rdl homomers expressed in *Xenopus* oocytes (Zhang et al., 1995; `docs/research/drug-action-in-network-models.md`). In the simulation the blocked fraction θ = C/(1 µM + C); concentration C is an assumed steady **brain-equivalent** concentration, not a food, injection or circulating dose. Native mixed-subunit receptors can be hundreds of times less sensitive. The model scales all GABA-class conductances uniformly and does not simulate picrotoxin's other channel targets, absorption, receptor distribution or chloride reversal. The two other axes below are **conductance multipliers**, not measured drug concentrations: the source gives no usable positive-modulator EC50 for fly Rdl, and the published GluCl agonist potency does not calibrate the rescue multiplier.
+The model's dose axis is the fraction of GABA-class conductance blocked, and it is not mapped to a drug concentration because the source potency could not be verified. The model scales all GABA-class conductances uniformly and does not simulate picrotoxin's other channel targets, absorption, receptor distribution or chloride reversal. The two other axes below are **conductance multipliers**, not measured drug concentrations: no positive-modulator potency for fly Rdl or GluCl agonist potency calibrates them.
 
-| GABA blocked | 10% | 25% | 50% | 75% | 90% | 100% |
-|---|---:|---:|---:|---:|---:|---:|
-| Brain-equivalent picrotoxin | 0.111 µM | 0.333 µM | 1.000 µM | 3.000 µM | 9.000 µM | formal infinite concentration |
+The block levels were 10%, 25%, 50%, 75%, 90% and 100%.
 
 The reference control and full GABA-off responses were reproduced exactly, neuron by neuron, before the design was frozen. The results use that reference control, with paired whole-run bootstrap intervals. A 95% interval containing zero means **no detected difference**, not that two conditions are the same. The control outside-sensory rate was 1.438 Hz.
 

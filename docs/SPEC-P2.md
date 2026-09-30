@@ -2092,6 +2092,8 @@ In the connectome, dopamine neurons do synapse onto P1 (56 connections, 61 synap
 
 162. (Design freeze, 2026-09-26, before dose outcomes; numbered 160 in the frozen dose-branch commit `566bc949` before integration with the independent confirmatory study.) **GABA receptor concentration-response.**
 
+**Correction (2026-09-30):** These dose runs were dark rest with sensory background only, without TuBu or any other target input: `scripts/circuit_tour.py` assigns only settle and measure windows, with all target input rates zero. The concentration translation below is also not validated: the Zhang et al. (1995) abstract describes “coinfection of cells with recombinant baculoviruses”; “insect cells” is our inference, not stated in the abstract. Its stated IC50 and Hill slope cannot be verified without the full text; the reported dose axis is the fraction of GABA-class conductance blocked, not a calibrated drug concentration.
+
 ## Question and fixed substrate
 
 How does blocking or potentiating the GABA-class synaptic brake change activity in the male fly network? Does the response amplify receptor occupancy, tip suddenly, and can strengthening the glutamate-class brake rescue it? MaleCNS v1.0; item 155 rest `rest:ed9b0a469d7a6b77`; dark rest with injected TuBu input (the fly does not see); seeds 501–510 paired. Each new run settles 2 s, then measures 10 s. No engine or parameter change beyond permitting zero in the scale guard. Item 158 control is reused, not rerun for the outcomes.
@@ -2123,6 +2125,8 @@ Six block levels θ = 0.10, 0.25, 0.50, 0.75, 0.90, 1.00; four potentiation leve
 Per seed and condition: outside-sensory mean Hz, the 12 drive-group means, silent fraction, median and 99th-percentile rate, b and Fano. Effects paired by seed to control; 95% whole-seed bootstrap intervals. An interval containing zero means **no detected difference**, not equivalence. Fit Hill curves to whole-brain and per-region rate-versus-θ and rate-versus-φ, with EC50 (in θ or φ units, not drug concentration) and slope intervals; flag a fit as unidentifiable rather than inventing an estimate. Plot b and Fano across θ, identify which region changes first, and report rescue fraction of the θ = 0.75 excess removed with a paired whole-seed bootstrap interval. All five expectations will be labelled matching, opposite or unclear with numbers, no invented pass threshold. Per-dose 3D views and one curve plot; spike-time replay for seed 501 at θ 0.25, 0.75, 1.00 and best rescue (motor wing/leg and descending), with count-total checks. Replays are visual aids, not independent outcomes.
 
 163. (Design freeze, 2026-09-26, after two pre-freeze GPU reproductions and before GPU dose outcomes.) **GABA concentration-response replication on CUDA.**
+
+**Correction (2026-09-30):** These dose runs were dark rest with sensory background only, without TuBu or any other target input: `scripts/circuit_tour.py` assigns only settle and measure windows, with all target input rates zero. The inherited concentration translation is unverified as noted under item 162; the GPU dose axis is the fraction of GABA-class conductance blocked.
 
 ## Question and fixed substrate
 

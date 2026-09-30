@@ -75,8 +75,9 @@ Available now:
 - **GABA dose and rescue.** GABA is an inhibitory connection class: weakening
   it lets more activity through. Firing rose slowly at low block and sharply
   near full block. Strengthening a separate inhibitory channel, GluCl, partly
-  offset the excess under partial GABA block. The concentration scale is an
-  assumption, not a dose given to a fly. [Dose results](docs/gaba-dose-results.md).
+  offset the excess under partial GABA block. The block levels are fractions
+  of the model's GABA connection strength switched off, not drug doses given
+  to a fly. [Dose results](docs/gaba-dose-results.md).
 - **Virtual body.** Recorded spikes drive chosen wing and leg movements in
   animations. The body sends nothing back to the brain; the clips show a
   display rule, not observed behaviour. [Courtship playback](docs/courtship-body.md) ·

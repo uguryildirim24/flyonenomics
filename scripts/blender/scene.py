@@ -47,8 +47,11 @@ def ramp(stops, t: np.ndarray) -> np.ndarray:
 
 
 def scaled(v: np.ndarray) -> np.ndarray:
-    """Signed log scale, fixed across all conditions: -1 … 0 … +1."""
+    """Signed log scale, fixed across all conditions: -1 … 0 … +1. A linear
+    table maps the change straight to the scale, saturating at the cap."""
     cap, knee = VMETA["cap"], VMETA["knee"]
+    if VMETA.get("scale") == "linear":
+        return np.clip(v / cap, -1.0, 1.0)
     return np.sign(v) * np.minimum(np.log1p(np.abs(v) / knee) / math.log1p(cap / knee), 1.0)
 
 
@@ -333,6 +336,12 @@ def aim(cam, view: dict, t: float = 0.0):
     screen_up = right.cross(forward)
     cam.matrix_world = Matrix.Translation(cam.location) @ Matrix((right, screen_up, -forward)).transposed().to_4x4()
     cam.data.lens = view["lens"]
+    # Optional depth of field, focused on the target.
+    dof = cam.data.dof
+    dof.use_dof = "fstop" in view
+    if dof.use_dof:
+        dof.focus_distance = (cam.location - target).length
+        dof.aperture_fstop = view["fstop"]
 
 
 def compositor(scene):
@@ -370,6 +379,15 @@ def condition(name: str) -> np.ndarray:
     return VALUES["values"][VMETA["conditions"].index(name)].astype(np.float64)
 
 
+def released(levels, theta: float) -> np.ndarray:
+    """Per-neuron change at block fraction theta: a recorded level, or between two
+    recorded levels a straight line from one to the next (display only)."""
+    blocks = [b for b, _ in levels]
+    i = min(int(np.searchsorted(blocks, theta, side="right")) - 1, len(blocks) - 2)
+    w = (theta - blocks[i]) / (blocks[i + 1] - blocks[i])
+    return (1 - w) * condition(levels[i][1]) + w * condition(levels[i + 1][1])
+
+
 def ease(t):
     t = min(max(t, 0.0), 1.0)
     return t * t * (3 - 2 * t)
@@ -391,8 +409,19 @@ def run():
     for task in JOB["tasks"]:
         view = JOB["views"][task["view"]]
         brain.show_vnc(view.get("vnc", True))
-        brain.paint(condition(task["dust"]))
         brain.paint_path(condition(task["path"]) if task.get("path") else None)
+        if task["kind"] == "release":
+            # The GABA dose clip: the dust follows the block level; the camera moves over the whole clip.
+            theta = task["theta"]
+            for f, level in enumerate(theta):
+                out = Path(task["out"]) / f"{f:04d}.png"
+                if out.exists():
+                    continue
+                brain.paint(released(task["levels"], level))
+                aim(cam, view, ease(f / (len(theta) - 1)))
+                shoot(scene, cam, brain, task["size"], out)
+            continue
+        brain.paint(condition(task["dust"]))
         if task["kind"] == "still":
             aim(cam, view, task.get("t", 0.0))
             shoot(scene, cam, brain, task["size"], Path(task["out"]))

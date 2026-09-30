@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Simple static concentration-response figure from the recorded paired intervals."""
+"""Simple static conductance-response figure from the recorded paired intervals."""
 from __future__ import annotations
 import argparse
 import json
@@ -17,18 +17,19 @@ overlay=json.loads(args.overlay.read_text()) if args.overlay else None
 parts=['<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="590" viewBox="0 0 1280 590">',
        '<rect width="1280" height="590" fill="#f4f8fa"/>',
        '<style>text{font-family:system-ui,sans-serif;fill:#193548} .title{font-size:27px;font-weight:700} .axis{font-size:17px} .tick{font-size:15px} .hint{font-size:14px;fill:#526d7a}</style>',
-       '<text x="56" y="52" class="title">GABA receptor scaling changes model brain activity</text>',
-       '<text x="56" y="80" class="hint">Outside sensory neurons · rate difference from matched rest · brackets show 95% whole-seed intervals</text>']
+       '<text x="56" y="52" class="title">GABA conductance scaling changes model brain activity</text>',
+       '<text x="56" y="80" class="hint">Outside sensory neurons · rate difference from matched rest · brackets show 95% whole-repeat intervals</text>']
 
-def panel(left, title, prefix, values, xmax, ymin, ymax, color, xlabel):
+def panel(left, title, prefix, values, xmax, ymin, ymax, yticks, color, xlabel):
     top,bottom=135,465
     x0,x1=left+75,left+535
     def px(x):return x0+x/xmax*(x1-x0)
     def py(y):return bottom-(y-ymin)/(ymax-ymin)*(bottom-top)
     parts.append(f'<text x="{left+22}" y="120" class="axis">{escape(title)}</text>')
     parts.append(f'<path d="M{x0} {top} V{bottom} H{x1}" stroke="#516b79" stroke-width="2" fill="none"/>')
-    for i in range(5):
-        v=ymin+(ymax-ymin)*i/4; yy=py(v)
+    parts.append(f'<text x="{left+22}" y="{(top+bottom)/2}" text-anchor="middle" transform="rotate(-90 {left+22} {(top+bottom)/2})" class="axis">Change in firing (Hz)</text>')
+    for v in yticks:
+        yy=py(v)
         parts.append(f'<line x1="{x0}" y1="{yy}" x2="{x1}" y2="{yy}" stroke="#dce6eb"/>')
         parts.append(f'<text x="{x0-8}" y="{yy+5}" text-anchor="end" class="tick">{v:g}</text>')
     for i in range(5):
@@ -52,12 +53,12 @@ def panel(left, title, prefix, values, xmax, ymin, ymax, color, xlabel):
                 parts.append(f'<circle cx="{x}" cy="{y}" r="5" fill="{stroke}"/>')
     parts.append(f'<text x="{(x0+x1)/2}" y="{bottom+62}" text-anchor="middle" class="axis">{escape(xlabel)}</text>')
 
-panel(15,'GABA blocked','block',('0.10','0.25','0.50','0.75','0.90','1.00'),1.,0,14,'#b6464a','Fraction of GABA receptors blocked')
-panel(655,'GABA strengthened','boost',('0.25','0.50','1.00','2.00'),2.,-1,0.1,'#2878a3','Extra GABA conductance (φ)')
+panel(15,'GABA blocked','block',('0.10','0.25','0.50','0.75','0.90','1.00'),1.,0,14,(0, 5, 10), '#b6464a','Fraction of GABA conductance blocked')
+panel(655,'GABA strengthened','boost',('0.25','0.50','1.00','2.00'),2.,-1,0,(-1, -0.75, -0.5, -0.25, 0), '#2878a3','Extra GABA conductance (φ)')
 if overlay is not None:
     parts.append('<text x="56" y="561" class="hint">Red circles: Brian2 · blue squares, dashed: GPU · ΔHz from each engine’s control · injected input; the fly does not see.</text>')
 else:
-    parts.append('<text x="56" y="561" class="hint">Block concentration: picrotoxin brain-equivalent on recombinant Rdl homomers; potentiation has no calibrated drug concentration.</text>')
+    parts.append('<text x="56" y="561" class="hint">Block is a fraction of GABA conductance removed; neither axis is a calibrated drug concentration.</text>')
 parts.append('</svg>')
 path=args.out
 path.parent.mkdir(parents=True, exist_ok=True)

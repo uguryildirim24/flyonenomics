@@ -195,7 +195,7 @@ Each of these corrects something a reader would otherwise conclude at that point
 | 78 | "the network's firing curve, not a counted stock of spare Rdl receptors" | "Receptor reserve" means spare receptors in pharmacology; the copies at 80 and 86 went. |
 | 78 | "a shape parameter, not by itself evidence for cooperative binding" | A steep Hill slope is commonly read as cooperativity. |
 | 80 | "this is not an identified network EC50" | A fitted slope and half-effect read as an EC50. `fact-check.md` row 80 records this wording. |
-| 80 | "1.000 $\mu$M and ... 9.000 $\mu$M, not administered doses" | Kept at the numbers, where a reader turns µM into a dose; the copy at 76 went. |
+| 80 | Concentration-mapping sentence later removed (2026-09-30). | Source potency was unverified. |
 | 88 | "within regions, not the arrival time of a seizure" | "Did not lead the optic lobes" at 82 reads as timing. |
 | 97 | "it is not evidence of learned behaviour, a courtship song or real wing kinematics" | A moving fly reads as behaviour; the copies at 71 and 93 went, so this is the section's one statement. |
 | 100 | "complementary checks on one constructed system, not independent biological replications" | Several studies pointing the same way read as replication. |

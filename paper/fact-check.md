@@ -1,60 +1,52 @@
 # Manuscript numerical fact check
 
-| Paper item | Check | Source / scope |
+Line references are to `paper/manuscript.tex` in this change. Rendered dopamine numbers are rounded by the manuscript's fixed-three-decimal `siunitx` formatting (with `xfp` for the two-decimal confirmation p) from the frozen result bindings; the source JSON retains full precision. A range lists every value in that phrase, not a new inference. No raw-run identifiers belong in the manuscript.
+
+| Item | Check / provenance |
+|---|---|
+| Affiliation (manuscript:15; supplement:8) | Rolf reconfirmed Lasell University on 2026-09-30. |
+| Title (manuscript:14; supplement:7) | Rolf chose “A whole-nervous-system model of the male fly as a pharmacology bench” on 2026-09-30. |
+| Final build switch | `paper/build.py --final` writes `\\finaltrue` to `paper/build/final-mode.tex`; default writes `\\finalfalse`. Only draft status and approval sentence differ in content. |
+
+| Manuscript line | Numbers or check | Source / scope |
 |---|---|---|
-| Affiliation | Hasan “Rolf” Yildirim followed by `Lasell University` in manuscript and supplement author lines. No city or state is asserted. | Rolf confirmed Lasell as the affiliation on 27 Sep 2026; city/state were not verified from Lasell's site. |
-| Final build switch | `paper/build.py --final` writes `\finaltrue` to `paper/build/final-mode.tex`; the default writes `\finalfalse`. The manuscript loads that preamble line and uses `\iffinal\else ... \fi` only around the draft status and approval sentence. Receipt has `final: true/false`; supplement build is unchanged. | Local draft and final builds succeeded; their extracted text differs only by the draft status and approval sentence in content (PDF page-number and bibliography extraction order shift with layout). |
+| 27 | 162,517 neurons; 25,120,209 directed connections | `docs/cuda-methods.md:9`; `docs/adhd-study-results.md:12` |
+| 38 | Tables S1–S5 | `paper/supplement.tex`; model and population `docs/cuda-methods.md:19-29,33-55,85-106`; selectors `paper/supplement-fact-check.md` |
+| 40 | A/B positions −50°/+50°, 245 direct-TuBu ring readouts; one calibrated A−B template unit | `docs/adhd-study-results.md:12-13,19`; `docs/SPEC-P2.md` item 160 |
+| 40 | ten pilot runs, forty new follow-up runs; 2 s settle, 5 s prefix, 1 s gap, 14 s test and first 2 s primary window; two primaries, one follow-up primary | `docs/adhd-study-results.md:11,14,21`; `docs/adhd-confirm-results.md:3,9-11`; `docs/SPEC-P2.md` items 156, 160 |
+| 40 | Pilot partial runs voided; retained calibration failed original RNG audit, only part replayed | `docs/adhd-study-results.md:11,14`; `paper/README.md:62-66` |
+| 42 | ten repeats; 2 s settle, 10 s knockout measure; courtship 5 s ON, 5 s OFF; P1 at 10/30/60 Hz, pIP10 and random at 30 Hz | `scripts/circuit_tour.py:21,26,149-151`; `docs/SPEC-P2.md` items 158–159 |
+| 44 | ten paired dose runs; 2 s settle, 10 s measure; design and Hill readouts frozen before outcomes; observed-endpoint half-point defined at analysis | `docs/SPEC-P2.md` item 162; `scripts/circuit_tour.py:149,164`; `scripts/circuit_tour_dose.py` (analysis definition); review t-0194 S5 commit chronology |
+| 46 | 58,655,422 spikes, four 12 s trajectories, 0.1 ms grid, one network per run; L4 8.420 s, 10 ms interface; 0.637029 and 1.268480 s/s at 10 and 1 ms interfaces | `docs/cuda-methods.md:11,79,85,100-101,119-127`; separate short timing observations, not speedup estimates |
+| 46 | Independent-stream ladder, within-engine controls, interval overlap not equivalence | `docs/gaba-dose-gpu.md:11-19,121-123`; `validation/records/p2/male-cuda-dose-plan.md:9,46` |
+| 53 | pilot −0.085 [−0.154, −0.021], Holm p = 0.070; interaction +0.046 [−0.060, +0.158] | `validation/records/p2/adhd-study-results.json:68,81-110`; three-decimal display from frozen six-significant-digit bindings |
+| 55 | confirmation −0.001 [−0.038, +0.038], p = 0.95; not confirmed | `validation/records/p2/adhd-confirm-results.json:5-8,52-59`; two-decimal p display |
+| 64 | ACh −1.436 [−1.451, −1.426]; control 1.438 Hz; removal 99.9%; GABA +12.588 [+12.563, +12.613]; glutamate +10.779 [+10.760, +10.799] Hz | `validation/records/p2/circuit-tour-analysis.json` rows off-acetylcholine, off-gaba and off-glutamate; `docs/gaba-dose-results.md:13` control; 1.436/1.438 × 100 rounded to 99.9% |
+| 66 | histamine −0.001 [−0.002, +0.001]; dopamine +0.001 [−0.019, +0.025]; octopamine −0.041 [−0.060, −0.023]; serotonin +0.013 [+0.002, +0.029]; unlabelled −0.130 [−0.159, −0.100] Hz | `validation/records/p2/circuit-tour-analysis.json` rows off-histamine, off-dopamine, off-octopamine, off-serotonin, off-unclear; matched whole-repeat intervals |
+| 75 | P1 +32.457 [31.928, 32.837]; pIP10 +35.940 [32.370, 38.420]; dPR1 +26.230 [23.390, 29.650]; wing motor +9.159 [8.203, 10.150] Hz; medium dPR1 P1 vs random +17.810 [15.810, 19.820]; direct pIP10 +14.410 [11.360, 17.830]; vPR6 inactive | `validation/records/p2/circuit-tour-analysis.json` courtship rows; `docs/circuit-tour-results.md:13-15` |
+| 77 | low-drive route not demonstrated | `docs/p1-routes.md:3,9-16` |
+| 88 | control 1.438 Hz; block 10%, 25%, 50%, 75%, 90%, 100% and respective +0.093, +0.295, +0.972, +4.591, +9.591, +12.588 Hz | `validation/records/p2/male-cuda-dose-comparison.json` `brian` dose conditions; `docs/gaba-dose-results.md:13,17` |
+| 88 | six paired 95% intervals [0.075, 0.107], [0.276, 0.318], [0.917, 1.022], [4.536, 4.652], [9.407, 9.753], [12.563, 12.613] Hz | `docs/gaba-dose-results.md:17`; Brian2 dose summary committed in `validation/records/p2/male-cuda-dose-comparison.json` |
+| 88 | observed full-block half-point 80.1% [79.9%, 80.3%]; fitted slope 5.05 [4.76, 5.34]; extrapolated half-point 99.9% [96.1%, 105.4%] | `validation/records/p2/male-cuda-dose-comparison.json` `brian.fits.block.outside_sensory`; `docs/gaba-dose-results.md:18` (interval extends past full block) |
+| 90 | frozen prediction below 50% block, tested against observed 80.1%; frozen fitted-slope prediction above 1, tested against 5.05 [4.76, 5.34]; extra GABA 0.25, 0.50, 1.00, 2.00, decreases 0.260 [0.238, 0.281], 0.442 [0.432, 0.456], 0.611 [0.598, 0.625], 0.835 [0.823, 0.847] Hz | `docs/SPEC-P2.md` item 162 expectations 1–5; `docs/gaba-dose-results.md:18-20` |
+| 90 | 75% block; GluCl 0.50, 1.00, 2.00, rescue 23.5% [20.9%, 26.0%], 45.5% [44.7%, 46.5%], 75.0% [73.7%, 76.1%]; residual +1.147 [1.103, 1.205] Hz | `docs/gaba-dose-results.md:21`; `validation/records/p2/male-cuda-dose-comparison.json` `brian` rescue |
+| 92 | GPU/Brian2 block slopes 4.99 [4.65, 5.43] / 5.05 [4.76, 5.34]; observed half-points 80.12% [79.95%, 80.30%] / 80.11% [79.90%, 80.33%] | `validation/records/p2/male-cuda-dose-comparison.json`; `docs/gaba-dose-gpu.md:115` |
+| 92 | GPU/Brian2 GluCl rescue 23.6% [21.8%, 25.2%] / 23.5% [20.9%, 26.0%]; 45.1% [43.8%, 46.2%] / 45.5% [44.7%, 46.5%]; 75.0% [74.0%, 75.9%] / 75.0% [73.7%, 76.1%] | `validation/records/p2/male-cuda-dose-comparison.json`; `docs/gaba-dose-gpu.md:118` |
+| 92 | boost half-effects GPU φ 2.21 [1.50, 4.29], Brian2 φ 1.26 [0.96, 1.80] | `validation/records/p2/male-cuda-dose-comparison.json`; `docs/gaba-dose-gpu.md:117` |
+| 99 | NeuroMechFly v2 through FlyGym and MuJoCo | `docs/courtship-body.md:18`; citation metadata in `paper/references-verified.md` |
+| 103 | wing angles about 47°, 14°, 8° | `docs/courtship-body.md:14,20-35`; selected mapping, not real motor calibration |
+| 119 | visual-projection 0.059 Hz, optic 0.023 Hz, central 4.795 Hz | `validation/records/p2/male-cuda-dose-comparison.json` `brian.conditions`: control = `absolute_mean` − `paired_delta[0]`, consistent across all thirteen conditions; `docs/optic-lobe-silence.md:3-9`; see `docs/cuda-methods.md:33-55` for assumptions, `src/flyonenomics/substrate/transmitters.py:37-44,82-90` for transmitter signs and omitted co-transmission |
+| 122 | MaleCNS v1.0, CC BY 4.0 and portal | `docs/research/preprint-availability.md:12-28,51-61`; `paper/references-verified.md:48-66` |
+| 122, 128, 131 | Availability, no competing interests, no external funding | `paper/README.md:70-87`; Rolf's declarations retained |
+| 125 | Approved AI-use disclosure: Hasan “Rolf” Yildirim conceived, directed and is responsible; Claude (Anthropic), OpenAI Codex and Gemini (Google) roles; tools are not authors or independent human/experimental replication | `paper/manuscript.tex:125`; Rolf's approved wording merged from review-30; draft alone retains the approval sentence |
+| 135 | Anatomy version, CC BY 4.0 | `paper/references-verified.md:48-66` |
+| 139 | ±200 and ±10 Hz illustration colour caps | `docs/tour-figures.md:29-36`; saturated figure display is not a numerical test |
+| 150–165 | Citation years, journals, pages and identifiers | `paper/references-verified.md`; Zhang PubMed 7476913, Wang-Chen/FlyGym and MuJoCo verified via Crossref on 2026-09-30 |
 
-Line references are to the reviewed sources on `main` at the lane start; manuscript line numbers refer to `paper/manuscript.tex` in this change. Values inserted by `paper/build.py` are shown at the build's six-significant-digit precision. A range below lists **every** value in that phrase, not a new inference. No raw-run identifiers belong in the manuscript.
+## Figure labels
 
-| Manuscript line | Numbers (in manuscript order) | Source on main, line(s) |
-|---|---|---|
-| 21 | MaleCNS 162,517 neurons; 25,120,209 directed connections | `docs/cuda-methods.md:9`, `docs/adhd-study-results.md:12` |
-| 32 | Supplementary tables S1–S5 cover model summary, population breakdown, neuron and synapse parameters, update equations and named-cell identifiers | Model and population details `docs/cuda-methods.md:19-29,33-55,85-106`; named types `paper/manuscript.tex:62-65` on main. Tables S1–S5 are present in `paper/supplement.tex`; see `paper/supplement-fact-check.md` for their source audit. |
-| 34 | two initial primaries; one follow-up primary | `docs/adhd-study-results.md:21`, `docs/adhd-confirm-results.md:3,9-11` |
-| 38 | recombinant potency 1 µM in occupancy equation | `docs/gaba-dose-results.md:9`, `docs/research/drug-action-in-network-models.md:407` |
-| 40 | 58,655,422 spikes; four 12-s trajectories; 0.1-ms grid; one network per run | `docs/cuda-methods.md:119-127` (identical-input replay); `docs/cuda-methods.md:79,85` (single-brain runs) |
-| 40 | L4, 12 simulated seconds, 8.420 s stepping, 10-ms interface | `docs/cuda-methods.md:11,85` |
-| 40 | 0.637029 s per simulated second (10-ms interface), 1.268480 (1-ms interface) | `docs/cuda-methods.md:100-101`; these are separate short single observations, not the full-run rate |
-| 40 | Whole ladder repeated with same design, independent random streams and within-engine controls; overlap describes effect estimates, not statistical equivalence | `docs/gaba-dose-gpu.md:11-19,121-123`; `validation/records/p2/male-cuda-dose-plan.md:9,46` (same numerical seeds, different random streams); exact replay scope `docs/cuda-methods.md:119-127` |
-| 47 | pilot −0.085156; nominal 95% [−0.153954, −0.0209676]; Holm p 0.0703125 | `validation/records/p2/adhd-study-results.json:68,81-87`; rounded summary `docs/adhd-study-results.md:5` |
-| 47 | interaction +0.0458767, 95% [−0.0598327, +0.15804]; no detected difference | `validation/records/p2/adhd-study-results.json:90-110` |
-| 49 | confirmation −0.00128594; nominal 95% [−0.0379679, +0.0375782]; p 0.945398; not confirmed | `validation/records/p2/adhd-confirm-results.json:5-8,52-59`; reading `docs/adhd-confirm-results.md:3` |
-| 58 | ACh −1.436 [−1.451, −1.426]; GABA +12.588 [+12.563, +12.613]; glutamate +10.779 [+10.760, +10.799] Hz | `docs/circuit-tour-results.md:7` |
-| 60 | histamine −0.001 [−0.002, +0.001]; dopamine +0.001 [−0.019, +0.025] Hz; both no detected difference; unlabelled neurons −0.130 [−0.159, −0.100] Hz | `docs/circuit-tour-results.md:9` |
-| 69 | P1 +32.457 [31.928, 32.837]; pIP10 +35.940 [32.370, 38.420]; dPR1 +26.230 [23.390, 29.650]; wing motor +9.159 [8.203, 10.150] Hz | `docs/circuit-tour-results.md:13` |
-| 69 | medium P1 vs random dPR1 +17.810 [15.810, 19.820]; direct pIP10 dPR1 +14.410 [11.360, 17.830] Hz; vPR6 inactivity | `docs/circuit-tour-results.md:13-15` |
-| 71 | low-drive route not demonstrated | `docs/p1-routes.md:3,9-16` |
-| 82 | rest 1.438 Hz; block 10%, 25%, 50%, 75%, 90%, 100%; respective +0.093, +0.295, +0.972, +4.591, +9.591, +12.588 Hz | `docs/gaba-dose-results.md:15,19` |
-| 82 | half observed full-block change 80.1% [79.9%, 80.3%]; fitted slope 5.05 [4.76, 5.34] | `docs/gaba-dose-results.md:20`; not an identified network EC50 |
-| 82 | 50% = 1.000 µM; 90% = 9.000 µM brain-equivalent | `docs/gaba-dose-results.md:9-13` |
-| 84 | extra GABA multipliers 0.25, 0.50, 1.00, 2.00; corresponding decreases 0.260 [0.238, 0.281], 0.442 [0.432, 0.456], 0.611 [0.598, 0.625], 0.835 [0.823, 0.847] Hz | `docs/gaba-dose-results.md:22` |
-| 84 | 75% block; GluCl multipliers 0.50, 1.00, 2.00; reductions in excess 23.5% [20.9%, 26.0%], 45.5% [44.7%, 46.5%], 75.0% [73.7%, 76.1%]; residual +1.147 [1.103, 1.205] Hz | `docs/gaba-dose-results.md:23` |
-| 86 | Conditional block Hill slope GPU 4.99 [4.65, 5.43] vs Brian2 5.05 [4.76, 5.34]; observed-endpoint half GPU 80.12% [79.95%, 80.30%] vs Brian2 80.11% [79.90%, 80.33%] | `docs/gaba-dose-gpu.md:115`; both fitted block half-effects remain unidentified |
-| 86 | GluCl rescue GPU 23.6% [21.8%, 25.2%] vs Brian2 23.5% [20.9%, 26.0%]; GPU 45.1% [43.8%, 46.2%] vs Brian2 45.5% [44.7%, 46.5%]; GPU 75.0% [74.0%, 75.9%] vs Brian2 75.0% [73.7%, 76.1%] | `docs/gaba-dose-gpu.md:118` |
-| 86 | Boost fitted half-effect GPU φ 2.21 [1.50, 4.29] vs Brian2 φ 1.26 [0.96, 1.80]; GPU not identified in tested range; individual rate intervals overlap | `docs/gaba-dose-gpu.md:117` |
-| 97 | body angles ~47°, ~14°, ~8° | `docs/courtship-body.md:14`; chosen mapping `docs/courtship-body.md:20-35` |
-| 113 | EM does not resolve electrical synapses (gap junctions); no electrical connections in model | `docs/research/comparable-preprints.md:182-186,222-225` (EM scope); `docs/cuda-methods.md:19,42,65-76` (model graph is directed chemical connections); `docs/feasibility.md:55` (no gap junctions). |
-| 113 | No neuropeptide co-transmission; only dopamine has neuromodulator dynamics; other labelled transmitters use assigned signs | `docs/cuda-methods.md:42,83-106` (chemical signs and dopamine pool/receptor equations); `src/flyonenomics/substrate/transmitters.py:37-44,82-90` (co-transmitters classified by single sign); `docs/research/comparable-preprints.md:222-225` (omission audit). |
-| 113 | Point neurons share base electrical parameters | `docs/cuda-methods.md:33-40` (shared membrane, synapse and nominal threshold; working threshold may vary with dopamine/genotype); `paper/manuscript.tex:21,108` on main. |
-| 113 | Sensory-only background at rest; a silent target cannot show an inhibitory firing-rate reduction, limiting detectable GABA disinhibition where injected input fails to reach | `docs/cuda-methods.md:55` (other background weights zero); `paper/manuscript.tex:21,76` on main; `docs/research/comparable-preprints.md:192-194,222-225` (silent-target implication). |
-| 116 | MaleCNS v1.0 public portal and CC BY 4.0, Berg attribution | `docs/research/preprint-availability.md:12-28,51-61,412`; `paper/references-verified.md:48-66`. |
-| 116 | Private repository contains model code, reviewed result records and figure sources; reasonable-request access and future public snapshot/archived DOI are draft commitments | `paper/manuscript.tex:114` on main (private code/reviewed results); `paper/figure-fields.md` (figure sources); `docs/research/preprint-availability.md:342-355,412` (Version A, unchanged here; the release script will replace it on go day). |
-| 116 | Raw-run public hosting undecided | `paper/manuscript.tex:114` on main; `paper/README.md:70-87`. |
-| 119 | Sole author, direction, division of AI tasks, checks not independent replication, ICMJE/COPE and Cell Press disclosure, approval pending in draft only | `paper/manuscript.tex:114` on main (preserved declaration and approval); `--final` omits the approval sentence. |
-| 122 | No competing interests | Rolf confirmed on 27 Sep 2026; declaration unchanged. |
-| 125 | No external funding | Declaration unchanged. |
-| 130 | MaleCNS v1.0, CC BY 4.0 | `paper/references-verified.md:48-66` |
-| 144-151 | literature years, volumes, pages and DOI metadata | `paper/references-verified.md:20-21,33-55,70-102`; Zhang et al. 1995, *Molecular Pharmacology* 48:835-840: `docs/research/drug-action-in-network-models.md:444-446` |
-| 152-157 | Brian 2, Philox/Random123, CuPy, NVRTC, Brian2CUDA and Knight & Nowotny bibliography years, volumes, pages and identifiers | `docs/research/software-citations.md:18-30,36-40,46-48,53-69,84-112`; verification scopes transcribed in `paper/references-verified.md` |
-| 40, 152-157 | Software names and their roles in CPU/GPU implementation | `docs/cuda-methods.md:9,52,69`; `docs/research/software-citations.md:18-30`; agreement wording from `docs/research/cross-simulator-replication.md` section 6 |
+- Anatomy (manuscript:134–135): scale bars 100 µm and 200 µm, 156 TuBu, 282 ring (245 analysed), 27 central-complex dopamine, 332 mushroom-body dopamine and 155 of 4,064 Kenyon cells, with up-to-8-per-type sampling, from `docs/3d-model.md:118-128`. No physiological measurement overlay.
+- Knockout and courtship (manuscript:138–143): ticks ±200 and ±10 Hz and 100 µm scale from `docs/tour-figures.md:15-16,21-41`; visual colour cap `:29-36`, scale geometry `docs/3d-model.md:106-110`.
+- Fig. 4 (manuscript:146–147): plotted paired intervals from the local recorded `dose-summary/analysis.json` and the same Brian2 rows committed in `validation/records/p2/male-cuda-dose-comparison.json`. Axes give Hz and conductance units; tick positions are display positions, not additional experimental outcomes. No concentration translation is used.
 
-## Existing figure labels
-
-- Static anatomy (manuscript 129-130): the printed 100 µm and 200 µm scale bars, 156 TuBu, 282 ring (245 analysed), 27 central-complex dopamine, 332 mushroom-body dopamine and 155 of 4,064 Kenyon cells, plus the up-to-8-per-type sample rule, are documented at `docs/3d-model.md:118-128`. Biological version and CC BY 4.0: `paper/references-verified.md:48-66`. It has no simulation-result overlay.
-- Knockout and courtship panels (manuscript 133-138): `docs/tour-figures.md:15-16,21-41`; the printed ±200 and ±10 Hz colour ticks and the 100 µm scale annotation come from the already rendered figures, with the colour cap explained at lines 29-36; scale geometry is documented in `docs/3d-model.md:106-110`. They are not numerical result tests.
-- Dose curves (manuscript 141-142): `figures/3d/gaba-dose/curves.svg` is converted without changing its geometry or values; its axes and 95% intervals correspond to `docs/gaba-dose-results.md:15,19-23`. The labelled fraction and multiplier ticks are display positions, not additional measured endpoints. The source SVG is included in the build receipt.
-
-Dose input in manuscript line 78 is dark-rest sensory background only, with no TuBu stimulus: `docs/SPEC-P2.md:1973,2093-2097` describes the design as dark rest (item 162 also contains a contradictory parenthetical about injected TuBu); `docs/gaba-dose-results.md:3` repeats the generic TuBu warning. The dose series reuses the dark-rest control, not a visual stimulation arm (`docs/gaba-dose-results.md:13-15`; `scripts/circuit_tour.py:140-172`, where dose windows have no ON stimulus and input rates remain zero).
-
-`docs/gaba-dose-body.md` was not on main at the lane start. The body paragraph uses only the available courtship playback and makes no claim about a GABA body clip.
+The dose input at manuscript:44,84 is dark-rest sensory background only, with no TuBu stimulus (`scripts/circuit_tour.py:140-172`). SPEC-P2 item 162's frozen contradictory parenthetical is corrected by the dated note at `docs/SPEC-P2.md:2095`. The body paragraph uses courtship playback only, not the separate GABA body clip.
