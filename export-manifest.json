@@ -1309,7 +1309,7 @@
     "paper/figures/design.svg": "1b693234046214d2efd0cb23f5c9f492d444399ff158c9f3e5e8e2d43e461475",
     "paper/fill_results.py": "a9b3ab5f1ef319cb7fcad424e6ce6837d06c8bd863bff77902ae771c11682fac",
     "paper/humanizer-pass.md": "f9983125d3c7b431803352974faf4194ba4510c225347275826d21437ce25d8c",
-    "paper/manuscript.tex": "10cb043363e3fe69b6e8f79897278b86cbc934c03f81a6912ae3696c0b638fe3",
+    "paper/manuscript.tex": "29e2bd9507b1c92f309ec186e7421ad622f9c932bc9df3d4579f9fc9636e3cde",
     "paper/plot_confirmation.py": "4e7e82905a54dc2e9915824e61428535c8b24d90c8c893745f1c04b20d9db4f0",
     "paper/plot_results.py": "c151a9b721c191c470286e6a498701d20594eab1401ca51181c2c931a40b091e",
     "paper/references-verified.md": "97a88818a04510a0c241d6cc7134c3fa4108c906ae87dfd19ba0a6f48a15f4e9",
@@ -1874,5 +1874,5 @@
     "validation/records/p2/wp21-neural.json": "f7dfcc6d766492f1cfaa4ef1f475817464aa419e3d5b9b45915013fbeed5a4f4",
     "validation/status.json": "7e00f01f07814dad4c6b629dfe5e148c3b8795ee38673e9c7392b0fba5d771d1"
   },
-  "source_commit": "f26425fb9e783c473d89ff0eaec153f89220216c"
+  "source_commit": "d9e34b86ba71248bcecd1e8593d349575e933c36"
 }
