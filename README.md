@@ -1,5 +1,7 @@
 # flyonenomics
 
+[Read the preprint](https://doi.org/10.5281/zenodo.23091460) · [Code archive (v1.0.0)](https://doi.org/10.5281/zenodo.23070186)
+
 This undergraduate, AI-assisted project uses a wiring map of the male fly's
 brain and nerve cord to simulate nerve-cell activity. Can this virtual nervous
 system help ask pharmacology questions without mistaking model output for a
@@ -119,7 +121,9 @@ laptop runtime promise. See [REPRODUCE.md](REPRODUCE.md) before starting a run.
 
 ## Citation, credits and licences
 
-To cite this project: **Hasan "Rolf" Yildirim**, *flyonenomics* (2026).
+Preprint: **Hasan "Rolf" Yildirim** (2026). *A whole-nervous-system model of the male fly as a pharmacology bench*. Zenodo. [doi:10.5281/zenodo.23091460](https://doi.org/10.5281/zenodo.23091460).
+
+Code: **Hasan "Rolf" Yildirim** (2026). *flyonenomics* (v1.0.0). Zenodo. [doi:10.5281/zenodo.23070186](https://doi.org/10.5281/zenodo.23070186).
 See [CITATION.cff](CITATION.cff) and the [paper folder](paper/) for citation
 details. Cite the MaleCNS paper separately for the underlying connectome.
 

@@ -49,6 +49,7 @@
     "docs/research/fly-seizure-models.md": "internal",
     "docs/research/male-female-comparison.md": "internal",
     "docs/research/preprint-availability.md": "internal",
+    "docs/research/publication-venues.md": "internal",
     "docs/research/reflex-circuits.md": "internal",
     "docs/research/software-citations.md": "internal",
     "docs/research/whole-brain-model-uses.md": "internal",
@@ -1013,10 +1014,10 @@
     "validation/records/p2/rest-tier2-stage2/s2p-20.json": "private_records"
   },
   "files_sha256": {
-    "CITATION.cff": "401bb1d730a18cbf7578cf8c403f1ac93a13a1e47ff052c26e0d5a2b7a54a818",
+    "CITATION.cff": "29111099c6425b5941a00f8f5f98851ced3d1a3267e12a785d8c44ce0b6a5e4a",
     "LICENSE": "651776109d1d215f2cd28046720fb3ba452f7fc731111f5fe2ed5ed632054c7d",
     "NOTICE": "249cd24d1ef97f6492354ae2848e507672165e8a7740011a95c012a186de6da3",
-    "README.md": "b58a9903e6433b0fbb6b24555015f557dd8db0a631a675c387d6b57614cd2f57",
+    "README.md": "3dd486a8c270af6570165db121d4413f08650d31f2539dc5d2f019730917a896",
     "REPRODUCE.md": "1d293bc6f4cc6aee38686fa75aa69506e82131c6a01569984bb17708ff07ed2c",
     "data/behaviour-base-v0.2.yaml": "a85d5b6a21bd90cd2c138ca3bc6e74297c4ccbeabcad3a29ffa5827894795d0f",
     "data/behaviour-v0.2.yaml": "604ce8c88517f95c42c21cef7d72ba2c1dca90b295c5fedb92c93f92be674cf7",
@@ -1301,7 +1302,7 @@
     "figures/tour/tipping-point/portrait-4k.mp4": "4b31a4470927d7fb0688187cd011e4cd61ed5e03d8f640c5ec87f9b202b8f5a9",
     "figures/tour/viewer.html": "67f52d7180699ff0a6c1867bbbdda9e40d3fcec300b84553642ddd67e3656a69",
     "paper/.gitignore": "0cf256cc9234b415f912f5b0e9f8c9364688466041611047cd3f599c35f4efa6",
-    "paper/README.md": "6aea11cb196e1ed58cce09cdd96d3b90762d872b144c672a7fd7dc474e783e7e",
+    "paper/README.md": "3380fa2ecea9495cd1b894d0e8b1519ba1f2678062fe43b674a72890fc3697a1",
     "paper/build.py": "72e4726c5a33f3c7a3d983298c6408528a0a00dc9aa94916df17f1b067b8046b",
     "paper/build.py.lock": "c4faa9bc7062e3b50e6355149fb0114a27cfb2d417f70f8356c4f07ec1443661",
     "paper/fact-check.md": "cb9933c832e8af7118623ba6d7fc12a49edfc007871379fca1c8e179cc762665",
@@ -1874,5 +1875,5 @@
     "validation/records/p2/wp21-neural.json": "f7dfcc6d766492f1cfaa4ef1f475817464aa419e3d5b9b45915013fbeed5a4f4",
     "validation/status.json": "7e00f01f07814dad4c6b629dfe5e148c3b8795ee38673e9c7392b0fba5d771d1"
   },
-  "source_commit": "d9e34b86ba71248bcecd1e8593d349575e933c36"
+  "source_commit": "968d63ff6d2400443e1ff35babae445edac206ec"
 }

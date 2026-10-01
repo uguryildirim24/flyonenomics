@@ -1,5 +1,7 @@
 # Male fly virtual pharmacology bench — paper
 
+[Read the preprint](https://doi.org/10.5281/zenodo.23091460).
+
 Preprint by Hasan "Rolf" Yildirim; not peer reviewed. It covers the dopamine study and follow-up, transmitter knockout tour, courtship pathway, GABA dose curve and rescue, virtual body playback and GPU engine replication. The PDF is generated, not committed. Numerical source lines are in `paper/fact-check.md`.
 
 ## One-command paper build
