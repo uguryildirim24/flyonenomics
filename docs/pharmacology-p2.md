@@ -1,5 +1,10 @@
 # Pharmacology and ADHD manipulations (WP21)
 
+This page describes historical FlyWire work, not MaleCNS results. The retained
+planner and validators still require their original inputs. Some inputs and
+raw archives are absent from the public snapshot. Plans do not establish
+completed experiments. See [REPRODUCE.md](../REPRODUCE.md).
+
 Phase 2 keeps the layer A and C equations, the drugs and the pharmacokinetics. It adds seven named genotypes and the retained neural pharmacology fixtures. This document records the files and the rules. It does not change a constant.
 
 ## Named genotypes

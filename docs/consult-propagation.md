@@ -1,5 +1,18 @@
 # Why signals stop in the declared fly brain
 
+## Historical source boundary
+
+This analysis concerns the earlier FlyWire model, not current MaleCNS evidence.
+References to `docs/research/R2-model-users.md` (R2) and
+`docs/research/R4-mn9-facts.md` (R4) identify unavailable historical research
+notes. They are not included public sources. The same applies to the private
+`validation/records/p2/rest-T3e-freeze-partial.json` receipt. Their line numbers
+refer to the original private snapshot. Historical SPEC line numbers below
+also predate public curation. The retained [Phase 2 specification](SPEC-P2.md),
+[visual-path results](visual-path-p2.md), [optic-lobe analysis](optic-lobe-silence.md)
+and [behaviour results](behaviour-p2.md) provide public context. The R2/R4
+literature summaries have not been independently reverified for this cleanup.
+
 ## Bottom line
 
 The evidence does **not** support a general engine or indexing defect, and “nothing propagates” is too broad: the sugar path still reaches MN9, photoreceptor contrast reaches lamina voltage, and direct TuBu input strongly changes TuBu itself. For the eye, conversion of lamina voltage changes into spikes fails. For TuBu, the downstream population contrasts do not establish a reproducible steering response; the first failed relay has not been localized.

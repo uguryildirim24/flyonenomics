@@ -1,4 +1,4 @@
-# Male fly virtual pharmacology bench — paper
+# Male fly virtual pharmacology bench: paper
 
 [Read the preprint](https://doi.org/10.5281/zenodo.23091460).
 
@@ -6,17 +6,34 @@ Preprint by Hasan "Rolf" Yildirim; not peer reviewed. It covers the dopamine stu
 
 ## One-command paper build
 
-From the repository root, with `uv`, Tectonic and system Cairo installed:
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/),
+[Tectonic](https://tectonic-typesetting.github.io/book/latest/installation/)
+and the system Cairo library. [CairoSVG's installation guide](https://cairosvg.org/documentation/#installation)
+lists Cairo requirements for macOS, Linux and Windows. On macOS with Homebrew:
+
+```sh
+brew install tectonic cairo libffi
+```
+
+Ensure `tectonic` is on `PATH`. The build installs the locked Python dependencies
+with `uv`; CairoSVG still needs the system Cairo library. From the repository root:
 
 ```sh
 uv run --locked --script paper/build.py
 ```
 
-The default build reads the reviewed pilot and confirmation records already on main. It does not run the simulator. A test-only synthetic confirmation option exists for the inherited paper fixtures; its visibly labelled output is not publishable.
+The default build reads the committed pilot and confirmation records. It does not run the simulator. Both pilot primaries are non-significant after correction, and the follow-up is unconfirmed. Building the PDF is not numerical replication. A test-only synthetic confirmation option exists for the inherited paper fixtures; its visibly labelled output is not publishable.
 
 Output: `paper/build/manuscript.pdf` and `paper/build/supplement.pdf`. The build fills dopamine fields from the committed records, converts the existing GABA curves to PDF, and includes the existing static anatomy, knockout and courtship panels. It emits a source-hash receipt (including the supplement source) in the ignored build folder. The pilot record is SHA-256 bound; the filler checks the frozen result shapes, but cannot certify biological validity or human review. `paper/figure-fields.md` maps current figure sources. CairoSVG is locked in `build.py.lock`; TeX bundles/fonts can change PDF bytes on different machines.
 
-## Provenance and one command per result
+## Historical analysis provenance
+
+The commands below need the absent original raw arrays and their executed
+source revisions. Those private-source revisions are not public Git commits.
+Historical substrate regeneration rejects two changed inputs, described in
+[the pin erratum](../docs/errata.md#historical-substrate-input-pins). Its frozen
+pins have not been replaced with current hashes. Public paper and descriptive
+figure builds remain data-free; full numerical replay does not.
 
 Frozen design first committed at `892cf6f`; selected pair frozen before the
 5b outcome run. Male substrate `rest:ed9b0a469d7a6b77`; master seed

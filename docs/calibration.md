@@ -2,11 +2,17 @@ Partial-delivery predicate met at 119d533; main predicate not met: closed-loop n
 
 # Calibration log K1, K2, sign check, K3 (SPEC sections 3.3, 3.4, 3.5, 7.1)
 
+This is a historical log, not a complete public run guide. The retained
+`scripts/calibrate.py` still dispatches K1, K2, sign and K3. The frozen
+`data/behaviour-v0.1.yaml` input is private and is not supplied by downloads.
+Do not run a calibration to replace missing historical evidence. See
+[the public run boundary](../REPRODUCE.md#public-snapshot-boundary).
+
 Historical absolute cache paths in this log are shown as portable examples. The 2026 runs used a shared cache, not necessarily the current checkout's `.cache`; commands below were not rerun when paths were normalized.
 
 ## WP9 final bare-substrate sign check and K3 outcome
 
-The historical `scripts/calibrate.py` run exited 0 on 2026-09-13 using a shared cache. A portable rerun command is `FLYONENOMICS_CACHE_DIR="$PWD/.cache" uv run python scripts/calibrate.py` (after provisioning the cache). K1 returned the item-47 skip; K2/Q replayed the frozen, qualified `data/dopamine-v0.1.yaml` without changing it. The sign check used `background: false`, `dopamine_A: true`, `transporter_C: true`, `dan_fast_synapses: retain`, inhibitory ratio 1, wild type, seeds 1–3, and the eleven −150° to +150° azimuths. Each azimuth had 600 recorded dwell chunks across the three seeds, excluding the one-second transition per seed. The `Params` class supplied the 300 Hz encoder cap without changing `data/params-v0.1.yaml`.
+The historical `scripts/calibrate.py` run exited 0 on 2026-09-13 using a shared cache. The recorded command was `FLYONENOMICS_CACHE_DIR="$PWD/.cache" uv run python scripts/calibrate.py` with its historical cache and private inputs. K1 returned the item-47 skip; K2/Q replayed the frozen, qualified `data/dopamine-v0.1.yaml` without changing it. The sign check used `background: false`, `dopamine_A: true`, `transporter_C: true`, `dan_fast_synapses: retain`, inhibitory ratio 1, wild type, seeds 1 to 3, and the eleven −150° to +150° azimuths. Each azimuth had 600 recorded dwell chunks across the three seeds, excluding the one-second transition per seed. The `Params` class supplied the 300 Hz encoder cap without changing `data/params-v0.1.yaml`.
 
 | `r_vis_max` (Hz) | Run ID | Mean right-minus-left steering rate at every azimuth (Hz) | Mean turn rate at every azimuth (deg/s) | Wall time (s) |
 |---:|---|---:|---:|---:|

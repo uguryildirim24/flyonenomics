@@ -1,6 +1,10 @@
 # Phase 2 steering (WP20)
 
-This document records the closed-loop steering code against SPEC-P2 sections 3.5, 3.6, 3.7 and 5.3.
+This document records the historical FlyWire steering code against SPEC-P2
+sections 3.5, 3.6, 3.7 and 5.3. It is not current MaleCNS behaviour evidence.
+The code and Camber planner remain. The private rest-freeze receipt does not.
+Their unchanged dependency checks can block a clean clone. See
+[the public run boundary](../REPRODUCE.md#public-snapshot-boundary).
 
 ## Why Phase 1 test 4.1 failed
 

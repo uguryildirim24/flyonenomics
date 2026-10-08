@@ -36,7 +36,7 @@ Line references are to `paper/manuscript.tex` in this change. Rendered dopamine 
 | 99 | NeuroMechFly v2 through FlyGym and MuJoCo | `docs/courtship-body.md:18`; citation metadata in `paper/references-verified.md` |
 | 103 | wing angles about 47°, 14°, 8° | `docs/courtship-body.md:14,20-35`; selected mapping, not real motor calibration |
 | 119 | visual-projection 0.059 Hz, optic 0.023 Hz, central 4.795 Hz | `validation/records/p2/male-cuda-dose-comparison.json` `brian.conditions`: control = `absolute_mean` − `paired_delta[0]`, consistent across all thirteen conditions; `docs/optic-lobe-silence.md:3-9`; see `docs/cuda-methods.md:33-55` for assumptions, `src/flyonenomics/substrate/transmitters.py:37-44,82-90` for transmitter signs and omitted co-transmission |
-| 122 | MaleCNS v1.0, CC BY 4.0 and portal | `docs/research/preprint-availability.md:12-28,51-61`; `paper/references-verified.md:48-66` |
+| 122 | MaleCNS v1.0, CC BY 4.0 and portal | Retained `paper/references-verified.md` and `docs/data.md`; the historical private note `docs/research/preprint-availability.md` is unavailable |
 | 122, 128, 131 | Availability, no competing interests, no external funding | `paper/README.md:70-87`; Rolf's declarations retained |
 | 125 | Approved AI-use disclosure: Hasan “Rolf” Yildirim conceived, directed and is responsible; Claude (Anthropic), OpenAI Codex and Gemini (Google) roles; tools are not authors or independent human/experimental replication | `paper/manuscript.tex:125`; Rolf's approved wording merged from review-30; draft alone retains the approval sentence |
 | 135 | Anatomy version, CC BY 4.0 | `paper/references-verified.md:48-66` |

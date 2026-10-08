@@ -6,53 +6,24 @@ The model receives injected input; the fly does not see or sing. Visual input
 elsewhere in the project is injected at TuBu; this comparison instead uses
 dark rest and injected courtship-population input.
 
-## Run
+## Public run boundary
 
-On the Mac with the existing Modal login:
+This page records the executed GPU methods and measurements. It is not a
+clean-clone GPU launch guide. Paid-cloud submission and billing tools are not
+included. No public raw GPU or saved-input archive is recorded. The public
+`scripts/cuda_*.py` files do not provide a standalone one-condition CUDA runner.
+See [REPRODUCE.md section 13](../REPRODUCE.md#13-gpu-engine-replication).
 
-```sh
-uv sync --frozen
-uv pip install --python .venv/bin/python modal==1.5.4 fast-simplification==0.1.13
-export MODAL_PROFILE=flyonenomics
-export FLYONENOMICS_CACHE_DIR=<local-project-root>/.cache
-.venv/bin/python scripts/modal/cuda_driver.py pilot --batch 1 --seconds 1
-# Item 155: seeds 1–10, clamped dopamine, 2 s settle + 10 s record
-.venv/bin/python scripts/modal/cuda_driver.py rest --batch 10
-# Items 158–159: all 140 seed/condition combinations, 12 s each
-.venv/bin/python scripts/modal/cuda_driver.py tour --batch 1 --offset 0
-for offset in 1 33 65 97; do
-  .venv/bin/python scripts/modal/cuda_driver.py tour --batch 32 --offset "$offset" || break
-done
-.venv/bin/python scripts/modal/cuda_driver.py tour --gpu A10G --batch 32 --offset 129
-.venv/bin/python scripts/modal/cuda_billing.py
-.venv/bin/python scripts/cuda_speed.py
-```
+The recorded cloud image used CUDA 12.6.3 and CuPy 13.6.0. CuPy is GPU-only
+and is not in the CPU dependency lock. Kernels compile through NVRTC on the
+GPU machine. These are historical environment pins, not hardware provisioning
+instructions.
 
-The driver prints projected cost before submitting, reserves each call's
-maximum duration, and refuses to cross this lane's $15 cap or the later $8
-remaining allowance. Whole in-flight calls count against that later allowance.
-Full calls have a four-hour timeout; pilots have 15 minutes. Billing reconciliation records
-Modal's per-app metered charges separately from duration-based estimates.
-Do not change Modal's active profile. The existing `flyo-malecns-circuit`
-volume supplies the same cached MaleCNS tables as the Brian2 runs.
-
-The Modal image pins CUDA 12.6.3 and CuPy 13.6.0. CuPy is GPU-only and is not
-added to the Mac/CPU dependency lock. Kernels compile through NVRTC on the GPU
-machine. `--gpu A100-40GB` or `--gpu A10G` selects another priced GPU.
-
-The comparison command reads reference files in place:
-
-```sh
-.venv/bin/python scripts/cuda_compare.py \
-  --reference-tour <local-project-root>/.worktrees/t-0114/camber-runs/circuit-tour/outcomes \
-  --reference-rest <local-project-root>/.worktrees/t-0069/camber-runs/malecns-rest/run-20260922T125727Z
-```
-
-Raw GPU files remain under `camber-runs/cuda-circuit/` and on the Modal volume.
-The comparison links complete outcomes into one analysis directory and invokes
-the unchanged `scripts/circuit_tour_analysis.py` for both engines. It verifies
-count hashes and the historical rest-file hashes. The committed comparison
-record contains all group rates, paired effects, seed distributions and hashes.
+The comparison used the original CPU tour and rest files in place. It verified
+count hashes and historical rest-file hashes, then invoked
+`scripts/circuit_tour_analysis.py` for both engines. The committed comparison
+record retains group rates, paired effects, seed distributions and hashes.
+The raw files are not included, so the comparison cannot be rerun from Git alone.
 
 ## Implementation
 
@@ -126,28 +97,16 @@ After the packed-output change, L4 stepping took **1.268480 s per brain-second
 at 1 ms** and **0.637029 at 10 ms**, in one-second pilots. The 1 ms interface
 remains slower than real time. Follow-up Modal spend was **$0.40490238**.
 
-From a fresh worktree/raw-output folder, after the dependency setup above:
+The recorded replay generated saved input events, ran the Brian2 reference,
+ran CUDA on cloud hardware and compared the outputs. The public
+`scripts/cuda_identical.py` and `scripts/cuda_identical_report.py` retain the
+CPU/comparison logic; the cloud driver is not shipped. Reanalysis of the
+reported result requires the missing raw inputs and output archives.
 
-```sh
-.venv/bin/python scripts/cuda_identical.py generate
-for seed in 501 502; do
-  for condition in control off-gaba; do
-    .venv/bin/python scripts/cuda_identical.py brian --seed "$seed" --condition "$condition"
-  done
-done
-MODAL_PROFILE=flyonenomics .venv/bin/python scripts/modal/cuda_identical_driver.py submit
-.venv/bin/python scripts/cuda_identical.py compare
-.venv/bin/python scripts/cuda_identical_report.py
-MODAL_PROFILE=flyonenomics .venv/bin/python scripts/modal/cuda_identical_driver.py billing
-```
-
-The separate follow-up driver prints its projection, checks Modal workspace
-billing against $30 and reserves six bounded L4 calls against its own $5 cap.
-It also measures one-second ordinary-input pilots with 1 ms and 10 ms chunks.
-Counts, histograms and first ticks now transfer together, reducing three
-synchronous host transfers to one without dropping returned data. Existing
-Modal inputs are reused only when the saved manifest matches; every replay
-also verifies each event file hash.
+The follow-up also measured one-second ordinary-input pilots with 1 ms and
+10 ms chunks. Counts, histograms and first ticks transfer together. This
+reduces three synchronous host transfers to one without dropping returned
+data. Each recorded replay verified its input event file hashes.
 
 Each input file covers one second. Its sparse `flat` array encodes
 `relative_tick = flat // len(targets)` and `neuron = targets[flat % len(targets)]`;

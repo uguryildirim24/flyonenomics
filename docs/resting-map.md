@@ -1,5 +1,10 @@
 # Resting-state map (Camber stage 1)
 
+This page records historical female FlyWire evidence, not a MaleCNS result.
+The Camber driver remains, but its source cache and account setup are not
+included. Commands and planning notes below describe past work, not a verified
+clean-clone replay. See [REPRODUCE.md](../REPRODUCE.md).
+
 This is development evidence (SPEC item 69 (e)). It does not freeze a
 drive table and does not enter `validation/status.json`. Stage 2 did
 not run: Rolf skipped it, and WP17 confirms. WP17 still has to

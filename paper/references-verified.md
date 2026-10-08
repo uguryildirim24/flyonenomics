@@ -9,12 +9,12 @@ reanalysis or human literature review.
 The inherited source document was read at repository revision
 `287ffa4275e22a07fb59d150024b941c150d47ac`. Its FT/A labels mean relevant full
 text / abstract, respectively. No abstract-only source is used for an
-unreported numerical result. The present lane also checked every DOI's
+unreported numerical result. The recorded audit also checked every DOI's
 resolution; publisher access blocks are distinguished from an unresolved DOI.
 
 ## Reused verified literature
 
-| Paper / research-doc source | Claim used, and checked scope | DOI check in this lane |
+| Paper / research-doc source | Claim used, and checked scope | Recorded DOI check |
 |---|---|---|
 | Van der Voet et al. 2016 [2], FT, PMC4804182 | ADHD-associated gene manipulations and activity/sleep assays; not visual attention or impulsivity assays. | `10.1038/mp.2015.55` → Nature, HTTP 200. Crossref confirms title, 21:565–573. |
 | Kume et al. 2005 [1], FT, PMC6725300 | Fumin's daily activity/sleep phenotype; activity during active periods similar, not faster movement whenever awake. | `10.1523/JNEUROSCI.2048-05.2005` → J. Neurosci. DOI lookup, HTTP 302; publisher subsequently blocks automated access (403). Crossref confirms title and author. |
@@ -71,7 +71,7 @@ the already reviewed access record, not on DOI metadata alone.
   *Scandinavian Journal of Statistics* **6**, 65–70. The original journal pp.65–70
   were read in the University of São Paulo scan
   <https://www.ime.usp.br/~abe/lista/pdf4R8xPVzCnX.pdf> during the 25 September
-  second publication audit (`docs/audit/slop-audit.md`; PDF SHA-256
+  second publication audit (PDF SHA-256
   `4317a0d1555dad949dc1760605d925ba20037402827741fdf99cd8ea37e80c46`).
   Section 2, pp.66–67, orders observed levels, compares them in succession
   with α/n, α/(n−1), etc., and stops at the first nonrejection; Theorem 1
@@ -135,8 +135,10 @@ from agent source checking and agent computational review in the manuscript.
 
 ## GPU software and agreement sources cited in the manuscript
 
-These verification notes are drawn from `docs/research/software-citations.md`, which
-checks publisher/Crossref metadata or the primary documentation. The agreement
+These verification notes retain the recorded software-source checks.
+The earlier private research draft is not part of the public snapshot.
+The checks used publisher/Crossref metadata or primary documentation; no new
+external verification is claimed by this public cleanup. The agreement
 wording separates the project's identical-event replay from independent-stream
 experiment effects; interval overlap is descriptive, **not** a statistical
 equivalence test. The two comparison-simulator papers are cited for cross-engine

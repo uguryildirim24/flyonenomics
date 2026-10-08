@@ -1,21 +1,63 @@
 # Chemical knockout tour and courtship circuit
 
-The model is the complete male brain and nerve cord, not a fly with eyes, wings or a microphone. It does not see or sing. Background activity and courtship input are injected Poisson events; the song-neuron recordings measure electrical spikes, not sound or movement.
+This model represents retained cells from the male brain and nerve cord. It
+receives injected Poisson input. It does not see or sing. Song-neuron
+recordings measure model spikes, not sound or movement.
 
-The designs and their expectations are frozen in SPEC-P2 §10 items 158–159. Ten fresh paired seeds, 501–510, begin at the reviewed male rest substrate. A shared healthy control is compared with eight chemical blocks (all outgoing synapses for each consensus chemical label, plus the slow dopamine layer for dopamine), then five injected-circuit conditions (P1 at 10, 30, 60 Hz, pIP10 at 30 Hz, fixed random central-brain control at 30 Hz). Each seed and condition runs independently. Settle lasts 2 seconds; recording lasts 10 seconds. For circuit conditions the drive is on for the first five recorded seconds and off for the last five; control uses those same windows.
+The designs and expectations were frozen before outcomes in SPEC-P2 section 10
+items 158 and 159. Ten fresh paired seeds, 501 to 510, use the declared male
+starting configuration. A shared control is compared with eight transmitter
+blocks and five injected-circuit conditions. Each seed and condition runs
+independently. Settle lasts 2 seconds; recording lasts 10 seconds. Courtship
+drive is on for the first five recorded seconds and off for the last five.
+Control uses those same windows.
 
-The histamine block includes T1 cells. The rest input reaches R1–R8 photoreceptors; this is still injected background noise, not vision. The random control is selected before results are read, from 18,093 eligible cholinergic central-brain cells without a direct link to pIP10. Only the 148 selected roots are used.
+The blocks remove outgoing synapses for each consensus transmitter label.
+The dopamine block also disables the slow dopamine layer. The histamine block
+includes T1 cells. Rest drive reaches R1 to R8 photoreceptors, but this is
+injected background noise, not vision.
 
-## Run
+Courtship conditions inject P1 at 10, 30 and 60 Hz, pIP10 at 30 Hz, or a fixed
+random central-brain control at 30 Hz. The random control was chosen before
+outcomes from 18,093 eligible cholinergic cells without a direct link to pIP10.
+Only its 148 selected roots are used.
 
-After checking the frozen commit and the Modal workspace, from a clean checkout containing the unchanged frozen design and simulation runner:
+## Public CPU command
+
+First install the environment, required Shiu code and MaleCNS cache using
+[REPRODUCE.md](../REPRODUCE.md). Choose a new output path:
 
 ```sh
-MODAL_PROFILE=flyonenomics MODAL_MAX_DOLLARS=30 .venv/bin/python scripts/modal/circuit.py run --freeze <freeze-commit-sha>
+uv run --frozen python scripts/circuit_tour.py worker \
+  --condition off-gaba --seed 501 \
+  --dest camber-runs/circuit-tour/reproduction/seed-501-off-gaba.npz
 ```
 
-Never change the active Modal profile; the command rejects any profile except `flyonenomics`. It prints the projection before the submit, including the full timeout-bound cost plus previous recorded spending; if the ceiling would be crossed, it stops. It uploads the five source tables, their derived graph and the engine's `model.py` to the project volume, launches one container per seed and condition in a single fan-out, pulls the records into `camber-runs/circuit-tour/outcomes/`, and creates the paired summary. `camber-runs/circuit-tour/modal-cost.json` logs projected and estimated actual billed worker time. Check Modal's invoice for final billed charges. The 0.2-second control-only container path check uses `scripts/modal/circuit.py check`; it is not a chemical or courtship outcome.
+`camber-runs/` is ignored. This runs one current-source condition and seed,
+not an exact historical replay. The public runner also accepts `control`,
+`P1-high` and the other conditions listed in REPRODUCE.md sections 9 to 11.
+No cloud account is needed. The historical paid-cloud launcher is not shipped.
 
-Each complete condition has a JSON record and checksum-bound NPZ with one spike count per neuron per window. `scripts/circuit_tour_analysis.py` computes group and whole-brain rate differences, distributions, synchrony, first-spike order and whole-seed bootstrap intervals; it never runs the model. A bracket containing zero is called **no detected difference**, not proof of no effect. The summary says matching, opposite or unclear relative to the written predictions; small/local predictions have no fabricated numeric pass line. The full-neuron Δ-rate array stays alongside the records. `paint-values.json` supplies the existing 3D MaleCNS renderer with those paired seed-mean changes; the skeleton view shows anatomical representatives, not every neuron. Images omit seed and build identifiers.
+Each complete condition produces a JSON record and checksum-bound NPZ with
+one spike count per neuron per window. `scripts/circuit_tour_analysis.py`
+analyses those files. It does not run a model. Its whole-seed bootstrap
+intervals describe repeated random inputs to one model. An interval containing
+zero is called no detected difference, not proof of no effect.
 
-After the outcome summary, four visualisation-only replays (seeds 501 and 502; healthy control and P1 high) save exact spike ticks for P1, pIP10, dPR1, vPR6, TN1a, TN1c and wing motor neurons. They reuse the frozen runner and rest state. Each replay refuses to write unless **every simulated neuron's** ON and OFF totals equal its original complete outcome record. The spike NPZ and verification JSON are stored beside their original outcome files. Run them with `MODAL_PROFILE=flyonenomics MODAL_MAX_DOLLARS=30 .venv/bin/python scripts/modal/circuit.py replay --freeze <freeze-commit-sha>`; their cost is added to the same ledger. These are animation aids, not extra outcomes.
+The full-neuron rate-change array is stored beside the run records.
+`paint-values.json` supplies paired seed-mean changes to the 3D renderer.
+Displayed skeletons are anatomical representatives, not every model neuron.
+
+## Evidence and replay limits
+
+[Tour and courtship results](circuit-tour-results.md) report the measurements.
+The original per-condition arrays have no public archive recorded here.
+Reanalysis of those numbers requires the original raw files, not just the
+committed compute-cost record.
+
+Four visualisation-only replays used seeds 501 and 502, with control and P1
+high, to save spike ticks for the circuit and wing motor populations. Every
+simulated neuron's ON/OFF totals had to equal the corresponding outcome record
+before a replay was written. Those replays support animations, not extra
+statistical outcomes. Exact animation regeneration needs the absent raw replay
+and pose arrays. The virtual body sends no feedback to the brain.

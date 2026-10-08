@@ -14,13 +14,47 @@ Neural responses and playback are not behaviour or ADHD.
 [Provenance erratum for frozen parameters and engine notes →](docs/errata.md)
 
 The snapshot pin below describes the earlier substrate/rest/atlas audit;
-§7 instead identifies each experiment's actual executed revision. No numerical
-or rendering jobs were rerun for this documentation update. Historical FlyWire
+§7 instead identifies each experiment's actual executed revision. Data-free plot and paper builds do not rerun those numerical jobs. Historical FlyWire
 work is indexed in [docs/index.md](docs/index.md), not relabelled as male evidence.
 
 Project code is [MIT licensed](LICENSE); third-party code and data licences
 remain separate. The original raw archives are not included in this source
 snapshot. See the committed result records for their file hashes.
+
+## Public snapshot boundary
+
+The supported data-free path plots the committed follow-up result and builds
+the paper. Neither command recomputes inference or neural activity:
+
+```sh
+uv sync --frozen
+uv run --frozen python scripts/adhd_confirm_describe.py \
+  --result validation/records/p2/adhd-confirm-results.json \
+  --out .cache/confirmation-figures
+# Requires Tectonic and Cairo, see paper/README.md.
+uv run --locked --script paper/build.py
+```
+
+Current CPU workers can use the committed runtime configurations after the
+source cache and Shiu code are provisioned below. Historical numerical replay
+is a separate task. The original raw archives and executed private-source
+revisions are not retrievable from this public Git history. No reviewed public
+raw archive URL is recorded. Historical `malecns_substrate.py --regenerate`
+and `--probe` are blocked by the changed population selector and scale source.
+Their frozen pins remain enforced. See the [pin erratum](docs/errata.md#historical-substrate-input-pins).
+A new current-source run is not a certified replay of the old experiment.
+
+Modal launchers are not shipped. Historical Camber scripts and FlyWire
+ring-stage runners remain, along with Phase 1 calibration, behaviour and dose
+validators, and the invariance runner. Their presence does not make historical
+replay complete. `data/behaviour-v0.1.yaml` and the rest-freeze receipt remain
+private. Dataset downloads do not supply them. Phase 2 declared-substrate code
+still requires the original rest records. It does not infer measurements from
+the drive configuration. Missing inputs can block these older commands and
+tests. No replacement evidence or changed validation rules are supplied.
+See the README for the existing Camber account configuration variables.
+Large media and dense records stay pending reviewed archives. Their absence
+from a future export must not be mistaken for missing scientific results.
 
 ## 1. Pin the checkout and environment
 
@@ -140,11 +174,19 @@ hashes. Conversion-only elapsed time and peak RAM were not separately recorded.
 | postsynaptic indices, little-endian int32 | `ca8c7cafe58328f1bc9e73e756babce1244c0111a3415b01f80b062728f22737` |
 | signed weights, little-endian float64 | `3a7b3dfb054a8ec8be611b243b1755454cc2d5177a1703c0e1a1cc1b348d7868` |
 
-### Starting configuration (no new rest measurement)
+### Historical starting-configuration regeneration (blocked)
 
-```sh
-uv run --frozen python scripts/malecns_substrate.py --regenerate
-```
+The recorded command was `uv run --frozen python scripts/malecns_substrate.py
+--regenerate`. It is not a working clean-clone instruction in this snapshot.
+It checks its frozen inputs before loading the datasets and rejects the
+changed population selector. The scale implementation also differs from its
+pin. `--probe` enforces the same input pins. Do not bypass them or relabel
+current files as the original input revisions.
+
+For current CPU work, keep the committed `data/drive-male-cns-v1.0.yaml` and
+`data/dopamine-male-cns-v1.0.yaml`. After the data setup, use the worker commands
+in sections 9 to 11. Archive the original source/input revisions before
+attempting historical regeneration.
 
 Inputs: the male graph/cache, committed male anatomy tables, both parameter
 versions, source code and the **already committed** K2r measurement (the
@@ -160,9 +202,10 @@ brain-seconds again. Output identity: **`rest:ed9b0a469d7a6b77`**.
 | scale array, little-endian float32 | `fb6270f518f06cd0adb42748ae10baa360dec752edd237ce7ecdefa70450a84c` |
 | committed K2r input JSON | `db6a7188d908eb4681a360d1170c516fd8d1a4dbede925cbb72e3c4ef171a77e` |
 
-Regeneration was exercised on ARM Linux/macOS, but its standalone elapsed time
-and peak RAM were not recorded. It builds/loads large arrays, not an engine.
-A pin mismatch is a changed-input result; do not bypass it to obtain the old ID.
+Historical regeneration was exercised on ARM Linux/macOS. Its standalone
+elapsed time and peak RAM were not recorded. The expected hashes above
+identify that historical output, not a successful regeneration of the current
+tree. A pin mismatch is a changed-input result, not a reason to update an old pin.
 
 ### Reported execution and seed checks (optional numerical runs)
 
@@ -173,7 +216,10 @@ A pin mismatch is a changed-input result; do not bypass it to obtain the old ID.
 | One-second free-pool execution check, `malecns-substrate-probe.json` | `uv run --frozen python scripts/malecns_substrate.py --probe` | Adopted tables and pins above; master seed 20260912, index 1. ARM macOS 27, Python 3.12.14: 60.54 s total, 28.56 s engine run, 7.17 GB peak RSS. |
 | Distinct seed streams and exact seed-1 replay, `malecns-seed-check.json` | `uv run --frozen python scripts/malecns_substrate.py --seed-check` | Male anatomy and fixed clamped rest setup; indices 1, 5, 1, 100 ms each. 16-core ARM Linux: 91.35 s total, 7.15 GB peak RSS. |
 
-The last two commands write under `validation/records/p2/`. The free-pool
+These are historical commands, not a current replay claim. In particular,
+`--probe` is blocked by the frozen inputs. The last two commands write under
+`validation/records/p2/`, so do not run them in a reviewed evidence checkout.
+The free-pool
 probe's expected count-array
 SHA-256 is `d2027b484f67ee7da33155444fe74e3e711d0195915ae0804d97dc2ad68d039a`.
 Per-seed spike-index/time hashes are in
@@ -250,12 +296,13 @@ One command verifies which text is being read, with no data/model dependency:
 shasum -a 256 docs/adhd-model-research.md
 ```
 
-Expected SHA-256 for the **current file** after its dated provenance banner and
-erratum link: `5b3f8e99ba01b23460c1b2fa9344ed54ddd14caa7e313ef269f8ae614d252687`.
+Expected SHA-256 for the **current file**, including its provenance banner
+and erratum link:
+`5b3f8e99ba01b23460c1b2fa9344ed54ddd14caa7e313ef269f8ae614d252687`.
 The 22 September reviewed text, before that banner, hashed to
 `2d90766ca6d427b983c33712b7a91f6b7b2e91b88d195a2fff040ff7d0a47327`.
-The current file comes from the integration with the dated banner; recheck its
-hash if further edits are merged. Inputs are its 21 linked papers/access records and code-inspection snapshot
+The historical stage-4 runner remains. Its source and literature findings
+are unchanged. Recheck this document hash after further edits. Inputs are its 21 linked papers/access records and code-inspection snapshot
 `18072403d27c4951f1444d62a4792fe549eaf2f3`. This is an **AI-assisted,
 source-checked research document**, not an algorithm with a regeneration
 command; it is not represented as an independent human literature review.
@@ -269,13 +316,14 @@ compute was used. A checksum verifies the document, not its scientific truth.
 Skip all numerical-data setup. From the checkout, with Chrome installed:
 
 ```sh
-uv run --locked scripts/render_malecns_3d.py
+uv run --locked scripts/render_malecns_3d.py --out .cache/atlas-rebuild
 ```
 
 Inputs: the released annotation table, 1,006 selected geometry/vendor assets
 in the male manifest's `visual_files`, committed population selectors,
 viewer and paper-figure templates and the script's own lockfile. Total sources: **164,622,937 bytes**;
-no connectivity or simulation is used. Default output: `figures/3d/`.
+no connectivity or simulation is used. The command above writes ignored
+`.cache/atlas-rebuild/`; the script default is the tracked `figures/3d/`.
 [`build.json`](figures/3d/build.json) pins source/code hashes, displayed IDs,
 reductions and browser version; [methods](docs/3d-model.md) explain the selection.
 
@@ -327,7 +375,8 @@ in one fixed model, not ADHD, attention or behaviour. These are the **recorded
 commands**, not an instruction to run heavy jobs on the shared box now. For
 an exact historical replay use the stated executed revision and frozen inputs;
 §1's older snapshot does not contain the eventual experiment runner and records.
-Do not replace these commands with historical FlyWire `ring_dopamine_stage*.py` runs.
+Historical FlyWire ring-stage runners remain in the public tree.
+Their committed records are not substitutes for these male experiments.
 
 All neural runs and numerical analysis were on the ARM64 Linux box
 `compute host:<compute-run-root>` with the MaleCNS cache at
@@ -416,7 +465,7 @@ the retained `5b-02` raw files, the [figure recipe and selection rule](docs/3d-m
 records these commands (the renderer runs no neural simulation):
 
 ```sh
-RAW=<local-project-root>/.worktrees/t-0077/camber-runs/adhd-study/5b-02
+RAW=<local-project-root>/<reference-checkout>/camber-runs/adhd-study/5b-02
 uv run --locked scripts/render_malecns_3d.py \
   --primary-5b --study "$RAW" \
   --plan validation/records/p2/adhd-study-plan.json \
@@ -455,7 +504,7 @@ raw runs and the unchanged `scripts/adhd_study.py` analysis. Its figure script
 can regenerate the descriptive plots entirely from the committed result:
 
 ```sh
-python3 scripts/adhd_confirm_describe.py --result validation/records/p2/adhd-confirm-results.json --out docs/figures/adhd-confirm
+uv run --frozen python scripts/adhd_confirm_describe.py --result validation/records/p2/adhd-confirm-results.json --out .cache/confirmation-figures
 ```
 
 Recomputing the primary analysis needs the original raw follow-up and pilot
@@ -531,6 +580,9 @@ that only fans out the same `worker` command; reanalysis of the reported
 numbers needs the raw count arrays, which are not in the repository and are
 available from the author on request. These are dark-rest sensory-background
 injections, not TuBu stimulation or drug exposure in a fly; the fly does not see.
+For original dose reanalysis, set the existing `reference` argument of
+`scripts.circuit_tour_dose.analyse` to the local tour archive path. Its exported
+default is a placeholder, not a supplied raw input.
 
 ## 12. Virtual body playback
 
@@ -556,16 +608,34 @@ full workflow. Identical-input comparison and GPU dose analysis cannot be
 rerun from this repository because saved input events and raw count/spike
 archives are absent; GPU neural runs require an NVIDIA GPU and the public
 `scripts/cuda_*.py` files have no standalone one-condition CUDA command-line
-runner. Computational agreement is not biological validation.
+runner. `scripts/cuda_dose.py` accepts the existing `--reference` argument
+for a local original GPU tour archive. Its exported default is a placeholder.
+Computational agreement is not biological validation.
 
-The project's full numerical gate is `uv run --frozen pytest` after provisioning
-both datasets; it is **not a quick installation check**. The recorded male
-substrate gate took 4,663.36 s on ARM Linux (927 passed, 30 skipped), with a
-5,400 s timeout and one process. See
-[`malecns-substrate-gate.json`](validation/records/p2/malecns-substrate-gate.json).
-Documentation and figure edits should be checked by inspection or a relevant build, not by running a test suite.
+## Public checks and historical gates
 
-Historical FlyWire result recipes, missing ignored evidence and older compute
-runbooks remain linked in [the documentation map](docs/index.md). This guide
-does not claim that every historical/development receipt has a public raw
-archive or a one-command report generator.
+`uv run --frozen pytest` runs the retained public tests. Dataset-dependent tests
+require the MaleCNS and FlyWire source caches, the Shiu checkout and the pinned
+Brembs/CeTrAn reference inputs described in [docs/data.md](docs/data.md).
+It is not an installation check or a promised replay of a private validation
+suite. Existing tests and frozen-file checks still reference private receipts
+and the excluded behaviour file. Some tests write experiment configurations
+during collection. Run them only in a separate reviewed checkout, not beside
+an active experiment. Dataset downloads supply no private receipts or
+replacement evidence. The targeted calibration and paper fixture check returned
+5 passed and 2 failed. Both failures are paper wording assertions. The default
+paper build succeeded, but that does not mean these fixture tests pass.
+
+The measured gate in
+[`malecns-substrate-gate.json`](validation/records/p2/malecns-substrate-gate.json)
+ran the historical private suite on ARM Linux: 4,663.36 s, 927 passed and 30
+skipped, a 5,400 s timeout and one process. Those counts do not describe this
+public tree, and that receipt has not been rewritten. The data-free plot and
+paper commands at the start of this guide are the clean-clone checks. Relevant
+existing component tests can be run separately; they are not biological
+validation or historical numerical reproduction.
+
+Historical FlyWire results and missing evidence are identified in
+[the documentation map](docs/index.md). Historical account-specific runbooks
+are not complete public run instructions. This guide does not claim that every historical receipt
+has a public raw archive or a one-command report generator.

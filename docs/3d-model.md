@@ -385,7 +385,7 @@ existing MaleCNS visual cache), then the film, poster, teaser and paper figure
 (Pillow and Playwright are pinned in the second script's lock):
 
 ```sh
-RAW=<local-project-root>/.worktrees/t-0077/camber-runs/adhd-study/5b-02
+RAW=<local-project-root>/<reference-checkout>/camber-runs/adhd-study/5b-02
 CACHE=/path/to/main-checkout/.cache/malecns-v1.0/activity/5b-02/primary-seed-210
 uv run --locked scripts/render_malecns_3d.py \
   --primary-5b --study "$RAW" \
@@ -412,13 +412,19 @@ Input SHA-256 (plan and pair are distinct frozen records):
 | `adhd-study-5b-audit.json` | `4af5fbf07ce096fcd0a31ba0f940c2086dfd81c90c86f7e664b19ff3311f2ab5` |
 | `adhd-study-results.json` | `47c6fc6e9ef83b13bdacc3af1b89b96f6b3b8d6f25c0bd1dd577d42326c0657e` |
 
-Output SHA-256 (`figures/3d/experiment-5b/`; full code/asset hashes and
-Chrome version in [build.json](../figures/3d/experiment-5b/build.json)):
+Historical output SHA-256 (`figures/3d/experiment-5b/`; full code/asset hashes
+and Chrome version in [build.json](../figures/3d/experiment-5b/build.json)):
+
+The public snapshot removes the duplicate atlas PNG in this folder and in
+`calibration-5a/`. It retains the named first-arm stills, `male-cns-wt-a.png`
+and `male-cns-arm-00.png`. The unchanged renderer still generates both names
+for activity input. Historical receipts below retain their original hashes.
+See [the asset erratum](errata.md#removed-duplicate-assets).
 
 | Output | Bytes | SHA-256 |
 |---|---:|---|
 | `male-cns-atlas.html` | 6,830,289 | `71afb3afcc2a8a10e1dbc08af99a34e27640eb9fe2cf6d28299304a1fb095ecb` |
-| `male-cns-atlas.png` (same bytes as `male-cns-wt-a.png`) | 2,219,621 | `28446cd46fd3b84dd7c0a4e0aa48df51b8155ad6f7c9905a789724da161e4e9d` |
+| Removed duplicate `male-cns-atlas.png` (same bytes as `male-cns-wt-a.png`) | 2,219,621 | `28446cd46fd3b84dd7c0a4e0aa48df51b8155ad6f7c9905a789724da161e4e9d` |
 | `male-cns-wt-a.png` | 2,219,621 | `28446cd46fd3b84dd7c0a4e0aa48df51b8155ad6f7c9905a789724da161e4e9d` |
 | `male-cns-fumin-a.png` | 2,223,881 | `9f8cae0553802649ebefbd1ec241f8be5db5c7eb92d2d0a925f4622e352e6052` |
 | `male-cns-wt-b.png` | 2,227,824 | `bd071decc6082f41416864a3ced005bc1a870c11624fd06ee926178b65017498` |

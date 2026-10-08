@@ -1,139 +1,166 @@
 # flyonenomics
 
-[Read the preprint](https://doi.org/10.5281/zenodo.23091460) · [Code archive (v1.0.0)](https://doi.org/10.5281/zenodo.23070186)
+A connectome-based spiking model of the male fly nervous system for studying simulated dopamine and transmitter perturbations.
 
-This undergraduate, AI-assisted project uses a wiring map of the male fly's
-brain and nerve cord to simulate nerve-cell activity. Can this virtual nervous
-system help ask pharmacology questions without mistaking model output for a
-living fly's behaviour? We change dopamine cleanup and the strength of chemical
-connections, then look at activity across the network. Input is injected into
-the model, not seen by the fly. In the dopamine study, patterned input is injected
-at TuBu (tubercle-to-bulb) neurons; **the fly does not see**. The *fumin*
-fly mutant is hyperactive; here we model transporter loss, not behaviour or ADHD.
+Rolf built this project to ask what a wiring-constrained model can show about
+pharmacology, without treating simulated activity as animal behaviour. It uses
+MaleCNS v1.0 anatomy and simplified leaky integrate-and-fire neurons. Input is
+injected into the model. In the dopamine experiments it enters at TuBu neurons,
+downstream of the eye. The fly does not see. Transporter loss is a model
+manipulation, not a model of ADHD or a treatment recommendation.
 
-[![Recorded model spiking in one simulated fly](figures/3d/experiment-5b/cinematic/primary-teaser.webp)](figures/3d/experiment-5b/cinematic/primary-demo.mp4)
+[Preprint](https://doi.org/10.5281/zenodo.23091460) ·
+[Code archive v1.0.0](https://doi.org/10.5281/zenodo.23070186) ·
+[Reproduction guide](REPRODUCE.md) · [Documentation map](docs/index.md)
 
-*Short loop from an illustrative simulation, not the statistical test. Glow tracks
-recorded model spiking; flash timing within each bin is illustrative. Input is
-injected at TuBu; the fly does not see. [Film (83 s)](figures/3d/experiment-5b/cinematic/primary-demo.mp4)
-· [poster](figures/3d/experiment-5b/cinematic/primary-poster.png)
-· [figure methods](docs/3d-model.md).*
+## What it shows
 
-[MaleCNS anatomy atlas](figures/3d/male-cns-atlas.png):
+The retained graph contains **162,517 neurons and 25,120,209 directed connections**.
+[Graph rules and limits](docs/malecns-port.md) describe which cells it excludes.
 
-*Real MaleCNS anatomy, simplified and recoloured—not simulated activity.*
-Open [`figures/3d/male-cns-atlas.html`](figures/3d/male-cns-atlas.html) locally
-in a browser to rotate it. Its default playback is explicitly **synthetic dummy
-data**. [Figure methods and attribution →](docs/3d-model.md)
+- **Dopamine: no significant primary result after correction.** The pilot
+  genotype comparison had Holm-adjusted p = 0.0703125. Its release comparison
+  had no detected difference or established rescue. The separately planned
+  40-seed follow-up was unconfirmed (p about 0.9454). Intervals containing zero
+  do not establish equality. These are random repeats of one model, not flies.
+  [Pilot](docs/adhd-study-results.md), [follow-up](docs/adhd-confirm-results.md).
+- **Transmitter switches and courtship input.** Acetylcholine disconnection
+  suppressed activity; GABA and glutamate disconnection increased it. Direct
+  P1 input reached some song-related and wing motor neurons. Spikes do not
+  establish song, courtship or aggression. [Results](docs/circuit-tour-results.md).
+- **GABA block and rescue.** Near-total GABA block sharply raised firing.
+  Strengthening GluCl partly offset activity under partial block. The axis is
+  a fraction of model connection strength, not a measured drug dose.
+  [Results](docs/gaba-dose-results.md).
+- **GPU comparison.** Identical saved inputs with clamped dopamine produced
+  matching tested spike outputs in Brian2 and CUDA. Stochastic dose estimates
+  differed in some details. This checks computation, not biology.
+  [Methods](docs/cuda-methods.md), [dose comparison](docs/gaba-dose-gpu.md).
 
-[Reproduce the results](REPRODUCE.md) · [Read the paper](paper/) ·
-[Citation details](CITATION.cff) · [MIT code licence](LICENSE)
-(source data: CC BY 4.0) ·
-[Feedback via issues](https://github.com/uguryildirim24/flyonenomics/issues).
+![Four panels of activity in one illustrative seed](figures/3d/experiment-5b/primary-four-panel.png)
 
-## The model and the evidence
+One illustrative seed, not the statistical test.
+[Recorded film](figures/3d/experiment-5b/cinematic/primary-demo.mp4) and
+[figure methods](docs/3d-model.md).
 
-The current dataset is **MaleCNS v1.0**, from **Janelia Research Campus, Google
-Research and the University of Cambridge**, released under
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-The model retains **162,517 typed, traced neurons and 25,120,209 directed
-connections** from the male central nervous system, including the nerve cord;
-it is not every cell in the release. Neurons are simplified leaky
-integrate-and-fire units, with declared dopamine/receptor assumptions.
-[Build rules and limitations →](docs/malecns-port.md)
-[Provenance erratum for frozen parameters and engine notes →](docs/errata.md)
+## Run from a clean clone
 
-The project began with [Shiu et al.'s 2024 model](https://github.com/philshiu/Drosophila_brain_model)
-of the **female FlyWire connectome** (v630/v783). Those experiments remain as
-history, not evidence about the male model.
-
-Available now:
-- [Male resting-state measurements](docs/malecns-rest.md): ten seeds, a fixed
-  configuration, and per-seed results—not biological pass/fail thresholds.
-- [Literature and implementation audit](docs/adhd-model-research.md): what
-  dopamine-transporter loss (*fumin*) and reduced release can honestly test.
-- [Reproduction commands, hashes and costs](REPRODUCE.md).
-
-## Results
-
-- **Dopamine cleanup.** We tested whether disabling the dopamine transporter
-  changes a nerve-cell response depending on earlier input. The first study's
-  hint did not survive its correction for two planned comparisons; reducing
-  dopamine release gave **no detected difference** in the gap between conditions
-  and no established rescue. A separately planned follow-up found **no detected
-  difference** in the cleanup comparison. An interval spanning zero leaves both
-  directions possible; it does not show equality. These are repeated random runs
-  of one model, not different animals. [First study](docs/adhd-study-results.md) ·
-  [follow-up](docs/adhd-confirm-results.md).
-- **Chemical knockout tour.** Disconnecting the model's acetylcholine outputs
-  reduced firing outside sensory cells. Disconnecting GABA or glutamate outputs
-  raised it. Histamine and dopamine readouts had no detected difference in the
-  measured averages. These broad switches test the model's wiring, not drug
-  effects in live flies. [Tour results](docs/circuit-tour-results.md).
-- **Courtship pathway.** Directly injected input into P1 courtship neurons
-  reached some song-related and wing motor neurons. The proposed split between
-  fighting and song routes was not demonstrated; spikes are not courtship or
-  sound. [Pathway results](docs/circuit-tour-results.md).
-- **GABA dose and rescue.** GABA is an inhibitory connection class: weakening
-  it lets more activity through. Firing rose slowly at low block and sharply
-  near full block. Strengthening a separate inhibitory channel, GluCl, partly
-  offset the excess under partial GABA block. The block levels are fractions
-  of the model's GABA connection strength switched off, not drug doses given
-  to a fly. [Dose results](docs/gaba-dose-results.md).
-- **Virtual body.** Recorded spikes drive chosen wing and leg movements in
-  animations. The body sends nothing back to the brain; the clips show a
-  display rule, not observed behaviour. [Courtship playback](docs/courtship-body.md) ·
-  [dose playback](docs/gaba-dose-body.md).
-- **GPU replication.** A second computing engine matched the reference engine's
-  spikes for the tested identical inputs with fixed dopamine. On a separate
-  GABA dose run, the main block and rescue estimates had overlapping intervals;
-  some smaller results and curve fits differed. Computational agreement does
-  not validate the biology. [Engine methods](docs/cuda-methods.md) ·
-  [dose replication](docs/gaba-dose-gpu.md).
-
-![Four panels of recorded model activity in one illustrative seed](figures/3d/experiment-5b/primary-four-panel.png)
-
-*Model activity in one illustrative seed, not the statistical test. Input is
-injected at TuBu; the fly does not see. [Recorded film](figures/3d/experiment-5b/cinematic/primary-demo.mp4)
-· [offline cinematic viewer](figures/3d/experiment-5b/cinematic/male-cns-cinematic.html)
-· [figure methods](docs/3d-model.md).*
-
-[Paper and PDF build](paper/) (`uv run --locked --script paper/build.py`)
-· [reproduction commands](REPRODUCE.md).
-
-## Install and reproduce
-
-With [uv](https://docs.astral.sh/uv/), Git, Python 3.12 and a C/C++ toolchain:
+Install Git, Python 3.12 and [uv](https://docs.astral.sh/uv/). A C/C++ toolchain
+is needed for Brian2 numerical work.
 
 ```sh
 git clone https://github.com/uguryildirim24/flyonenomics.git
 cd flyonenomics
 uv sync --frozen
+uv run --frozen python scripts/adhd_confirm_describe.py \
+  --result validation/records/p2/adhd-confirm-results.json \
+  --out .cache/confirmation-figures
 ```
 
-Viewing the committed figure needs no Python or data download. Rebuilding it
-needs Chrome and about **165 MB** of source assets. Numerical work needs large
-cached tables: the complete male flat-data inventory is **24.38 GB**, plus
-space for derived arrays. The recorded 701-brain-second rest measurement took
-**2 h 24 min** on a 16-core ARM Linux machine with about 94 GiB RAM, using eight
-workers (summed worker peak memory about 58 GB). These are measurements, not a
-laptop runtime promise. See [REPRODUCE.md](REPRODUCE.md) before starting a run.
+The last command needs no downloaded data, browser, GPU or cloud account. It
+writes `per-seed.svg` and `time-course.svg` to an ignored directory from the
+committed follow-up result. It plots existing summaries; it does not rerun
+inference or simulation.
 
-## Citation, credits and licences
+Open `figures/3d/male-cns-atlas.html` locally for the canonical offline anatomy
+viewer. Its default playback is **synthetic dummy data**, not recorded activity.
+The other viewers and videos are retained offline assets. Full-resolution media
+and dense evidence remain here until reviewed archives with stable hashes exist.
+This makes the clone large. No external media archive is promised.
 
-Preprint: **Hasan "Rolf" Yildirim** (2026). *A whole-nervous-system model of the male fly as a pharmacology bench*. Zenodo. [doi:10.5281/zenodo.23091460](https://doi.org/10.5281/zenodo.23091460).
+To build the draft paper, install Tectonic and Cairo as described in
+[paper/README.md](paper/README.md), then run:
 
-Code: **Hasan "Rolf" Yildirim** (2026). *flyonenomics* (v1.0.0). Zenodo. [doi:10.5281/zenodo.23070186](https://doi.org/10.5281/zenodo.23070186).
-See [CITATION.cff](CITATION.cff) and the [paper folder](paper/) for citation
-details. Cite the MaleCNS paper separately for the underlying connectome.
+```sh
+uv run --locked --script paper/build.py
+```
 
-MaleCNS: Berg et al., *Sexual dimorphism in the complete Drosophila male central
-nervous system connectome*, **Cell** (2026),
-[doi:10.1016/j.cell.2026.08.015](https://doi.org/10.1016/j.cell.2026.08.015).
-Source data and derived anatomy retain CC BY 4.0 attribution. The atlas embeds
-Three.js's MIT notice; historical Shiu/FlyWire and other sources are catalogued
-in [the data guide](docs/data.md) and [provenance](data/provenance.json).
+PDFs go to ignored `paper/build/`. The build checks the bound summaries; it does
+not certify numerical reproduction.
 
-Project code is [MIT licensed](LICENSE); third-party code and data licences
-remain separate. This is an AI-assisted project; methods and scientific
-provenance are linked from the [documentation map](docs/index.md).
+### Numerical work and data
+
+Set `FLYONENOMICS_CACHE_DIR="$PWD/.cache"` for downloaded and derived tables.
+[REPRODUCE.md](REPRODUCE.md#male-source-data-one-time-download-not-a-model-run)
+provides the seven-table downloader and checksum checks. Source URLs, sizes and
+hashes are in `data/malecns-v1.0-manifest.json`. The tables total about 24.38 GB.
+The guide also identifies the required Shiu code checkout. Raw downloads, caches
+and new runs stay out of Git; `data/` retains curated model inputs and manifests.
+No cloud credentials are required for the public CPU path.
+
+**This is not complete historical numerical replay from Git alone.** Original
+pilot, follow-up and other raw run archives have not been publicly deposited.
+Their executed private-source revisions are not public Git commits. The current
+CPU worker path uses committed runtime tables after provisioning the cache.
+Historical `malecns_substrate.py --regenerate` and `--probe` reject two changed
+inputs, as they should. Do not replace their old pins with current hashes.
+See [the reproduction boundary](REPRODUCE.md#public-snapshot-boundary) and
+[the input-pin erratum](docs/errata.md#historical-substrate-input-pins).
+
+The measured ten-seed rest run needed about 58 GB of summed worker peak memory
+and 2 h 24 min on a 16-core ARM Linux machine with eight workers. That is not a
+laptop runtime promise. GPU replay needs NVIDIA hardware and absent raw arrays.
+Modal launchers are not shipped. Historical Camber CPU scripts remain, but
+need paid compute, source caches and local account settings.
+
+Camber account and team identifiers are redacted. Before using the retained
+scripts, set their existing `STASH` and `ROOT_STASH` variables to Rolf's own
+Stash paths. `stage.sh` uses `STASH`; submission scripts use `ROOT_STASH`.
+The `CAMBER` variable can point to the installed CLI. No credentials are shipped.
+These scripts are not part of the data-free run above.
+
+## Layout
+
+| Path | Contents |
+|---|---|
+| `src/flyonenomics/` | Engines, registry, dopamine model, orchestration, analysis and local interfaces |
+| `scripts/` | CPU experiment runners, analysis and figure tools |
+| `data/` | Curated configurations, selectors, source manifests and attribution |
+| `validation/records/` | Recorded summaries, plans, checksums and computational checks |
+| `figures/`, `docs/figures/` | Committed figures and offline playback assets |
+| `paper/` | Manuscript, supplement, result bindings and build scripts |
+| `docs/` | Methods, results, data guide and scientific errata |
+| `tests/` | Existing component tests and intentional stored-run fixtures |
+
+## Limits and known gaps
+
+One anatomical specimen, shared electrical constants and assumed receptor
+densities limit biological interpretation. There are no electrical synapses or
+learning. The body animation is one-way playback, with no feedback to the brain.
+The eye-to-brain path is not validated. Tests of numerical agreement are not
+animal experiments. Missing raw archives and historical inputs limit replay.
+[The paper](paper/manuscript.tex) and [errata](docs/errata.md) state these limits.
+Public tests include dataset-dependent checks; they are not an installation
+check. Historical private-suite gate counts are not public-suite results.
+Historical Phase 1 calibration, behaviour validation and ring-stage tools remain.
+Their required private behaviour input and some rest receipts are not shipped.
+Those paths are not complete clean-clone run instructions. The existing checks
+and input bindings are unchanged. No replacement evidence is supplied.
+See [public checks and historical gates](REPRODUCE.md#public-checks-and-historical-gates).
+
+## How this was built
+
+AI coding agents did much of the implementation, analysis tooling and drafting
+under Rolf's direction. Rolf chose the research question, directed the dataset
+move and accepted the declared starting configuration. He is responsible for
+the scientific scope and release approval. Source checking and computational
+review by agents are recorded separately; they are not independent human
+replication. No claim is made that Rolf manually reviewed every generated line.
+See [Author contributions and AI use](paper/manuscript.tex#L124).
+
+## Citation and licence
+
+Hasan "Rolf" Yildirim (2026). *A whole-nervous-system model of the male fly as a
+pharmacology bench*. Zenodo preprint, not peer reviewed.
+[doi:10.5281/zenodo.23091460](https://doi.org/10.5281/zenodo.23091460).
+[CITATION.cff](CITATION.cff) includes the code archive and citation details.
+The archive release is v1.0.0; the Python distribution metadata remains 0.1.0.
+These are separate identifiers, not a claim that all historical runs used the
+current package snapshot.
+
+Project code is [MIT licensed](LICENSE). MaleCNS source data and derived anatomy
+retain CC BY 4.0 attribution. Cite Berg et al., *Sexual dimorphism in the complete
+Drosophila male central nervous system connectome*, Cell (2026),
+[doi:10.1016/j.cell.2026.08.015](https://doi.org/10.1016/j.cell.2026.08.015),
+separately for the connectome. [NOTICE](NOTICE), [the data guide](docs/data.md)
+and [provenance](data/provenance.json) cover third-party licences.

@@ -1,6 +1,14 @@
 # Supplement source check
 
-Line numbers below refer to the lane's pinned **main** source files (before this supplement), not to rendered PDF line positions. The S5 ontology cells were checked against live OLS4 and VFB responses on 2026-09-27; the evidence is in FBbt lookups below. No FBbt identifier is inferred from a type name. The table numbers S1–S5 are document labels, not biological measurements. The Nordlie, Gewaltig and Plesser 2009 model-description-table convention comes from `docs/research/comparable-preprints.md` §2.2 and the supplement brief; its year is bibliographic, not a model parameter.
+Line numbers refer to the pinned source files before this supplement, not PDF
+line positions. The historical audit checked the S5 ontology cells against
+OLS4 and VFB responses on 2026-09-27. Evidence is in the FBbt lookups below.
+No FBbt identifier is inferred from a type name. Table numbers S1 to S5 are
+document labels, not biological measurements. The Nordlie, Gewaltig and
+Plesser 2009 table convention was recorded in an unavailable historical note,
+`docs/research/comparable-preprints.md`, section 2.2, and the private supplement
+brief. Its year is bibliographic, not a model parameter. The retained
+`paper/references-verified.md` records the public source assessment.
 
 ## S1 and introductory text
 

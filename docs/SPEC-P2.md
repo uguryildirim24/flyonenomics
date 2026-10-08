@@ -1,5 +1,13 @@
 # flyonenomics Phase 2 build specification
 
+This page retains historical designs and their execution rules. Early sections
+concern female FlyWire work. MaleCNS amendments are in section 10. Goals do not
+establish biological validation. The code and existing input checks remain.
+Some required private inputs and raw archives are not shipped. Review notes
+named below are historical sources, not included run instructions. Camber
+account and team identifiers are placeholders. See
+[REPRODUCE.md](../REPRODUCE.md) and [the scientific errata](errata.md).
+
 Final, 2026-09-14, by p2author. Revised through `tasks/p2/turns/review-1.md` to `review-3.md` in the P2 spec round (`tasks/p2/protocol.md`), and signed off by p2critic in `review-4.md` at f36b4f1. Every finding's disposition is in `tasks/p2/decisions.md`. Revised for WP24 (tier 3 structural rest mechanisms) on `spec/wp24` in the WP24 spec round (`tasks/WP24-spec.md`, turns under `tasks/wp24/turns/`), after Rolf authorised tier 3 on 2026-09-16.
 
 Sources for the WP24 revision: lane w17's `.reports/WP17-report.md`, `.reports/camber-ledger.md`, `docs/resting-candidates.md` and `validation/records/p2/rest-reflex-path.json` on `lane/w17` at dac30d4 (cited below as "WP17 report" and "the ledger"); `docs/resting-map.md`; `src/flyonenomics/engine/brian_engine.py` at dbe0597; a Brian2 2.10.1 feasibility check of the three variant equation sets (section 2.2.4).
@@ -1222,7 +1230,7 @@ Acceptance and closure runs hold `caffeinate -ims`.
 
 ### 6.2 Camber
 
-`large` nodes have 64 cores and 256 GB, cost 2.56 credits per node-hour, are CPU only, and draw on a free trial with no balance command. Account `roller`, team `hasanugurteam03920735`, CLI `~/.camber/bin/camber`.
+`large` nodes have 64 cores and 256 GB, cost 2.56 credits per node-hour, are CPU only, and draw on a free trial with no balance command. Account `account-redacted`, team `team-redacted`, CLI `~/.camber/bin/camber`.
 
 Planning figures:
 
@@ -1232,9 +1240,9 @@ Planning figures:
 
 Staging, running and pulling back use lane cam's scripts at commit 983c141 (`scripts/camber/stage.sh`, `job.sh`, `grid.py`):
 
-1. `stage.sh` puts a git archive of the lane's commit and the needed `.cache` subset at `stash://roller/projects/flyonenomics/<commit>/`.
+1. `stage.sh` puts a git archive of the lane's commit and the needed `.cache` subset at `stash://account-redacted/projects/flyonenomics/<commit>/`.
 2. The job runs `uv sync --frozen` and a shard driver over 62 processes. Each scale combination gets its own process, with the scale applied before `store("initial")`. Every evaluation writes one NDJSON line with job id, commit, `code_scope`, platform, parameters, seed and metrics.
-3. Results go to `stash://roller/projects/flyonenomics/<commit>/results/<label>/`.
+3. Results go to `stash://account-redacted/projects/flyonenomics/<commit>/results/<label>/`.
 4. The lane pulls them back to `.worktrees/<lane>/camber-runs/<label>/`, which git ignores.
 5. The lane appends each job to `.reports/camber-ledger.md`: job id, label, node type, start, end, node-hours, credits.
 
@@ -1876,7 +1884,7 @@ These are every "For Rolf" item from reviews 1 to 4, each with my reading. Sign-
 120.1 Wave. Plan `validation/records/p2/rest-T3e-freeze-plan.json`. Arm A `sens` on the 3d substrate. Candidate weights 0.9, 1.0, 1.1 mV. Pair at each candidate is the 3e arm A step of 0.20 mV: (0.9, 1.1), (1.0, 1.2), (1.1, 1.3). Run weights 0.9, 1.0, 1.1, 1.2, 1.3 mV. Seeds 11 to 20. One clamped 32 s long dark row per seed and run weight (R-screen on `[2, 12)`, later windows recorded; no free pool). Paired sugar 3 s at each run weight. One same-job 10-seed bare. T0 feed-forward on the same ten seeds. Perturbation ±0.05 mV on seeds 11 to 13 at each candidate weight (unique probes 0.85 to 1.15 mV). Lab measures recorded-only on the long-row `[2, 12)` window. No gradedness point (experiment 4). Item 74 (a) is the six pair-weight differences on seeds 11 to 13, (b) the ten-seed mean at the candidate weight and min(b) at or above 0.4 of the same-job bare (decision 113); original 50/40 recorded too. One `cx2-64x128`, 75 worker-s per brain-s, list dollars include 600 s setup. No `up.sh` before `GO wp30`.
 120.2 Civo scaffolding (WP30, 2026-09-18, Rolf: coding only, no compute). IBM login rejected (`BXNIM0434E`, account blocked). `scripts/civo/` mirrors `scripts/ibm/` on the Civo REST API (`https://api.civo.com/v2`), with `CIVO_DRY_RUN=1`, detached wait, pull before down, `CIVO_DOWN_OK=1`, `CIVO_LEFTOVER_NAME`, receipts under `validation/records/p2/civo-receipts/`. Default size `g4p.xlarge` (Performance Extra Large: 32 cores / 128 GB / 250 GB NVMe, **$0.952384/h** on the public list 2026-09-18). Key path `~/.config/civo/api_key`, never printed. No instance created under this record. The freeze plan in 120.1 stays ready; repack workers and dollars before the first live Civo `up.sh`.
 120.3 Modal scaffolding (WP30, 2026-09-18, Rolf: Civo gave nothing; coding only, no compute). Target is Modal Functions. `scripts/modal/` runs one freeze task per `run_task` (cpu 1.0 physical core, timeout 14400 s with margin), fans the plan with `.map`, writes `camber-runs/wp30/<label>/`, cache on Volume `flyo-cache` via `upload.sh`. Image: Debian 3.12 + `uv sync --frozen`. Token `~/.modal.toml`, never printed. CPU dollars at the public price $0.0000131 / physical-core / s for 2472 brain-s × 75 worker-s/brain-s = **$2.4287**. No function run, no image build, no volume upload under this record.
-120.4 Modal runner (WP30, 2026-09-18, Rolf: the rolfyildirim workspace has about 8 dollars left; the wave must survive a credit stop). Coding only until a GO that names Modal. `run_task` returns the ndjson body. The driver writes each file to `camber-runs/wp30/<label>/` as that result arrives (`order_outputs=False`), not after the map. Task order: weight 1.0, then 0.9, then 1.1; bare rows first within each (shared bare with 1.0, then dark longs, then sugar). `MODAL_MAX_DOLLARS` default 6, from the public per-core-second and per-GiB-second prices; the driver stops submitting when the next task's projection would cross that ceiling. Cost projection uses cpu=0.5 physical core per single-thread worker unless measured otherwise. CPU dollars 2472 × 75 × 0.5 × $0.0000131 = **$1.2144**. No function run, no image build, no volume upload under this record.
+120.4 Modal runner (WP30, 2026-09-18, Rolf: workspace-redacted; personal account balance omitted; the wave must survive a credit stop). Coding only until a GO that names Modal. `run_task` returns the ndjson body. The driver writes each file to `camber-runs/wp30/<label>/` as that result arrives (`order_outputs=False`), not after the map. Task order: weight 1.0, then 0.9, then 1.1; bare rows first within each (shared bare with 1.0, then dark longs, then sugar). `MODAL_MAX_DOLLARS` default 6, from the public per-core-second and per-GiB-second prices; the driver stops submitting when the next task's projection would cross that ceiling. Cost projection uses cpu=0.5 physical core per single-thread worker unless measured otherwise. CPU dollars 2472 × 75 × 0.5 × $0.0000131 = **$1.2144**. No function run, no image build, no volume upload under this record.
 
 
 

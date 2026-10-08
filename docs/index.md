@@ -12,10 +12,22 @@ The current model uses MaleCNS v1.0. Earlier FlyWire measurements use a female c
 
 ## Technical provenance, not visitor instructions
 
-- [Frozen preparation and audit history](adhd-study-part-a.md), [dated scientific specification](SPEC-P2.md) and [machine-readable records](../validation/records/p2/). Their internal run labels, source hashes and historical decisions identify exactly what was executed; some earlier entries concern superseded FlyWire work and are not male results.
+- [Frozen preparation and audit history](adhd-study-part-a.md), [scientific specification](SPEC-P2.md) and [machine-readable records](../validation/records/p2/). Run labels and source hashes identify recorded executions. The specifications record historical designs and execution rules. Earlier FlyWire entries are historical female-model evidence, not male results. Their ring-stage runners remain, but some required inputs and raw archives are absent.
 - [Tour figures](tour-figures.md), [courtship body playback](courtship-body.md) and [GABA dose body playback](gaba-dose-body.md): model output and its limits.
 
-- [CUDA backend](cuda-backend.md): fused MaleCNS GPU engine, Brian2 comparisons, measured speed and run commands.
+- [CUDA backend](cuda-backend.md): fused MaleCNS GPU engine, Brian2 comparisons, measured speed and public replay limits. Modal launchers are not included.
 - [CUDA methods](cuda-methods.md): engine description, identical-input validation, precision choices and interface limits.
 
-The original private run archives, coordination history, cloud receipts and historical research drafts are not part of the public snapshot. Published numerical records include their provenance and input hashes; the original raw archives have not yet been publicly deposited.
+The original private run archives, coordination history, provider receipt trees
+and historical research drafts are not part of the public snapshot. Scientific
+compute-cost records remain. Published numerical records retain provenance and
+input hashes; the original raw archives have not yet been publicly deposited.
+Phase 1 steering calibration, behaviour/dose validators and the invariance
+runner remain. Their private inputs are not replaced with public configuration
+values. Phase 2 arena code retains the original rest-record requirements. Original
+private-suite gate counts do not describe the public test set.
+Historical substrate regeneration rejects two changed inputs. See
+[the pin erratum](errata.md#historical-substrate-input-pins) and
+[the public run boundary](../REPRODUCE.md#public-snapshot-boundary).
+The source hashes and numbers in frozen scientific records were not relabelled
+for this public cleanup.
