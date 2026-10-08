@@ -11,7 +11,7 @@ Frozen on 2026-09-26 after the pre-freeze checks below and before any dose outco
 - Reuse `scripts/circuit_tour.py::dose_conditions`, `dose_scales`, and `build`'s exact row-class composition: `modified = baseline_scale.copy(); modified[row_classes == 'GABA'] *= gaba; modified[row_classes == 'Glu'] *= glu`. No rederived class mapping. Unknown negative rows retain baseline scaling.
 - `CUDAEngine.set_weight_scale` takes a shared `(n_syn,)` float32 array; a batch therefore contains one condition and ten seeds. Disconnection masks are applied after scaling and are empty for every dose, including full block.
 - 13 batches × 10 seeds × 12 seconds: 2 s settle + 10 s measurement, 10 ms chunks, 0.1 ms integration. L4 only; `MODAL_PROFILE=flyonenomics` on every Modal command. No shared-box work.
-- Existing GPU controls: `<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/outcomes/seed-{501..510}-control.{json,npz}`, bound by `validation/records/p2/male-cuda-receipts.json`; source Modal volume `flyo-malecns-circuit`. Control rate is ON+OFF counts / 10 s. Synchrony uses that same measured 10 s, not settling.
+- Existing GPU controls: `<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/outcomes/seed-{501..510}-control.{json,npz}`, bound by `validation/records/p2/male-cuda-receipts.json`; source Modal volume `flyo-malecns-circuit`. Control rate is ON+OFF counts / 10 s. Synchrony uses that same measured 10 s, not settling.
 
 ## Pre-freeze checks (two separate one-seed L4 calls)
 
@@ -45,7 +45,7 @@ Replication addition: put the GPU Hill slope, half-effect and rescue fractions b
 
 Keep the existing 10,000 paired whole-seed rate/rescue draws, 500 whole-seed Hill draws, fixed resampling seeds, least-squares bounds/identifiability handling and interpolated half of the observed endpoint. No new hypothesis tests or engine-agreement cutoff. A 95% interval containing zero is **no detected difference**, not equality. Rate and rescue effects pair seeds within engine only. Across engines, compare curve shapes, point estimates and intervals, never spike trains.
 
-Both workers use `FanoAccumulator` on every 1 ms histogram bin outside settling. Thus b = maximum spikes in one 1 ms bin / 162,517, F = variance of population counts across the 10,000 bins / mean bin count. The 10 ms chunk interface does not coarsen these statistics. F is not a per-neuron across-trial Fano factor. CPU analysis source: `<local-project-root>/.worktrees/t-0129/camber-runs/circuit-tour/dose-summary/analysis.json`.
+Both workers use `FanoAccumulator` on every 1 ms histogram bin outside settling. Thus b = maximum spikes in one 1 ms bin / 162,517, F = variance of population counts across the 10,000 bins / mean bin count. The 10 ms chunk interface does not coarsen these statistics. F is not a per-neuron across-trial Fano factor. CPU analysis source: `<local-project-root>/<reference-checkout>/camber-runs/circuit-tour/dose-summary/analysis.json`.
 
 The comparison record includes full per-group analysis, raw hashes, pre-freeze comparisons, control rates and descriptive interval-overlap flags. Results prose and figures have no development IDs, hashes, seed labels or archive paths. `src/flyonenomics/engine/cuda_tick.cu` remains SHA-256 `6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197`. If a kernel change becomes necessary, stop rather than changing the frozen engine.
 
@@ -65,7 +65,7 @@ MODAL_PROFILE=flyonenomics .venv/bin/python scripts/modal/cuda_driver.py reprodu
 for offset in 0 10 20 30 40 50 60 70 80 90 100 110 120; do
   MODAL_PROFILE=flyonenomics .venv/bin/python scripts/modal/cuda_driver.py dose --batch 10 --offset "$offset" --chunk-ms 10 || break
 done
-.venv/bin/python scripts/cuda_dose.py analyse --brian-analysis <local-project-root>/.worktrees/t-0129/camber-runs/circuit-tour/dose-summary/analysis.json
+.venv/bin/python scripts/cuda_dose.py analyse --brian-analysis <local-project-root>/<reference-checkout>/camber-runs/circuit-tour/dose-summary/analysis.json
 MODAL_PROFILE=flyonenomics .venv/bin/python scripts/modal/cuda_billing.py --dose
 MODAL_PROFILE=flyonenomics modal app list --json
 ```

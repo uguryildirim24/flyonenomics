@@ -1,13 +1,10 @@
 {
   "freeze_sha": "566bc949ed3617538f8efb6363e01337debd7796",
-  "workspace": "uguryildirim24",
+  "workspace": "workspace-redacted",
   "profile": "flyonenomics",
   "lane_metered_cap_usd": 12,
   "balance_at_submission": {
-    "confirmed_credit_band_usd": 30,
-    "metered_to_date_usd": 10.04,
-    "confirmed_remaining_usd": 19.96,
-    "source": "Rolf confirmed the credit band and the billing summary before the submit"
+    "metered_to_date_usd": 10.04
   },
   "dose_outcomes": {
     "new_conditions": 13,

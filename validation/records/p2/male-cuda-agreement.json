@@ -352,12 +352,12 @@
   },
   "sources": {
     "tour": {
-      "brian": "<local-project-root>/.worktrees/t-0114/camber-runs/circuit-tour/outcomes",
-      "cuda": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/outcomes"
+      "brian": "<local-project-root>/<reference-checkout>/camber-runs/circuit-tour/outcomes",
+      "cuda": "<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/outcomes"
     },
     "dose": {
-      "brian": "<local-project-root>/.worktrees/t-0129/camber-runs/circuit-tour/dose-outcomes",
-      "cuda": "<local-project-root>/.worktrees/t-0138/camber-runs/cuda-dose/outcomes"
+      "brian": "<local-project-root>/<reference-checkout>/camber-runs/circuit-tour/dose-outcomes",
+      "cuda": "<local-project-root>/<reference-checkout>/camber-runs/cuda-dose/outcomes"
     }
   },
   "inventory": {

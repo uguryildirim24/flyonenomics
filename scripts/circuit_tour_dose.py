@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT / 'src'))
 from scripts.circuit_tour import SEEDS, BLOCK, BOOST, RESCUE, dose_conditions, pins  # noqa: E402
 from scripts.circuit_tour_analysis import interval  # noqa: E402
 
-REFERENCE = Path('<local-project-root>/.worktrees/t-0114/camber-runs/circuit-tour/outcomes')
+REFERENCE = Path('<local-project-root>/<reference-checkout>/camber-runs/circuit-tour/outcomes')
 OUTCOMES = ROOT / 'camber-runs/circuit-tour/dose-outcomes'
 SUMMARY = ROOT / 'camber-runs/circuit-tour/dose-summary'
 

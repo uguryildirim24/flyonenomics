@@ -1,9 +1,8 @@
 {
   "freeze_sha": "c6a210545e21f431e2fb8f82a4f5b060fad7d860",
   "profile": "flyonenomics",
-  "workspace": "uguryildirim24",
+  "workspace": "workspace-redacted",
   "lane_metered_cap_usd": 5,
-  "workspace_band_usd": 30,
   "checked_utc": "2026-09-26T15:09:53.135956+00:00",
   "prefreeze": {
     "apps": 2,
@@ -33,7 +32,6 @@
     "metered_cost": "16.28000000",
     "billed_cost": "0E-8",
     "adjustments": {
-      "credits": "-16.28000000",
       "network_egress_allowance": "0E-8",
       "reservation_adjustment": "-0E-8",
       "plan_cost": "0E-8",
@@ -52,7 +50,6 @@
       "network_egress_allowance": "0E-8",
       "free_storage": "-0E-8",
       "reservation_adjustment": "-0E-8",
-      "credits": "-17.81000000",
       "plan_cost": "0E-8"
     },
     "metered_cost_breakdown": {

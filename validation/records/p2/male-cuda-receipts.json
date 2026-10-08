@@ -16,7 +16,7 @@
     "submitted_at": 1790391307.099637,
     "source_sha": "c803b8eb065065d4acf5e13b380e55e2eb6395db",
     "source_diff": "",
-    "error": "ExecutionError('<local-project-root>/.worktrees/t-0122/scripts/modal/__pycache__/cuda_driver.cpython-312.pyc was modified during build process.')",
+    "error": "ExecutionError('<local-project-root>/<reference-checkout>/scripts/modal/__pycache__/cuda_driver.cpython-312.pyc was modified during build process.')",
     "completed_at": 1790391442.50227,
     "accounted_usd": 0.038461870126790476,
     "app_id": "ap-xwpl1Cir7M8ubNJsAX6dp5",

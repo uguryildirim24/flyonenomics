@@ -3,7 +3,7 @@
 # Usage: scripts/camber/submit_tier2_completion.sh A-01 [B-03 ...]
 set -euo pipefail
 CAMBER="${CAMBER:-${HOME}/.camber/bin/camber}"
-ROOT_STASH="${ROOT_STASH:-stash://roller/projects/flyonenomics}"
+ROOT_STASH="${ROOT_STASH:-stash://account-redacted/projects/flyonenomics}"
 RECEIPTS="${RECEIPTS:-camber-runs/wp17/receipts}"
 mkdir -p "${RECEIPTS}"
 for shard in "$@"; do

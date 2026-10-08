@@ -4,7 +4,7 @@
 # env CAMBER_SIZE (default large), CAMBER_GPU=1 for a GPU node, REST_TIMEOUT_S, REST_Q.
 set -euo pipefail
 CAMBER="${CAMBER:-${HOME}/.camber/bin/camber}"
-ROOT_STASH="${ROOT_STASH:-stash://roller/projects/flyonenomics}"
+ROOT_STASH="${ROOT_STASH:-stash://account-redacted/projects/flyonenomics}"
 RECEIPTS="${RECEIPTS:-camber-runs/wp17/receipts}"
 base="$1"
 label="$2"

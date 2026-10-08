@@ -11,7 +11,7 @@
   },
   "comparison_to_existing_pilots": [
     {
-      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790391687-0/seed-501-control-member-0.npz",
+      "path": "<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/fused-pilot-1790391687-0/seed-501-control-member-0.npz",
       "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
       "gpu": "L4",
       "chunk_ms": 10.0,
@@ -19,7 +19,7 @@
       "n": 162517
     },
     {
-      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790393120-0/seed-501-control-member-0.npz",
+      "path": "<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/fused-pilot-1790393120-0/seed-501-control-member-0.npz",
       "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
       "gpu": "L4",
       "chunk_ms": 10.0,
@@ -27,7 +27,7 @@
       "n": 162517
     },
     {
-      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790393710-0/seed-501-control-member-0.npz",
+      "path": "<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/fused-pilot-1790393710-0/seed-501-control-member-0.npz",
       "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
       "gpu": "A100-40GB",
       "chunk_ms": 10.0,
@@ -35,7 +35,7 @@
       "n": 162517
     },
     {
-      "path": "<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/fused-pilot-1790394331306579000-0/seed-501-control-member-0.npz",
+      "path": "<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/fused-pilot-1790394331306579000-0/seed-501-control-member-0.npz",
       "sha256": "13cb11af6f86704cb4e5206a7c5690656e4d2efab3420c908292bfb1e68b5ea2",
       "gpu": "L4",
       "chunk_ms": 1.0,

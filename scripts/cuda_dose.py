@@ -18,7 +18,7 @@ from scripts.cuda_compare import link_outcomes
 
 RECEIPTS = ROOT / 'validation/records/p2/male-cuda-dose-receipts.json'
 WORK = ROOT / 'camber-runs/cuda-dose'
-REFERENCE = Path('<local-project-root>/.worktrees/t-0122/camber-runs/cuda-circuit/outcomes')
+REFERENCE = Path('<local-project-root>/<reference-checkout>/camber-runs/cuda-circuit/outcomes')
 
 
 def write(path, data):

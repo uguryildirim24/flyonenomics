@@ -12,7 +12,7 @@ if [[ -n "${FLYONENOMICS_CACHE_DIR:-}" ]]; then
 else
   CACHE_ROOT="$(cd "${GIT_COMMON}/../.cache" && pwd)"
 fi
-STASH="${STASH:-stash://roller/projects/flyonenomics/${COMMIT}}"
+STASH="${STASH:-stash://account-redacted/projects/flyonenomics/${COMMIT}}"
 
 # Whole-tree clean guard: a job runs committed bytes only. The overlay below
 # is taken from HEAD, so nothing uncommitted anywhere in this worktree can

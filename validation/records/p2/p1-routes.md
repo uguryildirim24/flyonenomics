@@ -5,7 +5,7 @@ This is an exploratory re-analysis of the existing complete circuit-tour outcome
 Reproduce with this worktree's frozen environment (no simulation):
 
 ```sh
-FLYONENOMICS_CACHE_DIR=<local-project-root>/.cache .venv/bin/python scripts/p1_routes_analysis.py <local-project-root>/.worktrees/t-0114/camber-runs/circuit-tour/outcomes
+FLYONENOMICS_CACHE_DIR=<local-project-root>/.cache .venv/bin/python scripts/p1_routes_analysis.py <local-project-root>/<reference-checkout>/camber-runs/circuit-tour/outcomes
 ```
 
 Each row is the seed-mean difference in ON spikes / 5 seconds against that seed's control ON spikes / 5 seconds, in Hz. Seeds 501–510; control plus P1-low (10 Hz), P1-medium (30 Hz), P1-high (60 Hz) Poisson input and `courtship_random` (30 Hz, 148 preselected cholinergic cells). Identical whole-seed bootstrap convention to `scripts/circuit_tour_analysis.py`: PCG64 seed 20260925, 10,000 resamples of ten matched seeds, percentile 95% intervals. `medium_minus_low`, `high_minus_medium`, `high_minus_low` and `medium_minus_random` are *paired within seed* before bootstrap. Source counts SHA-256 and model provenance are in the JSON manifest, verified before computing each row. CSV figures round to four decimal places; an interval touching or crossing zero is **no detected difference**, not equality. These are descriptive, unadjusted intervals over an exploratory scan of 480 types; selected large effects risk winner's curse. Classification is descriptive, not a pre-registered decision test.
