@@ -1,0 +1,3400 @@
+{
+  "schema_version": 1,
+  "assembled_utc": "2026-10-08T04:00:13.907222+00:00",
+  "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+  "audit": {
+    "connection_rows": 15091983,
+    "total_synapses": 54492922,
+    "presynaptic_neurons_with_outgoing": 138005,
+    "mixed_sign_neurons": 0,
+    "weighted_column_equals_sign_times_connectivity": true,
+    "completeness_index_mapping_verified": true,
+    "annotation_files": {
+      "v1.1.0": {
+        "path": "/data/flyonenomics/cache/annotations-v1.1.0.tsv",
+        "sha256": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76"
+      },
+      "v2.1.0": {
+        "path": "/data/flyonenomics/cache/annotations-v2.1.0.tsv",
+        "sha256": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+      }
+    },
+    "annotations": {
+      "v1.1.0": {
+        "il3LN6": [
+          {
+            "supervoxel_id": 80225934909095352,
+            "root_id": 720575940635094423,
+            "cell_type": null,
+            "hemibrain_type": "il3LN6",
+            "cell_class": "ALLN",
+            "side": "right",
+            "top_nt": "acetylcholine",
+            "top_nt_conf": 0.3166213631629944,
+            "v783_root_via_same_supervoxel": 720575940623636701,
+            "direct_root_in_completeness_783": false,
+            "direct_root_outgoing": null,
+            "v783_outgoing": {
+              "outgoing_rows": 1741,
+              "outgoing_synapses": 11450,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1741,
+              "excitatory_synapses": 11450
+            },
+            "v783_unique_postsynaptic_neurons": 1741
+          },
+          {
+            "supervoxel_id": 78888860116969946,
+            "root_id": 720575940625420531,
+            "cell_type": null,
+            "hemibrain_type": "il3LN6",
+            "cell_class": "ALLN",
+            "side": "left",
+            "top_nt": "gaba",
+            "top_nt_conf": 0.341074526309967,
+            "v783_root_via_same_supervoxel": 720575940632403986,
+            "direct_root_in_completeness_783": false,
+            "direct_root_outgoing": null,
+            "v783_outgoing": {
+              "outgoing_rows": 1805,
+              "outgoing_synapses": 12671,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1805,
+              "excitatory_synapses": 12671
+            },
+            "v783_unique_postsynaptic_neurons": 1805
+          }
+        ],
+        "annotation_rows": 128824,
+        "unique_annotation_roots": 128775,
+        "duplicate_root_rows_removed": 49,
+        "root_ids_matched_to_v783_outgoing": 106187,
+        "predicted_gaba_confidence_cutoffs": {
+          "0": {
+            "predicted_gaba_with_outgoing": 13073,
+            "signed_excitatory_neurons": 632,
+            "excitatory_synapses": 88526
+          },
+          "0.5": {
+            "predicted_gaba_with_outgoing": 10467,
+            "signed_excitatory_neurons": 209,
+            "excitatory_synapses": 6369
+          },
+          "0.7": {
+            "predicted_gaba_with_outgoing": 6432,
+            "signed_excitatory_neurons": 41,
+            "excitatory_synapses": 1540
+          },
+          "0.9": {
+            "predicted_gaba_with_outgoing": 423,
+            "signed_excitatory_neurons": 6,
+            "excitatory_synapses": 351
+          }
+        },
+        "other_predicted_gaba_signed_excitatory_excluding_all_il3LN6": 632,
+        "top_discordant_types": {
+          "untyped": 318,
+          "T1": 128,
+          "R1-6": 66,
+          "JO-B": 24,
+          "R7-8": 12,
+          "lLN2P_b": 8,
+          "Dm3": 7,
+          "lLN2F_a": 4,
+          "JO-EVM": 4,
+          "PI": 3,
+          "HRN_VP5": 3,
+          "LT71": 3,
+          "JO-C": 3,
+          "lLN2X04": 2,
+          "JO-EVL": 2
+        }
+      },
+      "v2.1.0": {
+        "il3LN6": [
+          {
+            "supervoxel_id": 80225934909095352,
+            "root_id": 720575940623636701,
+            "cell_type": null,
+            "hemibrain_type": "il3LN6",
+            "cell_class": "ALLN",
+            "side": "right",
+            "top_nt": "acetylcholine",
+            "top_nt_conf": 0.3177111396127737,
+            "known_nt": "gaba",
+            "known_nt_source": "Tanaka et al., 2012",
+            "v783_root_via_same_supervoxel": 720575940623636701,
+            "direct_root_in_completeness_783": true,
+            "direct_root_outgoing": {
+              "outgoing_rows": 1741,
+              "outgoing_synapses": 11450,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1741,
+              "excitatory_synapses": 11450
+            },
+            "v783_outgoing": {
+              "outgoing_rows": 1741,
+              "outgoing_synapses": 11450,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1741,
+              "excitatory_synapses": 11450
+            },
+            "v783_unique_postsynaptic_neurons": 1741
+          },
+          {
+            "supervoxel_id": 78888860116969946,
+            "root_id": 720575940632403986,
+            "cell_type": null,
+            "hemibrain_type": "il3LN6",
+            "cell_class": "ALLN",
+            "side": "left",
+            "top_nt": "gaba",
+            "top_nt_conf": 0.339837240484168,
+            "known_nt": "gaba",
+            "known_nt_source": "Tanaka et al., 2012",
+            "v783_root_via_same_supervoxel": 720575940632403986,
+            "direct_root_in_completeness_783": true,
+            "direct_root_outgoing": {
+              "outgoing_rows": 1805,
+              "outgoing_synapses": 12671,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1805,
+              "excitatory_synapses": 12671
+            },
+            "v783_outgoing": {
+              "outgoing_rows": 1805,
+              "outgoing_synapses": 12671,
+              "sign_min": 1,
+              "sign_max": 1,
+              "excitatory_rows": 1805,
+              "excitatory_synapses": 12671
+            },
+            "v783_unique_postsynaptic_neurons": 1805
+          }
+        ],
+        "annotation_rows": 139255,
+        "unique_annotation_roots": 139255,
+        "duplicate_root_rows_removed": 0,
+        "root_ids_matched_to_v783_outgoing": 138005,
+        "predicted_gaba_confidence_cutoffs": {
+          "0": {
+            "predicted_gaba_with_outgoing": 19082,
+            "signed_excitatory_neurons": 1349,
+            "excitatory_synapses": 141079
+          },
+          "0.5": {
+            "predicted_gaba_with_outgoing": 14905,
+            "signed_excitatory_neurons": 421,
+            "excitatory_synapses": 11807
+          },
+          "0.7": {
+            "predicted_gaba_with_outgoing": 9163,
+            "signed_excitatory_neurons": 88,
+            "excitatory_synapses": 2812
+          },
+          "0.9": {
+            "predicted_gaba_with_outgoing": 691,
+            "signed_excitatory_neurons": 10,
+            "excitatory_synapses": 355
+          }
+        },
+        "other_predicted_gaba_signed_excitatory_excluding_all_il3LN6": 1348,
+        "top_discordant_types": {
+          "T1": 345,
+          "R1-6": 275,
+          "Dm3": 124,
+          "Am": 102,
+          "untyped": 88,
+          "L1-3": 40,
+          "R7": 38,
+          "C2": 37,
+          "R8": 26,
+          "JO-B": 23,
+          "Dm10": 14,
+          "lLN2P_b": 12,
+          "Lawf2": 10,
+          "Mi9": 9,
+          "C3": 9
+        },
+        "known_nt_exact_gaba_with_outgoing": 1398,
+        "known_nt_exact_gaba_signed_excitatory": 28,
+        "known_nt_exact_gaba_excitatory_synapses": 24906,
+        "known_nt_contains_gaba_with_outgoing": 7579,
+        "known_nt_contains_gaba_signed_excitatory": 307,
+        "known_nt_contains_gaba_or_glutamate_signed_excitatory": 1114,
+        "known_nt_contains_gaba_or_glutamate_excitatory_synapses": 200027,
+        "known_nt_note": "Comma-separated token membership includes cotransmitters; a disagreement is not by itself proof that all these signs should be flipped."
+      }
+    }
+  },
+  "issue11": {
+    "notebook_stimulus": {
+      "issue": 11,
+      "metadata": {
+        "started_utc": "2026-10-08T03:44:34.411358+00:00",
+        "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+        "shiu_tracked_changes": "",
+        "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+        "host": "instance-20260918-1928",
+        "python": "3.10.21",
+        "packages": {
+          "brian2": "2.5.1",
+          "numpy": "1.24.4",
+          "pandas": "1.5.3",
+          "scipy": "1.10.1",
+          "cython": "0.29.36",
+          "pyarrow": "17.0.0",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0"
+        },
+        "input_sha256": {
+          "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+          "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+          "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+          "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+          "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+          "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+        },
+        "experiment": "example.ipynb first sugarR activation on v783",
+        "stimulus_side_option": "notebook",
+        "notebook_stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940620900446,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "notebook_root_remaps": [
+          {
+            "notebook_root": 720575940620900446,
+            "v783_root": 720575940639259967,
+            "supervoxel_id": 78678166201187069
+          }
+        ],
+        "stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940639259967,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "stimulated_annotation_sides": {
+          "left": 21
+        },
+        "stimulated_annotation_types": {
+          "LB3": 21
+        },
+        "annotation_sha256": {
+          "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+          "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+        },
+        "readout_root": 720575940660219265,
+        "neurons": 138639,
+        "trials": 30,
+        "duration_s": 1.0,
+        "poisson_rate_hz": 150.0,
+        "dt_s": 0.0001,
+        "seeds": [
+          783000,
+          783001,
+          783002,
+          783003,
+          783004,
+          783005,
+          783006,
+          783007,
+          783008,
+          783009,
+          783010,
+          783011,
+          783012,
+          783013,
+          783014,
+          783015,
+          783016,
+          783017,
+          783018,
+          783019,
+          783020,
+          783021,
+          783022,
+          783023,
+          783024,
+          783025,
+          783026,
+          783027,
+          783028,
+          783029
+        ],
+        "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+        "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+      },
+      "correction": {
+        "roots": [
+          720575940632403986
+        ],
+        "change": "left il3LN6 only: outgoing weights set negative; right unchanged"
+      },
+      "simulation": {
+        "readout": {
+          "original": {
+            "mean_hz": 83.46666666666667,
+            "ci95_hz": [
+              81.87718677567754,
+              85.0561465576558
+            ],
+            "trial_rates_hz": [
+              76.0,
+              86.0,
+              82.0,
+              81.0,
+              78.0,
+              83.0,
+              85.0,
+              80.0,
+              90.0,
+              89.0,
+              87.0,
+              84.0,
+              96.0,
+              80.0,
+              79.0,
+              81.0,
+              77.0,
+              82.0,
+              85.0,
+              80.0,
+              80.0,
+              86.0,
+              85.0,
+              83.0,
+              82.0,
+              82.0,
+              85.0,
+              89.0,
+              87.0,
+              84.0
+            ]
+          },
+          "corrected": {
+            "mean_hz": 83.46666666666667,
+            "ci95_hz": [
+              81.87718677567754,
+              85.0561465576558
+            ],
+            "trial_rates_hz": [
+              76.0,
+              86.0,
+              82.0,
+              81.0,
+              78.0,
+              83.0,
+              85.0,
+              80.0,
+              90.0,
+              89.0,
+              87.0,
+              84.0,
+              96.0,
+              80.0,
+              79.0,
+              81.0,
+              77.0,
+              82.0,
+              85.0,
+              80.0,
+              80.0,
+              86.0,
+              85.0,
+              83.0,
+              82.0,
+              82.0,
+              85.0,
+              89.0,
+              87.0,
+              84.0
+            ]
+          },
+          "paired_change_corrected_minus_original": {
+            "mean_hz": 0.0,
+            "ci95_hz": [
+              0.0,
+              0.0
+            ],
+            "trial_rates_hz": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "active_in_any_trial": {
+          "original": 431,
+          "corrected": 431
+        },
+        "mean_active_neurons_per_trial": {
+          "original": 373.53333333333336,
+          "corrected": 373.53333333333336
+        },
+        "any_mean_rate_change_neurons": 0,
+        "meaningful_definition": "absolute paired mean rate change >= 1 Hz; all neurons, no significance claim",
+        "meaningful_neurons": 0,
+        "meaningful_and_pointwise_ci_excludes_zero_neurons": 0,
+        "interval_method": "Two-sided Student t 95% CI over 30 independent seed trials (paired for differences); pointwise, no multiplicity correction; model noise, not biological replicates",
+        "largest_changes": [],
+        "stimulated_neuron_spike_trains_identical_each_pair": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "il3LN6_rates": {
+          "original": {
+            "mean_hz": 0.0,
+            "ci95_hz": [
+              0.0,
+              0.0
+            ],
+            "trial_rates_hz": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "corrected": {
+            "mean_hz": 0.0,
+            "ci95_hz": [
+              0.0,
+              0.0
+            ],
+            "trial_rates_hz": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "completed_utc": "2026-10-08T03:51:12.602982+00:00",
+      "wall_s": 402.68825153890066,
+      "trial_counts_archive": {
+        "oracle_path": "/home/ubuntu/shiu-issues/sign-run/issue11_trial_counts.npz",
+        "sha256": "5b230921180175ceacd2148f355453729d03b49b9076efea0e857520e0161cc9"
+      }
+    },
+    "right_lb3_stimulus": {
+      "issue": 11,
+      "metadata": {
+        "started_utc": "2026-10-08T03:44:34.437384+00:00",
+        "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+        "shiu_tracked_changes": "",
+        "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+        "host": "instance-20260918-1928",
+        "python": "3.10.21",
+        "packages": {
+          "brian2": "2.5.1",
+          "numpy": "1.24.4",
+          "pandas": "1.5.3",
+          "scipy": "1.10.1",
+          "cython": "0.29.36",
+          "pyarrow": "17.0.0",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0"
+        },
+        "input_sha256": {
+          "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+          "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+          "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+          "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+          "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+          "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+        },
+        "experiment": "additional issue11 right-side activation: all right LB3 GRNs from v2.1.0",
+        "stimulus_side_option": "right",
+        "notebook_stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940620900446,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "notebook_root_remaps": [
+          {
+            "notebook_root": 720575940620900446,
+            "v783_root": 720575940639259967,
+            "supervoxel_id": 78678166201187069
+          }
+        ],
+        "stimulated_roots": [
+          720575940604590048,
+          720575940606205897,
+          720575940606801282,
+          720575940608305161,
+          720575940609314243,
+          720575940609369180,
+          720575940609645124,
+          720575940610296622,
+          720575940612010137,
+          720575940612208406,
+          720575940612422579,
+          720575940612445938,
+          720575940612612581,
+          720575940614163367,
+          720575940614302370,
+          720575940615516319,
+          720575940616167218,
+          720575940616742657,
+          720575940616851286,
+          720575940617398502,
+          720575940617510720,
+          720575940617674909,
+          720575940617801499,
+          720575940618601782,
+          720575940618706043,
+          720575940618706811,
+          720575940618709371,
+          720575940620185515,
+          720575940620289701,
+          720575940620296641,
+          720575940620589838,
+          720575940620692833,
+          720575940621506943,
+          720575940621508479,
+          720575940621509759,
+          720575940621704197,
+          720575940622136022,
+          720575940622200233,
+          720575940622405708,
+          720575940622731229,
+          720575940623138485,
+          720575940624373483,
+          720575940627394376,
+          720575940627907883,
+          720575940628116476,
+          720575940628330256,
+          720575940629388135,
+          720575940629510338,
+          720575940629821500,
+          720575940629884119,
+          720575940630552151,
+          720575940630741701,
+          720575940630882039,
+          720575940630968335,
+          720575940631147148,
+          720575940631656504,
+          720575940632627660,
+          720575940632634911,
+          720575940632880173,
+          720575940634023961,
+          720575940636487598,
+          720575940637661838,
+          720575940638011994,
+          720575940641339611
+        ],
+        "stimulated_annotation_sides": {
+          "right": 64
+        },
+        "stimulated_annotation_types": {
+          "LB3": 64
+        },
+        "annotation_sha256": {
+          "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+          "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+        },
+        "readout_root": 720575940660219265,
+        "neurons": 138639,
+        "trials": 30,
+        "duration_s": 1.0,
+        "poisson_rate_hz": 150.0,
+        "dt_s": 0.0001,
+        "seeds": [
+          783000,
+          783001,
+          783002,
+          783003,
+          783004,
+          783005,
+          783006,
+          783007,
+          783008,
+          783009,
+          783010,
+          783011,
+          783012,
+          783013,
+          783014,
+          783015,
+          783016,
+          783017,
+          783018,
+          783019,
+          783020,
+          783021,
+          783022,
+          783023,
+          783024,
+          783025,
+          783026,
+          783027,
+          783028,
+          783029
+        ],
+        "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+        "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+      },
+      "correction": {
+        "roots": [
+          720575940632403986
+        ],
+        "change": "left il3LN6 only: outgoing weights set negative; right unchanged"
+      },
+      "simulation": {
+        "readout": {
+          "original": {
+            "mean_hz": 20.1,
+            "ci95_hz": [
+              18.95075722570998,
+              21.24924277429002
+            ],
+            "trial_rates_hz": [
+              21.0,
+              26.0,
+              19.0,
+              24.0,
+              20.0,
+              23.0,
+              23.0,
+              16.0,
+              16.0,
+              18.0,
+              25.0,
+              20.0,
+              19.0,
+              26.0,
+              18.0,
+              21.0,
+              18.0,
+              16.0,
+              17.0,
+              20.0,
+              22.0,
+              18.0,
+              14.0,
+              20.0,
+              23.0,
+              20.0,
+              20.0,
+              20.0,
+              17.0,
+              23.0
+            ]
+          },
+          "corrected": {
+            "mean_hz": 61.0,
+            "ci95_hz": [
+              59.6201558231956,
+              62.3798441768044
+            ],
+            "trial_rates_hz": [
+              64.0,
+              62.0,
+              66.0,
+              59.0,
+              60.0,
+              66.0,
+              70.0,
+              69.0,
+              54.0,
+              58.0,
+              57.0,
+              57.0,
+              64.0,
+              61.0,
+              62.0,
+              62.0,
+              61.0,
+              58.0,
+              56.0,
+              62.0,
+              61.0,
+              61.0,
+              59.0,
+              58.0,
+              58.0,
+              65.0,
+              58.0,
+              62.0,
+              60.0,
+              60.0
+            ]
+          },
+          "paired_change_corrected_minus_original": {
+            "mean_hz": 40.9,
+            "ci95_hz": [
+              39.23194950527172,
+              42.568050494728276
+            ],
+            "trial_rates_hz": [
+              43.0,
+              36.0,
+              47.0,
+              35.0,
+              40.0,
+              43.0,
+              47.0,
+              53.0,
+              38.0,
+              40.0,
+              32.0,
+              37.0,
+              45.0,
+              35.0,
+              44.0,
+              41.0,
+              43.0,
+              42.0,
+              39.0,
+              42.0,
+              39.0,
+              43.0,
+              45.0,
+              38.0,
+              35.0,
+              45.0,
+              38.0,
+              42.0,
+              43.0,
+              37.0
+            ]
+          }
+        },
+        "active_in_any_trial": {
+          "original": 9158,
+          "corrected": 508
+        },
+        "mean_active_neurons_per_trial": {
+          "original": 8687.2,
+          "corrected": 433.1333333333333
+        },
+        "any_mean_rate_change_neurons": 9191,
+        "meaningful_definition": "absolute paired mean rate change >= 1 Hz; all neurons, no significance claim",
+        "meaningful_neurons": 8544,
+        "meaningful_and_pointwise_ci_excludes_zero_neurons": 8542,
+        "interval_method": "Two-sided Student t 95% CI over 30 independent seed trials (paired for differences); pointwise, no multiplicity correction; model noise, not biological replicates",
+        "largest_changes": [
+          {
+            "root_id": 720575940624547622,
+            "original_hz": 329.7,
+            "corrected_hz": 0.0,
+            "change_hz": -329.7,
+            "paired_ci95_hz": [
+              -331.95572862227885,
+              -327.4442713777211
+            ]
+          },
+          {
+            "root_id": 720575940613583001,
+            "original_hz": 314.06666666666666,
+            "corrected_hz": 0.0,
+            "change_hz": -314.06666666666666,
+            "paired_ci95_hz": [
+              -316.2104510881303,
+              -311.922882245203
+            ]
+          },
+          {
+            "root_id": 720575940620975696,
+            "original_hz": 287.7,
+            "corrected_hz": 0.0,
+            "change_hz": -287.7,
+            "paired_ci95_hz": [
+              -289.86657684218955,
+              -285.53342315781043
+            ]
+          },
+          {
+            "root_id": 720575940635945919,
+            "original_hz": 282.3,
+            "corrected_hz": 0.0,
+            "change_hz": -282.3,
+            "paired_ci95_hz": [
+              -284.26648884186017,
+              -280.33351115813986
+            ]
+          },
+          {
+            "root_id": 720575940614956072,
+            "original_hz": 282.1,
+            "corrected_hz": 0.0,
+            "change_hz": -282.1,
+            "paired_ci95_hz": [
+              -284.2221824186168,
+              -279.97781758138325
+            ]
+          },
+          {
+            "root_id": 720575940630571052,
+            "original_hz": 281.56666666666666,
+            "corrected_hz": 0.0,
+            "change_hz": -281.56666666666666,
+            "paired_ci95_hz": [
+              -283.6414985508076,
+              -279.4918347825257
+            ]
+          },
+          {
+            "root_id": 720575940630183286,
+            "original_hz": 280.8,
+            "corrected_hz": 0.0,
+            "change_hz": -280.8,
+            "paired_ci95_hz": [
+              -282.8602200737207,
+              -278.7397799262793
+            ]
+          },
+          {
+            "root_id": 720575940606056905,
+            "original_hz": 280.73333333333335,
+            "corrected_hz": 0.0,
+            "change_hz": -280.73333333333335,
+            "paired_ci95_hz": [
+              -282.7642511461891,
+              -278.7024155204776
+            ]
+          },
+          {
+            "root_id": 720575940640541091,
+            "original_hz": 280.1666666666667,
+            "corrected_hz": 0.0,
+            "change_hz": -280.1666666666667,
+            "paired_ci95_hz": [
+              -282.03262403580464,
+              -278.3007092975287
+            ]
+          },
+          {
+            "root_id": 720575940621298270,
+            "original_hz": 279.96666666666664,
+            "corrected_hz": 0.0,
+            "change_hz": -279.96666666666664,
+            "paired_ci95_hz": [
+              -282.05489563031875,
+              -277.8784377030145
+            ]
+          },
+          {
+            "root_id": 720575940633938349,
+            "original_hz": 279.8,
+            "corrected_hz": 0.0,
+            "change_hz": -279.8,
+            "paired_ci95_hz": [
+              -281.8438186522151,
+              -277.75618134778495
+            ]
+          },
+          {
+            "root_id": 720575940622920074,
+            "original_hz": 279.4,
+            "corrected_hz": 0.0,
+            "change_hz": -279.4,
+            "paired_ci95_hz": [
+              -281.47231995681966,
+              -277.3276800431803
+            ]
+          },
+          {
+            "root_id": 720575940630945335,
+            "original_hz": 279.3333333333333,
+            "corrected_hz": 0.0,
+            "change_hz": -279.3333333333333,
+            "paired_ci95_hz": [
+              -281.3722844352724,
+              -277.29438223139425
+            ]
+          },
+          {
+            "root_id": 720575940632197930,
+            "original_hz": 278.7,
+            "corrected_hz": 0.0,
+            "change_hz": -278.7,
+            "paired_ci95_hz": [
+              -280.75262142640014,
+              -276.64737857359984
+            ]
+          },
+          {
+            "root_id": 720575940631287912,
+            "original_hz": 278.6333333333333,
+            "corrected_hz": 0.0,
+            "change_hz": -278.6333333333333,
+            "paired_ci95_hz": [
+              -280.66081550299054,
+              -276.6058511636761
+            ]
+          },
+          {
+            "root_id": 720575940618561403,
+            "original_hz": 278.6,
+            "corrected_hz": 0.0,
+            "change_hz": -278.6,
+            "paired_ci95_hz": [
+              -280.6039076120161,
+              -276.59609238798396
+            ]
+          },
+          {
+            "root_id": 720575940634034839,
+            "original_hz": 278.56666666666666,
+            "corrected_hz": 0.0,
+            "change_hz": -278.56666666666666,
+            "paired_ci95_hz": [
+              -280.59462306418857,
+              -276.53871026914476
+            ]
+          },
+          {
+            "root_id": 720575940617537570,
+            "original_hz": 278.56666666666666,
+            "corrected_hz": 0.0,
+            "change_hz": -278.56666666666666,
+            "paired_ci95_hz": [
+              -280.6228765948036,
+              -276.51045673852974
+            ]
+          },
+          {
+            "root_id": 720575940641593051,
+            "original_hz": 278.1333333333333,
+            "corrected_hz": 0.0,
+            "change_hz": -278.1333333333333,
+            "paired_ci95_hz": [
+              -280.1661441879046,
+              -276.10052247876206
+            ]
+          },
+          {
+            "root_id": 720575940627690246,
+            "original_hz": 277.73333333333335,
+            "corrected_hz": 0.0,
+            "change_hz": -277.73333333333335,
+            "paired_ci95_hz": [
+              -279.5911563799074,
+              -275.8755102867593
+            ]
+          }
+        ],
+        "stimulated_neuron_spike_trains_identical_each_pair": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "il3LN6_rates": {
+          "original": {
+            "mean_hz": 275.06666666666666,
+            "ci95_hz": [
+              273.17804320215595,
+              276.9552901311774
+            ],
+            "trial_rates_hz": [
+              277.0,
+              278.0,
+              271.0,
+              270.0,
+              273.0,
+              279.0,
+              274.0,
+              276.0,
+              270.0,
+              274.0,
+              270.0,
+              280.0,
+              276.0,
+              283.0,
+              281.0,
+              271.0,
+              275.0,
+              279.0,
+              274.0,
+              261.0,
+              278.0,
+              277.0,
+              280.0,
+              279.0,
+              262.0,
+              280.0,
+              276.0,
+              274.0,
+              278.0,
+              276.0
+            ]
+          },
+          "corrected": {
+            "mean_hz": 21.7,
+            "ci95_hz": [
+              20.939471898564406,
+              22.460528101435592
+            ],
+            "trial_rates_hz": [
+              21.0,
+              19.0,
+              23.0,
+              23.0,
+              24.0,
+              20.0,
+              22.0,
+              24.0,
+              23.0,
+              15.0,
+              22.0,
+              21.0,
+              21.0,
+              21.0,
+              24.0,
+              21.0,
+              24.0,
+              24.0,
+              24.0,
+              20.0,
+              23.0,
+              20.0,
+              22.0,
+              23.0,
+              21.0,
+              19.0,
+              20.0,
+              21.0,
+              22.0,
+              24.0
+            ]
+          }
+        }
+      },
+      "completed_utc": "2026-10-08T03:56:56.308385+00:00",
+      "wall_s": 746.3939324449748,
+      "trial_counts_archive": {
+        "oracle_path": "/home/ubuntu/shiu-issues/right-run/issue11_trial_counts.npz",
+        "sha256": "c2a360c6fa536f5ebf7b910f827b5e16de62e49d7d0c41f37c562765d2630dc8"
+      }
+    }
+  },
+  "issue10": {
+    "notebook_stimulus": {
+      "issue": 10,
+      "metadata": {
+        "started_utc": "2026-10-08T03:44:34.450524+00:00",
+        "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+        "shiu_tracked_changes": "",
+        "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+        "host": "instance-20260918-1928",
+        "python": "3.10.21",
+        "packages": {
+          "brian2": "2.5.1",
+          "numpy": "1.24.4",
+          "pandas": "1.5.3",
+          "scipy": "1.10.1",
+          "cython": "0.29.36",
+          "pyarrow": "17.0.0",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0"
+        },
+        "input_sha256": {
+          "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+          "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+          "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+          "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+          "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+          "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+        },
+        "experiment": "example.ipynb first sugarR activation on v783",
+        "stimulus_side_option": "notebook",
+        "notebook_stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940620900446,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "notebook_root_remaps": [
+          {
+            "notebook_root": 720575940620900446,
+            "v783_root": 720575940639259967,
+            "supervoxel_id": 78678166201187069
+          }
+        ],
+        "stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940639259967,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "stimulated_annotation_sides": {
+          "left": 21
+        },
+        "stimulated_annotation_types": {
+          "LB3": 21
+        },
+        "annotation_sha256": {
+          "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+          "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+        },
+        "readout_root": 720575940660219265,
+        "neurons": 138639,
+        "trials": 30,
+        "duration_s": 1.0,
+        "poisson_rate_hz": 150.0,
+        "dt_s": 0.0001,
+        "seeds": [
+          783000,
+          783001,
+          783002,
+          783003,
+          783004,
+          783005,
+          783006,
+          783007,
+          783008,
+          783009,
+          783010,
+          783011,
+          783012,
+          783013,
+          783014,
+          783015,
+          783016,
+          783017,
+          783018,
+          783019,
+          783020,
+          783021,
+          783022,
+          783023,
+          783024,
+          783025,
+          783026,
+          783027,
+          783028,
+          783029
+        ],
+        "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+        "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+      },
+      "quotes": {
+        "code_path": "model.py",
+        "code_lines": [
+          124,
+          125
+        ],
+        "code_quote": "    for i in slnc:\n        syn.w[' {} == i'.format(i)] = 0*mV",
+        "readme_path": "Readme.md",
+        "readme_line": 28,
+        "readme_quote": "This sets all synaptic connections to and from those neurons to zero.",
+        "suggested_readme": "This sets all outgoing synaptic weights from those neurons to zero; the neurons can still receive input and spike."
+      },
+      "silenced_roots": [
+        720575940632403986
+      ],
+      "connectivity": {
+        "outgoing_connection_rows": 1805,
+        "outgoing_synapses": 12671,
+        "incoming_connection_rows": 1983,
+        "incoming_synapses": 17347,
+        "additional_incoming_rows_zeroed": 1983,
+        "additional_incoming_synapses_zeroed": 17347
+      },
+      "simulation": {
+        "trials": [
+          {
+            "trial": 0,
+            "seed": 783000,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13488,
+              13488
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 1,
+            "seed": 783001,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              14020,
+              14020
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 2,
+            "seed": 783002,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13123,
+              13123
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 3,
+            "seed": 783003,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13600,
+              13600
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 4,
+            "seed": 783004,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              12765,
+              12765
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 5,
+            "seed": 783005,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13322,
+              13322
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 6,
+            "seed": 783006,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13578,
+              13578
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 7,
+            "seed": 783007,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13515,
+              13515
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 8,
+            "seed": 783008,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13713,
+              13713
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 9,
+            "seed": 783009,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13836,
+              13836
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 10,
+            "seed": 783010,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              12870,
+              12870
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 11,
+            "seed": 783011,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13634,
+              13634
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 12,
+            "seed": 783012,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              14047,
+              14047
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 13,
+            "seed": 783013,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13682,
+              13682
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 14,
+            "seed": 783014,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13641,
+              13641
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 15,
+            "seed": 783015,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13519,
+              13519
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 16,
+            "seed": 783016,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13602,
+              13602
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 17,
+            "seed": 783017,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13738,
+              13738
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 18,
+            "seed": 783018,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13796,
+              13796
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 19,
+            "seed": 783019,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13678,
+              13678
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 20,
+            "seed": 783020,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13335,
+              13335
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 21,
+            "seed": 783021,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13979,
+              13979
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 22,
+            "seed": 783022,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13475,
+              13475
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 23,
+            "seed": 783023,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13529,
+              13529
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 24,
+            "seed": 783024,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13563,
+              13563
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 25,
+            "seed": 783025,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              14100,
+              14100
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 26,
+            "seed": 783026,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13915,
+              13915
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 27,
+            "seed": 783027,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13860,
+              13860
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 28,
+            "seed": 783028,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13385,
+              13385
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 29,
+            "seed": 783029,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              13885,
+              13885
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": true,
+            "silenced_neuron_spike_counts": [
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "other_neuron_trains_identical_trials": 30,
+        "all_other_neuron_trains_identical": true,
+        "neuron_trial_comparisons": 4159140,
+        "non_silenced_spike_digest_sha256": {
+          "outgoing_only": "151d735c70da21acdb7cfeb7e92b9b399f434781a09f909783cfd847e7c1fcfd",
+          "both_directions": "151d735c70da21acdb7cfeb7e92b9b399f434781a09f909783cfd847e7c1fcfd"
+        },
+        "comparison": "Exact (neuron index, Brian2 clock tick) events, including silent neurons; no timing tolerance",
+        "silenced_neuron_trains_differ_trials": 0,
+        "silenced_rates": {
+          "outgoing_only": {
+            "720575940632403986": {
+              "mean_hz": 0.0,
+              "ci95_hz": [
+                0.0,
+                0.0
+              ],
+              "trial_rates_hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "both_directions": {
+            "720575940632403986": {
+              "mean_hz": 0.0,
+              "ci95_hz": [
+                0.0,
+                0.0
+              ],
+              "trial_rates_hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "readout_rates": {
+          "outgoing_only": {
+            "mean_hz": 83.46666666666667,
+            "ci95_hz": [
+              81.87718677567754,
+              85.0561465576558
+            ],
+            "trial_rates_hz": [
+              76.0,
+              86.0,
+              82.0,
+              81.0,
+              78.0,
+              83.0,
+              85.0,
+              80.0,
+              90.0,
+              89.0,
+              87.0,
+              84.0,
+              96.0,
+              80.0,
+              79.0,
+              81.0,
+              77.0,
+              82.0,
+              85.0,
+              80.0,
+              80.0,
+              86.0,
+              85.0,
+              83.0,
+              82.0,
+              82.0,
+              85.0,
+              89.0,
+              87.0,
+              84.0
+            ]
+          },
+          "both_directions": {
+            "mean_hz": 83.46666666666667,
+            "ci95_hz": [
+              81.87718677567754,
+              85.0561465576558
+            ],
+            "trial_rates_hz": [
+              76.0,
+              86.0,
+              82.0,
+              81.0,
+              78.0,
+              83.0,
+              85.0,
+              80.0,
+              90.0,
+              89.0,
+              87.0,
+              84.0,
+              96.0,
+              80.0,
+              79.0,
+              81.0,
+              77.0,
+              82.0,
+              85.0,
+              80.0,
+              80.0,
+              86.0,
+              85.0,
+              83.0,
+              82.0,
+              82.0,
+              85.0,
+              89.0,
+              87.0,
+              84.0
+            ]
+          }
+        },
+        "conclusion": "For all tested seeds, every other neuron's spike train is identical. Align README with outgoing-only implementation; no model change is needed to fix the documentation mismatch. The silenced neurons can still receive input and spike."
+      },
+      "completed_utc": "2026-10-08T03:51:37.315008+00:00",
+      "wall_s": 427.3935694138054,
+      "trial_counts_archive": {
+        "oracle_path": "/home/ubuntu/shiu-issues/silence-run/issue10_trial_counts.npz",
+        "sha256": "1f8604912fcfd815eec05724d944acf6ad43d7bea8ba7c6c0c7129bd07111cf5"
+      }
+    },
+    "right_lb3_stimulus": {
+      "issue": 10,
+      "metadata": {
+        "started_utc": "2026-10-08T03:47:20.364036+00:00",
+        "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+        "shiu_tracked_changes": "",
+        "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+        "host": "instance-20260918-1928",
+        "python": "3.10.21",
+        "packages": {
+          "brian2": "2.5.1",
+          "numpy": "1.24.4",
+          "pandas": "1.5.3",
+          "scipy": "1.10.1",
+          "cython": "0.29.36",
+          "pyarrow": "17.0.0",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0"
+        },
+        "input_sha256": {
+          "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+          "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+          "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+          "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+          "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+          "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+        },
+        "experiment": "additional issue11 right-side activation: all right LB3 GRNs from v2.1.0",
+        "stimulus_side_option": "right",
+        "notebook_stimulated_roots": [
+          720575940624963786,
+          720575940630233916,
+          720575940637568838,
+          720575940638202345,
+          720575940617000768,
+          720575940630797113,
+          720575940632889389,
+          720575940621754367,
+          720575940621502051,
+          720575940640649691,
+          720575940639332736,
+          720575940616885538,
+          720575940639198653,
+          720575940620900446,
+          720575940617937543,
+          720575940632425919,
+          720575940633143833,
+          720575940612670570,
+          720575940628853239,
+          720575940629176663,
+          720575940611875570
+        ],
+        "notebook_root_remaps": [
+          {
+            "notebook_root": 720575940620900446,
+            "v783_root": 720575940639259967,
+            "supervoxel_id": 78678166201187069
+          }
+        ],
+        "stimulated_roots": [
+          720575940604590048,
+          720575940606205897,
+          720575940606801282,
+          720575940608305161,
+          720575940609314243,
+          720575940609369180,
+          720575940609645124,
+          720575940610296622,
+          720575940612010137,
+          720575940612208406,
+          720575940612422579,
+          720575940612445938,
+          720575940612612581,
+          720575940614163367,
+          720575940614302370,
+          720575940615516319,
+          720575940616167218,
+          720575940616742657,
+          720575940616851286,
+          720575940617398502,
+          720575940617510720,
+          720575940617674909,
+          720575940617801499,
+          720575940618601782,
+          720575940618706043,
+          720575940618706811,
+          720575940618709371,
+          720575940620185515,
+          720575940620289701,
+          720575940620296641,
+          720575940620589838,
+          720575940620692833,
+          720575940621506943,
+          720575940621508479,
+          720575940621509759,
+          720575940621704197,
+          720575940622136022,
+          720575940622200233,
+          720575940622405708,
+          720575940622731229,
+          720575940623138485,
+          720575940624373483,
+          720575940627394376,
+          720575940627907883,
+          720575940628116476,
+          720575940628330256,
+          720575940629388135,
+          720575940629510338,
+          720575940629821500,
+          720575940629884119,
+          720575940630552151,
+          720575940630741701,
+          720575940630882039,
+          720575940630968335,
+          720575940631147148,
+          720575940631656504,
+          720575940632627660,
+          720575940632634911,
+          720575940632880173,
+          720575940634023961,
+          720575940636487598,
+          720575940637661838,
+          720575940638011994,
+          720575940641339611
+        ],
+        "stimulated_annotation_sides": {
+          "right": 64
+        },
+        "stimulated_annotation_types": {
+          "LB3": 64
+        },
+        "annotation_sha256": {
+          "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+          "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+        },
+        "readout_root": 720575940660219265,
+        "neurons": 138639,
+        "trials": 30,
+        "duration_s": 1.0,
+        "poisson_rate_hz": 150.0,
+        "dt_s": 0.0001,
+        "seeds": [
+          783000,
+          783001,
+          783002,
+          783003,
+          783004,
+          783005,
+          783006,
+          783007,
+          783008,
+          783009,
+          783010,
+          783011,
+          783012,
+          783013,
+          783014,
+          783015,
+          783016,
+          783017,
+          783018,
+          783019,
+          783020,
+          783021,
+          783022,
+          783023,
+          783024,
+          783025,
+          783026,
+          783027,
+          783028,
+          783029
+        ],
+        "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+        "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+      },
+      "quotes": {
+        "code_path": "model.py",
+        "code_lines": [
+          124,
+          125
+        ],
+        "code_quote": "    for i in slnc:\n        syn.w[' {} == i'.format(i)] = 0*mV",
+        "readme_path": "Readme.md",
+        "readme_line": 28,
+        "readme_quote": "This sets all synaptic connections to and from those neurons to zero.",
+        "suggested_readme": "This sets all outgoing synaptic weights from those neurons to zero; the neurons can still receive input and spike."
+      },
+      "silenced_roots": [
+        720575940632403986
+      ],
+      "connectivity": {
+        "outgoing_connection_rows": 1805,
+        "outgoing_synapses": 12671,
+        "incoming_connection_rows": 1983,
+        "incoming_synapses": 17347,
+        "additional_incoming_rows_zeroed": 1983,
+        "additional_incoming_synapses_zeroed": 17347
+      },
+      "simulation": {
+        "trials": [
+          {
+            "trial": 0,
+            "seed": 783000,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19434,
+              19434
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 1,
+            "seed": 783001,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19465,
+              19465
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                19
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 2,
+            "seed": 783002,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18821,
+              18821
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 3,
+            "seed": 783003,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19262,
+              19262
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                22
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 4,
+            "seed": 783004,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19029,
+              19029
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 5,
+            "seed": 783005,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19046,
+              19046
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 6,
+            "seed": 783006,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19404,
+              19404
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 7,
+            "seed": 783007,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18889,
+              18889
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 8,
+            "seed": 783008,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18850,
+              18850
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 9,
+            "seed": 783009,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18757,
+              18757
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                15
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 10,
+            "seed": 783010,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18691,
+              18691
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                22
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 11,
+            "seed": 783011,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18740,
+              18740
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 12,
+            "seed": 783012,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19283,
+              19283
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 13,
+            "seed": 783013,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19109,
+              19109
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 14,
+            "seed": 783014,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19275,
+              19275
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 15,
+            "seed": 783015,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19436,
+              19436
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 16,
+            "seed": 783016,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18524,
+              18524
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 17,
+            "seed": 783017,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19040,
+              19040
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 18,
+            "seed": 783018,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19788,
+              19788
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 19,
+            "seed": 783019,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19447,
+              19447
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                20
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 20,
+            "seed": 783020,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19509,
+              19509
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 21,
+            "seed": 783021,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19337,
+              19337
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                19
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 22,
+            "seed": 783022,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18749,
+              18749
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                22
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 23,
+            "seed": 783023,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19330,
+              19330
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                23
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 24,
+            "seed": 783024,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18905,
+              18905
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                21
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 25,
+            "seed": 783025,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18897,
+              18897
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                19
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 26,
+            "seed": 783026,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              18981,
+              18981
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                20
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 27,
+            "seed": 783027,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19310,
+              19310
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                22
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 28,
+            "seed": 783028,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19033,
+              19033
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                22
+              ],
+              [
+                0
+              ]
+            ]
+          },
+          {
+            "trial": 29,
+            "seed": 783029,
+            "other_neuron_spike_trains_identical": true,
+            "other_neurons_compared": 138638,
+            "other_spike_events_compared": [
+              19045,
+              19045
+            ],
+            "other_neurons_with_changed_trains": 0,
+            "other_neurons_with_changed_counts": 0,
+            "other_spike_event_symmetric_difference": 0,
+            "silenced_neuron_spike_trains_identical": false,
+            "silenced_neuron_spike_counts": [
+              [
+                24
+              ],
+              [
+                0
+              ]
+            ]
+          }
+        ],
+        "other_neuron_trains_identical_trials": 30,
+        "all_other_neuron_trains_identical": true,
+        "neuron_trial_comparisons": 4159140,
+        "non_silenced_spike_digest_sha256": {
+          "outgoing_only": "67492297c1cb0e7827a02c5a9628b57a01ab52ca230f33f314ebba8e8b8317ce",
+          "both_directions": "67492297c1cb0e7827a02c5a9628b57a01ab52ca230f33f314ebba8e8b8317ce"
+        },
+        "comparison": "Exact (neuron index, Brian2 clock tick) events, including silent neurons; no timing tolerance",
+        "silenced_neuron_trains_differ_trials": 30,
+        "silenced_rates": {
+          "outgoing_only": {
+            "720575940632403986": {
+              "mean_hz": 21.7,
+              "ci95_hz": [
+                20.945820324316994,
+                22.454179675683005
+              ],
+              "trial_rates_hz": [
+                21.0,
+                19.0,
+                23.0,
+                22.0,
+                24.0,
+                21.0,
+                24.0,
+                23.0,
+                23.0,
+                15.0,
+                22.0,
+                21.0,
+                21.0,
+                21.0,
+                24.0,
+                21.0,
+                23.0,
+                23.0,
+                24.0,
+                20.0,
+                24.0,
+                19.0,
+                22.0,
+                23.0,
+                21.0,
+                19.0,
+                20.0,
+                22.0,
+                22.0,
+                24.0
+              ]
+            }
+          },
+          "both_directions": {
+            "720575940632403986": {
+              "mean_hz": 0.0,
+              "ci95_hz": [
+                0.0,
+                0.0
+              ],
+              "trial_rates_hz": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "readout_rates": {
+          "outgoing_only": {
+            "mean_hz": 59.833333333333336,
+            "ci95_hz": [
+              58.3621421314043,
+              61.304524535262374
+            ],
+            "trial_rates_hz": [
+              55.0,
+              64.0,
+              60.0,
+              60.0,
+              66.0,
+              58.0,
+              62.0,
+              58.0,
+              62.0,
+              57.0,
+              52.0,
+              65.0,
+              68.0,
+              58.0,
+              59.0,
+              62.0,
+              53.0,
+              62.0,
+              55.0,
+              64.0,
+              62.0,
+              62.0,
+              60.0,
+              57.0,
+              58.0,
+              64.0,
+              62.0,
+              54.0,
+              60.0,
+              56.0
+            ]
+          },
+          "both_directions": {
+            "mean_hz": 59.833333333333336,
+            "ci95_hz": [
+              58.3621421314043,
+              61.304524535262374
+            ],
+            "trial_rates_hz": [
+              55.0,
+              64.0,
+              60.0,
+              60.0,
+              66.0,
+              58.0,
+              62.0,
+              58.0,
+              62.0,
+              57.0,
+              52.0,
+              65.0,
+              68.0,
+              58.0,
+              59.0,
+              62.0,
+              53.0,
+              62.0,
+              55.0,
+              64.0,
+              62.0,
+              62.0,
+              60.0,
+              57.0,
+              58.0,
+              64.0,
+              62.0,
+              54.0,
+              60.0,
+              56.0
+            ]
+          }
+        },
+        "conclusion": "For all tested seeds, every other neuron's spike train is identical. Align README with outgoing-only implementation; no model change is needed to fix the documentation mismatch. The silenced neurons can still receive input and spike."
+      },
+      "completed_utc": "2026-10-08T03:58:52.281355+00:00",
+      "wall_s": 696.661224989919,
+      "trial_counts_archive": {
+        "oracle_path": "/home/ubuntu/shiu-issues/silence-right-run/issue10_trial_counts.npz",
+        "sha256": "aa1ccc1735330dedcdbf7848eabb62cbc6ffe81a0d6d42fc8e6ce2423f54b4e4"
+      }
+    }
+  },
+  "reference_validation": {
+    "issue11_notebook": {
+      "seed": 783000,
+      "spikes": 13488,
+      "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+      "execution": "fresh upstream model.run_trial",
+      "snapshot_trial_event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+      "identical_exact_spike_events": true,
+      "additional_validation_seed_trials": [
+        783000,
+        783001
+      ],
+      "both_condition_count_arrays_match_main_first_two_trials": true
+    },
+    "issue11_right_lb3": {
+      "seed": 783000,
+      "spikes": 461489,
+      "event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+      "execution": "fresh upstream model.run_trial",
+      "snapshot_trial_event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+      "identical_exact_spike_events": true,
+      "additional_validation_seed_trials": [
+        783000,
+        783001
+      ],
+      "both_condition_count_arrays_match_main_first_two_trials": true
+    },
+    "issue10_right_lb3": {
+      "seed": 783000,
+      "spikes": 19455,
+      "event_sha256": "47bc41e017cfe3cffbaf4d44c1afe094f7fdbff0d5bbafc1f50c81296eb56d74",
+      "execution": "fresh upstream model.run_trial",
+      "snapshot_trial_event_sha256": "47bc41e017cfe3cffbaf4d44c1afe094f7fdbff0d5bbafc1f50c81296eb56d74",
+      "identical_exact_spike_events": true,
+      "additional_validation_seed_trials": [
+        783000,
+        783001
+      ],
+      "both_condition_count_arrays_match_main_first_two_trials": true
+    }
+  },
+  "delivered_script_sha256": {
+    "issue11_sign.py": "fc70160f22a6218af56fbaa02e964d0b387386763c6e49e9d559f7fdf2e62701",
+    "issue10_silencing.py": "f5e6fdf240ba971cfd6aeeb579c86efdc42118bdedfd211b543a87e4dfb01240"
+  },
+  "resources": {
+    "host": "instance-20260918-1928",
+    "logical_cpus": 16,
+    "initial_load_1m": 1.1,
+    "initial_available_ram_gib_rounded": 77,
+    "nice": 10,
+    "OMP_NUM_THREADS": 1,
+    "OPENBLAS_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "primary_condition_trials": 240,
+    "extra_snapshot_validation_trials": 12,
+    "extra_fresh_upstream_trials": 3,
+    "parallel_primary_elapsed_s": 857.869997
+  },
+  "all_environment_packages": {
+    "joblib": "1.4.2",
+    "pytz": "2026.5",
+    "scipy": "1.10.1",
+    "pandas": "1.5.3",
+    "Jinja2": "3.1.6",
+    "Cython": "0.29.36",
+    "MarkupSafe": "3.0.4",
+    "pyarrow": "17.0.0",
+    "Brian2": "2.5.1",
+    "six": "1.17.0",
+    "numpy": "1.24.4",
+    "mpmath": "1.3.0",
+    "python-dateutil": "2.9.0.post0",
+    "setuptools": "68.2.2",
+    "sympy": "1.14.0",
+    "pyparsing": "3.3.3"
+  },
+  "final_shared_checkout_status": "",
+  "notes": [
+    "The upstream default experiment pins no seeds; we explicitly pair seeds 783000..783029 with the default n_run=30.",
+    "Notebook sugarR has 21 GRNs annotated left; one root is mapped by stable supervoxel to v783. The extra right stimulus has all 64 right LB3 GRNs, not a matched L/R design.",
+    "Only the left il3LN6 sign is flipped. Predicted GABA/sign disagreement is not a claim that every disagreement should be corrected.",
+    "The audit was regenerated with deduplicated v1 roots and explicit token-inclusive literature annotations during the independent validation runs; no simulation parameters or thresholds were changed.",
+    "All primary statistics use 30 trials. The separate two-trial validations are not pooled into the primary rate estimates.",
+    "Complete trial-count NPZ archives remain in the private Oracle workspace; scripts regenerate them. No raw Shiu code or cache data is redistributed."
+  ]
+}

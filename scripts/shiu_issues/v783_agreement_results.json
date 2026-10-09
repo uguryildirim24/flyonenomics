@@ -1,0 +1,2632 @@
+{
+  "schema_version": 1,
+  "assembled_utc": "2026-10-08T05:29:18.478838+00:00",
+  "assembler_sha256": "fcfc555374b717cb737e3c2ab97196e666dbe65d2338046fff585308d1700343",
+  "comparisons": {
+    "notebook": {
+      "schema_version": 1,
+      "metadata": {
+        "fly_commit": "8456a69ecddbee114606a89f1536f634e186467f",
+        "fly_core_sha256": {
+          "src/flyonenomics/datasets.py": "7f87c06907c718362f9998ee5d98877499815ca161e28e62829b1ee76e832159",
+          "src/flyonenomics/connectome_arrays.py": "e01e9fa5bae9257fc83e139cec652c3a9565e863933c723fd55505e7baabe828",
+          "src/flyonenomics/io.py": "3ee143c7a889ad597626098b44d30e3f8d0d3f3bcb2ed4e028821f705bbab50c",
+          "src/flyonenomics/types.py": "b24cf867ac161bd8f31400a63b5032afa7e5bcfa775b5659f455509f7f8eef94",
+          "src/flyonenomics/engine/__init__.py": "09e18ba07a3b5d3112698a35fbecc59ee0cccb6b4ab39511b12a3e98295536ab",
+          "src/flyonenomics/engine/base.py": "dfb3b9d8b6ad815f9280726dfa6a600d7bca741a37a3c69de6f7a95b09f5a933",
+          "src/flyonenomics/engine/models.py": "5ec3bc3217cc9698f934eccce4f8a071eed3e590e75b64e770401152e1728588",
+          "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+          "data/params-v0.1.yaml": "884156a4642f66f6ae038ae627ee27a4f60e8c6f3772e3cb7f1f0730dd644fce"
+        },
+        "comparison_script_sha256": "f8ce8a222e7e76a1512bc4917822d471717f16308ac0dff78b3c320bebde8a1e",
+        "helper_sha256": "fc70160f22a6218af56fbaa02e964d0b387386763c6e49e9d559f7fdf2e62701",
+        "python": "3.12.14",
+        "platform": "Linux-6.17.0-1020-oracle-aarch64-with-glibc2.39",
+        "packages": {
+          "brian2": "2.10.1",
+          "numpy": "2.5.3",
+          "pandas": "3.0.5",
+          "scipy": "1.16.2",
+          "cython": "3.1.3",
+          "pyarrow": "25.0.1",
+          "pydantic": "2.12.4",
+          "pyyaml": "6.0.3",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0",
+          "setuptools": "80.9.0"
+        },
+        "chunk_ms": 1000.0,
+        "started_utc": "2026-10-08T05:14:58.229489+00:00"
+      },
+      "upstream": {
+        "metadata": {
+          "started_utc": "2026-10-08T05:15:03.660379+00:00",
+          "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+          "shiu_tracked_changes": "",
+          "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+          "host": "instance-20260918-1928",
+          "python": "3.12.14",
+          "packages": {
+            "brian2": "2.10.1",
+            "numpy": "2.5.3",
+            "pandas": "3.0.5",
+            "scipy": "1.16.2",
+            "cython": "3.1.3",
+            "pyarrow": "25.0.1",
+            "joblib": "1.4.2",
+            "sympy": "1.14.0"
+          },
+          "input_sha256": {
+            "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+            "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+            "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+            "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+            "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+            "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+          },
+          "experiment": "example.ipynb first sugarR activation on v783",
+          "stimulus_side_option": "notebook",
+          "notebook_stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940620900446,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "notebook_root_remaps": [
+            {
+              "notebook_root": 720575940620900446,
+              "v783_root": 720575940639259967,
+              "supervoxel_id": 78678166201187069
+            }
+          ],
+          "stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940639259967,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "stimulated_annotation_sides": {
+            "left": 21
+          },
+          "stimulated_annotation_types": {
+            "LB3": 21
+          },
+          "annotation_sha256": {
+            "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+            "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+          },
+          "readout_root": 720575940660219265,
+          "neurons": 138639,
+          "trials": 30,
+          "duration_s": 1.0,
+          "poisson_rate_hz": 150.0,
+          "dt_s": 0.0001,
+          "seeds": [
+            783000,
+            783001,
+            783002,
+            783003,
+            783004,
+            783005,
+            783006,
+            783007,
+            783008,
+            783009,
+            783010,
+            783011,
+            783012,
+            783013,
+            783014,
+            783015,
+            783016,
+            783017,
+            783018,
+            783019,
+            783020,
+            783021,
+            783022,
+            783023,
+            783024,
+            783025,
+            783026,
+            783027,
+            783028,
+            783029
+          ],
+          "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+          "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+        },
+        "trials": [
+          {
+            "seed": 783000,
+            "spikes": 13488,
+            "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+            "archive_sha256": "b88a5295dacec7d4b0cdfc85d08eae00e51864a24ec96553a66d614328c24c68"
+          },
+          {
+            "seed": 783001,
+            "spikes": 14020,
+            "event_sha256": "5987b7610cbeb208b6e7a684fb981410f4382daa4254a4263f3c954e825ff065",
+            "archive_sha256": "882c49ee75ee5c65cdb05a6b0fbf75fb3c4508bc7bf27328fcd5c70e6b073545"
+          },
+          {
+            "seed": 783002,
+            "spikes": 13123,
+            "event_sha256": "cde407a310d8ec6227284a41b395357531bd7d41e3e1b3ebdc60ec2b26eea949",
+            "archive_sha256": "2fcdeb1fa648d2c2becd944def7611908de95bed70075e5a6c516370f12ab67b"
+          },
+          {
+            "seed": 783003,
+            "spikes": 13600,
+            "event_sha256": "e85f38881017608cbb81c3918aee76b14d042d238b3de8a302e6dde8b82ce1da",
+            "archive_sha256": "3504e47fd71147ffe11d334d4c20569e00396dfc78d2b8d7ee21a523554217be"
+          },
+          {
+            "seed": 783004,
+            "spikes": 12765,
+            "event_sha256": "b01a633bb51ecb3638464c813cd44ef5312535a9a003f388bebac6e511491ea6",
+            "archive_sha256": "160e3fa10f0f925c0b57d0e20eb5b59dda1c081bc5769b7ff949996754fb0627"
+          },
+          {
+            "seed": 783005,
+            "spikes": 13322,
+            "event_sha256": "19620af54c9d15ba8968b7cecda2931a87da0364e00a57fe6cd1575aed578547",
+            "archive_sha256": "a99f64ff492a4ca10c7c9f108df2e10d5cba0d7f4295b7f4f5e733bc00673c58"
+          },
+          {
+            "seed": 783006,
+            "spikes": 13578,
+            "event_sha256": "40aee7df1536c27deda36c0d27c74f337e0650f6dd8311fab618886906a41333",
+            "archive_sha256": "a885b062c55ec0283ca352c5f4a2f8613effc0397c1594840fef61c4d674abc5"
+          },
+          {
+            "seed": 783007,
+            "spikes": 13515,
+            "event_sha256": "557c88733da7bd729e9867b6f93ebced3dbfa07182e786e53d968e3462886a06",
+            "archive_sha256": "7e2dfe15314dcd8db40e74171b7110e3d2767e85e1d0a133ba046a1bd318b086"
+          },
+          {
+            "seed": 783008,
+            "spikes": 13713,
+            "event_sha256": "8539e4f529c2e60c6c4b41bcd5ad1d68ba95be632941fe63bfc385b113938492",
+            "archive_sha256": "081d1ca02eed58c93841d68a1e44ba2f5264d64e292cce796a6ac3b08aaebc43"
+          },
+          {
+            "seed": 783009,
+            "spikes": 13836,
+            "event_sha256": "2c1daa0730258c163715f18bc62a86bba56c4d191c34917a6fd0e3d4b261bb56",
+            "archive_sha256": "a31212ad91ab2f769bfd1b9188abd83e79488851d3c4ffb11780d408412dda4f"
+          },
+          {
+            "seed": 783010,
+            "spikes": 12870,
+            "event_sha256": "0245e0590567e1ff1e6f0c087021f4adbf27da4ece3d29b09217105bc5f3eb41",
+            "archive_sha256": "87863b44e2e0be2f080e64d62480449b9f6d23a6a92c894ccfe8122d69276131"
+          },
+          {
+            "seed": 783011,
+            "spikes": 13634,
+            "event_sha256": "89246852628e4fa2cad39351815e6a4a57286eb4cef443157963d0abc068bb51",
+            "archive_sha256": "388d01207b93090cf0ccab3224bb1ff6d1cf93ac50ce46a9f99ae942747d85e6"
+          },
+          {
+            "seed": 783012,
+            "spikes": 14047,
+            "event_sha256": "731536ab8f7d89916b81923766dbf8d4ca1942d9493bed91a0874bfa6b3b3279",
+            "archive_sha256": "605ad2e1ebc26f8ea5159dc9830fe1721e5384b77e9ebd236a119f1b557a5534"
+          },
+          {
+            "seed": 783013,
+            "spikes": 13682,
+            "event_sha256": "42de3619d0f36584e8a2cf7d1d8384f32f568fbbd7888a7dfb2f93e5c9106088",
+            "archive_sha256": "64a6c84ddeb2796d996e6a77d8b93f84f2371e1c798b08c3a5a18f0718874e14"
+          },
+          {
+            "seed": 783014,
+            "spikes": 13641,
+            "event_sha256": "864c8bf6aeacf788561e3484ecd328795b2dafa4c563d6f5621e7e541ce6bb96",
+            "archive_sha256": "1a75580e17f343840c9012aca0cc76379ae5d3cbfdff21fb5a9057122808c705"
+          },
+          {
+            "seed": 783015,
+            "spikes": 13519,
+            "event_sha256": "144843de17dd42c6db3cab9884634efe386304b9649659b18af8020ef1270486",
+            "archive_sha256": "6c01a29797d9cc4b34342eae1be9f713e8dc07699074e9254a47f48748bbea99"
+          },
+          {
+            "seed": 783016,
+            "spikes": 13602,
+            "event_sha256": "2dc6394df07ec38db748e05c9304667fee239017432dd37f485a0080a30e96d7",
+            "archive_sha256": "47da47096277cddb33b0c221ac7f413b0758c3471c0c4a2ae1d5d10535515167"
+          },
+          {
+            "seed": 783017,
+            "spikes": 13738,
+            "event_sha256": "1a01a2914097d419d84142ce3b8e043fdbded813fc680b6c14910146d7cd442c",
+            "archive_sha256": "70322259ee15ff7a5cda6e0a8a1831c49d705e90b954d69d1f04c535be433313"
+          },
+          {
+            "seed": 783018,
+            "spikes": 13796,
+            "event_sha256": "6b2fa0f4040aaebc7cebeb1224aa0ac5db7b189846867e9048e85dd67cb64e68",
+            "archive_sha256": "8137b327ddf0674caa72c92cb0ac13ee5b4b26937a64ef9e64e14c9e07bd2429"
+          },
+          {
+            "seed": 783019,
+            "spikes": 13678,
+            "event_sha256": "1cbf49c148690e5e906850a7e8aa263211e8fee5ceada14af47ce70f3605f7b7",
+            "archive_sha256": "807622f8c12569adf152b2d2f82c8d20f4cc32e0c928cf7a52948f62966e116e"
+          },
+          {
+            "seed": 783020,
+            "spikes": 13335,
+            "event_sha256": "6f34ded34c72cb9f0f4ef553d60c824506302d62f711c4ff0feec23a1327e652",
+            "archive_sha256": "487337e4f7d726d5c4b309b5c91537a5b3095012297266811d02fdc52ba04e1d"
+          },
+          {
+            "seed": 783021,
+            "spikes": 13979,
+            "event_sha256": "e231e216479a1028815fac0aa1f1cd075c0840c6a6686f574ab8ae6f263b4a9d",
+            "archive_sha256": "b836f792e2d818ff103cb68de76d883bdd7f8a99d324fc26fd226c7587a1015f"
+          },
+          {
+            "seed": 783022,
+            "spikes": 13475,
+            "event_sha256": "61656e3e102c5122c7cdc0a2901afdc820e30daad13d43246ac0091cbe270b1c",
+            "archive_sha256": "05c3389590df84efcd8149d2dfdfda0cd8375f968853461adcd9065411fdc4a4"
+          },
+          {
+            "seed": 783023,
+            "spikes": 13529,
+            "event_sha256": "8c074fd0517dd202c7f88aab63e699198458185db7a78d2303ed0461abb38f6f",
+            "archive_sha256": "3c089f2452d8b17d283965fa93a0a58dbc4098165eaa6719b462a8d1597bf7c3"
+          },
+          {
+            "seed": 783024,
+            "spikes": 13563,
+            "event_sha256": "91b43e649da1ace1ba3f09d522748b6966153404253152f689b5105613efb0d9",
+            "archive_sha256": "e1c7597b60e0b02eb6ad1a1b9024dbaebf5c8ea6ce7469e90113f3a80c5de67e"
+          },
+          {
+            "seed": 783025,
+            "spikes": 14100,
+            "event_sha256": "886ac7ed7bdf222d20906b93a5fc4b3db2b111dbe6a5dff2266c60880819d23d",
+            "archive_sha256": "a27ba870067029eb1e0f75dfe613ed48ff72601179db1914799bd0fc313f1b6e"
+          },
+          {
+            "seed": 783026,
+            "spikes": 13915,
+            "event_sha256": "72969e1aa6f5c4a3bdcebfffa473a0745175ce051a0cb7d45bed7d9c5a9b44a2",
+            "archive_sha256": "a71445e516e563e1b4369f9def191a49534e1d332a71438703e7e0cd18e6fdaf"
+          },
+          {
+            "seed": 783027,
+            "spikes": 13860,
+            "event_sha256": "178e4dd2bc95749f0622103cf3183ab41ae0c6d4048f561fdd90254062c3d207",
+            "archive_sha256": "a5145f8e4279dd686cad737b71453c63918be65dcc8b634e200413ec84061078"
+          },
+          {
+            "seed": 783028,
+            "spikes": 13385,
+            "event_sha256": "e4e001605a15838df7b057567b4eda82888d44ad556c062e2a46f0002cfb61b3",
+            "archive_sha256": "fb0cfaf8b8cbb50c9e136c8121f5acd967bd7b8ffc868aa0597176ad2bf3767c"
+          },
+          {
+            "seed": 783029,
+            "spikes": 13885,
+            "event_sha256": "3124d69a0e11dde46528716500458a584d06ecf2e5f87638ac98464396b95de5",
+            "archive_sha256": "0c127c5691e54f8bd0b632d2fff691c70d2684c6cf655dab9473c89af32fb259"
+          }
+        ],
+        "counts_sha256": "15941bec90e1c4fab02510a626a96acc470f633799119751781c353c6b6658d5",
+        "completed_utc": "2026-10-08T05:18:43.999778+00:00",
+        "wall_s": 224.94394496595487,
+        "fresh_run_trial_validation": {
+          "seed": 783000,
+          "spikes": 13488,
+          "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+          "execution": "fresh upstream model.run_trial",
+          "snapshot_trial_event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+          "identical_exact_spike_events": true
+        }
+      },
+      "rebuild": {
+        "metadata": {
+          "started_utc": "2026-10-08T05:19:05.870653+00:00",
+          "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+          "shiu_tracked_changes": "",
+          "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+          "host": "instance-20260918-1928",
+          "python": "3.12.14",
+          "packages": {
+            "brian2": "2.10.1",
+            "numpy": "2.5.3",
+            "pandas": "3.0.5",
+            "scipy": "1.16.2",
+            "cython": "3.1.3",
+            "pyarrow": "25.0.1",
+            "joblib": "1.4.2",
+            "sympy": "1.14.0"
+          },
+          "input_sha256": {
+            "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+            "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+            "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+            "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+            "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+            "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+          },
+          "experiment": "example.ipynb first sugarR activation on v783",
+          "stimulus_side_option": "notebook",
+          "notebook_stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940620900446,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "notebook_root_remaps": [
+            {
+              "notebook_root": 720575940620900446,
+              "v783_root": 720575940639259967,
+              "supervoxel_id": 78678166201187069
+            }
+          ],
+          "stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940639259967,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "stimulated_annotation_sides": {
+            "left": 21
+          },
+          "stimulated_annotation_types": {
+            "LB3": 21
+          },
+          "annotation_sha256": {
+            "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+            "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+          },
+          "readout_root": 720575940660219265,
+          "neurons": 138639,
+          "trials": 30,
+          "duration_s": 1.0,
+          "poisson_rate_hz": 150.0,
+          "dt_s": 0.0001,
+          "seeds": [
+            783000,
+            783001,
+            783002,
+            783003,
+            783004,
+            783005,
+            783006,
+            783007,
+            783008,
+            783009,
+            783010,
+            783011,
+            783012,
+            783013,
+            783014,
+            783015,
+            783016,
+            783017,
+            783018,
+            783019,
+            783020,
+            783021,
+            783022,
+            783023,
+            783024,
+            783025,
+            783026,
+            783027,
+            783028,
+            783029
+          ],
+          "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+          "execution": "Existing BrianEngine, bare lif, upstream bank, public restore/seed/run_chunk/spikes",
+          "model_strings": [
+            "dv/dt = (v_0 - v + g) / t_mbr : volt (unless refractory)\ndg/dt = -g / tau : volt (unless refractory)\nrfc : second\nv_th_i : volt\ngain_i : 1\nw_bg_i : volt\n",
+            "v > v_th_i",
+            "v = v_rst; w = 0; g = 0 * mV",
+            "g += w * gain_i_post"
+          ]
+        },
+        "trials": [
+          {
+            "seed": 783000,
+            "spikes": 13488,
+            "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+            "archive_sha256": "b88a5295dacec7d4b0cdfc85d08eae00e51864a24ec96553a66d614328c24c68"
+          },
+          {
+            "seed": 783001,
+            "spikes": 14020,
+            "event_sha256": "5987b7610cbeb208b6e7a684fb981410f4382daa4254a4263f3c954e825ff065",
+            "archive_sha256": "882c49ee75ee5c65cdb05a6b0fbf75fb3c4508bc7bf27328fcd5c70e6b073545"
+          },
+          {
+            "seed": 783002,
+            "spikes": 13123,
+            "event_sha256": "cde407a310d8ec6227284a41b395357531bd7d41e3e1b3ebdc60ec2b26eea949",
+            "archive_sha256": "2fcdeb1fa648d2c2becd944def7611908de95bed70075e5a6c516370f12ab67b"
+          },
+          {
+            "seed": 783003,
+            "spikes": 13600,
+            "event_sha256": "e85f38881017608cbb81c3918aee76b14d042d238b3de8a302e6dde8b82ce1da",
+            "archive_sha256": "3504e47fd71147ffe11d334d4c20569e00396dfc78d2b8d7ee21a523554217be"
+          },
+          {
+            "seed": 783004,
+            "spikes": 12765,
+            "event_sha256": "b01a633bb51ecb3638464c813cd44ef5312535a9a003f388bebac6e511491ea6",
+            "archive_sha256": "160e3fa10f0f925c0b57d0e20eb5b59dda1c081bc5769b7ff949996754fb0627"
+          },
+          {
+            "seed": 783005,
+            "spikes": 13322,
+            "event_sha256": "19620af54c9d15ba8968b7cecda2931a87da0364e00a57fe6cd1575aed578547",
+            "archive_sha256": "a99f64ff492a4ca10c7c9f108df2e10d5cba0d7f4295b7f4f5e733bc00673c58"
+          },
+          {
+            "seed": 783006,
+            "spikes": 13578,
+            "event_sha256": "40aee7df1536c27deda36c0d27c74f337e0650f6dd8311fab618886906a41333",
+            "archive_sha256": "a885b062c55ec0283ca352c5f4a2f8613effc0397c1594840fef61c4d674abc5"
+          },
+          {
+            "seed": 783007,
+            "spikes": 13515,
+            "event_sha256": "557c88733da7bd729e9867b6f93ebced3dbfa07182e786e53d968e3462886a06",
+            "archive_sha256": "7e2dfe15314dcd8db40e74171b7110e3d2767e85e1d0a133ba046a1bd318b086"
+          },
+          {
+            "seed": 783008,
+            "spikes": 13713,
+            "event_sha256": "8539e4f529c2e60c6c4b41bcd5ad1d68ba95be632941fe63bfc385b113938492",
+            "archive_sha256": "081d1ca02eed58c93841d68a1e44ba2f5264d64e292cce796a6ac3b08aaebc43"
+          },
+          {
+            "seed": 783009,
+            "spikes": 13836,
+            "event_sha256": "2c1daa0730258c163715f18bc62a86bba56c4d191c34917a6fd0e3d4b261bb56",
+            "archive_sha256": "a31212ad91ab2f769bfd1b9188abd83e79488851d3c4ffb11780d408412dda4f"
+          },
+          {
+            "seed": 783010,
+            "spikes": 12870,
+            "event_sha256": "0245e0590567e1ff1e6f0c087021f4adbf27da4ece3d29b09217105bc5f3eb41",
+            "archive_sha256": "87863b44e2e0be2f080e64d62480449b9f6d23a6a92c894ccfe8122d69276131"
+          },
+          {
+            "seed": 783011,
+            "spikes": 13634,
+            "event_sha256": "89246852628e4fa2cad39351815e6a4a57286eb4cef443157963d0abc068bb51",
+            "archive_sha256": "388d01207b93090cf0ccab3224bb1ff6d1cf93ac50ce46a9f99ae942747d85e6"
+          },
+          {
+            "seed": 783012,
+            "spikes": 14047,
+            "event_sha256": "731536ab8f7d89916b81923766dbf8d4ca1942d9493bed91a0874bfa6b3b3279",
+            "archive_sha256": "605ad2e1ebc26f8ea5159dc9830fe1721e5384b77e9ebd236a119f1b557a5534"
+          },
+          {
+            "seed": 783013,
+            "spikes": 13682,
+            "event_sha256": "42de3619d0f36584e8a2cf7d1d8384f32f568fbbd7888a7dfb2f93e5c9106088",
+            "archive_sha256": "64a6c84ddeb2796d996e6a77d8b93f84f2371e1c798b08c3a5a18f0718874e14"
+          },
+          {
+            "seed": 783014,
+            "spikes": 13641,
+            "event_sha256": "864c8bf6aeacf788561e3484ecd328795b2dafa4c563d6f5621e7e541ce6bb96",
+            "archive_sha256": "1a75580e17f343840c9012aca0cc76379ae5d3cbfdff21fb5a9057122808c705"
+          },
+          {
+            "seed": 783015,
+            "spikes": 13519,
+            "event_sha256": "144843de17dd42c6db3cab9884634efe386304b9649659b18af8020ef1270486",
+            "archive_sha256": "6c01a29797d9cc4b34342eae1be9f713e8dc07699074e9254a47f48748bbea99"
+          },
+          {
+            "seed": 783016,
+            "spikes": 13602,
+            "event_sha256": "2dc6394df07ec38db748e05c9304667fee239017432dd37f485a0080a30e96d7",
+            "archive_sha256": "47da47096277cddb33b0c221ac7f413b0758c3471c0c4a2ae1d5d10535515167"
+          },
+          {
+            "seed": 783017,
+            "spikes": 13738,
+            "event_sha256": "1a01a2914097d419d84142ce3b8e043fdbded813fc680b6c14910146d7cd442c",
+            "archive_sha256": "70322259ee15ff7a5cda6e0a8a1831c49d705e90b954d69d1f04c535be433313"
+          },
+          {
+            "seed": 783018,
+            "spikes": 13796,
+            "event_sha256": "6b2fa0f4040aaebc7cebeb1224aa0ac5db7b189846867e9048e85dd67cb64e68",
+            "archive_sha256": "8137b327ddf0674caa72c92cb0ac13ee5b4b26937a64ef9e64e14c9e07bd2429"
+          },
+          {
+            "seed": 783019,
+            "spikes": 13678,
+            "event_sha256": "1cbf49c148690e5e906850a7e8aa263211e8fee5ceada14af47ce70f3605f7b7",
+            "archive_sha256": "807622f8c12569adf152b2d2f82c8d20f4cc32e0c928cf7a52948f62966e116e"
+          },
+          {
+            "seed": 783020,
+            "spikes": 13335,
+            "event_sha256": "6f34ded34c72cb9f0f4ef553d60c824506302d62f711c4ff0feec23a1327e652",
+            "archive_sha256": "487337e4f7d726d5c4b309b5c91537a5b3095012297266811d02fdc52ba04e1d"
+          },
+          {
+            "seed": 783021,
+            "spikes": 13979,
+            "event_sha256": "e231e216479a1028815fac0aa1f1cd075c0840c6a6686f574ab8ae6f263b4a9d",
+            "archive_sha256": "b836f792e2d818ff103cb68de76d883bdd7f8a99d324fc26fd226c7587a1015f"
+          },
+          {
+            "seed": 783022,
+            "spikes": 13475,
+            "event_sha256": "61656e3e102c5122c7cdc0a2901afdc820e30daad13d43246ac0091cbe270b1c",
+            "archive_sha256": "05c3389590df84efcd8149d2dfdfda0cd8375f968853461adcd9065411fdc4a4"
+          },
+          {
+            "seed": 783023,
+            "spikes": 13529,
+            "event_sha256": "8c074fd0517dd202c7f88aab63e699198458185db7a78d2303ed0461abb38f6f",
+            "archive_sha256": "3c089f2452d8b17d283965fa93a0a58dbc4098165eaa6719b462a8d1597bf7c3"
+          },
+          {
+            "seed": 783024,
+            "spikes": 13563,
+            "event_sha256": "91b43e649da1ace1ba3f09d522748b6966153404253152f689b5105613efb0d9",
+            "archive_sha256": "e1c7597b60e0b02eb6ad1a1b9024dbaebf5c8ea6ce7469e90113f3a80c5de67e"
+          },
+          {
+            "seed": 783025,
+            "spikes": 14100,
+            "event_sha256": "886ac7ed7bdf222d20906b93a5fc4b3db2b111dbe6a5dff2266c60880819d23d",
+            "archive_sha256": "a27ba870067029eb1e0f75dfe613ed48ff72601179db1914799bd0fc313f1b6e"
+          },
+          {
+            "seed": 783026,
+            "spikes": 13915,
+            "event_sha256": "72969e1aa6f5c4a3bdcebfffa473a0745175ce051a0cb7d45bed7d9c5a9b44a2",
+            "archive_sha256": "a71445e516e563e1b4369f9def191a49534e1d332a71438703e7e0cd18e6fdaf"
+          },
+          {
+            "seed": 783027,
+            "spikes": 13860,
+            "event_sha256": "178e4dd2bc95749f0622103cf3183ab41ae0c6d4048f561fdd90254062c3d207",
+            "archive_sha256": "a5145f8e4279dd686cad737b71453c63918be65dcc8b634e200413ec84061078"
+          },
+          {
+            "seed": 783028,
+            "spikes": 13385,
+            "event_sha256": "e4e001605a15838df7b057567b4eda82888d44ad556c062e2a46f0002cfb61b3",
+            "archive_sha256": "fb0cfaf8b8cbb50c9e136c8121f5acd967bd7b8ffc868aa0597176ad2bf3767c"
+          },
+          {
+            "seed": 783029,
+            "spikes": 13885,
+            "event_sha256": "3124d69a0e11dde46528716500458a584d06ecf2e5f87638ac98464396b95de5",
+            "archive_sha256": "0c127c5691e54f8bd0b632d2fff691c70d2684c6cf655dab9473c89af32fb259"
+          }
+        ],
+        "counts_sha256": "15941bec90e1c4fab02510a626a96acc470f633799119751781c353c6b6658d5",
+        "completed_utc": "2026-10-08T05:22:45.509955+00:00",
+        "wall_s": 224.1232724939473
+      },
+      "rate_agreement": {
+        "pearson_all_neuron_mean_rates": 1.0,
+        "pearson_union_active_mean_rates": 1.0,
+        "union_active_neurons": 431,
+        "mean_rate_equal_neurons": 138639,
+        "trial_count_equal_neuron_pairs": 4159170,
+        "total_neuron_trial_pairs": 4159170,
+        "max_absolute_mean_rate_difference_hz": 0.0,
+        "mean_absolute_mean_rate_difference_hz": 0.0,
+        "mn9_upstream": {
+          "mean_hz": 83.46666666666667,
+          "ci95_hz": [
+            81.87718677567754,
+            85.0561465576558
+          ],
+          "trial_rates_hz": [
+            76.0,
+            86.0,
+            82.0,
+            81.0,
+            78.0,
+            83.0,
+            85.0,
+            80.0,
+            90.0,
+            89.0,
+            87.0,
+            84.0,
+            96.0,
+            80.0,
+            79.0,
+            81.0,
+            77.0,
+            82.0,
+            85.0,
+            80.0,
+            80.0,
+            86.0,
+            85.0,
+            83.0,
+            82.0,
+            82.0,
+            85.0,
+            89.0,
+            87.0,
+            84.0
+          ]
+        },
+        "mn9_rebuild": {
+          "mean_hz": 83.46666666666667,
+          "ci95_hz": [
+            81.87718677567754,
+            85.0561465576558
+          ],
+          "trial_rates_hz": [
+            76.0,
+            86.0,
+            82.0,
+            81.0,
+            78.0,
+            83.0,
+            85.0,
+            80.0,
+            90.0,
+            89.0,
+            87.0,
+            84.0,
+            96.0,
+            80.0,
+            79.0,
+            81.0,
+            77.0,
+            82.0,
+            85.0,
+            80.0,
+            80.0,
+            86.0,
+            85.0,
+            83.0,
+            82.0,
+            82.0,
+            85.0,
+            89.0,
+            87.0,
+            84.0
+          ]
+        },
+        "mn9_paired_rebuild_minus_upstream": {
+          "mean_hz": 0.0,
+          "ci95_hz": [
+            0.0,
+            0.0
+          ],
+          "trial_rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "event_comparisons": [
+        {
+          "seed": 783000,
+          "exact_events": true,
+          "upstream_spikes": 13488,
+          "rebuild_spikes": 13488,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783001,
+          "exact_events": true,
+          "upstream_spikes": 14020,
+          "rebuild_spikes": 14020,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783002,
+          "exact_events": true,
+          "upstream_spikes": 13123,
+          "rebuild_spikes": 13123,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783003,
+          "exact_events": true,
+          "upstream_spikes": 13600,
+          "rebuild_spikes": 13600,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783004,
+          "exact_events": true,
+          "upstream_spikes": 12765,
+          "rebuild_spikes": 12765,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783005,
+          "exact_events": true,
+          "upstream_spikes": 13322,
+          "rebuild_spikes": 13322,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783006,
+          "exact_events": true,
+          "upstream_spikes": 13578,
+          "rebuild_spikes": 13578,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783007,
+          "exact_events": true,
+          "upstream_spikes": 13515,
+          "rebuild_spikes": 13515,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783008,
+          "exact_events": true,
+          "upstream_spikes": 13713,
+          "rebuild_spikes": 13713,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783009,
+          "exact_events": true,
+          "upstream_spikes": 13836,
+          "rebuild_spikes": 13836,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783010,
+          "exact_events": true,
+          "upstream_spikes": 12870,
+          "rebuild_spikes": 12870,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783011,
+          "exact_events": true,
+          "upstream_spikes": 13634,
+          "rebuild_spikes": 13634,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783012,
+          "exact_events": true,
+          "upstream_spikes": 14047,
+          "rebuild_spikes": 14047,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783013,
+          "exact_events": true,
+          "upstream_spikes": 13682,
+          "rebuild_spikes": 13682,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783014,
+          "exact_events": true,
+          "upstream_spikes": 13641,
+          "rebuild_spikes": 13641,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783015,
+          "exact_events": true,
+          "upstream_spikes": 13519,
+          "rebuild_spikes": 13519,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783016,
+          "exact_events": true,
+          "upstream_spikes": 13602,
+          "rebuild_spikes": 13602,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783017,
+          "exact_events": true,
+          "upstream_spikes": 13738,
+          "rebuild_spikes": 13738,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783018,
+          "exact_events": true,
+          "upstream_spikes": 13796,
+          "rebuild_spikes": 13796,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783019,
+          "exact_events": true,
+          "upstream_spikes": 13678,
+          "rebuild_spikes": 13678,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783020,
+          "exact_events": true,
+          "upstream_spikes": 13335,
+          "rebuild_spikes": 13335,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783021,
+          "exact_events": true,
+          "upstream_spikes": 13979,
+          "rebuild_spikes": 13979,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783022,
+          "exact_events": true,
+          "upstream_spikes": 13475,
+          "rebuild_spikes": 13475,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783023,
+          "exact_events": true,
+          "upstream_spikes": 13529,
+          "rebuild_spikes": 13529,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783024,
+          "exact_events": true,
+          "upstream_spikes": 13563,
+          "rebuild_spikes": 13563,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783025,
+          "exact_events": true,
+          "upstream_spikes": 14100,
+          "rebuild_spikes": 14100,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783026,
+          "exact_events": true,
+          "upstream_spikes": 13915,
+          "rebuild_spikes": 13915,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783027,
+          "exact_events": true,
+          "upstream_spikes": 13860,
+          "rebuild_spikes": 13860,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783028,
+          "exact_events": true,
+          "upstream_spikes": 13385,
+          "rebuild_spikes": 13385,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783029,
+          "exact_events": true,
+          "upstream_spikes": 13885,
+          "rebuild_spikes": 13885,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        }
+      ],
+      "all_trials_exact": true,
+      "identical_neuron_trial_trains": 4159170,
+      "total_upstream_spikes": 408193,
+      "total_rebuild_spikes": 408193,
+      "missing_events": 0,
+      "extra_events": 0,
+      "historical_brian251_vs_modern_upstream": {
+        "pearson_all_neuron_mean_rates": 1.0,
+        "pearson_union_active_mean_rates": 1.0,
+        "union_active_neurons": 431,
+        "mean_rate_equal_neurons": 138639,
+        "trial_count_equal_neuron_pairs": 4159170,
+        "total_neuron_trial_pairs": 4159170,
+        "max_absolute_mean_rate_difference_hz": 0.0,
+        "mean_absolute_mean_rate_difference_hz": 0.0,
+        "mn9_upstream": {
+          "mean_hz": 83.46666666666667,
+          "ci95_hz": [
+            81.87718677567754,
+            85.0561465576558
+          ],
+          "trial_rates_hz": [
+            76.0,
+            86.0,
+            82.0,
+            81.0,
+            78.0,
+            83.0,
+            85.0,
+            80.0,
+            90.0,
+            89.0,
+            87.0,
+            84.0,
+            96.0,
+            80.0,
+            79.0,
+            81.0,
+            77.0,
+            82.0,
+            85.0,
+            80.0,
+            80.0,
+            86.0,
+            85.0,
+            83.0,
+            82.0,
+            82.0,
+            85.0,
+            89.0,
+            87.0,
+            84.0
+          ]
+        },
+        "mn9_rebuild": {
+          "mean_hz": 83.46666666666667,
+          "ci95_hz": [
+            81.87718677567754,
+            85.0561465576558
+          ],
+          "trial_rates_hz": [
+            76.0,
+            86.0,
+            82.0,
+            81.0,
+            78.0,
+            83.0,
+            85.0,
+            80.0,
+            90.0,
+            89.0,
+            87.0,
+            84.0,
+            96.0,
+            80.0,
+            79.0,
+            81.0,
+            77.0,
+            82.0,
+            85.0,
+            80.0,
+            80.0,
+            86.0,
+            85.0,
+            83.0,
+            82.0,
+            82.0,
+            85.0,
+            89.0,
+            87.0,
+            84.0
+          ]
+        },
+        "mn9_paired_rebuild_minus_upstream": {
+          "mean_hz": 0.0,
+          "ci95_hz": [
+            0.0,
+            0.0
+          ],
+          "trial_rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "historical_counts_sha256": "5b230921180175ceacd2148f355453729d03b49b9076efea0e857520e0161cc9",
+      "historical_first_seed_event_agreement": {
+        "historical": {
+          "seed": 783000,
+          "spikes": 13488,
+          "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+          "execution": "fresh upstream model.run_trial",
+          "snapshot_trial_event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+          "identical_exact_spike_events": true,
+          "additional_validation_seed_trials": [
+            783000,
+            783001
+          ],
+          "both_condition_count_arrays_match_main_first_two_trials": true
+        },
+        "modern_upstream_event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368",
+        "exact_events": true
+      },
+      "historical_results_sha256": "c368ca352e8447443e78669d54a59c039ce6472f0ca88b263d39e57e4549576a",
+      "completed_utc": "2026-10-08T05:22:46.451211+00:00",
+      "wall_s": 468.24722393997945
+    },
+    "right": {
+      "schema_version": 1,
+      "metadata": {
+        "fly_commit": "8456a69ecddbee114606a89f1536f634e186467f",
+        "fly_core_sha256": {
+          "src/flyonenomics/datasets.py": "7f87c06907c718362f9998ee5d98877499815ca161e28e62829b1ee76e832159",
+          "src/flyonenomics/connectome_arrays.py": "e01e9fa5bae9257fc83e139cec652c3a9565e863933c723fd55505e7baabe828",
+          "src/flyonenomics/io.py": "3ee143c7a889ad597626098b44d30e3f8d0d3f3bcb2ed4e028821f705bbab50c",
+          "src/flyonenomics/types.py": "b24cf867ac161bd8f31400a63b5032afa7e5bcfa775b5659f455509f7f8eef94",
+          "src/flyonenomics/engine/__init__.py": "09e18ba07a3b5d3112698a35fbecc59ee0cccb6b4ab39511b12a3e98295536ab",
+          "src/flyonenomics/engine/base.py": "dfb3b9d8b6ad815f9280726dfa6a600d7bca741a37a3c69de6f7a95b09f5a933",
+          "src/flyonenomics/engine/models.py": "5ec3bc3217cc9698f934eccce4f8a071eed3e590e75b64e770401152e1728588",
+          "src/flyonenomics/engine/brian_engine.py": "fae8684d38841a5766b6e7294eb48d34a5a695e60f9a27b56355e7241510c4dd",
+          "data/params-v0.1.yaml": "884156a4642f66f6ae038ae627ee27a4f60e8c6f3772e3cb7f1f0730dd644fce"
+        },
+        "comparison_script_sha256": "f8ce8a222e7e76a1512bc4917822d471717f16308ac0dff78b3c320bebde8a1e",
+        "helper_sha256": "fc70160f22a6218af56fbaa02e964d0b387386763c6e49e9d559f7fdf2e62701",
+        "python": "3.12.14",
+        "platform": "Linux-6.17.0-1020-oracle-aarch64-with-glibc2.39",
+        "packages": {
+          "brian2": "2.10.1",
+          "numpy": "2.5.3",
+          "pandas": "3.0.5",
+          "scipy": "1.16.2",
+          "cython": "3.1.3",
+          "pyarrow": "25.0.1",
+          "pydantic": "2.12.4",
+          "pyyaml": "6.0.3",
+          "joblib": "1.4.2",
+          "sympy": "1.14.0",
+          "setuptools": "80.9.0"
+        },
+        "chunk_ms": 1000.0,
+        "started_utc": "2026-10-08T05:14:58.229489+00:00"
+      },
+      "upstream": {
+        "metadata": {
+          "started_utc": "2026-10-08T05:15:03.615569+00:00",
+          "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+          "shiu_tracked_changes": "",
+          "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+          "host": "instance-20260918-1928",
+          "python": "3.12.14",
+          "packages": {
+            "brian2": "2.10.1",
+            "numpy": "2.5.3",
+            "pandas": "3.0.5",
+            "scipy": "1.16.2",
+            "cython": "3.1.3",
+            "pyarrow": "25.0.1",
+            "joblib": "1.4.2",
+            "sympy": "1.14.0"
+          },
+          "input_sha256": {
+            "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+            "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+            "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+            "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+            "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+            "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+          },
+          "experiment": "additional issue11 right-side activation: all right LB3 GRNs from v2.1.0",
+          "stimulus_side_option": "right",
+          "notebook_stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940620900446,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "notebook_root_remaps": [
+            {
+              "notebook_root": 720575940620900446,
+              "v783_root": 720575940639259967,
+              "supervoxel_id": 78678166201187069
+            }
+          ],
+          "stimulated_roots": [
+            720575940604590048,
+            720575940606205897,
+            720575940606801282,
+            720575940608305161,
+            720575940609314243,
+            720575940609369180,
+            720575940609645124,
+            720575940610296622,
+            720575940612010137,
+            720575940612208406,
+            720575940612422579,
+            720575940612445938,
+            720575940612612581,
+            720575940614163367,
+            720575940614302370,
+            720575940615516319,
+            720575940616167218,
+            720575940616742657,
+            720575940616851286,
+            720575940617398502,
+            720575940617510720,
+            720575940617674909,
+            720575940617801499,
+            720575940618601782,
+            720575940618706043,
+            720575940618706811,
+            720575940618709371,
+            720575940620185515,
+            720575940620289701,
+            720575940620296641,
+            720575940620589838,
+            720575940620692833,
+            720575940621506943,
+            720575940621508479,
+            720575940621509759,
+            720575940621704197,
+            720575940622136022,
+            720575940622200233,
+            720575940622405708,
+            720575940622731229,
+            720575940623138485,
+            720575940624373483,
+            720575940627394376,
+            720575940627907883,
+            720575940628116476,
+            720575940628330256,
+            720575940629388135,
+            720575940629510338,
+            720575940629821500,
+            720575940629884119,
+            720575940630552151,
+            720575940630741701,
+            720575940630882039,
+            720575940630968335,
+            720575940631147148,
+            720575940631656504,
+            720575940632627660,
+            720575940632634911,
+            720575940632880173,
+            720575940634023961,
+            720575940636487598,
+            720575940637661838,
+            720575940638011994,
+            720575940641339611
+          ],
+          "stimulated_annotation_sides": {
+            "right": 64
+          },
+          "stimulated_annotation_types": {
+            "LB3": 64
+          },
+          "annotation_sha256": {
+            "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+            "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+          },
+          "readout_root": 720575940660219265,
+          "neurons": 138639,
+          "trials": 30,
+          "duration_s": 1.0,
+          "poisson_rate_hz": 150.0,
+          "dt_s": 0.0001,
+          "seeds": [
+            783000,
+            783001,
+            783002,
+            783003,
+            783004,
+            783005,
+            783006,
+            783007,
+            783008,
+            783009,
+            783010,
+            783011,
+            783012,
+            783013,
+            783014,
+            783015,
+            783016,
+            783017,
+            783018,
+            783019,
+            783020,
+            783021,
+            783022,
+            783023,
+            783024,
+            783025,
+            783026,
+            783027,
+            783028,
+            783029
+          ],
+          "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+          "execution": "Upstream create_model/poi/silence with Brian2 runtime Cython; restore initial state before each trial"
+        },
+        "trials": [
+          {
+            "seed": 783000,
+            "spikes": 461489,
+            "event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+            "archive_sha256": "23af7c4aa3119a58755f86dbdb93a2acdda74d7bac815ecd9a40c7a3b06e3ed5"
+          },
+          {
+            "seed": 783001,
+            "spikes": 463786,
+            "event_sha256": "da2cbd7c1501a48a9de4e4e4b9c7fc240b3fb3493ba5d752aa19ca27b10e92c9",
+            "archive_sha256": "310028ebe4c5b1d38848b3a9f474265f9585c41e2c2090da492de39588f9698b"
+          },
+          {
+            "seed": 783002,
+            "spikes": 455669,
+            "event_sha256": "a74d5af4311d97ab62739c3c86c7f39f09b66e42e329469f8244814cb478cfec",
+            "archive_sha256": "38b5132b2f8f8294e589ab955bd3d496203f11ffc87b16c4fd09bdd890a8cd4a"
+          },
+          {
+            "seed": 783003,
+            "spikes": 451379,
+            "event_sha256": "6ac525edae6bb8564849aa6a039864f487181e7872b406e46df9fafd2e470142",
+            "archive_sha256": "9fadbc0cb8c6d5dea8e69647f47104bc8e1ea5482b5de463624142159e27fd39"
+          },
+          {
+            "seed": 783004,
+            "spikes": 459977,
+            "event_sha256": "dfd5d534e445c2264cbb0978e66cef16d983a9d2152bc3a55180245fabeb9e60",
+            "archive_sha256": "d4f062e3cafd336c596052aa83ef677e10ab7484a25ed5daf58827fc2f7b697f"
+          },
+          {
+            "seed": 783005,
+            "spikes": 468515,
+            "event_sha256": "4a580c066d5c7db2d3c9b46fe1c3f6d9ca3b7b7418d1657c02d1e159ee53432f",
+            "archive_sha256": "05849bd95f3074b8bb82987ae7f16e6295da8d9af6b38d65314090a50969ffcc"
+          },
+          {
+            "seed": 783006,
+            "spikes": 458036,
+            "event_sha256": "359cdba42c317ab31bef88b9f5da22e29eb29863ff48cc9db76e53ef011ee30a",
+            "archive_sha256": "7032e7d2ab553021c8b5a225eead79380a96427d61da9eca5526dc9d43b540ed"
+          },
+          {
+            "seed": 783007,
+            "spikes": 458460,
+            "event_sha256": "aa5ee4c23a67933903f7c6735164b5b3b12d20e61e956cbe3505fa002f11fd3a",
+            "archive_sha256": "e64819c15c02f2039aec467f661c39c6eb5d9b8c4c30fe1f5fc5acb6401fd73d"
+          },
+          {
+            "seed": 783008,
+            "spikes": 451201,
+            "event_sha256": "a164a92424d739e738f9695c7159de2b4b0abef3a2d99c823da7522efe767280",
+            "archive_sha256": "2bb656b030b306ef0ac412daebad736333e71330210d51d176ffac3a8e506243"
+          },
+          {
+            "seed": 783009,
+            "spikes": 457419,
+            "event_sha256": "692cf18c933927f13a750f287c5bc55fe232c7367583fb7034659a13ce79299d",
+            "archive_sha256": "3b6ba06016f8f974d8a8578ad77b7c76e978d5980fd32d5b7810655232dfac99"
+          },
+          {
+            "seed": 783010,
+            "spikes": 450943,
+            "event_sha256": "f631e5a404f46a93dcfd34b71f7b6d3b5d604b95a82cd57295e33b7ff19ef1e4",
+            "archive_sha256": "894e1ed84f064ee9bae6d6403fb3d3e03d2d54d68251677a75e7a610e64f64d3"
+          },
+          {
+            "seed": 783011,
+            "spikes": 464447,
+            "event_sha256": "d3574d86637af915983e5bb82aff6ef7e85103a3242204eaa4fcc3a21066243f",
+            "archive_sha256": "60112b80bb6e1fa8a04ec7cb8c9dab57b576c6758af7e488bc51f9122fd8671b"
+          },
+          {
+            "seed": 783012,
+            "spikes": 460902,
+            "event_sha256": "03b528e1addc25a2886692ba1acc0aae65aa64afe04a8c31199cfec79f0fa63f",
+            "archive_sha256": "c20059bdfc60fc54b437c37bc4fc3926a462e98773292c2fe4ad633ed70b02f2"
+          },
+          {
+            "seed": 783013,
+            "spikes": 471641,
+            "event_sha256": "1f355a9066213d3c5b5587413e66d0af6c67bd2f01d8c306f2da1ec56ed9add2",
+            "archive_sha256": "657b5ec6b11998a1c70ea116b753232f1b99bce31f555e9a940ac1ad0a01a8d8"
+          },
+          {
+            "seed": 783014,
+            "spikes": 470453,
+            "event_sha256": "b3797cb44110308c43bcf1661074255d9600e70a8128782fa0f7001d07cf64c6",
+            "archive_sha256": "fc62742b5207eb03e86bd2f40b569ab4a676d32eba7a391804fae225ba30431f"
+          },
+          {
+            "seed": 783015,
+            "spikes": 451299,
+            "event_sha256": "8482c7153c006645c6e7d45def45fcbe09107a132bbcbde9ea21d2c3cbd68951",
+            "archive_sha256": "7c6e6e23cb33c38826a9de38710716d56fb86753cbcc6dcc43a652f74e5c5fd4"
+          },
+          {
+            "seed": 783016,
+            "spikes": 456882,
+            "event_sha256": "991d5015c0fb79bd79b3d2d31fea1db615a4a43f534b32d9468c07696a8615e2",
+            "archive_sha256": "fc81868c051e884848785fbdfbdc6c05e32ec9af8cc7eaa6225dcee24186ee2d"
+          },
+          {
+            "seed": 783017,
+            "spikes": 463752,
+            "event_sha256": "ed9d02dc4bb3e46bc2bc017bd77ad6e2f4fadeafe216c9f15f380a2e69d4c3af",
+            "archive_sha256": "f8bed9fa79326e8bd5a400369288d4a23b1d8663f850b2299108b28098263cde"
+          },
+          {
+            "seed": 783018,
+            "spikes": 455797,
+            "event_sha256": "1bc193343a04d7c241dd10e27697f30340f4ad69b345c6ef2159f2ae7964b93b",
+            "archive_sha256": "cd05ff21c853b39ea688d17f8a3dbef77306c74316871a203da3b60da6f8d9aa"
+          },
+          {
+            "seed": 783019,
+            "spikes": 436082,
+            "event_sha256": "537c145006f5311e39cb7acd38a42990d9d9179195c882b9f19cf31c39db637e",
+            "archive_sha256": "0b4544c634d06a2c9a516c682ce5db0ad43e7bf4e1d0219354be8bf6cb221303"
+          },
+          {
+            "seed": 783020,
+            "spikes": 465399,
+            "event_sha256": "09e895b96203198b5153841935ec4c30639a18e4e822436dbafb1e2083ffc490",
+            "archive_sha256": "85d31257ea0ef0d038d69bec9cda65b8031be5025777ada833135aa40cdbcf19"
+          },
+          {
+            "seed": 783021,
+            "spikes": 459299,
+            "event_sha256": "089f58dcd36409b9821e9c74aaf815c5331fb723b19da65e2d77d6fb176c9931",
+            "archive_sha256": "d804deda096d86719f3d0eabe73ef5d67d7e56c9b44be94c6ddb902ca8f45458"
+          },
+          {
+            "seed": 783022,
+            "spikes": 466088,
+            "event_sha256": "edfda4f7c5de56901aa6b900f954a09e9f1f70166e1ef49bc59c7180e405c87c",
+            "archive_sha256": "48b822e9b56a299473cc9a3dc6263d3546402b9c181e33e98d0746e53564b858"
+          },
+          {
+            "seed": 783023,
+            "spikes": 466885,
+            "event_sha256": "34d67bbec4a5eb18b8759a7fd51db69901bb1918899684a05c384529287ecf52",
+            "archive_sha256": "8c2e2977182dbdaeb13ffccbc74a3cb3ea220114764a9229976260bc849e899b"
+          },
+          {
+            "seed": 783024,
+            "spikes": 438156,
+            "event_sha256": "9326f683773234aab7434ac6c7e9fa7efb2ff6d0b6034db552a8b73228a229fc",
+            "archive_sha256": "63627179349181f193f817431137cf7764dbfcd11a8dab25febc6ade42b205ef"
+          },
+          {
+            "seed": 783025,
+            "spikes": 467452,
+            "event_sha256": "37fb68743d1dfe85e6a0b7e678246d78df53d34e7fbad32142a6d3ab97b68a79",
+            "archive_sha256": "a4f28623b82bd89747e88c75d1cc4a2b2e196c6536ce8dd0dd75ad03d3beb0d5"
+          },
+          {
+            "seed": 783026,
+            "spikes": 461675,
+            "event_sha256": "ab9ea8ca81d384e9563751776026c74ec30cd543cad953b82f228f7c370dc30d",
+            "archive_sha256": "6a20947226e84977eb8a688feab1aa6065a89d5fbd9343958aea765729f5dd45"
+          },
+          {
+            "seed": 783027,
+            "spikes": 454857,
+            "event_sha256": "c103bc5727dd64635b32238ecce0095663e041e91c6a2075de783710253465ed",
+            "archive_sha256": "659894e40a8b205708989c3e9f7365166cfce57d187addfd5066dc6d75001d7a"
+          },
+          {
+            "seed": 783028,
+            "spikes": 461752,
+            "event_sha256": "0c4d15675dd4109ae6f231b85ddd70c9ae8c2c7e3099a33e5662a91bdf2ee8bd",
+            "archive_sha256": "08b252fbfc7dad491ccb8f258b1bfce7e4e53d62860100de561b66540fada61b"
+          },
+          {
+            "seed": 783029,
+            "spikes": 460804,
+            "event_sha256": "21400bb407604f6d2c459eceed756992f5e1eaf43f226bf79b0960b9131f455b",
+            "archive_sha256": "13b4607e2d30fdaa766002b39584abb5cb958f9a1f9dcfa380c36bb3f3b31dd8"
+          }
+        ],
+        "counts_sha256": "a79c88adb82f11ab56df328d8601bb2ccab2a1030488e19f19aa19ad6c79a5e0",
+        "completed_utc": "2026-10-08T05:21:02.827927+00:00",
+        "wall_s": 363.7748984720092,
+        "fresh_run_trial_validation": {
+          "seed": 783000,
+          "spikes": 461489,
+          "event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+          "execution": "fresh upstream model.run_trial",
+          "snapshot_trial_event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+          "identical_exact_spike_events": true
+        }
+      },
+      "rebuild": {
+        "metadata": {
+          "started_utc": "2026-10-08T05:21:28.965441+00:00",
+          "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+          "shiu_tracked_changes": "",
+          "shiu_repo": "/data/flyonenomics/cache/Drosophila_brain_model",
+          "host": "instance-20260918-1928",
+          "python": "3.12.14",
+          "packages": {
+            "brian2": "2.10.1",
+            "numpy": "2.5.3",
+            "pandas": "3.0.5",
+            "scipy": "1.16.2",
+            "cython": "3.1.3",
+            "pyarrow": "25.0.1",
+            "joblib": "1.4.2",
+            "sympy": "1.14.0"
+          },
+          "input_sha256": {
+            "model.py": "fc45837d7122c6ce2a7f3f2f23c515992e4b232aadb919efabb72337fac88e4e",
+            "utils.py": "f378cf0b464f2ac5e1daf3609ba25fd51c7e34f294846281707ffe006c3e9ef1",
+            "example.ipynb": "1737c3043af700504c4791c4bfc02d1856bbeb0d36c469832e4b9399dfddda3a",
+            "Readme.md": "0654ac53f9af85000b50f6a5d2297aade8602c507a44e811f8aff602629c2625",
+            "Completeness_783.csv": "bbb847a4cc2caaa7a16349722d220c087317b946d148d4d592d94d250617a311",
+            "Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+          },
+          "experiment": "additional issue11 right-side activation: all right LB3 GRNs from v2.1.0",
+          "stimulus_side_option": "right",
+          "notebook_stimulated_roots": [
+            720575940624963786,
+            720575940630233916,
+            720575940637568838,
+            720575940638202345,
+            720575940617000768,
+            720575940630797113,
+            720575940632889389,
+            720575940621754367,
+            720575940621502051,
+            720575940640649691,
+            720575940639332736,
+            720575940616885538,
+            720575940639198653,
+            720575940620900446,
+            720575940617937543,
+            720575940632425919,
+            720575940633143833,
+            720575940612670570,
+            720575940628853239,
+            720575940629176663,
+            720575940611875570
+          ],
+          "notebook_root_remaps": [
+            {
+              "notebook_root": 720575940620900446,
+              "v783_root": 720575940639259967,
+              "supervoxel_id": 78678166201187069
+            }
+          ],
+          "stimulated_roots": [
+            720575940604590048,
+            720575940606205897,
+            720575940606801282,
+            720575940608305161,
+            720575940609314243,
+            720575940609369180,
+            720575940609645124,
+            720575940610296622,
+            720575940612010137,
+            720575940612208406,
+            720575940612422579,
+            720575940612445938,
+            720575940612612581,
+            720575940614163367,
+            720575940614302370,
+            720575940615516319,
+            720575940616167218,
+            720575940616742657,
+            720575940616851286,
+            720575940617398502,
+            720575940617510720,
+            720575940617674909,
+            720575940617801499,
+            720575940618601782,
+            720575940618706043,
+            720575940618706811,
+            720575940618709371,
+            720575940620185515,
+            720575940620289701,
+            720575940620296641,
+            720575940620589838,
+            720575940620692833,
+            720575940621506943,
+            720575940621508479,
+            720575940621509759,
+            720575940621704197,
+            720575940622136022,
+            720575940622200233,
+            720575940622405708,
+            720575940622731229,
+            720575940623138485,
+            720575940624373483,
+            720575940627394376,
+            720575940627907883,
+            720575940628116476,
+            720575940628330256,
+            720575940629388135,
+            720575940629510338,
+            720575940629821500,
+            720575940629884119,
+            720575940630552151,
+            720575940630741701,
+            720575940630882039,
+            720575940630968335,
+            720575940631147148,
+            720575940631656504,
+            720575940632627660,
+            720575940632634911,
+            720575940632880173,
+            720575940634023961,
+            720575940636487598,
+            720575940637661838,
+            720575940638011994,
+            720575940641339611
+          ],
+          "stimulated_annotation_sides": {
+            "right": 64
+          },
+          "stimulated_annotation_types": {
+            "LB3": 64
+          },
+          "annotation_sha256": {
+            "v1.1.0": "55c99c61eecf8db6cc36f1a684b35e4c4208afbab02197d753ccc8dc2a6e2e76",
+            "v2.1.0": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6"
+          },
+          "readout_root": 720575940660219265,
+          "neurons": 138639,
+          "trials": 30,
+          "duration_s": 1.0,
+          "poisson_rate_hz": 150.0,
+          "dt_s": 0.0001,
+          "seeds": [
+            783000,
+            783001,
+            783002,
+            783003,
+            783004,
+            783005,
+            783006,
+            783007,
+            783008,
+            783009,
+            783010,
+            783011,
+            783012,
+            783013,
+            783014,
+            783015,
+            783016,
+            783017,
+            783018,
+            783019,
+            783020,
+            783021,
+            783022,
+            783023,
+            783024,
+            783025,
+            783026,
+            783027,
+            783028,
+            783029
+          ],
+          "seed_note": "Upstream specifies no seeds. These explicitly chosen seeds are paired across conditions.",
+          "execution": "Existing BrianEngine, bare lif, upstream bank, public restore/seed/run_chunk/spikes",
+          "model_strings": [
+            "dv/dt = (v_0 - v + g) / t_mbr : volt (unless refractory)\ndg/dt = -g / tau : volt (unless refractory)\nrfc : second\nv_th_i : volt\ngain_i : 1\nw_bg_i : volt\n",
+            "v > v_th_i",
+            "v = v_rst; w = 0; g = 0 * mV",
+            "g += w * gain_i_post"
+          ]
+        },
+        "trials": [
+          {
+            "seed": 783000,
+            "spikes": 461489,
+            "event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+            "archive_sha256": "23af7c4aa3119a58755f86dbdb93a2acdda74d7bac815ecd9a40c7a3b06e3ed5"
+          },
+          {
+            "seed": 783001,
+            "spikes": 463786,
+            "event_sha256": "da2cbd7c1501a48a9de4e4e4b9c7fc240b3fb3493ba5d752aa19ca27b10e92c9",
+            "archive_sha256": "310028ebe4c5b1d38848b3a9f474265f9585c41e2c2090da492de39588f9698b"
+          },
+          {
+            "seed": 783002,
+            "spikes": 455669,
+            "event_sha256": "a74d5af4311d97ab62739c3c86c7f39f09b66e42e329469f8244814cb478cfec",
+            "archive_sha256": "38b5132b2f8f8294e589ab955bd3d496203f11ffc87b16c4fd09bdd890a8cd4a"
+          },
+          {
+            "seed": 783003,
+            "spikes": 451379,
+            "event_sha256": "6ac525edae6bb8564849aa6a039864f487181e7872b406e46df9fafd2e470142",
+            "archive_sha256": "9fadbc0cb8c6d5dea8e69647f47104bc8e1ea5482b5de463624142159e27fd39"
+          },
+          {
+            "seed": 783004,
+            "spikes": 459977,
+            "event_sha256": "dfd5d534e445c2264cbb0978e66cef16d983a9d2152bc3a55180245fabeb9e60",
+            "archive_sha256": "d4f062e3cafd336c596052aa83ef677e10ab7484a25ed5daf58827fc2f7b697f"
+          },
+          {
+            "seed": 783005,
+            "spikes": 468515,
+            "event_sha256": "4a580c066d5c7db2d3c9b46fe1c3f6d9ca3b7b7418d1657c02d1e159ee53432f",
+            "archive_sha256": "05849bd95f3074b8bb82987ae7f16e6295da8d9af6b38d65314090a50969ffcc"
+          },
+          {
+            "seed": 783006,
+            "spikes": 458036,
+            "event_sha256": "359cdba42c317ab31bef88b9f5da22e29eb29863ff48cc9db76e53ef011ee30a",
+            "archive_sha256": "7032e7d2ab553021c8b5a225eead79380a96427d61da9eca5526dc9d43b540ed"
+          },
+          {
+            "seed": 783007,
+            "spikes": 458460,
+            "event_sha256": "aa5ee4c23a67933903f7c6735164b5b3b12d20e61e956cbe3505fa002f11fd3a",
+            "archive_sha256": "e64819c15c02f2039aec467f661c39c6eb5d9b8c4c30fe1f5fc5acb6401fd73d"
+          },
+          {
+            "seed": 783008,
+            "spikes": 451201,
+            "event_sha256": "a164a92424d739e738f9695c7159de2b4b0abef3a2d99c823da7522efe767280",
+            "archive_sha256": "2bb656b030b306ef0ac412daebad736333e71330210d51d176ffac3a8e506243"
+          },
+          {
+            "seed": 783009,
+            "spikes": 457419,
+            "event_sha256": "692cf18c933927f13a750f287c5bc55fe232c7367583fb7034659a13ce79299d",
+            "archive_sha256": "3b6ba06016f8f974d8a8578ad77b7c76e978d5980fd32d5b7810655232dfac99"
+          },
+          {
+            "seed": 783010,
+            "spikes": 450943,
+            "event_sha256": "f631e5a404f46a93dcfd34b71f7b6d3b5d604b95a82cd57295e33b7ff19ef1e4",
+            "archive_sha256": "894e1ed84f064ee9bae6d6403fb3d3e03d2d54d68251677a75e7a610e64f64d3"
+          },
+          {
+            "seed": 783011,
+            "spikes": 464447,
+            "event_sha256": "d3574d86637af915983e5bb82aff6ef7e85103a3242204eaa4fcc3a21066243f",
+            "archive_sha256": "60112b80bb6e1fa8a04ec7cb8c9dab57b576c6758af7e488bc51f9122fd8671b"
+          },
+          {
+            "seed": 783012,
+            "spikes": 460902,
+            "event_sha256": "03b528e1addc25a2886692ba1acc0aae65aa64afe04a8c31199cfec79f0fa63f",
+            "archive_sha256": "c20059bdfc60fc54b437c37bc4fc3926a462e98773292c2fe4ad633ed70b02f2"
+          },
+          {
+            "seed": 783013,
+            "spikes": 471641,
+            "event_sha256": "1f355a9066213d3c5b5587413e66d0af6c67bd2f01d8c306f2da1ec56ed9add2",
+            "archive_sha256": "657b5ec6b11998a1c70ea116b753232f1b99bce31f555e9a940ac1ad0a01a8d8"
+          },
+          {
+            "seed": 783014,
+            "spikes": 470453,
+            "event_sha256": "b3797cb44110308c43bcf1661074255d9600e70a8128782fa0f7001d07cf64c6",
+            "archive_sha256": "fc62742b5207eb03e86bd2f40b569ab4a676d32eba7a391804fae225ba30431f"
+          },
+          {
+            "seed": 783015,
+            "spikes": 451299,
+            "event_sha256": "8482c7153c006645c6e7d45def45fcbe09107a132bbcbde9ea21d2c3cbd68951",
+            "archive_sha256": "7c6e6e23cb33c38826a9de38710716d56fb86753cbcc6dcc43a652f74e5c5fd4"
+          },
+          {
+            "seed": 783016,
+            "spikes": 456882,
+            "event_sha256": "991d5015c0fb79bd79b3d2d31fea1db615a4a43f534b32d9468c07696a8615e2",
+            "archive_sha256": "fc81868c051e884848785fbdfbdc6c05e32ec9af8cc7eaa6225dcee24186ee2d"
+          },
+          {
+            "seed": 783017,
+            "spikes": 463752,
+            "event_sha256": "ed9d02dc4bb3e46bc2bc017bd77ad6e2f4fadeafe216c9f15f380a2e69d4c3af",
+            "archive_sha256": "f8bed9fa79326e8bd5a400369288d4a23b1d8663f850b2299108b28098263cde"
+          },
+          {
+            "seed": 783018,
+            "spikes": 455797,
+            "event_sha256": "1bc193343a04d7c241dd10e27697f30340f4ad69b345c6ef2159f2ae7964b93b",
+            "archive_sha256": "cd05ff21c853b39ea688d17f8a3dbef77306c74316871a203da3b60da6f8d9aa"
+          },
+          {
+            "seed": 783019,
+            "spikes": 436082,
+            "event_sha256": "537c145006f5311e39cb7acd38a42990d9d9179195c882b9f19cf31c39db637e",
+            "archive_sha256": "0b4544c634d06a2c9a516c682ce5db0ad43e7bf4e1d0219354be8bf6cb221303"
+          },
+          {
+            "seed": 783020,
+            "spikes": 465399,
+            "event_sha256": "09e895b96203198b5153841935ec4c30639a18e4e822436dbafb1e2083ffc490",
+            "archive_sha256": "85d31257ea0ef0d038d69bec9cda65b8031be5025777ada833135aa40cdbcf19"
+          },
+          {
+            "seed": 783021,
+            "spikes": 459299,
+            "event_sha256": "089f58dcd36409b9821e9c74aaf815c5331fb723b19da65e2d77d6fb176c9931",
+            "archive_sha256": "d804deda096d86719f3d0eabe73ef5d67d7e56c9b44be94c6ddb902ca8f45458"
+          },
+          {
+            "seed": 783022,
+            "spikes": 466088,
+            "event_sha256": "edfda4f7c5de56901aa6b900f954a09e9f1f70166e1ef49bc59c7180e405c87c",
+            "archive_sha256": "48b822e9b56a299473cc9a3dc6263d3546402b9c181e33e98d0746e53564b858"
+          },
+          {
+            "seed": 783023,
+            "spikes": 466885,
+            "event_sha256": "34d67bbec4a5eb18b8759a7fd51db69901bb1918899684a05c384529287ecf52",
+            "archive_sha256": "8c2e2977182dbdaeb13ffccbc74a3cb3ea220114764a9229976260bc849e899b"
+          },
+          {
+            "seed": 783024,
+            "spikes": 438156,
+            "event_sha256": "9326f683773234aab7434ac6c7e9fa7efb2ff6d0b6034db552a8b73228a229fc",
+            "archive_sha256": "63627179349181f193f817431137cf7764dbfcd11a8dab25febc6ade42b205ef"
+          },
+          {
+            "seed": 783025,
+            "spikes": 467452,
+            "event_sha256": "37fb68743d1dfe85e6a0b7e678246d78df53d34e7fbad32142a6d3ab97b68a79",
+            "archive_sha256": "a4f28623b82bd89747e88c75d1cc4a2b2e196c6536ce8dd0dd75ad03d3beb0d5"
+          },
+          {
+            "seed": 783026,
+            "spikes": 461675,
+            "event_sha256": "ab9ea8ca81d384e9563751776026c74ec30cd543cad953b82f228f7c370dc30d",
+            "archive_sha256": "6a20947226e84977eb8a688feab1aa6065a89d5fbd9343958aea765729f5dd45"
+          },
+          {
+            "seed": 783027,
+            "spikes": 454857,
+            "event_sha256": "c103bc5727dd64635b32238ecce0095663e041e91c6a2075de783710253465ed",
+            "archive_sha256": "659894e40a8b205708989c3e9f7365166cfce57d187addfd5066dc6d75001d7a"
+          },
+          {
+            "seed": 783028,
+            "spikes": 461752,
+            "event_sha256": "0c4d15675dd4109ae6f231b85ddd70c9ae8c2c7e3099a33e5662a91bdf2ee8bd",
+            "archive_sha256": "08b252fbfc7dad491ccb8f258b1bfce7e4e53d62860100de561b66540fada61b"
+          },
+          {
+            "seed": 783029,
+            "spikes": 460804,
+            "event_sha256": "21400bb407604f6d2c459eceed756992f5e1eaf43f226bf79b0960b9131f455b",
+            "archive_sha256": "13b4607e2d30fdaa766002b39584abb5cb958f9a1f9dcfa380c36bb3f3b31dd8"
+          }
+        ],
+        "counts_sha256": "a79c88adb82f11ab56df328d8601bb2ccab2a1030488e19f19aa19ad6c79a5e0",
+        "completed_utc": "2026-10-08T05:28:02.081608+00:00",
+        "wall_s": 397.5971543379128
+      },
+      "rate_agreement": {
+        "pearson_all_neuron_mean_rates": 1.0,
+        "pearson_union_active_mean_rates": 1.0,
+        "union_active_neurons": 9158,
+        "mean_rate_equal_neurons": 138639,
+        "trial_count_equal_neuron_pairs": 4159170,
+        "total_neuron_trial_pairs": 4159170,
+        "max_absolute_mean_rate_difference_hz": 0.0,
+        "mean_absolute_mean_rate_difference_hz": 0.0,
+        "mn9_upstream": {
+          "mean_hz": 20.1,
+          "ci95_hz": [
+            18.95075722570998,
+            21.24924277429002
+          ],
+          "trial_rates_hz": [
+            21.0,
+            26.0,
+            19.0,
+            24.0,
+            20.0,
+            23.0,
+            23.0,
+            16.0,
+            16.0,
+            18.0,
+            25.0,
+            20.0,
+            19.0,
+            26.0,
+            18.0,
+            21.0,
+            18.0,
+            16.0,
+            17.0,
+            20.0,
+            22.0,
+            18.0,
+            14.0,
+            20.0,
+            23.0,
+            20.0,
+            20.0,
+            20.0,
+            17.0,
+            23.0
+          ]
+        },
+        "mn9_rebuild": {
+          "mean_hz": 20.1,
+          "ci95_hz": [
+            18.95075722570998,
+            21.24924277429002
+          ],
+          "trial_rates_hz": [
+            21.0,
+            26.0,
+            19.0,
+            24.0,
+            20.0,
+            23.0,
+            23.0,
+            16.0,
+            16.0,
+            18.0,
+            25.0,
+            20.0,
+            19.0,
+            26.0,
+            18.0,
+            21.0,
+            18.0,
+            16.0,
+            17.0,
+            20.0,
+            22.0,
+            18.0,
+            14.0,
+            20.0,
+            23.0,
+            20.0,
+            20.0,
+            20.0,
+            17.0,
+            23.0
+          ]
+        },
+        "mn9_paired_rebuild_minus_upstream": {
+          "mean_hz": 0.0,
+          "ci95_hz": [
+            0.0,
+            0.0
+          ],
+          "trial_rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "event_comparisons": [
+        {
+          "seed": 783000,
+          "exact_events": true,
+          "upstream_spikes": 461489,
+          "rebuild_spikes": 461489,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783001,
+          "exact_events": true,
+          "upstream_spikes": 463786,
+          "rebuild_spikes": 463786,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783002,
+          "exact_events": true,
+          "upstream_spikes": 455669,
+          "rebuild_spikes": 455669,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783003,
+          "exact_events": true,
+          "upstream_spikes": 451379,
+          "rebuild_spikes": 451379,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783004,
+          "exact_events": true,
+          "upstream_spikes": 459977,
+          "rebuild_spikes": 459977,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783005,
+          "exact_events": true,
+          "upstream_spikes": 468515,
+          "rebuild_spikes": 468515,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783006,
+          "exact_events": true,
+          "upstream_spikes": 458036,
+          "rebuild_spikes": 458036,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783007,
+          "exact_events": true,
+          "upstream_spikes": 458460,
+          "rebuild_spikes": 458460,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783008,
+          "exact_events": true,
+          "upstream_spikes": 451201,
+          "rebuild_spikes": 451201,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783009,
+          "exact_events": true,
+          "upstream_spikes": 457419,
+          "rebuild_spikes": 457419,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783010,
+          "exact_events": true,
+          "upstream_spikes": 450943,
+          "rebuild_spikes": 450943,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783011,
+          "exact_events": true,
+          "upstream_spikes": 464447,
+          "rebuild_spikes": 464447,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783012,
+          "exact_events": true,
+          "upstream_spikes": 460902,
+          "rebuild_spikes": 460902,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783013,
+          "exact_events": true,
+          "upstream_spikes": 471641,
+          "rebuild_spikes": 471641,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783014,
+          "exact_events": true,
+          "upstream_spikes": 470453,
+          "rebuild_spikes": 470453,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783015,
+          "exact_events": true,
+          "upstream_spikes": 451299,
+          "rebuild_spikes": 451299,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783016,
+          "exact_events": true,
+          "upstream_spikes": 456882,
+          "rebuild_spikes": 456882,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783017,
+          "exact_events": true,
+          "upstream_spikes": 463752,
+          "rebuild_spikes": 463752,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783018,
+          "exact_events": true,
+          "upstream_spikes": 455797,
+          "rebuild_spikes": 455797,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783019,
+          "exact_events": true,
+          "upstream_spikes": 436082,
+          "rebuild_spikes": 436082,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783020,
+          "exact_events": true,
+          "upstream_spikes": 465399,
+          "rebuild_spikes": 465399,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783021,
+          "exact_events": true,
+          "upstream_spikes": 459299,
+          "rebuild_spikes": 459299,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783022,
+          "exact_events": true,
+          "upstream_spikes": 466088,
+          "rebuild_spikes": 466088,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783023,
+          "exact_events": true,
+          "upstream_spikes": 466885,
+          "rebuild_spikes": 466885,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783024,
+          "exact_events": true,
+          "upstream_spikes": 438156,
+          "rebuild_spikes": 438156,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783025,
+          "exact_events": true,
+          "upstream_spikes": 467452,
+          "rebuild_spikes": 467452,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783026,
+          "exact_events": true,
+          "upstream_spikes": 461675,
+          "rebuild_spikes": 461675,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783027,
+          "exact_events": true,
+          "upstream_spikes": 454857,
+          "rebuild_spikes": 454857,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783028,
+          "exact_events": true,
+          "upstream_spikes": 461752,
+          "rebuild_spikes": 461752,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        },
+        {
+          "seed": 783029,
+          "exact_events": true,
+          "upstream_spikes": 460804,
+          "rebuild_spikes": 460804,
+          "missing_events": 0,
+          "extra_events": 0,
+          "identical_neuron_trains": 138639
+        }
+      ],
+      "all_trials_exact": true,
+      "identical_neuron_trial_trains": 4159170,
+      "total_upstream_spikes": 13770496,
+      "total_rebuild_spikes": 13770496,
+      "missing_events": 0,
+      "extra_events": 0,
+      "historical_brian251_vs_modern_upstream": {
+        "pearson_all_neuron_mean_rates": 1.0,
+        "pearson_union_active_mean_rates": 1.0,
+        "union_active_neurons": 9158,
+        "mean_rate_equal_neurons": 138639,
+        "trial_count_equal_neuron_pairs": 4159170,
+        "total_neuron_trial_pairs": 4159170,
+        "max_absolute_mean_rate_difference_hz": 0.0,
+        "mean_absolute_mean_rate_difference_hz": 0.0,
+        "mn9_upstream": {
+          "mean_hz": 20.1,
+          "ci95_hz": [
+            18.95075722570998,
+            21.24924277429002
+          ],
+          "trial_rates_hz": [
+            21.0,
+            26.0,
+            19.0,
+            24.0,
+            20.0,
+            23.0,
+            23.0,
+            16.0,
+            16.0,
+            18.0,
+            25.0,
+            20.0,
+            19.0,
+            26.0,
+            18.0,
+            21.0,
+            18.0,
+            16.0,
+            17.0,
+            20.0,
+            22.0,
+            18.0,
+            14.0,
+            20.0,
+            23.0,
+            20.0,
+            20.0,
+            20.0,
+            17.0,
+            23.0
+          ]
+        },
+        "mn9_rebuild": {
+          "mean_hz": 20.1,
+          "ci95_hz": [
+            18.95075722570998,
+            21.24924277429002
+          ],
+          "trial_rates_hz": [
+            21.0,
+            26.0,
+            19.0,
+            24.0,
+            20.0,
+            23.0,
+            23.0,
+            16.0,
+            16.0,
+            18.0,
+            25.0,
+            20.0,
+            19.0,
+            26.0,
+            18.0,
+            21.0,
+            18.0,
+            16.0,
+            17.0,
+            20.0,
+            22.0,
+            18.0,
+            14.0,
+            20.0,
+            23.0,
+            20.0,
+            20.0,
+            20.0,
+            17.0,
+            23.0
+          ]
+        },
+        "mn9_paired_rebuild_minus_upstream": {
+          "mean_hz": 0.0,
+          "ci95_hz": [
+            0.0,
+            0.0
+          ],
+          "trial_rates_hz": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "historical_counts_sha256": "c2a360c6fa536f5ebf7b910f827b5e16de62e49d7d0c41f37c562765d2630dc8",
+      "historical_first_seed_event_agreement": {
+        "historical": {
+          "seed": 783000,
+          "spikes": 461489,
+          "event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+          "execution": "fresh upstream model.run_trial",
+          "snapshot_trial_event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+          "identical_exact_spike_events": true,
+          "additional_validation_seed_trials": [
+            783000,
+            783001
+          ],
+          "both_condition_count_arrays_match_main_first_two_trials": true
+        },
+        "modern_upstream_event_sha256": "ba0be0b645622e329acd95f02db15d910df5b30dfeaada4254c0a7579d0fc909",
+        "exact_events": true
+      },
+      "historical_results_sha256": "c368ca352e8447443e78669d54a59c039ce6472f0ca88b263d39e57e4549576a",
+      "completed_utc": "2026-10-08T05:28:04.708996+00:00",
+      "wall_s": 786.5050087990239
+    }
+  },
+  "weight_audit": {
+    "shiu_commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+    "script_sha256": "60593e0ee66c70f322da5e79a8a336c3b0e0b8115aabdfa7cef4369b04372645",
+    "connectivity_sha256": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347",
+    "neurons": 138639,
+    "connection_rows": 15091983,
+    "bitwise_equal_weight_rows": 11952926,
+    "bitwise_different_weight_rows": 3139057,
+    "maximum_absolute_difference_volts": 1.1102230246251565e-16,
+    "maximum_relative_difference": 2.194116649456831e-16,
+    "weight_sign_changes": 0,
+    "upstream_si_weight_sha256": "d5547fb81db7028cb949bf1e8a76b4d6808800f251c9b4255802c3188c22a51f",
+    "rebuild_si_weight_sha256": "f6f6ab9f7c49e14a906d120c705e6af7814ecdeeecaaefad8b1280bdb71e7732",
+    "explanation": "upstream raw * w_syn_in_volts; rebuild (raw * w_syn_in_mV) * mV_in_volts; both float64"
+  },
+  "supplementary_chunk10_notebook": {
+    "comparison_script_sha256_at_execution": "14252190b0e7968aa719d57cfb8ceb1d3a3125399cd78e7d330ef815ffd8ed7b",
+    "note": "Supplementary 10 ms chunks, separate from full 30-trial comparisons; reproduce with --chunk-ms 10 --trials 2.",
+    "trials": [
+      {
+        "seed": 783000,
+        "chunk_ms": 10,
+        "duration_s": 1,
+        "spikes": 13488,
+        "exact_events": true,
+        "archive_sha256": "b88a5295dacec7d4b0cdfc85d08eae00e51864a24ec96553a66d614328c24c68",
+        "event_sha256": "b999a50a3be142228583be495da72b9b5224dd2b9a02a72eef8895b61bdcb368"
+      },
+      {
+        "seed": 783001,
+        "chunk_ms": 10,
+        "duration_s": 1,
+        "spikes": 14020,
+        "exact_events": true,
+        "archive_sha256": "882c49ee75ee5c65cdb05a6b0fbf75fb3c4508bc7bf27328fcd5c70e6b073545",
+        "event_sha256": "5987b7610cbeb208b6e7a684fb981410f4382daa4254a4263f3c954e825ff065"
+      }
+    ]
+  },
+  "packaged_counts_archive": {
+    "file": "v783-agreement-counts.npz",
+    "sha256": "2d3d5c312caac1980015219faf024c3bf2fb36e5a37f8fae4a3d9a000ee66472",
+    "fields": [
+      "roots",
+      "seeds",
+      "notebook_upstream",
+      "notebook_rebuild",
+      "notebook_legacy",
+      "right_upstream",
+      "right_rebuild",
+      "right_legacy",
+      "notebook_chunk10_events_seed_783000",
+      "notebook_chunk10_events_seed_783001"
+    ]
+  },
+  "resources": {
+    "nice": 10,
+    "max_simulation_processes": 2,
+    "numerical_library_threads": 1,
+    "final_comparisons_elapsed_s": 786.479507
+  }
+}
