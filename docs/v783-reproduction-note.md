@@ -2,7 +2,7 @@
 
 Rolf Yildirim (Lasell University)
 
-Technical note. 8 October 2026.
+Technical note. 8 October 2026. DOI: [10.5281/zenodo.23250873](https://doi.org/10.5281/zenodo.23250873).
 
 ## Abstract
 
