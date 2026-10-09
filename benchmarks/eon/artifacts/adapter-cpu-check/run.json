@@ -1,0 +1,18 @@
+{
+  "backend": "numpy_adapter_semantics_only",
+  "input_manifest_sha256": "fcc5f99e4f13c1a696b0ac1a94015f114052b66dc7d362f65c0ef2ccdc20f5b6",
+  "simulated_s": 0.1,
+  "sim_time_s": 1.785993078025058,
+  "environment": {
+    "platform": "Linux-6.17.0-1020-oracle-aarch64-with-glibc2.39",
+    "machine": "aarch64",
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "omp_num_threads": "2",
+    "hostname": "instance-20260918-1928"
+  },
+  "spike_file": "spikes.parquet",
+  "spike_sha256": "61565353e213053b7c13c33071db6d166c54eae5eb62f94b4ef29f3468260858",
+  "source_sha256": "1868c554e238ec7e990f9839d89a5e13e0079807004f15e7167a8bd04fe6ffc9",
+  "note": "Serial accumulation; does not test CUDA compilation, cooperative launch, transfers or atomic reduction ordering. Not a GPU speed result."
+}

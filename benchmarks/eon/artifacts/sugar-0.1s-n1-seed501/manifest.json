@@ -1,0 +1,82 @@
+{
+  "schema": "eon-identical-input-v1",
+  "created_utc": "2026-10-08T04:20:18.681364+00:00",
+  "eon_commit": "a3db62f9436074e485c0278290c2164ed6150808",
+  "connectome": "FlyWire v783",
+  "experiment": {
+    "key": "sugar",
+    "name": "Sugar GRNs (200 Hz)",
+    "neu_exc": [
+      720575940624963786,
+      720575940630233916,
+      720575940637568838,
+      720575940638202345,
+      720575940617000768,
+      720575940630797113,
+      720575940632889389,
+      720575940621754367,
+      720575940621502051,
+      720575940640649691,
+      720575940639332736,
+      720575940616885538,
+      720575940639198653,
+      720575940639259967,
+      720575940617937543,
+      720575940632425919,
+      720575940633143833,
+      720575940612670570,
+      720575940628853239,
+      720575940629176663,
+      720575940611875570
+    ],
+    "neu_exc2": [],
+    "neu_slnc": [],
+    "stim_rate": 200.0
+  },
+  "dt_ms": 0.1,
+  "duration_s": 0.1,
+  "n_run": 1,
+  "seed": 501,
+  "seed_note": "Brian seed set after device reinit; CUDA replays actual draws, not another RNG",
+  "neuron_parameters": {
+    "v_0": -52.0,
+    "v_rst": -52.0,
+    "v_th": -45.0,
+    "t_mbr": 20.0,
+    "tau": 5.0,
+    "t_rfc": 2.2,
+    "t_dly": 1.8,
+    "w_syn": 0.275,
+    "f_poi": 250.0
+  },
+  "neuron_parameters_si": {
+    "v_0": -0.052000000000000005,
+    "v_rst": -0.052000000000000005,
+    "v_th": -0.045,
+    "t_mbr": 0.02,
+    "tau": 0.005,
+    "t_rfc": 0.0022,
+    "t_dly": 0.0018000000000000002,
+    "w_syn": 0.000275
+  },
+  "linear_coefficients": {
+    "dv": 0.9950124791926823,
+    "dg": 0.9801986733067553,
+    "coupling": 0.004937935295309027,
+    "bias": -0.00025935108198051754
+  },
+  "n_neurons": 138639,
+  "n_edges": 15091983,
+  "stimulus_events": 427,
+  "kick_mv": 68.75,
+  "capture_verified_exact_spikes": true,
+  "data_sha256": {
+    "2025_Completeness_783.csv": "52b0ac6094cd32c546f8d4c341e094376f48f4e791f8db9b166de5dff8199ea4",
+    "2025_Connectivity_783.parquet": "efeb23fb99098e9c390f6869969b2a121a2ee92c833cfc45ecb2c1d8e1af0347"
+  },
+  "files_sha256": {
+    "stimulus.npz": "f70b73cc64b467d13f15ef87fc10231719575237fa1a2b5349344a144639b356",
+    "cpu-unobserved.parquet": "f50e5df6133c1d6cae44d6a37e67ef576a23545afc7b3996c8db611b51295edb",
+    "cpu-captured.parquet": "f50e5df6133c1d6cae44d6a37e67ef576a23545afc7b3996c8db611b51295edb"
+  }
+}

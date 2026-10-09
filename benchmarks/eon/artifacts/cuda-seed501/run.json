@@ -1,0 +1,38 @@
+{
+  "backend": "rolf_cuda",
+  "input_manifest_sha256": "fcc5f99e4f13c1a696b0ac1a94015f114052b66dc7d362f65c0ef2ccdc20f5b6",
+  "eon_commit": "a3db62f9436074e485c0278290c2164ed6150808",
+  "simulated_s": 0.1,
+  "spikes": 1711,
+  "active_neurons": 348,
+  "sim_time_s": 0.3302071670000011,
+  "wall_s_per_simulated_s": 3.302071670000011,
+  "build_s": 8.170035412,
+  "extraction_s": 0.4815887750000023,
+  "parquet_save_s": 0.031685348999999974,
+  "total_harness_s": 9.015405358999999,
+  "cuda_event_interval_s": 0.3298269414901734,
+  "timing_note": "sim_time includes run_chunk allocations, kernel and device-to-host transfers; excludes spikes() sorting and parquet writes. CUDA event interval is not kernel-only.",
+  "chunk_ms": 10,
+  "spike_file": "spikes.parquet",
+  "spike_sha256": "2dfa77786ba1f47d6808b71f91145dd2b3295e5f9bce229cfe34ffe5a3fb182d",
+  "source_sha256": {
+    "benchmarks/eon/adapter.py": "24c1244dfa47d4f69e92af0dcbe8c699167ffd469cb9d3323049044319995f9c",
+    "benchmarks/eon/gpu.py": "73bfa4517399b054ad940246e9744c028a97aa1d88ab432e9cb8cf73bdcc9d46",
+    "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+    "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+  },
+  "adapted_kernel_sha256": "5cee86f6da94bc2487266b5c9b3fde9f3347a2712438b4c43bcc740b373448fe",
+  "environment": {
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "python": "3.12.1",
+    "numpy": "1.26.4",
+    "omp_num_threads": "2",
+    "hostname": "modal",
+    "cupy": "13.6.0",
+    "gpu": "NVIDIA L4",
+    "cuda_runtime": 12090,
+    "cuda_driver": 13000
+  }
+}

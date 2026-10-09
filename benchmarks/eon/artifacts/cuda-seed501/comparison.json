@@ -1,0 +1,138 @@
+{
+  "schema": "eon-comparison-v1",
+  "input_manifest_sha256": "fcc5f99e4f13c1a696b0ac1a94015f114052b66dc7d362f65c0ef2ccdc20f5b6",
+  "candidate_backend": "rolf_cuda",
+  "eon_commit": "a3db62f9436074e485c0278290c2164ed6150808",
+  "eon_metric_source_sha256": {
+    "compare_ground_truth.py": "2c19c46fca52fc102c4936fa3fc79e3752c96c43544c68062d10c85c16ba580f",
+    "compare_spike_outputs.py": "4882aacb565bab1847cd1aeda68fdbe91909a1334240cef7d460248a524e58b5"
+  },
+  "exact": {
+    "matches": 1711,
+    "cpu_spikes": 1711,
+    "candidate_spikes": 1711,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "symmetric_difference": 0,
+    "all_spikes_identical": true,
+    "definition": "one-to-one identical (trial, neuron_index, integer dt tick); F1 is exact spike match rate"
+  },
+  "eon_ground_truth": {
+    "spike_count": {
+      "ground_truth": 1711,
+      "backend": 1711,
+      "ratio": 1.0
+    },
+    "active_neurons": {
+      "ground_truth": 348,
+      "backend": 348,
+      "shared": 348,
+      "gt_only": 0,
+      "backend_only": 0,
+      "jaccard": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "firing_rate": {
+      "pearson_correlation": 1.0,
+      "median_pct_diff": 0.0,
+      "mean_pct_diff": 0.0
+    },
+    "top_deviations": [
+      {
+        "flywire_id": 720575940605658033,
+        "gt_rate_hz": 20.0,
+        "other_rate_hz": 20.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940660229505,
+        "gt_rate_hz": 40.0,
+        "other_rate_hz": 40.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940660224641,
+        "gt_rate_hz": 10.0,
+        "other_rate_hz": 10.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940660223873,
+        "gt_rate_hz": 60.0,
+        "other_rate_hz": 60.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940660220289,
+        "gt_rate_hz": 10.0,
+        "other_rate_hz": 10.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940660219265,
+        "gt_rate_hz": 80.0,
+        "other_rate_hz": 80.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940655014049,
+        "gt_rate_hz": 110.0,
+        "other_rate_hz": 110.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940655013025,
+        "gt_rate_hz": 50.0,
+        "other_rate_hz": 50.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940655011489,
+        "gt_rate_hz": 20.0,
+        "other_rate_hz": 20.0,
+        "pct_diff": 0.0
+      },
+      {
+        "flywire_id": 720575940652580086,
+        "gt_rate_hz": 110.0,
+        "other_rate_hz": 110.0,
+        "pct_diff": 0.0
+      }
+    ]
+  },
+  "eon_pairwise": {
+    "framework_a": "Brian2 (CPU)",
+    "framework_b": "rolf_cuda",
+    "backend_a": "brian2cpp",
+    "backend_b": "rolf_cuda",
+    "t_run": 0.1,
+    "n_run": 1,
+    "tolerance_ms": 1.0,
+    "spikes_a": 1711,
+    "spikes_b": 1711,
+    "spike_count_ratio_b_over_a": 1.0,
+    "active_a": 348,
+    "active_b": 348,
+    "active_shared": 348,
+    "active_jaccard": 1.0,
+    "active_precision_b_over_a": 1.0,
+    "active_recall_b_over_a": 1.0,
+    "rate_pearson_shared": 1.0,
+    "rate_rmse_hz_shared": 0.0,
+    "rate_mae_hz_shared": 0.0,
+    "timing_matches": 1711,
+    "timing_f1": 1.0,
+    "timing_precision_b_over_a": 1.0,
+    "timing_recall_b_over_a": 1.0,
+    "timing_mean_abs_dt_ms": 0.0,
+    "timing_median_abs_dt_ms": 0.0
+  },
+  "speed": {
+    "cpu_wall_s_per_simulated_s": 10.332282749004662,
+    "cuda_wall_s_per_simulated_s": 3.302071670000011,
+    "cpu_over_cuda": 3.129030433492871,
+    "note": "Cross-machine/backend wall-time ratio, not same-hardware speedup. CPU includes executable initialization and internal result writes; CUDA includes per-chunk allocations and host transfers. Build and parquet export excluded from both."
+  }
+}

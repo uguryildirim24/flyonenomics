@@ -1,0 +1,14 @@
+ccba7fea6e7b09bf9a0b9544c440791af93a63e1fb03a539fa773d03d89e6bfb  ./adapter-cpu-check/run.json
+61565353e213053b7c13c33071db6d166c54eae5eb62f94b4ef29f3468260858  ./adapter-cpu-check/spikes.parquet
+9829402202f7162d9a5c6d7b00e1863830d7b72f8178e144d55749e8a67b261e  ./adapter-cpu-comparison.json
+64f12535f5a1318e8c9b2dc4c8c5ae7073c5b8f3e0c29bb6127ddaed4885c0fb  ./cpu.log
+f066794d5cca1ff6a22444e7413f886e8589a12da90831b39624503b4fecfcd2  ./provenance.json
+f50e5df6133c1d6cae44d6a37e67ef576a23545afc7b3996c8db611b51295edb  ./sugar-0.1s-n1-seed501/cpu-captured.parquet
+6a0ef5a528044e9412557e34172027bda9cae97e8069f445226ba930295ceab6  ./sugar-0.1s-n1-seed501/cpu-run.json
+f50e5df6133c1d6cae44d6a37e67ef576a23545afc7b3996c8db611b51295edb  ./sugar-0.1s-n1-seed501/cpu-unobserved.parquet
+dcc5f87913affda433b28607a49f64e71a362d6148a6c063736124a86991ddf3  ./sugar-0.1s-n1-seed501/environment.txt
+fcc5f99e4f13c1a696b0ac1a94015f114052b66dc7d362f65c0ef2ccdc20f5b6  ./sugar-0.1s-n1-seed501/manifest.json
+f70b73cc64b467d13f15ef87fc10231719575237fa1a2b5349344a144639b356  ./sugar-0.1s-n1-seed501/stimulus.npz
+8aa43a3146781e3a1b54b7ed8563f674e6eb9993342b91dc9f6d493ee204ec78  ./cuda-seed501/comparison.json
+e1ddd4cfcf79c2eef7ffd65252d0beb124780091fca4e02beb20461cf49b616a  ./cuda-seed501/run.json
+2dfa77786ba1f47d6808b71f91145dd2b3295e5f9bce229cfe34ffe5a3fb182d  ./cuda-seed501/spikes.parquet

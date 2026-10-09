@@ -1,0 +1,38 @@
+{
+  "schema": "eon-bench-provenance-v1",
+  "date_utc": "2026-10-08",
+  "eon_commit": "a3db62f9436074e485c0278290c2164ed6150808",
+  "flyonenomics_base_commit": "968d63f",
+  "cpu_checkout": "/home/ubuntu/eon-bench/fly-brain",
+  "cpu_harness": "/home/ubuntu/eon-bench/mit-repo/benchmarks/eon",
+  "cpu_command": "timeout 5400 nice -n 10 env OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 venv/bin/python mit-repo/benchmarks/eon/cpu.py --eon-repo fly-brain --out artifacts/sugar-0.1s-n1-seed501",
+  "input_manifest_sha256": "fcc5f99e4f13c1a696b0ac1a94015f114052b66dc7d362f65c0ef2ccdc20f5b6",
+  "paid_gpu_submitted": false,
+  "gpu_results_available": false,
+  "cpu_executed_script_sha256": "51962c02ca97f02417780742f4dff153bf99edf1d082991dd135c9eeb6799afa",
+  "cpu_executed_common_sha256": "9bb17ea50db3f80ab96e495838bf9b215f2137c22b79cff4c7a8cd4c46cfdf6a",
+  "source_note": "After the recorded CPU run, common.py gained input-schema/cached-import-path guards, and cpu.py's environment serializer was restricted to installed site-packages (excluding setuptools vendored dist-info). The saved environment.txt was normalized against that same unchanged OCI venv. No model, capture or replay arithmetic changed. Executed source hashes are retained above; the map below records the final harness snapshot. Eon implementations remain external, not vendored.",
+  "tests": {
+    "local": "16 passed, 27 dependency warnings; no GPU; Python 3.12.14",
+    "oci_pi": "16 passed, 27 dependency warnings; nice -n 10; no GPU; Python 3.12.3",
+    "saved_semantic_comparison_recomputed": "byte-identical JSON via pinned external Eon metrics"
+  },
+  "mit_source_sha256": {
+    "benchmarks/eon/adapter.py": "49e5c82374cd0c602eff1f93444f490c69ef7eee25737b397468baf1873f475f",
+    "benchmarks/eon/common.py": "90b8ee2de5b82c43c2f8e85b80c00492f399bf8fc5d6f1692d7b917034fc1de6",
+    "benchmarks/eon/compare.py": "1c49191d87225b82f521b5279e05b0e0d91c06e19b1387ce1c6dcad64fa8339c",
+    "benchmarks/eon/cpu.py": "9c3c7b4b80ea487b4e2369317104abb09309dba72a3ee1b87b2b6b88a4caf400",
+    "benchmarks/eon/gpu.py": "73bfa4517399b054ad940246e9744c028a97aa1d88ab432e9cb8cf73bdcc9d46",
+    "benchmarks/eon/modal_run.py": "2c334c7c79c079f5b175f28404629884597c898dd6dba37aeffdd1bb7560fd41",
+    "benchmarks/eon/reference.py": "1868c554e238ec7e990f9839d89a5e13e0079807004f15e7167a8bd04fe6ffc9",
+    "benchmarks/eon/test_harness.py": "d989dba938232cbdeeb788c9288ecbad948a8d6a97b241668f5a64395f02ad6d",
+    "src/flyonenomics/engine/cuda_engine.py": "91666fa8d6f23cfe2af45518f557729cefae8e4e7fab91ecaffd420a778609ea",
+    "src/flyonenomics/engine/cuda_tick.cu": "6ff6e296990a83a391faa4068b5358f78582ba6a63101340402bf82cb59a5197"
+  },
+  "eon_source_sha256": {
+    "code/benchmark.py": "e18dae9072baf9ee0f0581282641c58864fdc138c6e75b718a542eb27d272874",
+    "code/run_brian2_cuda.py": "0184fb8bbd28e36643a0bcffbe64675d58cb1bcce27cbe1fc08deb8cb1777722",
+    "code/compare_ground_truth.py": "2c19c46fca52fc102c4936fa3fc79e3752c96c43544c68062d10c85c16ba580f",
+    "code/compare_spike_outputs.py": "4882aacb565bab1847cd1aeda68fdbe91909a1334240cef7d460248a524e58b5"
+  }
+}
